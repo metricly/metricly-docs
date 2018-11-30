@@ -14,10 +14,10 @@
     {{else}}
       {{ partial "flex/body-beforecontent.html" . }}
     {{end}}
-    
+
     {{ block "main" . }}
     {{ end }}
-    
+
     {{if .Site.Params.themeStyle}}
       {{ partial (printf "%s/body-aftercontent.html" .Site.Params.themeStyle) . }}
     {{else}}
