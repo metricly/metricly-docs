@@ -3,7 +3,7 @@ title: "Common Commands"
 date: 2018-11-30T16:08:13-05:00
 draft: true
 categories: ["integration", "admin guide", "getting started"]
-tags: ["agent", "linux", "commands"]
+tags: ["agents", "linux", "commands"]
 author: Lawrence Lane
 ---
 {{% alert theme="info"%}}These commands may vary depending on your distro. {{% /alert %}}
