@@ -5,6 +5,8 @@ draft: true
 categories: ["integration", "admin guide", "getting started"]
 tags: ["aws", "iam role"]
 author: Lawrence Lane
+pre: "<i class='fa fa-download'></i> "
+weight: 2
 ---
 ## IAM Role Method
 

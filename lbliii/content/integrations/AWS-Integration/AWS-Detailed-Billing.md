@@ -5,6 +5,7 @@ draft: true
 categories: ["integration", "admin guide", "getting started"]
 tags: ["aws", "detailed billing", "s3 bucket",]
 author: Lawrence Lane
+weight: 4
 ---
 
 ## How to Enable Detailed Billing

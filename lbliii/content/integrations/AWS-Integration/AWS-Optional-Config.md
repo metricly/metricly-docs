@@ -5,6 +5,7 @@ draft: true
 categories: ["integration", "admin guide", "getting started"]
 tags: ["aws", "optional config", "elements"]
 author: Lawrence Lane
+weight: 5
 ---
 ## Change Element Display Names
 You can change how certain elements’ names are displayed in the application to help distinguish between each instance, e.g., you have 15 EC2 instances with the same name and want to know the difference between each.  

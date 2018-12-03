@@ -5,6 +5,7 @@ draft: true
 categories: ["integration", "admin guide", "getting started"]
 tags: ["aws", "gov cloud"]
 author: Lawrence Lane
+weight: 6
 ---
 AWS GovCloud (US) is a segment of Amazon Web Services cloud offerings that restrict physical and logical administrative access to U.S. citizens only. The region meets the requirements for U.S. International Traffic in Arms Regulations (ITAR), and allows users to move Controlled Unclassified Information (CUI) into the cloud. Check out our blog post, Monitor AWS GovCloud With Metricly, or the official AWS Guide for more information.
 

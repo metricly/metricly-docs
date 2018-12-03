@@ -5,6 +5,8 @@ draft: true
 categories: ["integration", "admin guide", "getting started"]
 tags: ["aws", "access key"]
 author: Lawrence Lane
+pre: "<i class='fa fa-download'></i> "
+weight: 3
 ---
 ## Access key
 
