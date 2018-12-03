@@ -3,7 +3,7 @@ title: "Optional Config"
 date: 2018-11-30T16:08:13-05:00
 draft: true
 categories: ["integration", "admin guide", "getting started"]
-tags: ["aws", "optional config"]
+tags: ["aws", "optional config", "elements"]
 author: Lawrence Lane
 ---
 ## Change Element Display Names
@@ -41,3 +41,29 @@ Adding the private IP address to your element names enables your team to immedia
 ```
 <#if tags.Name??>${tags.Name}<#elseif tags.aws_autoscaling_groupName??>${tags.aws_autoscaling_groupName}<#else>${meta.originalName}</#if><#if attributes.privateIpAddress??> (${attributes.privateIpAddress})</#if>
 ```
+
+## Filter AWS Elements
+You can filter what AWS elements are included in Metricly’s monitoring by using regex to match key-value pairs (ASG, EC2, EBS, ELB, RDS, Redshift, Elasticache, EMR), Namespace names (Custom Cloudwatch Metric), queue names (SQS), table names (DynamoDB), cluster names (ECS), function names (Lambda), or stream names (Kinesis). Metricly offers opt-in (include) or opt-out (exclude) element filtering. For more information about tagging elements in AWS, see the following AWS documentation.
+
+### Using opt-in filtering
+**For key-value pairs (ASG, EC2, EBS, ELB, RDS, Redshift, Elasticache, EMR elements, ALB):**  
+
+1. In your AWS account, create or choose an existing tag (key-value pair). Then, assign the tag to the AWS elements you want Metricly to monitor.
+2. On the AWS Integration Setup page, expand  the element types you want to filter. Key-value pair fields display.
+![Opt-In Filtering](/images/Optional-Config/opt-in-filtering.png)
+3. Select the **Filtering** checkbox.
+4. Select **Include**. Type the proper Regex to match the tag(s) you created in your AWS account for each element type you want to filter.
+5. Click **Save**.
+
+**For names (Custom Cloudwatch, SQS, DynamoDB, Kinesis, ECS, Lambda elements, ALB):**
+1. Prepate the queue, table, or stream name(s) for the AWS element(s) you want to monitor.
+2. On the AWS Integration Setup page, expand  the element types you want to filter. Name fields display.
+![SQS filtering](/images/Optional-Config/sqs-filtering.png)
+3. Select the **Filtering** checkbox.
+4. Select **Include**. Type the name of the table, queue, or stream for each element type you want to filter.
+5. Click **Save**.
+
+{{% alert theme="info" %}} Say you want to filter out all Custom Cloudwatch Namespaces except for customnamespace1 and customnamespace2. You would put the following in the field: (customnamespace1|customnamespace2) {{% /alert %}}
+
+#### Regex Examples
+The filtering fields append a ``.*`` to the front and back of each value input into the fields. For example, if you input ``.Prod-app1``, it will be interpreted as ``.*.Prod-app1.*.`` We recommend testing any regular expressions that you create here.
