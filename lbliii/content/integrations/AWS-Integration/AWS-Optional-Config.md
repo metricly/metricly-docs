@@ -11,7 +11,7 @@ You can change how certain elements’ names are displayed in the application to
 
 1. Under the Include Types list, expand the desired type.  
 2. Beneath the Tag Key field, click **Advanced**. A menu expands.  
-![Element Name](/images/Optional-Config/element-name.png)
+![Element Name](/images/AWS-Optional-Config/element-name.png)
 3. Hover next to Element Name; an edit icon will appear. Click the icon.  
 4. Type the desired name into the field.  
 5. Select an element to use as a preview for your new element name using the Element To Preview drop-down menu.  
@@ -50,7 +50,7 @@ You can filter what AWS elements are included in Metricly’s monitoring by usin
 
 1. In your AWS account, create or choose an existing tag (key-value pair). Then, assign the tag to the AWS elements you want Metricly to monitor.
 2. On the AWS Integration Setup page, expand  the element types you want to filter. Key-value pair fields display.
-![Opt-In Filtering](/images/Optional-Config/opt-in-filtering.png)
+![Opt-In Filtering](/images/AWS-Optional-Config/opt-in-filtering.png)
 3. Select the **Filtering** checkbox.
 4. Select **Include**. Type the proper Regex to match the tag(s) you created in your AWS account for each element type you want to filter.
 5. Click **Save**.
@@ -58,7 +58,7 @@ You can filter what AWS elements are included in Metricly’s monitoring by usin
 **For names (Custom Cloudwatch, SQS, DynamoDB, Kinesis, ECS, Lambda elements, ALB):**
 1. Prepate the queue, table, or stream name(s) for the AWS element(s) you want to monitor.
 2. On the AWS Integration Setup page, expand  the element types you want to filter. Name fields display.
-![SQS filtering](/images/Optional-Config/sqs-filtering.png)
+![SQS filtering](/images/AWS-Optional-Config/sqs-filtering.png)
 3. Select the **Filtering** checkbox.
 4. Select **Include**. Type the name of the table, queue, or stream for each element type you want to filter.
 5. Click **Save**.
@@ -71,4 +71,4 @@ The filtering fields append a ``.*`` to the front and back of each value input i
  - Match the start and end of the string contained between ``^`` and ``$``. The following would match the key-value pair `Metricly = true`.
  - Match multiple values separated by ``|`` between ``( )``. The following would match any of the following key-value pairs: `Name = my-server-one, Name = my-server-two, Name = my-server-three`.
  - Match any character(s) using `.`, which acts as a wildcard. The following would match any value (e.g., `Name = myProd-app-1, Name = yourProd-app-1`) as long as Prod-app-1 followed.
- - Escape special regex characters ` . *  /` using a ``/``. The following would match the key-value pair `Name = my.server.one`. For a list of special regex characters you may have to escape, consult this page. 
+ - Escape special regex characters ` . *  /` using a ``/``. The following would match the key-value pair `Name = my.server.one`. For a list of special regex characters you may have to escape, consult this page.

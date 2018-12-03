@@ -16,23 +16,23 @@ This installation method leverages a CloudFormation script found in step 1.4. Af
 |--------------|---------------------------------------------------------------|
 | CostExplorer | Captures billing data. This should only be enabled on 1 AWS account, the master billing data account. |
 | CloudWatch   | Enable the CloudWatch toggle to monitor performance data. This can be done on multiple accounts. |  
-![Enable CloudWatch](/images/CloudFormation-Installation/enable-cloudwatch.png)
+![Enable CloudWatch](/images/AWS-CloudFormation-Installation/enable-cloudwatch.png)
 3. For AWS Authentication, select **IAM Role**.  
-![IAM Role](/images/CloudFormation-Installation/iam-role.png)
+![IAM Role](/images/AWS-CloudFormation-Installation/iam-role.png)
 4. Click the **CloudFormation script** link under Configure AWS Permissions. This opens a new tab in AWS.  
 5. Check **I acknowledge that AWS CloudFormation might create IAM resources**.  
 6. Click **Create Role**.  
-![I acknowledge](/images/CloudFormation-Installation/i-acknowledge.png)
+![I acknowledge](/images/AWS-CloudFormation-Installation/i-acknowledge.png)
 7. It may take a few minutes to create the role. When ready, the status turns green.
-![Read Only Status Complete](/images/CloudFormation-Installation/read-only-status-complete.png)
+![Read Only Status Complete](/images/AWS-CloudFormation-Installation/read-only-status-complete.png)
 
 ## Add Role ARN to the New AWS Integration
 1. In the AWS console, navigate to **Services** > **IAM** > **Roles**.  
 2. Find the role created in the previous section using the search bar.  
-![Create Role](/images/CloudFormation-Installation/create-role.png)
+![Create Role](/images/AWS-CloudFormation-Installation/create-role.png)
 3. Expand **Outputs** and copy the **Role ARN**.  
  - Do **not** copy the _Stack ID_. The Role ARN looks like: `arn:aws:iam::<account-number>:role/<Metricly-Role-Name>`
 4. Return to the Metricly.   
 5. Input the Role ARN into **IAM Role ARN**.  
-![IAM Role ARN](/images/CloudFormation-Installation/iam-role-arn.png)
+![IAM Role ARN](/images/AWS-CloudFormation-Installation/iam-role-arn.png)
 6. Click **Save**.  
