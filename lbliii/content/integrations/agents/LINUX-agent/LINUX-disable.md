@@ -5,6 +5,7 @@ draft: true
 categories: ["integration", "admin guide", "getting started"]
 tags: ["agents", "linux",]
 author: Lawrence Lane
+weight: 9
 ---
 
 If you need to disable an existing Linux integration or view the unique API key assigned to your account:

@@ -5,6 +5,8 @@ draft: true
 categories: ["integration", "admin guide", "getting started"]
 tags: ["agents", "linux", "commands"]
 author: Lawrence Lane
+weight: 7
+
 ---
 {{% alert theme="info"%}}These commands may vary depending on your distro. {{% /alert %}}
 

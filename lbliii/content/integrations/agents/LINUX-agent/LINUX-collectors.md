@@ -5,6 +5,7 @@ draft: true
 categories: ["integration", "admin guide", "getting started"]
 tags: ["agents", "linux", "collectors" ]
 author: Lawrence Lane
+weight: 6
 ---
 
  There are three ways to configure the Linux Agent default collectors: via the _BaseCollector_, as a combination of _individual collectors_, or with just the _SimpleCollector_. This guide outlines their differences and how to use each; however, we encourage you to try the new SimpleCollector.
