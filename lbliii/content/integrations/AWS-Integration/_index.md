@@ -29,7 +29,7 @@ Regardless of the installation method used below, Cost Explorer must be enabled 
 
 1. Log in to your AWS master billing account.
 2. Navigate to Cost Explorer.
-3. Click Enable Cost Explorer.
+3. Click **Enable Cost Explorer**.
 ![Enable Cost Explorer](/images/aws-integration/enable-cost-explorer.png)
 4. The API is now available for use but has no data; you can request up to a year of cost billing data from AWS.
 
@@ -38,7 +38,16 @@ The Access Key Method is no longer recommended; AWS recommends always using IAM 
 
 {{% children  %}}
 
-| AWS Toggle   | Description |
-|--------------|---------------------------------------------------------------|
-| CostExplorer | Captures billing data. This should only be enabled on 1 AWS account, the master billing data account. |
-| CloudWatch   | Enable the CloudWatch toggle to monitor performance data. This can be done on multiple accounts. |
+## Plan to Create Multiple AWS Integrations?
+You can create multiple AWS integrations if you wish. If you haven’t created an AWS integration yet, continue with the installation instructions.  
+
+### Create Additional AWS Integrations
+If you’ve already created an AWS integration but want to create another one, navigate to the Integrations page (top navigation menu) and click the **Amazon Web Services** card. Your most recently created integration’s information will be available in the fields. Click **Add Integration**; a blank AWS integration setup page will appear.
+
+Elastic Map Reduce (EMR) clusters work a little differently than other AWS element types in that terminated clusters remain in your AWS console for two months. To avoid any confusion with your inventory and metric collection, Metricly does not show terminated clusters in the UI.
+
+### Edit Most Recently Added AWS Integration
+If you’ve already created an AWS integration and want to edit the configuration information, navigate to the Integrations page (top navigation menu) and click the **Amazon Web Services** card. Your most recently created integration’s information will be available in the fields; edit as necessary.
+
+### Edit Any AWS Integration
+If you want to edit a different AWS integration, click **View Current Integrations** on the AWS integration setup page, then select the desired AWS integration.
