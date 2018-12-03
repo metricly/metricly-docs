@@ -6,21 +6,21 @@ categories: ["integration", "admin guide", "getting started"]
 tags: ["aws", "detailed billing", "iam role"]
 author: Lawrence Lane
 ---
-### IAM Role Method
+## IAM Role Method
 
 Setting up an AWS integration via IAM Role is a two step process:
 
 Create a new AWS integration in Metricly using an IAM read-only role.
 Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
 
-#### Step 1: Create a new AWS integration
+### Step 1: Create a new AWS integration
 1. From the top navigation menu, select Integrations.
 2. Click the Amazon Web Services card.
 3. Type a name for the new AWS integration. Ensure that Data Collection is selected.
 4. For AWS Authentication, select IAM Role.
 5. In a separate, new tab, open your AWS console.
 
-#### Step 2a: Create Read Only Role (with standard permissions)
+### Step 2a: Create Read Only Role (with standard permissions)
 1. Log in to your AWS Identity & Access Management (IAM) Console.
 2. Once in the IAM dashboard, navigate to the Roles section.
 3. Click Create New Role.
@@ -41,7 +41,7 @@ If you are not able to create a new read only role through the AWS Identity & Ac
 
 Please make sure you save the role in the AWS console before you attempt the next step.
 
-#### Step 2b: Creating a Read Only Role (with minimal permissions)
+### Step 2b: Creating a Read Only Role (with minimal permissions)
 If you want to use a limited read only access policy, you’ll need to create a custom policy first.
 
 1. Log in to your AWS Identity & Access Management (IAM) Console.
