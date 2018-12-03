@@ -3,7 +3,7 @@ title: "IAM"
 date: 2018-11-30T16:08:13-05:00
 draft: true
 categories: ["integration", "admin guide", "getting started"]
-tags: ["aws", "detailed billing", "iam role"]
+tags: ["aws", "iam role"]
 author: Lawrence Lane
 ---
 ## IAM Role Method
