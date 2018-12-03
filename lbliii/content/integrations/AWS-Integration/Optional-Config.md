@@ -67,3 +67,8 @@ You can filter what AWS elements are included in Metricly’s monitoring by usin
 
 #### Regex Examples
 The filtering fields append a ``.*`` to the front and back of each value input into the fields. For example, if you input ``.Prod-app1``, it will be interpreted as ``.*.Prod-app1.*.`` We recommend testing any regular expressions that you create here.
+
+ - Match the start and end of the string contained between ``^`` and ``$``. The following would match the key-value pair `Metricly = true`.
+ - Match multiple values separated by ``|`` between ``( )``. The following would match any of the following key-value pairs: `Name = my-server-one, Name = my-server-two, Name = my-server-three`.
+ - Match any character(s) using `.`, which acts as a wildcard. The following would match any value (e.g., `Name = myProd-app-1, Name = yourProd-app-1`) as long as Prod-app-1 followed.
+ - Escape special regex characters ` . *  /` using a ``/``. The following would match the key-value pair `Name = my.server.one`. For a list of special regex characters you may have to escape, consult this page. 
