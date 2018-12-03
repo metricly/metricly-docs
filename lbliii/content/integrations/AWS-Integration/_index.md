@@ -3,7 +3,7 @@ title: "AWS Integration"
 date: 2018-11-30T16:08:13-05:00
 draft: true
 categories: ["integration", "admin guide", "getting started"]
-tags: ["aws", "detailed billing", "iam role"]
+tags: ["aws", "detailed billing", "iam role", "cost explorer"]
 author: Lawrence Lane
 ---
 The Amazon Web Services (AWS) Integration allows performance data to be collected at regular intervals from AWS for analysis in Metricly.
@@ -34,9 +34,11 @@ Regardless of the installation method used below, Cost Explorer must be enabled 
 4. The API is now available for use but has no data; you can request up to a year of cost billing data from AWS.
 
 ## Installation Methods
-The Access Key Method is no longer recommended; AWS recommends always using IAM Roles. Check out AWS’s Security Best Practices for more information.
+The Access Key Method is no longer recommended; AWS recommends always using IAM Roles. Check out AWS’s Security Best Practices for more information.  
 
-{{% children  %}}
+1. [CloudFormation Script][1]  
+2. [IAM Method][2]  
+3. [Access Keys][3]  
 
 ## Plan to Create Multiple AWS Integrations?
 You can create multiple AWS integrations if you wish. If you haven’t created an AWS integration yet, continue with the installation instructions.  
@@ -51,3 +53,7 @@ If you’ve already created an AWS integration and want to edit the configuratio
 
 ### Edit Any AWS Integration
 If you want to edit a different AWS integration, click **View Current Integrations** on the AWS integration setup page, then select the desired AWS integration.
+
+[1]:/integrations/aws-integration/cloudformation-installation
+[2]:/integraitons/aws-integration/iam-installation
+[3]: /integrations/aws-integration/acess-Key
