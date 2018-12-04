@@ -3,11 +3,22 @@ title: "Widgets"
 date: 2018-12-03
 draft: true
 categories:
-tags: ["getting started", "directory page", "user guide"]
+tags: ["getting started", "directory page", "user guide", "widgets"]
 author: Lawrence Lane
 alwaysopen: false
-weight: 2
+weight:
 ---
+This guide includes a list of all **widget types** available, their **options**, and the **actions** you can take. To take full advantage of widgets, you should strategize how to tag, group, and visualize the data in your environment. General knowledge on [elements][1] and the behavior of your [metrics][2] is strongly encouraged before making a custom dashboard.
+
+## Move Widgets
+1. Hover over the widget’s title to select. The header turns gray and your cursor is replaced with {{< icon name="fa-arrows" size="large" >}} when a widget is selected.
+2. **Drag** widget to desired position.
+
+## Resize Widgets
+1. Hover over a widget to select. Arrows appear in the bottom left and right corners when a widget is selected.
+![Resizing a Widget](/images/_index/resizing-a-widget.png)
+2. **Drag** corners to resize.
+
 ## Widget Controls
 
 ### Create
@@ -37,3 +48,7 @@ weight: 2
 
 ### Notify
 Receive daily or weekly emails that snapshot widget data (limited to the table widget).
+
+
+[1]:idk
+[2]:/data-visualization/metrics

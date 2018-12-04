@@ -6,5 +6,5 @@ categories:
 tags: ["getting started", "metrics", "widgets", "dashboards"]
 author: Lawrence Lane
 ---
-
-blah blah widgets
+More writeup coming soon. Here's what it looks like:
+![Table Widget](/images/table-widget/table-widget.png)

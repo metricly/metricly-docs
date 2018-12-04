@@ -6,4 +6,6 @@ categories:
 tags: ["getting started", "metrics", "widgets", "dashboards"]
 author: Lawrence Lane
 ---
-adfada 
+Options for this widget type include: **line**, **area**, and **stacked**.
+
+![Multi Metric Widget](/images/multi-metric-widget/multi-metric-widget.png)
