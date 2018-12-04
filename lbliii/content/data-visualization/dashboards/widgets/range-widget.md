@@ -6,4 +6,6 @@ categories:
 tags: ["getting started", "metrics", "widgets", "dashboards"]
 author: Lawrence Lane
 ---
-dsfafa
+Options for this widget type include: **table**, **graph**, **bar**.
+
+![Range Widget](/images/range-widget/range-widget.png)

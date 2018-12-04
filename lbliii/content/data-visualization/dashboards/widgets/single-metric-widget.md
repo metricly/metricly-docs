@@ -6,4 +6,6 @@ categories:
 tags: ["getting started", "metrics", "widgets", "dashboards"]
 author: Lawrence Lane
 ---
-dsfafa
+Options for this widget type include: **chart**, **gauge**, **value**, and **time series**.
+
+![Single Metric Widget](/images/single-metric-widget/single-metric-widget.png)
