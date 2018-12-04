@@ -5,7 +5,7 @@ draft: true
 categories: ["integration", "admin guide", "getting started"]
 tags: ["agents", "linux", "docker"]
 author: Lawrence Lane
-pre: "<i class='fa fa-download'></i> "
+pre: "<i class='fa fa-download'></i> &nbsp; "
 weight: 2
 ---
 ## 1. Copy API Key From Docker Integration
