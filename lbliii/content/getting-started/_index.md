@@ -34,7 +34,9 @@ We recommend linking your AWS account using the [CloudFormation Method][2] found
 {{< icon name="fa-check-square-o" size="large" >}} ASG Recommendation   
 {{< icon name="fa-check-square-o" size="large" >}} Idle Resource Discovery (ELB, EBS)
 
-{{% alert theme="info" %}} Remember to enable **cost explorer** and **detailed billing** before moving beyond this stage. {{% /alert %}}
+{{% notice tip %}}
+Remember to enable **cost explorer** and **detailed billing** before moving beyond this stage.
+{{% /notice %}}
 
 ### 4. Install Agents (Linux, Windows)
 Check out our most popular agents! Click on the links to read their in-depth setup documentation. These agents pull in additional cost metrics and help you take action on report insights. **Using these agents ensures the most accurate cost recommendations**.
