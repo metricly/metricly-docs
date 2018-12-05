@@ -5,6 +5,7 @@ draft: true
 categories:
 tags: ["getting started", "metrics", "elements", "inventory page"]
 author: Lawrence Lane
+weight: 2
 ---
 
 Your inventory is the elements that make up your environment, from your java virtual machines to your Amazon EC2s. Metricly’s Inventory Explorer allows you to view and search the elements in your inventory.
