@@ -15,7 +15,9 @@ author: Lawrence Lane
 - **Element, Type, More**:  Additional expandable filter options  
 - **Grouped By**: Contains a menu of all quick groups, tags, and attributes available to Metricly. After you’ve rendered some metric charts, choose one of the groupings and Metricly will automatically group the metric charts based on your selection.
 
-{{% alert theme="info"%}} If you chose to display all EC2 metrics and then grouped by instance ID, each instance’s set of metrics would be grouped in a section together under the instance’s ID. {{% /alert %}}
+{{% notice note %}}
+If you chose to display all EC2 metrics and then grouped by instance ID, each instance’s set of metrics would be grouped in a section together under the instance’s ID. 
+{{% /notice %}}
 
 Once you have added all needed search criteria, click **Render Charts** to populate results.
 
