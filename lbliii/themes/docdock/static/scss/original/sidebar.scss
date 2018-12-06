@@ -38,7 +38,7 @@
     }
 
     hr {
-        border-bottom: 1px solid #2a232f;
+        border-bottom: 0px solid #2a232f;
     }
 
     a.padding {
@@ -118,7 +118,7 @@
             margin: 0 0 0 1rem;
         }
 
-        
+
 
         &.topics.searched ul {
             display: block;
@@ -256,7 +256,7 @@
             right: 15px;
         }
 
-        
+
     }
 
     &.showVisitedLinks ul li a {

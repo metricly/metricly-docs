@@ -378,7 +378,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     background: $side_back_color;
     color: $side_text_color;
     text-align: center;
-    border-bottom: 1px solid $side_focus_back_color;
+    border-bottom: 0px solid $side_focus_back_color;
     padding: 1rem;
 }
 
