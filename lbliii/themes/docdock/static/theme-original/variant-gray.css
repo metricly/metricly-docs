@@ -1,14 +1,14 @@
 
 :root{
-    --SIDE-MAIN-color:#a0a0a0;
-    --SIDE-MAIN-TXT-color:black;
-    --MAIN-HOVER-color:#505050;
-    --SIDE-FOCUS-BACK-color:#707070;
-    --SIDE-FOCUS-FORE-color:black;
-    --MENU-LINK-color:black;
-    --MENU-ACTIVE-BACK-color:#505050;
-    --MENU-ACTIVE-LINK-color:white;
-    
+    --SIDE-MAIN-color:#00A98e;
+    --SIDE-MAIN-TXT-color:#454545;
+    --MAIN-HOVER-color:#00A98e;
+    --SIDE-FOCUS-BACK-color:#efefef;
+    --SIDE-FOCUS-FORE-color:#454545;
+    --MENU-LINK-color: #fff;
+    --MENU-ACTIVE-BACK-color:#454545;
+    --MENU-ACTIVE-LINK-color:#00A98e;
+
 }
 a, #sidebar ul li.visited > a .read-icon {
 	color: var(--SIDE-MAIN-color);
@@ -24,7 +24,7 @@ a:hover {
 }
 #sidebar #header-wrapper {
     background: var(--SIDE-MAIN-color);
-    color: var(--BF-color)
+    color: var(--BF-color);
     border-color: var(--SIDE-FOCUS-BACK-color);
 }
 #sidebar .searchbox {
@@ -57,5 +57,3 @@ a:hover {
 .footline {
 	border-color: var(--SIDE-FOCUS-BACK-color);
 }
-
-
