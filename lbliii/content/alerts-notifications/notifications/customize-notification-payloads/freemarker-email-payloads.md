@@ -25,6 +25,37 @@ There are two event payload types that can be leveraged with email notification 
 Alternatively, you can create your new custom email payload in the policy editor on the new notification itself by clicking **+ New Email**.
 
 
-Example 1
+**Example 1**
 
-This example provides the policy name related to the event in the subject of the email and then provides the event category name of the event firing in the body. When the event clears, it sends another email with “CLEAR” as the body text.
+This example provides the policy name related to the event in the subject of the email and then provides the event category name of the event firing in the body. When the event clears, it sends another email with `CLEAR` as the body text.
+
+```
+Metricly Event [${policyName}]
+```
+
+```
+<#if payloadType == "event">
+  ${eventCategory.name}
+</#if>
+<#if payloadType == "event_cleared">
+  CLEAR
+</#if>
+```
+
+**Example 2**
+
+This example sends an email with `UP` or `DOWN` as the subject line, with all of the event details in the email body.
+
+```
+<#if payloadType == "event">DOWN</#if><#if payloadType == "event_cleared">UP</#if>
+```
+
+```
+Time: ${eventTimestamp}
+Event Category: ${eventCategory.name}
+Policy Name: ${policyName}
+Policy Description: ${policyDescription}
+Event ID: ${event.id}
+Element: ${elementName}
+Violation: ${event.data.results}
+```

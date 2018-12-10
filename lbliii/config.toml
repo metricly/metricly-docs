@@ -4,7 +4,6 @@ title = "Metricly Docs"
 theme = "docdock"
 [params]
 themeStyle = "flex"
-themeVariant= "gray"
 disableHomeIcon = true
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
