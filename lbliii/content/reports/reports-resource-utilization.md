@@ -3,7 +3,7 @@ title: "Resource Utilization"
 date: 2018-12-03
 draft: true
 categories:
-tags: ["reports", "directory page",]
+tags: ["reports",]
 author: Lawrence Lane
 alwaysopen: false
 weight: 4
