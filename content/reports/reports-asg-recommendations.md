@@ -16,7 +16,8 @@ The Auto Scaling Group (ASG) Recommendations report provides a summary of the EC
 
 {{% notice tip %}}
 The maximum number of instance hours in a week for a single EC2 instance is 168. So an ASG with 2 instances active for an entire week will contribute 336 instance-hours to the total.
-{{% /notice tip %}}
+{{% /notice %}}
+
 
 ## Tuning your ASGs
 By analyzing the instance count and the CPU utilization across managed instances over several weeks, the ASG Recommendations report can provide simple recommendations to help you right-size each ASG to match the observed and expected load. You can use the ASG Recommendations report to try out different settings, from aggressively minimized to more conservative instance counts to see how this might affect the overall utilization and EC2 costs.
