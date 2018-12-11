@@ -5,8 +5,6 @@ draft: true
 categories:
 tags: ["reports",]
 author: Lawrence Lane
-alwaysopen: false
-weight: 4
 ---
 
 The Resource Utilization report uses boxplots to provide simple visualizations of each of your element’s utilization. The types of boxplots shown are controlled by optional **filters**. Filters allow you to narrow the elements displayed by element name, element type, element tags, and element attributes.
