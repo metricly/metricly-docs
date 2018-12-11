@@ -1,12 +1,10 @@
 ---
-title: "Cost Reports "
+title: "Cost Reports"
 date: 2018-12-03
 draft: true
 categories:
-tags: ["reports", ]
+tags: ["reports", "s3", "ec2", "rds" ]
 author: Lawrence Lane
-alwaysopen: false
-weight: 4
 ---
 
 Cost reports enable you to easily identify expensive instances and compare them against **utilization**, **type**, **elements**, and **tags**. These multi-dimensional reports also break down information like **total versus individual** instance costs and even how much each **instance state** (Reserved, On-Demand) costs. Custom tagging is another easy way to group your instances.
@@ -79,3 +77,37 @@ This graph lets you group the costs by any custom tag. To use this view you need
 You can zoom into the chart by clicking and dragging your mouse across a set of elements. If you hover the mouse over a bar, you will see a tooltip showing the instance type, total cost, and the cost breakdown.
 {{% /notice %}}
 ![cost zoom](/images/reports-cost/cost-zoom.gif)
+
+## EC2 vs. RDS vs. S3
+Cost Reports across instances have largely the same experience, but this section covers the main differences between cost reporting for each.
+
+### Utilization Metrics
+#### EC2
+
+- Active Hours
+- CPU Utilization %
+- Memory Utilization
+- Disk I/O %
+- Disk Space Used %
+- Network I/O %
+
+##### Additional Considerations:
+
+- EC2 elements without a Metricly agent / Windows agent display only two utilization measures: Active Hours and CPU Utilization %.
+- EC2 elements with a Metricly agent installed have the following additional utilization metrics available: Memory Utilization %, Disk I/O %, and Disk Space Used %.
+- EC2 elements with a Windows agent installed have the Network I/O % metric available.
+
+If you have a mix of elements with and without a Metricly agent, you will see gaps in the utilization figures where values are not available.
+
+#### RDS
+
+- Active Hours
+- CPU Utilization
+- Disk Space Used %
+- IOPS Utilization %
+
+#### S3
+- Put Requests
+- Get Requests
+- Number of Objects
+- Bucket Size (bytes)
