@@ -1,7 +1,7 @@
 ---
 title: "Salt"
 date: 2018-12-11
-draft: true
+draft: false
 tags: ["salt", "integrations", "configuration management"]
 author: Lawrence Lane
 ---

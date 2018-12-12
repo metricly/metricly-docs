@@ -1,7 +1,7 @@
 ---
 title: "Dropwizard"
 date: 2018-12-11
-draft: true
+draft: false
 tags: ["dropwizard", "integrations", "custom metrics"]
 author: Lawrence Lane
 ---

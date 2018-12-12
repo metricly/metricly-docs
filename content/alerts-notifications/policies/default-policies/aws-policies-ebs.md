@@ -1,7 +1,7 @@
 ---
 title: "AWS EBS Policies"
 date: 2018-04-12
-draft: true
+draft: false
 categories:
 tags: ["alerts", "notifications", "policies", "default policies", "ebs", "aws"]
 author: Lawrence Lane

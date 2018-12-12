@@ -1,7 +1,7 @@
 ---
 title: "Elastisearch"
 date: 2018-12-11
-draft: true
+draft: false
 tags: ["elastisearch", "integrations" ]
 author: Lawrence Lane
 ---

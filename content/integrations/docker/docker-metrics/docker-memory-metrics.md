@@ -1,7 +1,7 @@
 ---
 title: "Memory Metrics"
 date: 2018-12-11
-draft: true
+draft: false
 tags: ["docker", "integrations", "metrics", "memory"]
 author: Lawrence Lane
 ---

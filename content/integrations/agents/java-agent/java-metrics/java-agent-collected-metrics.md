@@ -1,7 +1,7 @@
 ---
 title: "Collected Metrics"
 date: 2018-12-11
-draft: true
+draft: false
 tags: ["java", "integrations", "metrics", "agents"]
 author: Lawrence Lane
 ---

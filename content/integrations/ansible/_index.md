@@ -1,7 +1,7 @@
 ---
 title: "Ansible"
 date: 2018-12-11
-draft: true
+draft: false
 tags: ["ansible", "integrations", "configuration management"]
 author: Lawrence Lane
 ---

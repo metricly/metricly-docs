@@ -1,7 +1,7 @@
 ---
 title: "Memory Metrics"
 date: 2018-12-11
-draft: true
+draft: false
 tags: ["diamond", "integrations", "agents", "memory" ]
 author: Lawrence Lane
 ---

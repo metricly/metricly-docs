@@ -1,7 +1,7 @@
 ---
 title: "Filter Elements"
 date: 2018-12-11
-draft: true
+draft: false
 categories: ["integration", "admin guide", "getting started"]
 tags: ["microsoft", "azure", "integrations", "optional config"]
 author: Lawrence Lane

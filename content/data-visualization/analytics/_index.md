@@ -1,7 +1,7 @@
 ---
 title: "Analytics"
 date: 2018-04-12
-draft: true
+draft: false
 categories:
 tags: ["getting started", "directory page",]
 author: Lawrence Lane
