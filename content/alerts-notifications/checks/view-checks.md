@@ -1,7 +1,7 @@
 ---
 title: "View Checks"
 date: 2018-04-12
-draft: true
+draft: false
 categories:
 tags: ["alerts", "notifications", "checks", "custom checks"]
 author: Lawrence Lane

@@ -1,7 +1,7 @@
 ---
 title: "Widgets"
 date: 2018-12-03
-draft: true
+draft: false
 categories:
 tags: ["getting started", "directory page", "user guide", "widgets"]
 author: Lawrence Lane

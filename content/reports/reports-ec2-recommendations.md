@@ -1,7 +1,7 @@
 ---
 title: "EC2 Recommendations"
 date: 2018-12-03
-draft: true
+draft: false
 categories:
 tags: ["reports", "ec2" ]
 author: Lawrence Lane

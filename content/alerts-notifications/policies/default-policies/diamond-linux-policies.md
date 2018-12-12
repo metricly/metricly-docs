@@ -1,7 +1,7 @@
 ---
 title: "Diamond (Linux) Policies"
 date: 2018-04-12
-draft: true
+draft: false
 categories:
 tags: ["alerts", "notifications", "policies", "default policies", "linux", "diamond"]
 author: Lawrence Lane

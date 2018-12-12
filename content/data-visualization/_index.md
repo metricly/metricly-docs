@@ -1,7 +1,7 @@
 ---
 title: "Visualization"
 date: 2018-12-03
-draft: true
+draft: false
 categories:
 tags: ["getting started", "directory page",]
 author: Lawrence Lane

@@ -1,7 +1,7 @@
 ---
 title: "Enable or Disable a Policy"
 date: 2018-04-12
-draft: true
+draft: false
 categories:
 tags: ["alerts", "notifications", "events", "policies", "delete"]
 author: Lawrence Lane

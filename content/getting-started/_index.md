@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 date: 2018-12-03
-draft: true
+draft: false
 categories: ["integration", "admin guide", "getting started"]
 tags: ["getting started", "directory page",]
 author: Lawrence Lane

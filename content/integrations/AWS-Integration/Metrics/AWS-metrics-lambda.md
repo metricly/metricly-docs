@@ -1,7 +1,7 @@
 ---
 title: "Lambda Metrics"
 date: 2018-11-30T16:08:13-05:00
-draft: true
+draft: false
 categories: ["integration", "admin guide", "getting started", "metrics"]
 tags: ["aws", "metrics", "lambda"]
 author: Lawrence Lane

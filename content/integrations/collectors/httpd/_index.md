@@ -1,7 +1,7 @@
 ---
 title: "HTTPD"
 date: 2018-12-11
-draft: true
+draft: false
 tags: ["httpd", "integrations", "collectors"]
 author: Lawrence Lane
 ---

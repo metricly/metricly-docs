@@ -1,7 +1,7 @@
 ---
 title: "Create Conditions"
 date: 2018-04-12
-draft: true
+draft: false
 categories:
 tags: ["alerts", "notifications", "events", "policies", "conditions"]
 author: Lawrence Lane

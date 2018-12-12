@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Teams Notifications"
 date: 2018-05-12
-draft: true
+draft: false
 categories:
 tags: ["alerts", "notifications", "microsoft teams"]
 author: Lawrence Lane

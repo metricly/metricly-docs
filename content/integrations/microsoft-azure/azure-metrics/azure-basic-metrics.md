@@ -1,7 +1,7 @@
 ---
 title: "Basic Metrics"
 date: 2018-12-11
-draft: true
+draft: false
 categories: ["integration", "admin guide", "getting started"]
 tags: ["microsoft", "azure", "integrations", "metrics"]
 author: Lawrence Lane

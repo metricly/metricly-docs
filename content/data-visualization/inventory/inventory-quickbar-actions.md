@@ -1,7 +1,7 @@
 ---
 title: "Quickbar Actions"
 date: 2018-04-12
-draft: true
+draft: false
 categories:
 tags: ["getting started", "metrics", "elements", "bulk actions", "inventory page" ]
 author: Lawrence Lane

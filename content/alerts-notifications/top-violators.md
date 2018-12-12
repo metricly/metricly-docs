@@ -1,7 +1,7 @@
 ---
 title: "Top Violators"
 date: 2018-04-12
-draft: true
+draft: false
 categories:
 tags: ["alerts", "notifications", "events", "policies"]
 author: Lawrence Lane

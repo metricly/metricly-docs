@@ -1,7 +1,7 @@
 ---
 title: "Elastic Beanstalk"
 date: 2018-11-30T16:08:13-05:00
-draft: true
+draft: false
 categories: ["integration", "admin guide", "getting started"]
 tags: ["agents", "linux", "elastic beanstalk"]
 author: Lawrence Lane

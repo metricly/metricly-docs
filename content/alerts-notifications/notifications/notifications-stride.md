@@ -1,7 +1,7 @@
 ---
 title: "Stride Notifications"
 date: 2018-07-12
-draft: true
+draft: false
 categories:
 tags: ["alerts", "notifications", "stride"]
 author: Lawrence Lane

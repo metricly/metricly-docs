@@ -1,7 +1,7 @@
 ---
 title: "Customize Notification Payloads"
 date: 2018-05-12
-draft: true
+draft: false
 categories:
 tags: ["alerts", "notifications"]
 author: Lawrence Lane
