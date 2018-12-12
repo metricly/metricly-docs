@@ -2,7 +2,7 @@
 title: "Disk Metrics"
 date: 2018-12-11
 draft: true
-tags: ["collectd", "integrations", "metrics", "disk" ]
+tags: ["collectd", "integrations", "metrics", "disk", "collectors" ]
 author: Lawrence Lane
 ---
 

@@ -2,7 +2,7 @@
 title: "Load Metrics"
 date: 2018-12-11
 draft: true
-tags: ["collectd", "integrations", "metrics", "load" ]
+tags: ["collectd", "integrations", "metrics", "load", "collectors" ]
 author: Lawrence Lane
 ---
 

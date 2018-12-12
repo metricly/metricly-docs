@@ -5,7 +5,7 @@ draft: true
 categories: ["integration", "admin guide", "getting started"]
 tags: ["getting started", "directory page",]
 author: Lawrence Lane
-alwaysopen: true
+alwaysopen: false
 weight: 1
 ---
 

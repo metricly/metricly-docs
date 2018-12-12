@@ -6,7 +6,7 @@ categories:
 tags: ["alerts", "notifications", "events", "policies"]
 author: Lawrence Lane
 alwaysopen: false
-weight: 3
+weight: 2
 ---
 New to Metricly? Use this page as an overview for the features related to Alerts, Events, Policies, and Notifications. For a more technical walkthrough on each, see our related articles.
 

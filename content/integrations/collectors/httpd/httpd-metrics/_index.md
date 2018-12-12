@@ -2,7 +2,7 @@
 title: "Metrics"
 date: 2018-12-11
 draft: true
-tags: ["httpd", "integrations", "metrics"]
+tags: ["httpd", "integrations", "metrics" , "collectors"]
 author: Lawrence Lane
 ---
 

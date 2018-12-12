@@ -2,6 +2,7 @@
 title: "Integrations"
 date: 2018-11-30T15:34:11-05:00
 draft: true
+weight: 3
 ---
 An integration is a system from which Metricly collects data. Metricly offers integrations with *collectors*, *agents*, and *automation software*.
 
@@ -18,4 +19,4 @@ An integration is a system from which Metricly collects data. Metricly offers in
 - [Linux Agent][1]
 
 
-[1]: /integrations/agents/linux-agent 
+[1]: /integrations/agents/linux-agent
