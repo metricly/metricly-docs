@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interface on Metricly Docs</title>
+    <link>http://localhost:1313/tags/interface/</link>
+    <description>Recent content in Interface on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/interface/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interface Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-interface-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-interface-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     interface-&amp;lt;int&amp;gt;.if_errors.rx Errors per second received. average errors/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_errors.tx Errors per second sent. average errors/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_octets.rx Bytes per second received. average bytes/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_octets.tx Bytes per second sent.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Metricly Docs</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CloudFormation</title>
+      <link>http://localhost:1313/integrations/aws-integration/aws-cloudformation-installation/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/aws-cloudformation-installation/</guid>
+      <description>This installation method leverages a CloudFormation script found in step 1.4. After you make a new AWS integration in Metricly, the script populates a read-only IAM role in your AWS account and links it using the integration’s Account ID and External ID. Once created, it may take a few minutes for the status to be updated.
+Create an AWS Integration in Metricly  Open Metricly and navigate to Integrations &amp;gt; AWS.</description>
+    </item>
+    
+    <item>
+      <title>Standard Install</title>
+      <link>http://localhost:1313/integrations/agents/linux-agent/linux-standard-install/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-standard-install/</guid>
+      <description>This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as Metricly receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
+1. Copy Install Command From Linux Integration Setup Page  From the top navigation menu, select Integrations.</description>
+    </item>
+    
+    <item>
+      <title>Create or Edit a Policy</title>
+      <link>http://localhost:1313/alerts-notifications/policies/create-edit-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/create-edit-policies/</guid>
+      <description>Create, edit, delete, enable, and disable policies with the Policy Editor. You can also use Policy Editor to enable and disable notifications.
+ Open the Policy Editor. Navigate to Alerts &amp;gt; + Add New Policy. Begin crafting your policy at Step 1: Scope. You can also open an existing policy and click Edit Policy. Policies that correspond to inactive datasources cannot be edited.  The top of your policy has 3 important fields:</description>
+    </item>
+    
+    <item>
+      <title>View Checks</title>
+      <link>http://localhost:1313/alerts-notifications/checks/view-checks/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/checks/view-checks/</guid>
+      <description>Leveraging our saved filters is a good way to find your checks. All checks are tagged with the key n.checks and value check name.
+ Click Type and select either SERVER (for Linux) or WINSRV (for Windows) to pick where the check has been configured. Navigate to More &amp;gt; Tag and search for n.checks.  </description>
+    </item>
+    
+    <item>
+      <title>View an Event</title>
+      <link>http://localhost:1313/alerts-notifications/events/view-an-event/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/events/view-an-event/</guid>
+      <description>The following tools allow you to view and analyze events in the Metricly UI:
+ Event Explorer: Event Explorer displays a comprehensive list of all the events in your environment. You can filter the list by the event category, source (Metricly or External), element, element type, and/or tag of the element(s) to which an event is associated. You can also filter events within a specific time frame. For more information about Event Explorer, see below.</description>
+    </item>
+    
+    <item>
+      <title>Cost Tools</title>
+      <link>http://localhost:1313/getting-started/cost-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/getting-started/cost-tools/</guid>
+      <description> more on this later </description>
+    </item>
+    
+    <item>
+      <title>Docker Install</title>
+      <link>http://localhost:1313/integrations/agents/linux-agent/linux-docker-install/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-docker-install/</guid>
+      <description>1. Copy API Key From Docker Integration  From the Metricly top navigation menu, select Integrations.
+ Click the Docker card.
+ Ensure Data Collection is enabled. A unique API key for your account has already been generated.
+ Highlight the one-line install command from the instructions and copy them. A unique API key for your account has already been generated and included in the command line.
+  The command runs a container named netuitive-agent in the background and publishes the port values to the host.</description>
+    </item>
+    
+    <item>
+      <title>IAM</title>
+      <link>http://localhost:1313/integrations/aws-integration/aws-iam-installation/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/aws-iam-installation/</guid>
+      <description>IAM Role Method Setting up an AWS integration via IAM Role is a two step process:
+Create a new AWS integration in Metricly using an IAM read-only role. Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
+Step 1: Create a new AWS integration  From the top navigation menu, select Integrations.</description>
+    </item>
+    
+    <item>
+      <title>Metric Monitoring</title>
+      <link>http://localhost:1313/getting-started/metric-monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/getting-started/metric-monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Access Key</title>
+      <link>http://localhost:1313/integrations/aws-integration/acess-key-aws/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/acess-key-aws/</guid>
+      <description>Access key Setting up an AWS integration is a two step process:
+ Create a new AWS integration in Metricly and share the Access Key ID and Secret Access Key of the desired IAM read-only user.
+ Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
+  Step 1: Create a new AWS integration  From the top navigation menu, select Integrations.</description>
+    </item>
+    
+    <item>
+      <title>Manual Install</title>
+      <link>http://localhost:1313/integrations/agents/linux-agent/linux-elastic-manual-install/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-elastic-manual-install/</guid>
+      <description> Via RPM rpm --import https://repos.app.netuitive.com/RPM-GPG-KEY-netuitive rpm -ivh https://repos.app.netuitive.com/rpm/noarch/netuitive-repo-1-0.2.noarch.rpm yum -y install netuitive-agent  Via DEB curl -s https://repos.app.netuitive.com/netuitive.gpg | apt-key add -apt-get install -y apt-transport-https echo &amp;quot;deb https://repos.app.netuitive.com/deb/ stable main&amp;quot; &amp;gt; /etc/apt/sources.list.d/netuitive.list apt-get -y update apt-get install -y netuitive-agent  </description>
+    </item>
+    
+    <item>
+      <title>Choose Scope</title>
+      <link>http://localhost:1313/alerts-notifications/policies/choose-scope/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/choose-scope/</guid>
+      <description>The scope of a policy defines which element(s) get assigned to that policy. A policy can use a combination of criterion to narrow its selection; for example, all elements tagged with region-east + EC2 as a type.
+Scope Methods When using multiple fields, an element must meet each criterion to be included in the policy’s scope.
+Name Contains or Name Excludes  Input a string of characters into the Name Contains or Name Excludes field.</description>
+    </item>
+    
+    <item>
+      <title>Create Conditions</title>
+      <link>http://localhost:1313/alerts-notifications/policies/create-conditions/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/create-conditions/</guid>
+      <description>When you are creating conditions, the Policy Editor counts the number of metrics that apply to the conditions you have set. To view those metrics, click on the link. This link opens the list of matching metrics in a new tab.
+Create a Metric Condition  Navigate to Alerts &amp;gt; New Policy &amp;gt; Conditions &amp;gt; Add Condition &amp;gt; Add Metric Condition.  To edit an existing policy, Navigate to Alerts &amp;gt; Show All Policies &amp;gt; Click Policy Name &amp;gt; Edit Policy &amp;gt; Conditions &amp;gt; Add Metric Conditions.</description>
+    </item>
+    
+    <item>
+      <title>Create External Event Conditions</title>
+      <link>http://localhost:1313/alerts-notifications/policies/create-external-event-conditions/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/create-external-event-conditions/</guid>
+      <description>External Event conditions for policies are typically used in conjunction with Webhook integrations. See the Webhook integration setup or Webhook API documentation for more information.
+ Open Policy Editor. Click Conditions. Click Add Condition, then select Add External Event Condition.  Type into the fields to create a proper filter:  Message Contains: A regex statement that attempts to match a word or phrase in the event message. Title Contains: A regex statement that attempts to match a word or phrase in the event’s title.</description>
+    </item>
+    
+    <item>
+      <title>Detailed Billing</title>
+      <link>http://localhost:1313/integrations/aws-integration/aws-detailed-billing/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/aws-detailed-billing/</guid>
+      <description>How to Enable Detailed Billing  If you already have an S3 bucket receiving billing files from Amazon, then you do not need to complete steps 1 and 2. You can go directly to step 3 to provide Metricly access to the existing files. If you have already created an S3 bucket, you will not need to create a separate one. Just be sure to select the correct S3 bucket in step 2.</description>
+    </item>
+    
+    <item>
+      <title>Elastic Beanstalk</title>
+      <link>http://localhost:1313/integrations/agents/linux-agent/linux-elastic-beanstalk-install/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-elastic-beanstalk-install/</guid>
+      <description>Using an existing application file, you can deploy the Netuitive agent to a self-contained EC2 instance complete with a load balancer and everything else it needs to run. The Elastic Beanstalk instance can also scale by itself.
+ Before creating your Elastic Beanstalk instance, find or create a folder called .ebextensions in your application’s directory. Copy the netuitive.config file to your .ebextensions folder. Replace the sample API key at the top of the netuitive.</description>
+    </item>
+    
+    <item>
+      <title>Optional Config</title>
+      <link>http://localhost:1313/integrations/aws-integration/aws-optional-config/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/aws-optional-config/</guid>
+      <description>Change Element Display Names You can change how certain elements’ names are displayed in the application to help distinguish between each instance, e.g., you have 15 EC2 instances with the same name and want to know the difference between each.
+ Under the Include Types list, expand the desired type.
+ Beneath the Tag Key field, click Advanced. A menu expands.
+ Hover next to Element Name; an edit icon will appear.</description>
+    </item>
+    
+    <item>
+      <title>Upgrade</title>
+      <link>http://localhost:1313/integrations/agents/linux-agent/linux-upgrade/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-upgrade/</guid>
+      <description>It’s important you upgrade to the latest version of the Linux Agent whenever possible, as we’re constantly improving it. Check out the recently closed issues and pull requests, as well as the release history, to see why you should upgrade.
+ Stop the Linux Agent (use the appropriate command for your distro). The most common being:  service netuitive-agent stop /etc/init.d/netuitive-agent stop initctl stop netuitive-agent systemctl stop netuitive-agent  Run yum -y update netuitive-agent.</description>
+    </item>
+    
+    <item>
+      <title>Collectors</title>
+      <link>http://localhost:1313/integrations/agents/linux-agent/linux-collectors/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-collectors/</guid>
+      <description>There are three ways to configure the Linux Agent default collectors: via the BaseCollector, as a combination of individual collectors, or with just the SimpleCollector. This guide outlines their differences and how to use each; however, we encourage you to try the new SimpleCollector.
+Using the Simple Collector netuitive-diamond/src/collectors/simple
+Where the base or individual collectors include more data (which may be less useful or actionable), this SimpleCollector guarantees a cleaner streamlined experience.</description>
+    </item>
+    
+    <item>
+      <title>Gov Cloud</title>
+      <link>http://localhost:1313/integrations/aws-integration/aws-gov-cloud/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/aws-gov-cloud/</guid>
+      <description>AWS GovCloud (US) is a segment of Amazon Web Services cloud offerings that restrict physical and logical administrative access to U.S. citizens only. The region meets the requirements for U.S. International Traffic in Arms Regulations (ITAR), and allows users to move Controlled Unclassified Information (CUI) into the cloud. Check out our blog post, Monitor AWS GovCloud With Metricly, or the official AWS Guide for more information.
+Configuration Leave GovCloud disabled unless you have signed up for and are using a GovCloud-restricted AWS account.</description>
+    </item>
+    
+    <item>
+      <title>Common Commands</title>
+      <link>http://localhost:1313/integrations/agents/linux-agent/linux-common-commands/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-common-commands/</guid>
+      <description> These commands may vary depending on your distro. Linux Commands  service netuitive-agent {stop|start|restart}
+ /etc/init.d/netuitive-agent {stop|start|restart}
+ initctl {stop|start|restart} netuitive-agent
+ systemctl {stop|start|restart} netuitive-agent
+  </description>
+    </item>
+    
+    <item>
+      <title>Optional Config</title>
+      <link>http://localhost:1313/integrations/agents/linux-agent/linux-optional-config/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-optional-config/</guid>
+      <description>Changing Element Display Names You can change the display name of certain elements to help distinguish between each instance.
+ Navigate to Integrations &amp;gt; Linux Integration. Click Advanced; a menu expands.  Click the Element Name field to edit it. Type the desired name into the field.  An element name of ${meta.originalName} would resolve to whatever name comes in with the original element payload before it would be replaced with the optional element name template.</description>
+    </item>
+    
+    <item>
+      <title>Disable</title>
+      <link>http://localhost:1313/integrations/agents/linux-agent/linux-disable/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-disable/</guid>
+      <description>If you need to disable an existing Linux integration or view the unique API key assigned to your account:
+ Navigate to User Profile &amp;gt; Integrations. Find the Integration with an Integration Type of Infrastructure. Click its name. Toggle Data Collection to disable it.  </description>
+    </item>
+    
+    <item>
+      <title>Remove</title>
+      <link>http://localhost:1313/integrations/agents/linux-agent/linux-remove/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-remove/</guid>
+      <description> Stop the Linux Agent (use the appropriate command for your distro). The most common being:  service netuitive-agent stop /etc/init.d/netuitive-agent stop initctl stop netuitive-agent systemctl stop netuitive-agent  Remove the directory containing the Linux Agent. Default: rm -r /opt/netuitive-agent.  If you don’t want to be prompted for each file that needs to be deleted, use rm -rf /opt/netuitive-agent   </description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>http://localhost:1313/integrations/agents/linux-agent/linux-troubleshooting/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-troubleshooting/</guid>
+      <description>Set Logs to Debugging Mode To set the Linux Agent logs to Debugging Mode, update the netuitive-agent.conf file.
+ Navigate to the netuitive-agent.conf file. Update level = INFO to level = DEBUG. Save and restart your agent.  # to increase verbosity, set DEBUG level = DEBUG handlers = rotated_file propagate = 1  Need Help? 1. Save as Zip File Copy /opt/netuitive-agent/bin/get-support and paste it into your command line interface to zip up your agent configurations, logs, and system metadata.</description>
+    </item>
+    
+    <item>
+      <title>All Elastisearch Metrics</title>
+      <link>http://localhost:1313/integrations/elastisearch/elastisearch-all-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/elastisearch/elastisearch-all-metrics/</guid>
+      <description>Collected For the table below, all metrics that begin with elasticsearch.indices.* are duplicated for each index being monitored, with the * replaced by the index name (your indices will vary based on your implementation). All metrics that start with elasticsearch.thread_pool.* are duplicated for each thread pool, with the * replaced by the thread pool name. The various thread pools are:
+ bench bulk fetch_shard_started fetch_shard_store flush generic get index listener management merge optimize percolate refresh search snapshot suggest warmer     Fully Qualified Name (FQN) Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     elasticsearch.</description>
+    </item>
+    
+    <item>
+      <title>Application Gateway</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</guid>
+      <description>   Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy BASE CORR UTIL Description     azure.applicationgateway.throughput GAUGE bytes/second average 0 none none yes no no The number of bytes per second being processed by the gateway.    </description>
+    </item>
+    
+    <item>
+      <title>Azure Installation</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-installation/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-installation/</guid>
+      <description>1. Create a Microsoft Azure Integration Card  From the top navigation menu, select Integrations. Click the Microsoft Azure card. In a separate, new tab, open the Azure portal.  The following instructions were created using the Azure portal not the classic portal. Instructions vary depending on which portal you’re using.
+ 2. Create an Active Directory Application in Azure  Once in the Azure portal, click Azure Active Directory from the left side menu.</description>
+    </item>
+    
+    <item>
+      <title>Basic Metrics</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</guid>
+      <description>Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL Description     azure.virtualmachine.memory.availablememory GAUGE bytes average 0 none none yes no no The total amount of available memory in bytes.   azure.virtualmachine.memory.availableswap GAUGE bytes average 0 none none yes no no The total amount of swap space available in bytes.   azure.virtualmachine.memory.pagespersec GAUGE pages / second average 0 none none yes yes no The total number of pages read and written per second.</description>
+    </item>
+    
+    <item>
+      <title>Boot Diagnostics</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</guid>
+      <description>Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL Description     azure.virtualmachine.networkin GAUGE bytes average 0 none none yes yes no Bytes received over the network. Note that this metric is the same as the Basic Metric azure.virtualmachine.networkinterface.bytesreceived   azure.virtualmachine.networkout GAUGE bytes average 0 none none yes yes no Bytes transmitted over the network. Note that this metric is the same as the Basic Metric azure.</description>
+    </item>
+    
+    <item>
+      <title>CPU Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     cpu.total.guest Percentage of CPU spent running virtual CPUs for guest operatingsystems. average percent 0 none none yes no no   cpu.total.guest_nice Percentage of CPU spent running low-priority virtual CPUs for guestoperating systems. average percent 0 none none yes no no   cpu.total.idle Percentage of CPU not doing any work.</description>
+    </item>
+    
+    <item>
+      <title>CPU Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-cpu-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-cpu-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     cpu-#.cpu-idle.value Number of jiffies the CPU spent idle. average jiffies 0 none none yes no no   cpu-#.cpu-interrupt.value Number of jiffies the CPU spent processing hardware interrupts. average jiffies 0 none none yes no no   cpu-#.cpu-nice.value Number of jiffies the CPU spent processing low priority user threads.</description>
+    </item>
+    
+    <item>
+      <title>CPU Metrics</title>
+      <link>http://localhost:1313/integrations/docker/docker-metrics/docker-cpu-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/docker/docker-metrics/docker-cpu-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Type Units Statistic* BASE CORR Description     cpu.cpu_usage.percpu_usage* COUNTER nanoseconds  yes no Each CPU has a separate metric which tracks the number of nanoseconds that that specific CPU has been used since the container was started.   cpu.cpu_usage.total_usage COUNTER nanoseconds  yes no This metric is the sum of all of the per-CPU usage metrics. Thus, it represents the total number of nanoseconds that all CPUs have been in use since the container was started.</description>
+    </item>
+    
+    <item>
+      <title>Collected Metrics</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     *.calls The number of calls made to the method. sum count 0 none none yes no no   *.errors The number of method calls that resulted in errors. sum count 0 none none yes no no   *.time The amount of time spent executing the method totaled across all calls.</description>
+    </item>
+    
+    <item>
+      <title>Computed Metrics</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</guid>
+      <description>Computed    Fully Qualified Name (FQN) Description Statistic Units Min Max BASE CORR UTIL     netuitive.jvm.heap.utilizationpercent Percentage of the allocated heap memory that is currently in use.Computation:(Heap Used / Heap Committed) * 100 average percent 0 100 yes yes yes   netuitive.jvm.non-heap.utilizationpercent Percentage of the allocated non-heap memory that is currently in use.Computation:(Metaspace or PermGen Used + CodeCache Used / Metaspace or PermGen Committed + CodeCache Committed) * 100 average percent 0 100 yes yes yes   netuitive.</description>
+    </item>
+    
+    <item>
+      <title>Computed Metrics</title>
+      <link>http://localhost:1313/integrations/docker/docker-metrics/docker-network-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/docker/docker-metrics/docker-network-metrics/</guid>
+      <description>Computed    Name FQN Computation Units Min Max BASE CORR Description     Container CPU Percent netuitive.docker.cpu.container_cpu_percent data[‘cpu.system_cpu_usage’].actual == 0 ? 0 :(data[‘cpu.cpu_usage.total_usage’].actual /data[‘cpu.system_cpu_usage’].actual) * 100 percent 0 100 yes yes The percentage of total CPU being used by the container.   Container Memory Percent netuitive.docker.cpu.container_memory_percent (data[‘memory.usage’].actual / data[‘memory.limit’].actual) * 100 percent 0 100 yes yes The amount of memory in use by the container, expressed as a percentage of the memory available to it.</description>
+    </item>
+    
+    <item>
+      <title>Custom MBeans</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-custom-mbeans/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-custom-mbeans/</guid>
+      <description>The Java agent can collect metrics from custom mbeans. We have provided a sample spring boot application that creates 2 custom mbeans with test attributes here.
+Multiple Custom MBean Diagram For a Single Custom MBean  Navigate to the zorka.properties file in your Java agent directory. Near the bottom of the file, set the attribute netuitive.api.custom.stats.mbean to the custom mbean you defined in your application  #custom mbean to collect metrics from netuitive.</description>
+    </item>
+    
+    <item>
+      <title>DF Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-df-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-df-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     df-&amp;lt;mount&amp;gt;.df_complex-free.value Free disk space in bytes. average bytes 0 none none yes no no   df-&amp;lt;mount&amp;gt;.df_complex-reserved.value Disk space reserved for root user in bytes. average bytes 0 none none yes no no   df-&amp;lt;mount&amp;gt;.df_complex-used.value Used disk space in bytes. average bytes 0 none none yes no no    Computed    Fully Qualified Name(FQN) Description Statistic Units Min Max BASE CORR UTIL     metricly.</description>
+    </item>
+    
+    <item>
+      <title>Disk Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-disk-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-disk-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     disk-&amp;lt;dn&amp;gt;.disk_merged.read Number of merged reads per second. average operations/second 0 none none yes no no   disk-&amp;lt;dn&amp;gt;.disk_merged.write Number of merged writes per second. average operations/second 0 none none yes no no   disk-&amp;lt;dn&amp;gt;.disk_octets.read Bytes read per second. average bytes/second 0 none none yes no no   disk-&amp;lt;dn&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Disk Usage Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</guid>
+      <description> Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.iostat.totalreads Total reads across all disks. Computation: data.sum(‘iostat\..*\.reads)  0 none yes no no   metriclyicly.linux.iostat.totalwrites Total writes across all disks. Computation: data.sum(‘iostat\..*\.writes)  0 none yes no no    </description>
+    </item>
+    
+    <item>
+      <title>Diskspace Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</guid>
+      <description> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     diskspace..byte_percentfree Percentage of free bytes. average percent 0 100 none yes no no    Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.diskspace.*.byte_percentused Percentage of disk space used. Computation: 100 – diskspace.*.byte_percentfree percent 0 100 no no yes    </description>
+    </item>
+    
+    <item>
+      <title>Enable Guest OS Diagnostic Metrics</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</guid>
+      <description>Azure Virtual Machines will share boot diagnostic metrics by default, which are a small subset of core metrics. To enable Guest OS diagnostic (basic) metrics that provide more information about your machine, you’ll need to follow these steps (depending on your situation):
+Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Select a virtual machine. Another window with options will open. Select Diagnostic settings. Under Configure required settings, select the checkbox next to Basic metrics.</description>
+    </item>
+    
+    <item>
+      <title>Enable Proxy</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-enable-proxy/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-enable-proxy/</guid>
+      <description>Enable a Proxy  Navigate to the zorka.properties file. Find the proxy section:
+  netuitive.api.proxy = no netuitive.api.proxy.address = http://&amp;lt;proxy host&amp;gt;:&amp;lt;proxy port&amp;gt;  3. Change the netuitive.api.proxy line to yes.
+4. Add the correct proxy host and port to the netuitive.api.proxy.address line.</description>
+    </item>
+    
+    <item>
+      <title>Filter Elements</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-filter-elements/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-filter-elements/</guid>
+      <description>You can filter what Azure elements are included in Metricly’s monitoring by using regex to match key-value pairs. Metricly offers opt-in (include) or opt-out (exclude) element filtering.
+Using opt-in filtering  In your Azure portal, create or choose an existing tag (key-value pair). Then, assign the tag to the Azure elements you do not want Metricly to monitor. In Metricly, navigate to your Azure integration card. Expand the element types you want to filter.</description>
+    </item>
+    
+    <item>
+      <title>Interface Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-interface-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-interface-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     interface-&amp;lt;int&amp;gt;.if_errors.rx Errors per second received. average errors/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_errors.tx Errors per second sent. average errors/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_octets.rx Bytes per second received. average bytes/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_octets.tx Bytes per second sent.</description>
+    </item>
+    
+    <item>
+      <title>Load Average Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</guid>
+      <description>Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.loadavg.01.normalized The is the average run queue size over the past minute, normalizedacross CPUs. Computation: attribute[‘cpus’] == null ? null : (data[‘loadavg.01’].actual /attribute[‘cpus’].value)  0 none yes no no   metriclyicly.linux.loadavg.05.normalized The is the average run queue size over the past 5 minutes, normalizedacross CPUs. Computation: attribute[‘cpus’] == null ? null : (data[‘loadavg.</description>
+    </item>
+    
+    <item>
+      <title>Load Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-load-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-load-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     load.load.longterm The is the average run queue size over the past 15 minutes. average queued processes 0 none none yes no no   load.load.midterm The is the average run queue size over the past 5 minutes. average queued processes 0 none none yes yes no   load.</description>
+    </item>
+    
+    <item>
+      <title>Memory Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</guid>
+      <description> Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.memory.utilizationpercent Under Linux, memory buffered and cached are part of memory which can beconsidered available. See the following explanation . Computation: 100 – (memory.Buffers + memory.Cached + memory.MemFree) /memory.MemTotal * 100 percent 0 100 yes yes yes    </description>
+    </item>
+    
+    <item>
+      <title>Memory Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-memory-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-memory-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     memory.memory-buffered.value Memory being used by buffers; this memory is available to be freed forapplications to use, should they need it. average bytes 0 none none yes no no   memory.memory-cached.value Memory being used by caches; this memory is available to be freed forapplications to use, should they need it.</description>
+    </item>
+    
+    <item>
+      <title>Memory Metrics</title>
+      <link>http://localhost:1313/integrations/docker/docker-metrics/docker-memory-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/docker/docker-metrics/docker-memory-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Type Units Statistic* BASE CORR Description     memory.failcnt GAUGE count average no no A count of the number of times that the container requested memory and failed to obtain it. This value should always be 0.   memory.limit GAUGE bytes average no no The total amount of memory available to the container.   memory.max_usage GAUGE bytes average no no The maxiumum amount of memory the container has ever used.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/cassandra/cassandra-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/cassandra/cassandra-metrics/</guid>
+      <description>Due to the sheer volume of Cassandra metrics, the individual metrics won’t be documented here. Instead, here are some general properties of the groups of metrics:
+All Metrics Share the Following Properties:  Type: GAUGE Statistic: average Min: 0 Sparse Data Strategy: None BASE: Yes CORR: No UTIL: No  Ending in Latency.OneMinuteRate:  Unit: ms (milliseconds)  Non-latency OneMinuteRate Metrics:  Unit = ops (operations per second)  Contains HeapSize, DataSize, DiskSpace, Memory, or RowSize:  Unit: bytes  Ending with HitRate or Ratio:  Unit: percentunit (i.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/consul/consul-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/consul/consul-metrics/</guid>
+      <description>Fully Qualified Name (FQN) Statistic Units BASE CORR Type Computed     consul.raft.commitTime.avg max  TRUE TRUE counter yes   consul.raft.commitTime.max max  TRUE TRUE counter yes   consul.proxy.web.inbound.rx_bytes avg bytes TRUE FALSE gauge no   consul.health.service.not-found.[service] avg queries TRUE FALSE gauge no   consul.health.service.query-tags.[service].[tags] avg queries TRUE FALSE gauge no   consul.health.service.query-tag.[service].[tag] avg queries TRUE FALSE gauge no   consul.</description>
+    </item>
+    
+    <item>
+      <title>Network Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</guid>
+      <description>Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.network.*.errors The total number of errors, both transmit and receive. Computation: network..rx_errors + network..tx_errors errors 0 none yes no no   metriclyicly.linux.network.*.packets The total number of packets, both transmitted and received. Computation: network..rx_packets + network..tx_packets packets 0 none yes yes no   metriclyicly.linux.network.*.errors.percent The percentage of errors, both transmit and receive.</description>
+    </item>
+    
+    <item>
+      <title>Processes Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-processes-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-processes-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     processes.fork_rate.value Number of processes per second being forked. average forks/second 0 none none yes no no   processes.ps_state-blocked.value Number of processes in a blocked state. A process that is blocked is onethat is waiting for some event, such as a resource becoming available orthe completion of an I/O operation.</description>
+    </item>
+    
+    <item>
+      <title>Send Tags Via Zorka</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-element-tags-zorka/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-element-tags-zorka/</guid>
+      <description>Send Element Tags via Zorka Agent  Navigate to the zorka.properties file in your Java agent directory. Near the bottom of the file, uncomment the #netuitive.api.tags list and add tags following the below format:   netuitive.api.tags = name:value, second:value  3. Save the file.</description>
+    </item>
+    
+    <item>
+      <title>Uninstall Agent</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-uninstall/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-uninstall/</guid>
+      <description> How to Uninstall  Remove any JVM startup references to the Netuitive Java Agent.  java -javaagent:/opt/netuitive-zorka/netuitive.jar=/opt/netuitive-zorka -jar zorka-core-test.jar -- service   Delete all Netuitive Java Agent (netuitive-zorka-{version}) files.  If you instrumented metrics using the jvm.bsh script, you will need to remove the references to the script as well.
+ </description>
+    </item>
+    
+    <item>
+      <title>Upgrade Java</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-upgrade/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-upgrade/</guid>
+      <description> How to Upgrade  Download the latest Java agent here. Copy the new netuitive.jar file to your existing Java agent files to replace the old netuitive.jar file. Optionally, manually merge the new zorka.properties file with the old file to receive any new fields or settings.  </description>
+    </item>
+    
+    <item>
+      <title>Uptime Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-uptime-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-uptime-metrics/</guid>
+      <description> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     uptime.uptime.value Number of seconds since the system was last booted. max seconds 0 none none yes no no    </description>
+    </item>
+    
+    <item>
+      <title>Use Calculator App</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-calculator-app/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-calculator-app/</guid>
+      <description>To to run the calculator app with the zorka agent, use the following command:
+java -javaagent:/opt/netuitive-zorka-agent/netuitive.jar=/opt/netuitive-zorka-agent/ -jar /opt/zorka-core-test.jar  Calculator.java Source package com.netuitive.agent.test; public class Calculator { public Integer calculate(String operator, Integer first, Integer second) { if (operator.equals(“+”)) { return add(first, second); } else if (operator.equals(“-“)) { return minus(first, second); } else if (operator.equals(“*”)) { return multiply(first, second); } else if (operator.equals(“/”)) { return divide(first, second); } else { throw new IllegalArgumentException(“‘” + operator + “‘ is not supported, use one of [+|-|*|/] operators”); } } private Integer add(Integer first, Integer second) { return first + second; } private Integer minus(Integer first, Integer second) { return first – second; } private Integer multiply(Integer first, Integer second) { return first * second; } private Integer divide(Integer first, Integer second) { return first / second; } }  Example Below is an example file called calculator.</description>
+    </item>
+    
+    <item>
+      <title>ASG Recommendations</title>
+      <link>http://localhost:1313/reports/reports-asg-recommendations/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/reports/reports-asg-recommendations/</guid>
+      <description>The Auto Scaling Group (ASG) Recommendations report provides a summary of the EC2 instance hours managed by all of your Auto Scaling Groups over the past few weeks. The data is summarized by hour and day for the preceding one-to-four weeks depending on how long Metricly has been monitoring the ASG.  Total Instance Count graph: This graph depicts the average total number of instances managed by all of your ASG(s) by hour and day.</description>
+    </item>
+    
+    <item>
+      <title>Add Metric to Dashboard</title>
+      <link>http://localhost:1313/data-visualization/metrics/metric-add-to-dashboard/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/metrics/metric-add-to-dashboard/</guid>
+      <description>Add as Single Metric Widget  Open the Metric chart sub-menu  . Click Add to Dashboard. In the Add to Dashboard window, click Dashboards and select a dashboard or type to search. Change the widget name if desired. Click Save. The widget is now available on the selected dashboard.  Add as Multi-Metric Widget  Merge as many metrics as desired. Open the Metric Chart sub-menu  . Click Add to Dashboard.</description>
+    </item>
+    
+    <item>
+      <title>Chart Features</title>
+      <link>http://localhost:1313/data-visualization/metrics/metric-charts/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/metrics/metric-charts/</guid>
+      <description>Metric Charts Metric charts on the Metrics page allow you to view time-series data collected on elements in your environment. The range of data shown in metric charts corresponds to the range of data shown in the Events graph. This allows you to compare event data to the metric behavior that caused it.
+Metric Metadata Click the metric name to open the metric metadata panel.    Metadata Description     Avg The average value recorded in the last cycle.</description>
+    </item>
+    
+    <item>
+      <title>Copy a Dashboard</title>
+      <link>http://localhost:1313/data-visualization/dashboards/copy-dashboard/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/copy-dashboard/</guid>
+      <description> Copy a Dashboard A quick and easy way to create a customized dashboard is to copy a defaulted one and edit it.
+ Navigate to Dashboards &amp;gt; Select Dashboard Name. Click on  &amp;gt; Copy.  Rename the Dashboard. Edit the widgets by clicking … &amp;gt; Settings or Delete.  </description>
+    </item>
+    
+    <item>
+      <title>Cost Explorer Widget</title>
+      <link>http://localhost:1313/data-visualization/dashboards/widgets/cost-explorer-widget/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/widgets/cost-explorer-widget/</guid>
+      <description>Options for this widget type include: period comparison, service total, and doughnut.
+The Period Comparison option enables you to select a current timeframe (day, month, 6 months, etc) and compare its previous timeframe interval. For example, the below screenshot shows a current 6 month period comparison of May 16, 2018 – November 15, 2018 and a previous 6 month interval of November 16, 2017 – May 15, 2018.</description>
+    </item>
+    
+    <item>
+      <title>Cost Reports</title>
+      <link>http://localhost:1313/reports/reports-cost/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/reports/reports-cost/</guid>
+      <description>Cost reports enable you to easily identify expensive instances and compare them against utilization, type, elements, and tags. These multi-dimensional reports also break down information like total versus individual instance costs and even how much each instance state (Reserved, On-Demand) costs. Custom tagging is another easy way to group your instances.
+Cost Reports are generated once per week. It may take up to 7 days before your first report is available.</description>
+    </item>
+    
+    <item>
+      <title>Create New Dashboard</title>
+      <link>http://localhost:1313/data-visualization/dashboards/create-new-dashboard/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/create-new-dashboard/</guid>
+      <description> Create a New Dashboard  Navigate to Dashboards on the main navigation menu. Click New Dashboard. Type a name for the dashboard. Click Save. You’ll be taken to the Widget Library, where you can add a widget.   </description>
+    </item>
+    
+    <item>
+      <title>Delete a Dashboard</title>
+      <link>http://localhost:1313/data-visualization/dashboards/delete-dashboard/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/delete-dashboard/</guid>
+      <description> Via Manage Dashboards You can delete a dashboard by navigating to Dashboards &amp;gt; Manage Dashboards and clicking  . Via Any Dashboard You can delete custom dashboards directly on their page by clicking  &amp;gt; Delete Dashboard. </description>
+    </item>
+    
+    <item>
+      <title>Duration &amp; Refresh Intervals</title>
+      <link>http://localhost:1313/data-visualization/dashboards/duration-refresh-intervals/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/duration-refresh-intervals/</guid>
+      <description>Adjusting the dashboard’s Duration or Refresh Interval affects the data displayed in widgets on your dashboard.
+Change Duration Edit the Duration setting for the dashboard in the sub navigation menu.
+ Choose a Duration (past) value. Select an Ending value (default is Now). The data then automatically reloads to reflect your changes.   Two widgets behave differently in regards to the Duration setting:
+ Metric Status Widget: Current Values in Metric Status widgets are not affected by the Time Frame setting.</description>
+    </item>
+    
+    <item>
+      <title>EC2 Recommendations</title>
+      <link>http://localhost:1313/reports/reports-ec2-recommendations/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/reports/reports-ec2-recommendations/</guid>
+      <description>The EC2 Recommendation report is designed to help you reduce EC2 instance running costs by suggesting alternative instance types that may provide a similar level of service at a lower cost. The report presents details on the current EC2 instance types and their respective memory, VCPUs, and hourly instance running costs. Using these characteristics and the utilization observed during the reporting period, it estimates the memory and number of VCPUs that are actually needed, subject to optional constraints such as CPU utilization not exceeding a particular level, etc.</description>
+    </item>
+    
+    <item>
+      <title>Email Reports</title>
+      <link>http://localhost:1313/reports/reports-email/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/reports/reports-email/</guid>
+      <description>Email Reports are generated and sent after business hours (EST) and can be enabled from your user account profile. Email Reports provide a quick look into your environment from the last 24 hours. Clicking any of the links within the email opens Metricly to the appropriate section.
+Available Reports There are three main email reports available: the Weekly Recommendation Report, the Daily Top Violator Report, and the Daily AWS Cost Report.</description>
+    </item>
+    
+    <item>
+      <title>Events Metric Widget</title>
+      <link>http://localhost:1313/data-visualization/dashboards/widgets/events-widget/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/widgets/events-widget/</guid>
+      <description>Options for this widget type include: heatmap and ticker.</description>
+    </item>
+    
+    <item>
+      <title>Favorites</title>
+      <link>http://localhost:1313/data-visualization/dashboards/favorite-dashboard/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/favorite-dashboard/</guid>
+      <description>Favorited dashboards display as a drop-down list under Dashboards in the main top navigation menu.
+Favorite a Dashboard  Navigate to the Dashboard menu (or Dashboard &amp;gt; Manage Dashboards). A list of all the dashboards available in your tenant appears. Click  next to a dashboard to favorite it.  Unfavorite a Dashboard Repeat the above process and click  to unfavorite the dashboard. This removes the dashboard from your quick drop-down list in the top navigation menu.</description>
+    </item>
+    
+    <item>
+      <title>Manipulate Metric Charts</title>
+      <link>http://localhost:1313/data-visualization/metrics/metric-charts-manipulate/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/metrics/metric-charts-manipulate/</guid>
+      <description>Metric charts offer functionality that allow you to merge two charts together, move charts around on the Metrics page dashboard, zoom in, and drop a marker on a data point.
+Merge Metric Charts Click on the header of one metric chart and drag it on top of another chart into the green merge region. Click to unmerge the metric charts.
+Move Metric Charts Click on the header of one metric chart and drag it into the blue move region located above a different chart.</description>
+    </item>
+    
+    <item>
+      <title>Multi Metric Widget</title>
+      <link>http://localhost:1313/data-visualization/dashboards/widgets/multi-metric-widget/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/widgets/multi-metric-widget/</guid>
+      <description>Options for this widget type include: line, area, and stacked.</description>
+    </item>
+    
+    <item>
+      <title>Page Features</title>
+      <link>http://localhost:1313/data-visualization/metrics/metric-page/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/metrics/metric-page/</guid>
+      <description>Sub Navigation Filters  Name Contains: Specific search based on name
+ Search Metrics: Broad filter based on metric type, provided in tree and list form Element, Type, More: Additional expandable filter options
+ Grouped By: Contains a menu of all quick groups, tags, and attributes available to Metricly. After you’ve rendered some metric charts, choose one of the groupings and Metricly will automatically group the metric charts based on your selection.</description>
+    </item>
+    
+    <item>
+      <title>Range Metric Widget</title>
+      <link>http://localhost:1313/data-visualization/dashboards/widgets/range-widget/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/widgets/range-widget/</guid>
+      <description>Options for this widget type include: table, graph, bar.</description>
+    </item>
+    
+    <item>
+      <title>Resource Utilization</title>
+      <link>http://localhost:1313/reports/reports-resource-utilization/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/reports/reports-resource-utilization/</guid>
+      <description>The Resource Utilization report uses boxplots to provide simple visualizations of each of your element’s utilization. The types of boxplots shown are controlled by optional filters. Filters allow you to narrow the elements displayed by element name, element type, element tags, and element attributes.
+Boxplots are a standard way of displaying a distribution of data based on five values: the minimum, the lower quartile (25th percentile), the median, the upper quartile (the 75th percentile), and the maximum.</description>
+    </item>
+    
+    <item>
+      <title>Share a Dashboard</title>
+      <link>http://localhost:1313/data-visualization/dashboards/share-dashboard/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/share-dashboard/</guid>
+      <description>You can configure a dashboard to be either public or private. By default, dashboards you create are private.
+Make a Dashboard Public  Navigate to the Dashboards menu. Select All Dashboards &amp;gt; My Dashboards. A list of the dashboards you have created appears.  Toggle Shared to active (green) to make the dashboard public.  Make a Dashboard Private To make a dashboard private, repeat the above steps and toggle Shared to inactive (grey).</description>
+    </item>
+    
+    <item>
+      <title>Single Metric Widget</title>
+      <link>http://localhost:1313/data-visualization/dashboards/widgets/alerts-widget/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/widgets/alerts-widget/</guid>
+      <description>Options for this widget type include: map, heat map, and ticker.
+The map option is currently limited to AWS integrations. Map alerts can be grouped via element or policies. See the Alerts User Guide for a full explanation of events and alerts, and their relationship to policies. </description>
+    </item>
+    
+    <item>
+      <title>Single Metric Widget</title>
+      <link>http://localhost:1313/data-visualization/dashboards/widgets/single-metric-widget/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/widgets/single-metric-widget/</guid>
+      <description>Options for this widget type include: chart, gauge, value, and time series.</description>
+    </item>
+    
+    <item>
+      <title>Table Widget</title>
+      <link>http://localhost:1313/data-visualization/dashboards/widgets/table-widget/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/dashboards/widgets/table-widget/</guid>
+      <description>More writeup coming soon. Here&amp;rsquo;s what it looks like: </description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>http://localhost:1313/data-visualization/metrics/metrics-troubleshooting/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/metrics/metrics-troubleshooting/</guid>
+      <description>Collected Metrics If you are seeing metrics that will not collect continually, there are two common scenarios: - Your agent-based (Linux, Windows) collector has metrics that are not available anymore being collected - Your agentless-based collector (AWS, Azure) is collecting metrics from a service that’s not being used, e.g., a lambda function not firing or an SQS queue is empty.
+Removing these metrics from being collected is the optimal solution.</description>
+    </item>
+    
+    <item>
+      <title>ALB Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-alb/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-alb/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Sparse Data Strategy (SDS) BASE     Active Connection Count aws.applicationelb.activeconnectioncount ActiveConnectionCount sum none yes   Client TLS Negotiation Error Count aws.applicationelb.clienttlsnegotiationerrorcount ClientTLSNegotiationErrorCount sum none yes   Consumed LCUs aws.applicationelb.consumedlcus ConsumedLCUs sum none no   Healthy Host Count aws.applicationelb.healthyhostcount HealthyHostCount average none yes   HTTP Code ELB 4XX Count aws.applicationelb.httpcode_elb_4xx_count HTTPCode_ELB_4XX_Count sum ReplaceWithZero yes   HTTP Code ELB 5XX Count aws.</description>
+    </item>
+    
+    <item>
+      <title>ASG Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-asg/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-asg/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     CPU Credit Balance aws.ec2.cpucreditbalance CPUCreditBalance average  none yes no no   CPU Credit Usage aws.ec2.cpucreditusage CPUCreditUsage sum  none yes no no   CPU Utilization Percent aws.ec2.cpuutilization CPUUtilizationPercent average percent 100 yes yes yes   Ephemeral Disk Read Bytes aws.ec2.diskreadbytes DiskReadBytes sum bytes none no no no   Ephemeral Disk Read Ops aws.</description>
+    </item>
+    
+    <item>
+      <title>DynamoDB Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-dynamodb/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-dynamodb/</guid>
+      <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Max Sparse Data Strategy (SDS) BASE CORR     aws.dynamodb.conditionalcheckfailedrequests ConditionalCheckFailedRequests sum count none zero no no   aws.dynamodb.consumedreadcapacityunits ConsumedReadCapacityUnits sum count none zero yes no   aws.dynamodb.consumedwritecapacityunits ConsumedWriteCapacityUnits sum count none zero yes no   aws.dynamodb.onlineindexconsumedwritecapacity OnlineIndexConsumedWriteCapacity sum count none zero yes no   aws.dynamodb.onlineindexpercentageprogress OnlineIndexPercentageProgress max percent 100 none no no   aws.</description>
+    </item>
+    
+    <item>
+      <title>EBS Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ebs/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ebs/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Description Units BASE CORR UTIL Related Global Policies     netuitive.aws.ebs.totalops This metric expresses the total number of read and write operations against this EBS instance. This metric is useful for monitoring EBS I/Oactivity.Computation: Read Ops + Write Ops operations yes no no    netuitive.aws.ebs.totalbytes This metric expresses the total number of bytes read and written from/to this EBS instance.</description>
+    </item>
+    
+    <item>
+      <title>EC2 Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ec2/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ec2/</guid>
+      <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     aws.ec2.cpucreditbalance CPUCreditBalance average  none yes no no   aws.ec2.cpucreditusage CPUCreditUsage sum  none yes no no   aws.ec2.cpuutilization CPUUtilizationPercent average percent 100 yes yes yes   aws.ec2.diskreadbytes DiskReadBytes sum bytes none no no no   aws.ec2.diskreadops DiskReadOps sum  none no no no   aws.</description>
+    </item>
+    
+    <item>
+      <title>ECS Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ecs/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ecs/</guid>
+      <description>Collected    Cluster Service Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE UTIL     yes no aws.ecs.cpureservation CPUReservation average percent 100 yes    yes no aws.ecs.memoryreservation MemoryReservation average percent 100 yes    yes yes aws.ecs.cpuutilization CPUUtilization average percent 100 yes yes   yes yes aws.ecs.memoryutilization MemoryUtilization average percent 100 yes yes   yes no aws.ecs.activeservicecount Active Service Count average  none yes    yes no aws.</description>
+    </item>
+    
+    <item>
+      <title>ELB Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-elb/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-elb/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units Max Sparse Data Strategy (SDS) BASE CORR     Healthy Host Count aws.elb.healthyhostcount HealthyHostCount average  none last no no   Unhealthy Host Count aws.elb.unhealthyhostcount UnHealthyHostCount average  none last no no   Request Count aws.elb.requestcount RequestCount sum  none zero yes yes   Average Latency aws.elb.latency Latency average s none zero yes yes   HTTPCode ELB 4XX Response Count aws.</description>
+    </item>
+    
+    <item>
+      <title>EMR Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-emr/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-emr/</guid>
+      <description>AWS groups EMR metrics into different categories (cluster status, node status, IO, etc.), but this has no impact on how Metricly monitors EMR.
+Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     Cluster Status aws.elasticmapreduce.appscompleted AppsCompleted average count none no no no   Cluster Status aws.elasticmapreduce.appsfailed AppsFailed average count none no no no   Cluster Status aws.</description>
+    </item>
+    
+    <item>
+      <title>Elasticache Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-elasticache/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-elasticache/</guid>
+      <description>Elasticache instances can come in a few “flavors”, which means metrics are unique to each “flavor” of Elasticache.
+ Host-level metrics are present on both Memcached as well as Redis clusters Memcached metrics are available only on Memcached clusters, Memcached 1.4.14 metrics are only available on Memcached clusters using at least version 1.4.14 Redis metrics are present only on Redis clusters.  Collected    Metric Type Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     Host-level aws.</description>
+    </item>
+    
+    <item>
+      <title>Knesis Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-knesis/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-knesis/</guid>
+      <description>Currently, Metricly only supports Kinesis Streams, but additional support for Kinesis Firehose may come in the future.
+Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.kinesis.getrecords.bytes GetRecords.Bytes average bytes zero yes yes   aws.kinesis.getrecords.iteratoragemilliseconds GetRecords.IteratorAgeMilliseconds average ms zero yes no   aws.kinesis.getrecords.latency GetRecords.Latency average ms zero yes yes   aws.kinesis.getrecords.records GetRecords.Records sum ops zero yes yes   aws.</description>
+    </item>
+    
+    <item>
+      <title>Lambda Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-lambda/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-lambda/</guid>
+      <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.lambda.duration GAUGE average milliseconds zero yes yes   aws.lambda.errors GAUGE sum count zero no no   aws.lambda.invocations GAUGE sum count zero yes yes   aws.lambda.throttles GAUGE sum count zero no no    Computed    Friendly Name FQN Computation Units Min Max Description     Error Percent netuitive.</description>
+    </item>
+    
+    <item>
+      <title>MQ Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-mq/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-mq/</guid>
+      <description> Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.mq.cpuutilization CpuUtilization  percent      aws.mq.heapusage HeapUsage  percent      aws.mq.networkin NetworkIn  bytes      aws.mq.networkout NetworkOut  bytes      aws.mq.totalmessagecount TotalMessageCount  count       </description>
+    </item>
+    
+    <item>
+      <title>NLB Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-nlb/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-nlb/</guid>
+      <description>Collected    Friendly Name FQN Statistic Baseline Correlation     Active Flow Count aws.networkelb.activeflowcount AVG yes no   ELB Consumed ICUs aws.networkelb.consumedlcus MAX no no   ELB Healthy Host Count aws.networkelb.healthyhostcount MAX no no   ELB New Flow Count aws.networkelb.newflowcount SUM yes no   ELB Processed Bytes aws.networkelb.processedbytes SUM yes no   TCP Client Reset Count aws.networkelb.tcp_client_reset_count SUM no no   TCP ELB Reset Count aws.</description>
+    </item>
+    
+    <item>
+      <title>Redshift Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-redshift/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-redshift/</guid>
+      <description>For each Redshift cluster, two types of elements are collected:
+ RedshiftCluster: Contains cluster-specific metrics as well as metrics that are averages across all nodes. RedshiftNode: Contains node-specific metrics. There will be one element per Redshift node.  The table below denotes which metrics are cluster- or node-based (or both).
+Collected    Fully Qualified Name (FQN) Cluster Node AWS Metric Statistic Units Max BASE CORR UTIL     aws.</description>
+    </item>
+    
+    <item>
+      <title>S3 Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-s3/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-s3/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units BASE     Bucket Size Bytes aws.s3.bucketsizebytes BucketSizeBytes average GiB/KiB yes   Number of Objects aws.s3.NumberOfObjects NumberOfObjects average K yes   4xx Errors aws.s3.4xxerrors 4xxErrors average count yes   4xx Errors aws.s3.5xxerrors 5xxErrors average count yes   All Requests aws.s3.allrequests AllRequests average count yes   First Byte Latency aws.</description>
+    </item>
+    
+    <item>
+      <title>SQS Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-sqs/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-sqs/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units BASE     Approximate Age of Oldest Message aws.sqs.approximateageofoldestmessage ApproximateAgeOfOldestMessage average seconds yes   Approximate Number of Messages Delayed aws.sqs.approximatenumberofmessagesdelayed ApproximateNumberOfMessagesDelayed sum Count yes   Approximate Number of Messages Not Visible aws.sqs.approximatenumberofmessagesnotvisible ApproximateNumberOfMessagesNotVisible sum Count yes   Approximate Number of Messages Visible aws.sqs.approximatenumberofmessagesvisible ApproximateNumberOfMessagesVisible sum Count yes   Number of Empty Receives aws.</description>
+    </item>
+    
+    <item>
+      <title>Stride Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-stride/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-stride/</guid>
+      <description>Setting up alert notifications from Metricly to Stride just requires a few quick steps. Once complete, your alerts are forwarded to the designated chat room within Stride.
+Configuration  Log in to Stride. Select a room where alerts should be delivered or create a new one.  Click Apps &amp;gt; Add Custom App.  Click API tokens and input Metricly Alerts in Specify a token name. Click Create. In the popup window, copy the access token and conversation URL.</description>
+    </item>
+    
+    <item>
+      <title>VictorOps Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-victorops/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-victorops/</guid>
+      <description>Configuration 1. Copy REST API URL From VictorOps  Login to your VictorOps account. Navigate to Alert Behavior &amp;gt; Integrations.  Search for Metricly and select the card.  Click Enable Integration. Copy the Service API Endpoint. This is required for the next step.   2. Create a Webhook notification in Metricly  In Metricly, navigate to the Policy Editor. Click tab 3, Notifications. Click Add Notification and select Webhook as the Notification Type.</description>
+    </item>
+    
+    <item>
+      <title>Webhooks Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-webhooks/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-webhooks/</guid>
+      <description>There are two main uses for webhooks: pushing data into metricly (inbound) and pulling data like notifications out (outbound).
+ Inbound: Achieved via POST URL that can be found on the Webhook integration card. Outbound: Used by several of our notification integrations and accessible through the Webhook GET API endpoint.  For a great example of an inbound webhook usecase, see how we pushed CloudWatch Logs into Metricly.
+When using the outbound method, you can customize the JSON payload using the freemarker markup language from Account &amp;gt; Notifications &amp;gt; Webhook.</description>
+    </item>
+    
+    <item>
+      <title>AWS SNS Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-aws-sns/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-aws-sns/</guid>
+      <description>You can leverage AWS’s Simple Notification Service as one of your notification methods in Metricly. There are two ways to accomplish this: through an IAM Role or Access Key. It is recommended that you have first set up the AWS Integration and are familiar with terms such as ARN (Amazon Resource Names), which are needed to complete setup.
+Inbound &amp;amp; Outbound This guide tackles outbound SNS setup, however you can also ingest inbound SNS notifications.</description>
+    </item>
+    
+    <item>
+      <title>Email Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-emails/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-emails/</guid>
+      <description>You can create email templates with custom messaging that are re-usable across multiple policies, or simply choose Metricly’s default email notifications. Read below for configuration steps.
+Configuration  Click your Username &amp;gt; Notifications. Click Add Notification. Select Email for Notification Type. The following modal appears:  Choose your frequency via the Re-notify every field. Check Notify on clear if you want to be notified when the alert has ended. Click New Email to create a new email template.</description>
+    </item>
+    
+    <item>
+      <title>Email Payloads</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/freemarker-email-payloads/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/freemarker-email-payloads/</guid>
+      <description>There are two event payload types that can be leveraged with email notification payloads: event and event_cleared. An event is generated when a policy is violating. An event_cleared is generated when a once-violating policy is no longer violating. Your custom event payloads can be setup to notify you on either type with unique messaging and details about the event.
+To create a custom event payload:
+ Navigate to your Account &amp;gt; Notifications &amp;gt; Email.</description>
+    </item>
+    
+    <item>
+      <title>HipChat Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-hipchat/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-hipchat/</guid>
+      <description>Send a notification to a HipChat room when an event occurs on your Metricly Policies. HipChat notifications are re-usable across multiple policies. Read below for configuration steps.
+Configuration 1. Generate a room token  Log in to your Hipchat account. Navigate to the Rooms section. Under My Rooms, select or create the desired room. On the left panel, select Tokens. Type a Label for the room and select Send Notification from the scopes list.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Teams Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-microsoft-teams/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-microsoft-teams/</guid>
+      <description>Configuration 1. Add an Incoming Webhook in Microsoft Teams  Login to your Microsoft Teams account. Navigate to Store and search for Incoming Webhook.  Choose a Microsoft Team that will receive Metricly notifications. Click Install. Select a channel from your Microsoft team and click Set up.  Provide a name for your Webhook. You may also upload a photo at this point. Click Create. Copy the Webhook URL that is generated.</description>
+    </item>
+    
+    <item>
+      <title>OpsGenie Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-opsgenie/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-opsgenie/</guid>
+      <description>Configuration 1. Create a Metricly integration within OpsGenie  Log in to your OpsGenie account. Under Integrations, select Metricly. Copy the API key provided on this page to your clipboard. You will use this to set up a new OpsGenie notification in Metricly. Leave the Teams and Recipients fields as {{teams}} and {{recipients}}, respectively. This ensures that the Teams and Recipients you include in Part 2 are passed from Metricly to your OpsGenie account, and will receive alerts.</description>
+    </item>
+    
+    <item>
+      <title>PagerDuty Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-pageryduty/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-pageryduty/</guid>
+      <description>Configuration 1. Create a service in PagerDuty  Log into your PagerDuty account. Navigate to Configuration &amp;gt; Services. Click Add New Services.  Type a name for the service and select your incident settings. For Integration Type, click the Select a Tool dropdown &amp;gt; Netuitive. Finish all other settings and click Add Service. Copy the Integration Key provided. This is needed to set up a new PagerDuty notification in Metricly.</description>
+    </item>
+    
+    <item>
+      <title>SNS Payloads</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/</guid>
+      <description> SNS Payloads You must have AWS SNS setup in your console to use this payload type. The below payload returns the event category when active; once the event has cleared it returns CLEAR.
+{ &amp;quot;timestamp&amp;quot;: &amp;quot;${eventTimestamp}&amp;quot;, &amp;quot;category&amp;quot;: &amp;quot;&amp;lt;#if payloadType == &#39;event_cleared&#39;&amp;gt;CLEAR&amp;lt;#else&amp;gt;${eventCategory.name}&amp;lt;/#if&amp;gt;&amp;quot;, &amp;quot;element&amp;quot;: &amp;quot;${elementFqn}&amp;quot;, &amp;quot;policy&amp;quot;: &amp;quot;${policyName}&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>Slack Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-slack/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-slack/</guid>
+      <description>Configuration 1. Install Incoming Webhooks on Slack If you’ve already installed the Incoming Webhooks app, you can skip to step 2.
+  Go to Slack’s app directory. Search for Incoming Webhooks. It should dynamically update a drop-down beneath the search bar. Click Incoming Webhooks.  Click Add Configuration.  Select a channel from Choose a Channel… or create a new one.  Click Add Incoming WebHooks Integration.  2.</description>
+    </item>
+    
+    <item>
+      <title>Webhook Payloads</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/webhook-payloads/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/webhook-payloads/</guid>
+      <description>Webhook Payloads Webhooks have two main payload types: inbound and outbound. Outbound payloads can be customized and sent as notifications.
+To create a customized webhook payload:
+ Navigate to your Account Profile &amp;gt; Notifications &amp;gt; Webhook. Click + Add Webhook. Fill out all fields; select Custom from the Payload dropdown. Input your custom JSON + Freemarker writeup. Save.  Example 1
+{ &amp;quot;message_type&amp;quot;:&amp;quot;&amp;lt;#if payloadType == &amp;quot;event&amp;quot;&amp;gt;${eventCategory.name}&amp;lt;/#if&amp;gt;&amp;lt;#if payloadType == &amp;quot;event_cleared&amp;quot;&amp;gt;RECOVERY&amp;lt;/#if&amp;gt;&amp;quot;, &amp;quot;entity_id&amp;quot;:&amp;quot;${elementId}&amp;quot;, &amp;quot;entity_display_name&amp;quot;:&amp;quot;${elementName}&amp;quot;, &amp;quot;state_message&amp;quot;:&amp;quot;&amp;lt;#if payloadType == &amp;quot;event&amp;quot;&amp;gt; [${elementName}] [${policyName}] [${eventTimestamp}] : ${policyDescription}&amp;lt;/#if&amp;gt;&amp;lt;#if payloadType == &amp;quot;event_cleared&amp;quot;&amp;gt;The policy ${policyName} has CLEARED for ${elementName} and is no longer generating events as of ${eventTimestamp}&amp;lt;/#if&amp;gt;&amp;quot; }  Example 2</description>
+    </item>
+    
+    <item>
+      <title>AWS ASG Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-asg/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-asg/</guid>
+      <description>Policy names are prefixed with AWS ASG –
+    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated CPUActivity (Normal Network Activity) 30 min aws.ec2.cpuutilization has an upper baseline + upper contextual deviation metricly.aws.ec2.bytesinperse does not have a upper baseline + upper contextual deviation metricly.aws.ec2.bytesoutpersec does not have a upper baseline + upper contextual deviation. INFO This policy is designed to catch cases where CPU activity is higher than than normal and cannot be explained by a corresponding increase in network traffic.</description>
+    </item>
+    
+    <item>
+      <title>AWS DynamoDB Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</guid>
+      <description>Policy names are prefixed with AWS DynamoDB –
+    Policy Name Duration Condition 1 Cat. Description     Elevated Read Capacity Utilization 30 Min metricly.aws.dynamodb.readcapacityutilization has an upper baseline deviation + an upper contextual deviation + a static threshold ≥ 50. WARNING Read Capacity Utilization has been higher than expected for over 30 minutes; also, the actual value has been above 50% for that time.   Elevated Write Capacity Utilization 30 Min metricly.</description>
+    </item>
+    
+    <item>
+      <title>AWS EBS Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-ebs/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-ebs/</guid>
+      <description>Before reading about the EBS default policy, it is important to understand the following Metricly computed metrics.
+ Average Latency: Average Latency is straightforward as it represents the average amount of time that it takes for a disk operation to complete. Queue Length Differential: Queue Length Differential measures the difference between the actual disk queue length and the “ideal” disk queue length.The ideal queue length is based on Amazon’s rule of thumb that for every 200 IOPS you should have a queue length of 1.</description>
+    </item>
+    
+    <item>
+      <title>AWS EC2 Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-ec2/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-ec2/</guid>
+      <description>Policy names are prefixed with AWS EC2 –
+    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated CPUActivity (Normal Network Activity) 30 min aws.ec2.cpuutilization has an upper baseline deviation + an upper contextual deviation metricly.aws.ec2.bytesinpersec does not have a upper baseline deviation + does not have a upper contextual deviation metricly.aws.ec2.bytesoutpersec does not have a upper baseline deviation + does not have a upper contextual deviationn INFO Increases in CPU activity are not uncommon when there is a rise in network activity.</description>
+    </item>
+    
+    <item>
+      <title>AWS ELB Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-elb/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-elb/</guid>
+      <description>Policy names are prefixed with AWS ELB –
+    Policy name Duration Condition 1 (and) Condition 2 Category Description     Elevated BackendError Rate (Low Volume) 15 min metricly.aws.elb.httpcodebackenderrorpercent has an upper baseline deviation + an upper contextual deviation metricly.aws.elb.requestcount has a static threshold &amp;lt;1,000 WARNING This is the first of three policies that look at elevated backend error rates. This policy looks specifically at low traffic volume cases.</description>
+    </item>
+    
+    <item>
+      <title>AWS Elasticache Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-elasticache/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-elasticache/</guid>
+      <description>Policy names are prefixed with AWS Elasticache –
+    Policy name Duration Condition 1 (and) Condition 2 Category Description     Memcached – CPU Threshold Exceeded 5 min aws.elasticache.cpuutilization has a static threshold &amp;gt;90%  CRITICAL The Memcached Node has exceeded the CPU threshold of 90%. The cache cluster may need to be scaled, either by using a larger node type or by adding more nodes.</description>
+    </item>
+    
+    <item>
+      <title>AWS Lambda Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-lambda/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-lambda/</guid>
+      <description>Policy names are prefixed with AWS Lambda –
+    Policy name Duration Conditions Category Description     Elevated Invocation Count 30 min aws.lambda.invocations has an upper baseline deviation + an upper contextual deviation WARNING The number of calls to the function (invocations) have been greater than expected for at least the last 30 minutes.   Depressed Invocation Count 10 min aws.lambda.invocations has a lower baseline deviation + a lower contextual deviation WARNING The number of calls to the function (invocations) have been lower than expected for at least the last 10 minutes.</description>
+    </item>
+    
+    <item>
+      <title>AWS RDS Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-rds/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-rds/</guid>
+      <description>Policy names are prefixed with AWS RDS –
+    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated RDS CPU Activity (Normal Network Activity) 30 min metricly.aws.rds.cpuutilization has an upper baseline deviation + an upper contextual deviation + a static threshold &amp;gt; 20 metricly.aws.rds.networkreceivethroughput does not have an upper baseline deviation + does not have a upper contextual deviation metricly.</description>
+    </item>
+    
+    <item>
+      <title>AWS SQS Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-sqs/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-sqs/</guid>
+      <description>Policy names are prefixed with AWS SQS –
+    Policy name Duration Conditions Category Description     AWS SQS – Queue Falling Behind 2 hours metricly.aws.sqs.arrivalrate has a metric threshold &amp;gt; metricly.aws.sqs.completionrate CRITICAL The arrival rate for the queue has been greater than the completion rate for at least 2 hours. This is an indication that processing of the queue is falling behind.    </description>
+    </item>
+    
+    <item>
+      <title>Alert on a Check</title>
+      <link>http://localhost:1313/alerts-notifications/checks/checks-alerting/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/checks/checks-alerting/</guid>
+      <description>Setting up an alert in Metricly requires the creation of a policy and the system checks are no exception. Any check coming into the system can have a corresponding alert as well as a notification.
+ Click on policies and select New Policy. Name the policy and apply any scoping or filtering required (for example, narrowing the scope to WinServ in US-West region with Tag Environment:Production). Next click Conditions &amp;gt; Add Condition, and from the drop down you will see Add System Check Condition.</description>
+    </item>
+    
+    <item>
+      <title>Alerts Page</title>
+      <link>http://localhost:1313/alerts-notifications/alerts-page/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/alerts-page/</guid>
+      <description>The Alerts page shows a list of all your configured policies, both enabled and disabled. It includes:
+ Policy name Number of elements in scope Filters on the policy State of the policy (Enabled/Disabled) Current status (OK, Info, Warning, Critical).  This page has additional filters to display all Open and Closed policies.
+ Filtering by Open will display only the policies that are currently (Now) violating a set condition(s).</description>
+    </item>
+    
+    <item>
+      <title>Apache HTTPD Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/apache-policies-httpd/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/apache-policies-httpd/</guid>
+      <description>Linux Apache HTTPD – Depressed Traffic Volume 30 min httpd..ReqPerSec has a lower baseline deviation WARNING The number of requests per second has been lower than expected for at least the past 30 minutes.     Linux Apache HTTPD – Elevated Traffic Volume 30 min httpd..ReqPerSec has an upper baseline deviation WARNING The number of requests per second has been higher than expected for at least the past 30 minutes.</description>
+    </item>
+    
+    <item>
+      <title>Azure Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/microsoft-azure-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/microsoft-azure-policies/</guid>
+      <description>Policy names are prefixed with Azure VM –
+    Policy name Metrics Required Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     CPU Threshold Exceeded Boot Diagnostics 15 min Processor.PercentProcessorTime has a static threshold &amp;gt; 50%   WARNING The CPU on the Azure Virtual Machine has exceeded 95% for at least 15 minutes.   Elevated CPU Activity (Normal Network Activity) Boot Diagnostics 30 min Processor.</description>
+    </item>
+    
+    <item>
+      <title>Baseline Bands</title>
+      <link>http://localhost:1313/data-visualization/analytics/baseline-bands/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/analytics/baseline-bands/</guid>
+      <description>Baseline Bands represent the normal operating range of a metric. Metricly determines the normal operating range of a metric based on weekly patterns in the behavior of that metric.
+The image below provides an example of Baseline bands in green surrounding the actual, current value for a CPU utilization metric in black. The green band demonstrates how Metricly learns the expected behavior of the metric based on patterns in the behavior of that metric.</description>
+    </item>
+    
+    <item>
+      <title>Cassandra Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/cassandra-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/cassandra-policies/</guid>
+      <description>Policy name Duration Conditions Category Description     Depressed Key Cache Hit Rate 30 min cassandra.Cache.KeyCache.HitRate has an lower baseline deviation + a static threshold ≤ 0.85 WARNING The hit rate for the key cache is lower than expected and is less than 85%. This condition has been persisting for at least the past 30 minutes.   Elevated Node Read Latency 30 min cassandra.Keyspace.ReadLatency.OneMinuteRate has an upper baseline deviation WARNING The overall keyspace read latency on this Cassandra node has been higher than expected for at least 30 minutes.</description>
+    </item>
+    
+    <item>
+      <title>Choose Duration</title>
+      <link>http://localhost:1313/alerts-notifications/policies/choose-duration/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/choose-duration/</guid>
+      <description>Duration is the consecutive length of time for which all the conditions in a policy must be met before an event or other optional notification is created. The default setting for metric condition duration is 5 minutes; the default (and only) setting for external event condition duration is real-time. Because Metricly aggregates data on five-minute cycles, the duration for metric conditions must be at least 5 minutes.
+By setting the duration of ExamplePolicy X to 10 minutes, an event will not be created in Metricly until all the conditions in ExamplePolicy X have been met for the same period of 10 consecutive minutes.</description>
+    </item>
+    
+    <item>
+      <title>CloudWatch Events</title>
+      <link>http://localhost:1313/alerts-notifications/events/cloudwatch-events/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/events/cloudwatch-events/</guid>
+      <description>Through a combination of SNS Notifications, Metricly’s Webhook integration, and an external event conditions policy filter, you can push event logs from your AWS services to Metricly and act on them in the UI. This works across several AWS services. Once set up, these logs can be divided further on the policy level (through matching value strings in the log message and categorized by severity). Policies for your event logs can also be set up with various notifications through email, slack, and others.</description>
+    </item>
+    
+    <item>
+      <title>Collectd Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/collectd-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/collectd-policies/</guid>
+      <description>Policy name Duration Conditions Category Description     Elevated Memory Usage (Collectd) 30 min metricly.collectd.memory.utilizationpercent has an upper baseline deviation INFO Indicates an increase in memory usage above what is considered to be normal.   Elevated Process Count 30 min metricly.collectd.processes.total has an upper baseline deviation INFO Indicates that the total number of processes has increased above what is considered to be normal.   Elevated Percentage of Blocked Processes 30 min metricly.</description>
+    </item>
+    
+    <item>
+      <title>Contextual Bands</title>
+      <link>http://localhost:1313/data-visualization/analytics/contextual-bands/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/analytics/contextual-bands/</guid>
+      <description>Contextual Bands represent the range of current expected values for a metric based on other correlated metrics in the learned model. In contrast to Baseline bands which look for patterns in a metric in isolation, Contextual bands take into account how the value of one metric may impact another.
+The image below provides an example of a Contextual band in purple surrounding the actual, current value for a metric called Bytes In Per Second.</description>
+    </item>
+    
+    <item>
+      <title>Custom Checks</title>
+      <link>http://localhost:1313/alerts-notifications/checks/custom-checks/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/checks/custom-checks/</guid>
+      <description>Our platform is flexible to support any custom checks, but you will need a mechanism to schedule the scripts to run. Linux cron jobs or Window task scheduler will typically work for most cases. If you are running on the Linux platform our agent can also schedule the running of your scripts via the Users Scripts Integration. This option will allow you to schedule a script that may post to our REST API as output either a system check, or a time-series metric value, or even a text-based data.</description>
+    </item>
+    
+    <item>
+      <title>Delete a Policy</title>
+      <link>http://localhost:1313/alerts-notifications/policies/delete-policy/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/delete-policy/</guid>
+      <description> On the Alerts page, select the desired policy. In Policy Editor, click Delete.  </description>
+    </item>
+    
+    <item>
+      <title>Diamond (Linux) Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/diamond-linux-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/diamond-linux-policies/</guid>
+      <description>Before reading about these default policies, note that both the Elevated User CPU and Elevated System CPU policies assume that the CPU Collector is configured to collect aggregate CPU metrics, rather than per core metrics.
+It also assumes that the metrics are being normalized. This is done by setting the percore setting set to FALSE (it is TRUE by default) and the normalize setting set to TRUE (it is FALSE by default) in your configuration file.</description>
+    </item>
+    
+    <item>
+      <title>Docker Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/docker-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/docker-policies/</guid>
+      <description>Policy name Duration Conditions Category Description     Docker Container – CPU Throttling 15 min metricly.docker.cpu.container_throttling_percent has a static threshold &amp;gt;0 WARNING The Docker container has had its CPU usage throttled for at least the past 15 minutes.   Docker Container – Elevated CPU Utilization 30 min metricly.docker.cpu.container_cpu_percent has an upper baseline deviation + an upper contextual deviation INFO CPU usage on the Docker container has been higher than expected for 30 minutes or longer.</description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/elastic-search-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/elastic-search-policies/</guid>
+      <description>Policy name Duration Conditions Category Description     Cluster Health Degraded to Red 15 min elasticsearch.cluster_health.status has a static threshold &amp;lt; 1 CRITICAL The cluster health status is red which means that one or more primary shard(s) and its replica(s) is missing.   Cluster Health Degraded to Yellow 15 min elasticsearch.cluster_health.status is between 1 and 1.8 WARNING The cluster health status is yellow which means that one or more shard replica(s) is missing.</description>
+    </item>
+    
+    <item>
+      <title>Element Detail Panel</title>
+      <link>http://localhost:1313/data-visualization/inventory/inventory-element-detail/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/inventory/inventory-element-detail/</guid>
+      <description>The Element Detail panel displays tabs for the metric summary, policies, and relationships associated with the selected element.
+Summary Tab The Summary tab displays a dashboard full of select widgets to highlight the most important details of the selected element.
+Policies Tab The Policies tab offers the same functionality as the Policies Page except the Policies tab only displays policies that include the selected element in the policy’s scope. Below is a picture of an EC2’s policies tab.</description>
+    </item>
+    
+    <item>
+      <title>Enable or Disable a Policy</title>
+      <link>http://localhost:1313/alerts-notifications/policies/enable-disable-policy/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/enable-disable-policy/</guid>
+      <description> On the Alerts page, select the desired policy. In Policy Editor, select or deselect the Enable Policy checkbox.  You can also enable or disable policies directly from the List and Card Policy view options.
+ </description>
+    </item>
+    
+    <item>
+      <title>Java Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/java-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/java-policies/</guid>
+      <description>Policy name Duration Conditions Category Description     Elevated JVM CPU Activity 15 min cpu.used.percent has an upper baseline deviation + an upper contextual deviation + a static threshold &amp;gt; 50% WARNING This policy will generate a WARNING event when the JVM’s CPU activity is higher than expected. Additionally, the CPU usage is above 50%.   Elevated JVM Heap Usage 15 min metricly.jvm.heap.utilizationpercent has an upper baseline deviation + an upper contextual deviation WARNING This policy will generate a WARNING event when the JVM’s heap usage is higher than expected.</description>
+    </item>
+    
+    <item>
+      <title>Kafka Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/kafka-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/kafka-policies/</guid>
+      <description>Policy names are prefixed with Kakfa –
+    Policy name Duration Condition 1 (and) Condition 2 Category Description     Depressed Number of Zookeeper Connections 30 min kafka.zookeeper.zk_num_alive_connections has a lower baseline deviation  WARNING The number of active connections to Zookeeper has been lower than expected for at least the past 30 minutes.   Elevated Consumer Lag 15 min kafka.zookeeper.consumer_groups.*.comsuler_lag has an upper baseline deviation  WARNING Consumer lag has been higher than expected for at least 15 minutes.</description>
+    </item>
+    
+    <item>
+      <title>Linux Checks</title>
+      <link>http://localhost:1313/alerts-notifications/checks/linux-checks/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/checks/linux-checks/</guid>
+      <description>Enable Linux Checks Currently, Metricly comes with three pre-built checks; Heartbeat, Processes, and Ports. These are turnkey checks that do not require any scripting or coding, just simple configuration setting in the respective configuration files.
+ Make sure the Linux agent is installed. Metricly checks can be enabled via the configuration files included with the agent. All checks configuration files for the Linux agent can be found in /opt/netuitive-agent/conf/collectors Some of the checks are enabled by default, while you would need to enable other checks.</description>
+    </item>
+    
+    <item>
+      <title>Main Navigation</title>
+      <link>http://localhost:1313/data-visualization/inventory/inventory-main-navigation/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/inventory/inventory-main-navigation/</guid>
+      <description>Select Filters Contains several filters where you can search for element names, element types, tags, attributes, collectors, and more. Expand the More filter to see additional filters; select a filter to add it to the list of active filters.
+Save Filters Filters you create in the navigation panel can be saved.
+ Click  SAVE. Provide a filter name and click  or hit enter. Share filter if desired via  .</description>
+    </item>
+    
+    <item>
+      <title>MongoDB Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/mongodb-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/mongodb-policies/</guid>
+      <description>Policy names are prefixed with MongoDB –
+    Policy name Duration Condition 1 (and) Condition 2 Category Description     Connections in Use Threshold Exceeded 5 min metricly.linux.mongo.connections.utilization percent has a static threshold &amp;gt; 90%  CRITICAL More than 90% of the total connections to MongoDB are in use. You may need to scale your servers to handle the load.   Elevated Number of Queued Read Requests 30 min mongo.</description>
+    </item>
+    
+    <item>
+      <title>Mute Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/mute-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/mute-policies/</guid>
+      <description>This silences all attached notifications for the policies selected for a set duration. You can manually unmute a policy at any time as well.
+ Select all policies you wish to mute. Click Mute Notifications. Input a mute duration and click OK. Your selected policies will remain muted until your chosen duration expires or when you manually unmute them.  </description>
+    </item>
+    
+    <item>
+      <title>Quickbar Actions</title>
+      <link>http://localhost:1313/data-visualization/inventory/inventory-quickbar-actions/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/inventory/inventory-quickbar-actions/</guid>
+      <description>The inventory page allows you to quickly navigate through all of your elements, sort, and perform bulk actions. The Inventory Explorer displays all the elements in your environment that were processed in the last hour. Elements are removed from the elements table roughly seven hours after an associated datasource is disabled.
+Use the Quick Bar Select the elements you’d like to edit using the checkboxes on the far left of each row.</description>
+    </item>
+    
+    <item>
+      <title>RabbitMQ Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/rabbitmq-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/rabbitmq-policies/</guid>
+      <description>Policy names are prefixed with RabbitMQ –
+    Policy name Duration Conditions Category Description     Depressed Message Count 30 min rabbitmq.queue_totals.messages has a lower baseline deviation WARNING The number of messages across all queues has been lower than expected for at least the past 30 minutes.   Elevated Memory Usage 30 min rabbitmq.health.mem_used has an upper baseline deviation WARNING Memory usage has been higher than expected for at least the past 30 minutes.</description>
+    </item>
+    
+    <item>
+      <title>Regex Guide</title>
+      <link>http://localhost:1313/alerts-notifications/policies/regex-guide/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/regex-guide/</guid>
+      <description>Use Regex to Match Metric Conditions Regex uses all metrics that contain your input value. Typing aws.elb.httpcode.* would match both aws.elb.httpcode_backend_2xx, as well as netuitive.aws.elb.httpcodebackenderrorpercent.
+ Exclude computed metrics using a ^ before the start of a metric name. Use Metric Tags to select a tag to further filter your condition.  We recommend testing any regular expressions that you create at https://regexr.com.
+ Match String Match the start and end of the string contained between ^ and $.</description>
+    </item>
+    
+    <item>
+      <title>Sort Elements</title>
+      <link>http://localhost:1313/data-visualization/inventory/inventory-sort-elements/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/inventory/inventory-sort-elements/</guid>
+      <description>Select two or more elements and then click View Metrics to open multiple elements on the Metrics page. The Elements table initially has six columns:
+ Type: Shows icon for an element’s type. You can see all the icons here. Name: Name of the element. Data Collection: The percentage of metrics that were collected in the last analytics cycle (5 minutes).If no metrics were collected, there could have been an issue with collection or too many metrics were collected, which forces Metricly to not collect any metrics.</description>
+    </item>
+    
+    <item>
+      <title>Start or Stop Maintenance</title>
+      <link>http://localhost:1313/data-visualization/inventory/inventory-startstop-maintenance/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/inventory/inventory-startstop-maintenance/</guid>
+      <description>You can place elements into maintenance mode from the Inventory Explorer or via the Metricly CLI (Command Line Interface). While an element is in maintenance mode, learning for that element is disabled (i.e. no contextual or baseline bands will be displayed) and events will not be generated for the element.
+ Open the Inventory Explorer. Select the check box next to as many elements as desired. Click Start or Stop Maintenance at the top of the Inventory Explorer table.</description>
+    </item>
+    
+    <item>
+      <title>Static Thresholds</title>
+      <link>http://localhost:1313/data-visualization/analytics/static-thresholds/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/analytics/static-thresholds/</guid>
+      <description>Static Thresholds are unchanging levels that are compared against a metric’s current value.
+Create Static Threshold conditions in policies to use static thresholds to monitor the elements in your environment. If the value of a metric is greater than, less than, greater than or equal to, less than or equal to, equal to, or not equal to the specified level of a Static Threshold condition (depending on the operator selected), then an event is generated.</description>
+    </item>
+    
+    <item>
+      <title>Sudden Change Detection</title>
+      <link>http://localhost:1313/data-visualization/analytics/sudden-change-detection/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/analytics/sudden-change-detection/</guid>
+      <description>Sudden Change is a time-series metric used to analyze trends of historical data and make predictions based on past behavior.
+This process finds an expected average of activity by generating data points every 5 minutes in a sliding, one-hour window of time. It then uses this data to make predictions on the next interval.
+When the future point is actualized and falls outside the expected prediction range, that interval is defined as a sudden change event.</description>
+    </item>
+    
+    <item>
+      <title>Top Violators</title>
+      <link>http://localhost:1313/alerts-notifications/top-violators/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/top-violators/</guid>
+      <description>Top Violators reports display the elements in your environment that have triggered the most events within the specified Time Frame setting, allowing you to quickly locate the elements with high event counts. This report provides the same type of data as the Event Explorer, but the data is grouped by element.
+ Summary Table: This table provides both the number of events triggered by each element (Event Count), and the amount of time that each element triggered events within the specified Time Frame.</description>
+    </item>
+    
+    <item>
+      <title>Windows Checks</title>
+      <link>http://localhost:1313/alerts-notifications/checks/windows-checks/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/checks/windows-checks/</guid>
+      <description>Enable Windows Checks  Make sure the Windows agent is installed. Metricly checks can be enabled via the configuration files included with the agent. All checks configuration files for the Windows agent can be found in C:/Program Files (x86)/CollectdWin/conf/ or C:/Program Files/CollectdWin/conf/ (depending on the version of windows). Simply change the enable setting for the ReadSystemChecks from false to true in the CollectdWin.config file to enable the system checks. To configure the checks, edit the ReadSystemChecks.</description>
+    </item>
+    
+    <item>
+      <title>Windows Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/windows-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/windows-policies/</guid>
+      <description>Policy names are prefixed with Windows –
+    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated Disk Latency 15 min physical_disk._Total.avg_sec_per_read has an upper baseline deviation physical_disk._Total.avg_sec_per_write has an upper baseline deviation  WARNING This policy will generate a WARNING event when both disk read and write times are higher than their expected baselines   Elevated MemoryUtilization 10 min metricly.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/_footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/_footer/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/_header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/_header/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

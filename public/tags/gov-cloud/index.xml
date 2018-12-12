@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gov Cloud on Metricly Docs</title>
+    <link>http://localhost:1313/tags/gov-cloud/</link>
+    <description>Recent content in Gov Cloud on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/gov-cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gov Cloud</title>
+      <link>http://localhost:1313/integrations/aws-integration/aws-gov-cloud/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/aws-gov-cloud/</guid>
+      <description>AWS GovCloud (US) is a segment of Amazon Web Services cloud offerings that restrict physical and logical administrative access to U.S. citizens only. The region meets the requirements for U.S. International Traffic in Arms Regulations (ITAR), and allows users to move Controlled Unclassified Information (CUI) into the cloud. Check out our blog post, Monitor AWS GovCloud With Metricly, or the official AWS Guide for more information.
+Configuration Leave GovCloud disabled unless you have signed up for and are using a GovCloud-restricted AWS account.</description>
+    </item>
+    
+  </channel>
+</rss>

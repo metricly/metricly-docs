@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Customize Notification Payloads on Metricly Docs</title>
+    <link>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/</link>
+    <description>Recent content in Customize Notification Payloads on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Email Payloads</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/freemarker-email-payloads/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/freemarker-email-payloads/</guid>
+      <description>There are two event payload types that can be leveraged with email notification payloads: event and event_cleared. An event is generated when a policy is violating. An event_cleared is generated when a once-violating policy is no longer violating. Your custom event payloads can be setup to notify you on either type with unique messaging and details about the event.
+To create a custom event payload:
+ Navigate to your Account &amp;gt; Notifications &amp;gt; Email.</description>
+    </item>
+    
+    <item>
+      <title>SNS Payloads</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/</guid>
+      <description> SNS Payloads You must have AWS SNS setup in your console to use this payload type. The below payload returns the event category when active; once the event has cleared it returns CLEAR.
+{ &amp;quot;timestamp&amp;quot;: &amp;quot;${eventTimestamp}&amp;quot;, &amp;quot;category&amp;quot;: &amp;quot;&amp;lt;#if payloadType == &#39;event_cleared&#39;&amp;gt;CLEAR&amp;lt;#else&amp;gt;${eventCategory.name}&amp;lt;/#if&amp;gt;&amp;quot;, &amp;quot;element&amp;quot;: &amp;quot;${elementFqn}&amp;quot;, &amp;quot;policy&amp;quot;: &amp;quot;${policyName}&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>Webhook Payloads</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/webhook-payloads/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/webhook-payloads/</guid>
+      <description>Webhook Payloads Webhooks have two main payload types: inbound and outbound. Outbound payloads can be customized and sent as notifications.
+To create a customized webhook payload:
+ Navigate to your Account Profile &amp;gt; Notifications &amp;gt; Webhook. Click + Add Webhook. Fill out all fields; select Custom from the Payload dropdown. Input your custom JSON + Freemarker writeup. Save.  Example 1
+{ &amp;quot;message_type&amp;quot;:&amp;quot;&amp;lt;#if payloadType == &amp;quot;event&amp;quot;&amp;gt;${eventCategory.name}&amp;lt;/#if&amp;gt;&amp;lt;#if payloadType == &amp;quot;event_cleared&amp;quot;&amp;gt;RECOVERY&amp;lt;/#if&amp;gt;&amp;quot;, &amp;quot;entity_id&amp;quot;:&amp;quot;${elementId}&amp;quot;, &amp;quot;entity_display_name&amp;quot;:&amp;quot;${elementName}&amp;quot;, &amp;quot;state_message&amp;quot;:&amp;quot;&amp;lt;#if payloadType == &amp;quot;event&amp;quot;&amp;gt; [${elementName}] [${policyName}] [${eventTimestamp}] : ${policyDescription}&amp;lt;/#if&amp;gt;&amp;lt;#if payloadType == &amp;quot;event_cleared&amp;quot;&amp;gt;The policy ${policyName} has CLEARED for ${elementName} and is no longer generating events as of ${eventTimestamp}&amp;lt;/#if&amp;gt;&amp;quot; }  Example 2</description>
+    </item>
+    
+  </channel>
+</rss>

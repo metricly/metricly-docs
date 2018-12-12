@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notifications on Metricly Docs</title>
+    <link>http://localhost:1313/alerts-notifications/notifications/</link>
+    <description>Recent content in Notifications on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/alerts-notifications/notifications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stride Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-stride/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-stride/</guid>
+      <description>Setting up alert notifications from Metricly to Stride just requires a few quick steps. Once complete, your alerts are forwarded to the designated chat room within Stride.
+Configuration  Log in to Stride. Select a room where alerts should be delivered or create a new one.  Click Apps &amp;gt; Add Custom App.  Click API tokens and input Metricly Alerts in Specify a token name. Click Create. In the popup window, copy the access token and conversation URL.</description>
+    </item>
+    
+    <item>
+      <title>VictorOps Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-victorops/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-victorops/</guid>
+      <description>Configuration 1. Copy REST API URL From VictorOps  Login to your VictorOps account. Navigate to Alert Behavior &amp;gt; Integrations.  Search for Metricly and select the card.  Click Enable Integration. Copy the Service API Endpoint. This is required for the next step.   2. Create a Webhook notification in Metricly  In Metricly, navigate to the Policy Editor. Click tab 3, Notifications. Click Add Notification and select Webhook as the Notification Type.</description>
+    </item>
+    
+    <item>
+      <title>Webhooks Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-webhooks/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-webhooks/</guid>
+      <description>There are two main uses for webhooks: pushing data into metricly (inbound) and pulling data like notifications out (outbound).
+ Inbound: Achieved via POST URL that can be found on the Webhook integration card. Outbound: Used by several of our notification integrations and accessible through the Webhook GET API endpoint.  For a great example of an inbound webhook usecase, see how we pushed CloudWatch Logs into Metricly.
+When using the outbound method, you can customize the JSON payload using the freemarker markup language from Account &amp;gt; Notifications &amp;gt; Webhook.</description>
+    </item>
+    
+    <item>
+      <title>AWS SNS Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-aws-sns/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-aws-sns/</guid>
+      <description>You can leverage AWS’s Simple Notification Service as one of your notification methods in Metricly. There are two ways to accomplish this: through an IAM Role or Access Key. It is recommended that you have first set up the AWS Integration and are familiar with terms such as ARN (Amazon Resource Names), which are needed to complete setup.
+Inbound &amp;amp; Outbound This guide tackles outbound SNS setup, however you can also ingest inbound SNS notifications.</description>
+    </item>
+    
+    <item>
+      <title>Email Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-emails/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-emails/</guid>
+      <description>You can create email templates with custom messaging that are re-usable across multiple policies, or simply choose Metricly’s default email notifications. Read below for configuration steps.
+Configuration  Click your Username &amp;gt; Notifications. Click Add Notification. Select Email for Notification Type. The following modal appears:  Choose your frequency via the Re-notify every field. Check Notify on clear if you want to be notified when the alert has ended. Click New Email to create a new email template.</description>
+    </item>
+    
+    <item>
+      <title>HipChat Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-hipchat/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-hipchat/</guid>
+      <description>Send a notification to a HipChat room when an event occurs on your Metricly Policies. HipChat notifications are re-usable across multiple policies. Read below for configuration steps.
+Configuration 1. Generate a room token  Log in to your Hipchat account. Navigate to the Rooms section. Under My Rooms, select or create the desired room. On the left panel, select Tokens. Type a Label for the room and select Send Notification from the scopes list.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Teams Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-microsoft-teams/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-microsoft-teams/</guid>
+      <description>Configuration 1. Add an Incoming Webhook in Microsoft Teams  Login to your Microsoft Teams account. Navigate to Store and search for Incoming Webhook.  Choose a Microsoft Team that will receive Metricly notifications. Click Install. Select a channel from your Microsoft team and click Set up.  Provide a name for your Webhook. You may also upload a photo at this point. Click Create. Copy the Webhook URL that is generated.</description>
+    </item>
+    
+    <item>
+      <title>OpsGenie Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-opsgenie/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-opsgenie/</guid>
+      <description>Configuration 1. Create a Metricly integration within OpsGenie  Log in to your OpsGenie account. Under Integrations, select Metricly. Copy the API key provided on this page to your clipboard. You will use this to set up a new OpsGenie notification in Metricly. Leave the Teams and Recipients fields as {{teams}} and {{recipients}}, respectively. This ensures that the Teams and Recipients you include in Part 2 are passed from Metricly to your OpsGenie account, and will receive alerts.</description>
+    </item>
+    
+    <item>
+      <title>PagerDuty Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-pageryduty/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-pageryduty/</guid>
+      <description>Configuration 1. Create a service in PagerDuty  Log into your PagerDuty account. Navigate to Configuration &amp;gt; Services. Click Add New Services.  Type a name for the service and select your incident settings. For Integration Type, click the Select a Tool dropdown &amp;gt; Netuitive. Finish all other settings and click Add Service. Copy the Integration Key provided. This is needed to set up a new PagerDuty notification in Metricly.</description>
+    </item>
+    
+    <item>
+      <title>Slack Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-slack/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-slack/</guid>
+      <description>Configuration 1. Install Incoming Webhooks on Slack If you’ve already installed the Incoming Webhooks app, you can skip to step 2.
+  Go to Slack’s app directory. Search for Incoming Webhooks. It should dynamically update a drop-down beneath the search bar. Click Incoming Webhooks.  Click Add Configuration.  Select a channel from Choose a Channel… or create a new one.  Click Add Incoming WebHooks Integration.  2.</description>
+    </item>
+    
+  </channel>
+</rss>

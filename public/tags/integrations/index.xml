@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Integrations on Metricly Docs</title>
+    <link>http://localhost:1313/tags/integrations/</link>
+    <description>Recent content in Integrations on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/integrations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>All Elastisearch Metrics</title>
+      <link>http://localhost:1313/integrations/elastisearch/elastisearch-all-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/elastisearch/elastisearch-all-metrics/</guid>
+      <description>Collected For the table below, all metrics that begin with elasticsearch.indices.* are duplicated for each index being monitored, with the * replaced by the index name (your indices will vary based on your implementation). All metrics that start with elasticsearch.thread_pool.* are duplicated for each thread pool, with the * replaced by the thread pool name. The various thread pools are:
+ bench bulk fetch_shard_started fetch_shard_store flush generic get index listener management merge optimize percolate refresh search snapshot suggest warmer     Fully Qualified Name (FQN) Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     elasticsearch.</description>
+    </item>
+    
+    <item>
+      <title>Anake</title>
+      <link>http://localhost:1313/integrations/anake/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/anake/</guid>
+      <description>Ananke is a Java library that allows Java applications to communicate with and send information to a StatsD listener. You can use Ananke to send metrics from your Java applications to a StatsD server, which will then send the metrics to Metricly.
+Configuration  Setup the Metricly StatsD integration or the Etsy StatsD integration if you haven’t already. We recommend setting up the Metricly StatsD integration if you don’t have a StatsD server already; if you have a StatsD server setup, we recommend setting up the Etsy StatsD integration.</description>
+    </item>
+    
+    <item>
+      <title>Ansible</title>
+      <link>http://localhost:1313/integrations/ansible/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/ansible/</guid>
+      <description>Ansible is a configuration management tool that can be used to automate setup of servers, databases, and more. The Metricly Agent playbook will help get the Metricly Linux agent up and running in your environment quickly.
+Configuration  Copy the Metricly Agent playbook to your Ansible directory.
+ cd /ansible git clone https://github.com/netuitive/ansible-netuitive-agent.git  In the Metricly Agent playbook (netuitive-agent.yml), update the hosts setting to use desired host or inventory file.</description>
+    </item>
+    
+    <item>
+      <title>Application Gateway</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</guid>
+      <description>   Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy BASE CORR UTIL Description     azure.applicationgateway.throughput GAUGE bytes/second average 0 none none yes no no The number of bytes per second being processed by the gateway.    </description>
+    </item>
+    
+    <item>
+      <title>Azure Installation</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-installation/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-installation/</guid>
+      <description>1. Create a Microsoft Azure Integration Card  From the top navigation menu, select Integrations. Click the Microsoft Azure card. In a separate, new tab, open the Azure portal.  The following instructions were created using the Azure portal not the classic portal. Instructions vary depending on which portal you’re using.
+ 2. Create an Active Directory Application in Azure  Once in the Azure portal, click Azure Active Directory from the left side menu.</description>
+    </item>
+    
+    <item>
+      <title>Azure Metrics</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-metrics/</guid>
+      <description> All of the metrics for Azure can be found in this folder.
+Metrics Available  Application Gateway   Basic Metrics   Boot Diagnostics   </description>
+    </item>
+    
+    <item>
+      <title>Basic Metrics</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</guid>
+      <description>Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL Description     azure.virtualmachine.memory.availablememory GAUGE bytes average 0 none none yes no no The total amount of available memory in bytes.   azure.virtualmachine.memory.availableswap GAUGE bytes average 0 none none yes no no The total amount of swap space available in bytes.   azure.virtualmachine.memory.pagespersec GAUGE pages / second average 0 none none yes yes no The total number of pages read and written per second.</description>
+    </item>
+    
+    <item>
+      <title>Boot Diagnostics</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</guid>
+      <description>Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL Description     azure.virtualmachine.networkin GAUGE bytes average 0 none none yes yes no Bytes received over the network. Note that this metric is the same as the Basic Metric azure.virtualmachine.networkinterface.bytesreceived   azure.virtualmachine.networkout GAUGE bytes average 0 none none yes yes no Bytes transmitted over the network. Note that this metric is the same as the Basic Metric azure.</description>
+    </item>
+    
+    <item>
+      <title>CPU Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     cpu.total.guest Percentage of CPU spent running virtual CPUs for guest operatingsystems. average percent 0 none none yes no no   cpu.total.guest_nice Percentage of CPU spent running low-priority virtual CPUs for guestoperating systems. average percent 0 none none yes no no   cpu.total.idle Percentage of CPU not doing any work.</description>
+    </item>
+    
+    <item>
+      <title>CPU Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-cpu-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-cpu-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     cpu-#.cpu-idle.value Number of jiffies the CPU spent idle. average jiffies 0 none none yes no no   cpu-#.cpu-interrupt.value Number of jiffies the CPU spent processing hardware interrupts. average jiffies 0 none none yes no no   cpu-#.cpu-nice.value Number of jiffies the CPU spent processing low priority user threads.</description>
+    </item>
+    
+    <item>
+      <title>CPU Metrics</title>
+      <link>http://localhost:1313/integrations/docker/docker-metrics/docker-cpu-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/docker/docker-metrics/docker-cpu-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Type Units Statistic* BASE CORR Description     cpu.cpu_usage.percpu_usage* COUNTER nanoseconds  yes no Each CPU has a separate metric which tracks the number of nanoseconds that that specific CPU has been used since the container was started.   cpu.cpu_usage.total_usage COUNTER nanoseconds  yes no This metric is the sum of all of the per-CPU usage metrics. Thus, it represents the total number of nanoseconds that all CPUs have been in use since the container was started.</description>
+    </item>
+    
+    <item>
+      <title>Cassandra</title>
+      <link>http://localhost:1313/integrations/cassandra/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/cassandra/</guid>
+      <description>Cassandra is an open source distributed database management system. We use the Jolokia agent to monitor Cassandra’s performance as Cassandra exposes its metrics via JMX. Jolokia connects to a given mbean server and then exposes the server via a REST-like interface, acting as a bridge between JMX and HTTP/JSON.
+Configuration  Download the Jolokia JVM JAR file.  Move the downloaded file to the /opt/netuitive-agent/ directory. Add the following line to the very end of the cassandra-env.</description>
+    </item>
+    
+    <item>
+      <title>Chef</title>
+      <link>http://localhost:1313/integrations/salt/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/salt/</guid>
+      <description>Chef is a configuration automation management software that allows you setup multiple servers using a few commands from a Chef server and workstation. The Metricly Agent cookbook will help you get the Metricly Linux Agent up and running on all of your nodes quickly.
+Configuration If you’ve managed to set up your Chef workstation, server, and nodes, check out our open source Chef cookbook on Github, which will get you started on installing the Metricly Agent on all of your nodes.</description>
+    </item>
+    
+    <item>
+      <title>Collectd</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/</guid>
+      <description>Collectd’s Write HTTP plugin can be used to configure collectd to send data to Metricly. If you need additional information about setting up Collectd, view their wiki.
+Configuration 1. Copy API Key in Metricly  From the top navigation menu, click Integrations. Click the collectd card. Data collection should already be enabled, and a unique API key for your account has already been generated. Copy the API key.  2.</description>
+    </item>
+    
+    <item>
+      <title>Collected Metrics</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     *.calls The number of calls made to the method. sum count 0 none none yes no no   *.errors The number of method calls that resulted in errors. sum count 0 none none yes no no   *.time The amount of time spent executing the method totaled across all calls.</description>
+    </item>
+    
+    <item>
+      <title>Computed Metrics</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</guid>
+      <description>Computed    Fully Qualified Name (FQN) Description Statistic Units Min Max BASE CORR UTIL     netuitive.jvm.heap.utilizationpercent Percentage of the allocated heap memory that is currently in use.Computation:(Heap Used / Heap Committed) * 100 average percent 0 100 yes yes yes   netuitive.jvm.non-heap.utilizationpercent Percentage of the allocated non-heap memory that is currently in use.Computation:(Metaspace or PermGen Used + CodeCache Used / Metaspace or PermGen Committed + CodeCache Committed) * 100 average percent 0 100 yes yes yes   netuitive.</description>
+    </item>
+    
+    <item>
+      <title>Computed Metrics</title>
+      <link>http://localhost:1313/integrations/docker/docker-metrics/docker-network-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/docker/docker-metrics/docker-network-metrics/</guid>
+      <description>Computed    Name FQN Computation Units Min Max BASE CORR Description     Container CPU Percent netuitive.docker.cpu.container_cpu_percent data[‘cpu.system_cpu_usage’].actual == 0 ? 0 :(data[‘cpu.cpu_usage.total_usage’].actual /data[‘cpu.system_cpu_usage’].actual) * 100 percent 0 100 yes yes The percentage of total CPU being used by the container.   Container Memory Percent netuitive.docker.cpu.container_memory_percent (data[‘memory.usage’].actual / data[‘memory.limit’].actual) * 100 percent 0 100 yes yes The amount of memory in use by the container, expressed as a percentage of the memory available to it.</description>
+    </item>
+    
+    <item>
+      <title>Consul</title>
+      <link>http://localhost:1313/integrations/consul/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/consul/</guid>
+      <description>Each node (and service per node) has a set of checks.
+ A node or service is marked critical if any check is marked critical for the node or service. A node or service is marked warning if any check is marked, so long as there are no criticals. A node or service is marked passing if no checks are marked.  Configuration These steps assume you have already set up Consul service.</description>
+    </item>
+    
+    <item>
+      <title>Custom MBeans</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-custom-mbeans/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-custom-mbeans/</guid>
+      <description>The Java agent can collect metrics from custom mbeans. We have provided a sample spring boot application that creates 2 custom mbeans with test attributes here.
+Multiple Custom MBean Diagram For a Single Custom MBean  Navigate to the zorka.properties file in your Java agent directory. Near the bottom of the file, set the attribute netuitive.api.custom.stats.mbean to the custom mbean you defined in your application  #custom mbean to collect metrics from netuitive.</description>
+    </item>
+    
+    <item>
+      <title>DF Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-df-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-df-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     df-&amp;lt;mount&amp;gt;.df_complex-free.value Free disk space in bytes. average bytes 0 none none yes no no   df-&amp;lt;mount&amp;gt;.df_complex-reserved.value Disk space reserved for root user in bytes. average bytes 0 none none yes no no   df-&amp;lt;mount&amp;gt;.df_complex-used.value Used disk space in bytes. average bytes 0 none none yes no no    Computed    Fully Qualified Name(FQN) Description Statistic Units Min Max BASE CORR UTIL     metricly.</description>
+    </item>
+    
+    <item>
+      <title>Diamond Agent</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/</guid>
+      <description>Diamond’s default HTTP Post Handler can be used to send Diamond data to Metricly.
+Configuration 1. Copy the unique API key from the Diamond integration in your account  In Metricly, navigate to Integrations. Click the Diamond card. Data collection should already be enabled, and a unique API key for your account has already been generated. Copy the API key.  2. Install &amp;amp; Configure Diamond  Download and install Diamond using the instructions found here.</description>
+    </item>
+    
+    <item>
+      <title>Disk Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-disk-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-disk-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     disk-&amp;lt;dn&amp;gt;.disk_merged.read Number of merged reads per second. average operations/second 0 none none yes no no   disk-&amp;lt;dn&amp;gt;.disk_merged.write Number of merged writes per second. average operations/second 0 none none yes no no   disk-&amp;lt;dn&amp;gt;.disk_octets.read Bytes read per second. average bytes/second 0 none none yes no no   disk-&amp;lt;dn&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Disk Usage Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</guid>
+      <description> Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.iostat.totalreads Total reads across all disks. Computation: data.sum(‘iostat\..*\.reads)  0 none yes no no   metriclyicly.linux.iostat.totalwrites Total writes across all disks. Computation: data.sum(‘iostat\..*\.writes)  0 none yes no no    </description>
+    </item>
+    
+    <item>
+      <title>Diskspace Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</guid>
+      <description> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     diskspace..byte_percentfree Percentage of free bytes. average percent 0 100 none yes no no    Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.diskspace.*.byte_percentused Percentage of disk space used. Computation: 100 – diskspace.*.byte_percentfree percent 0 100 no no yes    </description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/integrations/docker/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/docker/</guid>
+      <description>Docker is an open way of building, shipping, and running distributed applications anywhere using containers and images. Metricly can be used to monitor the performance of your Docker host and containers.
+Each Docker container you have running will be listed as Docker Container in your Inventory Explorer. Each Docker host you have running will be listed as SERVER in your Inventory Explorer. You’ll be able to identify which of your SERVER elements are Docker hosts via the Docker Summary dashboard (if you have the Docker package installed).</description>
+    </item>
+    
+    <item>
+      <title>Dropwizard</title>
+      <link>http://localhost:1313/integrations/dropwizard/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/dropwizard/</guid>
+      <description>Dropwizard is part Java framework and part Java library that assists in operating web services. Dropwizard will take your web application and run it locally, recording metrics on its performance. You can integrate with Dropwizard via our custom Dropwizard Metrics Library to send these metrics to a StatsD server, which you can then forward to Metricly.
+Configuration  Include the appropriate Ananke library dependency. You’ll also need a working StatsD (Metricly StatsD or Etsy StatsD) integration.</description>
+    </item>
+    
+    <item>
+      <title>Elastisearch</title>
+      <link>http://localhost:1313/integrations/elastisearch/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/elastisearch/</guid>
+      <description>Elasticsearch is a distributed, scalable search server that enables you to search through all kinds of documents. Metricly can be used to monitor the performance of your Elasticsearch server. Additional configuration options are available below the instructions.
+Configuration The Linux Agent must be installed before proceeding. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.</description>
+    </item>
+    
+    <item>
+      <title>Email Notifications</title>
+      <link>http://localhost:1313/integrations/email/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/email/</guid>
+      <description>You can create email templates with custom messaging that are re-usable across multiple policies, or simply choose Metricly’s default email notifications. Read below for configuration steps.
+Configuration  Click your Username &amp;gt; Notifications. Click Add Notification. Select Email for Notification Type. The following modal appears:  Choose your frequency via the Re-notify every field. Check Notify on clear if you want to be notified when the alert has ended. Click New Email to create a new email template.</description>
+    </item>
+    
+    <item>
+      <title>Enable Guest OS Diagnostic Metrics</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</guid>
+      <description>Azure Virtual Machines will share boot diagnostic metrics by default, which are a small subset of core metrics. To enable Guest OS diagnostic (basic) metrics that provide more information about your machine, you’ll need to follow these steps (depending on your situation):
+Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Select a virtual machine. Another window with options will open. Select Diagnostic settings. Under Configure required settings, select the checkbox next to Basic metrics.</description>
+    </item>
+    
+    <item>
+      <title>Enable Proxy</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-enable-proxy/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-enable-proxy/</guid>
+      <description>Enable a Proxy  Navigate to the zorka.properties file. Find the proxy section:
+  netuitive.api.proxy = no netuitive.api.proxy.address = http://&amp;lt;proxy host&amp;gt;:&amp;lt;proxy port&amp;gt;  3. Change the netuitive.api.proxy line to yes.
+4. Add the correct proxy host and port to the netuitive.api.proxy.address line.</description>
+    </item>
+    
+    <item>
+      <title>Etsy StatsD</title>
+      <link>http://localhost:1313/integrations/etsy-statsd/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/etsy-statsd/</guid>
+      <description>Etsy StatsD is one of the most popular StatsD libraries available. Metricly offers a backend plugin for the Etsy StatsD library that allows you to send your StatsD metric data to Metricly. We recommend using our Etsy StatsD integration if you currently have an Etsy StatsD server running and want to send your instrumented data to Metricly. For more information about Etsy StatsD, see the following documentation.
+Configuration 1. Copy API key  From the top navigation menu, click Integrations.</description>
+    </item>
+    
+    <item>
+      <title>Filter Elements</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/azure-filter-elements/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/azure-filter-elements/</guid>
+      <description>You can filter what Azure elements are included in Metricly’s monitoring by using regex to match key-value pairs. Metricly offers opt-in (include) or opt-out (exclude) element filtering.
+Using opt-in filtering  In your Azure portal, create or choose an existing tag (key-value pair). Then, assign the tag to the Azure elements you do not want Metricly to monitor. In Metricly, navigate to your Azure integration card. Expand the element types you want to filter.</description>
+    </item>
+    
+    <item>
+      <title>Flume</title>
+      <link>http://localhost:1313/integrations/collectors/flume/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/flume/</guid>
+      <description>Flume collects and aggregates all of your log files distributed across your environment. Metricly can be used to monitor the performance of your Flume service.
+Configuration  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the FlumeCollector.conf file. Change the enabled setting to True. Update the req_host, req_port, and/or req_path settings as necessary. Save the configuration file and restart the Linux Agent.  Collector Options    Option Default Description     enabled FALSE Enable collecting Flume metrics.</description>
+    </item>
+    
+    <item>
+      <title>HTTP Code Collector</title>
+      <link>http://localhost:1313/integrations/collectors/http-code-collector/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/http-code-collector/</guid>
+      <description>HTTP status codes are useful diagnostic tools for a website to help determine if all content on a website is being delivered properly. Enabling the HTTP code collector for your preferred website will log every status code returned by the website. The first time a status code is returned, our Linux agent will create a metric for that code in Metricly; each subsequent time the status code is returned, another metric will begin to count how many times the code has been returned.</description>
+    </item>
+    
+    <item>
+      <title>HTTP Collector</title>
+      <link>http://localhost:1313/integrations/collectors/http-collector/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/http-collector/</guid>
+      <description>The HTTP Collector gathers statistics from an HTTP or HTTPS connection.
+Prerequisites The Linux Agent is required before proceeding with the setup of the HTTP Collector. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
+Update the Configuration File  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors.</description>
+    </item>
+    
+    <item>
+      <title>HTTPD</title>
+      <link>http://localhost:1313/integrations/collectors/httpd/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/httpd/</guid>
+      <description>The HTTP Collector gathers statistics from an HTTP or HTTPS connection.
+Prerequisites The Linux Agent is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
+Update the Configuration File  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors.</description>
+    </item>
+    
+    <item>
+      <title>Interface Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-interface-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-interface-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     interface-&amp;lt;int&amp;gt;.if_errors.rx Errors per second received. average errors/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_errors.tx Errors per second sent. average errors/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_octets.rx Bytes per second received. average bytes/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_octets.tx Bytes per second sent.</description>
+    </item>
+    
+    <item>
+      <title>Iris</title>
+      <link>http://localhost:1313/integrations/iris/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/iris/</guid>
+      <description>Iris is a Java library that allows your Java applications to communicate with Metricly’s REST API. You can use Iris to send metrics from your applications to Metricly, create dashboards, tags, elements, and much more.
+Configuration  Include the proper dependency from Maven for the appropriate build manager. Invoke the REST API client interface in a central location that your various Java classes can access while ensuring you replace username and password with the appropriate values.</description>
+    </item>
+    
+    <item>
+      <title>JMX</title>
+      <link>http://localhost:1313/integrations/collectors/jmx/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/jmx/</guid>
+      <description>Prerequisites The Linux Agent is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
+Configuration  Download the Jolokia JVM JAR file. Move the downloaded file to the /opt/netuitive-agent/ directory. Pass the Java agent parameter into your application:  -javaagent:/opt/agent.</description>
+    </item>
+    
+    <item>
+      <title>Java Agent</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/</guid>
+      <description>Metricly’s Java agent is a java monitoring agent with a programmable bytecode instrumentation engine that’s enabled by adding a JVM integration in Metricly. The Metricly Java integration allows Metricly to collect JVM runtime system metrics like CPU, Memory, GC, Threads and Classes Count, and application components method performance statistics, such as number of calls and execution time.
+Prerequisites Must have Java 6 Or greater.
+Configuration 1. Copy API key  From the top navigation menu, select Integrations.</description>
+    </item>
+    
+    <item>
+      <title>Load Average Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</guid>
+      <description>Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.loadavg.01.normalized The is the average run queue size over the past minute, normalizedacross CPUs. Computation: attribute[‘cpus’] == null ? null : (data[‘loadavg.01’].actual /attribute[‘cpus’].value)  0 none yes no no   metriclyicly.linux.loadavg.05.normalized The is the average run queue size over the past 5 minutes, normalizedacross CPUs. Computation: attribute[‘cpus’] == null ? null : (data[‘loadavg.</description>
+    </item>
+    
+    <item>
+      <title>Load Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-load-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-load-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     load.load.longterm The is the average run queue size over the past 15 minutes. average queued processes 0 none none yes no no   load.load.midterm The is the average run queue size over the past 5 minutes. average queued processes 0 none none yes yes no   load.</description>
+    </item>
+    
+    <item>
+      <title>Memory Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</guid>
+      <description> Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.memory.utilizationpercent Under Linux, memory buffered and cached are part of memory which can beconsidered available. See the following explanation . Computation: 100 – (memory.Buffers + memory.Cached + memory.MemFree) /memory.MemTotal * 100 percent 0 100 yes yes yes    </description>
+    </item>
+    
+    <item>
+      <title>Memory Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-memory-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-memory-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     memory.memory-buffered.value Memory being used by buffers; this memory is available to be freed forapplications to use, should they need it. average bytes 0 none none yes no no   memory.memory-cached.value Memory being used by caches; this memory is available to be freed forapplications to use, should they need it.</description>
+    </item>
+    
+    <item>
+      <title>Memory Metrics</title>
+      <link>http://localhost:1313/integrations/docker/docker-metrics/docker-memory-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/docker/docker-metrics/docker-memory-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Type Units Statistic* BASE CORR Description     memory.failcnt GAUGE count average no no A count of the number of times that the container requested memory and failed to obtain it. This value should always be 0.   memory.limit GAUGE bytes average no no The total amount of memory available to the container.   memory.max_usage GAUGE bytes average no no The maxiumum amount of memory the container has ever used.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/</guid>
+      <description> All of the metrics for the Diamond Agent can be found in this folder.
+Metrics Available  CPU Metrics   Disk Usage Metrics   Diskspace Metrics   Load Average Metrics   Memory Metrics   Network Metrics   </description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-metrics/</guid>
+      <description>Instrumenting Metric Values  First, set up the Java Agent. In the zorka/scripts/ directory, create a .bsh file for the application you want to monitor. Call zorka.require to load any extension scripts your application depends on. Define the function(s) you want Zorka to monitor using the template below. The template will establish namespace by creating a function that returns a reference to its own instance and then defines a variable that holds an instance of the function.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/cassandra/cassandra-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/cassandra/cassandra-metrics/</guid>
+      <description>Due to the sheer volume of Cassandra metrics, the individual metrics won’t be documented here. Instead, here are some general properties of the groups of metrics:
+All Metrics Share the Following Properties:  Type: GAUGE Statistic: average Min: 0 Sparse Data Strategy: None BASE: Yes CORR: No UTIL: No  Ending in Latency.OneMinuteRate:  Unit: ms (milliseconds)  Non-latency OneMinuteRate Metrics:  Unit = ops (operations per second)  Contains HeapSize, DataSize, DiskSpace, Memory, or RowSize:  Unit: bytes  Ending with HitRate or Ratio:  Unit: percentunit (i.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/http-code-collector/http-code-collector-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/http-code-collector/http-code-collector-metrics/</guid>
+      <description>This collector tracks per URL which response codes are received as well as the number of times each code was received as two separate metrics. The Response Code List metric’s value is the literal response code number at the time it was received. The Response Code count increments each time a response code is received; this means that you won’t have a metric for every response code until your web site serves up that response code.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/http-collector/http-collector-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/http-collector/http-collector-metrics/</guid>
+      <description> Collected    Friendly Name Fully Qualified Name (FQN) Description Statistic     Servers Http Time servers.[hostname].http.[url].time Time to download the page in microseconds. average   Servers Http Size servers.[hostname].http.[url].size Size of the page received in bytes. bytes    </description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/httpd/httpd-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/httpd/httpd-metrics/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     httpd..BusyWorkers GAUGE count average 0 none none yes no no   httpd..BytesPerReq GAUGE bytes average 0 none none yes no no   httpd..BytesPerSec GAUGE Bps average 0 none none yes no no   httpd..CleanupWorkers GAUGE count average 0 none none yes no no   httpd.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/consul/consul-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/consul/consul-metrics/</guid>
+      <description>Fully Qualified Name (FQN) Statistic Units BASE CORR Type Computed     consul.raft.commitTime.avg max  TRUE TRUE counter yes   consul.raft.commitTime.max max  TRUE TRUE counter yes   consul.proxy.web.inbound.rx_bytes avg bytes TRUE FALSE gauge no   consul.health.service.not-found.[service] avg queries TRUE FALSE gauge no   consul.health.service.query-tags.[service].[tags] avg queries TRUE FALSE gauge no   consul.health.service.query-tag.[service].[tag] avg queries TRUE FALSE gauge no   consul.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/docker/docker-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/docker/docker-metrics/</guid>
+      <description> This folder contains all metrics for the Docker integration.
+Metrics Available  CPU Metrics   Computed Metrics   Memory Metrics   </description>
+    </item>
+    
+    <item>
+      <title>Network Metrics</title>
+      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</guid>
+      <description>Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.network.*.errors The total number of errors, both transmit and receive. Computation: network..rx_errors + network..tx_errors errors 0 none yes no no   metriclyicly.linux.network.*.packets The total number of packets, both transmitted and received. Computation: network..rx_packets + network..tx_packets packets 0 none yes yes no   metriclyicly.linux.network.*.errors.percent The percentage of errors, both transmit and receive.</description>
+    </item>
+    
+    <item>
+      <title>Processes Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-processes-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-processes-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     processes.fork_rate.value Number of processes per second being forked. average forks/second 0 none none yes no no   processes.ps_state-blocked.value Number of processes in a blocked state. A process that is blocked is onethat is waiting for some event, such as a resource becoming available orthe completion of an I/O operation.</description>
+    </item>
+    
+    <item>
+      <title>Salt</title>
+      <link>http://localhost:1313/integrations/chef/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/chef/</guid>
+      <description>Salt (or SaltStack) is configuration management software that’s designed to automate infrastructure setup. Metricly’s formula will help get our Linux agent running on all of your minions quickly, so you can start seeing basic host data (as well as collector information if you so choose) for your whole environment using a single command.
+Configuration  Add the netuitive-agent-formula to a directory on your Salt master.
+ mkdir -p /metricly/formulas cd /metricly/formulas git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title>Send Tags Via Zorka</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-element-tags-zorka/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-element-tags-zorka/</guid>
+      <description>Send Element Tags via Zorka Agent  Navigate to the zorka.properties file in your Java agent directory. Near the bottom of the file, uncomment the #netuitive.api.tags list and add tags following the below format:   netuitive.api.tags = name:value, second:value  3. Save the file.</description>
+    </item>
+    
+    <item>
+      <title>Uninstall Agent</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-uninstall/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-uninstall/</guid>
+      <description> How to Uninstall  Remove any JVM startup references to the Netuitive Java Agent.  java -javaagent:/opt/netuitive-zorka/netuitive.jar=/opt/netuitive-zorka -jar zorka-core-test.jar -- service   Delete all Netuitive Java Agent (netuitive-zorka-{version}) files.  If you instrumented metrics using the jvm.bsh script, you will need to remove the references to the script as well.
+ </description>
+    </item>
+    
+    <item>
+      <title>Upgrade Java</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-upgrade/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-upgrade/</guid>
+      <description> How to Upgrade  Download the latest Java agent here. Copy the new netuitive.jar file to your existing Java agent files to replace the old netuitive.jar file. Optionally, manually merge the new zorka.properties file with the old file to receive any new fields or settings.  </description>
+    </item>
+    
+    <item>
+      <title>Uptime Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-uptime-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-uptime-metrics/</guid>
+      <description> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     uptime.uptime.value Number of seconds since the system was last booted. max seconds 0 none none yes no no    </description>
+    </item>
+    
+    <item>
+      <title>Use Calculator App</title>
+      <link>http://localhost:1313/integrations/agents/java-agent/java-calculator-app/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/java-agent/java-calculator-app/</guid>
+      <description>To to run the calculator app with the zorka agent, use the following command:
+java -javaagent:/opt/netuitive-zorka-agent/netuitive.jar=/opt/netuitive-zorka-agent/ -jar /opt/zorka-core-test.jar  Calculator.java Source package com.netuitive.agent.test; public class Calculator { public Integer calculate(String operator, Integer first, Integer second) { if (operator.equals(“+”)) { return add(first, second); } else if (operator.equals(“-“)) { return minus(first, second); } else if (operator.equals(“*”)) { return multiply(first, second); } else if (operator.equals(“/”)) { return divide(first, second); } else { throw new IllegalArgumentException(“‘” + operator + “‘ is not supported, use one of [+|-|*|/] operators”); } } private Integer add(Integer first, Integer second) { return first + second; } private Integer minus(Integer first, Integer second) { return first – second; } private Integer multiply(Integer first, Integer second) { return first * second; } private Integer divide(Integer first, Integer second) { return first / second; } }  Example Below is an example file called calculator.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Azure</title>
+      <link>http://localhost:1313/integrations/microsoft-azure/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/microsoft-azure/</guid>
+      <description> Microsoft Azure is a cloud computing platform, similar to Amazon Web Services. With Azure integration in Metricly, you can monitor the performance of your entire cloud infrastructure. Metricly requires Reader role permissions of your Azure environment, which can be granted using the Owner or User Access Administrator roles.
+Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic Metrics   Filter Elements   </description>
+    </item>
+    
+  </channel>
+</rss>

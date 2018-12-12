@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Indices on Metricly Docs</title>
+    <link>http://localhost:1313/tags/indices/</link>
+    <description>Recent content in Indices on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/indices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>All Elastisearch Metrics</title>
+      <link>http://localhost:1313/integrations/elastisearch/elastisearch-all-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/elastisearch/elastisearch-all-metrics/</guid>
+      <description>Collected For the table below, all metrics that begin with elasticsearch.indices.* are duplicated for each index being monitored, with the * replaced by the index name (your indices will vary based on your implementation). All metrics that start with elasticsearch.thread_pool.* are duplicated for each thread pool, with the * replaced by the thread pool name. The various thread pools are:
+ bench bulk fetch_shard_started fetch_shard_store flush generic get index listener management merge optimize percolate refresh search snapshot suggest warmer     Fully Qualified Name (FQN) Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     elasticsearch.</description>
+    </item>
+    
+  </channel>
+</rss>

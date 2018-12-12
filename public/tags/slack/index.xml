@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slack on Metricly Docs</title>
+    <link>http://localhost:1313/tags/slack/</link>
+    <description>Recent content in Slack on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/slack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PagerDuty Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-pageryduty/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-pageryduty/</guid>
+      <description>Configuration 1. Create a service in PagerDuty  Log into your PagerDuty account. Navigate to Configuration &amp;gt; Services. Click Add New Services.  Type a name for the service and select your incident settings. For Integration Type, click the Select a Tool dropdown &amp;gt; Netuitive. Finish all other settings and click Add Service. Copy the Integration Key provided. This is needed to set up a new PagerDuty notification in Metricly.</description>
+    </item>
+    
+    <item>
+      <title>Slack Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-slack/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-slack/</guid>
+      <description>Configuration 1. Install Incoming Webhooks on Slack If you’ve already installed the Incoming Webhooks app, you can skip to step 2.
+  Go to Slack’s app directory. Search for Incoming Webhooks. It should dynamically update a drop-down beneath the search bar. Click Incoming Webhooks.  Click Add Configuration.  Select a channel from Choose a Channel… or create a new one.  Click Add Incoming WebHooks Integration.  2.</description>
+    </item>
+    
+  </channel>
+</rss>

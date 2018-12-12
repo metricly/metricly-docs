@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Consul on Metricly Docs</title>
+    <link>http://localhost:1313/tags/consul/</link>
+    <description>Recent content in Consul on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/consul/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Consul</title>
+      <link>http://localhost:1313/integrations/consul/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/consul/</guid>
+      <description>Each node (and service per node) has a set of checks.
+ A node or service is marked critical if any check is marked critical for the node or service. A node or service is marked warning if any check is marked, so long as there are no criticals. A node or service is marked passing if no checks are marked.  Configuration These steps assume you have already set up Consul service.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/consul/consul-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/consul/consul-metrics/</guid>
+      <description>Fully Qualified Name (FQN) Statistic Units BASE CORR Type Computed     consul.raft.commitTime.avg max  TRUE TRUE counter yes   consul.raft.commitTime.max max  TRUE TRUE counter yes   consul.proxy.web.inbound.rx_bytes avg bytes TRUE FALSE gauge no   consul.health.service.not-found.[service] avg queries TRUE FALSE gauge no   consul.health.service.query-tags.[service].[tags] avg queries TRUE FALSE gauge no   consul.health.service.query-tag.[service].[tag] avg queries TRUE FALSE gauge no   consul.</description>
+    </item>
+    
+  </channel>
+</rss>

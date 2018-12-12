@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Metrics on Metricly Docs</title>
+    <link>http://localhost:1313/data-visualization/metrics/</link>
+    <description>Recent content in Metrics on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/data-visualization/metrics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Add Metric to Dashboard</title>
+      <link>http://localhost:1313/data-visualization/metrics/metric-add-to-dashboard/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/metrics/metric-add-to-dashboard/</guid>
+      <description>Add as Single Metric Widget  Open the Metric chart sub-menu  . Click Add to Dashboard. In the Add to Dashboard window, click Dashboards and select a dashboard or type to search. Change the widget name if desired. Click Save. The widget is now available on the selected dashboard.  Add as Multi-Metric Widget  Merge as many metrics as desired. Open the Metric Chart sub-menu  . Click Add to Dashboard.</description>
+    </item>
+    
+    <item>
+      <title>Chart Features</title>
+      <link>http://localhost:1313/data-visualization/metrics/metric-charts/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/metrics/metric-charts/</guid>
+      <description>Metric Charts Metric charts on the Metrics page allow you to view time-series data collected on elements in your environment. The range of data shown in metric charts corresponds to the range of data shown in the Events graph. This allows you to compare event data to the metric behavior that caused it.
+Metric Metadata Click the metric name to open the metric metadata panel.    Metadata Description     Avg The average value recorded in the last cycle.</description>
+    </item>
+    
+    <item>
+      <title>Manipulate Metric Charts</title>
+      <link>http://localhost:1313/data-visualization/metrics/metric-charts-manipulate/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/metrics/metric-charts-manipulate/</guid>
+      <description>Metric charts offer functionality that allow you to merge two charts together, move charts around on the Metrics page dashboard, zoom in, and drop a marker on a data point.
+Merge Metric Charts Click on the header of one metric chart and drag it on top of another chart into the green merge region. Click to unmerge the metric charts.
+Move Metric Charts Click on the header of one metric chart and drag it into the blue move region located above a different chart.</description>
+    </item>
+    
+    <item>
+      <title>Page Features</title>
+      <link>http://localhost:1313/data-visualization/metrics/metric-page/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/metrics/metric-page/</guid>
+      <description>Sub Navigation Filters  Name Contains: Specific search based on name
+ Search Metrics: Broad filter based on metric type, provided in tree and list form Element, Type, More: Additional expandable filter options
+ Grouped By: Contains a menu of all quick groups, tags, and attributes available to Metricly. After you’ve rendered some metric charts, choose one of the groupings and Metricly will automatically group the metric charts based on your selection.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>http://localhost:1313/data-visualization/metrics/metrics-troubleshooting/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/metrics/metrics-troubleshooting/</guid>
+      <description>Collected Metrics If you are seeing metrics that will not collect continually, there are two common scenarios: - Your agent-based (Linux, Windows) collector has metrics that are not available anymore being collected - Your agentless-based collector (AWS, Azure) is collecting metrics from a service that’s not being used, e.g., a lambda function not firing or an SQS queue is empty.
+Removing these metrics from being collected is the optimal solution.</description>
+    </item>
+    
+  </channel>
+</rss>

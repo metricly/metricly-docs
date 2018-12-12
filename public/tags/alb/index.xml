@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alb on Metricly Docs</title>
+    <link>http://localhost:1313/tags/alb/</link>
+    <description>Recent content in Alb on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/alb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ALB Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-alb/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-alb/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Sparse Data Strategy (SDS) BASE     Active Connection Count aws.applicationelb.activeconnectioncount ActiveConnectionCount sum none yes   Client TLS Negotiation Error Count aws.applicationelb.clienttlsnegotiationerrorcount ClientTLSNegotiationErrorCount sum none yes   Consumed LCUs aws.applicationelb.consumedlcus ConsumedLCUs sum none no   Healthy Host Count aws.applicationelb.healthyhostcount HealthyHostCount average none yes   HTTP Code ELB 4XX Count aws.applicationelb.httpcode_elb_4xx_count HTTPCode_ELB_4XX_Count sum ReplaceWithZero yes   HTTP Code ELB 5XX Count aws.</description>
+    </item>
+    
+  </channel>
+</rss>

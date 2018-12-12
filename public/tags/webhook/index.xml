@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webhook on Metricly Docs</title>
+    <link>http://localhost:1313/tags/webhook/</link>
+    <description>Recent content in Webhook on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/webhook/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Webhook Payloads</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/webhook-payloads/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/webhook-payloads/</guid>
+      <description>Webhook Payloads Webhooks have two main payload types: inbound and outbound. Outbound payloads can be customized and sent as notifications.
+To create a customized webhook payload:
+ Navigate to your Account Profile &amp;gt; Notifications &amp;gt; Webhook. Click + Add Webhook. Fill out all fields; select Custom from the Payload dropdown. Input your custom JSON + Freemarker writeup. Save.  Example 1
+{ &amp;quot;message_type&amp;quot;:&amp;quot;&amp;lt;#if payloadType == &amp;quot;event&amp;quot;&amp;gt;${eventCategory.name}&amp;lt;/#if&amp;gt;&amp;lt;#if payloadType == &amp;quot;event_cleared&amp;quot;&amp;gt;RECOVERY&amp;lt;/#if&amp;gt;&amp;quot;, &amp;quot;entity_id&amp;quot;:&amp;quot;${elementId}&amp;quot;, &amp;quot;entity_display_name&amp;quot;:&amp;quot;${elementName}&amp;quot;, &amp;quot;state_message&amp;quot;:&amp;quot;&amp;lt;#if payloadType == &amp;quot;event&amp;quot;&amp;gt; [${elementName}] [${policyName}] [${eventTimestamp}] : ${policyDescription}&amp;lt;/#if&amp;gt;&amp;lt;#if payloadType == &amp;quot;event_cleared&amp;quot;&amp;gt;The policy ${policyName} has CLEARED for ${elementName} and is no longer generating events as of ${eventTimestamp}&amp;lt;/#if&amp;gt;&amp;quot; }  Example 2</description>
+    </item>
+    
+  </channel>
+</rss>

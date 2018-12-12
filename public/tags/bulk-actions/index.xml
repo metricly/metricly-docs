@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bulk Actions on Metricly Docs</title>
+    <link>http://localhost:1313/tags/bulk-actions/</link>
+    <description>Recent content in Bulk Actions on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/bulk-actions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quickbar Actions</title>
+      <link>http://localhost:1313/data-visualization/inventory/inventory-quickbar-actions/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/data-visualization/inventory/inventory-quickbar-actions/</guid>
+      <description>The inventory page allows you to quickly navigate through all of your elements, sort, and perform bulk actions. The Inventory Explorer displays all the elements in your environment that were processed in the last hour. Elements are removed from the elements table roughly seven hours after an associated datasource is disabled.
+Use the Quick Bar Select the elements you’d like to edit using the checkboxes on the far left of each row.</description>
+    </item>
+    
+  </channel>
+</rss>

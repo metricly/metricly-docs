@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Collectors on Metricly Docs</title>
+    <link>http://localhost:1313/tags/collectors/</link>
+    <description>Recent content in Collectors on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/collectors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Collectors</title>
+      <link>http://localhost:1313/integrations/agents/linux-agent/linux-collectors/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-collectors/</guid>
+      <description>There are three ways to configure the Linux Agent default collectors: via the BaseCollector, as a combination of individual collectors, or with just the SimpleCollector. This guide outlines their differences and how to use each; however, we encourage you to try the new SimpleCollector.
+Using the Simple Collector netuitive-diamond/src/collectors/simple
+Where the base or individual collectors include more data (which may be less useful or actionable), this SimpleCollector guarantees a cleaner streamlined experience.</description>
+    </item>
+    
+    <item>
+      <title>Collectors</title>
+      <link>http://localhost:1313/integrations/collectors/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CPU Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-cpu-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-cpu-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     cpu-#.cpu-idle.value Number of jiffies the CPU spent idle. average jiffies 0 none none yes no no   cpu-#.cpu-interrupt.value Number of jiffies the CPU spent processing hardware interrupts. average jiffies 0 none none yes no no   cpu-#.cpu-nice.value Number of jiffies the CPU spent processing low priority user threads.</description>
+    </item>
+    
+    <item>
+      <title>Collectd</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/</guid>
+      <description>Collectd’s Write HTTP plugin can be used to configure collectd to send data to Metricly. If you need additional information about setting up Collectd, view their wiki.
+Configuration 1. Copy API Key in Metricly  From the top navigation menu, click Integrations. Click the collectd card. Data collection should already be enabled, and a unique API key for your account has already been generated. Copy the API key.  2.</description>
+    </item>
+    
+    <item>
+      <title>DF Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-df-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-df-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     df-&amp;lt;mount&amp;gt;.df_complex-free.value Free disk space in bytes. average bytes 0 none none yes no no   df-&amp;lt;mount&amp;gt;.df_complex-reserved.value Disk space reserved for root user in bytes. average bytes 0 none none yes no no   df-&amp;lt;mount&amp;gt;.df_complex-used.value Used disk space in bytes. average bytes 0 none none yes no no    Computed    Fully Qualified Name(FQN) Description Statistic Units Min Max BASE CORR UTIL     metricly.</description>
+    </item>
+    
+    <item>
+      <title>Disk Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-disk-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-disk-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     disk-&amp;lt;dn&amp;gt;.disk_merged.read Number of merged reads per second. average operations/second 0 none none yes no no   disk-&amp;lt;dn&amp;gt;.disk_merged.write Number of merged writes per second. average operations/second 0 none none yes no no   disk-&amp;lt;dn&amp;gt;.disk_octets.read Bytes read per second. average bytes/second 0 none none yes no no   disk-&amp;lt;dn&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Flume</title>
+      <link>http://localhost:1313/integrations/collectors/flume/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/flume/</guid>
+      <description>Flume collects and aggregates all of your log files distributed across your environment. Metricly can be used to monitor the performance of your Flume service.
+Configuration  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the FlumeCollector.conf file. Change the enabled setting to True. Update the req_host, req_port, and/or req_path settings as necessary. Save the configuration file and restart the Linux Agent.  Collector Options    Option Default Description     enabled FALSE Enable collecting Flume metrics.</description>
+    </item>
+    
+    <item>
+      <title>HTTP Code Collector</title>
+      <link>http://localhost:1313/integrations/collectors/http-code-collector/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/http-code-collector/</guid>
+      <description>HTTP status codes are useful diagnostic tools for a website to help determine if all content on a website is being delivered properly. Enabling the HTTP code collector for your preferred website will log every status code returned by the website. The first time a status code is returned, our Linux agent will create a metric for that code in Metricly; each subsequent time the status code is returned, another metric will begin to count how many times the code has been returned.</description>
+    </item>
+    
+    <item>
+      <title>HTTP Collector</title>
+      <link>http://localhost:1313/integrations/collectors/http-collector/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/http-collector/</guid>
+      <description>The HTTP Collector gathers statistics from an HTTP or HTTPS connection.
+Prerequisites The Linux Agent is required before proceeding with the setup of the HTTP Collector. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
+Update the Configuration File  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors.</description>
+    </item>
+    
+    <item>
+      <title>HTTPD</title>
+      <link>http://localhost:1313/integrations/collectors/httpd/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/httpd/</guid>
+      <description>The HTTP Collector gathers statistics from an HTTP or HTTPS connection.
+Prerequisites The Linux Agent is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
+Update the Configuration File  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors.</description>
+    </item>
+    
+    <item>
+      <title>Interface Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-interface-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-interface-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     interface-&amp;lt;int&amp;gt;.if_errors.rx Errors per second received. average errors/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_errors.tx Errors per second sent. average errors/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_octets.rx Bytes per second received. average bytes/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_octets.tx Bytes per second sent.</description>
+    </item>
+    
+    <item>
+      <title>JMX</title>
+      <link>http://localhost:1313/integrations/collectors/jmx/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/jmx/</guid>
+      <description>Prerequisites The Linux Agent is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
+Configuration  Download the Jolokia JVM JAR file. Move the downloaded file to the /opt/netuitive-agent/ directory. Pass the Java agent parameter into your application:  -javaagent:/opt/agent.</description>
+    </item>
+    
+    <item>
+      <title>Load Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-load-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-load-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     load.load.longterm The is the average run queue size over the past 15 minutes. average queued processes 0 none none yes no no   load.load.midterm The is the average run queue size over the past 5 minutes. average queued processes 0 none none yes yes no   load.</description>
+    </item>
+    
+    <item>
+      <title>Memory Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-memory-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-memory-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     memory.memory-buffered.value Memory being used by buffers; this memory is available to be freed forapplications to use, should they need it. average bytes 0 none none yes no no   memory.memory-cached.value Memory being used by caches; this memory is available to be freed forapplications to use, should they need it.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/http-code-collector/http-code-collector-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/http-code-collector/http-code-collector-metrics/</guid>
+      <description>This collector tracks per URL which response codes are received as well as the number of times each code was received as two separate metrics. The Response Code List metric’s value is the literal response code number at the time it was received. The Response Code count increments each time a response code is received; this means that you won’t have a metric for every response code until your web site serves up that response code.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/http-collector/http-collector-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/http-collector/http-collector-metrics/</guid>
+      <description> Collected    Friendly Name Fully Qualified Name (FQN) Description Statistic     Servers Http Time servers.[hostname].http.[url].time Time to download the page in microseconds. average   Servers Http Size servers.[hostname].http.[url].size Size of the page received in bytes. bytes    </description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/httpd/httpd-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/httpd/httpd-metrics/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     httpd..BusyWorkers GAUGE count average 0 none none yes no no   httpd..BytesPerReq GAUGE bytes average 0 none none yes no no   httpd..BytesPerSec GAUGE Bps average 0 none none yes no no   httpd..CleanupWorkers GAUGE count average 0 none none yes no no   httpd.</description>
+    </item>
+    
+    <item>
+      <title>Processes Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-processes-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-processes-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     processes.fork_rate.value Number of processes per second being forked. average forks/second 0 none none yes no no   processes.ps_state-blocked.value Number of processes in a blocked state. A process that is blocked is onethat is waiting for some event, such as a resource becoming available orthe completion of an I/O operation.</description>
+    </item>
+    
+    <item>
+      <title>Uptime Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-uptime-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-uptime-metrics/</guid>
+      <description> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     uptime.uptime.value Number of seconds since the system was last booted. max seconds 0 none none yes no no    </description>
+    </item>
+    
+  </channel>
+</rss>

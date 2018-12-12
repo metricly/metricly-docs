@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statsd on Metricly Docs</title>
+    <link>http://localhost:1313/tags/statsd/</link>
+    <description>Recent content in Statsd on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/statsd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Etsy StatsD</title>
+      <link>http://localhost:1313/integrations/etsy-statsd/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/etsy-statsd/</guid>
+      <description>Etsy StatsD is one of the most popular StatsD libraries available. Metricly offers a backend plugin for the Etsy StatsD library that allows you to send your StatsD metric data to Metricly. We recommend using our Etsy StatsD integration if you currently have an Etsy StatsD server running and want to send your instrumented data to Metricly. For more information about Etsy StatsD, see the following documentation.
+Configuration 1. Copy API key  From the top navigation menu, click Integrations.</description>
+    </item>
+    
+  </channel>
+</rss>
