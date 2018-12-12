@@ -5,4 +5,17 @@ draft: true
 ---
 An integration is a system from which Metricly collects data. Metricly offers integrations with *collectors*, *agents*, and *automation software*.
 
-{{% children  %}}
+## Common Dependencies
+
+### OS
+- Redhat 6 and 7
+- CentOS 6 and 7
+- Amazon Linux (latest)
+- Ubuntu 12, 14, 15, and 16
+- Debian 7, 8, and 9
+
+###  Miscellaneous
+- [Linux Agent][1]
+
+
+[1]: /integrations/agents/linux-agent 
