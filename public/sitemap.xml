@@ -1,0 +1,1776 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/getting-started/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/aws-cloudformation-installation/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/linux-agent/linux-standard-install/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/create-edit-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/checks/view-checks/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/events/view-an-event/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/getting-started/cost-tools/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/linux-agent/linux-docker-install/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/aws-iam-installation/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/inventory/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/getting-started/metric-monitoring/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/acess-key-aws/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/linux-agent/linux-elastic-manual-install/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/</loc>
+    <lastmod>2018-11-30T15:34:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/choose-scope/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/create-conditions/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/create-external-event-conditions/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/aws-detailed-billing/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/linux-agent/linux-elastic-beanstalk-install/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/reports/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/aws-optional-config/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/linux-agent/linux-upgrade/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/linux-agent/linux-collectors/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/aws-gov-cloud/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/linux-agent/linux-common-commands/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/linux-agent/linux-optional-config/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/linux-agent/linux-disable/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/linux-agent/linux-remove/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/linux-agent/linux-troubleshooting/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/</loc>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/elastisearch/elastisearch-all-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/anake/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/ansible/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/microsoft-azure/azure-installation/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/microsoft-azure/azure-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/collectd/collectd-cpu-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/docker/docker-metrics/docker-cpu-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/cassandra/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/salt/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/collectd/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/docker/docker-metrics/docker-network-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/consul/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/java-agent/java-custom-mbeans/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/collectd/collectd-df-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/diamond-agent/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/collectd/collectd-disk-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/docker/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/dropwizard/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/elastisearch/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/email/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/java-agent/java-enable-proxy/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/etsy-statsd/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/microsoft-azure/azure-filter-elements/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/flume/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/http-code-collector/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/http-collector/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/httpd/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/collectd/collectd-interface-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/iris/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/jmx/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/java-agent/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/collectd/collectd-load-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/collectd/collectd-memory-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/docker/docker-metrics/docker-memory-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/java-agent/java-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/cassandra/cassandra-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/http-code-collector/http-code-collector-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/http-collector/http-collector-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/httpd/httpd-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/consul/consul-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/docker/docker-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/collectd/collectd-processes-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/chef/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/java-agent/java-element-tags-zorka/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/java-agent/java-uninstall/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/java-agent/java-upgrade/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/collectors/collectd/collectd-uptime-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/java-agent/java-calculator-app/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/reports/reports-asg-recommendations/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/metrics/metric-add-to-dashboard/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/metrics/metric-charts/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/copy-dashboard/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/widgets/cost-explorer-widget/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/reports/reports-cost/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/create-new-dashboard/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/delete-dashboard/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/duration-refresh-intervals/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/reports/reports-ec2-recommendations/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/reports/reports-email/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/widgets/events-widget/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/favorite-dashboard/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/metrics/metric-charts-manipulate/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/metrics/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/widgets/multi-metric-widget/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/metrics/metric-page/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/widgets/range-widget/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/reports/reports-resource-utilization/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/share-dashboard/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/widgets/alerts-widget/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/widgets/single-metric-widget/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/widgets/table-widget/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/metrics/metrics-troubleshooting/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/dashboards/widgets/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-alb/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-asg/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-dynamodb/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ebs/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ec2/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ecs/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-elb/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-emr/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-elasticache/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-knesis/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-lambda/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/agents/linux-agent/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-mq/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/microsoft-azure/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-nlb/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-redshift/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-s3/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-sqs/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/notifications-stride/</loc>
+    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/notifications-victorops/</loc>
+    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/notifications-webhooks/</loc>
+    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/notifications-aws-sns/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/notifications-emails/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/freemarker-email-payloads/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/notifications-hipchat/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/notifications-microsoft-teams/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/notifications-opsgenie/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/notifications-pageryduty/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/notifications-slack/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/webhook-payloads/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-asg/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-ebs/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-ec2/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-elb/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-elasticache/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-lambda/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-rds/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-sqs/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/checks/checks-alerting/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/alerts-page/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/analytics/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/apache-policies-httpd/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/microsoft-azure-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/analytics/baseline-bands/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/cassandra-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/checks/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/choose-duration/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/events/cloudwatch-events/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/collectd-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/analytics/contextual-bands/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/checks/custom-checks/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/delete-policy/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/diamond-linux-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/docker-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/elastic-search-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/inventory/inventory-element-detail/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/enable-disable-policy/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/events/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/java-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/kafka-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/checks/linux-checks/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/inventory/inventory-main-navigation/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/mongodb-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/mute-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/inventory/inventory-quickbar-actions/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/rabbitmq-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/regex-guide/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/inventory/inventory-sort-elements/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/inventory/inventory-startstop-maintenance/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/analytics/static-thresholds/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/data-visualization/analytics/sudden-change-detection/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/top-violators/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/checks/windows-checks/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/alerts-notifications/policies/default-policies/windows-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/_footer/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/_header/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/access-key/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/admin-guide/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/agents/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/alb/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/alerts/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/anake/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/analytics/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ansible/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/apache/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/asg/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/aws/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/azure/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/bulk-actions/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/cassandra/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/charts/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/checks/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/chef/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/cli/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/cloudformation-script/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/cloudwatch/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/cluster/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/collectd/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/collector/</loc>
+    <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/collectors/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/commands/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/conditions/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/configuration-management/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/consul/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/cost-explorer/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/cpu/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/custom-checks/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/custom-metrics/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/dashboards/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/default-policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/delete/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/detailed-billing/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/df/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/diamond/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/directory/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/directory-page/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/disk/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/diskspace/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/docker/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/dropwizard/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/duration/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/dynamodb/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ebs/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ec2/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/ecs/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/elastic-beanstalk/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/elasticache/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/elasticsearch/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/elastisearch/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/elb/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/elements/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/email/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/events/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/external-events/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/flume/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/fqns/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/getting-started/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/getting-started/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/gov-cloud/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/hipchat/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/http/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/http-code/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/httpd/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/iam-role/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/indices/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/installation/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/integration/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/integrations/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/interface/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/inventory-page/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/iris/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/java/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/kafka/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/knesis/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/lambda/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/load/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/load-average/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/logs/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/maintenance/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/memory/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/metadata/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/metrics/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/metrics/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/microsoft/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/microsoft-teams/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/mongodb/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/mq/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/mute/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/network/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/nlb/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/notifications/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/opsgenie/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/optional-config/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/policies/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/processes/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/rabbitmq/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/rds/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/redshift/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/regex/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/reports/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/s3/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/s3-bucket/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/salt/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/scope/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/slack/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/sns/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/sqs/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/statsd/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/stride/</loc>
+    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/threadpool/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/upgrade/</loc>
+    <lastmod>2018-11-30T16:08:13-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/uptime/</loc>
+    <lastmod>2018-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/user-guide/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/victorops/</loc>
+    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/webhook/</loc>
+    <lastmod>2018-05-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/webhooks/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/widgets/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/windows/</loc>
+    <lastmod>2018-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

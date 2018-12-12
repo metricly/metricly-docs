@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloudwatch on Metricly Docs</title>
+    <link>http://localhost:1313/tags/cloudwatch/</link>
+    <description>Recent content in Cloudwatch on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/cloudwatch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CloudWatch Events</title>
+      <link>http://localhost:1313/alerts-notifications/events/cloudwatch-events/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/events/cloudwatch-events/</guid>
+      <description>Through a combination of SNS Notifications, Metricly’s Webhook integration, and an external event conditions policy filter, you can push event logs from your AWS services to Metricly and act on them in the UI. This works across several AWS services. Once set up, these logs can be divided further on the policy level (through matching value strings in the log message and categorized by severity). Policies for your event logs can also be set up with various notifications through email, slack, and others.</description>
+    </item>
+    
+  </channel>
+</rss>

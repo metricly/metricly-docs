@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on Metricly Docs</title>
+    <link>http://localhost:1313/tags/windows/</link>
+    <description>Recent content in Windows on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows Checks</title>
+      <link>http://localhost:1313/alerts-notifications/checks/windows-checks/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/checks/windows-checks/</guid>
+      <description>Enable Windows Checks  Make sure the Windows agent is installed. Metricly checks can be enabled via the configuration files included with the agent. All checks configuration files for the Windows agent can be found in C:/Program Files (x86)/CollectdWin/conf/ or C:/Program Files/CollectdWin/conf/ (depending on the version of windows). Simply change the enable setting for the ReadSystemChecks from false to true in the CollectdWin.config file to enable the system checks. To configure the checks, edit the ReadSystemChecks.</description>
+    </item>
+    
+    <item>
+      <title>Windows Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/windows-policies/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/windows-policies/</guid>
+      <description>Policy names are prefixed with Windows –
+    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated Disk Latency 15 min physical_disk._Total.avg_sec_per_read has an upper baseline deviation physical_disk._Total.avg_sec_per_write has an upper baseline deviation  WARNING This policy will generate a WARNING event when both disk read and write times are higher than their expected baselines   Elevated MemoryUtilization 10 min metricly.</description>
+    </item>
+    
+  </channel>
+</rss>

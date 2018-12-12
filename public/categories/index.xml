@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Metricly Docs</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Admin Guide</title>
+      <link>http://localhost:1313/categories/admin-guide/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/admin-guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Collector</title>
+      <link>http://localhost:1313/categories/collector/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/collector/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>http://localhost:1313/categories/getting-started/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/getting-started/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integration</title>
+      <link>http://localhost:1313/categories/integration/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>http://localhost:1313/categories/metrics/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/categories/metrics/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mq on Metricly Docs</title>
+    <link>http://localhost:1313/tags/mq/</link>
+    <description>Recent content in Mq on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/mq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MQ Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-mq/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-mq/</guid>
+      <description> Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.mq.cpuutilization CpuUtilization  percent      aws.mq.heapusage HeapUsage  percent      aws.mq.networkin NetworkIn  bytes      aws.mq.networkout NetworkOut  bytes      aws.mq.totalmessagecount TotalMessageCount  count       </description>
+    </item>
+    
+  </channel>
+</rss>

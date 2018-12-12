@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft Teams on Metricly Docs</title>
+    <link>http://localhost:1313/tags/microsoft-teams/</link>
+    <description>Recent content in Microsoft Teams on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/microsoft-teams/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Microsoft Teams Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-microsoft-teams/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-microsoft-teams/</guid>
+      <description>Configuration 1. Add an Incoming Webhook in Microsoft Teams  Login to your Microsoft Teams account. Navigate to Store and search for Incoming Webhook.  Choose a Microsoft Team that will receive Metricly notifications. Click Install. Select a channel from your Microsoft team and click Set up.  Provide a name for your Webhook. You may also upload a photo at this point. Click Create. Copy the Webhook URL that is generated.</description>
+    </item>
+    
+  </channel>
+</rss>

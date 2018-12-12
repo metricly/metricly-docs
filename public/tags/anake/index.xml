@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anake on Metricly Docs</title>
+    <link>http://localhost:1313/tags/anake/</link>
+    <description>Recent content in Anake on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/anake/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Anake</title>
+      <link>http://localhost:1313/integrations/anake/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/anake/</guid>
+      <description>Ananke is a Java library that allows Java applications to communicate with and send information to a StatsD listener. You can use Ananke to send metrics from your Java applications to a StatsD server, which will then send the metrics to Metricly.
+Configuration  Setup the Metricly StatsD integration or the Etsy StatsD integration if you haven’t already. We recommend setting up the Metricly StatsD integration if you don’t have a StatsD server already; if you have a StatsD server setup, we recommend setting up the Etsy StatsD integration.</description>
+    </item>
+    
+  </channel>
+</rss>

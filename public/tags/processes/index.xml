@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Processes on Metricly Docs</title>
+    <link>http://localhost:1313/tags/processes/</link>
+    <description>Recent content in Processes on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/processes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Processes Metrics</title>
+      <link>http://localhost:1313/integrations/collectors/collectd/collectd-processes-metrics/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-processes-metrics/</guid>
+      <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     processes.fork_rate.value Number of processes per second being forked. average forks/second 0 none none yes no no   processes.ps_state-blocked.value Number of processes in a blocked state. A process that is blocked is onethat is waiting for some event, such as a resource becoming available orthe completion of an I/O operation.</description>
+    </item>
+    
+  </channel>
+</rss>

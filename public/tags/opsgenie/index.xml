@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Opsgenie on Metricly Docs</title>
+    <link>http://localhost:1313/tags/opsgenie/</link>
+    <description>Recent content in Opsgenie on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/opsgenie/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpsGenie Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-opsgenie/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-opsgenie/</guid>
+      <description>Configuration 1. Create a Metricly integration within OpsGenie  Log in to your OpsGenie account. Under Integrations, select Metricly. Copy the API key provided on this page to your clipboard. You will use this to set up a new OpsGenie notification in Metricly. Leave the Teams and Recipients fields as {{teams}} and {{recipients}}, respectively. This ensures that the Teams and Recipients you include in Part 2 are passed from Metricly to your OpsGenie account, and will receive alerts.</description>
+    </item>
+    
+  </channel>
+</rss>

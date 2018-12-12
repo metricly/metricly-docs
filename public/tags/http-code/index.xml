@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Http Code on Metricly Docs</title>
+    <link>http://localhost:1313/tags/http-code/</link>
+    <description>Recent content in Http Code on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/http-code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTTP Code Collector</title>
+      <link>http://localhost:1313/integrations/collectors/http-code-collector/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/http-code-collector/</guid>
+      <description>HTTP status codes are useful diagnostic tools for a website to help determine if all content on a website is being delivered properly. Enabling the HTTP code collector for your preferred website will log every status code returned by the website. The first time a status code is returned, our Linux agent will create a metric for that code in Metricly; each subsequent time the status code is returned, another metric will begin to count how many times the code has been returned.</description>
+    </item>
+    
+  </channel>
+</rss>

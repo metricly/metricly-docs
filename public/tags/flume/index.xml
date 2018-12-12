@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flume on Metricly Docs</title>
+    <link>http://localhost:1313/tags/flume/</link>
+    <description>Recent content in Flume on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/flume/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flume</title>
+      <link>http://localhost:1313/integrations/collectors/flume/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/flume/</guid>
+      <description>Flume collects and aggregates all of your log files distributed across your environment. Metricly can be used to monitor the performance of your Flume service.
+Configuration  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the FlumeCollector.conf file. Change the enabled setting to True. Update the req_host, req_port, and/or req_path settings as necessary. Save the configuration file and restart the Linux Agent.  Collector Options    Option Default Description     enabled FALSE Enable collecting Flume metrics.</description>
+    </item>
+    
+    <item>
+      <title>JMX</title>
+      <link>http://localhost:1313/integrations/collectors/jmx/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/collectors/jmx/</guid>
+      <description>Prerequisites The Linux Agent is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
+Configuration  Download the Jolokia JVM JAR file. Move the downloaded file to the /opt/netuitive-agent/ directory. Pass the Java agent parameter into your application:  -javaagent:/opt/agent.</description>
+    </item>
+    
+  </channel>
+</rss>

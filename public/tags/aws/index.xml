@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aws on Metricly Docs</title>
+    <link>http://localhost:1313/tags/aws/</link>
+    <description>Recent content in Aws on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ALB Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-alb/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-alb/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Sparse Data Strategy (SDS) BASE     Active Connection Count aws.applicationelb.activeconnectioncount ActiveConnectionCount sum none yes   Client TLS Negotiation Error Count aws.applicationelb.clienttlsnegotiationerrorcount ClientTLSNegotiationErrorCount sum none yes   Consumed LCUs aws.applicationelb.consumedlcus ConsumedLCUs sum none no   Healthy Host Count aws.applicationelb.healthyhostcount HealthyHostCount average none yes   HTTP Code ELB 4XX Count aws.applicationelb.httpcode_elb_4xx_count HTTPCode_ELB_4XX_Count sum ReplaceWithZero yes   HTTP Code ELB 5XX Count aws.</description>
+    </item>
+    
+    <item>
+      <title>ASG Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-asg/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-asg/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     CPU Credit Balance aws.ec2.cpucreditbalance CPUCreditBalance average  none yes no no   CPU Credit Usage aws.ec2.cpucreditusage CPUCreditUsage sum  none yes no no   CPU Utilization Percent aws.ec2.cpuutilization CPUUtilizationPercent average percent 100 yes yes yes   Ephemeral Disk Read Bytes aws.ec2.diskreadbytes DiskReadBytes sum bytes none no no no   Ephemeral Disk Read Ops aws.</description>
+    </item>
+    
+    <item>
+      <title>AWS Integration</title>
+      <link>http://localhost:1313/integrations/aws-integration/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/</guid>
+      <description>The Amazon Web Services (AWS) Integration allows performance data to be collected at regular intervals from AWS for analysis in Metricly.
+Metrics
+For a list of collected and computed metrics, visit our Metrics List.
+Dependencies
+Must have access to an AWS account and CloudWatch metrics.
+   ASG EC2 EBS     ELB RDS SQS   DynamoDB Kinesis Stream Redshift   ElastiCache EMR ECS   Lambda Custom CloudWatch Metric S3 Bucket   Application Load Balancer Target Group MQ Broker    Prerequisite: Enable Cost Explorer Regardless of the installation method used below, Cost Explorer must be enabled from the master billing account–even if set up on a sub-account.</description>
+    </item>
+    
+    <item>
+      <title>AWS Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/</guid>
+      <description> All of the metrics for AWS can be found in this folder.
+Metrics Available  ALB Metrics   ASG Metrics   DynamoDB Metrics   EBS Metrics   EC2 Metrics   ECS Metrics   ELB Metrics   EMR Metrics   Elasticache Metrics   Knesis Metrics   Lambda Metrics   MQ Metrics   NLB Metrics   Redshift Metrics   S3 Metrics   SQS Metrics   </description>
+    </item>
+    
+    <item>
+      <title>Access Key</title>
+      <link>http://localhost:1313/integrations/aws-integration/acess-key-aws/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/acess-key-aws/</guid>
+      <description>Access key Setting up an AWS integration is a two step process:
+ Create a new AWS integration in Metricly and share the Access Key ID and Secret Access Key of the desired IAM read-only user.
+ Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
+  Step 1: Create a new AWS integration  From the top navigation menu, select Integrations.</description>
+    </item>
+    
+    <item>
+      <title>CloudFormation</title>
+      <link>http://localhost:1313/integrations/aws-integration/aws-cloudformation-installation/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/aws-cloudformation-installation/</guid>
+      <description>This installation method leverages a CloudFormation script found in step 1.4. After you make a new AWS integration in Metricly, the script populates a read-only IAM role in your AWS account and links it using the integration’s Account ID and External ID. Once created, it may take a few minutes for the status to be updated.
+Create an AWS Integration in Metricly  Open Metricly and navigate to Integrations &amp;gt; AWS.</description>
+    </item>
+    
+    <item>
+      <title>Detailed Billing</title>
+      <link>http://localhost:1313/integrations/aws-integration/aws-detailed-billing/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/aws-detailed-billing/</guid>
+      <description>How to Enable Detailed Billing  If you already have an S3 bucket receiving billing files from Amazon, then you do not need to complete steps 1 and 2. You can go directly to step 3 to provide Metricly access to the existing files. If you have already created an S3 bucket, you will not need to create a separate one. Just be sure to select the correct S3 bucket in step 2.</description>
+    </item>
+    
+    <item>
+      <title>DynamoDB Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-dynamodb/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-dynamodb/</guid>
+      <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Max Sparse Data Strategy (SDS) BASE CORR     aws.dynamodb.conditionalcheckfailedrequests ConditionalCheckFailedRequests sum count none zero no no   aws.dynamodb.consumedreadcapacityunits ConsumedReadCapacityUnits sum count none zero yes no   aws.dynamodb.consumedwritecapacityunits ConsumedWriteCapacityUnits sum count none zero yes no   aws.dynamodb.onlineindexconsumedwritecapacity OnlineIndexConsumedWriteCapacity sum count none zero yes no   aws.dynamodb.onlineindexpercentageprogress OnlineIndexPercentageProgress max percent 100 none no no   aws.</description>
+    </item>
+    
+    <item>
+      <title>EBS Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ebs/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ebs/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Description Units BASE CORR UTIL Related Global Policies     netuitive.aws.ebs.totalops This metric expresses the total number of read and write operations against this EBS instance. This metric is useful for monitoring EBS I/Oactivity.Computation: Read Ops + Write Ops operations yes no no    netuitive.aws.ebs.totalbytes This metric expresses the total number of bytes read and written from/to this EBS instance.</description>
+    </item>
+    
+    <item>
+      <title>EC2 Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ec2/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ec2/</guid>
+      <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     aws.ec2.cpucreditbalance CPUCreditBalance average  none yes no no   aws.ec2.cpucreditusage CPUCreditUsage sum  none yes no no   aws.ec2.cpuutilization CPUUtilizationPercent average percent 100 yes yes yes   aws.ec2.diskreadbytes DiskReadBytes sum bytes none no no no   aws.ec2.diskreadops DiskReadOps sum  none no no no   aws.</description>
+    </item>
+    
+    <item>
+      <title>ECS Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ecs/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ecs/</guid>
+      <description>Collected    Cluster Service Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE UTIL     yes no aws.ecs.cpureservation CPUReservation average percent 100 yes    yes no aws.ecs.memoryreservation MemoryReservation average percent 100 yes    yes yes aws.ecs.cpuutilization CPUUtilization average percent 100 yes yes   yes yes aws.ecs.memoryutilization MemoryUtilization average percent 100 yes yes   yes no aws.ecs.activeservicecount Active Service Count average  none yes    yes no aws.</description>
+    </item>
+    
+    <item>
+      <title>ELB Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-elb/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-elb/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units Max Sparse Data Strategy (SDS) BASE CORR     Healthy Host Count aws.elb.healthyhostcount HealthyHostCount average  none last no no   Unhealthy Host Count aws.elb.unhealthyhostcount UnHealthyHostCount average  none last no no   Request Count aws.elb.requestcount RequestCount sum  none zero yes yes   Average Latency aws.elb.latency Latency average s none zero yes yes   HTTPCode ELB 4XX Response Count aws.</description>
+    </item>
+    
+    <item>
+      <title>EMR Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-emr/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-emr/</guid>
+      <description>AWS groups EMR metrics into different categories (cluster status, node status, IO, etc.), but this has no impact on how Metricly monitors EMR.
+Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     Cluster Status aws.elasticmapreduce.appscompleted AppsCompleted average count none no no no   Cluster Status aws.elasticmapreduce.appsfailed AppsFailed average count none no no no   Cluster Status aws.</description>
+    </item>
+    
+    <item>
+      <title>Elasticache Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-elasticache/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-elasticache/</guid>
+      <description>Elasticache instances can come in a few “flavors”, which means metrics are unique to each “flavor” of Elasticache.
+ Host-level metrics are present on both Memcached as well as Redis clusters Memcached metrics are available only on Memcached clusters, Memcached 1.4.14 metrics are only available on Memcached clusters using at least version 1.4.14 Redis metrics are present only on Redis clusters.  Collected    Metric Type Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     Host-level aws.</description>
+    </item>
+    
+    <item>
+      <title>Gov Cloud</title>
+      <link>http://localhost:1313/integrations/aws-integration/aws-gov-cloud/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/aws-gov-cloud/</guid>
+      <description>AWS GovCloud (US) is a segment of Amazon Web Services cloud offerings that restrict physical and logical administrative access to U.S. citizens only. The region meets the requirements for U.S. International Traffic in Arms Regulations (ITAR), and allows users to move Controlled Unclassified Information (CUI) into the cloud. Check out our blog post, Monitor AWS GovCloud With Metricly, or the official AWS Guide for more information.
+Configuration Leave GovCloud disabled unless you have signed up for and are using a GovCloud-restricted AWS account.</description>
+    </item>
+    
+    <item>
+      <title>IAM</title>
+      <link>http://localhost:1313/integrations/aws-integration/aws-iam-installation/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/aws-iam-installation/</guid>
+      <description>IAM Role Method Setting up an AWS integration via IAM Role is a two step process:
+Create a new AWS integration in Metricly using an IAM read-only role. Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
+Step 1: Create a new AWS integration  From the top navigation menu, select Integrations.</description>
+    </item>
+    
+    <item>
+      <title>Knesis Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-knesis/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-knesis/</guid>
+      <description>Currently, Metricly only supports Kinesis Streams, but additional support for Kinesis Firehose may come in the future.
+Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.kinesis.getrecords.bytes GetRecords.Bytes average bytes zero yes yes   aws.kinesis.getrecords.iteratoragemilliseconds GetRecords.IteratorAgeMilliseconds average ms zero yes no   aws.kinesis.getrecords.latency GetRecords.Latency average ms zero yes yes   aws.kinesis.getrecords.records GetRecords.Records sum ops zero yes yes   aws.</description>
+    </item>
+    
+    <item>
+      <title>Lambda Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-lambda/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-lambda/</guid>
+      <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.lambda.duration GAUGE average milliseconds zero yes yes   aws.lambda.errors GAUGE sum count zero no no   aws.lambda.invocations GAUGE sum count zero yes yes   aws.lambda.throttles GAUGE sum count zero no no    Computed    Friendly Name FQN Computation Units Min Max Description     Error Percent netuitive.</description>
+    </item>
+    
+    <item>
+      <title>MQ Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-mq/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-mq/</guid>
+      <description> Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.mq.cpuutilization CpuUtilization  percent      aws.mq.heapusage HeapUsage  percent      aws.mq.networkin NetworkIn  bytes      aws.mq.networkout NetworkOut  bytes      aws.mq.totalmessagecount TotalMessageCount  count       </description>
+    </item>
+    
+    <item>
+      <title>NLB Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-nlb/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-nlb/</guid>
+      <description>Collected    Friendly Name FQN Statistic Baseline Correlation     Active Flow Count aws.networkelb.activeflowcount AVG yes no   ELB Consumed ICUs aws.networkelb.consumedlcus MAX no no   ELB Healthy Host Count aws.networkelb.healthyhostcount MAX no no   ELB New Flow Count aws.networkelb.newflowcount SUM yes no   ELB Processed Bytes aws.networkelb.processedbytes SUM yes no   TCP Client Reset Count aws.networkelb.tcp_client_reset_count SUM no no   TCP ELB Reset Count aws.</description>
+    </item>
+    
+    <item>
+      <title>Optional Config</title>
+      <link>http://localhost:1313/integrations/aws-integration/aws-optional-config/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/aws-optional-config/</guid>
+      <description>Change Element Display Names You can change how certain elements’ names are displayed in the application to help distinguish between each instance, e.g., you have 15 EC2 instances with the same name and want to know the difference between each.
+ Under the Include Types list, expand the desired type.
+ Beneath the Tag Key field, click Advanced. A menu expands.
+ Hover next to Element Name; an edit icon will appear.</description>
+    </item>
+    
+    <item>
+      <title>Redshift Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-redshift/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-redshift/</guid>
+      <description>For each Redshift cluster, two types of elements are collected:
+ RedshiftCluster: Contains cluster-specific metrics as well as metrics that are averages across all nodes. RedshiftNode: Contains node-specific metrics. There will be one element per Redshift node.  The table below denotes which metrics are cluster- or node-based (or both).
+Collected    Fully Qualified Name (FQN) Cluster Node AWS Metric Statistic Units Max BASE CORR UTIL     aws.</description>
+    </item>
+    
+    <item>
+      <title>S3 Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-s3/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-s3/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units BASE     Bucket Size Bytes aws.s3.bucketsizebytes BucketSizeBytes average GiB/KiB yes   Number of Objects aws.s3.NumberOfObjects NumberOfObjects average K yes   4xx Errors aws.s3.4xxerrors 4xxErrors average count yes   4xx Errors aws.s3.5xxerrors 5xxErrors average count yes   All Requests aws.s3.allrequests AllRequests average count yes   First Byte Latency aws.</description>
+    </item>
+    
+    <item>
+      <title>SQS Metrics</title>
+      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-sqs/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-sqs/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units BASE     Approximate Age of Oldest Message aws.sqs.approximateageofoldestmessage ApproximateAgeOfOldestMessage average seconds yes   Approximate Number of Messages Delayed aws.sqs.approximatenumberofmessagesdelayed ApproximateNumberOfMessagesDelayed sum Count yes   Approximate Number of Messages Not Visible aws.sqs.approximatenumberofmessagesnotvisible ApproximateNumberOfMessagesNotVisible sum Count yes   Approximate Number of Messages Visible aws.sqs.approximatenumberofmessagesvisible ApproximateNumberOfMessagesVisible sum Count yes   Number of Empty Receives aws.</description>
+    </item>
+    
+    <item>
+      <title>AWS ASG Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-asg/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-asg/</guid>
+      <description>Policy names are prefixed with AWS ASG –
+    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated CPUActivity (Normal Network Activity) 30 min aws.ec2.cpuutilization has an upper baseline + upper contextual deviation metricly.aws.ec2.bytesinperse does not have a upper baseline + upper contextual deviation metricly.aws.ec2.bytesoutpersec does not have a upper baseline + upper contextual deviation. INFO This policy is designed to catch cases where CPU activity is higher than than normal and cannot be explained by a corresponding increase in network traffic.</description>
+    </item>
+    
+    <item>
+      <title>AWS DynamoDB Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</guid>
+      <description>Policy names are prefixed with AWS DynamoDB –
+    Policy Name Duration Condition 1 Cat. Description     Elevated Read Capacity Utilization 30 Min metricly.aws.dynamodb.readcapacityutilization has an upper baseline deviation + an upper contextual deviation + a static threshold ≥ 50. WARNING Read Capacity Utilization has been higher than expected for over 30 minutes; also, the actual value has been above 50% for that time.   Elevated Write Capacity Utilization 30 Min metricly.</description>
+    </item>
+    
+    <item>
+      <title>AWS EBS Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-ebs/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-ebs/</guid>
+      <description>Before reading about the EBS default policy, it is important to understand the following Metricly computed metrics.
+ Average Latency: Average Latency is straightforward as it represents the average amount of time that it takes for a disk operation to complete. Queue Length Differential: Queue Length Differential measures the difference between the actual disk queue length and the “ideal” disk queue length.The ideal queue length is based on Amazon’s rule of thumb that for every 200 IOPS you should have a queue length of 1.</description>
+    </item>
+    
+    <item>
+      <title>AWS EC2 Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-ec2/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-ec2/</guid>
+      <description>Policy names are prefixed with AWS EC2 –
+    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated CPUActivity (Normal Network Activity) 30 min aws.ec2.cpuutilization has an upper baseline deviation + an upper contextual deviation metricly.aws.ec2.bytesinpersec does not have a upper baseline deviation + does not have a upper contextual deviation metricly.aws.ec2.bytesoutpersec does not have a upper baseline deviation + does not have a upper contextual deviationn INFO Increases in CPU activity are not uncommon when there is a rise in network activity.</description>
+    </item>
+    
+    <item>
+      <title>AWS ELB Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-elb/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-elb/</guid>
+      <description>Policy names are prefixed with AWS ELB –
+    Policy name Duration Condition 1 (and) Condition 2 Category Description     Elevated BackendError Rate (Low Volume) 15 min metricly.aws.elb.httpcodebackenderrorpercent has an upper baseline deviation + an upper contextual deviation metricly.aws.elb.requestcount has a static threshold &amp;lt;1,000 WARNING This is the first of three policies that look at elevated backend error rates. This policy looks specifically at low traffic volume cases.</description>
+    </item>
+    
+    <item>
+      <title>AWS Elasticache Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-elasticache/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-elasticache/</guid>
+      <description>Policy names are prefixed with AWS Elasticache –
+    Policy name Duration Condition 1 (and) Condition 2 Category Description     Memcached – CPU Threshold Exceeded 5 min aws.elasticache.cpuutilization has a static threshold &amp;gt;90%  CRITICAL The Memcached Node has exceeded the CPU threshold of 90%. The cache cluster may need to be scaled, either by using a larger node type or by adding more nodes.</description>
+    </item>
+    
+    <item>
+      <title>AWS Lambda Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-lambda/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-lambda/</guid>
+      <description>Policy names are prefixed with AWS Lambda –
+    Policy name Duration Conditions Category Description     Elevated Invocation Count 30 min aws.lambda.invocations has an upper baseline deviation + an upper contextual deviation WARNING The number of calls to the function (invocations) have been greater than expected for at least the last 30 minutes.   Depressed Invocation Count 10 min aws.lambda.invocations has a lower baseline deviation + a lower contextual deviation WARNING The number of calls to the function (invocations) have been lower than expected for at least the last 10 minutes.</description>
+    </item>
+    
+    <item>
+      <title>AWS RDS Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-rds/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-rds/</guid>
+      <description>Policy names are prefixed with AWS RDS –
+    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated RDS CPU Activity (Normal Network Activity) 30 min metricly.aws.rds.cpuutilization has an upper baseline deviation + an upper contextual deviation + a static threshold &amp;gt; 20 metricly.aws.rds.networkreceivethroughput does not have an upper baseline deviation + does not have a upper contextual deviation metricly.</description>
+    </item>
+    
+    <item>
+      <title>AWS SQS Policies</title>
+      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-sqs/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-sqs/</guid>
+      <description>Policy names are prefixed with AWS SQS –
+    Policy name Duration Conditions Category Description     AWS SQS – Queue Falling Behind 2 hours metricly.aws.sqs.arrivalrate has a metric threshold &amp;gt; metricly.aws.sqs.completionrate CRITICAL The arrival rate for the queue has been greater than the completion rate for at least 2 hours. This is an indication that processing of the queue is falling behind.    </description>
+    </item>
+    
+  </channel>
+</rss>

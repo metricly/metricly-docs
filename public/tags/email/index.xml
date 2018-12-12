@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Email on Metricly Docs</title>
+    <link>http://localhost:1313/tags/email/</link>
+    <description>Recent content in Email on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Email Notifications</title>
+      <link>http://localhost:1313/integrations/email/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/integrations/email/</guid>
+      <description>You can create email templates with custom messaging that are re-usable across multiple policies, or simply choose Metricly’s default email notifications. Read below for configuration steps.
+Configuration  Click your Username &amp;gt; Notifications. Click Add Notification. Select Email for Notification Type. The following modal appears:  Choose your frequency via the Re-notify every field. Check Notify on clear if you want to be notified when the alert has ended. Click New Email to create a new email template.</description>
+    </item>
+    
+    <item>
+      <title>Email Reports</title>
+      <link>http://localhost:1313/reports/reports-email/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/reports/reports-email/</guid>
+      <description>Email Reports are generated and sent after business hours (EST) and can be enabled from your user account profile. Email Reports provide a quick look into your environment from the last 24 hours. Clicking any of the links within the email opens Metricly to the appropriate section.
+Available Reports There are three main email reports available: the Weekly Recommendation Report, the Daily Top Violator Report, and the Daily AWS Cost Report.</description>
+    </item>
+    
+    <item>
+      <title>Email Notifications</title>
+      <link>http://localhost:1313/alerts-notifications/notifications/notifications-emails/</link>
+      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-emails/</guid>
+      <description>You can create email templates with custom messaging that are re-usable across multiple policies, or simply choose Metricly’s default email notifications. Read below for configuration steps.
+Configuration  Click your Username &amp;gt; Notifications. Click Add Notification. Select Email for Notification Type. The following modal appears:  Choose your frequency via the Re-notify every field. Check Notify on clear if you want to be notified when the alert has ended. Click New Email to create a new email template.</description>
+    </item>
+    
+  </channel>
+</rss>

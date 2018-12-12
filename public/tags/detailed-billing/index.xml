@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Detailed Billing on Metricly Docs</title>
+    <link>http://localhost:1313/tags/detailed-billing/</link>
+    <description>Recent content in Detailed Billing on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/detailed-billing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS Integration</title>
+      <link>http://localhost:1313/integrations/aws-integration/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/</guid>
+      <description>The Amazon Web Services (AWS) Integration allows performance data to be collected at regular intervals from AWS for analysis in Metricly.
+Metrics
+For a list of collected and computed metrics, visit our Metrics List.
+Dependencies
+Must have access to an AWS account and CloudWatch metrics.
+   ASG EC2 EBS     ELB RDS SQS   DynamoDB Kinesis Stream Redshift   ElastiCache EMR ECS   Lambda Custom CloudWatch Metric S3 Bucket   Application Load Balancer Target Group MQ Broker    Prerequisite: Enable Cost Explorer Regardless of the installation method used below, Cost Explorer must be enabled from the master billing account–even if set up on a sub-account.</description>
+    </item>
+    
+    <item>
+      <title>Detailed Billing</title>
+      <link>http://localhost:1313/integrations/aws-integration/aws-detailed-billing/</link>
+      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      
+      <guid>http://localhost:1313/integrations/aws-integration/aws-detailed-billing/</guid>
+      <description>How to Enable Detailed Billing  If you already have an S3 bucket receiving billing files from Amazon, then you do not need to complete steps 1 and 2. You can go directly to step 3 to provide Metricly access to the existing files. If you have already created an S3 bucket, you will not need to create a separate one. Just be sure to select the correct S3 bucket in step 2.</description>
+    </item>
+    
+  </channel>
+</rss>
