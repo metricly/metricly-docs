@@ -2,7 +2,7 @@
 title: "CPU Metrics"
 date: 2018-12-11
 draft: true
-tags: ["collectd", "integrations", "metrics", "cpu" ]
+tags: ["collectd", "integrations", "metrics", "cpu", "collectors" ]
 author: Lawrence Lane
 ---
 

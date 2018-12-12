@@ -2,7 +2,7 @@
 title: "HTTPD"
 date: 2018-12-11
 draft: true
-tags: ["httpd", "integrations",]
+tags: ["httpd", "integrations", "collectors"]
 author: Lawrence Lane
 ---
 The HTTP Collector gathers statistics from an HTTP or HTTPS connection.

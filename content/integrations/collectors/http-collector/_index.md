@@ -2,7 +2,7 @@
 title: "HTTP Collector"
 date: 2018-12-11
 draft: true
-tags: ["http", "integrations", "collector"]
+tags: ["http", "integrations", "collectors"]
 author: Lawrence Lane
 ---
 The HTTP Collector gathers statistics from an HTTP or HTTPS connection.

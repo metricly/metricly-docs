@@ -2,7 +2,7 @@
 title: "Metrics"
 date: 2018-12-11
 draft: true
-tags: ["http", "integrations", "metrics"]
+tags: ["http", "integrations", "metrics", "collectors"]
 author: Lawrence Lane
 ---
 This collector tracks per URL which response codes are received as well as the number of times each code was received as two separate metrics. The Response Code List metric’s value is the literal response code number at the time it was received. The Response Code count increments each time a response code is received; this means that you won’t have a metric for every response code until your web site serves up that response code.
