@@ -1,6 +1,6 @@
 ---
 title: "Favorites"
-date: 2018-12-03
+#date: 2018-12-03
 draft: false
 categories:
 tags: ["getting started", "metrics", "elements", "dashboards"]

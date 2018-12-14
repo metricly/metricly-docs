@@ -1,6 +1,6 @@
 ---
 title: "Email Notifications"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["email", "integrations" ]
 author: Lawrence Lane

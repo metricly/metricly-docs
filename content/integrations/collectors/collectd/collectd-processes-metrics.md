@@ -1,6 +1,6 @@
 ---
 title: "Processes Metrics"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["collectd", "integrations", "metrics", "processes", "collectors" ]
 author: Lawrence Lane

@@ -1,6 +1,6 @@
 ---
 title: "Cost Reports"
-date: 2018-12-03
+#date: 2018-12-03
 draft: false
 categories:
 tags: ["reports", "s3", "ec2", "rds" ]

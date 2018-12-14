@@ -1,6 +1,6 @@
 ---
 title: "Microsoft NET"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["microsoft net", "integrations" ]
 author: Lawrence Lane

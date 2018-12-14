@@ -1,6 +1,6 @@
 ---
 title: "Contextual Bands"
-date: 2018-04-12
+#date: 2018-04-12
 draft: false
 categories:
 tags: ["getting started", "analytics", "metrics"]

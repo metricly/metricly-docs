@@ -1,6 +1,6 @@
 ---
 title: "Metrics"
-date: 2018-12-12
+#date: 2018-12-12
 draft: false
 tags: ["ngnix", "integrations", "metrics" ]
 author: Lawrence Lane

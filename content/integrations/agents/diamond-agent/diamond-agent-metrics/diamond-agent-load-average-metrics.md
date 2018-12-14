@@ -1,6 +1,6 @@
 ---
 title: "Load Average Metrics"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["diamond", "integrations", "agents", "load average" ]
 author: Lawrence Lane

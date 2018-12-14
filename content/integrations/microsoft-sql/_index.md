@@ -1,6 +1,6 @@
 ---
 title: "Microsoft SQL"
-date: 2018-12-12
+#date: 2018-12-12
 draft: false
 tags: ["microsoft sql", "integrations" ]
 author: Lawrence Lane

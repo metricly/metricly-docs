@@ -1,6 +1,6 @@
 ---
 title: "MongoDB"
-date: 2018-12-12
+#date: 2018-12-12
 draft: false
 tags: ["mongoDB", "integrations" ]
 author: Lawrence Lane

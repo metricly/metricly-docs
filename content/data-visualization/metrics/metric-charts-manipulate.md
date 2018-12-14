@@ -1,6 +1,6 @@
 ---
 title: "Manipulate Metric Charts"
-date: 2018-12-03
+#date: 2018-12-03
 draft: false
 categories:
 tags: ["getting started", "metrics", "charts"]

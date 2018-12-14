@@ -1,6 +1,6 @@
 ---
 title: "Kafka in Docker"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["kafka", "integrations", "collectors", "docker" ]
 author: Lawrence Lane

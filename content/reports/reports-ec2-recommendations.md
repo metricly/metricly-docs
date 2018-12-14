@@ -1,6 +1,6 @@
 ---
 title: "EC2 Recommendations"
-date: 2018-12-03
+#date: 2018-12-03
 draft: false
 categories:
 tags: ["reports", "ec2" ]

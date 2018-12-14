@@ -1,6 +1,6 @@
 ---
 title: "Chef"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["chef", "integrations"]
 author: Lawrence Lane

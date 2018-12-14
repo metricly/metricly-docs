@@ -1,6 +1,6 @@
 ---
 title: "Iris"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["iris", "integrations", "java"]
 author: Lawrence Lane

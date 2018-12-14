@@ -1,6 +1,6 @@
 ---
 title: "Docker"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["docker", "integrations", ]
 author: Lawrence Lane

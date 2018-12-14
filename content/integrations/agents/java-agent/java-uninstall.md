@@ -1,6 +1,6 @@
 ---
 title: "Uninstall Agent"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["java", "integrations", "agents"]
 author: Lawrence Lane

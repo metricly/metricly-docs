@@ -1,6 +1,6 @@
 ---
 title: "HTTP Collector"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["http", "integrations", "collectors"]
 author: Lawrence Lane

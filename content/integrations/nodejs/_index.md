@@ -1,6 +1,6 @@
 ---
 title: "Node.js"
-date: 2018-12-12
+#date: 2018-12-12
 draft: false
 tags: ["node.js", "integrations" ]
 author: Lawrence Lane
@@ -8,7 +8,7 @@ author: Lawrence Lane
  You can monitor your Node.js-based applications using the Linux Agent and Metricly StatsD server. All it takes is installing our agent and instrumenting your custom metrics, and then you’ll be visualizing the performance of your Node.js applications.
 
 ## Prerequisites
-Before you configure metric instrumentation in your Node.js application(s), you’ll need to install the Linux Agent and Metricly StatsD server first. See the instructions on this page for how to install it.
+- [Linux Agent][1]
 
 ## Configure
 
@@ -55,3 +55,5 @@ client.histogram('example.data.histogram', 10, {foo: 'bar'})
 ```
 
 7\. **Save** and **restart** your application _and_ the Linux Agent.
+
+[1]: /integrations/agents/linux-agent 

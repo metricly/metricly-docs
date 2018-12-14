@@ -1,6 +1,6 @@
 ---
 title: "Computed Metrics"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["java", "integrations", "metrics", "agents"]
 author: Lawrence Lane

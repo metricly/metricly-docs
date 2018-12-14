@@ -1,6 +1,6 @@
 ---
 title: "Getting Started"
-date: 2018-12-03
+#date: 2018-12-03
 draft: false
 categories: ["integration", "admin guide", "getting started"]
 tags: ["getting started", "directory page",]

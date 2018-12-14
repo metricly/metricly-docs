@@ -1,6 +1,6 @@
 ---
 title: "Boot Diagnostics"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 categories: ["integration", "admin guide", "getting started"]
 tags: ["microsoft", "azure", "integrations", "metrics"]

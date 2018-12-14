@@ -1,6 +1,6 @@
 ---
 title: "Etsy StatsD"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["statsd", "integrations" ]
 author: Lawrence Lane

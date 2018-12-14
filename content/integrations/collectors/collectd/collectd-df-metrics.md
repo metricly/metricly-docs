@@ -1,6 +1,6 @@
 ---
 title: "DF Metrics"
-date: 2018-12-11
+#date: 2018-12-11
 draft: false
 tags: ["collectd", "integrations", "metrics", "df", "collectors" ]
 author: Lawrence Lane

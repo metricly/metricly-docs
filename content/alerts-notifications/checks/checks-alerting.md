@@ -1,6 +1,6 @@
 ---
 title: "Alert on a Check"
-date: 2018-04-12
+#date: 2018-04-12
 draft: false
 categories:
 tags: ["alerts", "notifications", "checks", "custom checks"]
