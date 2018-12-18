@@ -2,59 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reports on Metricly Docs</title>
-    <link>http://localhost:1313/reports/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/reports/</link>
     <description>Recent content in Reports on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/reports/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/reports/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ASG Recommendations</title>
-      <link>http://localhost:1313/reports/reports-asg-recommendations/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-asg-recommendations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/reports/reports-asg-recommendations/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-asg-recommendations/</guid>
       <description>The Auto Scaling Group (ASG) Recommendations report provides a summary of the EC2 instance hours managed by all of your Auto Scaling Groups over the past few weeks. The data is summarized by hour and day for the preceding one-to-four weeks depending on how long Metricly has been monitoring the ASG.  Total Instance Count graph: This graph depicts the average total number of instances managed by all of your ASG(s) by hour and day.</description>
     </item>
     
     <item>
       <title>Cost Reports</title>
-      <link>http://localhost:1313/reports/reports-cost/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-cost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/reports/reports-cost/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-cost/</guid>
       <description>Cost reports enable you to easily identify expensive instances and compare them against utilization, type, elements, and tags. These multi-dimensional reports also break down information like total versus individual instance costs and even how much each instance state (Reserved, On-Demand) costs. Custom tagging is another easy way to group your instances.
 Cost Reports are generated once per week. It may take up to 7 days before your first report is available.</description>
     </item>
     
     <item>
       <title>EC2 Recommendations</title>
-      <link>http://localhost:1313/reports/reports-ec2-recommendations/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-ec2-recommendations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/reports/reports-ec2-recommendations/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-ec2-recommendations/</guid>
       <description>The EC2 Recommendation report is designed to help you reduce EC2 instance running costs by suggesting alternative instance types that may provide a similar level of service at a lower cost. The report presents details on the current EC2 instance types and their respective memory, VCPUs, and hourly instance running costs. Using these characteristics and the utilization observed during the reporting period, it estimates the memory and number of VCPUs that are actually needed, subject to optional constraints such as CPU utilization not exceeding a particular level, etc.</description>
     </item>
     
     <item>
       <title>Email Reports</title>
-      <link>http://localhost:1313/reports/reports-email/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/reports/reports-email/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-email/</guid>
       <description>Email Reports are generated and sent after business hours (EST) and can be enabled from your user account profile. Email Reports provide a quick look into your environment from the last 24 hours. Clicking any of the links within the email opens Metricly to the appropriate section.
 Available Reports There are three main email reports available: the Weekly Recommendation Report, the Daily Top Violator Report, and the Daily AWS Cost Report.</description>
     </item>
     
     <item>
-      <title>Resource Utilization</title>
-      <link>http://localhost:1313/reports/reports-resource-utilization/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Idle Resources</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/reports/idle-resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/reports/reports-resource-utilization/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/reports/idle-resources/</guid>
+      <description>Keep track of all of your unused resources with our EBS &amp;amp; ELB Idle Resource reports. Each report supports daily email notifications to keep you informed of changes.
+To Use Unattached EBS or ELB Reports  Navigate to Reports &amp;gt; Idle Resources. Select Unattached EBS (or ELB).  Available View Sorting Unattached Resource reports can be sorted by each column:
+ Name Location Size VolumeId IOPS Type Monthly Cost Simply click on the column header to sort using that preferred column.</description>
+    </item>
+    
+    <item>
+      <title>Resource Utilization</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-resource-utilization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-resource-utilization/</guid>
       <description>The Resource Utilization report uses boxplots to provide simple visualizations of each of your element’s utilization. The types of boxplots shown are controlled by optional filters. Filters allow you to narrow the elements displayed by element name, element type, element tags, and element attributes.
 Boxplots are a standard way of displaying a distribution of data based on five values: the minimum, the lower quartile (25th percentile), the median, the upper quartile (the 75th percentile), and the maximum.</description>
     </item>

@@ -1,0 +1,2738 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Metricly Docs</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2018-12-18T14:34:24 EST">
+<title>Plugins :: Metricly Docs</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/integrations/agents/windows-agent/windows-agent-plugins/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+    <li data-nav-id="/getting-started/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/getting-started/">Getting Started</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/getting-started/cost-tools/" class="dd-item">
+        <div>
+          <a href="/getting-started/cost-tools/">
+            Cost Tools
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/getting-started/metric-monitoring/" class="dd-item">
+        <div>
+          <a href="/getting-started/metric-monitoring/">
+            Metric Monitoring
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/alerts-page/">
+            Alerts Page
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/alerts-notifications/checks/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/alerts-notifications/checks/">Checks</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/alerts-notifications/checks/view-checks/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/checks/view-checks/">
+            View Checks
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/checks/checks-alerting/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/checks/checks-alerting/">
+            Alert on a Check
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/checks/custom-checks/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/checks/custom-checks/">
+            Custom Checks
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/checks/linux-checks/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/checks/linux-checks/">
+            Linux Checks
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/checks/windows-checks/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/checks/windows-checks/">
+            Windows Checks
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/alerts-notifications/events/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/alerts-notifications/events/">Events</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/alerts-notifications/events/view-an-event/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/events/view-an-event/">
+            View an Event
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/events/cloudwatch-events/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/events/cloudwatch-events/">
+            CloudWatch Events
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/alerts-notifications/notifications/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/alerts-notifications/notifications/">Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/alerts-notifications/notifications/notifications-aws-sns/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/notifications-aws-sns/">
+            AWS SNS Notifications
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/alerts-notifications/notifications/customize-notification-payloads/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/alerts-notifications/notifications/customize-notification-payloads/">Customize Notification Payloads</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/alerts-notifications/notifications/customize-notification-payloads/freemarker-email-payloads/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/customize-notification-payloads/freemarker-email-payloads/">
+            Email Payloads
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/">
+            SNS Payloads
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/notifications/customize-notification-payloads/webhook-payloads/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/customize-notification-payloads/webhook-payloads/">
+            Webhook Payloads
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/alerts-notifications/notifications/notifications-emails/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/notifications-emails/">
+            Email Notifications
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/notifications/notifications-hipchat/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/notifications-hipchat/">
+            HipChat Notifications
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/notifications/notifications-microsoft-teams/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/notifications-microsoft-teams/">
+            Microsoft Teams Notifications
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/notifications/notifications-opsgenie/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/notifications-opsgenie/">
+            OpsGenie Notifications
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/notifications/notifications-pageryduty/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/notifications-pageryduty/">
+            PagerDuty Notifications
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/notifications/notifications-slack/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/notifications-slack/">
+            Slack Notifications
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/notifications/notifications-stride/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/notifications-stride/">
+            Stride Notifications
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/notifications/notifications-victorops/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/notifications-victorops/">
+            VictorOps Notifications
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/notifications/notifications-webhooks/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/notifications/notifications-webhooks/">
+            Webhooks Notifications
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/alerts-notifications/policies/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/alerts-notifications/policies/">Policies</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/alerts-notifications/policies/create-edit-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/create-edit-policies/">
+            Create or Edit a Policy
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/choose-scope/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/choose-scope/">
+            Choose Scope
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/create-conditions/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/create-conditions/">
+            Create Conditions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/create-external-event-conditions/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/create-external-event-conditions/">
+            Create External Event Conditions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/choose-duration/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/choose-duration/">
+            Choose Duration
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/alerts-notifications/policies/default-policies/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/alerts-notifications/policies/default-policies/">Default Policies</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/aws-policies-asg/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/aws-policies-asg/">
+            AWS ASG Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/aws-policies-dynamodb/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/aws-policies-dynamodb/">
+            AWS DynamoDB Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/aws-policies-ebs/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/aws-policies-ebs/">
+            AWS EBS Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/aws-policies-ec2/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/aws-policies-ec2/">
+            AWS EC2 Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/aws-policies-efs/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/aws-policies-efs/">
+            AWS EFS Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/aws-policies-elb/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/aws-policies-elb/">
+            AWS ELB Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/aws-policies-elasticache/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/aws-policies-elasticache/">
+            AWS Elasticache Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/aws-policies-lambda/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/aws-policies-lambda/">
+            AWS Lambda Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/aws-policies-rds/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/aws-policies-rds/">
+            AWS RDS Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/aws-policies-sqs/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/aws-policies-sqs/">
+            AWS SQS Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/apache-policies-httpd/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/apache-policies-httpd/">
+            Apache HTTPD Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/microsoft-azure-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/microsoft-azure-policies/">
+            Azure Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/cassandra-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/cassandra-policies/">
+            Cassandra Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/collectd-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/collectd-policies/">
+            Collectd Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/diamond-linux-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/diamond-linux-policies/">
+            Diamond (Linux) Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/docker-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/docker-policies/">
+            Docker Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/elastic-search-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/elastic-search-policies/">
+            Elasticsearch Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/java-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/java-policies/">
+            Java Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/kafka-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/kafka-policies/">
+            Kafka Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/mongodb-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/mongodb-policies/">
+            MongoDB Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/rabbitmq-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/rabbitmq-policies/">
+            RabbitMQ Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/default-policies/windows-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/default-policies/windows-policies/">
+            Windows Policies
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/delete-policy/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/delete-policy/">
+            Delete a Policy
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/enable-disable-policy/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/enable-disable-policy/">
+            Enable or Disable a Policy
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/mute-policies/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/mute-policies/">
+            Mute Policies
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/alerts-notifications/policies/regex-guide/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/policies/regex-guide/">
+            Regex Guide
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/alerts-notifications/top-violators/" class="dd-item">
+        <div>
+          <a href="/alerts-notifications/top-violators/">
+            Top Violators
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/integrations/">Integrations</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/integrations/agents/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/integrations/agents/">Agents</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/integrations/agents/diamond-agent/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/agents/diamond-agent/">Diamond Agent</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/">Metrics</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/">
+            CPU Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/">
+            Disk Usage Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/">
+            Diskspace Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/">
+            Load Average Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/">
+            Memory Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/">
+            Network Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/agents/java-agent/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/agents/java-agent/">Java Agent</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/agents/java-agent/java-custom-mbeans/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/java-agent/java-custom-mbeans/">
+            Custom MBeans
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/java-agent/java-enable-proxy/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/java-agent/java-enable-proxy/">
+            Enable Proxy
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/integrations/agents/java-agent/java-metrics/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/agents/java-agent/java-metrics/">Metrics</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/">
+            Collected Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/">
+            Computed Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/integrations/agents/java-agent/java-element-tags-zorka/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/java-agent/java-element-tags-zorka/">
+            Send Tags Via Zorka
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/java-agent/java-uninstall/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/java-agent/java-uninstall/">
+            Uninstall Agent
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/java-agent/java-upgrade/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/java-agent/java-upgrade/">
+            Upgrade Java
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/java-agent/java-calculator-app/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/java-agent/java-calculator-app/">
+            Use Calculator App
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/agents/linux-agent/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/agents/linux-agent/">Linux Agent</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/linux-agent/linux-standard-install/">
+            <i class='fa fa-download'></i> &nbsp;Standard Install
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/linux-agent/linux-docker-install/">
+            <i class='fa fa-download'></i> &nbsp; Docker Install
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
+            <i class='fa fa-download'></i> &nbsp; Manual Install
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
+            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/linux-agent/linux-upgrade/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/linux-agent/linux-upgrade/">
+            Upgrade
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/linux-agent/linux-collectors/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/linux-agent/linux-collectors/">
+            Collectors
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/linux-agent/linux-common-commands/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/linux-agent/linux-common-commands/">
+            Common Commands
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/linux-agent/linux-optional-config/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/linux-agent/linux-optional-config/">
+            Optional Config
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/linux-agent/linux-disable/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/linux-agent/linux-disable/">
+            Disable
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/linux-agent/linux-remove/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/linux-agent/linux-remove/">
+            Remove
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
+            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/agents/ruby-agent/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/agents/ruby-agent/">Ruby Agent</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/agents/ruby-agent/ruby-agent-api-options/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/ruby-agent/ruby-agent-api-options/">
+            API Options
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/ruby-agent/ruby-agent-element-tags/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/ruby-agent/ruby-agent-element-tags/">
+            Element Tags
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/ruby-agent/ruby-agent-garbage-collection/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/ruby-agent/ruby-agent-garbage-collection/">
+            Garbage Collection
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/ruby-agent/ruby-agent-interpret-exceptions/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/ruby-agent/ruby-agent-interpret-exceptions/">
+            Interpret Exceptions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/ruby-agent/ruby-agent-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/ruby-agent/ruby-agent-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/ruby-agent/ruby-agent-options/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/ruby-agent/ruby-agent-options/">
+            Optional Config
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/agents/windows-agent/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/integrations/agents/windows-agent/">Windows Agent</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/agents/windows-agent/windows-agent-check-version/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/windows-agent/windows-agent-check-version/">
+            Check Version
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/windows-agent/windows-agent-custom-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/windows-agent/windows-agent-custom-metrics/">
+            Custom Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/windows-agent/windows-agent-manual-install/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/windows-agent/windows-agent-manual-install/">
+            Manual Install
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/windows-agent/windows-agent-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/windows-agent/windows-agent-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/windows-agent/windows-agent-plugins/" class="dd-item active">
+        <div>
+          <a href="/integrations/agents/windows-agent/windows-agent-plugins/">
+            Plugins
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/windows-agent/windows-agent-proxy/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/windows-agent/windows-agent-proxy/">
+            Proxy
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/windows-agent/windows-agent-troubleshooting/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/windows-agent/windows-agent-troubleshooting/">
+            Troubleshooting
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/windows-agent/windows-agent-uninstall/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/windows-agent/windows-agent-uninstall/">
+            Uninstall
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/windows-agent/windows-agent-upgrade/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/windows-agent/windows-agent-upgrade/">
+            Upgrade Agent
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/aws-integration/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/aws-integration/">AWS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/aws-cloudformation-installation/">
+            <i class='fa fa-download'></i> &nbsp; CloudFormation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/aws-iam-installation/">
+            <i class='fa fa-download'></i> &nbsp; IAM
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/acess-key-aws/">
+            <i class='fa fa-download'></i> &nbsp; Access Key
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/aws-detailed-billing/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/aws-detailed-billing/">
+            Detailed Billing
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/aws-optional-config/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/aws-optional-config/">
+            Optional Config
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/aws-gov-cloud/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/aws-gov-cloud/">
+            Gov Cloud
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/integrations/aws-integration/metrics/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/aws-integration/metrics/">Metrics</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-alb/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-alb/">
+            ALB Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-asg/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-asg/">
+            ASG Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-dynamodb/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-dynamodb/">
+            DynamoDB Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-ebs/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-ebs/">
+            EBS Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-ec2/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-ec2/">
+            EC2 Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-ecs/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-ecs/">
+            ECS Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-efs/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-efs/">
+            EFS Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-elb/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-elb/">
+            ELB Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-emr/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-emr/">
+            EMR Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-elasticache/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-elasticache/">
+            Elasticache Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-knesis/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-knesis/">
+            Knesis Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-lambda/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-lambda/">
+            Lambda Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-mq/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-mq/">
+            MQ Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-nlb/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-nlb/">
+            NLB Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-redshift/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-redshift/">
+            Redshift Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-s3/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-s3/">
+            S3 Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/aws-integration/metrics/aws-metrics-sqs/" class="dd-item">
+        <div>
+          <a href="/integrations/aws-integration/metrics/aws-metrics-sqs/">
+            SQS Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/anake/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/anake/">Anake</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/ansible/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/ansible/">Ansible</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/cassandra/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/cassandra/">Cassandra</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/cassandra/cassandra-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/cassandra/cassandra-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/chef/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/chef/">Chef</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/collectors/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/collectors/">Collectors</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/integrations/collectors/collectd/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/collectors/collectd/">Collectd</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/collectors/collectd/collectd-cpu-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/collectd/collectd-cpu-metrics/">
+            CPU Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/collectors/collectd/collectd-df-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/collectd/collectd-df-metrics/">
+            DF Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/collectors/collectd/collectd-disk-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/collectd/collectd-disk-metrics/">
+            Disk Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/collectors/collectd/collectd-interface-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/collectd/collectd-interface-metrics/">
+            Interface Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/collectors/collectd/collectd-load-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/collectd/collectd-load-metrics/">
+            Load Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/collectors/collectd/collectd-memory-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/collectd/collectd-memory-metrics/">
+            Memory Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/collectors/collectd/collectd-processes-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/collectd/collectd-processes-metrics/">
+            Processes Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/collectors/collectd/collectd-uptime-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/collectd/collectd-uptime-metrics/">
+            Uptime Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/collectors/flume/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/collectors/flume/">Flume</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/collectors/http-code-collector/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/collectors/http-code-collector/">HTTP Code Collector</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/integrations/collectors/http-code-collector/http-code-collector-metrics/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/collectors/http-code-collector/http-code-collector-metrics/">Metrics</a>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/collectors/http-collector/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/collectors/http-collector/">HTTP Collector</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/integrations/collectors/http-collector/http-collector-metrics/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/collectors/http-collector/http-collector-metrics/">Metrics</a>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/collectors/httpd/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/collectors/httpd/">HTTPD</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/integrations/collectors/httpd/httpd-metrics/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/collectors/httpd/httpd-metrics/">Metrics</a>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/collectors/jmx/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/collectors/jmx/">JMX</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/collectors/kafka/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/collectors/kafka/">Kafka</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/collectors/kafka/kafka-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/kafka/kafka-metrics/">
+            Kafka Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/collectors/kafka/kafka-in-docker/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/kafka/kafka-in-docker/">
+            Kafka in Docker
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/collectors/process-resources-collector/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/collectors/process-resources-collector/">Process Resource Collector</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/collectors/snmp-interface-collector/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/collectors/snmp-interface-collector/">SNMP</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/collectors/snmp-collector/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/collectors/snmp-collector/">SNMP Interface</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/collectors/tcp-collector/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/collectors/tcp-collector/">TCP</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/collectors/tcp-collector/tcp-metric-names/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/tcp-collector/tcp-metric-names/">
+            Allowed Metric Names
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/collectors/user-scripts-collector/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/collectors/user-scripts-collector/">User Scripts Collector</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/collectors/rabbitmq/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/collectors/rabbitmq/">rabbitMQ</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/collectors/rabbitmq/rabbitmq-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/rabbitmq/rabbitmq-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/collectors/redis/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/collectors/redis/">redis</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/collectors/redis/redis-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/collectors/redis/redis-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/consul/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/consul/">Consul</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/consul/consul-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/consul/consul-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/docker/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/docker/">Docker</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/integrations/docker/docker-metrics/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/docker/docker-metrics/">Metrics</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/docker/docker-metrics/docker-cpu-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/docker/docker-metrics/docker-cpu-metrics/">
+            CPU Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/docker/docker-metrics/docker-network-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/docker/docker-metrics/docker-network-metrics/">
+            Computed Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/docker/docker-metrics/docker-memory-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/docker/docker-metrics/docker-memory-metrics/">
+            Memory Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/dropwizard/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/dropwizard/">Dropwizard</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/elastisearch/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/elastisearch/">Elastisearch</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/elastisearch/elastisearch-all-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/elastisearch/elastisearch-all-metrics/">
+            All Elastisearch Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/email/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/email/">Email Notifications</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/etsy-statsd/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/etsy-statsd/">Etsy StatsD</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/iris/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/iris/">Iris</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/kubernetes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/kubernetes/">Kubernetes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/kubernetes/kubernetes-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/kubernetes/kubernetes-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/microsoft-azure/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/microsoft-azure/">Microsoft Azure</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/microsoft-azure/azure-installation/" class="dd-item">
+        <div>
+          <a href="/integrations/microsoft-azure/azure-installation/">
+            Azure Installation
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/integrations/microsoft-azure/azure-metrics/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/microsoft-azure/azure-metrics/">Azure Metrics</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/microsoft-azure/azure-metrics/azure-app-gateway/" class="dd-item">
+        <div>
+          <a href="/integrations/microsoft-azure/azure-metrics/azure-app-gateway/">
+            Application Gateway
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/">
+            Basic Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/" class="dd-item">
+        <div>
+          <a href="/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/">
+            Boot Diagnostics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/" class="dd-item">
+        <div>
+          <a href="/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/">
+            Enable Guest OS Diagnostic Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/microsoft-azure/azure-filter-elements/" class="dd-item">
+        <div>
+          <a href="/integrations/microsoft-azure/azure-filter-elements/">
+            Filter Elements
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/microsoft-iis/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/microsoft-iis/">Microsoft IIS</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/microsoft-iis/microsoft-iis-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/microsoft-iis/microsoft-iis-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/microsoft-net/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/microsoft-net/">Microsoft NET</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/microsoft-net/microsoft-net-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/microsoft-net/microsoft-net-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/microsoft-sql/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/microsoft-sql/">Microsoft SQL</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/microsoft-sql/microsoft-sql-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/microsoft-sql/microsoft-sql-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/mongodb/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/mongodb/">MongoDB</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/mongodb/mongodb-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/mongodb/mongodb-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/mysql/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/mysql/">MySQL</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/mysql/mysql-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/mysql/mysql-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/ngnix/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/ngnix/">NGNIX</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/ngnix/ngnix-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/ngnix/ngnix-metrics/">
+            Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/nagios/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/nagios/">Nagios</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/netuitive-statsd/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/netuitive-statsd/">Netuitive StatsD</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/nodejs/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/nodejs/">Node.js</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/php/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/php/">PHP</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/postresql/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/postresql/">PostreSQL</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/postresql/postresql-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/postresql/postresql-metrics/">
+            metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/powerdns/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/powerdns/">PowerDNS</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/puppetdb/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/puppetdb/">PuppetDB</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/python/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/python/">Python</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/riemann/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/riemann/">Riemann</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/salt/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/salt/">Salt</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/sensu/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/sensu/">Sensu</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/solr/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/solr/">Solr</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/tomcat/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/tomcat/">Tomcat</a>
+      </div>
+    </li>
+    <li data-nav-id="/integrations/webhook-integration/" class="dd-item
+        ">
+      <div>
+      <a href="/integrations/webhook-integration/">Webhook Integration</a>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/data-visualization/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/data-visualization/dashboards/">Dashboards</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/data-visualization/dashboards/copy-dashboard/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/copy-dashboard/">
+            Copy a Dashboard
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/dashboards/create-new-dashboard/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/create-new-dashboard/">
+            Create New Dashboard
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/dashboards/delete-dashboard/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/delete-dashboard/">
+            Delete a Dashboard
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/dashboards/duration-refresh-intervals/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/duration-refresh-intervals/">
+            Duration &amp; Refresh Intervals
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/dashboards/favorite-dashboard/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/favorite-dashboard/">
+            Favorites
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/dashboards/share-dashboard/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/share-dashboard/">
+            Share a Dashboard
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="/data-visualization/dashboards/widgets/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/data-visualization/dashboards/widgets/">Widgets</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/data-visualization/dashboards/widgets/cost-explorer-widget/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/widgets/cost-explorer-widget/">
+            Cost Explorer Widget
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/dashboards/widgets/events-widget/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/widgets/events-widget/">
+            Events Metric Widget
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/dashboards/widgets/multi-metric-widget/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/widgets/multi-metric-widget/">
+            Multi Metric Widget
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/dashboards/widgets/range-widget/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/widgets/range-widget/">
+            Range Metric Widget
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/dashboards/widgets/alerts-widget/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/widgets/alerts-widget/">
+            Single Metric Widget
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/dashboards/widgets/single-metric-widget/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/widgets/single-metric-widget/">
+            Single Metric Widget
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/dashboards/widgets/table-widget/" class="dd-item">
+        <div>
+          <a href="/data-visualization/dashboards/widgets/table-widget/">
+            Table Widget
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/data-visualization/inventory/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/data-visualization/inventory/">Inventory</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/data-visualization/inventory/inventory-element-detail/" class="dd-item">
+        <div>
+          <a href="/data-visualization/inventory/inventory-element-detail/">
+            Element Detail Panel
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/inventory/inventory-main-navigation/" class="dd-item">
+        <div>
+          <a href="/data-visualization/inventory/inventory-main-navigation/">
+            Main Navigation
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/inventory/inventory-quickbar-actions/" class="dd-item">
+        <div>
+          <a href="/data-visualization/inventory/inventory-quickbar-actions/">
+            Quickbar Actions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/inventory/inventory-sort-elements/" class="dd-item">
+        <div>
+          <a href="/data-visualization/inventory/inventory-sort-elements/">
+            Sort Elements
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/inventory/inventory-startstop-maintenance/" class="dd-item">
+        <div>
+          <a href="/data-visualization/inventory/inventory-startstop-maintenance/">
+            Start or Stop Maintenance
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/data-visualization/analytics/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/data-visualization/analytics/">Analytics</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/data-visualization/analytics/baseline-bands/" class="dd-item">
+        <div>
+          <a href="/data-visualization/analytics/baseline-bands/">
+            Baseline Bands
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/analytics/contextual-bands/" class="dd-item">
+        <div>
+          <a href="/data-visualization/analytics/contextual-bands/">
+            Contextual Bands
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/analytics/static-thresholds/" class="dd-item">
+        <div>
+          <a href="/data-visualization/analytics/static-thresholds/">
+            Static Thresholds
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/analytics/sudden-change-detection/" class="dd-item">
+        <div>
+          <a href="/data-visualization/analytics/sudden-change-detection/">
+            Sudden Change Detection
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/data-visualization/metrics/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/data-visualization/metrics/">Metrics</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/data-visualization/metrics/metric-add-to-dashboard/" class="dd-item">
+        <div>
+          <a href="/data-visualization/metrics/metric-add-to-dashboard/">
+            Add Metric to Dashboard
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/metrics/metric-charts/" class="dd-item">
+        <div>
+          <a href="/data-visualization/metrics/metric-charts/">
+            Chart Features
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/metrics/metric-charts-manipulate/" class="dd-item">
+        <div>
+          <a href="/data-visualization/metrics/metric-charts-manipulate/">
+            Manipulate Metric Charts
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/metrics/metric-page/" class="dd-item">
+        <div>
+          <a href="/data-visualization/metrics/metric-page/">
+            Page Features
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
+        <div>
+          <a href="/data-visualization/metrics/metrics-troubleshooting/">
+            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/reports/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/">
+            ASG Recommendations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-cost/" class="dd-item">
+        <div>
+          <a href="/reports/reports-cost/">
+            Cost Reports
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-ec2-recommendations/" class="dd-item">
+        <div>
+          <a href="/reports/reports-ec2-recommendations/">
+            EC2 Recommendations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-email/" class="dd-item">
+        <div>
+          <a href="/reports/reports-email/">
+            Email Reports
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/idle-resources/" class="dd-item">
+        <div>
+          <a href="/reports/idle-resources/">
+            Idle Resources
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-resource-utilization/" class="dd-item">
+        <div>
+          <a href="/reports/reports-resource-utilization/">
+            Resource Utilization
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/getting-started/" >
+   Getting Started</option>
+    <option value="/alerts-notifications/" >
+   Alerts &amp; Notifications</option>
+    <option value="/integrations/" >
+   Integrations</option> 
+    <option value="/integrations/agents/" >
+  - 
+   Agents</option> 
+    <option value="/integrations/agents/diamond-agent/" >
+  -- 
+   Diamond Agent</option>
+    <option value="/integrations/agents/java-agent/" >
+  -- 
+   Java Agent</option>
+    <option value="/integrations/agents/linux-agent/" >
+  -- 
+   Linux Agent</option>
+    <option value="/integrations/agents/ruby-agent/" >
+  -- 
+   Ruby Agent</option>
+    <option value="/integrations/agents/windows-agent/" >
+  -- 
+   Windows Agent</option> 
+      <option value="/integrations/agents/windows-agent/windows-agent-check-version/" >--- Check Version</option>
+      <option value="/integrations/agents/windows-agent/windows-agent-custom-metrics/" >--- Custom Metrics</option>
+      <option value="/integrations/agents/windows-agent/windows-agent-manual-install/" >--- Manual Install</option>
+      <option value="/integrations/agents/windows-agent/windows-agent-metrics/" >--- Metrics</option>
+      <option value="/integrations/agents/windows-agent/windows-agent-plugins/"  selected>--- Plugins</option>
+      <option value="/integrations/agents/windows-agent/windows-agent-proxy/" >--- Proxy</option>
+      <option value="/integrations/agents/windows-agent/windows-agent-troubleshooting/" >--- Troubleshooting</option>
+      <option value="/integrations/agents/windows-agent/windows-agent-uninstall/" >--- Uninstall</option>
+      <option value="/integrations/agents/windows-agent/windows-agent-upgrade/" >--- Upgrade Agent</option>
+  
+  
+    <option value="/integrations/aws-integration/" >
+  - 
+   AWS</option>
+    <option value="/integrations/anake/" >
+  - 
+   Anake</option>
+    <option value="/integrations/ansible/" >
+  - 
+   Ansible</option>
+    <option value="/integrations/cassandra/" >
+  - 
+   Cassandra</option>
+    <option value="/integrations/chef/" >
+  - 
+   Chef</option>
+    <option value="/integrations/collectors/" >
+  - 
+   Collectors</option>
+    <option value="/integrations/consul/" >
+  - 
+   Consul</option>
+    <option value="/integrations/docker/" >
+  - 
+   Docker</option>
+    <option value="/integrations/dropwizard/" >
+  - 
+   Dropwizard</option>
+    <option value="/integrations/elastisearch/" >
+  - 
+   Elastisearch</option>
+    <option value="/integrations/email/" >
+  - 
+   Email Notifications</option>
+    <option value="/integrations/etsy-statsd/" >
+  - 
+   Etsy StatsD</option>
+    <option value="/integrations/iris/" >
+  - 
+   Iris</option>
+    <option value="/integrations/kubernetes/" >
+  - 
+   Kubernetes</option>
+    <option value="/integrations/microsoft-azure/" >
+  - 
+   Microsoft Azure</option>
+    <option value="/integrations/microsoft-iis/" >
+  - 
+   Microsoft IIS</option>
+    <option value="/integrations/microsoft-net/" >
+  - 
+   Microsoft NET</option>
+    <option value="/integrations/microsoft-sql/" >
+  - 
+   Microsoft SQL</option>
+    <option value="/integrations/mongodb/" >
+  - 
+   MongoDB</option>
+    <option value="/integrations/mysql/" >
+  - 
+   MySQL</option>
+    <option value="/integrations/ngnix/" >
+  - 
+   NGNIX</option>
+    <option value="/integrations/nagios/" >
+  - 
+   Nagios</option>
+    <option value="/integrations/netuitive-statsd/" >
+  - 
+   Netuitive StatsD</option>
+    <option value="/integrations/nodejs/" >
+  - 
+   Node.js</option>
+    <option value="/integrations/php/" >
+  - 
+   PHP</option>
+    <option value="/integrations/postresql/" >
+  - 
+   PostreSQL</option>
+    <option value="/integrations/powerdns/" >
+  - 
+   PowerDNS</option>
+    <option value="/integrations/puppetdb/" >
+  - 
+   PuppetDB</option>
+    <option value="/integrations/python/" >
+  - 
+   Python</option>
+    <option value="/integrations/riemann/" >
+  - 
+   Riemann</option>
+    <option value="/integrations/salt/" >
+  - 
+   Salt</option>
+    <option value="/integrations/sensu/" >
+  - 
+   Sensu</option>
+    <option value="/integrations/solr/" >
+  - 
+   Solr</option>
+    <option value="/integrations/tomcat/" >
+  - 
+   Tomcat</option>
+    <option value="/integrations/webhook-integration/" >
+  - 
+   Webhook Integration</option>
+  
+    <option value="/data-visualization/" >
+   Visualization</option>
+    <option value="/reports/" >
+   Reports</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Plugins</h1>
+    
+    
+    
+    
+
+<p>There are two types of Windows plugins: Read (which allow our Windows agent to read data) and Write (which allow our Windows agent to write data). The following plugins are enabled by default:</p>
+
+<ul>
+<li>ReadWindowsPerfCounters</li>
+<li>ReadWindowsAttributes</li>
+<li>ReadWindowsEvents</li>
+<li>WriteNetuitive</li>
+</ul>
+
+<p>This configuration is recommended for monitoring a Windows server with Metricly. Other Read/Write plugins are available as documented below (note that the Write Console plugin has no configuration settings).</p>
+
+<h2 id="enable-disable">Enable/Disable</h2>
+
+<p>To change which plugins are enabled, edit the <strong>CollectdWin.config</strong> file.</p>
+
+<div class="notices tip" ><p>The file will be located in <code>C:\Program Files\CollectdWin\config</code> or <code>C:\Program Files (x86)\CollectdWin\config</code> depending on your environment.</p>
+</div>
+
+
+<h2 id="read-windows-performance-metrics-plugin">Read Windows Performance Metrics plugin</h2>
+
+<p>This plugin uses the Windows Performance Count component to collect configured metrics. Each performance counter can be mapped to its Collectd equivalent metadata via configuration.</p>
+
+<ol>
+<li>Navigate to the <strong>ReadWindowsPerfCounters.config</strong> file.</li>
+<li>Add as many entries as you desire using the table below.</li>
+</ol>
+
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Required/Optional</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ReloadInterval</td>
+<td>Required</td>
+<td>The period in seconds before rescanning for new/changed instances (defaults to 3600). This is configured once in the ReadWindowsPerfCounters element.</td>
+</tr>
+
+<tr>
+<td>Category</td>
+<td>Required</td>
+<td>The name of the performance counter category.</td>
+</tr>
+
+<tr>
+<td>Name</td>
+<td>Required</td>
+<td>Comma-separated performance counter names.</td>
+</tr>
+
+<tr>
+<td>Instance</td>
+<td>Required</td>
+<td>This can be set to a specific instance or a regular expression to filter the instances. Some counter categories do not have instances; in this case, this field should be left blank.</td>
+</tr>
+
+<tr>
+<td>CollectdPlugin</td>
+<td>Required</td>
+<td>Collectd plugin name.</td>
+</tr>
+
+<tr>
+<td>CollectdPluginInstance</td>
+<td>Required</td>
+<td>Where the configuration is for a single instance, this value can be used to override the instance name. Where there are multiple instances, this value is automatically set for each instance.</td>
+</tr>
+
+<tr>
+<td>CollectdType</td>
+<td>Required</td>
+<td>Metric type and units. This must be a value in types.db, which can be found in the deployment folder.</td>
+</tr>
+
+<tr>
+<td>CollectdTypeInstance</td>
+<td>Required</td>
+<td>Name for the metric instance.</td>
+</tr>
+
+<tr>
+<td>Multiplier</td>
+<td>Optional</td>
+<td>Float scale factor to be applied to the value.</td>
+</tr>
+
+<tr>
+<td>DecimalPlaces</td>
+<td>Optional</td>
+<td>Integer number of decimal places for rounding.</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>Here’s a default entry in the <strong>ReadWindowsPerfCounters.config</strong> file:</li>
+</ul>
+
+<pre><code>&lt;Counter Category=&quot;Network Interface&quot;
+Name=&quot;Packets Received/Sec,Packets
+Sent/Sec&quot; Instance=&quot;*&quot;
+CollectdPlugin=&quot;interface&quot;
+CollectdType=&quot;if_packets&quot;
+CollectdTypeInstance=&quot;&quot; /&gt;
+</code></pre>
+
+<p>3. <strong>Save</strong> the file.</p>
+
+<h2 id="read-windows-event-plugin">Read Windows Event plugin</h2>
+
+<p>This plugin reads from the Windows event logs on the server the agent is installed. The WriteNetuitive plugin will process the values it collects, but no other write plugins are able to do so.</p>
+
+<ol>
+<li>Navigate to the <strong>ReadWindowsEvents.config</strong> file.</li>
+<li>Add as many entries as you desire using the table below:</li>
+</ol>
+
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Required/Optional</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Title</td>
+<td>Required</td>
+<td>A descriptive title for the events captured by this configuration entry. This is shown as the event title in Metricly.</td>
+</tr>
+
+<tr>
+<td>Log</td>
+<td>Required</td>
+<td>The windows log (e.g., Application, System, Security).</td>
+</tr>
+
+<tr>
+<td>Source</td>
+<td>Required</td>
+<td>The source of the event (this is the source field in the event viewer). This value can be left blank for any source.</td>
+</tr>
+
+<tr>
+<td>MinLevel</td>
+<td>Optional</td>
+<td>The minimum log level to collect. Defaults to 1. Possible values (in order): 1 = critical, 2 = error, 3 = warning (warn), 4 = information, and 5 = verbose.</td>
+</tr>
+
+<tr>
+<td>MaxLevel</td>
+<td>Required</td>
+<td>The maximum log level to collect. Offers the same levels as the MinLevel setting. Set to the same value as MinLevel to restrict to just one level.</td>
+</tr>
+
+<tr>
+<td>MinEventId</td>
+<td>Optional</td>
+<td>The minimum event ID to collect between 0 and 65535. Defaults to 0.</td>
+</tr>
+
+<tr>
+<td>MaxEventId</td>
+<td>Optional</td>
+<td>The maximum event ID to collect between 0 and 65535. Defaults to 65535. Set to the same as MinEventId to restrict collection to a single event.</td>
+</tr>
+
+<tr>
+<td>FilterExp</td>
+<td>Optional</td>
+<td>A regular expression applied to the log message. Messages that do not match are disregarded.</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>Here’s a default entry in the <strong>ReadWindowsEvents.config</strong> file:</li>
+</ul>
+
+<pre><code>&lt;Event Title=&quot;Error 99 occurred in MyApp&quot;
+Log=&quot;Application&quot; Source=&quot;MyApp&quot;
+MinLevel=&quot;2&quot; MaxLevel=&quot;2&quot; MinEventId=&quot;99&quot;
+MaxEventId=&quot;99&quot; /&gt;
+</code></pre>
+
+<p>3. <strong>Save</strong> the file.</p>
+
+<h2 id="read-windows-attribute-plugin">Read Windows Attribute plugin</h2>
+
+<p>This plugin reads non-numeric attributes of the server. The WriteNetuitive plugin will process the values it collects, but no other write plugins are able to do so. Three attributes are available by default:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>os</td>
+<td>The operating system version.</td>
+</tr>
+
+<tr>
+<td>cpus</td>
+<td>The number of CPUs.</td>
+</tr>
+
+<tr>
+<td>ram bytes</td>
+<td>Total system RAM.</td>
+</tr>
+</tbody>
+</table>
+
+<p>If the server is hosted on an AWS EC2 and the <strong>ReadEC2InstanceMetadata</strong> attribute on the <em>ReadWindowsAttributes</em> element is set to <code>true</code>, the plugin will read metadata from the host EC2 instance as attributes (e.g., <code>instanceId</code>, <code>instanceType</code>, etc.) and also record the relationship between the two elements in Metricly.</p>
+
+<p>Any environment variable can be read as an attribute by adding it to the configuration section:</p>
+
+<ol>
+<li>Navigate to the <strong>ReadWindowsAttributes.config</strong> file.</li>
+<li>Following the format of the other available attributes, add as many attributes as you desire.</li>
+</ol>
+
+<pre><code>&lt;EnvironmentVariable Name=&quot;architecture&quot;
+Value=&quot;PROCESSOR_ARCHITECTURE&quot;/&gt;
+</code></pre>
+
+<p>3. <strong>Save</strong> the file.</p>
+
+<h2 id="read-statsd-plugin">Read StatsD Plugin</h2>
+
+<p>The Read StatsD plugin implements the StatsD Network Protocol. It listens on
+a UDP port and receives metrics from applications. The plugin supports four
+event types:</p>
+
+<h3 id="gauges">Gauges</h3>
+
+<p>A gauge is an instantaneous measurement of a value. It differs from
+a counter by being calculated at the client rather than the server.</p>
+
+<pre><code>&lt;metric name&gt;:&lt;value&gt;|g
+</code></pre>
+
+<h3 id="counters">Counters</h3>
+
+<p>A counter is a gauge calculated at the server. Metrics sent by the
+client increment or decrement the value of a gauge rather than
+giving its current value. Counters may also have an associated
+sample rate given as a decimal of the number of samples per event
+counter.</p>
+
+<pre><code>&lt;metric name&gt;:&lt;value&gt;|c[|@&lt;sample rate&gt;]
+
+</code></pre>
+
+<h3 id="timers">Timers</h3>
+
+<p>A timer is a measure of the number of milliseconds elapsed between a
+start and end time.</p>
+
+<pre><code>&lt;metric name&gt;:&lt;value&gt;|ms
+
+</code></pre>
+
+<h3 id="sets">Sets</h3>
+
+<p>Unique occurrences of events within an interval.</p>
+
+<pre><code>uniques:765|s
+</code></pre>
+
+<h4 id="properties-available">Properties Available</h4>
+
+<p>Several properties are available by default:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Statsd.Host</td>
+<td>Host name for StatsD UDP listener.</td>
+</tr>
+
+<tr>
+<td>Statsd.Port</td>
+<td>Port number for StatsD UDP listener.</td>
+</tr>
+
+<tr>
+<td>DeleteCache.Counters, DeleteCache.Timers, DeleteCache.Gauges,</td>
+<td></td>
+</tr>
+
+<tr>
+<td>DeleteCache.Sets</td>
+<td>This option controls the behavior when metrics are not updated in an</td>
+</tr>
+
+<tr>
+<td>interval. If set to false, metrics are dispatched unchanged. If set</td>
+<td></td>
+</tr>
+
+<tr>
+<td>to true, metrics are not dispatched and removed from the internal</td>
+<td></td>
+</tr>
+
+<tr>
+<td>cache.</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Timer.Lower, Timer.Upper, Timer.Sum, Timer.Count</td>
+<td>This option is to enable aggregate functions for timer metrics. If</td>
+</tr>
+
+<tr>
+<td>enabled for each timer metric, its equivalent aggregate metric is</td>
+<td></td>
+</tr>
+
+<tr>
+<td>also dispatched with appropriate extensions (“-lower”, “-upper”,</td>
+<td></td>
+</tr>
+
+<tr>
+<td>“-sum”, “-count”).</td>
+<td></td>
+</tr>
+
+<tr>
+<td>Percentiles.Percentile</td>
+<td>Calculate and dispatch the configured percentile, i.e. compute the</td>
+</tr>
+
+<tr>
+<td>latency so that Percent of all reported timers are smaller than or</td>
+<td></td>
+</tr>
+
+<tr>
+<td>equal to the computed latency. If enabled for each time metric, its</td>
+<td></td>
+</tr>
+
+<tr>
+<td>equivalent percentile metric is also dispatched with appropriate</td>
+<td></td>
+</tr>
+
+<tr>
+<td>extensions (“-percentile-90”, “-percentile-95”). If not configured,</td>
+<td></td>
+</tr>
+
+<tr>
+<td>no percentile is calculated or dispatched.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="configure">Configure</h4>
+
+<ol>
+<li>Navigate to the <strong>ReadStatsD.config</strong> file.</li>
+<li>Following the format of the default configuration, manipulate the
+properties as desired.</li>
+<li><strong>Save</strong> the file.</li>
+</ol>
+
+<h2 id="write-netuitive-plugin">Write Netuitive plugin</h2>
+
+<p>This plugin is already configured to send all data gathered by the read plugins to Metricly via its REST API in step 2 of the installation instructions. The following are additional, advanced settings that should only be changed in discussion with Metricly support.</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Url</td>
+<td>Metricly ingest API URL.</td>
+</tr>
+
+<tr>
+<td>PayloadSize</td>
+<td>(Optional) The number of metrics that are batched into a single POST. Set to -1 to send all metrics at once; the default is 25.</td>
+</tr>
+
+<tr>
+<td>Location</td>
+<td>(Optional) Sets element location attribute.</td>
+</tr>
+
+<tr>
+<td>Type</td>
+<td>(Optional) Overrides the element type in Metricly; the default is WINSRV.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="configure-1">Configure</h3>
+
+<ol>
+<li>Navigate to the <strong>WriteNetuitive.config</strong> file.</li>
+<li>Add any of the optional configuration attributes to the line in the file.</li>
+</ol>
+
+<p>Example with API Key</p>
+
+<pre><code>&lt;WriteNetuitive
+ Url=&quot;https://api.app.metricly.com/ingest/windows/de2b497468d863accb9c402dfff22689&quot;/&gt;
+</code></pre>
+
+<p>3. <strong>Save</strong> the file.</p>
+
+<h2 id="write-statsd-plugin">Write StatsD plugin</h2>
+
+<p>The Write StatsD plugin posts metrics as UDP datagrams to a StatsD server. The metric buckets follow the naming convention:</p>
+
+<pre><code>[Prefix].[Hostname].[CollectdPlugin].[CollectdPluginInstance].[
+  CollectdTypeInstance]
+</code></pre>
+
+<p>Three attributes are available by default:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Host</td>
+<td>Statsd hostname.</td>
+</tr>
+
+<tr>
+<td>Port</td>
+<td>UDP Port number.</td>
+</tr>
+
+<tr>
+<td>Prefix</td>
+<td>(Optional) Optional bucket name prefix.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="configure-2">Configure</h3>
+
+<ol>
+<li>Navigate to the <strong>WriteStatsd.config</strong> file.</li>
+<li>Add any of the optional configuration attributes to the line in the file.</li>
+<li><strong>Save</strong> the file.</li>
+</ol>
+
+<h2 id="write-http-plugin">Write HTTP plugin</h2>
+
+<p>The Write HTTP plugin works similarly to the collectd Write HTTP plugin. It posts metrics to the target URL in the following JSON format.</p>
+
+<pre><code>[
+      {
+        &quot;values&quot;: [197141504, 175136768],
+    	&quot;dstypes&quot;: [&quot;counter&quot;, &quot;counter&quot;],
+    	&quot;dsnames&quot;: [&quot;read&quot;, &quot;write&quot;],
+    	&quot;time&quot;: 1251533299,
+    	&quot;interval&quot;: 10,
+    	&quot;host&quot;: &quot;leeloo.lan.home.verplant.org&quot;,
+    	&quot;plugin&quot;: &quot;disk&quot;,
+    	&quot;plugin_instance&quot;: &quot;sda&quot;,
+    	&quot;type&quot;: &quot;disk_octets&quot;,
+    	&quot;type_instance&quot;: &quot;&quot;
+      },
+      ...
+    ]
+</code></pre>
+
+<h3 id="configure-3">Configure</h3>
+
+<ol>
+<li>Navigate to the <strong>WriteHTTP.config</strong> file.</li>
+<li>Update the <strong>Url</strong> attribute to the target URL.</li>
+<li><strong>Save</strong> the file.</li>
+</ol>
+
+<h2 id="write-amqp-plugin">Write AMQP plugin</h2>
+
+<p>The Advanced Messaging Queuing Protocol (AMQP) is an open standard application layer protocol for message-oriented middleware. The Write AMQP plugin publishes metrics to the configured message broker in JSON format. Several attributes are available by default:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Name</td>
+<td>Name of the AMQP publisher.</td>
+</tr>
+
+<tr>
+<td>Host</td>
+<td>Message broker’s host name.</td>
+</tr>
+
+<tr>
+<td>Port</td>
+<td>Message broker’s AMQP listening port.</td>
+</tr>
+
+<tr>
+<td>VirtualHost</td>
+<td>The name of the “virtual host” (or vhost) that specifies the namespace for entities (exchanges and queues) referred to by the protocol. Virtual hosts provide a way to segregate applications using the same message broker instance.</td>
+</tr>
+
+<tr>
+<td>User</td>
+<td>User name for authentication.</td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td>Password for authentication.</td>
+</tr>
+
+<tr>
+<td>Exhange</td>
+<td>Exchanges are AMQP entities where messages are sent. Exchanges take a message and route it into zero or more queues.</td>
+</tr>
+
+<tr>
+<td>RoutingKeyPrefix</td>
+<td>A message sent to a message broker contains a routing key and message body.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="configure-4">Configure</h3>
+
+<ol>
+<li>Navigate to the <strong>WriteAMQP.config</strong> file.</li>
+<li>Add any of the optional configuration attributes to the Publishline in the file.</li>
+<li><strong>Save</strong> the file.</li>
+</ol>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/integrations/agents/windows-agent/windows-agent-metrics/" title="Metrics"> <i class="fa fa-chevron-left"></i><label>Metrics</label></a>
+    <a class="nav nav-next" href="/integrations/agents/windows-agent/windows-agent-proxy/" title="Proxy" style="margin-right: 0px;"><label>Proxy</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+    <div class="tags"> 
+      
+        <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows">windows</a>
+      
+        <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations">integrations</a>
+      
+        <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/plugins">plugins</a>
+      
+    </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

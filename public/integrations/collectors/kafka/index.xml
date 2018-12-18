@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kafka on Metricly Docs</title>
+    <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/</link>
+    <description>Recent content in Kafka on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kafka Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-metrics/</guid>
+      <description>Due to the sheer volume of Kafka metrics, the individual metrics won’t be documented here. Instead, this page outlines general properties for the groups of metrics.
+Properties All Metrics Share:  Statistic: average Min: 0 CORR: no UTIL: no BASE:  On for most metrics Off for metrics matching the following regexes: ^kafka.cluster.* ^kafka\.utils\..* ^kafka\.log\..*(LogEndOffset|LogStartOffset)$ ^kafka\.controller\.((?!broker-\d).).* ^kafka\.consumer_group\.((?!consumer_lag$).)*$   Metrics That End With Percent:  Unit: percent Max: 1  Metrics With Bytes.</description>
+    </item>
+    
+    <item>
+      <title>Kafka in Docker</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-in-docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-in-docker/</guid>
+      <description>Getting the Jolokia agent running in a Kafka container requires three additional modifications to the docker run command. To illustrate the modifications needed, we’re going to assume that your docker run command looks like this initially:
+docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=`docker-machine ip\`docker-machine active\`` --env ADVERTISED_PORT=9092 spotify/kafka  Update Docker Run Command  Make the Jolokia JAR file available to the container by passing it in as a mounted volume.</description>
+    </item>
+    
+  </channel>
+</rss>

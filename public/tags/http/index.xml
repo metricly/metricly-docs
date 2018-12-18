@@ -2,21 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Http on Metricly Docs</title>
-    <link>http://localhost:1313/tags/http/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/http/</link>
     <description>Recent content in Http on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/http/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/http/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>HTTP Collector</title>
-      <link>http://localhost:1313/integrations/collectors/http-collector/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-collector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/http-collector/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-collector/</guid>
       <description>The HTTP Collector gathers statistics from an HTTP or HTTPS connection.
 Prerequisites The Linux Agent is required before proceeding with the setup of the HTTP Collector. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
 Update the Configuration File  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors.</description>
@@ -24,19 +23,19 @@ Update the Configuration File  Navigate to the collectors folder, /opt/netuitive
     
     <item>
       <title>Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/http-code-collector/http-code-collector-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-code-collector/http-code-collector-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/http-code-collector/http-code-collector-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-code-collector/http-code-collector-metrics/</guid>
       <description>This collector tracks per URL which response codes are received as well as the number of times each code was received as two separate metrics. The Response Code List metric’s value is the literal response code number at the time it was received. The Response Code count increments each time a response code is received; this means that you won’t have a metric for every response code until your web site serves up that response code.</description>
     </item>
     
     <item>
       <title>Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/http-collector/http-collector-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-collector/http-collector-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/http-collector/http-collector-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-collector/http-collector-metrics/</guid>
       <description> Collected    Friendly Name Fully Qualified Name (FQN) Description Statistic     Servers Http Time servers.[hostname].http.[url].time Time to download the page in microseconds. average   Servers Http Size servers.[hostname].http.[url].size Size of the page received in bytes. bytes    </description>
     </item>
     

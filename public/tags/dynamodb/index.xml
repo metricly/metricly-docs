@@ -2,32 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dynamodb on Metricly Docs</title>
-    <link>http://localhost:1313/tags/dynamodb/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/dynamodb/</link>
     <description>Recent content in Dynamodb on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/dynamodb/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/dynamodb/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>DynamoDB Metrics</title>
-      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-dynamodb/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
-      
-      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-dynamodb/</guid>
-      <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Max Sparse Data Strategy (SDS) BASE CORR     aws.dynamodb.conditionalcheckfailedrequests ConditionalCheckFailedRequests sum count none zero no no   aws.dynamodb.consumedreadcapacityunits ConsumedReadCapacityUnits sum count none zero yes no   aws.dynamodb.consumedwritecapacityunits ConsumedWriteCapacityUnits sum count none zero yes no   aws.dynamodb.onlineindexconsumedwritecapacity OnlineIndexConsumedWriteCapacity sum count none zero yes no   aws.dynamodb.onlineindexpercentageprogress OnlineIndexPercentageProgress max percent 100 none no no   aws.</description>
-    </item>
     
     <item>
       <title>AWS DynamoDB Policies</title>
-      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</guid>
       <description>Policy names are prefixed with AWS DynamoDB –
     Policy Name Duration Condition 1 Cat. Description     Elevated Read Capacity Utilization 30 Min metricly.aws.dynamodb.readcapacityutilization has an upper baseline deviation + an upper contextual deviation + a static threshold ≥ 50. WARNING Read Capacity Utilization has been higher than expected for over 30 minutes; also, the actual value has been above 50% for that time.   Elevated Write Capacity Utilization 30 Min metricly.</description>
+    </item>
+    
+    <item>
+      <title>DynamoDB Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-dynamodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-dynamodb/</guid>
+      <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Max Sparse Data Strategy (SDS) BASE CORR     aws.dynamodb.conditionalcheckfailedrequests ConditionalCheckFailedRequests sum count none zero no no   aws.dynamodb.consumedreadcapacityunits ConsumedReadCapacityUnits sum count none zero yes no   aws.dynamodb.consumedwritecapacityunits ConsumedWriteCapacityUnits sum count none zero yes no   aws.dynamodb.onlineindexconsumedwritecapacity OnlineIndexConsumedWriteCapacity sum count none zero yes no   aws.dynamodb.onlineindexpercentageprogress OnlineIndexPercentageProgress max percent 100 none no no   aws.</description>
     </item>
     
   </channel>

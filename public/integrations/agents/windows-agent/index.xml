@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows Agent on Metricly Docs</title>
+    <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/</link>
+    <description>Recent content in Windows Agent on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Check Version</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-check-version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-check-version/</guid>
+      <description>You may need the verify the version of the Windows agent you’re currently using.
+ Open the [Element Detail panel][1] for a WINSRV element. Navigate to Attributes (squared in green). Verify that the agent (squared in blue) contains the correct version number.  [1] :/data-visualization/inventory</description>
+    </item>
+    
+    <item>
+      <title>Custom Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-custom-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-custom-metrics/</guid>
+      <description>You can create additional Windows performance counters to add custom metrics monitored by Metricly.
+Add Custom Metrics 1. Open the Add Counters window  Open perfmon (Performance Monitor) on your computer. Click Performance Monitor in the Monitoring Tools folder. A graph generates. Click Add above the graph. An “Add Counters” window opens. Leave the window open.  2. Prepare a new Counter  Navigate to the ReadWindowsPerfCounters file (C:\Program Files\CollectdWin\config) and open it.</description>
+    </item>
+    
+    <item>
+      <title>Manual Install</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-manual-install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-manual-install/</guid>
+      <description>Manually Install the Windows Agent  Download the latest Windows Agent. Ensure you download the correct version for your environment. Run the setup wizard and follow the instructions to install it. Navigate to the** WriteNetuitive.config** file (C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config depending on your environment. Open the file and locate the line &amp;lt;WriteNetuitiveURL=&amp;quot;https://api.app.metricly.com/ingest/windows/{apikey}&amp;quot; /&amp;gt;. Replace {apikey} in the URL with the API key generated in step 1. Save the file and restart the agent.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-metrics/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     Avg. Disk Queue Length logical_disk.*.avg_queue_length Average queue length for the logical disk. average count 0 none none yes no no   Free Megabytes logical_disk.*.megabytes_free Space free on the logical disk expressed in megabytes. average megabytes 0 none none yes no no   % Free Space logical_disk.</description>
+    </item>
+    
+    <item>
+      <title>Plugins</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-plugins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-plugins/</guid>
+      <description>There are two types of Windows plugins: Read (which allow our Windows agent to read data) and Write (which allow our Windows agent to write data). The following plugins are enabled by default:
+ ReadWindowsPerfCounters ReadWindowsAttributes ReadWindowsEvents WriteNetuitive  This configuration is recommended for monitoring a Windows server with Metricly. Other Read/Write plugins are available as documented below (note that the Write Console plugin has no configuration settings).
+Enable/Disable To change which plugins are enabled, edit the CollectdWin.</description>
+    </item>
+    
+    <item>
+      <title>Proxy</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-proxy/</guid>
+      <description>Determining if you have a proxy enabled  Open Internet Explorer. Click the Tools icon, and then click Internet Options. On the Connections tab, click LAN settings. If any of the checkboxes are selected and the appropriate information is filled out, you may need to configure proxy settings to enable data being posted by the agent on your server.  Configuring the proxy  Add the following to the end of the CollectdWinService.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-troubleshooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-troubleshooting/</guid>
+      <description>Logs are written to C:\ProgramData\CollectdWin\CollectdWin.log by default. Errors are written to the Event Log.  To adjust the log file level, edit the line below near the end of the CollectdWinService.exe.config:
+ Navigate to C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config. Edit&amp;lt;logger name=&amp;quot;*&amp;quot; writeTo=&amp;quot;default&amp;quot; minlevel=&amp;quot;[Trace/Debug/Info/Warn/Error/Fatal]&amp;quot; /&amp;gt;. Save file.  Windows Server 2003 If you are monitoring a Windows Server 2003 instance and are having trouble seeing data in Metricly, you may need to install a hotfix from Microsoft.</description>
+    </item>
+    
+    <item>
+      <title>Uninstall</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-uninstall/</guid>
+      <description> Open the Programs and Features list. Right click the CollectdWinService (64 bit) program.  Click Uninstall. If any prompt appears, click Yes to confirm that you want to delete the program.  </description>
+    </item>
+    
+    <item>
+      <title>Upgrade Agent</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-upgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-upgrade/</guid>
+      <description>To upgrade the Windows agent, follow the installation steps listed on the main Windows Integration page using the version of the agent you wish to upgrade to. The latest versions of the agent can be downloaded from the agent repo and details of the releases can be found on the Github project page.
+Installing a new version of the agent will overwrite changes you have made to existing agent configuration files located in C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config depending on your environment.</description>
+    </item>
+    
+  </channel>
+</rss>

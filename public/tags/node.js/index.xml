@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node.js on Metricly Docs</title>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/node.js/</link>
+    <description>Recent content in Node.js on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Node.js</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/nodejs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/nodejs/</guid>
+      <description>You can monitor your Node.js-based applications using the Linux Agent and Metricly StatsD server. All it takes is installing our agent and instrumenting your custom metrics, and then you’ll be visualizing the performance of your Node.js applications.
+Prerequisites  Linux Agent  Configure  Navigate to the netuitive-agent.conf file Update statsd to enabled = True.   # local statsd server [[[statsd]]] enabled = True  3. Ensure Node.js is installed properly using the node command.</description>
+    </item>
+    
+  </channel>
+</rss>

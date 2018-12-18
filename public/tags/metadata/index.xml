@@ -2,21 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Metadata on Metricly Docs</title>
-    <link>http://localhost:1313/tags/metadata/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/metadata/</link>
     <description>Recent content in Metadata on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/metadata/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/metadata/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Troubleshooting</title>
-      <link>http://localhost:1313/integrations/agents/linux-agent/linux-troubleshooting/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/linux-agent/linux-troubleshooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-troubleshooting/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/linux-agent/linux-troubleshooting/</guid>
       <description>Set Logs to Debugging Mode To set the Linux Agent logs to Debugging Mode, update the netuitive-agent.conf file.
  Navigate to the netuitive-agent.conf file. Update level = INFO to level = DEBUG. Save and restart your agent.  # to increase verbosity, set DEBUG level = DEBUG handlers = rotated_file propagate = 1  Need Help? 1. Save as Zip File Copy /opt/netuitive-agent/bin/get-support and paste it into your command line interface to zip up your agent configurations, logs, and system metadata.</description>
     </item>

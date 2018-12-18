@@ -2,1074 +2,1361 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Metricly Docs</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/</link>
     <description>Recent content in Tags on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Access Key</title>
-      <link>http://localhost:1313/tags/access-key/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/access-key/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/access-key/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/access-key/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Agents</title>
-      <link>http://localhost:1313/tags/agents/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/agents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/agents/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/agents/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Alb</title>
-      <link>http://localhost:1313/tags/alb/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/alb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/alb/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/alb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Alerts</title>
-      <link>http://localhost:1313/tags/alerts/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/alerts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/alerts/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/alerts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Anake</title>
-      <link>http://localhost:1313/tags/anake/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/anake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/anake/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/anake/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Analytics</title>
-      <link>http://localhost:1313/tags/analytics/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/analytics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/analytics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ansible</title>
-      <link>http://localhost:1313/tags/ansible/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/ansible/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/ansible/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Apache</title>
-      <link>http://localhost:1313/tags/apache/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/apache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/apache/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/apache/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Asg</title>
-      <link>http://localhost:1313/tags/asg/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/asg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/asg/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/asg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Aws</title>
-      <link>http://localhost:1313/tags/aws/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/aws/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Azure</title>
-      <link>http://localhost:1313/tags/azure/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/azure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/azure/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/azure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bulk Actions</title>
-      <link>http://localhost:1313/tags/bulk-actions/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/bulk-actions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/bulk-actions/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/bulk-actions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cassandra</title>
-      <link>http://localhost:1313/tags/cassandra/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/cassandra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/cassandra/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/cassandra/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Charts</title>
-      <link>http://localhost:1313/tags/charts/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/charts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/charts/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/charts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Checks</title>
-      <link>http://localhost:1313/tags/checks/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/checks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/checks/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/checks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chef</title>
-      <link>http://localhost:1313/tags/chef/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/chef/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/chef/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/chef/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cli</title>
-      <link>http://localhost:1313/tags/cli/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/cli/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/cli/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cloudformation Script</title>
-      <link>http://localhost:1313/tags/cloudformation-script/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/cloudformation-script/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/cloudformation-script/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/cloudformation-script/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cloudwatch</title>
-      <link>http://localhost:1313/tags/cloudwatch/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/cloudwatch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/cloudwatch/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/cloudwatch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cluster</title>
-      <link>http://localhost:1313/tags/cluster/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/cluster/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/cluster/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Collectd</title>
-      <link>http://localhost:1313/tags/collectd/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/collectd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/collectd/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/collectd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Collectors</title>
-      <link>http://localhost:1313/tags/collectors/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/collectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/collectors/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/collectors/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Commands</title>
-      <link>http://localhost:1313/tags/commands/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/commands/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/commands/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Conditions</title>
-      <link>http://localhost:1313/tags/conditions/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/conditions/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/conditions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Configuration Management</title>
-      <link>http://localhost:1313/tags/configuration-management/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/configuration-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/configuration-management/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/configuration-management/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Consul</title>
-      <link>http://localhost:1313/tags/consul/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/consul/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/consul/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/consul/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cost</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/cost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/cost/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cost Explorer</title>
-      <link>http://localhost:1313/tags/cost-explorer/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/cost-explorer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/cost-explorer/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/cost-explorer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cpu</title>
-      <link>http://localhost:1313/tags/cpu/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/cpu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/cpu/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/cpu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Custom Checks</title>
-      <link>http://localhost:1313/tags/custom-checks/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/custom-checks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/custom-checks/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/custom-checks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Custom Metrics</title>
-      <link>http://localhost:1313/tags/custom-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/custom-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/custom-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/custom-metrics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dashboards</title>
-      <link>http://localhost:1313/tags/dashboards/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/dashboards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/dashboards/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/dashboards/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Default Policies</title>
-      <link>http://localhost:1313/tags/default-policies/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/default-policies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/default-policies/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/default-policies/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Delete</title>
-      <link>http://localhost:1313/tags/delete/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/delete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/delete/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/delete/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Detailed Billing</title>
-      <link>http://localhost:1313/tags/detailed-billing/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/detailed-billing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/detailed-billing/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/detailed-billing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Df</title>
-      <link>http://localhost:1313/tags/df/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/df/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/df/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/df/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Diamond</title>
-      <link>http://localhost:1313/tags/diamond/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/diamond/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/diamond/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/diamond/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Directory</title>
-      <link>http://localhost:1313/tags/directory/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/directory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/directory/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/directory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Directory Page</title>
-      <link>http://localhost:1313/tags/directory-page/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/directory-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/directory-page/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/directory-page/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Disk</title>
-      <link>http://localhost:1313/tags/disk/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/disk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/disk/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/disk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Diskspace</title>
-      <link>http://localhost:1313/tags/diskspace/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/diskspace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/diskspace/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/diskspace/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/docker/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dropwizard</title>
-      <link>http://localhost:1313/tags/dropwizard/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/dropwizard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/dropwizard/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/dropwizard/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Duration</title>
-      <link>http://localhost:1313/tags/duration/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/duration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/duration/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/duration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dynamodb</title>
-      <link>http://localhost:1313/tags/dynamodb/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/dynamodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/dynamodb/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/dynamodb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ebs</title>
-      <link>http://localhost:1313/tags/ebs/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/ebs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/ebs/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/ebs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ec2</title>
-      <link>http://localhost:1313/tags/ec2/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/ec2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/ec2/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/ec2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ecs</title>
-      <link>http://localhost:1313/tags/ecs/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/ecs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/ecs/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/ecs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efs</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/efs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/efs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elastic Beanstalk</title>
-      <link>http://localhost:1313/tags/elastic-beanstalk/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/elastic-beanstalk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/elastic-beanstalk/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/elastic-beanstalk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elasticache</title>
-      <link>http://localhost:1313/tags/elasticache/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/elasticache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/elasticache/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/elasticache/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elasticsearch</title>
-      <link>http://localhost:1313/tags/elasticsearch/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/elasticsearch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/elasticsearch/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/elasticsearch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elastisearch</title>
-      <link>http://localhost:1313/tags/elastisearch/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/elastisearch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/elastisearch/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/elastisearch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elb</title>
-      <link>http://localhost:1313/tags/elb/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/elb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/elb/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/elb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elements</title>
-      <link>http://localhost:1313/tags/elements/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/elements/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/elements/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Email</title>
-      <link>http://localhost:1313/tags/email/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/email/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/email/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Events</title>
-      <link>http://localhost:1313/tags/events/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/events/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/events/</guid>
       <description></description>
     </item>
     
     <item>
       <title>External Events</title>
-      <link>http://localhost:1313/tags/external-events/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/external-events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/external-events/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/external-events/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Flume</title>
-      <link>http://localhost:1313/tags/flume/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/flume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/flume/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/flume/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fqns</title>
-      <link>http://localhost:1313/tags/fqns/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/fqns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/fqns/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/fqns/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Getting Started</title>
-      <link>http://localhost:1313/tags/getting-started/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/getting-started/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/getting-started/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gov Cloud</title>
-      <link>http://localhost:1313/tags/gov-cloud/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/gov-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/gov-cloud/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/gov-cloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hipchat</title>
-      <link>http://localhost:1313/tags/hipchat/</link>
-      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/hipchat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/hipchat/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/hipchat/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Http</title>
-      <link>http://localhost:1313/tags/http/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/http/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/http/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/http/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Http Code</title>
-      <link>http://localhost:1313/tags/http-code/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/http-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/http-code/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/http-code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Httpd</title>
-      <link>http://localhost:1313/tags/httpd/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/httpd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/httpd/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/httpd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Iam Role</title>
-      <link>http://localhost:1313/tags/iam-role/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/iam-role/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/iam-role/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/iam-role/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Idle Resources</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/idle-resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/idle-resources/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Indices</title>
-      <link>http://localhost:1313/tags/indices/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/indices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/indices/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/indices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Install</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/install/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Installation</title>
-      <link>http://localhost:1313/tags/installation/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/installation/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/installation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Integrations</title>
-      <link>http://localhost:1313/tags/integrations/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/integrations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/integrations/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/integrations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Interface</title>
-      <link>http://localhost:1313/tags/interface/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/interface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/interface/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/interface/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Inventory Page</title>
-      <link>http://localhost:1313/tags/inventory-page/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/inventory-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/inventory-page/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/inventory-page/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Iris</title>
-      <link>http://localhost:1313/tags/iris/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/iris/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/iris/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/iris/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>http://localhost:1313/tags/java/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/java/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kafka</title>
-      <link>http://localhost:1313/tags/kafka/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/kafka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/kafka/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/kafka/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Knesis</title>
-      <link>http://localhost:1313/tags/knesis/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/knesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/knesis/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/knesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lambda</title>
-      <link>http://localhost:1313/tags/lambda/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/lambda/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/lambda/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Load</title>
-      <link>http://localhost:1313/tags/load/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/load/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/load/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/load/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Load Average</title>
-      <link>http://localhost:1313/tags/load-average/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/load-average/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/load-average/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/load-average/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Logs</title>
-      <link>http://localhost:1313/tags/logs/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/logs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/logs/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/logs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Maintenance</title>
-      <link>http://localhost:1313/tags/maintenance/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/maintenance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/maintenance/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/maintenance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Memory</title>
-      <link>http://localhost:1313/tags/memory/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/memory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/memory/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/memory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Metadata</title>
-      <link>http://localhost:1313/tags/metadata/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/metadata/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/metadata/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Metrics</title>
-      <link>http://localhost:1313/tags/metrics/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/metrics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Microsoft</title>
-      <link>http://localhost:1313/tags/microsoft/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/microsoft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/microsoft/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft Iis</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/microsoft-iis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/microsoft-iis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft Net</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/microsoft-net/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/microsoft-net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft Sql</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/microsoft-sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/microsoft-sql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Microsoft Teams</title>
-      <link>http://localhost:1313/tags/microsoft-teams/</link>
-      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/microsoft-teams/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/microsoft-teams/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/microsoft-teams/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mongodb</title>
-      <link>http://localhost:1313/tags/mongodb/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/mongodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/mongodb/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/mongodb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mq</title>
-      <link>http://localhost:1313/tags/mq/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/mq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/mq/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/mq/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mute</title>
-      <link>http://localhost:1313/tags/mute/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/mute/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/mute/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/mute/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mysql</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/mysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nagios</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/nagios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/nagios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Netuitive</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/netuitive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/netuitive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Netuitive Statsd</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/netuitive-statsd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/netuitive-statsd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Network</title>
-      <link>http://localhost:1313/tags/network/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/network/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ngnix</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/ngnix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/ngnix/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nlb</title>
-      <link>http://localhost:1313/tags/nlb/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/nlb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/nlb/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/nlb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node.js</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/node.js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/node.js/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Notifications</title>
-      <link>http://localhost:1313/tags/notifications/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/notifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/notifications/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/notifications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Opsgenie</title>
-      <link>http://localhost:1313/tags/opsgenie/</link>
-      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/opsgenie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/opsgenie/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/opsgenie/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Optional Config</title>
-      <link>http://localhost:1313/tags/optional-config/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/optional-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/optional-config/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/optional-config/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plugins</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/plugins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/plugins/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Policies</title>
-      <link>http://localhost:1313/tags/policies/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/policies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/policies/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/policies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Postresql</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/postresql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/postresql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Powerdns</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/powerdns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/powerdns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Process Resource Collector</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/process-resource-collector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/process-resource-collector/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Processes</title>
-      <link>http://localhost:1313/tags/processes/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/processes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/processes/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/processes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Puppetdb</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/puppetdb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/puppetdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rabbitmq</title>
-      <link>http://localhost:1313/tags/rabbitmq/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/rabbitmq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/rabbitmq/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/rabbitmq/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rds</title>
-      <link>http://localhost:1313/tags/rds/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/rds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/rds/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/rds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redis</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/redis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/redis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Redshift</title>
-      <link>http://localhost:1313/tags/redshift/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/redshift/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/redshift/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/redshift/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Regex</title>
-      <link>http://localhost:1313/tags/regex/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/regex/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/regex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reports</title>
-      <link>http://localhost:1313/tags/reports/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/reports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/reports/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/reports/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Riemann</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/riemann/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/riemann/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruby</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/ruby/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/ruby/</guid>
       <description></description>
     </item>
     
     <item>
       <title>S3</title>
-      <link>http://localhost:1313/tags/s3/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/s3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/s3/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/s3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>S3 Bucket</title>
-      <link>http://localhost:1313/tags/s3-bucket/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/s3-bucket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/s3-bucket/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/s3-bucket/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Salt</title>
-      <link>http://localhost:1313/tags/salt/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/salt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/salt/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/salt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scope</title>
-      <link>http://localhost:1313/tags/scope/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/scope/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/scope/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/scope/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sensu</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/sensu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/sensu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Slack</title>
-      <link>http://localhost:1313/tags/slack/</link>
-      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/slack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/slack/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/slack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Snmp</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/snmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/snmp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sns</title>
-      <link>http://localhost:1313/tags/sns/</link>
-      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/sns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/sns/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/sns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solr</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/solr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/solr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sqs</title>
-      <link>http://localhost:1313/tags/sqs/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/sqs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/sqs/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/sqs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statsd</title>
-      <link>http://localhost:1313/tags/statsd/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/statsd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/statsd/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/statsd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Stride</title>
-      <link>http://localhost:1313/tags/stride/</link>
-      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/stride/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/stride/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/stride/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tcp</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/tcp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/tcp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Threadpool</title>
-      <link>http://localhost:1313/tags/threadpool/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/threadpool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/threadpool/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/threadpool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tomcat</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/tomcat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/tomcat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uninstall</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/uninstall/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Upgrade</title>
-      <link>http://localhost:1313/tags/upgrade/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/upgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/upgrade/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/upgrade/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Uptime</title>
-      <link>http://localhost:1313/tags/uptime/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/uptime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/uptime/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/uptime/</guid>
       <description></description>
     </item>
     
     <item>
       <title>User Guide</title>
-      <link>http://localhost:1313/tags/user-guide/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/user-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/user-guide/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/user-guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>User Scripts</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/user-scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/user-scripts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Victorops</title>
-      <link>http://localhost:1313/tags/victorops/</link>
-      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/victorops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/victorops/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/victorops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Webhook</title>
-      <link>http://localhost:1313/tags/webhook/</link>
-      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/webhook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/webhook/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/webhook/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Webhooks</title>
-      <link>http://localhost:1313/tags/webhooks/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/webhooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/webhooks/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/webhooks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Widgets</title>
-      <link>http://localhost:1313/tags/widgets/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/widgets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/widgets/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/widgets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>http://localhost:1313/tags/windows/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/tags/windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/windows/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/tags/windows/</guid>
       <description></description>
     </item>
     

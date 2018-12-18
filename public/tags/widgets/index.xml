@@ -2,31 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Widgets on Metricly Docs</title>
-    <link>http://localhost:1313/tags/widgets/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/widgets/</link>
     <description>Recent content in Widgets on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/widgets/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/widgets/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cost Explorer Widget</title>
-      <link>http://localhost:1313/data-visualization/dashboards/widgets/cost-explorer-widget/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/cost-explorer-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/data-visualization/dashboards/widgets/cost-explorer-widget/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/cost-explorer-widget/</guid>
       <description>Options for this widget type include: period comparison, service total, and doughnut.
 The Period Comparison option enables you to select a current timeframe (day, month, 6 months, etc) and compare its previous timeframe interval. For example, the below screenshot shows a current 6 month period comparison of May 16, 2018 – November 15, 2018 and a previous 6 month interval of November 16, 2017 – May 15, 2018.</description>
     </item>
     
     <item>
       <title>Dashboards</title>
-      <link>http://localhost:1313/data-visualization/dashboards/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/data-visualization/dashboards/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/</guid>
       <description>Visualize your data in Metricly with dashboards.You can use the default, pre-packaged integration dashboards or create and customize your own using widgets. Default dashboards are not editable.
 View a Dashboard  Click on Dashboards in the main menu.
 or Navigate to Dashboards &amp;gt; Manage Dashboards.  Edit a Dashboard Editing an existing dashboard can involve managing the layout of a dashboard, changing the dashboard’s settings, or manipulating the time frame setting/refresh interval.</description>
@@ -34,65 +33,65 @@ or Navigate to Dashboards &amp;gt; Manage Dashboards.  Edit a Dashboard Editing 
     
     <item>
       <title>Events Metric Widget</title>
-      <link>http://localhost:1313/data-visualization/dashboards/widgets/events-widget/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/events-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/data-visualization/dashboards/widgets/events-widget/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/events-widget/</guid>
       <description>Options for this widget type include: heatmap and ticker.</description>
     </item>
     
     <item>
       <title>Multi Metric Widget</title>
-      <link>http://localhost:1313/data-visualization/dashboards/widgets/multi-metric-widget/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/multi-metric-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/data-visualization/dashboards/widgets/multi-metric-widget/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/multi-metric-widget/</guid>
       <description>Options for this widget type include: line, area, and stacked.</description>
     </item>
     
     <item>
       <title>Range Metric Widget</title>
-      <link>http://localhost:1313/data-visualization/dashboards/widgets/range-widget/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/range-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/data-visualization/dashboards/widgets/range-widget/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/range-widget/</guid>
       <description>Options for this widget type include: table, graph, bar.</description>
     </item>
     
     <item>
       <title>Single Metric Widget</title>
-      <link>http://localhost:1313/data-visualization/dashboards/widgets/alerts-widget/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/alerts-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/data-visualization/dashboards/widgets/alerts-widget/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/alerts-widget/</guid>
       <description>Options for this widget type include: map, heat map, and ticker.
 The map option is currently limited to AWS integrations. Map alerts can be grouped via element or policies. See the Alerts User Guide for a full explanation of events and alerts, and their relationship to policies. </description>
     </item>
     
     <item>
       <title>Single Metric Widget</title>
-      <link>http://localhost:1313/data-visualization/dashboards/widgets/single-metric-widget/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/single-metric-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/data-visualization/dashboards/widgets/single-metric-widget/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/single-metric-widget/</guid>
       <description>Options for this widget type include: chart, gauge, value, and time series.</description>
     </item>
     
     <item>
       <title>Table Widget</title>
-      <link>http://localhost:1313/data-visualization/dashboards/widgets/table-widget/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/table-widget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/data-visualization/dashboards/widgets/table-widget/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/table-widget/</guid>
       <description>More writeup coming soon. Here&amp;rsquo;s what it looks like: </description>
     </item>
     
     <item>
       <title>Widgets</title>
-      <link>http://localhost:1313/data-visualization/dashboards/widgets/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/data-visualization/dashboards/widgets/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/</guid>
       <description>This guide includes a list of all widget types available, their options, and the actions you can take. To take full advantage of widgets, you should strategize how to tag, group, and visualize the data in your environment. General knowledge on elements and the behavior of your metrics is strongly encouraged before making a custom dashboard.
 Move Widgets  Hover over the widget’s title to select. The header turns gray and your cursor is replaced with  when a widget is selected.</description>
     </item>

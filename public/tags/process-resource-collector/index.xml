@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Process Resource Collector on Metricly Docs</title>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/process-resource-collector/</link>
+    <description>Recent content in Process Resource Collector on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/process-resource-collector/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Process Resource Collector</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/process-resources-collector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/process-resources-collector/</guid>
+      <description>The Process Resources Collector can be used to collect CPU- and Memory-type metrics on a per-process level.
+Prerequisites  Linux Agent  Configure Update the Configuration File  Navigate to the collectors folder, opt/netuitive-agent/conf/collectors. Open the ProcessResourcesCollector.conf file. Change the enabled setting to True. For each process you’d like to monitor, include the following below the [process] section:  [[process_name]] name = &amp;quot;.*regex-statement.*&amp;quot;  Example
+[[nginx]] name = ^nginx  5.</description>
+    </item>
+    
+  </channel>
+</rss>

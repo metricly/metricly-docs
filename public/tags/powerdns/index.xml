@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Powerdns on Metricly Docs</title>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/powerdns/</link>
+    <description>Recent content in Powerdns on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/powerdns/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PowerDNS</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/powerdns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/powerdns/</guid>
+      <description>Prerequisites  Linux Agent  Configure You cannot activate the PowerDNS integration until Metricly begins receiving data. Once data arrives, the package (Dashboards and Policies) is automatically provisioned. To remove those Dashboards and Policies, click the toggle on the PowerDNS integration card.
+1. Get API Key  In Metricly, Navigate to Integrations &amp;gt; PowerDNS. Copy the API Key. Add this key to your Linux Agent.  2. Update the Configuration File  Open PowerDNSCollector.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AWS Integration on Metricly Docs</title>
-    <link>http://localhost:1313/integrations/aws-integration/</link>
-    <description>Recent content in AWS Integration on Metricly Docs</description>
+    <title>AWS on Metricly Docs</title>
+    <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/</link>
+    <description>Recent content in AWS on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/integrations/aws-integration/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CloudFormation</title>
-      <link>http://localhost:1313/integrations/aws-integration/aws-cloudformation-installation/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-cloudformation-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/aws-integration/aws-cloudformation-installation/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-cloudformation-installation/</guid>
       <description>This installation method leverages a CloudFormation script found in step 1.4. After you make a new AWS integration in Metricly, the script populates a read-only IAM role in your AWS account and links it using the integration’s Account ID and External ID. Once created, it may take a few minutes for the status to be updated.
 Create an AWS Integration in Metricly  Open Metricly and navigate to Integrations &amp;gt; AWS.</description>
     </item>
     
     <item>
       <title>IAM</title>
-      <link>http://localhost:1313/integrations/aws-integration/aws-iam-installation/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-iam-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/aws-integration/aws-iam-installation/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-iam-installation/</guid>
       <description>IAM Role Method Setting up an AWS integration via IAM Role is a two step process:
 Create a new AWS integration in Metricly using an IAM read-only role. Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
 Step 1: Create a new AWS integration  From the top navigation menu, select Integrations.</description>
@@ -34,10 +33,10 @@ Step 1: Create a new AWS integration  From the top navigation menu, select Integ
     
     <item>
       <title>Access Key</title>
-      <link>http://localhost:1313/integrations/aws-integration/acess-key-aws/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/acess-key-aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/aws-integration/acess-key-aws/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/acess-key-aws/</guid>
       <description>Access key Setting up an AWS integration is a two step process:
  Create a new AWS integration in Metricly and share the Access Key ID and Secret Access Key of the desired IAM read-only user.
  Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
@@ -46,19 +45,19 @@ Step 1: Create a new AWS integration  From the top navigation menu, select Integ
     
     <item>
       <title>Detailed Billing</title>
-      <link>http://localhost:1313/integrations/aws-integration/aws-detailed-billing/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-detailed-billing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/aws-integration/aws-detailed-billing/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-detailed-billing/</guid>
       <description>How to Enable Detailed Billing  If you already have an S3 bucket receiving billing files from Amazon, then you do not need to complete steps 1 and 2. You can go directly to step 3 to provide Metricly access to the existing files. If you have already created an S3 bucket, you will not need to create a separate one. Just be sure to select the correct S3 bucket in step 2.</description>
     </item>
     
     <item>
       <title>Optional Config</title>
-      <link>http://localhost:1313/integrations/aws-integration/aws-optional-config/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-optional-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/aws-integration/aws-optional-config/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-optional-config/</guid>
       <description>Change Element Display Names You can change how certain elements’ names are displayed in the application to help distinguish between each instance, e.g., you have 15 EC2 instances with the same name and want to know the difference between each.
  Under the Include Types list, expand the desired type.
  Beneath the Tag Key field, click Advanced. A menu expands.
@@ -67,10 +66,10 @@ Step 1: Create a new AWS integration  From the top navigation menu, select Integ
     
     <item>
       <title>Gov Cloud</title>
-      <link>http://localhost:1313/integrations/aws-integration/aws-gov-cloud/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-gov-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/aws-integration/aws-gov-cloud/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-gov-cloud/</guid>
       <description>AWS GovCloud (US) is a segment of Amazon Web Services cloud offerings that restrict physical and logical administrative access to U.S. citizens only. The region meets the requirements for U.S. International Traffic in Arms Regulations (ITAR), and allows users to move Controlled Unclassified Information (CUI) into the cloud. Check out our blog post, Monitor AWS GovCloud With Metricly, or the official AWS Guide for more information.
 Configuration Leave GovCloud disabled unless you have signed up for and are using a GovCloud-restricted AWS account.</description>
     </item>

@@ -2,21 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cost Explorer on Metricly Docs</title>
-    <link>http://localhost:1313/tags/cost-explorer/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/cost-explorer/</link>
     <description>Recent content in Cost Explorer on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/cost-explorer/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/cost-explorer/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>AWS Integration</title>
-      <link>http://localhost:1313/integrations/aws-integration/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <title>AWS</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/aws-integration/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/</guid>
       <description>The Amazon Web Services (AWS) Integration allows performance data to be collected at regular intervals from AWS for analysis in Metricly.
 Metrics
 For a list of collected and computed metrics, visit our Metrics List.

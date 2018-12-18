@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby on Metricly Docs</title>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/ruby/</link>
+    <description>Recent content in Ruby on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>API Options</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-api-options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-api-options/</guid>
+      <description>Log properties  logLocation: The absolute path of the log file. Leave this option blank to use the default location in the gem directory. logAge: Specify either the number of log files to keep or the frequency of rotation (daily, weekly, or monthly). logSize: Specify the maximum log file size (in bytes). debugLevel: Options include (in ascending order of severity) error, info, and debug.  Netuitived Connection Properties Netuitived address and port information.</description>
+    </item>
+    
+    <item>
+      <title>Element Tags</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-element-tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-element-tags/</guid>
+      <description>Send Element tags To send element tags, update the agent.yml found in the netuitived gem by uncommenting the elementTags line. This file is located at netuitived/config/agent.yml.
+Key/Value pairs should be added in the following format: name1:value1, name2:value2.</description>
+    </item>
+    
+    <item>
+      <title>Garbage Collection</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-garbage-collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-garbage-collection/</guid>
+      <description>The garbage collector attempts to return memory consumed by objects no longer in use by your application. Metricly can be used to collect metrics on how much time is spent in garbage collection for your Ruby applications. You should have Matz’s Ruby Interpreter (MRI) version 1.9.2 or greater or Ruby Enterprise Edition installed before enabling garbage collection metrics.
+Configure  Navigate to your application’s initialization file. Add the following call (depending on your Ruby version) to the file:  For MRI v1.</description>
+    </item>
+    
+    <item>
+      <title>Interpret Exceptions</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-interpret-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-interpret-exceptions/</guid>
+      <description>IF sendErrorEvents is enabled in the netuitive_rails_agent config/agent.yaml file AND actionErrorsEnabled and/or sidekiqEnabled = true, exceptions are sent to Metricly as external events.
+An Exception External event has the following tags to help you dissect the exception:
+   Tag Description     Action The action the error originated from.   Controller The name of the controller that the exception came from.   Exception The type of exception.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-metrics/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Statistic Units Min Max Sparse Data Strategy (SDS)     action_controller.halted_callback sum count 0 none zero   action_controller.redirect sum count 0 none zero   action_controller.total_requests sum count 0 none zero   action_controller.*.total_requests sum count 0 none zero   action_controller...request.query_time average milliseconds 0 none zero   action_controller...request.total_duration average milliseconds 0 none zero   action_controller...request.view_time average milliseconds 0 none zero   action_controller.</description>
+    </item>
+    
+    <item>
+      <title>Optional Config</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-options/</guid>
+      <description>Log Options  logLocation: The absolute path of the log file. Leave this option blank to use the default location in the gem directory. logAge: Specify either the number of log files to keep or the frequency of rotation (daily, weekly, or monthly). logSize: Specify the maximum log file size (in bytes). debugLevel: Options include (in ascending order of severity) error, info, and debug.  Active Support Notifications The active support notifications are a pub-sub model that trigger active support notifications when certain actions are performed within your rails application(s).</description>
+    </item>
+    
+    <item>
+      <title>Ruby Agent</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/</guid>
+      <description>The Ruby Agent comprises three Ruby gems&amp;ndash;netuitived, netuitive_ruby_api, and netuitive_rails_agent&amp;ndash;that work in tandem to monitor the performance of your Ruby applications.
+ netuitived: allows metrics to be exported to the Metricly API. netuitive_ruby_api: allows for easy integration with netuitived. netuitive_rails_agent: provides default Ruby on Rails metrics and sends them to netuitived using netuitive_ruby_api.  The Ruby Agent can also be tuned to help application performance and used to read garbage collection metrics.</description>
+    </item>
+    
+  </channel>
+</rss>

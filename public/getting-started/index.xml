@@ -2,30 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting Started on Metricly Docs</title>
-    <link>http://localhost:1313/getting-started/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/getting-started/</link>
     <description>Recent content in Getting Started on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/getting-started/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cost Tools</title>
-      <link>http://localhost:1313/getting-started/cost-tools/</link>
+      <link>https://cranky-lalande-9d501c.netlify.com/getting-started/cost-tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/getting-started/cost-tools/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/getting-started/cost-tools/</guid>
       <description> more on this later </description>
     </item>
     
     <item>
       <title>Metric Monitoring</title>
-      <link>http://localhost:1313/getting-started/metric-monitoring/</link>
+      <link>https://cranky-lalande-9d501c.netlify.com/getting-started/metric-monitoring/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/getting-started/metric-monitoring/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/getting-started/metric-monitoring/</guid>
       <description></description>
     </item>
     

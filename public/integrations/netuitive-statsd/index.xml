@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Netuitive StatsD on Metricly Docs</title>
+    <link>https://cranky-lalande-9d501c.netlify.com/integrations/netuitive-statsd/</link>
+    <description>Recent content in Netuitive StatsD on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/integrations/netuitive-statsd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

@@ -2,21 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elastic Beanstalk on Metricly Docs</title>
-    <link>http://localhost:1313/tags/elastic-beanstalk/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/elastic-beanstalk/</link>
     <description>Recent content in Elastic Beanstalk on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/elastic-beanstalk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/elastic-beanstalk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Elastic Beanstalk</title>
-      <link>http://localhost:1313/integrations/agents/linux-agent/linux-elastic-beanstalk-install/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/linux-agent/linux-elastic-beanstalk-install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/linux-agent/linux-elastic-beanstalk-install/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/linux-agent/linux-elastic-beanstalk-install/</guid>
       <description>Using an existing application file, you can deploy the Netuitive agent to a self-contained EC2 instance complete with a load balancer and everything else it needs to run. The Elastic Beanstalk instance can also scale by itself.
  Before creating your Elastic Beanstalk instance, find or create a folder called .ebextensions in your application’s directory. Copy the netuitive.config file to your .ebextensions folder. Replace the sample API key at the top of the netuitive.</description>
     </item>

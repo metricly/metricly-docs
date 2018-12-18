@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ngnix on Metricly Docs</title>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/ngnix/</link>
+    <description>Recent content in Ngnix on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/ngnix/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/ngnix/ngnix-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/ngnix/ngnix-metrics/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     nginx.act_reads The average number of active connections that were reading during theprior interval. average count 0 none none yes yes no   nginx.act_waits The average number of active connections that were waiting during theprior interval. average count 0 none none yes yes no   nginx.</description>
+    </item>
+    
+    <item>
+      <title>NGNIX</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/ngnix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/ngnix/</guid>
+      <description>Prerequisites Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the NginxCollector.conf file. Change the enabled setting to True. Save the file. Navigate to your Nginx server configuration file. Add an additional section to your file:  server { listen 127.0.0.1; server_name localhost; location /nginx_status { # turns on nginx stats # stub_status on; # turns off logging # access_log off; allow 127.0.0.1; # sends rest of world to /dev/null # deny all; } }  8.</description>
+    </item>
+    
+  </channel>
+</rss>

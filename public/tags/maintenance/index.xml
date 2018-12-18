@@ -2,21 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maintenance on Metricly Docs</title>
-    <link>http://localhost:1313/tags/maintenance/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/maintenance/</link>
     <description>Recent content in Maintenance on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/maintenance/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/maintenance/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Start or Stop Maintenance</title>
-      <link>http://localhost:1313/data-visualization/inventory/inventory-startstop-maintenance/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/inventory-startstop-maintenance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/data-visualization/inventory/inventory-startstop-maintenance/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/inventory-startstop-maintenance/</guid>
       <description>You can place elements into maintenance mode from the Inventory Explorer or via the Metricly CLI (Command Line Interface). While an element is in maintenance mode, learning for that element is disabled (i.e. no contextual or baseline bands will be displayed) and events will not be generated for the element.
  Open the Inventory Explorer. Select the check box next to as many elements as desired. Click Start or Stop Maintenance at the top of the Inventory Explorer table.</description>
     </item>

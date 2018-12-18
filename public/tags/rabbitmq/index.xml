@@ -2,23 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rabbitmq on Metricly Docs</title>
-    <link>http://localhost:1313/tags/rabbitmq/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/rabbitmq/</link>
     <description>Recent content in Rabbitmq on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/rabbitmq/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/rabbitmq/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>RabbitMQ Policies</title>
-      <link>http://localhost:1313/alerts-notifications/policies/default-policies/rabbitmq-policies/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/rabbitmq/rabbitmq-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/rabbitmq-policies/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/rabbitmq/rabbitmq-metrics/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     rabbitmq.cluster.nodes GAUGE count average 0 none none no no no   rabbitmq.cluster.partitions GAUGE count average 0 none none no no no   rabbitmq.health.disk_free GAUGE bytes average 0 none none yes no no   rabbitmq.health.disk_free_limit GAUGE bytes average 0 none none no no no   rabbitmq.</description>
+    </item>
+    
+    <item>
+      <title>RabbitMQ Policies</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/rabbitmq-policies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/rabbitmq-policies/</guid>
       <description>Policy names are prefixed with RabbitMQ –
     Policy name Duration Conditions Category Description     Depressed Message Count 30 min rabbitmq.queue_totals.messages has a lower baseline deviation WARNING The number of messages across all queues has been lower than expected for at least the past 30 minutes.   Elevated Memory Usage 30 min rabbitmq.health.mem_used has an upper baseline deviation WARNING Memory usage has been higher than expected for at least the past 30 minutes.</description>
+    </item>
+    
+    <item>
+      <title>rabbitMQ</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/rabbitmq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/rabbitmq/</guid>
+      <description>Rabbit MQ is a message broker that manages queues between message producers and consumers. Metricly can be used to monitor your RabbitMQ server’s queuing performance.
+Prerequisites  Linux Agent  Before editing the configuration file, you should verify the RabbitMQ management module is enabled. If the module is not enabled, do the following:
+ If the package is installed globally, type this into your command prompt:
+rabbitmq-plugins enable rabbitmq_management  If the package is installed in a directory, type this into your command prompt instead:</description>
     </item>
     
   </channel>

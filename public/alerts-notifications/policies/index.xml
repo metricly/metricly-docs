@@ -2,31 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Policies on Metricly Docs</title>
-    <link>http://localhost:1313/alerts-notifications/policies/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/</link>
     <description>Recent content in Policies on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/alerts-notifications/policies/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Create or Edit a Policy</title>
-      <link>http://localhost:1313/alerts-notifications/policies/create-edit-policies/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/create-edit-policies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/create-edit-policies/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/create-edit-policies/</guid>
       <description>Create, edit, delete, enable, and disable policies with the Policy Editor. You can also use Policy Editor to enable and disable notifications.
  Open the Policy Editor. Navigate to Alerts &amp;gt; + Add New Policy. Begin crafting your policy at Step 1: Scope. You can also open an existing policy and click Edit Policy. Policies that correspond to inactive datasources cannot be edited.  The top of your policy has 3 important fields:</description>
     </item>
     
     <item>
       <title>Choose Scope</title>
-      <link>http://localhost:1313/alerts-notifications/policies/choose-scope/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/choose-scope/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/choose-scope/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/choose-scope/</guid>
       <description>The scope of a policy defines which element(s) get assigned to that policy. A policy can use a combination of criterion to narrow its selection; for example, all elements tagged with region-east + EC2 as a type.
 Scope Methods When using multiple fields, an element must meet each criterion to be included in the policy’s scope.
 Name Contains or Name Excludes  Input a string of characters into the Name Contains or Name Excludes field.</description>
@@ -34,69 +33,69 @@ Name Contains or Name Excludes  Input a string of characters into the Name Conta
     
     <item>
       <title>Create Conditions</title>
-      <link>http://localhost:1313/alerts-notifications/policies/create-conditions/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/create-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/create-conditions/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/create-conditions/</guid>
       <description>When you are creating conditions, the Policy Editor counts the number of metrics that apply to the conditions you have set. To view those metrics, click on the link. This link opens the list of matching metrics in a new tab.
 Create a Metric Condition  Navigate to Alerts &amp;gt; New Policy &amp;gt; Conditions &amp;gt; Add Condition &amp;gt; Add Metric Condition.  To edit an existing policy, Navigate to Alerts &amp;gt; Show All Policies &amp;gt; Click Policy Name &amp;gt; Edit Policy &amp;gt; Conditions &amp;gt; Add Metric Conditions.</description>
     </item>
     
     <item>
       <title>Create External Event Conditions</title>
-      <link>http://localhost:1313/alerts-notifications/policies/create-external-event-conditions/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/create-external-event-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/create-external-event-conditions/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/create-external-event-conditions/</guid>
       <description>External Event conditions for policies are typically used in conjunction with Webhook integrations. See the Webhook integration setup or Webhook API documentation for more information.
  Open Policy Editor. Click Conditions. Click Add Condition, then select Add External Event Condition.  Type into the fields to create a proper filter:  Message Contains: A regex statement that attempts to match a word or phrase in the event message. Title Contains: A regex statement that attempts to match a word or phrase in the event’s title.</description>
     </item>
     
     <item>
       <title>Choose Duration</title>
-      <link>http://localhost:1313/alerts-notifications/policies/choose-duration/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/choose-duration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/choose-duration/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/choose-duration/</guid>
       <description>Duration is the consecutive length of time for which all the conditions in a policy must be met before an event or other optional notification is created. The default setting for metric condition duration is 5 minutes; the default (and only) setting for external event condition duration is real-time. Because Metricly aggregates data on five-minute cycles, the duration for metric conditions must be at least 5 minutes.
 By setting the duration of ExamplePolicy X to 10 minutes, an event will not be created in Metricly until all the conditions in ExamplePolicy X have been met for the same period of 10 consecutive minutes.</description>
     </item>
     
     <item>
       <title>Delete a Policy</title>
-      <link>http://localhost:1313/alerts-notifications/policies/delete-policy/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/delete-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/delete-policy/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/delete-policy/</guid>
       <description> On the Alerts page, select the desired policy. In Policy Editor, click Delete.  </description>
     </item>
     
     <item>
       <title>Enable or Disable a Policy</title>
-      <link>http://localhost:1313/alerts-notifications/policies/enable-disable-policy/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/enable-disable-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/enable-disable-policy/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/enable-disable-policy/</guid>
       <description> On the Alerts page, select the desired policy. In Policy Editor, select or deselect the Enable Policy checkbox.  You can also enable or disable policies directly from the List and Card Policy view options.
  </description>
     </item>
     
     <item>
       <title>Mute Policies</title>
-      <link>http://localhost:1313/alerts-notifications/policies/mute-policies/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/mute-policies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/mute-policies/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/mute-policies/</guid>
       <description>This silences all attached notifications for the policies selected for a set duration. You can manually unmute a policy at any time as well.
  Select all policies you wish to mute. Click Mute Notifications. Input a mute duration and click OK. Your selected policies will remain muted until your chosen duration expires or when you manually unmute them.  </description>
     </item>
     
     <item>
       <title>Regex Guide</title>
-      <link>http://localhost:1313/alerts-notifications/policies/regex-guide/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/regex-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/regex-guide/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/regex-guide/</guid>
       <description>Use Regex to Match Metric Conditions Regex uses all metrics that contain your input value. Typing aws.elb.httpcode.* would match both aws.elb.httpcode_backend_2xx, as well as netuitive.aws.elb.httpcodebackenderrorpercent.
  Exclude computed metrics using a ^ before the start of a metric name. Use Metric Tags to select a tag to further filter your condition.  We recommend testing any regular expressions that you create at https://regexr.com.
  Match String Match the start and end of the string contained between ^ and $.</description>

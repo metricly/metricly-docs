@@ -2,59 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Metricly Docs</title>
-    <link>http://localhost:1313/tags/java/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/java/</link>
     <description>Recent content in Java on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Anake</title>
-      <link>http://localhost:1313/integrations/anake/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/anake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/anake/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/anake/</guid>
       <description>Ananke is a Java library that allows Java applications to communicate with and send information to a StatsD listener. You can use Ananke to send metrics from your Java applications to a StatsD server, which will then send the metrics to Metricly.
 Configuration  Setup the Metricly StatsD integration or the Etsy StatsD integration if you haven’t already. We recommend setting up the Metricly StatsD integration if you don’t have a StatsD server already; if you have a StatsD server setup, we recommend setting up the Etsy StatsD integration.</description>
     </item>
     
     <item>
       <title>Collected Metrics</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</guid>
       <description>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     *.calls The number of calls made to the method. sum count 0 none none yes no no   *.errors The number of method calls that resulted in errors. sum count 0 none none yes no no   *.time The amount of time spent executing the method totaled across all calls.</description>
     </item>
     
     <item>
       <title>Computed Metrics</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</guid>
       <description>Computed    Fully Qualified Name (FQN) Description Statistic Units Min Max BASE CORR UTIL     netuitive.jvm.heap.utilizationpercent Percentage of the allocated heap memory that is currently in use.Computation:(Heap Used / Heap Committed) * 100 average percent 0 100 yes yes yes   netuitive.jvm.non-heap.utilizationpercent Percentage of the allocated non-heap memory that is currently in use.Computation:(Metaspace or PermGen Used + CodeCache Used / Metaspace or PermGen Committed + CodeCache Committed) * 100 average percent 0 100 yes yes yes   netuitive.</description>
     </item>
     
     <item>
       <title>Custom MBeans</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-custom-mbeans/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-custom-mbeans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-custom-mbeans/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-custom-mbeans/</guid>
       <description>The Java agent can collect metrics from custom mbeans. We have provided a sample spring boot application that creates 2 custom mbeans with test attributes here.
 Multiple Custom MBean Diagram For a Single Custom MBean  Navigate to the zorka.properties file in your Java agent directory. Near the bottom of the file, set the attribute netuitive.api.custom.stats.mbean to the custom mbean you defined in your application  #custom mbean to collect metrics from netuitive.</description>
     </item>
     
     <item>
       <title>Enable Proxy</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-enable-proxy/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-enable-proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-enable-proxy/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-enable-proxy/</guid>
       <description>Enable a Proxy  Navigate to the zorka.properties file. Find the proxy section:
   netuitive.api.proxy = no netuitive.api.proxy.address = http://&amp;lt;proxy host&amp;gt;:&amp;lt;proxy port&amp;gt;  3. Change the netuitive.api.proxy line to yes.
 4. Add the correct proxy host and port to the netuitive.api.proxy.address line.</description>
@@ -62,79 +61,79 @@ Multiple Custom MBean Diagram For a Single Custom MBean  Navigate to the zorka.p
     
     <item>
       <title>Iris</title>
-      <link>http://localhost:1313/integrations/iris/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/iris/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/iris/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/iris/</guid>
       <description>Iris is a Java library that allows your Java applications to communicate with Metricly’s REST API. You can use Iris to send metrics from your applications to Metricly, create dashboards, tags, elements, and much more.
 Configuration  Include the proper dependency from Maven for the appropriate build manager. Invoke the REST API client interface in a central location that your various Java classes can access while ensuring you replace username and password with the appropriate values.</description>
     </item>
     
     <item>
       <title>Java Agent</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/</guid>
       <description>Metricly’s Java agent is a java monitoring agent with a programmable bytecode instrumentation engine that’s enabled by adding a JVM integration in Metricly. The Metricly Java integration allows Metricly to collect JVM runtime system metrics like CPU, Memory, GC, Threads and Classes Count, and application components method performance statistics, such as number of calls and execution time.
 Prerequisites Must have Java 6 Or greater.
 Configuration 1. Copy API key  From the top navigation menu, select Integrations.</description>
     </item>
     
     <item>
-      <title>Metrics</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Java Policies</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/java-policies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/java-policies/</guid>
+      <description>Policy name Duration Conditions Category Description     Elevated JVM CPU Activity 15 min cpu.used.percent has an upper baseline deviation + an upper contextual deviation + a static threshold &amp;gt; 50% WARNING This policy will generate a WARNING event when the JVM’s CPU activity is higher than expected. Additionally, the CPU usage is above 50%.   Elevated JVM Heap Usage 15 min metricly.jvm.heap.utilizationpercent has an upper baseline deviation + an upper contextual deviation WARNING This policy will generate a WARNING event when the JVM’s heap usage is higher than expected.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/</guid>
       <description>Instrumenting Metric Values  First, set up the Java Agent. In the zorka/scripts/ directory, create a .bsh file for the application you want to monitor. Call zorka.require to load any extension scripts your application depends on. Define the function(s) you want Zorka to monitor using the template below. The template will establish namespace by creating a function that returns a reference to its own instance and then defines a variable that holds an instance of the function.</description>
     </item>
     
     <item>
       <title>Send Tags Via Zorka</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-element-tags-zorka/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-element-tags-zorka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-element-tags-zorka/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-element-tags-zorka/</guid>
       <description>Send Element Tags via Zorka Agent  Navigate to the zorka.properties file in your Java agent directory. Near the bottom of the file, uncomment the #netuitive.api.tags list and add tags following the below format:   netuitive.api.tags = name:value, second:value  3. Save the file.</description>
     </item>
     
     <item>
       <title>Uninstall Agent</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-uninstall/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-uninstall/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-uninstall/</guid>
       <description> How to Uninstall  Remove any JVM startup references to the Netuitive Java Agent.  java -javaagent:/opt/netuitive-zorka/netuitive.jar=/opt/netuitive-zorka -jar zorka-core-test.jar -- service   Delete all Netuitive Java Agent (netuitive-zorka-{version}) files.  If you instrumented metrics using the jvm.bsh script, you will need to remove the references to the script as well.
  </description>
     </item>
     
     <item>
       <title>Upgrade Java</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-upgrade/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-upgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-upgrade/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-upgrade/</guid>
       <description> How to Upgrade  Download the latest Java agent here. Copy the new netuitive.jar file to your existing Java agent files to replace the old netuitive.jar file. Optionally, manually merge the new zorka.properties file with the old file to receive any new fields or settings.  </description>
     </item>
     
     <item>
       <title>Use Calculator App</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-calculator-app/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-calculator-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-calculator-app/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-calculator-app/</guid>
       <description>To to run the calculator app with the zorka agent, use the following command:
 java -javaagent:/opt/netuitive-zorka-agent/netuitive.jar=/opt/netuitive-zorka-agent/ -jar /opt/zorka-core-test.jar  Calculator.java Source package com.netuitive.agent.test; public class Calculator { public Integer calculate(String operator, Integer first, Integer second) { if (operator.equals(“+”)) { return add(first, second); } else if (operator.equals(“-“)) { return minus(first, second); } else if (operator.equals(“*”)) { return multiply(first, second); } else if (operator.equals(“/”)) { return divide(first, second); } else { throw new IllegalArgumentException(“‘” + operator + “‘ is not supported, use one of [+|-|*|/] operators”); } } private Integer add(Integer first, Integer second) { return first + second; } private Integer minus(Integer first, Integer second) { return first – second; } private Integer multiply(Integer first, Integer second) { return first * second; } private Integer divide(Integer first, Integer second) { return first / second; } }  Example Below is an example file called calculator.</description>
-    </item>
-    
-    <item>
-      <title>Java Policies</title>
-      <link>http://localhost:1313/alerts-notifications/policies/default-policies/java-policies/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/java-policies/</guid>
-      <description>Policy name Duration Conditions Category Description     Elevated JVM CPU Activity 15 min cpu.used.percent has an upper baseline deviation + an upper contextual deviation + a static threshold &amp;gt; 50% WARNING This policy will generate a WARNING event when the JVM’s CPU activity is higher than expected. Additionally, the CPU usage is above 50%.   Elevated JVM Heap Usage 15 min metricly.jvm.heap.utilizationpercent has an upper baseline deviation + an upper contextual deviation WARNING This policy will generate a WARNING event when the JVM’s heap usage is higher than expected.</description>
     </item>
     
   </channel>

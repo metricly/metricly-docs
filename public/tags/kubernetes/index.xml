@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes on Metricly Docs</title>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/kubernetes/</link>
+    <description>Recent content in Kubernetes on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/kubernetes/</guid>
+      <description>This integration allows you to monitor the data and elements from your Kubernetes environments. Setup is quick, with data appearing in your account as soon as 5 minutes after installation.
+Prerequisites These steps assume you have already spun up a Kubernetes cluster and can interact with it using the kubectl command. If you have not yet set up Kubernetes, see their GitHub documentation.
+Using RBAC? If you are implementing Kubernetes with Role-based Access Control (RBAC Authorization), you must include ClusterRoleBinding instructions to the Metricly deployment YAML file found in step 1.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/kubernetes/kubernetes-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/kubernetes/kubernetes-metrics/</guid>
+      <description>Metric FQN Kubernetes Types Baseline Correlated Statistic     cpu.limit Cluster, Node, Namespace, Pod, Pod Container, Sys Container No No Average   cpu.node.allocatable Node No No Average   cpu.node.utilization Node Yes Yes Average   cpu.node_capacity Node No No Average   cpu.node_reservation Node No No Average   cpu.request Cluster, Node, Namespace, Pod, Pod Container, Sys Container No No Average   cpu.</description>
+    </item>
+    
+  </channel>
+</rss>

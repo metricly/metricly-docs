@@ -2,39 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asg on Metricly Docs</title>
-    <link>http://localhost:1313/tags/asg/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/asg/</link>
     <description>Recent content in Asg on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/asg/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/asg/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>ASG Recommendations</title>
-      <link>http://localhost:1313/reports/reports-asg-recommendations/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/reports/reports-asg-recommendations/</guid>
-      <description>The Auto Scaling Group (ASG) Recommendations report provides a summary of the EC2 instance hours managed by all of your Auto Scaling Groups over the past few weeks. The data is summarized by hour and day for the preceding one-to-four weeks depending on how long Metricly has been monitoring the ASG.  Total Instance Count graph: This graph depicts the average total number of instances managed by all of your ASG(s) by hour and day.</description>
-    </item>
     
     <item>
       <title>ASG Metrics</title>
-      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-asg/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-asg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-asg/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-asg/</guid>
       <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     CPU Credit Balance aws.ec2.cpucreditbalance CPUCreditBalance average  none yes no no   CPU Credit Usage aws.ec2.cpucreditusage CPUCreditUsage sum  none yes no no   CPU Utilization Percent aws.ec2.cpuutilization CPUUtilizationPercent average percent 100 yes yes yes   Ephemeral Disk Read Bytes aws.ec2.diskreadbytes DiskReadBytes sum bytes none no no no   Ephemeral Disk Read Ops aws.</description>
     </item>
     
     <item>
-      <title>AWS ASG Policies</title>
-      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-asg/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <title>ASG Recommendations</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-asg-recommendations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-asg/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-asg-recommendations/</guid>
+      <description>The Auto Scaling Group (ASG) Recommendations report provides a summary of the EC2 instance hours managed by all of your Auto Scaling Groups over the past few weeks. The data is summarized by hour and day for the preceding one-to-four weeks depending on how long Metricly has been monitoring the ASG.  Total Instance Count graph: This graph depicts the average total number of instances managed by all of your ASG(s) by hour and day.</description>
+    </item>
+    
+    <item>
+      <title>AWS ASG Policies</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-asg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-asg/</guid>
       <description>Policy names are prefixed with AWS ASG –
     Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated CPUActivity (Normal Network Activity) 30 min aws.ec2.cpuutilization has an upper baseline + upper contextual deviation metricly.aws.ec2.bytesinperse does not have a upper baseline + upper contextual deviation metricly.aws.ec2.bytesoutpersec does not have a upper baseline + upper contextual deviation. INFO This policy is designed to catch cases where CPU activity is higher than than normal and cannot be explained by a corresponding increase in network traffic.</description>
     </item>

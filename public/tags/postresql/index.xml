@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Postresql on Metricly Docs</title>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/postresql/</link>
+    <description>Recent content in Postresql on Metricly Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/postresql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PostreSQL</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/postresql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/postresql/</guid>
+      <description>PostgreSQL is an open-source database management system. Metricly can be used to monitor your PostgreSQL database(s).
+Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the PostgresqlCollector.conf file. Change the enabled setting to True. Update the dbname setting to the name of your database. Update the user and password settings to the proper credentials used to access the database. Save the configuration file, and restart the Linux Agent.</description>
+    </item>
+    
+    <item>
+      <title>metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/postresql/postresql-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/postresql/postresql-metrics/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     Blocks Hit postgres.database.*.blks_hit The number of times disk blocks were found already in the PostgreSQLbuffer cache so a read was not necessary. average  0 none none yes no no   Blocks Read postgres.database.*.blks_read The number of disk blocks read in the database.</description>
+    </item>
+    
+  </channel>
+</rss>

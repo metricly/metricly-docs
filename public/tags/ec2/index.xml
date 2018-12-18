@@ -2,51 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ec2 on Metricly Docs</title>
-    <link>http://localhost:1313/tags/ec2/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/ec2/</link>
     <description>Recent content in Ec2 on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/ec2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/ec2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Cost Reports</title>
-      <link>http://localhost:1313/reports/reports-cost/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <title>AWS EC2 Policies</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-ec2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/reports/reports-cost/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-ec2/</guid>
+      <description>Policy names are prefixed with AWS EC2 –
+    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated CPUActivity (Normal Network Activity) 30 min aws.ec2.cpuutilization has an upper baseline deviation + an upper contextual deviation metricly.aws.ec2.bytesinpersec does not have a upper baseline deviation + does not have a upper contextual deviation metricly.aws.ec2.bytesoutpersec does not have a upper baseline deviation + does not have a upper contextual deviationn INFO Increases in CPU activity are not uncommon when there is a rise in network activity.</description>
+    </item>
+    
+    <item>
+      <title>Cost Reports</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-cost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-cost/</guid>
       <description>Cost reports enable you to easily identify expensive instances and compare them against utilization, type, elements, and tags. These multi-dimensional reports also break down information like total versus individual instance costs and even how much each instance state (Reserved, On-Demand) costs. Custom tagging is another easy way to group your instances.
 Cost Reports are generated once per week. It may take up to 7 days before your first report is available.</description>
     </item>
     
     <item>
-      <title>EC2 Recommendations</title>
-      <link>http://localhost:1313/reports/reports-ec2-recommendations/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/reports/reports-ec2-recommendations/</guid>
-      <description>The EC2 Recommendation report is designed to help you reduce EC2 instance running costs by suggesting alternative instance types that may provide a similar level of service at a lower cost. The report presents details on the current EC2 instance types and their respective memory, VCPUs, and hourly instance running costs. Using these characteristics and the utilization observed during the reporting period, it estimates the memory and number of VCPUs that are actually needed, subject to optional constraints such as CPU utilization not exceeding a particular level, etc.</description>
-    </item>
-    
-    <item>
       <title>EC2 Metrics</title>
-      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ec2/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-ec2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-ec2/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-ec2/</guid>
       <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     aws.ec2.cpucreditbalance CPUCreditBalance average  none yes no no   aws.ec2.cpucreditusage CPUCreditUsage sum  none yes no no   aws.ec2.cpuutilization CPUUtilizationPercent average percent 100 yes yes yes   aws.ec2.diskreadbytes DiskReadBytes sum bytes none no no no   aws.ec2.diskreadops DiskReadOps sum  none no no no   aws.</description>
     </item>
     
     <item>
-      <title>AWS EC2 Policies</title>
-      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-ec2/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <title>EC2 Recommendations</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-ec2-recommendations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-ec2/</guid>
-      <description>Policy names are prefixed with AWS EC2 –
-    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated CPUActivity (Normal Network Activity) 30 min aws.ec2.cpuutilization has an upper baseline deviation + an upper contextual deviation metricly.aws.ec2.bytesinpersec does not have a upper baseline deviation + does not have a upper contextual deviation metricly.aws.ec2.bytesoutpersec does not have a upper baseline deviation + does not have a upper contextual deviationn INFO Increases in CPU activity are not uncommon when there is a rise in network activity.</description>
+      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-ec2-recommendations/</guid>
+      <description>The EC2 Recommendation report is designed to help you reduce EC2 instance running costs by suggesting alternative instance types that may provide a similar level of service at a lower cost. The report presents details on the current EC2 instance types and their respective memory, VCPUs, and hourly instance running costs. Using these characteristics and the utilization observed during the reporting period, it estimates the memory and number of VCPUs that are actually needed, subject to optional constraints such as CPU utilization not exceeding a particular level, etc.</description>
     </item>
     
   </channel>

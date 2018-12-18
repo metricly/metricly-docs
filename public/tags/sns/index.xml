@@ -2,31 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sns on Metricly Docs</title>
-    <link>http://localhost:1313/tags/sns/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/sns/</link>
     <description>Recent content in Sns on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/sns/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/sns/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS SNS Notifications</title>
-      <link>http://localhost:1313/alerts-notifications/notifications/notifications-aws-sns/</link>
-      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/notifications/notifications-aws-sns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/notifications/notifications-aws-sns/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/notifications/notifications-aws-sns/</guid>
       <description>You can leverage AWS’s Simple Notification Service as one of your notification methods in Metricly. There are two ways to accomplish this: through an IAM Role or Access Key. It is recommended that you have first set up the AWS Integration and are familiar with terms such as ARN (Amazon Resource Names), which are needed to complete setup.
 Inbound &amp;amp; Outbound This guide tackles outbound SNS setup, however you can also ingest inbound SNS notifications.</description>
     </item>
     
     <item>
       <title>SNS Payloads</title>
-      <link>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/</link>
-      <pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/</guid>
       <description> SNS Payloads You must have AWS SNS setup in your console to use this payload type. The below payload returns the event category when active; once the event has cleared it returns CLEAR.
 { &amp;quot;timestamp&amp;quot;: &amp;quot;${eventTimestamp}&amp;quot;, &amp;quot;category&amp;quot;: &amp;quot;&amp;lt;#if payloadType == &#39;event_cleared&#39;&amp;gt;CLEAR&amp;lt;#else&amp;gt;${eventCategory.name}&amp;lt;/#if&amp;gt;&amp;quot;, &amp;quot;element&amp;quot;: &amp;quot;${elementFqn}&amp;quot;, &amp;quot;policy&amp;quot;: &amp;quot;${policyName}&amp;quot; }  </description>
     </item>

@@ -2,21 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Iam Role on Metricly Docs</title>
-    <link>http://localhost:1313/tags/iam-role/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/iam-role/</link>
     <description>Recent content in Iam Role on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/iam-role/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/iam-role/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>AWS Integration</title>
-      <link>http://localhost:1313/integrations/aws-integration/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <title>AWS</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/aws-integration/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/</guid>
       <description>The Amazon Web Services (AWS) Integration allows performance data to be collected at regular intervals from AWS for analysis in Metricly.
 Metrics
 For a list of collected and computed metrics, visit our Metrics List.
@@ -27,20 +26,20 @@ Must have access to an AWS account and CloudWatch metrics.
     
     <item>
       <title>CloudFormation</title>
-      <link>http://localhost:1313/integrations/aws-integration/aws-cloudformation-installation/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-cloudformation-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/aws-integration/aws-cloudformation-installation/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-cloudformation-installation/</guid>
       <description>This installation method leverages a CloudFormation script found in step 1.4. After you make a new AWS integration in Metricly, the script populates a read-only IAM role in your AWS account and links it using the integration’s Account ID and External ID. Once created, it may take a few minutes for the status to be updated.
 Create an AWS Integration in Metricly  Open Metricly and navigate to Integrations &amp;gt; AWS.</description>
     </item>
     
     <item>
       <title>IAM</title>
-      <link>http://localhost:1313/integrations/aws-integration/aws-iam-installation/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-iam-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/aws-integration/aws-iam-installation/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-iam-installation/</guid>
       <description>IAM Role Method Setting up an AWS integration via IAM Role is a two step process:
 Create a new AWS integration in Metricly using an IAM read-only role. Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
 Step 1: Create a new AWS integration  From the top navigation menu, select Integrations.</description>

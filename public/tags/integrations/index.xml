@@ -2,41 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Integrations on Metricly Docs</title>
-    <link>http://localhost:1313/tags/integrations/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/integrations/</link>
     <description>Recent content in Integrations on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/integrations/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>All Elastisearch Metrics</title>
-      <link>http://localhost:1313/integrations/elastisearch/elastisearch-all-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>API Options</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-api-options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/elastisearch/elastisearch-all-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-api-options/</guid>
+      <description>Log properties  logLocation: The absolute path of the log file. Leave this option blank to use the default location in the gem directory. logAge: Specify either the number of log files to keep or the frequency of rotation (daily, weekly, or monthly). logSize: Specify the maximum log file size (in bytes). debugLevel: Options include (in ascending order of severity) error, info, and debug.  Netuitived Connection Properties Netuitived address and port information.</description>
+    </item>
+    
+    <item>
+      <title>All Elastisearch Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/elastisearch/elastisearch-all-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/elastisearch/elastisearch-all-metrics/</guid>
       <description>Collected For the table below, all metrics that begin with elasticsearch.indices.* are duplicated for each index being monitored, with the * replaced by the index name (your indices will vary based on your implementation). All metrics that start with elasticsearch.thread_pool.* are duplicated for each thread pool, with the * replaced by the thread pool name. The various thread pools are:
  bench bulk fetch_shard_started fetch_shard_store flush generic get index listener management merge optimize percolate refresh search snapshot suggest warmer     Fully Qualified Name (FQN) Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     elasticsearch.</description>
     </item>
     
     <item>
-      <title>Anake</title>
-      <link>http://localhost:1313/integrations/anake/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Allowed Metric Names</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/tcp-collector/tcp-metric-names/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/anake/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/tcp-collector/tcp-metric-names/</guid>
+      <description>Name Description     SyncookiesSent An application wasn’t able to accept a connection fast enough, so the kernel couldn’t store an entry in the queue for this connection. Instead of dropping it, it sent a cookie to the client.   SyncookiesRecv After sending a cookie, it came back to us and passed the check.   SyncookiesFailed After sending a cookie, it came back to us but looked invalid.</description>
+    </item>
+    
+    <item>
+      <title>Anake</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/anake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/anake/</guid>
       <description>Ananke is a Java library that allows Java applications to communicate with and send information to a StatsD listener. You can use Ananke to send metrics from your Java applications to a StatsD server, which will then send the metrics to Metricly.
 Configuration  Setup the Metricly StatsD integration or the Etsy StatsD integration if you haven’t already. We recommend setting up the Metricly StatsD integration if you don’t have a StatsD server already; if you have a StatsD server setup, we recommend setting up the Etsy StatsD integration.</description>
     </item>
     
     <item>
       <title>Ansible</title>
-      <link>http://localhost:1313/integrations/ansible/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/ansible/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/ansible/</guid>
       <description>Ansible is a configuration management tool that can be used to automate setup of servers, databases, and more. The Metricly Agent playbook will help get the Metricly Linux agent up and running in your environment quickly.
 Configuration  Copy the Metricly Agent playbook to your Ansible directory.
  cd /ansible git clone https://github.com/netuitive/ansible-netuitive-agent.git  In the Metricly Agent playbook (netuitive-agent.yml), update the hosts setting to use desired host or inventory file.</description>
@@ -44,257 +61,287 @@ Configuration  Copy the Metricly Agent playbook to your Ansible directory.
     
     <item>
       <title>Application Gateway</title>
-      <link>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</guid>
       <description>   Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy BASE CORR UTIL Description     azure.applicationgateway.throughput GAUGE bytes/second average 0 none none yes no no The number of bytes per second being processed by the gateway.    </description>
     </item>
     
     <item>
       <title>Azure Installation</title>
-      <link>http://localhost:1313/integrations/microsoft-azure/azure-installation/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/microsoft-azure/azure-installation/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-installation/</guid>
       <description>1. Create a Microsoft Azure Integration Card  From the top navigation menu, select Integrations. Click the Microsoft Azure card. In a separate, new tab, open the Azure portal.  The following instructions were created using the Azure portal not the classic portal. Instructions vary depending on which portal you’re using.
  2. Create an Active Directory Application in Azure  Once in the Azure portal, click Azure Active Directory from the left side menu.</description>
     </item>
     
     <item>
       <title>Azure Metrics</title>
-      <link>http://localhost:1313/integrations/microsoft-azure/azure-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/microsoft-azure/azure-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/</guid>
       <description> All of the metrics for Azure can be found in this folder.
 Metrics Available  Application Gateway   Basic Metrics   Boot Diagnostics   </description>
     </item>
     
     <item>
       <title>Basic Metrics</title>
-      <link>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</guid>
       <description>Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL Description     azure.virtualmachine.memory.availablememory GAUGE bytes average 0 none none yes no no The total amount of available memory in bytes.   azure.virtualmachine.memory.availableswap GAUGE bytes average 0 none none yes no no The total amount of swap space available in bytes.   azure.virtualmachine.memory.pagespersec GAUGE pages / second average 0 none none yes yes no The total number of pages read and written per second.</description>
     </item>
     
     <item>
       <title>Boot Diagnostics</title>
-      <link>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</guid>
       <description>Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL Description     azure.virtualmachine.networkin GAUGE bytes average 0 none none yes yes no Bytes received over the network. Note that this metric is the same as the Basic Metric azure.virtualmachine.networkinterface.bytesreceived   azure.virtualmachine.networkout GAUGE bytes average 0 none none yes yes no Bytes transmitted over the network. Note that this metric is the same as the Basic Metric azure.</description>
     </item>
     
     <item>
       <title>CPU Metrics</title>
-      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     cpu.total.guest Percentage of CPU spent running virtual CPUs for guest operatingsystems. average percent 0 none none yes no no   cpu.total.guest_nice Percentage of CPU spent running low-priority virtual CPUs for guestoperating systems. average percent 0 none none yes no no   cpu.total.idle Percentage of CPU not doing any work.</description>
     </item>
     
     <item>
       <title>CPU Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/collectd/collectd-cpu-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-cpu-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-cpu-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-cpu-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     cpu-#.cpu-idle.value Number of jiffies the CPU spent idle. average jiffies 0 none none yes no no   cpu-#.cpu-interrupt.value Number of jiffies the CPU spent processing hardware interrupts. average jiffies 0 none none yes no no   cpu-#.cpu-nice.value Number of jiffies the CPU spent processing low priority user threads.</description>
     </item>
     
     <item>
       <title>CPU Metrics</title>
-      <link>http://localhost:1313/integrations/docker/docker-metrics/docker-cpu-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-cpu-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/docker/docker-metrics/docker-cpu-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-cpu-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Type Units Statistic* BASE CORR Description     cpu.cpu_usage.percpu_usage* COUNTER nanoseconds  yes no Each CPU has a separate metric which tracks the number of nanoseconds that that specific CPU has been used since the container was started.   cpu.cpu_usage.total_usage COUNTER nanoseconds  yes no This metric is the sum of all of the per-CPU usage metrics. Thus, it represents the total number of nanoseconds that all CPUs have been in use since the container was started.</description>
     </item>
     
     <item>
       <title>Cassandra</title>
-      <link>http://localhost:1313/integrations/cassandra/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/cassandra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/cassandra/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/cassandra/</guid>
       <description>Cassandra is an open source distributed database management system. We use the Jolokia agent to monitor Cassandra’s performance as Cassandra exposes its metrics via JMX. Jolokia connects to a given mbean server and then exposes the server via a REST-like interface, acting as a bridge between JMX and HTTP/JSON.
 Configuration  Download the Jolokia JVM JAR file.  Move the downloaded file to the /opt/netuitive-agent/ directory. Add the following line to the very end of the cassandra-env.</description>
     </item>
     
     <item>
-      <title>Chef</title>
-      <link>http://localhost:1313/integrations/salt/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Check Version</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-check-version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/salt/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-check-version/</guid>
+      <description>You may need the verify the version of the Windows agent you’re currently using.
+ Open the [Element Detail panel][1] for a WINSRV element. Navigate to Attributes (squared in green). Verify that the agent (squared in blue) contains the correct version number.  [1] :/data-visualization/inventory</description>
+    </item>
+    
+    <item>
+      <title>Chef</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/chef/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/chef/</guid>
       <description>Chef is a configuration automation management software that allows you setup multiple servers using a few commands from a Chef server and workstation. The Metricly Agent cookbook will help you get the Metricly Linux Agent up and running on all of your nodes quickly.
 Configuration If you’ve managed to set up your Chef workstation, server, and nodes, check out our open source Chef cookbook on Github, which will get you started on installing the Metricly Agent on all of your nodes.</description>
     </item>
     
     <item>
       <title>Collectd</title>
-      <link>http://localhost:1313/integrations/collectors/collectd/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/collectd/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/</guid>
       <description>Collectd’s Write HTTP plugin can be used to configure collectd to send data to Metricly. If you need additional information about setting up Collectd, view their wiki.
 Configuration 1. Copy API Key in Metricly  From the top navigation menu, click Integrations. Click the collectd card. Data collection should already be enabled, and a unique API key for your account has already been generated. Copy the API key.  2.</description>
     </item>
     
     <item>
       <title>Collected Metrics</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</guid>
       <description>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     *.calls The number of calls made to the method. sum count 0 none none yes no no   *.errors The number of method calls that resulted in errors. sum count 0 none none yes no no   *.time The amount of time spent executing the method totaled across all calls.</description>
     </item>
     
     <item>
       <title>Computed Metrics</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</guid>
       <description>Computed    Fully Qualified Name (FQN) Description Statistic Units Min Max BASE CORR UTIL     netuitive.jvm.heap.utilizationpercent Percentage of the allocated heap memory that is currently in use.Computation:(Heap Used / Heap Committed) * 100 average percent 0 100 yes yes yes   netuitive.jvm.non-heap.utilizationpercent Percentage of the allocated non-heap memory that is currently in use.Computation:(Metaspace or PermGen Used + CodeCache Used / Metaspace or PermGen Committed + CodeCache Committed) * 100 average percent 0 100 yes yes yes   netuitive.</description>
     </item>
     
     <item>
       <title>Computed Metrics</title>
-      <link>http://localhost:1313/integrations/docker/docker-metrics/docker-network-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-network-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/docker/docker-metrics/docker-network-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-network-metrics/</guid>
       <description>Computed    Name FQN Computation Units Min Max BASE CORR Description     Container CPU Percent netuitive.docker.cpu.container_cpu_percent data[‘cpu.system_cpu_usage’].actual == 0 ? 0 :(data[‘cpu.cpu_usage.total_usage’].actual /data[‘cpu.system_cpu_usage’].actual) * 100 percent 0 100 yes yes The percentage of total CPU being used by the container.   Container Memory Percent netuitive.docker.cpu.container_memory_percent (data[‘memory.usage’].actual / data[‘memory.limit’].actual) * 100 percent 0 100 yes yes The amount of memory in use by the container, expressed as a percentage of the memory available to it.</description>
     </item>
     
     <item>
       <title>Consul</title>
-      <link>http://localhost:1313/integrations/consul/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/consul/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/consul/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/consul/</guid>
       <description>Each node (and service per node) has a set of checks.
  A node or service is marked critical if any check is marked critical for the node or service. A node or service is marked warning if any check is marked, so long as there are no criticals. A node or service is marked passing if no checks are marked.  Configuration These steps assume you have already set up Consul service.</description>
     </item>
     
     <item>
       <title>Custom MBeans</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-custom-mbeans/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-custom-mbeans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-custom-mbeans/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-custom-mbeans/</guid>
       <description>The Java agent can collect metrics from custom mbeans. We have provided a sample spring boot application that creates 2 custom mbeans with test attributes here.
 Multiple Custom MBean Diagram For a Single Custom MBean  Navigate to the zorka.properties file in your Java agent directory. Near the bottom of the file, set the attribute netuitive.api.custom.stats.mbean to the custom mbean you defined in your application  #custom mbean to collect metrics from netuitive.</description>
     </item>
     
     <item>
-      <title>DF Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/collectd/collectd-df-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Custom Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-custom-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-df-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-custom-metrics/</guid>
+      <description>You can create additional Windows performance counters to add custom metrics monitored by Metricly.
+Add Custom Metrics 1. Open the Add Counters window  Open perfmon (Performance Monitor) on your computer. Click Performance Monitor in the Monitoring Tools folder. A graph generates. Click Add above the graph. An “Add Counters” window opens. Leave the window open.  2. Prepare a new Counter  Navigate to the ReadWindowsPerfCounters file (C:\Program Files\CollectdWin\config) and open it.</description>
+    </item>
+    
+    <item>
+      <title>DF Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-df-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-df-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     df-&amp;lt;mount&amp;gt;.df_complex-free.value Free disk space in bytes. average bytes 0 none none yes no no   df-&amp;lt;mount&amp;gt;.df_complex-reserved.value Disk space reserved for root user in bytes. average bytes 0 none none yes no no   df-&amp;lt;mount&amp;gt;.df_complex-used.value Used disk space in bytes. average bytes 0 none none yes no no    Computed    Fully Qualified Name(FQN) Description Statistic Units Min Max BASE CORR UTIL     metricly.</description>
     </item>
     
     <item>
       <title>Diamond Agent</title>
-      <link>http://localhost:1313/integrations/agents/diamond-agent/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/diamond-agent/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/</guid>
       <description>Diamond’s default HTTP Post Handler can be used to send Diamond data to Metricly.
 Configuration 1. Copy the unique API key from the Diamond integration in your account  In Metricly, navigate to Integrations. Click the Diamond card. Data collection should already be enabled, and a unique API key for your account has already been generated. Copy the API key.  2. Install &amp;amp; Configure Diamond  Download and install Diamond using the instructions found here.</description>
     </item>
     
     <item>
       <title>Disk Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/collectd/collectd-disk-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-disk-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-disk-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-disk-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     disk-&amp;lt;dn&amp;gt;.disk_merged.read Number of merged reads per second. average operations/second 0 none none yes no no   disk-&amp;lt;dn&amp;gt;.disk_merged.write Number of merged writes per second. average operations/second 0 none none yes no no   disk-&amp;lt;dn&amp;gt;.disk_octets.read Bytes read per second. average bytes/second 0 none none yes no no   disk-&amp;lt;dn&amp;gt;.</description>
     </item>
     
     <item>
       <title>Disk Usage Metrics</title>
-      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</guid>
       <description> Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.iostat.totalreads Total reads across all disks. Computation: data.sum(‘iostat\..*\.reads)  0 none yes no no   metriclyicly.linux.iostat.totalwrites Total writes across all disks. Computation: data.sum(‘iostat\..*\.writes)  0 none yes no no    </description>
     </item>
     
     <item>
       <title>Diskspace Metrics</title>
-      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</guid>
       <description> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     diskspace..byte_percentfree Percentage of free bytes. average percent 0 100 none yes no no    Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.diskspace.*.byte_percentused Percentage of disk space used. Computation: 100 – diskspace.*.byte_percentfree percent 0 100 no no yes    </description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/integrations/docker/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/docker/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/</guid>
       <description>Docker is an open way of building, shipping, and running distributed applications anywhere using containers and images. Metricly can be used to monitor the performance of your Docker host and containers.
 Each Docker container you have running will be listed as Docker Container in your Inventory Explorer. Each Docker host you have running will be listed as SERVER in your Inventory Explorer. You’ll be able to identify which of your SERVER elements are Docker hosts via the Docker Summary dashboard (if you have the Docker package installed).</description>
     </item>
     
     <item>
       <title>Dropwizard</title>
-      <link>http://localhost:1313/integrations/dropwizard/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/dropwizard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/dropwizard/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/dropwizard/</guid>
       <description>Dropwizard is part Java framework and part Java library that assists in operating web services. Dropwizard will take your web application and run it locally, recording metrics on its performance. You can integrate with Dropwizard via our custom Dropwizard Metrics Library to send these metrics to a StatsD server, which you can then forward to Metricly.
 Configuration  Include the appropriate Ananke library dependency. You’ll also need a working StatsD (Metricly StatsD or Etsy StatsD) integration.</description>
     </item>
     
     <item>
       <title>Elastisearch</title>
-      <link>http://localhost:1313/integrations/elastisearch/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/elastisearch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/elastisearch/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/elastisearch/</guid>
       <description>Elasticsearch is a distributed, scalable search server that enables you to search through all kinds of documents. Metricly can be used to monitor the performance of your Elasticsearch server. Additional configuration options are available below the instructions.
 Configuration The Linux Agent must be installed before proceeding. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.</description>
     </item>
     
     <item>
-      <title>Email Notifications</title>
-      <link>http://localhost:1313/integrations/email/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Element Tags</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-element-tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/email/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-element-tags/</guid>
+      <description>Send Element tags To send element tags, update the agent.yml found in the netuitived gem by uncommenting the elementTags line. This file is located at netuitived/config/agent.yml.
+Key/Value pairs should be added in the following format: name1:value1, name2:value2.</description>
+    </item>
+    
+    <item>
+      <title>Email Notifications</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/email/</guid>
       <description>You can create email templates with custom messaging that are re-usable across multiple policies, or simply choose Metricly’s default email notifications. Read below for configuration steps.
 Configuration  Click your Username &amp;gt; Notifications. Click Add Notification. Select Email for Notification Type. The following modal appears:  Choose your frequency via the Re-notify every field. Check Notify on clear if you want to be notified when the alert has ended. Click New Email to create a new email template.</description>
     </item>
     
     <item>
       <title>Enable Guest OS Diagnostic Metrics</title>
-      <link>http://localhost:1313/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</guid>
       <description>Azure Virtual Machines will share boot diagnostic metrics by default, which are a small subset of core metrics. To enable Guest OS diagnostic (basic) metrics that provide more information about your machine, you’ll need to follow these steps (depending on your situation):
 Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Select a virtual machine. Another window with options will open. Select Diagnostic settings. Under Configure required settings, select the checkbox next to Basic metrics.</description>
     </item>
     
     <item>
       <title>Enable Proxy</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-enable-proxy/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-enable-proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-enable-proxy/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-enable-proxy/</guid>
       <description>Enable a Proxy  Navigate to the zorka.properties file. Find the proxy section:
   netuitive.api.proxy = no netuitive.api.proxy.address = http://&amp;lt;proxy host&amp;gt;:&amp;lt;proxy port&amp;gt;  3. Change the netuitive.api.proxy line to yes.
 4. Add the correct proxy host and port to the netuitive.api.proxy.address line.</description>
@@ -302,49 +349,59 @@ Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Sel
     
     <item>
       <title>Etsy StatsD</title>
-      <link>http://localhost:1313/integrations/etsy-statsd/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/etsy-statsd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/etsy-statsd/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/etsy-statsd/</guid>
       <description>Etsy StatsD is one of the most popular StatsD libraries available. Metricly offers a backend plugin for the Etsy StatsD library that allows you to send your StatsD metric data to Metricly. We recommend using our Etsy StatsD integration if you currently have an Etsy StatsD server running and want to send your instrumented data to Metricly. For more information about Etsy StatsD, see the following documentation.
 Configuration 1. Copy API key  From the top navigation menu, click Integrations.</description>
     </item>
     
     <item>
       <title>Filter Elements</title>
-      <link>http://localhost:1313/integrations/microsoft-azure/azure-filter-elements/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-filter-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/microsoft-azure/azure-filter-elements/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-filter-elements/</guid>
       <description>You can filter what Azure elements are included in Metricly’s monitoring by using regex to match key-value pairs. Metricly offers opt-in (include) or opt-out (exclude) element filtering.
 Using opt-in filtering  In your Azure portal, create or choose an existing tag (key-value pair). Then, assign the tag to the Azure elements you do not want Metricly to monitor. In Metricly, navigate to your Azure integration card. Expand the element types you want to filter.</description>
     </item>
     
     <item>
       <title>Flume</title>
-      <link>http://localhost:1313/integrations/collectors/flume/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/flume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/flume/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/flume/</guid>
       <description>Flume collects and aggregates all of your log files distributed across your environment. Metricly can be used to monitor the performance of your Flume service.
 Configuration  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the FlumeCollector.conf file. Change the enabled setting to True. Update the req_host, req_port, and/or req_path settings as necessary. Save the configuration file and restart the Linux Agent.  Collector Options    Option Default Description     enabled FALSE Enable collecting Flume metrics.</description>
     </item>
     
     <item>
-      <title>HTTP Code Collector</title>
-      <link>http://localhost:1313/integrations/collectors/http-code-collector/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Garbage Collection</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-garbage-collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/http-code-collector/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-garbage-collection/</guid>
+      <description>The garbage collector attempts to return memory consumed by objects no longer in use by your application. Metricly can be used to collect metrics on how much time is spent in garbage collection for your Ruby applications. You should have Matz’s Ruby Interpreter (MRI) version 1.9.2 or greater or Ruby Enterprise Edition installed before enabling garbage collection metrics.
+Configure  Navigate to your application’s initialization file. Add the following call (depending on your Ruby version) to the file:  For MRI v1.</description>
+    </item>
+    
+    <item>
+      <title>HTTP Code Collector</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-code-collector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-code-collector/</guid>
       <description>HTTP status codes are useful diagnostic tools for a website to help determine if all content on a website is being delivered properly. Enabling the HTTP code collector for your preferred website will log every status code returned by the website. The first time a status code is returned, our Linux agent will create a metric for that code in Metricly; each subsequent time the status code is returned, another metric will begin to count how many times the code has been returned.</description>
     </item>
     
     <item>
       <title>HTTP Collector</title>
-      <link>http://localhost:1313/integrations/collectors/http-collector/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-collector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/http-collector/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-collector/</guid>
       <description>The HTTP Collector gathers statistics from an HTTP or HTTPS connection.
 Prerequisites The Linux Agent is required before proceeding with the setup of the HTTP Collector. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
 Update the Configuration File  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors.</description>
@@ -352,10 +409,10 @@ Update the Configuration File  Navigate to the collectors folder, /opt/netuitive
     
     <item>
       <title>HTTPD</title>
-      <link>http://localhost:1313/integrations/collectors/httpd/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/httpd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/httpd/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/httpd/</guid>
       <description>The HTTP Collector gathers statistics from an HTTP or HTTPS connection.
 Prerequisites The Linux Agent is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
 Update the Configuration File  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors.</description>
@@ -363,188 +420,583 @@ Update the Configuration File  Navigate to the collectors folder, /opt/netuitive
     
     <item>
       <title>Interface Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/collectd/collectd-interface-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-interface-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-interface-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-interface-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     interface-&amp;lt;int&amp;gt;.if_errors.rx Errors per second received. average errors/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_errors.tx Errors per second sent. average errors/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_octets.rx Bytes per second received. average bytes/second 0 none none yes no no   interface-&amp;lt;int&amp;gt;.if_octets.tx Bytes per second sent.</description>
     </item>
     
     <item>
-      <title>Iris</title>
-      <link>http://localhost:1313/integrations/iris/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Interpret Exceptions</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-interpret-exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/iris/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-interpret-exceptions/</guid>
+      <description>IF sendErrorEvents is enabled in the netuitive_rails_agent config/agent.yaml file AND actionErrorsEnabled and/or sidekiqEnabled = true, exceptions are sent to Metricly as external events.
+An Exception External event has the following tags to help you dissect the exception:
+   Tag Description     Action The action the error originated from.   Controller The name of the controller that the exception came from.   Exception The type of exception.</description>
+    </item>
+    
+    <item>
+      <title>Iris</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/iris/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/iris/</guid>
       <description>Iris is a Java library that allows your Java applications to communicate with Metricly’s REST API. You can use Iris to send metrics from your applications to Metricly, create dashboards, tags, elements, and much more.
 Configuration  Include the proper dependency from Maven for the appropriate build manager. Invoke the REST API client interface in a central location that your various Java classes can access while ensuring you replace username and password with the appropriate values.</description>
     </item>
     
     <item>
       <title>JMX</title>
-      <link>http://localhost:1313/integrations/collectors/jmx/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/jmx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/jmx/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/jmx/</guid>
       <description>Prerequisites The Linux Agent is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
 Configuration  Download the Jolokia JVM JAR file. Move the downloaded file to the /opt/netuitive-agent/ directory. Pass the Java agent parameter into your application:  -javaagent:/opt/agent.</description>
     </item>
     
     <item>
       <title>Java Agent</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/</guid>
       <description>Metricly’s Java agent is a java monitoring agent with a programmable bytecode instrumentation engine that’s enabled by adding a JVM integration in Metricly. The Metricly Java integration allows Metricly to collect JVM runtime system metrics like CPU, Memory, GC, Threads and Classes Count, and application components method performance statistics, such as number of calls and execution time.
 Prerequisites Must have Java 6 Or greater.
 Configuration 1. Copy API key  From the top navigation menu, select Integrations.</description>
     </item>
     
     <item>
-      <title>Load Average Metrics</title>
-      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Kafka</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/</guid>
+      <description>Kafka is a publish-subscribe message queuing system that’s designed like a distributed commit log. Metricly can help monitor the performance and throughput of your Kafka server using our Kafka collector for the Linux agent. Kafka, Kafka Consumer Lag, and Zookeeper metrics are all collected using this collector.
+Prerequisites The [Linux Agent][1] is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.</description>
+    </item>
+    
+    <item>
+      <title>Kafka Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-metrics/</guid>
+      <description>Due to the sheer volume of Kafka metrics, the individual metrics won’t be documented here. Instead, this page outlines general properties for the groups of metrics.
+Properties All Metrics Share:  Statistic: average Min: 0 CORR: no UTIL: no BASE:  On for most metrics Off for metrics matching the following regexes: ^kafka.cluster.* ^kafka\.utils\..* ^kafka\.log\..*(LogEndOffset|LogStartOffset)$ ^kafka\.controller\.((?!broker-\d).).* ^kafka\.consumer_group\.((?!consumer_lag$).)*$   Metrics That End With Percent:  Unit: percent Max: 1  Metrics With Bytes.</description>
+    </item>
+    
+    <item>
+      <title>Kafka in Docker</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-in-docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-in-docker/</guid>
+      <description>Getting the Jolokia agent running in a Kafka container requires three additional modifications to the docker run command. To illustrate the modifications needed, we’re going to assume that your docker run command looks like this initially:
+docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=`docker-machine ip\`docker-machine active\`` --env ADVERTISED_PORT=9092 spotify/kafka  Update Docker Run Command  Make the Jolokia JAR file available to the container by passing it in as a mounted volume.</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/kubernetes/</guid>
+      <description>This integration allows you to monitor the data and elements from your Kubernetes environments. Setup is quick, with data appearing in your account as soon as 5 minutes after installation.
+Prerequisites These steps assume you have already spun up a Kubernetes cluster and can interact with it using the kubectl command. If you have not yet set up Kubernetes, see their GitHub documentation.
+Using RBAC? If you are implementing Kubernetes with Role-based Access Control (RBAC Authorization), you must include ClusterRoleBinding instructions to the Metricly deployment YAML file found in step 1.</description>
+    </item>
+    
+    <item>
+      <title>Load Average Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</guid>
       <description>Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.loadavg.01.normalized The is the average run queue size over the past minute, normalizedacross CPUs. Computation: attribute[‘cpus’] == null ? null : (data[‘loadavg.01’].actual /attribute[‘cpus’].value)  0 none yes no no   metriclyicly.linux.loadavg.05.normalized The is the average run queue size over the past 5 minutes, normalizedacross CPUs. Computation: attribute[‘cpus’] == null ? null : (data[‘loadavg.</description>
     </item>
     
     <item>
       <title>Load Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/collectd/collectd-load-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-load-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-load-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-load-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     load.load.longterm The is the average run queue size over the past 15 minutes. average queued processes 0 none none yes no no   load.load.midterm The is the average run queue size over the past 5 minutes. average queued processes 0 none none yes yes no   load.</description>
     </item>
     
     <item>
-      <title>Memory Metrics</title>
-      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Manual Install</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-manual-install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-manual-install/</guid>
+      <description>Manually Install the Windows Agent  Download the latest Windows Agent. Ensure you download the correct version for your environment. Run the setup wizard and follow the instructions to install it. Navigate to the** WriteNetuitive.config** file (C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config depending on your environment. Open the file and locate the line &amp;lt;WriteNetuitiveURL=&amp;quot;https://api.app.metricly.com/ingest/windows/{apikey}&amp;quot; /&amp;gt;. Replace {apikey} in the URL with the API key generated in step 1. Save the file and restart the agent.</description>
+    </item>
+    
+    <item>
+      <title>Memory Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</guid>
       <description> Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.memory.utilizationpercent Under Linux, memory buffered and cached are part of memory which can beconsidered available. See the following explanation . Computation: 100 – (memory.Buffers + memory.Cached + memory.MemFree) /memory.MemTotal * 100 percent 0 100 yes yes yes    </description>
     </item>
     
     <item>
       <title>Memory Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/collectd/collectd-memory-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-memory-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-memory-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-memory-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     memory.memory-buffered.value Memory being used by buffers; this memory is available to be freed forapplications to use, should they need it. average bytes 0 none none yes no no   memory.memory-cached.value Memory being used by caches; this memory is available to be freed forapplications to use, should they need it.</description>
     </item>
     
     <item>
       <title>Memory Metrics</title>
-      <link>http://localhost:1313/integrations/docker/docker-metrics/docker-memory-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-memory-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/docker/docker-metrics/docker-memory-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-memory-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Type Units Statistic* BASE CORR Description     memory.failcnt GAUGE count average no no A count of the number of times that the container requested memory and failed to obtain it. This value should always be 0.   memory.limit GAUGE bytes average no no The total amount of memory available to the container.   memory.max_usage GAUGE bytes average no no The maxiumum amount of memory the container has ever used.</description>
     </item>
     
     <item>
       <title>Metrics</title>
-      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/</guid>
       <description> All of the metrics for the Diamond Agent can be found in this folder.
 Metrics Available  CPU Metrics   Disk Usage Metrics   Diskspace Metrics   Load Average Metrics   Memory Metrics   Network Metrics   </description>
     </item>
     
     <item>
       <title>Metrics</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/</guid>
       <description>Instrumenting Metric Values  First, set up the Java Agent. In the zorka/scripts/ directory, create a .bsh file for the application you want to monitor. Call zorka.require to load any extension scripts your application depends on. Define the function(s) you want Zorka to monitor using the template below. The template will establish namespace by creating a function that returns a reference to its own instance and then defines a variable that holds an instance of the function.</description>
     </item>
     
     <item>
       <title>Metrics</title>
-      <link>http://localhost:1313/integrations/cassandra/cassandra-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/cassandra/cassandra-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-metrics/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Statistic Units Min Max Sparse Data Strategy (SDS)     action_controller.halted_callback sum count 0 none zero   action_controller.redirect sum count 0 none zero   action_controller.total_requests sum count 0 none zero   action_controller.*.total_requests sum count 0 none zero   action_controller...request.query_time average milliseconds 0 none zero   action_controller...request.total_duration average milliseconds 0 none zero   action_controller...request.view_time average milliseconds 0 none zero   action_controller.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-metrics/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     Avg. Disk Queue Length logical_disk.*.avg_queue_length Average queue length for the logical disk. average count 0 none none yes no no   Free Megabytes logical_disk.*.megabytes_free Space free on the logical disk expressed in megabytes. average megabytes 0 none none yes no no   % Free Space logical_disk.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/cassandra/cassandra-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/cassandra/cassandra-metrics/</guid>
       <description>Due to the sheer volume of Cassandra metrics, the individual metrics won’t be documented here. Instead, here are some general properties of the groups of metrics:
 All Metrics Share the Following Properties:  Type: GAUGE Statistic: average Min: 0 Sparse Data Strategy: None BASE: Yes CORR: No UTIL: No  Ending in Latency.OneMinuteRate:  Unit: ms (milliseconds)  Non-latency OneMinuteRate Metrics:  Unit = ops (operations per second)  Contains HeapSize, DataSize, DiskSpace, Memory, or RowSize:  Unit: bytes  Ending with HitRate or Ratio:  Unit: percentunit (i.</description>
     </item>
     
     <item>
       <title>Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/http-code-collector/http-code-collector-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-code-collector/http-code-collector-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/http-code-collector/http-code-collector-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-code-collector/http-code-collector-metrics/</guid>
       <description>This collector tracks per URL which response codes are received as well as the number of times each code was received as two separate metrics. The Response Code List metric’s value is the literal response code number at the time it was received. The Response Code count increments each time a response code is received; this means that you won’t have a metric for every response code until your web site serves up that response code.</description>
     </item>
     
     <item>
       <title>Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/http-collector/http-collector-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-collector/http-collector-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/http-collector/http-collector-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/http-collector/http-collector-metrics/</guid>
       <description> Collected    Friendly Name Fully Qualified Name (FQN) Description Statistic     Servers Http Time servers.[hostname].http.[url].time Time to download the page in microseconds. average   Servers Http Size servers.[hostname].http.[url].size Size of the page received in bytes. bytes    </description>
     </item>
     
     <item>
       <title>Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/httpd/httpd-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/httpd/httpd-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/httpd/httpd-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/httpd/httpd-metrics/</guid>
       <description>Collected    Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     httpd..BusyWorkers GAUGE count average 0 none none yes no no   httpd..BytesPerReq GAUGE bytes average 0 none none yes no no   httpd..BytesPerSec GAUGE Bps average 0 none none yes no no   httpd..CleanupWorkers GAUGE count average 0 none none yes no no   httpd.</description>
     </item>
     
     <item>
       <title>Metrics</title>
-      <link>http://localhost:1313/integrations/consul/consul-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/rabbitmq/rabbitmq-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/consul/consul-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/rabbitmq/rabbitmq-metrics/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     rabbitmq.cluster.nodes GAUGE count average 0 none none no no no   rabbitmq.cluster.partitions GAUGE count average 0 none none no no no   rabbitmq.health.disk_free GAUGE bytes average 0 none none yes no no   rabbitmq.health.disk_free_limit GAUGE bytes average 0 none none no no no   rabbitmq.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/redis/redis-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/redis/redis-metrics/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Friendly Name     clients.blocked Blocked Clients   clients.connected Connected Clients   clients.longest_output_list Client Longest Output List   cpu.parent.sys Used System CPU   cpu.children.sys Used System CPU (Children)   cpu.parent.user Used CPU User   cpu.children.user Used CPU User (Children)   hash_max_zipmap.entries Maximum Hash Zipmap Entries   hash_max_zipmap.value Maximum Hash Zipmap Value   keys.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/consul/consul-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/consul/consul-metrics/</guid>
       <description>Fully Qualified Name (FQN) Statistic Units BASE CORR Type Computed     consul.raft.commitTime.avg max  TRUE TRUE counter yes   consul.raft.commitTime.max max  TRUE TRUE counter yes   consul.proxy.web.inbound.rx_bytes avg bytes TRUE FALSE gauge no   consul.health.service.not-found.[service] avg queries TRUE FALSE gauge no   consul.health.service.query-tags.[service].[tags] avg queries TRUE FALSE gauge no   consul.health.service.query-tag.[service].[tag] avg queries TRUE FALSE gauge no   consul.</description>
     </item>
     
     <item>
       <title>Metrics</title>
-      <link>http://localhost:1313/integrations/docker/docker-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/docker/docker-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/</guid>
       <description> This folder contains all metrics for the Docker integration.
 Metrics Available  CPU Metrics   Computed Metrics   Memory Metrics   </description>
     </item>
     
     <item>
-      <title>Network Metrics</title>
-      <link>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/kubernetes/kubernetes-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/kubernetes/kubernetes-metrics/</guid>
+      <description>Metric FQN Kubernetes Types Baseline Correlated Statistic     cpu.limit Cluster, Node, Namespace, Pod, Pod Container, Sys Container No No Average   cpu.node.allocatable Node No No Average   cpu.node.utilization Node Yes Yes Average   cpu.node_capacity Node No No Average   cpu.node_reservation Node No No Average   cpu.request Cluster, Node, Namespace, Pod, Pod Container, Sys Container No No Average   cpu.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-iis/microsoft-iis-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-iis/microsoft-iis-metrics/</guid>
+      <description>   Friendly Name FQN Description     Get Requests/sec Web_get_requests_per_sec The number of GET requests made per second.   Post Requests/sec Web_post_requests_per_sec The number of POST requests made per second.   Current Connections Web_current_connections The number of connections currently established with the web service.   Connection Attempts/sec Web_connect_attempts_per_sec The number of connection attempts per second.    </description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-net/microsoft-net-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-net/microsoft-net-metrics/</guid>
+      <description>Friendly Name FQN Description     Exceptions Thrown/sec CLR_count_exceptions_thrown The number of exceptions thrown per second. This includes both .NET exceptions and unmanaged exceptions that are converted into .NET exceptions.   % Time in Garbage Collection CLR_percent_time_in_GC The percentage of elapsed time spent performing garbage collection since the last garbage collection cycle.   Application Restarts ASP_application_restarts The number of times an application has been restarted during the server’s lifetime.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-sql/microsoft-sql-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-sql/microsoft-sql-metrics/</guid>
+      <description>Collected    Category Instance Fully Qualified Name (FQN) Description     Process sqlserver sql_server.percent_processor_time The percentage of time the processor is busy.   General Statistics N/A sql_server.user_connections The number of users currently connected to the SQL Server.   General Statistics N/A sql_server.processes_blocked The number of processes that are blocked.   Locks _Total sql_server.total_lock_waits_per_sec The number of locks per second that had to wait for resources.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/mongodb/mongodb-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/mongodb/mongodb-metrics/</guid>
+      <description>Category Instance Fully Qualified Name (FQN) Description     Process sqlserver sql_server.percent_processor_time The percentage of time the processor is busy.   General Statistics N/A sql_server.user_connections The number of users currently connected to the SQL Server.   General Statistics N/A sql_server.processes_blocked The number of processes that are blocked.   Locks _Total sql_server.total_lock_waits_per_sec The number of locks per second that had to wait for resources.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/mysql/mysql-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/mysql/mysql-metrics/</guid>
+      <description>Collected    Description Type Units Statistic* Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     The total number of bytes received by the server over the interval. counter bytes  0 none none yes yes no   The total number of bytes sent by the server over the interval. counter bytes  0 none none yes yes no   The total number of connection attempts made to the server over theprevious interval.</description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/ngnix/ngnix-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/ngnix/ngnix-metrics/</guid>
+      <description>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     nginx.act_reads The average number of active connections that were reading during theprior interval. average count 0 none none yes yes no   nginx.act_waits The average number of active connections that were waiting during theprior interval. average count 0 none none yes yes no   nginx.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Azure</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/</guid>
+      <description> Microsoft Azure is a cloud computing platform, similar to Amazon Web Services. With Azure integration in Metricly, you can monitor the performance of your entire cloud infrastructure. Metricly requires Reader role permissions of your Azure environment, which can be granted using the Owner or User Access Administrator roles.
+Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic Metrics   Filter Elements   </description>
+    </item>
+    
+    <item>
+      <title>Microsoft IIS</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-iis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-iis/</guid>
+      <description>Metricly can monitor the performance of your IIS server(s) using our Windows Agent. Our Windows agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes.
+Prerequisites The Windows Agent is required. If you need to disable the Windows integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Windows under the Integration column.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft NET</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-net/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-net/</guid>
+      <description>Microsoft .NET Framework metrics come packaged with the Metricly Windows Agent. Our Windows agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes.
+Configure There’s no additional configuration necessary for the Microsoft .NET Framework if you’ve already installed the Windows agent unless you want to add additional custom metrics to supplement the default collected metrics.
+1. Add Custom Metrics  Open the Add Counters window Open perfmon (Performance Monitor) on your computer.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft SQL</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-sql/</guid>
+      <description>Microsoft SQL Server metrics come packaged with the Metricly Windows agent. Our Windows agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes. For more information on the Agent itself as well as any plugins available, see the Windows Agent page.
+Configuration There’s no additional configuration necessary for the Microsoft SQL Server if you’ve already installed the Windows agent unless you want to add additional custom metrics to supplement the default collected metrics.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/mongodb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/mongodb/</guid>
+      <description>MongoDB is a document-oriented NoSQL database. Metricly can be used to monitor your MongoDB’s performance.
+Prerequisites The Linux Agent must be setup before you proceed with the MongoDB integration.
+Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the MongoDBCollector.conf file. Change the enabled setting to True. Replace the default host address and/or port number if necessary. Save the configuration file, and restart the Linux Agent.  Due to the large number of metrics generated by MongoDB, you shouldn’t monitor more than one MongoDB host per agent.</description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/mysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/mysql/</guid>
+      <description>MySQL is an open source relational database management system that uses the Structured Query Language to navigate its stores. Metricly can help monitor the performance and throughput of your MySQL database.
+Prerequisites The Linux Agent must be setup before you proceed with the MongoDB integration.
+Configure  Open the interface for the database you want to monitor and enter one of the following commands:  For Normal Usage:
+GRANT REPLICATION CLIENT on *.</description>
+    </item>
+    
+    <item>
+      <title>NGNIX</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/ngnix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/ngnix/</guid>
+      <description>Prerequisites Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the NginxCollector.conf file. Change the enabled setting to True. Save the file. Navigate to your Nginx server configuration file. Add an additional section to your file:  server { listen 127.0.0.1; server_name localhost; location /nginx_status { # turns on nginx stats # stub_status on; # turns off logging # access_log off; allow 127.0.0.1; # sends rest of world to /dev/null # deny all; } }  8.</description>
+    </item>
+    
+    <item>
+      <title>Nagios</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/nagios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/nagios/</guid>
+      <description>Nagios is a comprehensive enterprise-class open source monitoring service. You can use our Metricly Event Handler to send your Nagios events to Metricly.
+Sending Nagios Events to Metricly  Hover on your account name in the top right-hand corner and click API Keys from the drop-down menu. Copy the API Key from the Custom integration in the table. Install the Metricly Event Handler. Download the Netuitive Event Handler to the /bindirectory.</description>
+    </item>
+    
+    <item>
+      <title>Netuitive StatsD</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/netuitive-statsd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/netuitive-statsd/</guid>
+      <description>The Netuitive StatsD integration interprets, aggregates, and forwards custom metrics generated from your application. Using the values instrumented from your application’s key actions and data (method calls, database queries, etc.), Metricly aggregates the values, associates them with corresponding metrics, and analyzes them in our analytics cycles.
+The Netuitive StatsD server comes pre-installed as part of the Linux Agent. We recommend setting up a Netuitive StatsD integration if you do not have a StatsD server already.</description>
+    </item>
+    
+    <item>
+      <title>Network Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</guid>
       <description>Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.network.*.errors The total number of errors, both transmit and receive. Computation: network..rx_errors + network..tx_errors errors 0 none yes no no   metriclyicly.linux.network.*.packets The total number of packets, both transmitted and received. Computation: network..rx_packets + network..tx_packets packets 0 none yes yes no   metriclyicly.linux.network.*.errors.percent The percentage of errors, both transmit and receive.</description>
     </item>
     
     <item>
-      <title>Processes Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/collectd/collectd-processes-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Node.js</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/nodejs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-processes-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/nodejs/</guid>
+      <description>You can monitor your Node.js-based applications using the Linux Agent and Metricly StatsD server. All it takes is installing our agent and instrumenting your custom metrics, and then you’ll be visualizing the performance of your Node.js applications.
+Prerequisites  Linux Agent  Configure  Navigate to the netuitive-agent.conf file Update statsd to enabled = True.   # local statsd server [[[statsd]]] enabled = True  3. Ensure Node.js is installed properly using the node command.</description>
+    </item>
+    
+    <item>
+      <title>Optional Config</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/ruby-agent-options/</guid>
+      <description>Log Options  logLocation: The absolute path of the log file. Leave this option blank to use the default location in the gem directory. logAge: Specify either the number of log files to keep or the frequency of rotation (daily, weekly, or monthly). logSize: Specify the maximum log file size (in bytes). debugLevel: Options include (in ascending order of severity) error, info, and debug.  Active Support Notifications The active support notifications are a pub-sub model that trigger active support notifications when certain actions are performed within your rails application(s).</description>
+    </item>
+    
+    <item>
+      <title>PHP</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/php/</guid>
+      <description>You can monitor your PHP applications using our PHP client library, the Linux Agent, and the Metricly StatsD server.
+Prerequisites  Linux Agent  Configure  Navigate to the metricly-agent.conf file. Update the statsd setting to enabled = True.  # local statsd server [[[statsd]]] enabled = True  3. StatsD requires a client library to push metrics. You can use our PHP client library or an open source alternative.</description>
+    </item>
+    
+    <item>
+      <title>Plugins</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-plugins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-plugins/</guid>
+      <description>There are two types of Windows plugins: Read (which allow our Windows agent to read data) and Write (which allow our Windows agent to write data). The following plugins are enabled by default:
+ ReadWindowsPerfCounters ReadWindowsAttributes ReadWindowsEvents WriteNetuitive  This configuration is recommended for monitoring a Windows server with Metricly. Other Read/Write plugins are available as documented below (note that the Write Console plugin has no configuration settings).
+Enable/Disable To change which plugins are enabled, edit the CollectdWin.</description>
+    </item>
+    
+    <item>
+      <title>PostreSQL</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/postresql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/postresql/</guid>
+      <description>PostgreSQL is an open-source database management system. Metricly can be used to monitor your PostgreSQL database(s).
+Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the PostgresqlCollector.conf file. Change the enabled setting to True. Update the dbname setting to the name of your database. Update the user and password settings to the proper credentials used to access the database. Save the configuration file, and restart the Linux Agent.</description>
+    </item>
+    
+    <item>
+      <title>PowerDNS</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/powerdns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/powerdns/</guid>
+      <description>Prerequisites  Linux Agent  Configure You cannot activate the PowerDNS integration until Metricly begins receiving data. Once data arrives, the package (Dashboards and Policies) is automatically provisioned. To remove those Dashboards and Policies, click the toggle on the PowerDNS integration card.
+1. Get API Key  In Metricly, Navigate to Integrations &amp;gt; PowerDNS. Copy the API Key. Add this key to your Linux Agent.  2. Update the Configuration File  Open PowerDNSCollector.</description>
+    </item>
+    
+    <item>
+      <title>Process Resource Collector</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/process-resources-collector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/process-resources-collector/</guid>
+      <description>The Process Resources Collector can be used to collect CPU- and Memory-type metrics on a per-process level.
+Prerequisites  Linux Agent  Configure Update the Configuration File  Navigate to the collectors folder, opt/netuitive-agent/conf/collectors. Open the ProcessResourcesCollector.conf file. Change the enabled setting to True. For each process you’d like to monitor, include the following below the [process] section:  [[process_name]] name = &amp;quot;.*regex-statement.*&amp;quot;  Example
+[[nginx]] name = ^nginx  5.</description>
+    </item>
+    
+    <item>
+      <title>Processes Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-processes-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-processes-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     processes.fork_rate.value Number of processes per second being forked. average forks/second 0 none none yes no no   processes.ps_state-blocked.value Number of processes in a blocked state. A process that is blocked is onethat is waiting for some event, such as a resource becoming available orthe completion of an I/O operation.</description>
     </item>
     
     <item>
-      <title>Salt</title>
-      <link>http://localhost:1313/integrations/chef/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Proxy</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/chef/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-proxy/</guid>
+      <description>Determining if you have a proxy enabled  Open Internet Explorer. Click the Tools icon, and then click Internet Options. On the Connections tab, click LAN settings. If any of the checkboxes are selected and the appropriate information is filled out, you may need to configure proxy settings to enable data being posted by the agent on your server.  Configuring the proxy  Add the following to the end of the CollectdWinService.</description>
+    </item>
+    
+    <item>
+      <title>PuppetDB</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/puppetdb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/puppetdb/</guid>
+      <description>Prerequisites  Linux Agent  Configure You cannot activate the PuppetDB integration until Metricly begins receiving data. Once data arrives, the package (Dashboards and Policies) is automatically provisioned. To remove those Dashboards and Policies, click the toggle on the PuppetDB integration card.
+1. Get API Key  In Metricly, Navigate to Integrations &amp;gt; PuppetDB. Copy the API Key. Add this key to your Linux Agent.  2. Update the Configuration File  Open PuppetDBCollector.</description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/python/</guid>
+      <description>You can monitor your Python applications using a Python web module, the Linux Agent, and the Metricly StatsD server.
+Prerequisites  Linux Agent  Configure  Navigate to the netuitive-agent.conf file. Update the StatsD setting to enabled = True.  # local statsd server [[[statsd]]] enabled = True  3. Download the python web module and extract the files.
+&amp;gt;&amp;gt; wget http://webpy.org/static/web.py-0.37.tar.gz &amp;gt;&amp;gt; tar xzvf web.py-0.37.tar.gz  4. Move the web directory to the same folder as your application.</description>
+    </item>
+    
+    <item>
+      <title>Riemann</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/riemann/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/riemann/</guid>
+      <description>Riemann is a powerful network monitoring tool that aggregates events from your servers and applications using streams to process them in a format that makes them easy to manipulate or summarize. You can forward your events collected by Riemann streams to Metricly. The Riemann integration is very different from most of the other integrations: the integration is configured in Riemann to send data to Metricly using our API.
+Configure  Download the Metricly Riemann library.</description>
+    </item>
+    
+    <item>
+      <title>Ruby Agent</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/ruby-agent/</guid>
+      <description>The Ruby Agent comprises three Ruby gems&amp;ndash;netuitived, netuitive_ruby_api, and netuitive_rails_agent&amp;ndash;that work in tandem to monitor the performance of your Ruby applications.
+ netuitived: allows metrics to be exported to the Metricly API. netuitive_ruby_api: allows for easy integration with netuitived. netuitive_rails_agent: provides default Ruby on Rails metrics and sends them to netuitived using netuitive_ruby_api.  The Ruby Agent can also be tuned to help application performance and used to read garbage collection metrics.</description>
+    </item>
+    
+    <item>
+      <title>SNMP</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/snmp-interface-collector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/snmp-interface-collector/</guid>
+      <description>The SNMP Collector is used to allow Metricly to monitor the performance of SNMP-enabled devices using a set of specified OIDs. The collector can gather data from as many devices as necessary by adding additional configuration sections under the [devices] header.
+Prerequisites You should have SNMP set-up and your community string ready prior to activating the SNMP collector.
+ Linux Agent  Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors.</description>
+    </item>
+    
+    <item>
+      <title>SNMP Interface</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/snmp-collector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/snmp-collector/</guid>
+      <description>The Simple Network Management Protocol (SNMP) Interface collector is used to allow the Linux agent to monitor the performance of remote SNMP-enabled devices like routers and switches. The collector can gather data from as many devices as necessary by adding additional configuration sections under the [devices] header; see the example below for details.
+Prerequisites You should have SNMP set-up and your community string ready prior to activating the SNMP collector.</description>
+    </item>
+    
+    <item>
+      <title>Salt</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/salt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/salt/</guid>
       <description>Salt (or SaltStack) is configuration management software that’s designed to automate infrastructure setup. Metricly’s formula will help get our Linux agent running on all of your minions quickly, so you can start seeing basic host data (as well as collector information if you so choose) for your whole environment using a single command.
 Configuration  Add the netuitive-agent-formula to a directory on your Salt master.
  mkdir -p /metricly/formulas cd /metricly/formulas git clone https://github.</description>
@@ -552,59 +1004,180 @@ Configuration  Add the netuitive-agent-formula to a directory on your Salt maste
     
     <item>
       <title>Send Tags Via Zorka</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-element-tags-zorka/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-element-tags-zorka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-element-tags-zorka/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-element-tags-zorka/</guid>
       <description>Send Element Tags via Zorka Agent  Navigate to the zorka.properties file in your Java agent directory. Near the bottom of the file, uncomment the #netuitive.api.tags list and add tags following the below format:   netuitive.api.tags = name:value, second:value  3. Save the file.</description>
     </item>
     
     <item>
-      <title>Uninstall Agent</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-uninstall/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Sensu</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/sensu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-uninstall/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/sensu/</guid>
+      <description>Sensu is a monitoring tool that can create events to alert users about server failures, application health, and more. Sensu can be configured to send external events to Metricly. This feature is only compatible with Linux machines.
+How to Send Events From Sensu  Hover on your account name in the top right-hand corner and click API Keys from the drop-down menu. Copy the API key from the custom integration in the table.</description>
+    </item>
+    
+    <item>
+      <title>Solr</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/solr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/solr/</guid>
+      <description>Solr is an open source search platform, allowing for full-text search, hit highlighting, faceted search, and much more. Metricly can be used to monitor the performance of your Solr server.
+Prerequisites  Linux Agent  Configuration  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the SolrCollector.conf file. Change the enabled setting to True. Save the configuration file and restart the Linux Agent.  Collector Options    Option Default Description     enabled FALSE Enable collecting Solr metrics.</description>
+    </item>
+    
+    <item>
+      <title>TCP</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/tcp-collector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/tcp-collector/</guid>
+      <description>The TCP Collector collects metrics on TCP stats.
+Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the TCPCollector.conf file. Change the enabled setting to True. Save the configuration file and restart the Linux Agent.  Collector Options    Setting Default Description Type     allowed_names ListenOverflows, ListenDrops, TCPLoss, TCPTimeouts, TCPFastRetrans, TCPLostRetransmit, TCPForwardRetrans, TCPSlowStartRetrans, CurrEstab, TCPAbortOnMemory, TCPBacklogDrop, AttemptFails, EstabResets, InErrs, ActiveOpens, PassiveOpens list of entries to collect, empty to collect all str   byte_unit byte Default numeric output(s) str   enabled False Enable collecting these metrics bool   gauges CurrEstab, MaxConn list of metrics to be published as gauges str   measure_collector_time False Collect the collector run time in ms bool   metrics_blacklist None Regex to match metrics to block.</description>
+    </item>
+    
+    <item>
+      <title>Tomcat</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/tomcat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/tomcat/</guid>
+      <description>Tomcat (also known as Apache Tomcat or Tomcat Server) is an open source Java Servlet Container. You can use Metricly’s Java agent to collect information on your Tomcat Server.
+Prerequisites  Java Agent  Configure  Navigate to the zorka.properties file. Comment out the Default collection scripts section.  # Default collection of jvm metrics # scripts = jvm.bsh  3. Uncomment the Apache Tomcat scripts section.
+# Example: Apache Tomcat configuration with CAS server scripts = jvm.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-troubleshooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-troubleshooting/</guid>
+      <description>Logs are written to C:\ProgramData\CollectdWin\CollectdWin.log by default. Errors are written to the Event Log.  To adjust the log file level, edit the line below near the end of the CollectdWinService.exe.config:
+ Navigate to C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config. Edit&amp;lt;logger name=&amp;quot;*&amp;quot; writeTo=&amp;quot;default&amp;quot; minlevel=&amp;quot;[Trace/Debug/Info/Warn/Error/Fatal]&amp;quot; /&amp;gt;. Save file.  Windows Server 2003 If you are monitoring a Windows Server 2003 instance and are having trouble seeing data in Metricly, you may need to install a hotfix from Microsoft.</description>
+    </item>
+    
+    <item>
+      <title>Uninstall</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-uninstall/</guid>
+      <description> Open the Programs and Features list. Right click the CollectdWinService (64 bit) program.  Click Uninstall. If any prompt appears, click Yes to confirm that you want to delete the program.  </description>
+    </item>
+    
+    <item>
+      <title>Uninstall Agent</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-uninstall/</guid>
       <description> How to Uninstall  Remove any JVM startup references to the Netuitive Java Agent.  java -javaagent:/opt/netuitive-zorka/netuitive.jar=/opt/netuitive-zorka -jar zorka-core-test.jar -- service   Delete all Netuitive Java Agent (netuitive-zorka-{version}) files.  If you instrumented metrics using the jvm.bsh script, you will need to remove the references to the script as well.
  </description>
     </item>
     
     <item>
-      <title>Upgrade Java</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-upgrade/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Upgrade Agent</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-upgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-upgrade/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-upgrade/</guid>
+      <description>To upgrade the Windows agent, follow the installation steps listed on the main Windows Integration page using the version of the agent you wish to upgrade to. The latest versions of the agent can be downloaded from the agent repo and details of the releases can be found on the Github project page.
+Installing a new version of the agent will overwrite changes you have made to existing agent configuration files located in C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config depending on your environment.</description>
+    </item>
+    
+    <item>
+      <title>Upgrade Java</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-upgrade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-upgrade/</guid>
       <description> How to Upgrade  Download the latest Java agent here. Copy the new netuitive.jar file to your existing Java agent files to replace the old netuitive.jar file. Optionally, manually merge the new zorka.properties file with the old file to receive any new fields or settings.  </description>
     </item>
     
     <item>
       <title>Uptime Metrics</title>
-      <link>http://localhost:1313/integrations/collectors/collectd/collectd-uptime-metrics/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-uptime-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/collectors/collectd/collectd-uptime-metrics/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-uptime-metrics/</guid>
       <description> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     uptime.uptime.value Number of seconds since the system was last booted. max seconds 0 none none yes no no    </description>
     </item>
     
     <item>
       <title>Use Calculator App</title>
-      <link>http://localhost:1313/integrations/agents/java-agent/java-calculator-app/</link>
-      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-calculator-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/agents/java-agent/java-calculator-app/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-calculator-app/</guid>
       <description>To to run the calculator app with the zorka agent, use the following command:
 java -javaagent:/opt/netuitive-zorka-agent/netuitive.jar=/opt/netuitive-zorka-agent/ -jar /opt/zorka-core-test.jar  Calculator.java Source package com.netuitive.agent.test; public class Calculator { public Integer calculate(String operator, Integer first, Integer second) { if (operator.equals(“+”)) { return add(first, second); } else if (operator.equals(“-“)) { return minus(first, second); } else if (operator.equals(“*”)) { return multiply(first, second); } else if (operator.equals(“/”)) { return divide(first, second); } else { throw new IllegalArgumentException(“‘” + operator + “‘ is not supported, use one of [+|-|*|/] operators”); } } private Integer add(Integer first, Integer second) { return first + second; } private Integer minus(Integer first, Integer second) { return first – second; } private Integer multiply(Integer first, Integer second) { return first * second; } private Integer divide(Integer first, Integer second) { return first / second; } }  Example Below is an example file called calculator.</description>
     </item>
     
     <item>
-      <title>Microsoft Azure</title>
-      <link>http://localhost:1313/integrations/microsoft-azure/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
+      <title>User Scripts Collector</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/user-scripts-collector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/integrations/microsoft-azure/</guid>
-      <description> Microsoft Azure is a cloud computing platform, similar to Amazon Web Services. With Azure integration in Metricly, you can monitor the performance of your entire cloud infrastructure. Metricly requires Reader role permissions of your Azure environment, which can be granted using the Owner or User Access Administrator roles.
-Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic Metrics   Filter Elements   </description>
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/user-scripts-collector/</guid>
+      <description>The User Scripts Collector runs external scripts and collects their output for you to view in Metricly.
+Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the UserScriptsCollector.conf file. Change the enabled setting to True. Update scripts_path with the directory where your scripts are located (default: /opt/netuitive-agent/). Save the configuration file and restart the Linux Agent.  About Scripts For the collector to work properly, your monitored scripts must be executable and should output metrics in the form of:</description>
+    </item>
+    
+    <item>
+      <title>Webhook Integration</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/webhook-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/webhook-integration/</guid>
+      <description>Webhooks are an HTTP/HTTPS callback request sent to a desired URL in response to some event, which could be pushing code to a repository or a comment being posted in an online community. A Webhook integration can be used to generate external events in Metricly’s Event Explorer, meaning you could create policies based on the content of those messages.
+Configure  From the top navigation menu, select Integrations. Select the Webhook card.</description>
+    </item>
+    
+    <item>
+      <title>Windows Agent</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/</guid>
+      <description>The Metricly Windows Agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes. Microsoft SQL Server, IIS, and .NET metrics are native to our Windows Agent. Only one Windows integration in your account is necessary to receive all Windows-related metrics.
+Configure Installation is as easy as executing an MSI installer and configuring the service. The agent is pre-configured to send the most important performance metrics, windows events, and system attributes to Metricly.</description>
+    </item>
+    
+    <item>
+      <title>metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/postresql/postresql-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/postresql/postresql-metrics/</guid>
+      <description>Collected    Friendly Name Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     Blocks Hit postgres.database.*.blks_hit The number of times disk blocks were found already in the PostgreSQLbuffer cache so a read was not necessary. average  0 none none yes no no   Blocks Read postgres.database.*.blks_read The number of disk blocks read in the database.</description>
+    </item>
+    
+    <item>
+      <title>rabbitMQ</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/rabbitmq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/rabbitmq/</guid>
+      <description>Rabbit MQ is a message broker that manages queues between message producers and consumers. Metricly can be used to monitor your RabbitMQ server’s queuing performance.
+Prerequisites  Linux Agent  Before editing the configuration file, you should verify the RabbitMQ management module is enabled. If the module is not enabled, do the following:
+ If the package is installed globally, type this into your command prompt:
+rabbitmq-plugins enable rabbitmq_management  If the package is installed in a directory, type this into your command prompt instead:</description>
+    </item>
+    
+    <item>
+      <title>redis</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/redis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/redis/</guid>
+      <description>Redis is an adaptable, open source, in-memory data structure store that can be used as a database, cache, and message broker. Metricly can be used to monitor the performance of your Redis server.
+Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the RedisCollector.conf file. Change the enabled setting to True. Update the instances setting to contain any number of Redis instances you want to monitor as long as it follows the format hostname:port.</description>
     </item>
     
   </channel>

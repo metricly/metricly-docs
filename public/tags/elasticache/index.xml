@@ -2,33 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elasticache on Metricly Docs</title>
-    <link>http://localhost:1313/tags/elasticache/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/elasticache/</link>
     <description>Recent content in Elasticache on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Nov 2018 16:08:13 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/elasticache/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/elasticache/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Elasticache Metrics</title>
-      <link>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-elasticache/</link>
-      <pubDate>Fri, 30 Nov 2018 16:08:13 -0500</pubDate>
-      
-      <guid>http://localhost:1313/integrations/aws-integration/metrics/aws-metrics-elasticache/</guid>
-      <description>Elasticache instances can come in a few “flavors”, which means metrics are unique to each “flavor” of Elasticache.
- Host-level metrics are present on both Memcached as well as Redis clusters Memcached metrics are available only on Memcached clusters, Memcached 1.4.14 metrics are only available on Memcached clusters using at least version 1.4.14 Redis metrics are present only on Redis clusters.  Collected    Metric Type Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     Host-level aws.</description>
-    </item>
     
     <item>
       <title>AWS Elasticache Policies</title>
-      <link>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-elasticache/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-elasticache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/aws-policies-elasticache/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-elasticache/</guid>
       <description>Policy names are prefixed with AWS Elasticache –
     Policy name Duration Condition 1 (and) Condition 2 Category Description     Memcached – CPU Threshold Exceeded 5 min aws.elasticache.cpuutilization has a static threshold &amp;gt;90%  CRITICAL The Memcached Node has exceeded the CPU threshold of 90%. The cache cluster may need to be scaled, either by using a larger node type or by adding more nodes.</description>
+    </item>
+    
+    <item>
+      <title>Elasticache Metrics</title>
+      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-elasticache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-elasticache/</guid>
+      <description>Elasticache instances can come in a few “flavors”, which means metrics are unique to each “flavor” of Elasticache.
+ Host-level metrics are present on both Memcached as well as Redis clusters Memcached metrics are available only on Memcached clusters, Memcached 1.4.14 metrics are only available on Memcached clusters using at least version 1.4.14 Redis metrics are present only on Redis clusters.  Collected    Metric Type Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     Host-level aws.</description>
     </item>
     
   </channel>

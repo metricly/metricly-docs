@@ -2,21 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elasticsearch on Metricly Docs</title>
-    <link>http://localhost:1313/tags/elasticsearch/</link>
+    <link>https://cranky-lalande-9d501c.netlify.com/tags/elasticsearch/</link>
     <description>Recent content in Elasticsearch on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Elasticsearch Policies</title>
-      <link>http://localhost:1313/alerts-notifications/policies/default-policies/elastic-search-policies/</link>
-      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/elastic-search-policies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/alerts-notifications/policies/default-policies/elastic-search-policies/</guid>
+      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/elastic-search-policies/</guid>
       <description>Policy name Duration Conditions Category Description     Cluster Health Degraded to Red 15 min elasticsearch.cluster_health.status has a static threshold &amp;lt; 1 CRITICAL The cluster health status is red which means that one or more primary shard(s) and its replica(s) is missing.   Cluster Health Degraded to Yellow 15 min elasticsearch.cluster_health.status is between 1 and 1.8 WARNING The cluster health status is yellow which means that one or more shard replica(s) is missing.</description>
     </item>
     
