@@ -1,11 +1,28 @@
-/* body {
-  color: red !important;
-} */
+@font-face{
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff'), url('../fonts/opensans.ttf') format('truetype');
+}
+
+@font-face{
+  font-family:"OpenSans-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/opensansbold.woff2') format('woff2'), url('../fonts/opensansbold.woff') format('woff'), url('../fonts/opensansbold.ttf') format('truetype');
+}
+
+body {
+  font-family: 'OpenSans', sans-serif;
+}
+
+
+/*sidebar*/
 #header-wrapper {
   background-color: rgba(246, 247, 248, 0.27);
 }
 
-#sidebar{
+#sidebar {
   background-color: rgba(246, 247, 248, 0.27);
 }
 
@@ -17,6 +34,16 @@
   color: #439BC3;
 }
 
+#sidebar ul.topics {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+#sidebar ul.topics > li > div {
+  margin-bottom: 10px;
+}
+
 #sidebar ul.topics > li.parent,
 #sidebar ul.topics > li.active {
   background: unset;
@@ -24,16 +51,77 @@
 
 #sidebar ul li.active > div > a {
   background: unset;
+  padding-left: 0;
+  /* color: #439BC3 !important; */
 }
 
-#sidebar ul.topics ul {
+/* #sidebar ul.topics ul {
   background: rgba(67, 155, 195, 0.03);
-}
-
-/* #sidebar ul.topics > li.active a {
-  color: red;
 } */
 
 #sidebar .parent li, #sidebar .active li {
   border: unset;
+}
+
+/*breadcrumbs*/
+#top-bar {
+  font: 18px/28px "OpenSans", sans-serif;
+  background: unset;
+  border-radius: 0;
+  margin: 0rem -1rem 2rem;
+  padding: 0 1rem;
+  height: 0;
+  min-height: 3rem;
+  box-shadow: unset;
+}
+
+#toc-menu {
+  border-right: unset !important;
+  color: #c7c7c7;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+
+#body #breadcrumbs .links {
+  font-size: 1em;
+}
+#body #breadcrumbs .breadcrumb_separator {
+  color: #c7c7c7;
+}
+
+
+/*body inner*/
+#body-inner h1:first-of-type {
+  color: #434A54;
+  border-bottom: 1px solid rgba(67, 74, 84, 0.16);
+  font: 36px/46px "OpenSans-Bold", sans-serif;
+  margin: 0;
+  position: relative;
+  text-align: left;
+  text-transform: unset;
+}
+
+#body-inner h1:first-of-type::after {
+  content: '';
+  height: 2px;
+  max-width: 68px;
+  width: 100%;
+  background-color: #439BC3;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+/*custom content footer*/
+.footline {
+  margin-top: 0;
+  border-top: 1px solid #979797;
+  opacity: 0.14;
+}
+
+/*footer tags*/
+#tags.cc-footer_tags {
+  float: unset;
+  margin-top: unset;
+  margin: 20px 0;
 }
