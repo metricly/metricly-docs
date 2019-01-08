@@ -3,7 +3,9 @@ languageCode = "en-us"
 title = "Metricly Docs"
 theme = "docdock"
 [params]
-themeStyle = "flex"
+#themeStyle = "flex"
+themeStyle = "original"
+#themeVariant = "gray"
 disableHomeIcon = true
 [outputs]
 home = [ "HTML", "RSS", "JSON"]

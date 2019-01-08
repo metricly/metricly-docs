@@ -1,0 +1,39 @@
+/* body {
+  color: red !important;
+} */
+#header-wrapper {
+  background-color: rgba(246, 247, 248, 0.27);
+}
+
+#sidebar{
+  background-color: rgba(246, 247, 248, 0.27);
+}
+
+#sidebar a {
+  color: #434A54;
+}
+
+#sidebar a:hover {
+  color: #439BC3;
+}
+
+#sidebar ul.topics > li.parent,
+#sidebar ul.topics > li.active {
+  background: unset;
+}
+
+#sidebar ul li.active > div > a {
+  background: unset;
+}
+
+#sidebar ul.topics ul {
+  background: rgba(67, 155, 195, 0.03);
+}
+
+/* #sidebar ul.topics > li.active a {
+  color: red;
+} */
+
+#sidebar .parent li, #sidebar .active li {
+  border: unset;
+}
