@@ -5,7 +5,7 @@ other = "Créez un fichier _header.md pour personaliser cet encart"
 other = "Créez un fichier footer.md dans le répertoire content pour personaliser ce pied de page"
 
 [Search-placeholder]
-other = "Rechercher..."
+other = "Rechercher ..."
 
 [Clear-History]
 other = "Supprimer historique"
