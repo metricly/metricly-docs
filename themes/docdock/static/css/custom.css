@@ -84,8 +84,22 @@ body {
   line-height: 28px;
 }
 
-#sidebar ul.topics > li > div {
-  margin-bottom: 10px;
+#sidebar ul.topics li div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#sidebar ul li .category-icon {
+  color: rgba(67, 74, 84, 0.3);
+  font-size: 1em;
+  position: relative;
+  margin-top: 0;
+  float: unset;
+  right: 25px;
+}
+#sidebar ul li.active > div .category-icon {
+  right: 25px;
 }
 
 #sidebar ul.topics > li.parent,
@@ -147,7 +161,6 @@ body {
   color: #c7c7c7;
 }
 
-
 /*body inner*/
 #body-inner h1:first-of-type {
   color: #434A54;
@@ -170,6 +183,7 @@ body {
   bottom: -1px;
   left: 0;
 }
+
 /*headers*/
 #body-inner h2 {
   color: #434A54;
@@ -206,27 +220,52 @@ body {
 }
 
 /*tips*/
-div.notices.tip {
+#body-inner div.notices {
   border-top: none;
-  background-color: rgba(64, 191, 171, 0.06);
   color: #434A54 !important;
 }
-div.notices p:first-child:before,
-div.notices.tip p:first-child:after {
-  color: #40BFAB;
-  top: 10px;
+#body-inner div.notices p {
+  padding: 40px 30px 15px 50px;
 }
-div.notices p:first-child:before {
+#body-inner div.notices p:first-child:before {
   content: '\f05a';
   left: 20px;
+  top: 10px;
 }
-div.notices.tip p:first-child:after {
+#body-inner div.notices p:first-child:after {
   content: 'Tips';
-  left: 3rem;
+  left: 2.5rem;
+  top: 10px;
 }
-div.notices p {
-  padding: 40px 30px 15px 50px;
+
+/*green tip*/
+div.notices.tip {
+  background-color: rgba(64, 191, 171, 0.06);
+}
+div.notices.tip p:first-child:before,
+div.notices.tip p:first-child:after {
+  color: #40BFAB;
+}
+div.notices.tip p {
   border-right: 3px solid #40BFAB;
+}
+
+/*blue tip*/
+div.notices.note p:first-child:before,
+div.notices.note p:first-child:after {
+  color: #3EA5D9;
+}
+div.notices.note p {
+  border-right: 3px solid #3EA5D9;
+}
+
+/*orange tip*/
+div.notices.info p:first-child:before,
+div.notices.info p:first-child:after {
+  color: #FF9B3E;
+}
+div.notices.info p {
+  border-right: 3px solid #FF9B3E;
 }
 
 
@@ -251,6 +290,7 @@ div.notices p {
   color: #434A54;
   padding: .3em 1em;
 }
+
 /*footer navigation*/
 #body #navigation {
   display: flex;
@@ -273,12 +313,10 @@ div.notices p {
 #body .nav.nav-prev {
   text-align: right;
 }
+
 #body .nav.nav-next {
   text-align: left;
 }
-
-
-
 
 #body .nav label {
   color: #434A54;
@@ -286,7 +324,6 @@ div.notices p {
   font-weight: normal;
   margin-bottom: 0;
   cursor: inherit;
-  /* position: absolute; */
 }
 
 #body .nav-next label {
