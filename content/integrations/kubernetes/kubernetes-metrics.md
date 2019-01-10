@@ -2,7 +2,7 @@
 title: "Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["metrics", "integrations", "kubernetes" ]
+tags: ["#metrics", "#integrations", "#kubernetes" ]
 author: Lawrence Lane
 ---
 | Metric FQN                                               | Kubernetes Types                                            | Baseline | Correlated | Statistic                   |

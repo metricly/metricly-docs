@@ -2,7 +2,7 @@
 title: "Solr"
 #date: 2018-12-11
 draft: false
-tags: ["solr", "integrations"]
+tags: ["#solr", "#integrations"]
 author: Lawrence Lane
 ---
 Solr is an open source search platform, allowing for full-text search, hit highlighting, faceted search, and much more. Metricly can be used to monitor the performance of your Solr server.

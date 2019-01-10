@@ -2,7 +2,7 @@
 title: "Kafka"
 #date: 2018-12-11
 draft: false
-tags: ["kafka", "integrations", "collectors" ]
+tags: ["#kafka", "#integrations", "#collectors" ]
 author: Lawrence Lane
 ---
 [Kafka](http://kafka.apache.org/) is a publish-subscribe message queuing system that’s designed like a distributed commit log. Metricly can help monitor the performance and throughput of your Kafka server using our Kafka collector for the Linux agent. Kafka, Kafka Consumer Lag, and Zookeeper metrics are all collected using this collector.

@@ -3,7 +3,7 @@ title: "Basic Metrics"
 #date: 2018-12-11
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["microsoft", "azure", "integrations", "metrics"]
+tags: ["#microsoft", "#azure", "#integrations", "#metrics"]
 author: Lawrence Lane
 ---
 | Fully Qualified Name (FQN)                               | Type    | Units          | Statistic | Min | Max  | Sparse Data Strategy (SDS) | BASE | CORR | UTIL | Description                                                                                 |

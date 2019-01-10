@@ -2,7 +2,7 @@
 title: "Iris"
 #date: 2018-12-11
 draft: false
-tags: ["iris", "integrations", "java"]
+tags: ["#iris", "#integrations", "#java"]
 author: Lawrence Lane
 ---
 Iris is a Java library that allows your Java applications to communicate with Metricly’s REST API. You can use Iris to send metrics from your applications to Metricly, create dashboards, tags, elements, and much more.

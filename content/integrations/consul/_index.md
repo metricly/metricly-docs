@@ -2,7 +2,7 @@
 title: "Consul"
 #date: 2018-12-11
 draft: false
-tags: ["consul", "integrations", ]
+tags: ["#consul", "#integrations", ]
 author: Lawrence Lane
 ---
 

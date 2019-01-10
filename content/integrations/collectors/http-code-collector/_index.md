@@ -2,7 +2,7 @@
 title: "HTTP Code Collector"
 #date: 2018-12-11
 draft: false
-tags: ["http code", "integrations", "collectors"]
+tags: ["#http code", "#integrations", "#collectors"]
 author: Lawrence Lane
 ---
 HTTP status codes are useful diagnostic tools for a website to help determine if all content on a website is being delivered properly. Enabling the HTTP code collector for your preferred website will log every status code returned by the website. The first time a status code is returned, our Linux agent will create a metric for that code in Metricly; each subsequent time the status code is returned, another metric will begin to count how many times the code has been returned. Thanks to this unique collector and its metrics, you can create a policy to monitor the status codes that are returned from your website, which can act as a basic check for website status.

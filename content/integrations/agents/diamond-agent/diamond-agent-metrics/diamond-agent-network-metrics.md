@@ -2,7 +2,7 @@
 title: "Network Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["diamond", "integrations", "agents", "network" ]
+tags: ["#diamond", "#integrations", "#agents", "#network" ]
 author: Lawrence Lane
 ---
 

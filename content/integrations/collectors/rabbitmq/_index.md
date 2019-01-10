@@ -2,7 +2,7 @@
 title: "rabbitMQ"
 #date: 2018-12-12
 draft: false
-tags: ["rabbitmq", "integrations" ]
+tags: ["#rabbitmq", "#integrations" ]
 author: Lawrence Lane
 ---
 Rabbit MQ is a message broker that manages queues between message producers and consumers. Metricly can be used to monitor your RabbitMQ server’s queuing performance.

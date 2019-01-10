@@ -3,7 +3,7 @@ title: "View Checks"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["alerts", "notifications", "checks", "custom checks"]
+tags: ["#alerts", "#notifications", "#checks", "#custom checks"]
 author: Lawrence Lane
 alwaysopen: false
 weight: 1

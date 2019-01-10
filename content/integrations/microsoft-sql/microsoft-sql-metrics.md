@@ -2,7 +2,7 @@
 title: "Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["metrics", "integrations", "microsoft sql" ]
+tags: ["#metrics", "#integrations", "#microsoft sql" ]
 author: Lawrence Lane
 ---
 ## Collected

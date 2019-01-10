@@ -3,7 +3,7 @@ title: "Gov Cloud"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["aws", "gov cloud"]
+tags: ["#aws", "#gov cloud"]
 author: Lawrence Lane
 weight: 6
 ---

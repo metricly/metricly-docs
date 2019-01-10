@@ -3,7 +3,7 @@ title: "CloudFormation"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["aws", "iam role", "cloudFormation script"]
+tags: ["#aws", "#iam role", "#cloudFormation script"]
 author: Lawrence Lane
 #pre: "<i class='fa fa-download'></i> &nbsp; "
 weight: 1

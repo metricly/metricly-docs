@@ -3,7 +3,7 @@ title: "Baseline Bands"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["getting started", "analytics", "metrics"]
+tags: ["#getting started", "#analytics", "#metrics"]
 author: Lawrence Lane
 ---
 Baseline Bands represent the normal operating range of a metric. Metricly determines the normal operating range of a metric based on weekly patterns in the behavior of that metric.

@@ -2,7 +2,7 @@
 title: "Allowed Metric Names"
 #date: 2018-12-11
 draft: false
-tags: ["tcp", "integrations"]
+tags: ["#tcp", "#integrations"]
 author: Lawrence Lane
 ---
 | Name                      | Description                                                                                                                                                                                                                                                                                                                                                                           |

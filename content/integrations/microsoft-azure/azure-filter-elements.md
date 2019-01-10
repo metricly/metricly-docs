@@ -3,7 +3,7 @@ title: "Filter Elements"
 #date: 2018-12-11
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["microsoft", "azure", "integrations", "optional config"]
+tags: ["#microsoft", "#azure", "#integrations", "#optional config"]
 author: Lawrence Lane
 ---
 You can filter what Azure elements are included in Metricly’s monitoring by using regex to match key-value pairs. Metricly offers opt-in (include) or opt-out (exclude) element filtering.

@@ -2,7 +2,7 @@
 title: "Memory Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["collectd", "integrations", "metrics", "memory", "collectors" ]
+tags: ["#collectd", "#integrations", "#metrics", "#memory", "#collectors" ]
 author: Lawrence Lane
 ---
 

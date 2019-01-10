@@ -2,7 +2,7 @@
 title: "Plugins"
 #date: 2018-12-11
 draft: false
-tags: ["windows", "integrations", "plugins"]
+tags: ["#windows", "#integrations", "#plugins"]
 author: Lawrence Lane
 ---
 There are two types of Windows plugins: Read (which allow our Windows agent to read data) and Write (which allow our Windows agent to write data). The following plugins are enabled by default:

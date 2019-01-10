@@ -3,7 +3,7 @@ title: "Azure Policies"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["alerts", "notifications", "policies", "default policies", "azure"]
+tags: ["#alerts", "#notifications", "#policies", "#default policies", "#azure"]
 author: Lawrence Lane
 ---
 

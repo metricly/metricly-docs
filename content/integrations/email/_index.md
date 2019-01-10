@@ -2,7 +2,7 @@
 title: "Email Notifications"
 #date: 2018-12-11
 draft: false
-tags: ["email", "integrations" ]
+tags: ["#email", "#integrations" ]
 author: Lawrence Lane
 ---
 You can create email templates with custom messaging that are re-usable across multiple policies, or simply choose Metricly’s default email notifications. Read below for configuration steps.

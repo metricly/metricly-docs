@@ -2,7 +2,7 @@
 title: "Nagios"
 #date: 2018-12-12
 draft: false
-tags: ["nagios", "integrations" ]
+tags: ["#nagios", "#integrations" ]
 author: Lawrence Lane
 ---
 Nagios is a comprehensive enterprise-class open source monitoring service. You can use our [Metricly Event Handler](https://github.com/netuitive/netuitive-event-handler) to send your Nagios events to Metricly.

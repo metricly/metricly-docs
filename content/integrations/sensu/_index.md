@@ -2,7 +2,7 @@
 title: "Sensu"
 #date: 2018-12-11
 draft: false
-tags: ["sensu", "integrations" ]
+tags: ["#sensu", "#integrations" ]
 author: Lawrence Lane
 ---
 Sensu is a monitoring tool that can create events to alert users about server failures, application health, and more. Sensu can be configured to send external events to Metricly. This feature is only compatible with Linux machines.

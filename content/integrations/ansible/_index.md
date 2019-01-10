@@ -2,7 +2,7 @@
 title: "Ansible"
 #date: 2018-12-11
 draft: false
-tags: ["ansible", "integrations", "configuration management"]
+tags: ["#ansible", "#integrations", "#configuration management"]
 author: Lawrence Lane
 ---
 Ansible is a configuration management tool that can be used to automate setup of servers, databases, and more. The Metricly Agent playbook will help get the Metricly Linux agent up and running in your environment quickly.

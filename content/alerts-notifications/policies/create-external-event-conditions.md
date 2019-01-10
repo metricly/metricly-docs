@@ -3,7 +3,7 @@ title: "Create External Event Conditions"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["alerts", "notifications", "events", "policies", "conditions", "external events", "webhooks"]
+tags: ["#alerts", "#notifications", "#events", "#policies", "#conditions", "#external events", "#webhooks"]
 author: Lawrence Lane
 weight: 3
 ---

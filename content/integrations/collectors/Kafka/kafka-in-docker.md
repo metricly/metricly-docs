@@ -2,7 +2,7 @@
 title: "Kafka in Docker"
 #date: 2018-12-11
 draft: false
-tags: ["kafka", "integrations", "collectors", "docker" ]
+tags: ["#kafka", "#integrations", "#collectors", "#docker" ]
 author: Lawrence Lane
 ---
 Getting the Jolokia agent running in a Kafka container requires three additional modifications to the `docker run` command. To illustrate the modifications needed, we’re going to assume that your `docker run` command looks like this initially:

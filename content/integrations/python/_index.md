@@ -2,7 +2,7 @@
 title: "Python"
 #date: 2018-12-12
 draft: false
-tags: ["python", "integrations" ]
+tags: ["#python", "#integrations" ]
 author: Lawrence Lane
 ---
 You can monitor your Python applications using a Python web module, the Linux Agent, and the Metricly StatsD server.

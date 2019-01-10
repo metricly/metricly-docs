@@ -3,7 +3,7 @@ title: "Java Policies"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["alerts", "notifications", "policies", "default policies", "java"]
+tags: ["#alerts", "#notifications", "#policies", "#default policies", "#java"]
 author: Lawrence Lane
 ---
 

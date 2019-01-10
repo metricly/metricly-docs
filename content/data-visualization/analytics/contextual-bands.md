@@ -3,7 +3,7 @@ title: "Contextual Bands"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["getting started", "analytics", "metrics"]
+tags: ["#getting started", "#analytics", "#metrics"]
 author: Lawrence Lane
 ---
 Contextual Bands represent the range of current expected values for a metric based on other correlated metrics in the learned model. In contrast to Baseline bands which look for patterns in a metric in isolation, Contextual bands take into account how the value of one metric may impact another.

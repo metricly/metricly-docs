@@ -3,9 +3,9 @@ title: "Troubleshooting"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["getting started", "metrics",]
+tags: ["#getting started", "#metrics",]
 author: Lawrence Lane
-pre: "<i class='fa fa-bug'></i> &nbsp;"
+#pre: "<i class='fa fa-bug'></i> &nbsp;"
 ---
 
 ## Collected Metrics
