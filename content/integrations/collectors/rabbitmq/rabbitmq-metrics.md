@@ -2,7 +2,7 @@
 title: "Metrics"
 #date: 2018-12-12
 draft: false
-tags: ["rabbitmq", "integrations", "metrics" ]
+tags: ["#rabbitmq", "#integrations", "#metrics" ]
 author: Lawrence Lane
 ---
 

@@ -2,7 +2,7 @@
 title: "JMX"
 #date: 2018-12-11
 draft: false
-tags: ["flume", "integrations", "collectors" ]
+tags: ["#flume", "#integrations", "#collectors" ]
 author: Lawrence Lane
 ---
 ## Prerequisites

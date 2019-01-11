@@ -2,7 +2,7 @@
 title: "PuppetDB"
 #date: 2018-12-12
 draft: false
-tags: ["puppetDB", "integrations" ]
+tags: ["#puppetDB", "#integrations" ]
 author: Lawrence Lane
 ---
 

@@ -3,9 +3,9 @@ title: "Docker Install"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["agents", "linux", "docker"]
+tags: ["#agents", "#linux", "#docker"]
 author: Lawrence Lane
-pre: "<i class='fa fa-download'></i> &nbsp; "
+#pre: "<i class='fa fa-download'></i> &nbsp; "
 weight: 2
 ---
 ## 1. Copy API Key From Docker Integration

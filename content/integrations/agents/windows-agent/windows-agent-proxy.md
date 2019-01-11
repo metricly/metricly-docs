@@ -2,7 +2,7 @@
 title: "Proxy"
 #date: 2018-12-11
 draft: false
-tags: ["windows", "integrations", "plugins"]
+tags: ["#windows", "#integrations", "#plugins"]
 author: Lawrence Lane
 ---
 ## Determining if you have a proxy enabled

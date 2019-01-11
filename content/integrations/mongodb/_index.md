@@ -2,7 +2,7 @@
 title: "MongoDB"
 #date: 2018-12-12
 draft: false
-tags: ["mongoDB", "integrations" ]
+tags: ["#mongoDB", "#integrations" ]
 author: Lawrence Lane
 ---
  MongoDB is a document-oriented NoSQL database. Metricly can be used to monitor your MongoDB’s performance.

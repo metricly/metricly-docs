@@ -3,7 +3,7 @@ title: "AWS ASG Policies"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["alerts", "notifications", "policies", "default policies", "asg", "aws"]
+tags: ["#alerts", "#notifications", "#policies", "#default policies", "#asg", "#aws"]
 author: Lawrence Lane
 ---
 

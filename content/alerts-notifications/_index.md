@@ -3,10 +3,11 @@ title: "Alerts & Notifications"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["alerts", "notifications", "events", "policies"]
+tags: ["#alerts", "#notifications", "#events", "#policies"]
 author: Lawrence Lane
 alwaysopen: false
 weight: 2
+pre: "<i class='icon-alert'></i> &nbsp; "
 ---
 New to Metricly? Use this page as an overview for the features related to Alerts, Events, Policies, and Notifications. For a more technical walkthrough on each, see our related articles.
 

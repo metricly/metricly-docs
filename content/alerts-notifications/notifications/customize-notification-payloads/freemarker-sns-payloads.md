@@ -3,7 +3,7 @@ title: "SNS Payloads"
 #date: 2018-05-12
 draft: false
 categories:
-tags: ["alerts", "notifications", "sns"]
+tags: ["#alerts", "#notifications", "#sns"]
 author: Lawrence Lane
 alwaysopen: false
 weight:

@@ -3,9 +3,9 @@ title: "Troubleshooting"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["agents", "linux", "logs", "metadata"]
+tags: ["#agents", "#linux", "#logs", "#metadata"]
 author: Lawrence Lane
-pre: "<i class='fa fa-bug'></i> &nbsp;"
+#pre: "<i class='fa fa-bug'></i> &nbsp;"
 weight: 11
 ---
 ##  Set Logs to Debugging Mode

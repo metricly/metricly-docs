@@ -2,7 +2,7 @@
 title: "Kubernetes"
 #date: 2018-12-11
 draft: false
-tags: ["kubernetes", "integrations" ]
+tags: ["#kubernetes", "#integrations" ]
 author: Lawrence Lane
 ---
 This integration allows you to monitor the data and elements from your Kubernetes environments. Setup is quick, with data appearing in your account as soon as 5 minutes after installation.

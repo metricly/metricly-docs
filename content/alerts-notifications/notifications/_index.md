@@ -3,7 +3,7 @@ title: "Notifications"
 #date: 2018-05-12
 draft: false
 categories:
-tags: ["alerts", "notifications"]
+tags: ["#alerts", "#notifications"]
 author: Lawrence Lane
 alwaysopen: false
 weight: 

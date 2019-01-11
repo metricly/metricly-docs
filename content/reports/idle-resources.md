@@ -3,7 +3,7 @@ title: "Idle Resources"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["reports", "idle resources", "cost"]
+tags: ["#reports", "#idle resources", "#cost"]
 author: Lawrence Lane
 ---
 

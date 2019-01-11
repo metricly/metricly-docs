@@ -3,7 +3,7 @@ title: "Enable Guest OS Diagnostic Metrics"
 #date: 2018-12-11
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["microsoft", "azure", "integrations", "optional config"]
+tags: ["#microsoft", "#azure", "#integrations", "#optional config"]
 author: Lawrence Lane
 ---
 

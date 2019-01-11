@@ -2,7 +2,7 @@
 title: "Manual Install"
 #date: 2018-12-11
 draft: false
-tags: ["windows", "integrations", "install"]
+tags: ["#windows", "#integrations", "#install"]
 author: Lawrence Lane
 ---
 

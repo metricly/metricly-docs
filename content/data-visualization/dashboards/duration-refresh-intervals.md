@@ -3,7 +3,7 @@ title: "Duration & Refresh Intervals"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["getting started", "metrics", "elements", "dashboards"]
+tags: ["#getting started", "#metrics", "#elements", "#dashboards"]
 author: Lawrence Lane
 ---
 

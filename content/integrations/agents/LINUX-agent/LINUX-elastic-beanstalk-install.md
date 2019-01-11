@@ -3,9 +3,9 @@ title: "Elastic Beanstalk"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["agents", "linux", "elastic beanstalk"]
+tags: ["#agents", "#linux", "#elastic beanstalk"]
 author: Lawrence Lane
-pre: "<i class='fa fa-download'></i> &nbsp; "
+#pre: "<i class='fa fa-download'></i> &nbsp; "
 weight: 4
 ---
 Using an existing application file, you can deploy the Netuitive agent to a self-contained EC2 instance complete with a load balancer and everything else it needs to run. The Elastic Beanstalk instance can also scale by itself.

@@ -3,7 +3,7 @@ title: "Application Gateway"
 #date: 2018-12-11
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["microsoft", "azure", "integrations", "metrics"]
+tags: ["#microsoft", "#azure", "#integrations", "#metrics"]
 author: Lawrence Lane
 ---
 

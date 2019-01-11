@@ -2,7 +2,7 @@
 title: "User Scripts Collector"
 #date: 2018-12-12
 draft: false
-tags: ["user scripts", "integrations" ]
+tags: ["#user scripts", "#integrations" ]
 author: Lawrence Lane
 ---
 The User Scripts Collector runs external scripts and collects their output for you to view in Metricly.

@@ -2,7 +2,7 @@
 title: "Process Resource Collector"
 #date: 2018-12-12
 draft: false
-tags: ["process resource collector", "integrations", "collectors" ]
+tags: ["#process resource collector", "#integrations", "#collectors" ]
 author: Lawrence Lane
 ---
 The Process Resources Collector can be used to collect CPU- and Memory-type metrics on a per-process level.  

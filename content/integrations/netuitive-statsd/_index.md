@@ -2,7 +2,7 @@
 title: "Netuitive StatsD"
 #date: 2018-12-12
 draft: false
-tags: ["netuitive", "integrations", "netuitive statsd", "statsd", "custom metrics" ]
+tags: ["#netuitive", "#integrations", "#netuitive statsd", "#statsd", "#custom metrics" ]
 author: Lawrence Lane
 ---
 The Netuitive StatsD integration interprets, aggregates, and forwards custom metrics generated from your application. Using the values instrumented from your application’s key actions and data (method calls, database queries, etc.), Metricly aggregates the values, associates them with corresponding metrics, and analyzes them in our analytics cycles.

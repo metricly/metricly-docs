@@ -3,7 +3,7 @@ title: "AWS EBS Policies"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["alerts", "notifications", "policies", "default policies", "ebs", "aws"]
+tags: ["#alerts", "#notifications", "#policies", "#default policies", "#ebs", "#aws"]
 author: Lawrence Lane
 ---
 Before reading about the EBS default policy, it is important to understand the following Metricly computed metrics.

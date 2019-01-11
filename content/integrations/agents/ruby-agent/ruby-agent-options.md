@@ -2,7 +2,7 @@
 title: "Optional Config"
 #date: 2018-12-12
 draft: false
-tags: ["ruby", "integrations", "agents" ]
+tags: ["#ruby", "#integrations", "#agents" ]
 author: Lawrence Lane
 ---
 

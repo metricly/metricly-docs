@@ -3,10 +3,11 @@ title: "Reports"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["reports", "directory page",]
+tags: ["#reports", "#directory page",]
 author: Lawrence Lane
 alwaysopen: false
 weight: 5
+pre: "<i class='icon-reports'></i> &nbsp;"
 ---
 Reports provide a quick glance at some of the most important parts of your environment, including utilization, policy violation, and estimated cost of your inventory. Report Explorer allows you to toggle between different reports on the elements in your environment.
 

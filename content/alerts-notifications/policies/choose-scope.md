@@ -3,7 +3,7 @@ title: "Choose Scope"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["alerts", "notifications", "events", "policies", "scope"]
+tags: ["#alerts", "#notifications", "#events", "#policies", "#scope"]
 author: Lawrence Lane
 weight: 3
 ---

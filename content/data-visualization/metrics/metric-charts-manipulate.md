@@ -3,7 +3,7 @@ title: "Manipulate Metric Charts"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["getting started", "metrics", "charts"]
+tags: ["#getting started", "#metrics", "#charts"]
 author: Lawrence Lane
 ---
 

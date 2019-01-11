@@ -2,8 +2,12 @@ baseURL = "https://cranky-lalande-9d501c.netlify.com/"
 languageCode = "en-us"
 title = "Metricly Docs"
 theme = "docdock"
+
 [params]
-themeStyle = "flex"
+#themeStyle = "flex"
+themeStyle = "original"
+#themeVariant = "grey"
 disableHomeIcon = true
+
 [outputs]
 home = [ "HTML", "RSS", "JSON"]

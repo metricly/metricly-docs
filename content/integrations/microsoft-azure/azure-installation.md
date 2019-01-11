@@ -3,7 +3,7 @@ title: "Azure Installation"
 #date: 2018-12-11
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["microsoft", "azure", "integrations", "installation"]
+tags: ["#microsoft", "#azure", "#integrations", "#installation"]
 author: Lawrence Lane
 ---
 ## 1. Create a Microsoft Azure Integration Card

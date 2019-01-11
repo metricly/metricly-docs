@@ -2,7 +2,7 @@
 title: "Ruby Agent"
 #date: 2018-12-12
 draft: false
-tags: ["ruby", "integrations", "agents" ]
+tags: ["#ruby", "#integrations", "#agents" ]
 author: Lawrence Lane
 ---
 The Ruby Agent comprises three Ruby gems--[netuitived](https://rubygems.org/gems/netuitived), [netuitive_ruby_api](https://rubygems.org/gems/netuitive_ruby_api), and [netuitive_rails_agent](https://rubygems.org/gems/netuitive_rails_agent)--that work in tandem to monitor the performance of your Ruby applications.

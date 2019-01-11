@@ -2,7 +2,7 @@
 title: "SNMP Interface"
 #date: 2018-12-11
 draft: false
-tags: ["snmp", "integrations", "collectors" ]
+tags: ["#snmp", "#integrations", "#collectors" ]
 author: Lawrence Lane
 ---
 

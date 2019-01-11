@@ -3,7 +3,7 @@ title: "Windows Checks"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["alerts", "notifications", "checks", "windows"]
+tags: ["#alerts", "#notifications", "#checks", "#windows"]
 author: Lawrence Lane
 alwaysopen: false
 ---

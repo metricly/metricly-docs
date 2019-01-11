@@ -3,7 +3,7 @@ title: "HipChat Notifications"
 #date: 2018-05-12
 draft: false
 categories:
-tags: ["alerts", "notifications", "hipchat"]
+tags: ["#alerts", "#notifications", "#hipchat"]
 author: Lawrence Lane
 ---
 

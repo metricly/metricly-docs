@@ -3,9 +3,9 @@ title: "Standard Install"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["agents", "linux",]
+tags: ["#agents", "#linux",]
 author: Lawrence Lane
-pre: "<i class='fa fa-download'></i> &nbsp;"
+#pre: "<i class='fa fa-download'></i> &nbsp;"
 weight: 1
 ---
 This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as Metricly receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.

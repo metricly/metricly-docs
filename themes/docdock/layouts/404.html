@@ -8,21 +8,24 @@
       {{ partial "flex/head.html" . }}
     {{end}}
   </head>
-  <body data-url="{{ .RelPermalink }}">
+  <body data-url="{{ .RelPermalink }}" class="pnf-body">
     {{if .Site.Params.themeStyle}}
       {{ partial (printf "%s/body-beforecontent.html" .Site.Params.themeStyle) . }}
     {{else}}
       {{ partial "flex/body-beforecontent.html" . }}
     {{end}}
-    
-	<h1>{{T "title-404"}}</h1>
-	<p>
-	</p>
-	<p>{{T "message-404"}}</p>
-	<p></p>
-	<p><a href="{{.Site.BaseURL}}">{{T "Go-to-homepage"}}</a></p>
-	<p><img src="{{"images/gopher-404.jpg" | relURL}}" style="width:50%"></img></p>    
-    
+    <!-- <h1>{{T "title-404"}}</h1>
+    <p>
+    </p>
+    <p>{{T "message-404"}}</p> -->
+    <!-- <p></p> -->
+    <!-- <p><img src="{{"images/gopher-404.jpg" | relURL}}" style="width:50%"></img></p> -->
+    <p><img src="{{"images/img-404.svg" | relURL}}" style="width:40%"></img></p>
+    <h1>{{T "title-404"}}</h1>
+    <p>{{T "message-404"}}</p>
+    <div style="margin-top: 40px;text-align:center;">
+      <a href="{{.Site.BaseURL}}">{{T "Go-to-homepage"}}</a>
+    </div>
     {{if .Site.Params.themeStyle}}
       {{ partial (printf "%s/body-aftercontent.html" .Site.Params.themeStyle) . }}
     {{else}}
