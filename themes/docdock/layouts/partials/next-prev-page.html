@@ -35,10 +35,10 @@
     
 {{- if not $.Site.Params.disableNavChevron -}}
     {{- with ($.Scratch.Get "prevPage") -}}
-        <a class="nav nav-prev" href="{{.URL}}" title="{{.Title}}"><span><i class="fa fa-arrow-left"></i> Previous</span><label>{{.Title}}</label></a>
+        <a class="nav nav-prev" href="{{.URL}}" title="{{.Title}}"><span><i class="icon-previous"></i> Previous</span><label>{{.Title}}</label></a>
     {{ end -}}
     {{- with ($.Scratch.Get "nextPage") -}}
-        <a class="nav nav-next" href="{{.URL}}" title="{{.Title}}" style="margin-right: 0px;"><span>Next <i class="fa fa-arrow-right"></i></span><label>{{.Title}}</label></a>
+        <a class="nav nav-next" href="{{.URL}}" title="{{.Title}}"><span>Next <i class="icon-next"></i></span><label>{{.Title}}</label></a>
     {{- end }}
 {{- end -}}
 </div>

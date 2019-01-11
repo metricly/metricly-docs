@@ -3,7 +3,7 @@ title: "Integrations"
 #date: 2018-11-30T15:34:11-05:00
 draft: false
 weight: 3
-pre: "<i class='fa fa-plug'></i> &nbsp; "
+pre: "<i class='icon-integration'></i> &nbsp;"
 ---
 An integration is a system from which Metricly collects data. Metricly offers integrations with *collectors*, *agents*, and *automation software*.
 

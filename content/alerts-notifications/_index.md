@@ -7,7 +7,7 @@ tags: ["#alerts", "#notifications", "#events", "#policies"]
 author: Lawrence Lane
 alwaysopen: false
 weight: 2
-pre: "<i class='fa fa-bell-o'></i> &nbsp; "
+pre: "<i class='icon-alert'></i> &nbsp; "
 ---
 New to Metricly? Use this page as an overview for the features related to Alerts, Events, Policies, and Notifications. For a more technical walkthrough on each, see our related articles.
 

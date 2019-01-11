@@ -7,7 +7,7 @@ tags: ["#getting started", "#directory page",]
 author: Lawrence Lane
 alwaysopen: false
 weight: 4
-pre: "<i class='fa fa-newspaper-o'></i> &nbsp; "
+pre: "<i class='icon-visualization'></i> &nbsp;"
 ---
 
 afafa
