@@ -460,6 +460,24 @@ div.notices.info p {
 #body-inner .extra-pagination {
   display: none;
 }
+/*footerline*/
+#body-inner .post .footline {
+  border-top: unset;
+  padding: 10px 0;
+  opacity: 1;
+}
+/*tags*/
+#body-inner .post .footline .label {
+  font-size: 16px;
+  line-height: 22px;
+  background-color: rgba(67, 74, 84, 0.08);
+  border-radius: 4px;
+  color: #434A54;
+  padding: .4em 1em;
+}
+#body-inner .post .footline .label:after {
+  display: none;
+}
 /*==End Tags Page==*/
 
 
