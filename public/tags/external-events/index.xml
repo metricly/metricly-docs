@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>External Events on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/external-events/</link>
-    <description>Recent content in External Events on Metricly Docs</description>
+    <title>#External Events on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/external-events/</link>
+    <description>Recent content in #External Events on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/external-events/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/external-events/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Create External Event Conditions</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/create-external-event-conditions/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/create-external-event-conditions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/create-external-event-conditions/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/create-external-event-conditions/</guid>
       <description>External Event conditions for policies are typically used in conjunction with Webhook integrations. See the Webhook integration setup or Webhook API documentation for more information.
  Open Policy Editor. Click Conditions. Click Add Condition, then select Add External Event Condition.  Type into the fields to create a proper filter:  Message Contains: A regex statement that attempts to match a word or phrase in the event message. Title Contains: A regex statement that attempts to match a word or phrase in the event’s title.</description>
     </item>

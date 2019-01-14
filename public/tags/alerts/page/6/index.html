@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:20 EST">
-<title>Alerts :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T17:43:23 EET">
+<title>#Alerts :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/alerts/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Alerts
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Alerts</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Alerts</h1>
+  
+
+
+
     
     
     
@@ -1973,8 +2041,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/notifications/notifications-slack/">Slack Notifications</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Configuration 1. Install Incoming Webhooks on Slack If you’ve already installed the Incoming Webhooks app, you can skip to step 2.
-  Go to Slack’s app directory. Search for Incoming Webhooks. It should dynamically update a drop-down beneath the search bar. Click Incoming Webhooks.  Click Add Configuration.  Select a channel from Choose a Channel… or create a new one.  Click Add Incoming WebHooks Integration.  2. <a class="read-more" href="/alerts-notifications/notifications/notifications-slack/">&raquo;</a></p>
+ Go to Slack’s app directory. Search for Incoming Webhooks. It should dynamically update a drop-down beneath the search bar. Click Incoming Webhooks.  Click Add Configuration.  Select a channel from Choose a Channel… or create a new one.  Click Add Incoming WebHooks Integration.  2.</p>
     </section>
     <footer class=" footline" >
          
@@ -1983,11 +2052,11 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/slack/">slack</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#slack/">#slack</a>
             
         
 
@@ -1999,8 +2068,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/notifications/notifications-stride/">Stride Notifications</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Setting up alert notifications from Metricly to Stride just requires a few quick steps. Once complete, your alerts are forwarded to the designated chat room within Stride.
-Configuration  Log in to Stride. Select a room where alerts should be delivered or create a new one.  Click Apps &gt; Add Custom App.  Click API tokens and input Metricly Alerts in Specify a token name. Click Create. In the popup window, copy the access token and conversation URL. <a class="read-more" href="/alerts-notifications/notifications/notifications-stride/">&raquo;</a></p>
+Configuration  Log in to Stride. Select a room where alerts should be delivered or create a new one.  Click Apps &gt; Add Custom App.  Click API tokens and input Metricly Alerts in Specify a token name. Click Create. In the popup window, copy the access token and conversation URL.</p>
     </section>
     <footer class=" footline" >
          
@@ -2009,11 +2079,11 @@ Configuration  Log in to Stride. Select a room where alerts should be delivered 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/stride/">stride</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#stride/">#stride</a>
             
         
 
@@ -2025,8 +2095,9 @@ Configuration  Log in to Stride. Select a room where alerts should be delivered 
         <h2 class="post-title"><a href="/alerts-notifications/top-violators/">Top Violators</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Top Violators reports display the elements in your environment that have triggered the most events within the specified Time Frame setting, allowing you to quickly locate the elements with high event counts. This report provides the same type of data as the Event Explorer, but the data is grouped by element.
- Summary Table: This table provides both the number of events triggered by each element (Event Count), and the amount of time that each element triggered events within the specified Time Frame. <a class="read-more" href="/alerts-notifications/top-violators/">&raquo;</a></p>
+ Summary Table: This table provides both the number of events triggered by each element (Event Count), and the amount of time that each element triggered events within the specified Time Frame.</p>
     </section>
     <footer class=" footline" >
          
@@ -2035,13 +2106,13 @@ Configuration  Log in to Stride. Select a room where alerts should be delivered 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
         
 
@@ -2053,7 +2124,8 @@ Configuration  Log in to Stride. Select a room where alerts should be delivered 
         <h2 class="post-title"><a href="/alerts-notifications/notifications/notifications-victorops/">VictorOps Notifications</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Configuration 1. Copy REST API URL From VictorOps  Login to your VictorOps account. Navigate to Alert Behavior &gt; Integrations.  Search for Metricly and select the card.  Click Enable Integration. Copy the Service API Endpoint. This is required for the next step.   2. Create a Webhook notification in Metricly  In Metricly, navigate to the Policy Editor. Click tab 3, Notifications. Click Add Notification and select Webhook as the Notification Type. <a class="read-more" href="/alerts-notifications/notifications/notifications-victorops/">&raquo;</a></p>
+        
+        <p>Configuration 1. Copy REST API URL From VictorOps  Login to your VictorOps account. Navigate to Alert Behavior &gt; Integrations.  Search for Metricly and select the card.  Click Enable Integration. Copy the Service API Endpoint. This is required for the next step.   2. Create a Webhook notification in Metricly  In Metricly, navigate to the Policy Editor. Click tab 3, Notifications. Click Add Notification and select Webhook as the Notification Type.</p>
     </section>
     <footer class=" footline" >
          
@@ -2062,11 +2134,11 @@ Configuration  Log in to Stride. Select a room where alerts should be delivered 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/victorops/">victorops</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#victorops/">#victorops</a>
             
         
 
@@ -2078,8 +2150,9 @@ Configuration  Log in to Stride. Select a room where alerts should be delivered 
         <h2 class="post-title"><a href="/alerts-notifications/checks/view-checks/">View Checks</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Leveraging our saved filters is a good way to find your checks. All checks are tagged with the key n.checks and value check name.
- Click Type and select either SERVER (for Linux) or WINSRV (for Windows) to pick where the check has been configured. Navigate to More &gt; Tag and search for n.checks.   <a class="read-more" href="/alerts-notifications/checks/view-checks/">&raquo;</a></p>
+ Click Type and select either SERVER (for Linux) or WINSRV (for Windows) to pick where the check has been configured. Navigate to More &gt; Tag and search for n.checks.  </p>
     </section>
     <footer class=" footline" >
          
@@ -2088,13 +2161,13 @@ Configuration  Log in to Stride. Select a room where alerts should be delivered 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/checks/">checks</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#checks/">#checks</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/custom-checks/">custom checks</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#custom-checks/">#custom checks</a>
             
         
 
@@ -2106,8 +2179,9 @@ Configuration  Log in to Stride. Select a room where alerts should be delivered 
         <h2 class="post-title"><a href="/alerts-notifications/events/view-an-event/">View an Event</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>The following tools allow you to view and analyze events in the Metricly UI:
- Event Explorer: Event Explorer displays a comprehensive list of all the events in your environment. You can filter the list by the event category, source (Metricly or External), element, element type, and/or tag of the element(s) to which an event is associated. You can also filter events within a specific time frame. For more information about Event Explorer, see below. <a class="read-more" href="/alerts-notifications/events/view-an-event/">&raquo;</a></p>
+ Event Explorer: Event Explorer displays a comprehensive list of all the events in your environment. You can filter the list by the event category, source (Metricly or External), element, element type, and/or tag of the element(s) to which an event is associated. You can also filter events within a specific time frame. For more information about Event Explorer, see below.</p>
     </section>
     <footer class=" footline" >
          
@@ -2116,11 +2190,11 @@ Configuration  Log in to Stride. Select a room where alerts should be delivered 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
         
 
@@ -2132,10 +2206,11 @@ Configuration  Log in to Stride. Select a room where alerts should be delivered 
         <h2 class="post-title"><a href="/alerts-notifications/notifications/customize-notification-payloads/webhook-payloads/">Webhook Payloads</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Webhook Payloads Webhooks have two main payload types: inbound and outbound. Outbound payloads can be customized and sent as notifications.
 To create a customized webhook payload:
  Navigate to your Account Profile &gt; Notifications &gt; Webhook. Click + Add Webhook. Fill out all fields; select Custom from the Payload dropdown. Input your custom JSON + Freemarker writeup. Save.  Example 1
-{ &quot;message_type&quot;:&quot;&lt;#if payloadType == &quot;event&quot;&gt;${eventCategory.name}&lt;/#if&gt;&lt;#if payloadType == &quot;event_cleared&quot;&gt;RECOVERY&lt;/#if&gt;&quot;, &quot;entity_id&quot;:&quot;${elementId}&quot;, &quot;entity_display_name&quot;:&quot;${elementName}&quot;, &quot;state_message&quot;:&quot;&lt;#if payloadType == &quot;event&quot;&gt; [${elementName}] [${policyName}] [${eventTimestamp}] : ${policyDescription}&lt;/#if&gt;&lt;#if payloadType == &quot;event_cleared&quot;&gt;The policy ${policyName} has CLEARED for ${elementName} and is no longer generating events as of ${eventTimestamp}&lt;/#if&gt;&quot; }  Example 2 <a class="read-more" href="/alerts-notifications/notifications/customize-notification-payloads/webhook-payloads/">&raquo;</a></p>
+{ &quot;message_type&quot;:&quot;&lt;#if payloadType == &quot;event&quot;&gt;${eventCategory.name}&lt;/#if&gt;&lt;#if payloadType == &quot;event_cleared&quot;&gt;RECOVERY&lt;/#if&gt;&quot;, &quot;entity_id&quot;:&quot;${elementId}&quot;, &quot;entity_display_name&quot;:&quot;${elementName}&quot;, &quot;state_message&quot;:&quot;&lt;#if payloadType == &quot;event&quot;&gt; [${elementName}] [${policyName}] [${eventTimestamp}] : ${policyDescription}&lt;/#if&gt;&lt;#if payloadType == &quot;event_cleared&quot;&gt;The policy ${policyName} has CLEARED for ${elementName} and is no longer generating events as of ${eventTimestamp}&lt;/#if&gt;&quot; }  Example 2</p>
     </section>
     <footer class=" footline" >
          
@@ -2144,11 +2219,11 @@ To create a customized webhook payload:
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/webhook/">webhook</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#webhook/">#webhook</a>
             
         
 
@@ -2160,9 +2235,10 @@ To create a customized webhook payload:
         <h2 class="post-title"><a href="/alerts-notifications/notifications/notifications-webhooks/">Webhooks Notifications</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>There are two main uses for webhooks: pushing data into metricly (inbound) and pulling data like notifications out (outbound).
  Inbound: Achieved via POST URL that can be found on the Webhook integration card. Outbound: Used by several of our notification integrations and accessible through the Webhook GET API endpoint.  For a great example of an inbound webhook usecase, see how we pushed CloudWatch Logs into Metricly.
-When using the outbound method, you can customize the JSON payload using the freemarker markup language from Account &gt; Notifications &gt; Webhook. <a class="read-more" href="/alerts-notifications/notifications/notifications-webhooks/">&raquo;</a></p>
+When using the outbound method, you can customize the JSON payload using the freemarker markup language from Account &gt; Notifications &gt; Webhook.</p>
     </section>
     <footer class=" footline" >
          
@@ -2171,11 +2247,11 @@ When using the outbound method, you can customize the JSON payload using the fre
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/webhooks/">webhooks</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#webhooks/">#webhooks</a>
             
         
 
@@ -2187,7 +2263,8 @@ When using the outbound method, you can customize the JSON payload using the fre
         <h2 class="post-title"><a href="/alerts-notifications/checks/windows-checks/">Windows Checks</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Enable Windows Checks  Make sure the Windows agent is installed. Metricly checks can be enabled via the configuration files included with the agent. All checks configuration files for the Windows agent can be found in C:/Program Files (x86)/CollectdWin/conf/ or C:/Program Files/CollectdWin/conf/ (depending on the version of windows). Simply change the enable setting for the ReadSystemChecks from false to true in the CollectdWin.config file to enable the system checks. To configure the checks, edit the ReadSystemChecks. <a class="read-more" href="/alerts-notifications/checks/windows-checks/">&raquo;</a></p>
+        
+        <p>Enable Windows Checks  Make sure the Windows agent is installed. Metricly checks can be enabled via the configuration files included with the agent. All checks configuration files for the Windows agent can be found in C:/Program Files (x86)/CollectdWin/conf/ or C:/Program Files/CollectdWin/conf/ (depending on the version of windows). Simply change the enable setting for the ReadSystemChecks from false to true in the CollectdWin.config file to enable the system checks. To configure the checks, edit the ReadSystemChecks.</p>
     </section>
     <footer class=" footline" >
          
@@ -2196,13 +2273,13 @@ When using the outbound method, you can customize the JSON payload using the fre
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/checks/">checks</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#checks/">#checks</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
         
 
@@ -2214,8 +2291,9 @@ When using the outbound method, you can customize the JSON payload using the fre
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/windows-policies/">Windows Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Policy names are prefixed with Windows –
-    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated Disk Latency 15 min physical_disk._Total.avg_sec_per_read has an upper baseline deviation physical_disk._Total.avg_sec_per_write has an upper baseline deviation  WARNING This policy will generate a WARNING event when both disk read and write times are higher than their expected baselines   Elevated MemoryUtilization 10 min metricly. <a class="read-more" href="/alerts-notifications/policies/default-policies/windows-policies/">&raquo;</a></p>
+   Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated Disk Latency 15 min physical_disk._Total.avg_sec_per_read has an upper baseline deviation physical_disk._Total.avg_sec_per_write has an upper baseline deviation  WARNING This policy will generate a WARNING event when both disk read and write times are higher than their expected baselines   Elevated MemoryUtilization 10 min metricly.</p>
     </section>
     <footer class=" footline" >
          
@@ -2224,15 +2302,15 @@ When using the outbound method, you can customize the JSON payload using the fre
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
         
 
@@ -2255,49 +2333,30 @@ When using the outbound method, you can customize the JSON payload using the fre
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"> <i class="fa fa-chevron-left"></i><label>Resource Utilization</label></a>
-    <a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"><span><i class="icon-previous"></i> Previous</span><label>Resource Utilization</label></a>
+    <a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:23 EST">
-<title>Integrations :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T17:43:25 EET">
+<title>#Integrations :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/integrations/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Integrations
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Integrations</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Integrations</h1>
+  
+
+
+
     
     
     
@@ -1975,7 +2043,8 @@
         <h2 class="post-title"><a href="/integrations/microsoft-iis/microsoft-iis-metrics/">Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>   Friendly Name FQN Description     Get Requests/sec Web_get_requests_per_sec The number of GET requests made per second.   Post Requests/sec Web_post_requests_per_sec The number of POST requests made per second.   Current Connections Web_current_connections The number of connections currently established with the web service.   Connection Attempts/sec Web_connect_attempts_per_sec The number of connection attempts per second.     <a class="read-more" href="/integrations/microsoft-iis/microsoft-iis-metrics/">&raquo;</a></p>
+        
+        <p>   Friendly Name FQN Description     Get Requests/sec Web_get_requests_per_sec The number of GET requests made per second.   Post Requests/sec Web_post_requests_per_sec The number of POST requests made per second.   Current Connections Web_current_connections The number of connections currently established with the web service.   Connection Attempts/sec Web_connect_attempts_per_sec The number of connection attempts per second.    </p>
     </section>
     <footer class=" footline" >
          
@@ -1984,11 +2053,11 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/microsoft-iis/">microsoft iis</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#microsoft-iis/">#microsoft iis</a>
             
         
 
@@ -2000,7 +2069,8 @@
         <h2 class="post-title"><a href="/integrations/microsoft-net/microsoft-net-metrics/">Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Friendly Name FQN Description     Exceptions Thrown/sec CLR_count_exceptions_thrown The number of exceptions thrown per second. This includes both .NET exceptions and unmanaged exceptions that are converted into .NET exceptions.   % Time in Garbage Collection CLR_percent_time_in_GC The percentage of elapsed time spent performing garbage collection since the last garbage collection cycle.   Application Restarts ASP_application_restarts The number of times an application has been restarted during the server’s lifetime. <a class="read-more" href="/integrations/microsoft-net/microsoft-net-metrics/">&raquo;</a></p>
+        
+        <p>Friendly Name FQN Description     Exceptions Thrown/sec CLR_count_exceptions_thrown The number of exceptions thrown per second. This includes both .NET exceptions and unmanaged exceptions that are converted into .NET exceptions.   % Time in Garbage Collection CLR_percent_time_in_GC The percentage of elapsed time spent performing garbage collection since the last garbage collection cycle.   Application Restarts ASP_application_restarts The number of times an application has been restarted during the server’s lifetime.</p>
     </section>
     <footer class=" footline" >
          
@@ -2009,11 +2079,11 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/microsoft-net/">microsoft net</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#microsoft-net/">#microsoft net</a>
             
         
 
@@ -2025,7 +2095,8 @@
         <h2 class="post-title"><a href="/integrations/microsoft-sql/microsoft-sql-metrics/">Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Category Instance Fully Qualified Name (FQN) Description     Process sqlserver sql_server.percent_processor_time The percentage of time the processor is busy.   General Statistics N/A sql_server.user_connections The number of users currently connected to the SQL Server.   General Statistics N/A sql_server.processes_blocked The number of processes that are blocked.   Locks _Total sql_server.total_lock_waits_per_sec The number of locks per second that had to wait for resources. <a class="read-more" href="/integrations/microsoft-sql/microsoft-sql-metrics/">&raquo;</a></p>
+        
+        <p>Collected    Category Instance Fully Qualified Name (FQN) Description     Process sqlserver sql_server.percent_processor_time The percentage of time the processor is busy.   General Statistics N/A sql_server.user_connections The number of users currently connected to the SQL Server.   General Statistics N/A sql_server.processes_blocked The number of processes that are blocked.   Locks _Total sql_server.total_lock_waits_per_sec The number of locks per second that had to wait for resources.</p>
     </section>
     <footer class=" footline" >
          
@@ -2034,11 +2105,11 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/microsoft-sql/">microsoft sql</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#microsoft-sql/">#microsoft sql</a>
             
         
 
@@ -2050,7 +2121,8 @@
         <h2 class="post-title"><a href="/integrations/mongodb/mongodb-metrics/">Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Category Instance Fully Qualified Name (FQN) Description     Process sqlserver sql_server.percent_processor_time The percentage of time the processor is busy.   General Statistics N/A sql_server.user_connections The number of users currently connected to the SQL Server.   General Statistics N/A sql_server.processes_blocked The number of processes that are blocked.   Locks _Total sql_server.total_lock_waits_per_sec The number of locks per second that had to wait for resources. <a class="read-more" href="/integrations/mongodb/mongodb-metrics/">&raquo;</a></p>
+        
+        <p>Category Instance Fully Qualified Name (FQN) Description     Process sqlserver sql_server.percent_processor_time The percentage of time the processor is busy.   General Statistics N/A sql_server.user_connections The number of users currently connected to the SQL Server.   General Statistics N/A sql_server.processes_blocked The number of processes that are blocked.   Locks _Total sql_server.total_lock_waits_per_sec The number of locks per second that had to wait for resources.</p>
     </section>
     <footer class=" footline" >
          
@@ -2059,11 +2131,11 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/mongodb/">mongodb</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#mongodb/">#mongodb</a>
             
         
 
@@ -2075,7 +2147,8 @@
         <h2 class="post-title"><a href="/integrations/mysql/mysql-metrics/">Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Description Type Units Statistic* Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     The total number of bytes received by the server over the interval. counter bytes  0 none none yes yes no   The total number of bytes sent by the server over the interval. counter bytes  0 none none yes yes no   The total number of connection attempts made to the server over theprevious interval. <a class="read-more" href="/integrations/mysql/mysql-metrics/">&raquo;</a></p>
+        
+        <p>Collected    Description Type Units Statistic* Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     The total number of bytes received by the server over the interval. counter bytes  0 none none yes yes no   The total number of bytes sent by the server over the interval. counter bytes  0 none none yes yes no   The total number of connection attempts made to the server over theprevious interval.</p>
     </section>
     <footer class=" footline" >
          
@@ -2084,11 +2157,11 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/mysql/">mysql</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#mysql/">#mysql</a>
             
         
 
@@ -2100,7 +2173,8 @@
         <h2 class="post-title"><a href="/integrations/ngnix/ngnix-metrics/">Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     nginx.act_reads The average number of active connections that were reading during theprior interval. average count 0 none none yes yes no   nginx.act_waits The average number of active connections that were waiting during theprior interval. average count 0 none none yes yes no   nginx. <a class="read-more" href="/integrations/ngnix/ngnix-metrics/">&raquo;</a></p>
+        
+        <p>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     nginx.act_reads The average number of active connections that were reading during theprior interval. average count 0 none none yes yes no   nginx.act_waits The average number of active connections that were waiting during theprior interval. average count 0 none none yes yes no   nginx.</p>
     </section>
     <footer class=" footline" >
          
@@ -2109,11 +2183,11 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/ngnix/">ngnix</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#ngnix/">#ngnix</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
         
 
@@ -2125,8 +2199,9 @@
         <h2 class="post-title"><a href="/integrations/microsoft-azure/">Microsoft Azure</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p> Microsoft Azure is a cloud computing platform, similar to Amazon Web Services. With Azure integration in Metricly, you can monitor the performance of your entire cloud infrastructure. Metricly requires Reader role permissions of your Azure environment, which can be granted using the Owner or User Access Administrator roles.
-Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic Metrics   Filter Elements    <a class="read-more" href="/integrations/microsoft-azure/">&raquo;</a></p>
+Related Topics Azure InstallationAzure MetricsEnable Guest OS Diagnostic MetricsFilter Elements</p>
     </section>
     <footer class=" footline" >
          
@@ -2135,11 +2210,11 @@ Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/microsoft/">microsoft</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#microsoft/">#microsoft</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/azure/">azure</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#azure/">#azure</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2151,8 +2226,9 @@ Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic 
         <h2 class="post-title"><a href="/integrations/microsoft-iis/">Microsoft IIS</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Metricly can monitor the performance of your IIS server(s) using our Windows Agent. Our Windows agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes.
-Prerequisites The Windows Agent is required. If you need to disable the Windows integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Windows under the Integration column. <a class="read-more" href="/integrations/microsoft-iis/">&raquo;</a></p>
+Prerequisites The Windows Agent is required. If you need to disable the Windows integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Windows under the Integration column.</p>
     </section>
     <footer class=" footline" >
          
@@ -2161,9 +2237,9 @@ Prerequisites The Windows Agent is required. If you need to disable the Windows 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/microsoft-iis/">microsoft iis</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#microsoft-iis/">#microsoft iis</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2175,9 +2251,10 @@ Prerequisites The Windows Agent is required. If you need to disable the Windows 
         <h2 class="post-title"><a href="/integrations/microsoft-net/">Microsoft NET</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Microsoft .NET Framework metrics come packaged with the Metricly Windows Agent. Our Windows agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes.
 Configure There’s no additional configuration necessary for the Microsoft .NET Framework if you’ve already installed the Windows agent unless you want to add additional custom metrics to supplement the default collected metrics.
-1. Add Custom Metrics  Open the Add Counters window Open perfmon (Performance Monitor) on your computer. <a class="read-more" href="/integrations/microsoft-net/">&raquo;</a></p>
+1. Add Custom Metrics  Open the Add Counters window Open perfmon (Performance Monitor) on your computer.</p>
     </section>
     <footer class=" footline" >
          
@@ -2186,9 +2263,9 @@ Configure There’s no additional configuration necessary for the Microsoft .NET
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/microsoft-net/">microsoft net</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#microsoft-net/">#microsoft net</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2200,8 +2277,9 @@ Configure There’s no additional configuration necessary for the Microsoft .NET
         <h2 class="post-title"><a href="/integrations/microsoft-sql/">Microsoft SQL</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Microsoft SQL Server metrics come packaged with the Metricly Windows agent. Our Windows agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes. For more information on the Agent itself as well as any plugins available, see the Windows Agent page.
-Configuration There’s no additional configuration necessary for the Microsoft SQL Server if you’ve already installed the Windows agent unless you want to add additional custom metrics to supplement the default collected metrics. <a class="read-more" href="/integrations/microsoft-sql/">&raquo;</a></p>
+Configuration There’s no additional configuration necessary for the Microsoft SQL Server if you’ve already installed the Windows agent unless you want to add additional custom metrics to supplement the default collected metrics.</p>
     </section>
     <footer class=" footline" >
          
@@ -2210,9 +2288,9 @@ Configuration There’s no additional configuration necessary for the Microsoft 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/microsoft-sql/">microsoft sql</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#microsoft-sql/">#microsoft sql</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2237,49 +2315,30 @@ Configuration There’s no additional configuration necessary for the Microsoft 
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"> <i class="fa fa-chevron-left"></i><label>Resource Utilization</label></a>
-    <a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"><span><i class="icon-previous"></i> Previous</span><label>Resource Utilization</label></a>
+    <a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

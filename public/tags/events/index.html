@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:22 EST">
-<title>Events :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T17:43:24 EET">
+<title>#Events :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/events/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Events
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Events</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Events</h1>
+  
+
+
+
     
     
     
@@ -1973,8 +2041,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/">Alerts &amp; Notifications</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>New to Metricly? Use this page as an overview for the features related to Alerts, Events, Policies, and Notifications. For a more technical walkthrough on each, see our related articles.
-Alerts Alerts are a continuous series of events. They group anomalous behavior and enable you to view open (active) or closed (inactive) incidents. The Open Policies list is the first you see when navigating to the Alerts menu. This list is updated every 30 seconds. <a class="read-more" href="/alerts-notifications/">&raquo;</a></p>
+Alerts Alerts are a continuous series of events. They group anomalous behavior and enable you to view open (active) or closed (inactive) incidents. The Open Policies list is the first you see when navigating to the Alerts menu. This list is updated every 30 seconds.</p>
     </section>
     <footer class=" footline" >
          
@@ -1983,13 +2052,13 @@ Alerts Alerts are a continuous series of events. They group anomalous behavior a
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
         
 
@@ -2001,9 +2070,10 @@ Alerts Alerts are a continuous series of events. They group anomalous behavior a
         <h2 class="post-title"><a href="/alerts-notifications/alerts-page/">Alerts Page</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>The Alerts page shows a list of all your configured policies, both enabled and disabled. It includes:
  Policy name Number of elements in scope Filters on the policy State of the policy (Enabled/Disabled) Current status (OK, Info, Warning, Critical).  This page has additional filters to display all Open and Closed policies.
- Filtering by Open will display only the policies that are currently (Now) violating a set condition(s). <a class="read-more" href="/alerts-notifications/alerts-page/">&raquo;</a></p>
+ Filtering by Open will display only the policies that are currently (Now) violating a set condition(s).</p>
     </section>
     <footer class=" footline" >
          
@@ -2012,13 +2082,13 @@ Alerts Alerts are a continuous series of events. They group anomalous behavior a
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
         
 
@@ -2030,8 +2100,9 @@ Alerts Alerts are a continuous series of events. They group anomalous behavior a
         <h2 class="post-title"><a href="/alerts-notifications/policies/choose-duration/">Choose Duration</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Duration is the consecutive length of time for which all the conditions in a policy must be met before an event or other optional notification is created. The default setting for metric condition duration is 5 minutes; the default (and only) setting for external event condition duration is real-time. Because Metricly aggregates data on five-minute cycles, the duration for metric conditions must be at least 5 minutes.
-By setting the duration of ExamplePolicy X to 10 minutes, an event will not be created in Metricly until all the conditions in ExamplePolicy X have been met for the same period of 10 consecutive minutes. <a class="read-more" href="/alerts-notifications/policies/choose-duration/">&raquo;</a></p>
+By setting the duration of ExamplePolicy X to 10 minutes, an event will not be created in Metricly until all the conditions in ExamplePolicy X have been met for the same period of 10 consecutive minutes.</p>
     </section>
     <footer class=" footline" >
          
@@ -2040,15 +2111,15 @@ By setting the duration of ExamplePolicy X to 10 minutes, an event will not be c
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/duration/">duration</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#duration/">#duration</a>
             
         
 
@@ -2060,9 +2131,10 @@ By setting the duration of ExamplePolicy X to 10 minutes, an event will not be c
         <h2 class="post-title"><a href="/alerts-notifications/policies/choose-scope/">Choose Scope</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>The scope of a policy defines which element(s) get assigned to that policy. A policy can use a combination of criterion to narrow its selection; for example, all elements tagged with region-east + EC2 as a type.
 Scope Methods When using multiple fields, an element must meet each criterion to be included in the policy’s scope.
-Name Contains or Name Excludes  Input a string of characters into the Name Contains or Name Excludes field. <a class="read-more" href="/alerts-notifications/policies/choose-scope/">&raquo;</a></p>
+Name Contains or Name Excludes  Input a string of characters into the Name Contains or Name Excludes field.</p>
     </section>
     <footer class=" footline" >
          
@@ -2071,15 +2143,15 @@ Name Contains or Name Excludes  Input a string of characters into the Name Conta
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/scope/">scope</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#scope/">#scope</a>
             
         
 
@@ -2091,7 +2163,8 @@ Name Contains or Name Excludes  Input a string of characters into the Name Conta
         <h2 class="post-title"><a href="/alerts-notifications/events/cloudwatch-events/">CloudWatch Events</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Through a combination of SNS Notifications, Metricly’s Webhook integration, and an external event conditions policy filter, you can push event logs from your AWS services to Metricly and act on them in the UI. This works across several AWS services. Once set up, these logs can be divided further on the policy level (through matching value strings in the log message and categorized by severity). Policies for your event logs can also be set up with various notifications through email, slack, and others. <a class="read-more" href="/alerts-notifications/events/cloudwatch-events/">&raquo;</a></p>
+        
+        <p>Through a combination of SNS Notifications, Metricly’s Webhook integration, and an external event conditions policy filter, you can push event logs from your AWS services to Metricly and act on them in the UI. This works across several AWS services. Once set up, these logs can be divided further on the policy level (through matching value strings in the log message and categorized by severity). Policies for your event logs can also be set up with various notifications through email, slack, and others.</p>
     </section>
     <footer class=" footline" >
          
@@ -2100,13 +2173,13 @@ Name Contains or Name Excludes  Input a string of characters into the Name Conta
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/cloudwatch/">cloudwatch</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#cloudwatch/">#cloudwatch</a>
             
         
 
@@ -2118,8 +2191,9 @@ Name Contains or Name Excludes  Input a string of characters into the Name Conta
         <h2 class="post-title"><a href="/alerts-notifications/policies/create-conditions/">Create Conditions</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>When you are creating conditions, the Policy Editor counts the number of metrics that apply to the conditions you have set. To view those metrics, click on the link. This link opens the list of matching metrics in a new tab.
-Create a Metric Condition  Navigate to Alerts &gt; New Policy &gt; Conditions &gt; Add Condition &gt; Add Metric Condition.  To edit an existing policy, Navigate to Alerts &gt; Show All Policies &gt; Click Policy Name &gt; Edit Policy &gt; Conditions &gt; Add Metric Conditions. <a class="read-more" href="/alerts-notifications/policies/create-conditions/">&raquo;</a></p>
+Create a Metric Condition  Navigate to Alerts &gt; New Policy &gt; Conditions &gt; Add Condition &gt; Add Metric Condition.  To edit an existing policy, Navigate to Alerts &gt; Show All Policies &gt; Click Policy Name &gt; Edit Policy &gt; Conditions &gt; Add Metric Conditions.</p>
     </section>
     <footer class=" footline" >
          
@@ -2128,15 +2202,15 @@ Create a Metric Condition  Navigate to Alerts &gt; New Policy &gt; Conditions &g
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/conditions/">conditions</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#conditions/">#conditions</a>
             
         
 
@@ -2148,8 +2222,9 @@ Create a Metric Condition  Navigate to Alerts &gt; New Policy &gt; Conditions &g
         <h2 class="post-title"><a href="/alerts-notifications/policies/create-external-event-conditions/">Create External Event Conditions</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>External Event conditions for policies are typically used in conjunction with Webhook integrations. See the Webhook integration setup or Webhook API documentation for more information.
- Open Policy Editor. Click Conditions. Click Add Condition, then select Add External Event Condition.  Type into the fields to create a proper filter:  Message Contains: A regex statement that attempts to match a word or phrase in the event message. Title Contains: A regex statement that attempts to match a word or phrase in the event’s title. <a class="read-more" href="/alerts-notifications/policies/create-external-event-conditions/">&raquo;</a></p>
+ Open Policy Editor. Click Conditions. Click Add Condition, then select Add External Event Condition.  Type into the fields to create a proper filter:  Message Contains: A regex statement that attempts to match a word or phrase in the event message. Title Contains: A regex statement that attempts to match a word or phrase in the event’s title.</p>
     </section>
     <footer class=" footline" >
          
@@ -2158,19 +2233,19 @@ Create a Metric Condition  Navigate to Alerts &gt; New Policy &gt; Conditions &g
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/conditions/">conditions</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#conditions/">#conditions</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/external-events/">external events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#external-events/">#external events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/webhooks/">webhooks</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#webhooks/">#webhooks</a>
             
         
 
@@ -2182,8 +2257,9 @@ Create a Metric Condition  Navigate to Alerts &gt; New Policy &gt; Conditions &g
         <h2 class="post-title"><a href="/alerts-notifications/policies/create-edit-policies/">Create or Edit a Policy</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Create, edit, delete, enable, and disable policies with the Policy Editor. You can also use Policy Editor to enable and disable notifications.
- Open the Policy Editor. Navigate to Alerts &gt; + Add New Policy. Begin crafting your policy at Step 1: Scope. You can also open an existing policy and click Edit Policy. Policies that correspond to inactive datasources cannot be edited.  The top of your policy has 3 important fields: <a class="read-more" href="/alerts-notifications/policies/create-edit-policies/">&raquo;</a></p>
+ Open the Policy Editor. Navigate to Alerts &gt; + Add New Policy. Begin crafting your policy at Step 1: Scope. You can also open an existing policy and click Edit Policy. Policies that correspond to inactive datasources cannot be edited.  The top of your policy has 3 important fields:</p>
     </section>
     <footer class=" footline" >
          
@@ -2192,13 +2268,13 @@ Create a Metric Condition  Navigate to Alerts &gt; New Policy &gt; Conditions &g
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
         
 
@@ -2210,7 +2286,8 @@ Create a Metric Condition  Navigate to Alerts &gt; New Policy &gt; Conditions &g
         <h2 class="post-title"><a href="/alerts-notifications/policies/delete-policy/">Delete a Policy</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> On the Alerts page, select the desired policy. In Policy Editor, click Delete.   <a class="read-more" href="/alerts-notifications/policies/delete-policy/">&raquo;</a></p>
+        
+        <p> On the Alerts page, select the desired policy. In Policy Editor, click Delete.  </p>
     </section>
     <footer class=" footline" >
          
@@ -2219,15 +2296,15 @@ Create a Metric Condition  Navigate to Alerts &gt; New Policy &gt; Conditions &g
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/delete/">delete</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#delete/">#delete</a>
             
         
 
@@ -2239,8 +2316,9 @@ Create a Metric Condition  Navigate to Alerts &gt; New Policy &gt; Conditions &g
         <h2 class="post-title"><a href="/alerts-notifications/policies/enable-disable-policy/">Enable or Disable a Policy</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p> On the Alerts page, select the desired policy. In Policy Editor, select or deselect the Enable Policy checkbox.  You can also enable or disable policies directly from the List and Card Policy view options.
-  <a class="read-more" href="/alerts-notifications/policies/enable-disable-policy/">&raquo;</a></p>
+</p>
     </section>
     <footer class=" footline" >
          
@@ -2249,15 +2327,15 @@ Create a Metric Condition  Navigate to Alerts &gt; New Policy &gt; Conditions &g
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/delete/">delete</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#delete/">#delete</a>
             
         
 
@@ -2280,48 +2358,29 @@ Create a Metric Condition  Navigate to Alerts &gt; New Policy &gt; Conditions &g
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

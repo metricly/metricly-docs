@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:22 EST">
-<title>Elements :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T17:43:24 EET">
+<title>#Elements :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/elements/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Elements
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Elements</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Elements</h1>
+  
+
+
+
     
     
     
@@ -1973,8 +2041,9 @@
         <h2 class="post-title"><a href="/data-visualization/dashboards/copy-dashboard/">Copy a Dashboard</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p> Copy a Dashboard A quick and easy way to create a customized dashboard is to copy a defaulted one and edit it.
- Navigate to Dashboards &gt; Select Dashboard Name. Click on  &gt; Copy.  Rename the Dashboard. Edit the widgets by clicking … &gt; Settings or Delete.   <a class="read-more" href="/data-visualization/dashboards/copy-dashboard/">&raquo;</a></p>
+ Navigate to Dashboards &gt; Select Dashboard Name. Click on &gt; Copy.  Rename the Dashboard. Edit the widgets by clicking … &gt; Settings or Delete.  </p>
     </section>
     <footer class=" footline" >
          
@@ -1983,13 +2052,13 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/dashboards/">dashboards</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#dashboards/">#dashboards</a>
             
         
 
@@ -2001,7 +2070,8 @@
         <h2 class="post-title"><a href="/data-visualization/dashboards/create-new-dashboard/">Create New Dashboard</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> Create a New Dashboard  Navigate to Dashboards on the main navigation menu. Click New Dashboard. Type a name for the dashboard. Click Save. You’ll be taken to the Widget Library, where you can add a widget.    <a class="read-more" href="/data-visualization/dashboards/create-new-dashboard/">&raquo;</a></p>
+        
+        <p> Create a New Dashboard  Navigate to Dashboards on the main navigation menu. Click New Dashboard. Type a name for the dashboard. Click Save. You’ll be taken to the Widget Library, where you can add a widget.   </p>
     </section>
     <footer class=" footline" >
          
@@ -2010,13 +2080,13 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/dashboards/">dashboards</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#dashboards/">#dashboards</a>
             
         
 
@@ -2028,7 +2098,8 @@
         <h2 class="post-title"><a href="/data-visualization/dashboards/delete-dashboard/">Delete a Dashboard</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> Via Manage Dashboards You can delete a dashboard by navigating to Dashboards &gt; Manage Dashboards and clicking  . Via Any Dashboard You can delete custom dashboards directly on their page by clicking  &gt; Delete Dashboard.  <a class="read-more" href="/data-visualization/dashboards/delete-dashboard/">&raquo;</a></p>
+        
+        <p> Via Manage Dashboards You can delete a dashboard by navigating to Dashboards &gt; Manage Dashboards and clicking . Via Any Dashboard You can delete custom dashboards directly on their page by clicking &gt; Delete Dashboard. </p>
     </section>
     <footer class=" footline" >
          
@@ -2037,13 +2108,13 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/dashboards/">dashboards</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#dashboards/">#dashboards</a>
             
         
 
@@ -2055,10 +2126,11 @@
         <h2 class="post-title"><a href="/data-visualization/dashboards/duration-refresh-intervals/">Duration &amp; Refresh Intervals</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Adjusting the dashboard’s Duration or Refresh Interval affects the data displayed in widgets on your dashboard.
 Change Duration Edit the Duration setting for the dashboard in the sub navigation menu.
  Choose a Duration (past) value. Select an Ending value (default is Now). The data then automatically reloads to reflect your changes.   Two widgets behave differently in regards to the Duration setting:
- Metric Status Widget: Current Values in Metric Status widgets are not affected by the Time Frame setting. <a class="read-more" href="/data-visualization/dashboards/duration-refresh-intervals/">&raquo;</a></p>
+ Metric Status Widget: Current Values in Metric Status widgets are not affected by the Time Frame setting.</p>
     </section>
     <footer class=" footline" >
          
@@ -2067,13 +2139,13 @@ Change Duration Edit the Duration setting for the dashboard in the sub navigatio
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/dashboards/">dashboards</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#dashboards/">#dashboards</a>
             
         
 
@@ -2085,9 +2157,10 @@ Change Duration Edit the Duration setting for the dashboard in the sub navigatio
         <h2 class="post-title"><a href="/data-visualization/inventory/inventory-element-detail/">Element Detail Panel</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>The Element Detail panel displays tabs for the metric summary, policies, and relationships associated with the selected element.
 Summary Tab The Summary tab displays a dashboard full of select widgets to highlight the most important details of the selected element.
-Policies Tab The Policies tab offers the same functionality as the Policies Page except the Policies tab only displays policies that include the selected element in the policy’s scope. Below is a picture of an EC2’s policies tab. <a class="read-more" href="/data-visualization/inventory/inventory-element-detail/">&raquo;</a></p>
+Policies Tab The Policies tab offers the same functionality as the Policies Page except the Policies tab only displays policies that include the selected element in the policy’s scope. Below is a picture of an EC2’s policies tab.</p>
     </section>
     <footer class=" footline" >
          
@@ -2096,13 +2169,13 @@ Policies Tab The Policies tab offers the same functionality as the Policies Page
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/inventory-page/">inventory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#inventory-page/">#inventory page</a>
             
         
 
@@ -2114,8 +2187,9 @@ Policies Tab The Policies tab offers the same functionality as the Policies Page
         <h2 class="post-title"><a href="/integrations/agents/ruby-agent/ruby-agent-element-tags/">Element Tags</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Send Element tags To send element tags, update the agent.yml found in the netuitived gem by uncommenting the elementTags line. This file is located at netuitived/config/agent.yml.
-Key/Value pairs should be added in the following format: name1:value1, name2:value2. <a class="read-more" href="/integrations/agents/ruby-agent/ruby-agent-element-tags/">&raquo;</a></p>
+Key/Value pairs should be added in the following format: name1:value1, name2:value2.</p>
     </section>
     <footer class=" footline" >
          
@@ -2124,15 +2198,15 @@ Key/Value pairs should be added in the following format: name1:value1, name2:val
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/ruby/">ruby</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#ruby/">#ruby</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/tags/">tags</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#tags/">#tags</a>
             
         
 
@@ -2144,8 +2218,9 @@ Key/Value pairs should be added in the following format: name1:value1, name2:val
         <h2 class="post-title"><a href="/data-visualization/dashboards/favorite-dashboard/">Favorites</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Favorited dashboards display as a drop-down list under Dashboards in the main top navigation menu.
-Favorite a Dashboard  Navigate to the Dashboard menu (or Dashboard &gt; Manage Dashboards). A list of all the dashboards available in your tenant appears. Click  next to a dashboard to favorite it.  Unfavorite a Dashboard Repeat the above process and click  to unfavorite the dashboard. This removes the dashboard from your quick drop-down list in the top navigation menu. <a class="read-more" href="/data-visualization/dashboards/favorite-dashboard/">&raquo;</a></p>
+Favorite a Dashboard  Navigate to the Dashboard menu (or Dashboard &gt; Manage Dashboards). A list of all the dashboards available in your tenant appears. Click next to a dashboard to favorite it.  Unfavorite a Dashboard Repeat the above process and click to unfavorite the dashboard. This removes the dashboard from your quick drop-down list in the top navigation menu.</p>
     </section>
     <footer class=" footline" >
          
@@ -2154,13 +2229,13 @@ Favorite a Dashboard  Navigate to the Dashboard menu (or Dashboard &gt; Manage D
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/dashboards/">dashboards</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#dashboards/">#dashboards</a>
             
         
 
@@ -2172,8 +2247,9 @@ Favorite a Dashboard  Navigate to the Dashboard menu (or Dashboard &gt; Manage D
         <h2 class="post-title"><a href="/data-visualization/inventory/">Inventory</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Your inventory is the elements that make up your environment, from your java virtual machines to your Amazon EC2s. Metricly’s Inventory Explorer allows you to view and search the elements in your inventory.
-About Elements The physical or logical components that Metricly monitors are called elements. An element can be a physical entity, such as a server or network element, a virtual entity, such as a transaction, or a business entity, such as a company traded on the stock market. <a class="read-more" href="/data-visualization/inventory/">&raquo;</a></p>
+About Elements The physical or logical components that Metricly monitors are called elements. An element can be a physical entity, such as a server or network element, a virtual entity, such as a transaction, or a business entity, such as a company traded on the stock market.</p>
     </section>
     <footer class=" footline" >
          
@@ -2182,13 +2258,13 @@ About Elements The physical or logical components that Metricly monitors are cal
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/inventory-page/">inventory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#inventory-page/">#inventory page</a>
             
         
 
@@ -2200,9 +2276,10 @@ About Elements The physical or logical components that Metricly monitors are cal
         <h2 class="post-title"><a href="/data-visualization/inventory/inventory-main-navigation/">Main Navigation</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Select Filters Contains several filters where you can search for element names, element types, tags, attributes, collectors, and more. Expand the More filter to see additional filters; select a filter to add it to the list of active filters.
 Save Filters Filters you create in the navigation panel can be saved.
- Click  SAVE. Provide a filter name and click  or hit enter. Share filter if desired via  . <a class="read-more" href="/data-visualization/inventory/inventory-main-navigation/">&raquo;</a></p>
+ Click SAVE. Provide a filter name and click or hit enter. Share filter if desired via .</p>
     </section>
     <footer class=" footline" >
          
@@ -2211,13 +2288,13 @@ Save Filters Filters you create in the navigation panel can be saved.
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/inventory-page/">inventory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#inventory-page/">#inventory page</a>
             
         
 
@@ -2229,10 +2306,11 @@ Save Filters Filters you create in the navigation panel can be saved.
         <h2 class="post-title"><a href="/integrations/aws-integration/aws-optional-config/">Optional Config</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Change Element Display Names You can change how certain elements’ names are displayed in the application to help distinguish between each instance, e.g., you have 15 EC2 instances with the same name and want to know the difference between each.
  Under the Include Types list, expand the desired type.
  Beneath the Tag Key field, click Advanced. A menu expands.
- Hover next to Element Name; an edit icon will appear. <a class="read-more" href="/integrations/aws-integration/aws-optional-config/">&raquo;</a></p>
+ Hover next to Element Name; an edit icon will appear.</p>
     </section>
     <footer class=" footline" >
          
@@ -2241,11 +2319,11 @@ Save Filters Filters you create in the navigation panel can be saved.
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/optional-config/">optional config</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#optional-config/">#optional config</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
         
 
@@ -2268,48 +2346,29 @@ Save Filters Filters you create in the navigation panel can be saved.
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

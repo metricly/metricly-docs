@@ -1,96 +1,96 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Diamond on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/diamond/</link>
-    <description>Recent content in Diamond on Metricly Docs</description>
+    <title>#Diamond on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/diamond/</link>
+    <description>Recent content in #Diamond on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/diamond/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/diamond/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CPU Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     cpu.total.guest Percentage of CPU spent running virtual CPUs for guest operatingsystems. average percent 0 none none yes no no   cpu.total.guest_nice Percentage of CPU spent running low-priority virtual CPUs for guestoperating systems. average percent 0 none none yes no no   cpu.total.idle Percentage of CPU not doing any work.</description>
     </item>
     
     <item>
       <title>Diamond (Linux) Policies</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/diamond-linux-policies/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/diamond-linux-policies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/diamond-linux-policies/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/diamond-linux-policies/</guid>
       <description>Before reading about these default policies, note that both the Elevated User CPU and Elevated System CPU policies assume that the CPU Collector is configured to collect aggregate CPU metrics, rather than per core metrics.
 It also assumes that the metrics are being normalized. This is done by setting the percore setting set to FALSE (it is TRUE by default) and the normalize setting set to TRUE (it is FALSE by default) in your configuration file.</description>
     </item>
     
     <item>
       <title>Diamond Agent</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/</guid>
       <description>Diamond’s default HTTP Post Handler can be used to send Diamond data to Metricly.
 Configuration 1. Copy the unique API key from the Diamond integration in your account  In Metricly, navigate to Integrations. Click the Diamond card. Data collection should already be enabled, and a unique API key for your account has already been generated. Copy the API key.  2. Install &amp;amp; Configure Diamond  Download and install Diamond using the instructions found here.</description>
     </item>
     
     <item>
       <title>Disk Usage Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</guid>
       <description> Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.iostat.totalreads Total reads across all disks. Computation: data.sum(‘iostat\..*\.reads)  0 none yes no no   metriclyicly.linux.iostat.totalwrites Total writes across all disks. Computation: data.sum(‘iostat\..*\.writes)  0 none yes no no    </description>
     </item>
     
     <item>
       <title>Diskspace Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</guid>
       <description> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     diskspace..byte_percentfree Percentage of free bytes. average percent 0 100 none yes no no    Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.diskspace.*.byte_percentused Percentage of disk space used. Computation: 100 – diskspace.*.byte_percentfree percent 0 100 no no yes    </description>
     </item>
     
     <item>
       <title>Load Average Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</guid>
       <description>Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.loadavg.01.normalized The is the average run queue size over the past minute, normalizedacross CPUs. Computation: attribute[‘cpus’] == null ? null : (data[‘loadavg.01’].actual /attribute[‘cpus’].value)  0 none yes no no   metriclyicly.linux.loadavg.05.normalized The is the average run queue size over the past 5 minutes, normalizedacross CPUs. Computation: attribute[‘cpus’] == null ? null : (data[‘loadavg.</description>
     </item>
     
     <item>
       <title>Memory Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/</guid>
       <description> Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.memory.utilizationpercent Under Linux, memory buffered and cached are part of memory which can beconsidered available. See the following explanation . Computation: 100 – (memory.Buffers + memory.Cached + memory.MemFree) /memory.MemTotal * 100 percent 0 100 yes yes yes    </description>
     </item>
     
     <item>
       <title>Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/</guid>
       <description> All of the metrics for the Diamond Agent can be found in this folder.
-Metrics Available  CPU Metrics   Disk Usage Metrics   Diskspace Metrics   Load Average Metrics   Memory Metrics   Network Metrics   </description>
+Metrics Available CPU MetricsDisk Usage MetricsDiskspace MetricsLoad Average MetricsMemory MetricsNetwork Metrics</description>
     </item>
     
     <item>
       <title>Network Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</guid>
       <description>Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.network.*.errors The total number of errors, both transmit and receive. Computation: network..rx_errors + network..tx_errors errors 0 none yes no no   metriclyicly.linux.network.*.packets The total number of packets, both transmitted and received. Computation: network..rx_packets + network..tx_packets packets 0 none yes yes no   metriclyicly.linux.network.*.errors.percent The percentage of errors, both transmit and receive.</description>
     </item>
     

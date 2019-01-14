@@ -219,6 +219,14 @@ jQuery(document).ready(function() {
 
     $('#top-bar a:not(:has(img)):not(.btn)').addClass('highlight');
     $('article a:not(:has(img)):not(.btn)').addClass('highlight');
+
+    //navigation icon color
+    var asideNavItem = $('#sidebar ul li.haschildren > div > a');
+    asideNavItem.hover(
+        function () {
+            $(this).find($("i[class^='icon-']")).toggleClass('blue-icon');
+        },
+    );
 });
 
 jQuery(window).on('load', function() {

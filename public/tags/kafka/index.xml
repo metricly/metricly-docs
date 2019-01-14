@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kafka on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/kafka/</link>
-    <description>Recent content in Kafka on Metricly Docs</description>
+    <title>#Kafka on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/kafka/</link>
+    <description>Recent content in #Kafka on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Kafka</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/collectors/kafka/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/collectors/kafka/</guid>
       <description>Kafka is a publish-subscribe message queuing system that’s designed like a distributed commit log. Metricly can help monitor the performance and throughput of your Kafka server using our Kafka collector for the Linux agent. Kafka, Kafka Consumer Lag, and Zookeeper metrics are all collected using this collector.
 Prerequisites The [Linux Agent][1] is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.</description>
     </item>
     
     <item>
       <title>Kafka Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/collectors/kafka/kafka-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/collectors/kafka/kafka-metrics/</guid>
       <description>Due to the sheer volume of Kafka metrics, the individual metrics won’t be documented here. Instead, this page outlines general properties for the groups of metrics.
 Properties All Metrics Share:  Statistic: average Min: 0 CORR: no UTIL: no BASE:  On for most metrics Off for metrics matching the following regexes: ^kafka.cluster.* ^kafka\.utils\..* ^kafka\.log\..*(LogEndOffset|LogStartOffset)$ ^kafka\.controller\.((?!broker-\d).).* ^kafka\.consumer_group\.((?!consumer_lag$).)*$   Metrics That End With Percent:  Unit: percent Max: 1  Metrics With Bytes.</description>
     </item>
     
     <item>
       <title>Kafka Policies</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/kafka-policies/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/kafka-policies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/kafka-policies/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/kafka-policies/</guid>
       <description>Policy names are prefixed with Kakfa –
-    Policy name Duration Condition 1 (and) Condition 2 Category Description     Depressed Number of Zookeeper Connections 30 min kafka.zookeeper.zk_num_alive_connections has a lower baseline deviation  WARNING The number of active connections to Zookeeper has been lower than expected for at least the past 30 minutes.   Elevated Consumer Lag 15 min kafka.zookeeper.consumer_groups.*.comsuler_lag has an upper baseline deviation  WARNING Consumer lag has been higher than expected for at least 15 minutes.</description>
+   Policy name Duration Condition 1 (and) Condition 2 Category Description     Depressed Number of Zookeeper Connections 30 min kafka.zookeeper.zk_num_alive_connections has a lower baseline deviation  WARNING The number of active connections to Zookeeper has been lower than expected for at least the past 30 minutes.   Elevated Consumer Lag 15 min kafka.zookeeper.consumer_groups.*.comsuler_lag has an upper baseline deviation  WARNING Consumer lag has been higher than expected for at least 15 minutes.</description>
     </item>
     
     <item>
       <title>Kafka in Docker</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-in-docker/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/collectors/kafka/kafka-in-docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-in-docker/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/collectors/kafka/kafka-in-docker/</guid>
       <description>Getting the Jolokia agent running in a Kafka container requires three additional modifications to the docker run command. To illustrate the modifications needed, we’re going to assume that your docker run command looks like this initially:
 docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=`docker-machine ip\`docker-machine active\`` --env ADVERTISED_PORT=9092 spotify/kafka  Update Docker Run Command  Make the Jolokia JAR file available to the container by passing it in as a mounted volume.</description>
     </item>

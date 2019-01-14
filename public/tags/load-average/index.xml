@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Load Average on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/load-average/</link>
-    <description>Recent content in Load Average on Metricly Docs</description>
+    <title>#Load Average on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/load-average/</link>
+    <description>Recent content in #Load Average on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/load-average/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/load-average/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Load Average Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/</guid>
       <description>Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.loadavg.01.normalized The is the average run queue size over the past minute, normalizedacross CPUs. Computation: attribute[‘cpus’] == null ? null : (data[‘loadavg.01’].actual /attribute[‘cpus’].value)  0 none yes no no   metriclyicly.linux.loadavg.05.normalized The is the average run queue size over the past 5 minutes, normalizedacross CPUs. Computation: attribute[‘cpus’] == null ? null : (data[‘loadavg.</description>
     </item>
     

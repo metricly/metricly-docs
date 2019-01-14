@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Redshift on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/redshift/</link>
-    <description>Recent content in Redshift on Metricly Docs</description>
+    <title>#Redshift on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/redshift/</link>
+    <description>Recent content in #Redshift on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/redshift/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/redshift/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Redshift Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-redshift/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-redshift/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-redshift/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-redshift/</guid>
       <description>For each Redshift cluster, two types of elements are collected:
  RedshiftCluster: Contains cluster-specific metrics as well as metrics that are averages across all nodes. RedshiftNode: Contains node-specific metrics. There will be one element per Redshift node.  The table below denotes which metrics are cluster- or node-based (or both).
 Collected    Fully Qualified Name (FQN) Cluster Node AWS Metric Statistic Units Max BASE CORR UTIL     aws.</description>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Uptime on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/uptime/</link>
-    <description>Recent content in Uptime on Metricly Docs</description>
+    <title>#Uptime on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/uptime/</link>
+    <description>Recent content in #Uptime on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/uptime/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/uptime/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Uptime Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-uptime-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/collectors/collectd/collectd-uptime-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/collectd/collectd-uptime-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/collectors/collectd/collectd-uptime-metrics/</guid>
       <description> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     uptime.uptime.value Number of seconds since the system was last booted. max seconds 0 none none yes no no    </description>
     </item>
     

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Metrics on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/</link>
+    <link>https://metriclyhelpsite.netlify.com/integrations/agents/java-agent/java-metrics/</link>
     <description>Recent content in Metrics on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/integrations/agents/java-agent/java-metrics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Collected Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/</guid>
       <description>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     *.calls The number of calls made to the method. sum count 0 none none yes no no   *.errors The number of method calls that resulted in errors. sum count 0 none none yes no no   *.time The amount of time spent executing the method totaled across all calls.</description>
     </item>
     
     <item>
       <title>Computed Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/</guid>
       <description>Computed    Fully Qualified Name (FQN) Description Statistic Units Min Max BASE CORR UTIL     netuitive.jvm.heap.utilizationpercent Percentage of the allocated heap memory that is currently in use.Computation:(Heap Used / Heap Committed) * 100 average percent 0 100 yes yes yes   netuitive.jvm.non-heap.utilizationpercent Percentage of the allocated non-heap memory that is currently in use.Computation:(Metaspace or PermGen Used + CodeCache Used / Metaspace or PermGen Committed + CodeCache Committed) * 100 average percent 0 100 yes yes yes   netuitive.</description>
     </item>
     

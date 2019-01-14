@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sqs on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/sqs/</link>
-    <description>Recent content in Sqs on Metricly Docs</description>
+    <title>#Sqs on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/sqs/</link>
+    <description>Recent content in #Sqs on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/sqs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/sqs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS SQS Policies</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-sqs/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/aws-policies-sqs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-sqs/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/aws-policies-sqs/</guid>
       <description>Policy names are prefixed with AWS SQS –
-    Policy name Duration Conditions Category Description     AWS SQS – Queue Falling Behind 2 hours metricly.aws.sqs.arrivalrate has a metric threshold &amp;gt; metricly.aws.sqs.completionrate CRITICAL The arrival rate for the queue has been greater than the completion rate for at least 2 hours. This is an indication that processing of the queue is falling behind.    </description>
+   Policy name Duration Conditions Category Description     AWS SQS – Queue Falling Behind 2 hours metricly.aws.sqs.arrivalrate has a metric threshold &amp;gt; metricly.aws.sqs.completionrate CRITICAL The arrival rate for the queue has been greater than the completion rate for at least 2 hours. This is an indication that processing of the queue is falling behind.    </description>
     </item>
     
     <item>
       <title>SQS Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-sqs/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-sqs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-sqs/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-sqs/</guid>
       <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units BASE     Approximate Age of Oldest Message aws.sqs.approximateageofoldestmessage ApproximateAgeOfOldestMessage average seconds yes   Approximate Number of Messages Delayed aws.sqs.approximatenumberofmessagesdelayed ApproximateNumberOfMessagesDelayed sum Count yes   Approximate Number of Messages Not Visible aws.sqs.approximatenumberofmessagesnotvisible ApproximateNumberOfMessagesNotVisible sum Count yes   Approximate Number of Messages Visible aws.sqs.approximatenumberofmessagesvisible ApproximateNumberOfMessagesVisible sum Count yes   Number of Empty Receives aws.</description>
     </item>
     

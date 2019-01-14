@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tomcat on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/tomcat/</link>
-    <description>Recent content in Tomcat on Metricly Docs</description>
+    <title>#Tomcat on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/tomcat/</link>
+    <description>Recent content in #Tomcat on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/tomcat/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/tomcat/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tomcat</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/tomcat/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/tomcat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/tomcat/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/tomcat/</guid>
       <description>Tomcat (also known as Apache Tomcat or Tomcat Server) is an open source Java Servlet Container. You can use Metricly’s Java agent to collect information on your Tomcat Server.
 Prerequisites  Java Agent  Configure  Navigate to the zorka.properties file. Comment out the Default collection scripts section.  # Default collection of jvm metrics # scripts = jvm.bsh  3. Uncomment the Apache Tomcat scripts section.
 # Example: Apache Tomcat configuration with CAS server scripts = jvm.</description>

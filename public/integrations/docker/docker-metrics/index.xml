@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Metrics on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/</link>
+    <link>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/</link>
     <description>Recent content in Metrics on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CPU Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-cpu-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/docker-cpu-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-cpu-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/docker-cpu-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Type Units Statistic* BASE CORR Description     cpu.cpu_usage.percpu_usage* COUNTER nanoseconds  yes no Each CPU has a separate metric which tracks the number of nanoseconds that that specific CPU has been used since the container was started.   cpu.cpu_usage.total_usage COUNTER nanoseconds  yes no This metric is the sum of all of the per-CPU usage metrics. Thus, it represents the total number of nanoseconds that all CPUs have been in use since the container was started.</description>
     </item>
     
     <item>
       <title>Computed Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-network-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/docker-network-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-network-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/docker-network-metrics/</guid>
       <description>Computed    Name FQN Computation Units Min Max BASE CORR Description     Container CPU Percent netuitive.docker.cpu.container_cpu_percent data[‘cpu.system_cpu_usage’].actual == 0 ? 0 :(data[‘cpu.cpu_usage.total_usage’].actual /data[‘cpu.system_cpu_usage’].actual) * 100 percent 0 100 yes yes The percentage of total CPU being used by the container.   Container Memory Percent netuitive.docker.cpu.container_memory_percent (data[‘memory.usage’].actual / data[‘memory.limit’].actual) * 100 percent 0 100 yes yes The amount of memory in use by the container, expressed as a percentage of the memory available to it.</description>
     </item>
     
     <item>
       <title>Memory Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-memory-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/docker-memory-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-memory-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/docker-memory-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Type Units Statistic* BASE CORR Description     memory.failcnt GAUGE count average no no A count of the number of times that the container requested memory and failed to obtain it. This value should always be 0.   memory.limit GAUGE bytes average no no The total amount of memory available to the container.   memory.max_usage GAUGE bytes average no no The maxiumum amount of memory the container has ever used.</description>
     </item>
     

@@ -1,99 +1,99 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Getting Started on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/getting-started/</link>
-    <description>Recent content in Getting Started on Metricly Docs</description>
+    <title>#Getting Started on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/getting-started/</link>
+    <description>Recent content in #Getting Started on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Add Metric to Dashboard</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/metrics/metric-add-to-dashboard/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/metrics/metric-add-to-dashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/metrics/metric-add-to-dashboard/</guid>
-      <description>Add as Single Metric Widget  Open the Metric chart sub-menu  . Click Add to Dashboard. In the Add to Dashboard window, click Dashboards and select a dashboard or type to search. Change the widget name if desired. Click Save. The widget is now available on the selected dashboard.  Add as Multi-Metric Widget  Merge as many metrics as desired. Open the Metric Chart sub-menu  . Click Add to Dashboard.</description>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/metrics/metric-add-to-dashboard/</guid>
+      <description>Add as Single Metric Widget  Open the Metric chart sub-menu . Click Add to Dashboard. In the Add to Dashboard window, click Dashboards and select a dashboard or type to search. Change the widget name if desired. Click Save. The widget is now available on the selected dashboard.  Add as Multi-Metric Widget  Merge as many metrics as desired. Open the Metric Chart sub-menu . Click Add to Dashboard.</description>
     </item>
     
     <item>
       <title>Analytics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/analytics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/analytics/</guid>
       <description>Metricly uses advanced analytics to monitor your environment and proactively notify you when problems occur. There are 3 basic data types that Metricly uses to do so:
  Raw data: Data collected from a third party integration that has not been interpreted, or aggregated, by Metricly. Because it has not been aggregated, raw data does not contribute to event creation. Aggregate data: Data collected from an integration that has been interpreted by Metricly.</description>
     </item>
     
     <item>
       <title>Baseline Bands</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/baseline-bands/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/analytics/baseline-bands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/baseline-bands/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/analytics/baseline-bands/</guid>
       <description>Baseline Bands represent the normal operating range of a metric. Metricly determines the normal operating range of a metric based on weekly patterns in the behavior of that metric.
 The image below provides an example of Baseline bands in green surrounding the actual, current value for a CPU utilization metric in black. The green band demonstrates how Metricly learns the expected behavior of the metric based on patterns in the behavior of that metric.</description>
     </item>
     
     <item>
       <title>Chart Features</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/metrics/metric-charts/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/metrics/metric-charts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/metrics/metric-charts/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/metrics/metric-charts/</guid>
       <description>Metric Charts Metric charts on the Metrics page allow you to view time-series data collected on elements in your environment. The range of data shown in metric charts corresponds to the range of data shown in the Events graph. This allows you to compare event data to the metric behavior that caused it.
 Metric Metadata Click the metric name to open the metric metadata panel.    Metadata Description     Avg The average value recorded in the last cycle.</description>
     </item>
     
     <item>
       <title>Contextual Bands</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/contextual-bands/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/analytics/contextual-bands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/contextual-bands/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/analytics/contextual-bands/</guid>
       <description>Contextual Bands represent the range of current expected values for a metric based on other correlated metrics in the learned model. In contrast to Baseline bands which look for patterns in a metric in isolation, Contextual bands take into account how the value of one metric may impact another.
 The image below provides an example of a Contextual band in purple surrounding the actual, current value for a metric called Bytes In Per Second.</description>
     </item>
     
     <item>
       <title>Copy a Dashboard</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/copy-dashboard/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/copy-dashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/copy-dashboard/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/copy-dashboard/</guid>
       <description> Copy a Dashboard A quick and easy way to create a customized dashboard is to copy a defaulted one and edit it.
- Navigate to Dashboards &amp;gt; Select Dashboard Name. Click on  &amp;gt; Copy.  Rename the Dashboard. Edit the widgets by clicking … &amp;gt; Settings or Delete.  </description>
+ Navigate to Dashboards &amp;gt; Select Dashboard Name. Click on &amp;gt; Copy.  Rename the Dashboard. Edit the widgets by clicking … &amp;gt; Settings or Delete.  </description>
     </item>
     
     <item>
       <title>Cost Explorer Widget</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/cost-explorer-widget/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/cost-explorer-widget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/cost-explorer-widget/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/cost-explorer-widget/</guid>
       <description>Options for this widget type include: period comparison, service total, and doughnut.
 The Period Comparison option enables you to select a current timeframe (day, month, 6 months, etc) and compare its previous timeframe interval. For example, the below screenshot shows a current 6 month period comparison of May 16, 2018 – November 15, 2018 and a previous 6 month interval of November 16, 2017 – May 15, 2018.</description>
     </item>
     
     <item>
       <title>Create New Dashboard</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/create-new-dashboard/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/create-new-dashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/create-new-dashboard/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/create-new-dashboard/</guid>
       <description> Create a New Dashboard  Navigate to Dashboards on the main navigation menu. Click New Dashboard. Type a name for the dashboard. Click Save. You’ll be taken to the Widget Library, where you can add a widget.   </description>
     </item>
     
     <item>
       <title>Dashboards</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/</guid>
       <description>Visualize your data in Metricly with dashboards.You can use the default, pre-packaged integration dashboards or create and customize your own using widgets. Default dashboards are not editable.
 View a Dashboard  Click on Dashboards in the main menu.
 or Navigate to Dashboards &amp;gt; Manage Dashboards.  Edit a Dashboard Editing an existing dashboard can involve managing the layout of a dashboard, changing the dashboard’s settings, or manipulating the time frame setting/refresh interval.</description>
@@ -101,19 +101,19 @@ or Navigate to Dashboards &amp;gt; Manage Dashboards.  Edit a Dashboard Editing 
     
     <item>
       <title>Delete a Dashboard</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/delete-dashboard/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/delete-dashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/delete-dashboard/</guid>
-      <description> Via Manage Dashboards You can delete a dashboard by navigating to Dashboards &amp;gt; Manage Dashboards and clicking  . Via Any Dashboard You can delete custom dashboards directly on their page by clicking  &amp;gt; Delete Dashboard. </description>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/delete-dashboard/</guid>
+      <description> Via Manage Dashboards You can delete a dashboard by navigating to Dashboards &amp;gt; Manage Dashboards and clicking . Via Any Dashboard You can delete custom dashboards directly on their page by clicking &amp;gt; Delete Dashboard. </description>
     </item>
     
     <item>
       <title>Duration &amp; Refresh Intervals</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/duration-refresh-intervals/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/duration-refresh-intervals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/duration-refresh-intervals/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/duration-refresh-intervals/</guid>
       <description>Adjusting the dashboard’s Duration or Refresh Interval affects the data displayed in widgets on your dashboard.
 Change Duration Edit the Duration setting for the dashboard in the sub navigation menu.
  Choose a Duration (past) value. Select an Ending value (default is Now). The data then automatically reloads to reflect your changes.   Two widgets behave differently in regards to the Duration setting:
@@ -122,10 +122,10 @@ Change Duration Edit the Duration setting for the dashboard in the sub navigatio
     
     <item>
       <title>Element Detail Panel</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/inventory-element-detail/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/inventory/inventory-element-detail/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/inventory-element-detail/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/inventory/inventory-element-detail/</guid>
       <description>The Element Detail panel displays tabs for the metric summary, policies, and relationships associated with the selected element.
 Summary Tab The Summary tab displays a dashboard full of select widgets to highlight the most important details of the selected element.
 Policies Tab The Policies tab offers the same functionality as the Policies Page except the Policies tab only displays policies that include the selected element in the policy’s scope. Below is a picture of an EC2’s policies tab.</description>
@@ -133,60 +133,60 @@ Policies Tab The Policies tab offers the same functionality as the Policies Page
     
     <item>
       <title>Events Metric Widget</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/events-widget/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/events-widget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/events-widget/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/events-widget/</guid>
       <description>Options for this widget type include: heatmap and ticker.</description>
     </item>
     
     <item>
       <title>Favorites</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/favorite-dashboard/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/favorite-dashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/favorite-dashboard/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/favorite-dashboard/</guid>
       <description>Favorited dashboards display as a drop-down list under Dashboards in the main top navigation menu.
-Favorite a Dashboard  Navigate to the Dashboard menu (or Dashboard &amp;gt; Manage Dashboards). A list of all the dashboards available in your tenant appears. Click  next to a dashboard to favorite it.  Unfavorite a Dashboard Repeat the above process and click  to unfavorite the dashboard. This removes the dashboard from your quick drop-down list in the top navigation menu.</description>
+Favorite a Dashboard  Navigate to the Dashboard menu (or Dashboard &amp;gt; Manage Dashboards). A list of all the dashboards available in your tenant appears. Click next to a dashboard to favorite it.  Unfavorite a Dashboard Repeat the above process and click to unfavorite the dashboard. This removes the dashboard from your quick drop-down list in the top navigation menu.</description>
     </item>
     
     <item>
       <title>Getting Started</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/getting-started/</link>
+      <link>https://metriclyhelpsite.netlify.com/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/getting-started/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/getting-started/</guid>
       <description>1. Watch Our Product Demo There’s no faster way to get acquainted with the UI than by watching the demo video. This tour covers both the Cost and Monitoring products, including topics like: the EC2 recommendation report, the Utilization Boxplot report, and the Cost report.
 2. Register an Account You’re excited to right-size your environments and lower their costs. You’ve done all your research, and you’re ready to try Metricly’s 21-day free trial.</description>
     </item>
     
     <item>
       <title>Inventory</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/inventory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/inventory/</guid>
       <description>Your inventory is the elements that make up your environment, from your java virtual machines to your Amazon EC2s. Metricly’s Inventory Explorer allows you to view and search the elements in your inventory.
 About Elements The physical or logical components that Metricly monitors are called elements. An element can be a physical entity, such as a server or network element, a virtual entity, such as a transaction, or a business entity, such as a company traded on the stock market.</description>
     </item>
     
     <item>
       <title>Main Navigation</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/inventory-main-navigation/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/inventory/inventory-main-navigation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/inventory-main-navigation/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/inventory/inventory-main-navigation/</guid>
       <description>Select Filters Contains several filters where you can search for element names, element types, tags, attributes, collectors, and more. Expand the More filter to see additional filters; select a filter to add it to the list of active filters.
 Save Filters Filters you create in the navigation panel can be saved.
- Click  SAVE. Provide a filter name and click  or hit enter. Share filter if desired via  .</description>
+ Click SAVE. Provide a filter name and click or hit enter. Share filter if desired via .</description>
     </item>
     
     <item>
       <title>Manipulate Metric Charts</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/metrics/metric-charts-manipulate/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/metrics/metric-charts-manipulate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/metrics/metric-charts-manipulate/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/metrics/metric-charts-manipulate/</guid>
       <description>Metric charts offer functionality that allow you to merge two charts together, move charts around on the Metrics page dashboard, zoom in, and drop a marker on a data point.
 Merge Metric Charts Click on the header of one metric chart and drag it on top of another chart into the green merge region. Click to unmerge the metric charts.
 Move Metric Charts Click on the header of one metric chart and drag it into the blue move region located above a different chart.</description>
@@ -194,10 +194,10 @@ Move Metric Charts Click on the header of one metric chart and drag it into the 
     
     <item>
       <title>Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/metrics/</guid>
       <description>A metric is a quantifiable measurement whose values are monitored by Metricly and used to assess the performance of an element. Metrics are always associated with one or more elements.
 Examples of metrics:
  CPU Utilization Network Bytes per Second Response Time  Collected Metrics Metricly has collected metrics for every element in the application. Policies can be created using collected metrics to determine if data is missing through alerts, and further configured to fire notifications.</description>
@@ -205,19 +205,19 @@ Examples of metrics:
     
     <item>
       <title>Multi Metric Widget</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/multi-metric-widget/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/multi-metric-widget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/multi-metric-widget/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/multi-metric-widget/</guid>
       <description>Options for this widget type include: line, area, and stacked.</description>
     </item>
     
     <item>
       <title>Page Features</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/metrics/metric-page/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/metrics/metric-page/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/metrics/metric-page/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/metrics/metric-page/</guid>
       <description>Sub Navigation Filters  Name Contains: Specific search based on name
  Search Metrics: Broad filter based on metric type, provided in tree and list form Element, Type, More: Additional expandable filter options
  Grouped By: Contains a menu of all quick groups, tags, and attributes available to Metricly. After you’ve rendered some metric charts, choose one of the groupings and Metricly will automatically group the metric charts based on your selection.</description>
@@ -225,88 +225,88 @@ Examples of metrics:
     
     <item>
       <title>Quickbar Actions</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/inventory-quickbar-actions/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/inventory/inventory-quickbar-actions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/inventory-quickbar-actions/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/inventory/inventory-quickbar-actions/</guid>
       <description>The inventory page allows you to quickly navigate through all of your elements, sort, and perform bulk actions. The Inventory Explorer displays all the elements in your environment that were processed in the last hour. Elements are removed from the elements table roughly seven hours after an associated datasource is disabled.
 Use the Quick Bar Select the elements you’d like to edit using the checkboxes on the far left of each row.</description>
     </item>
     
     <item>
       <title>Range Metric Widget</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/range-widget/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/range-widget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/range-widget/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/range-widget/</guid>
       <description>Options for this widget type include: table, graph, bar.</description>
     </item>
     
     <item>
       <title>Share a Dashboard</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/share-dashboard/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/share-dashboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/share-dashboard/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/share-dashboard/</guid>
       <description>You can configure a dashboard to be either public or private. By default, dashboards you create are private.
 Make a Dashboard Public  Navigate to the Dashboards menu. Select All Dashboards &amp;gt; My Dashboards. A list of the dashboards you have created appears.  Toggle Shared to active (green) to make the dashboard public.  Make a Dashboard Private To make a dashboard private, repeat the above steps and toggle Shared to inactive (grey).</description>
     </item>
     
     <item>
       <title>Single Metric Widget</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/alerts-widget/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/alerts-widget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/alerts-widget/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/alerts-widget/</guid>
       <description>Options for this widget type include: map, heat map, and ticker.
 The map option is currently limited to AWS integrations. Map alerts can be grouped via element or policies. See the Alerts User Guide for a full explanation of events and alerts, and their relationship to policies. </description>
     </item>
     
     <item>
       <title>Single Metric Widget</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/single-metric-widget/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/single-metric-widget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/single-metric-widget/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/single-metric-widget/</guid>
       <description>Options for this widget type include: chart, gauge, value, and time series.</description>
     </item>
     
     <item>
       <title>Sort Elements</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/inventory-sort-elements/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/inventory/inventory-sort-elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/inventory-sort-elements/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/inventory/inventory-sort-elements/</guid>
       <description>Select two or more elements and then click View Metrics to open multiple elements on the Metrics page. The Elements table initially has six columns:
  Type: Shows icon for an element’s type. You can see all the icons here. Name: Name of the element. Data Collection: The percentage of metrics that were collected in the last analytics cycle (5 minutes).If no metrics were collected, there could have been an issue with collection or too many metrics were collected, which forces Metricly to not collect any metrics.</description>
     </item>
     
     <item>
       <title>Start or Stop Maintenance</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/inventory-startstop-maintenance/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/inventory/inventory-startstop-maintenance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/inventory/inventory-startstop-maintenance/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/inventory/inventory-startstop-maintenance/</guid>
       <description>You can place elements into maintenance mode from the Inventory Explorer or via the Metricly CLI (Command Line Interface). While an element is in maintenance mode, learning for that element is disabled (i.e. no contextual or baseline bands will be displayed) and events will not be generated for the element.
  Open the Inventory Explorer. Select the check box next to as many elements as desired. Click Start or Stop Maintenance at the top of the Inventory Explorer table.</description>
     </item>
     
     <item>
       <title>Static Thresholds</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/static-thresholds/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/analytics/static-thresholds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/static-thresholds/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/analytics/static-thresholds/</guid>
       <description>Static Thresholds are unchanging levels that are compared against a metric’s current value.
 Create Static Threshold conditions in policies to use static thresholds to monitor the elements in your environment. If the value of a metric is greater than, less than, greater than or equal to, less than or equal to, equal to, or not equal to the specified level of a Static Threshold condition (depending on the operator selected), then an event is generated.</description>
     </item>
     
     <item>
       <title>Sudden Change Detection</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/sudden-change-detection/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/analytics/sudden-change-detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/sudden-change-detection/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/analytics/sudden-change-detection/</guid>
       <description>Sudden Change is a time-series metric used to analyze trends of historical data and make predictions based on past behavior.
 This process finds an expected average of activity by generating data points every 5 minutes in a sliding, one-hour window of time. It then uses this data to make predictions on the next interval.
 When the future point is actualized and falls outside the expected prediction range, that interval is defined as a sudden change event.</description>
@@ -314,40 +314,40 @@ When the future point is actualized and falls outside the expected prediction ra
     
     <item>
       <title>Table Widget</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/table-widget/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/table-widget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/table-widget/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/table-widget/</guid>
       <description>More writeup coming soon. Here&amp;rsquo;s what it looks like: </description>
     </item>
     
     <item>
       <title>Troubleshooting</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/metrics/metrics-troubleshooting/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/metrics/metrics-troubleshooting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/metrics/metrics-troubleshooting/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/metrics/metrics-troubleshooting/</guid>
       <description>Collected Metrics If you are seeing metrics that will not collect continually, there are two common scenarios: - Your agent-based (Linux, Windows) collector has metrics that are not available anymore being collected - Your agentless-based collector (AWS, Azure) is collecting metrics from a service that’s not being used, e.g., a lambda function not firing or an SQS queue is empty.
 Removing these metrics from being collected is the optimal solution.</description>
     </item>
     
     <item>
       <title>Visualization</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/</guid>
       <description>afafa</description>
     </item>
     
     <item>
       <title>Widgets</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/dashboards/widgets/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/dashboards/widgets/</guid>
       <description>This guide includes a list of all widget types available, their options, and the actions you can take. To take full advantage of widgets, you should strategize how to tag, group, and visualize the data in your environment. General knowledge on elements and the behavior of your metrics is strongly encouraged before making a custom dashboard.
-Move Widgets  Hover over the widget’s title to select. The header turns gray and your cursor is replaced with  when a widget is selected.</description>
+Move Widgets  Hover over the widget’s title to select. The header turns gray and your cursor is replaced with when a widget is selected.</description>
     </item>
     
   </channel>

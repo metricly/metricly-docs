@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:20 EST">
-<title>Alerts :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T17:43:23 EET">
+<title>#Alerts :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/alerts/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Alerts
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Alerts</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Alerts</h1>
+  
+
+
+
     
     
     
@@ -1975,7 +2043,8 @@
         <h2 class="post-title"><a href="/alerts-notifications/notifications/notifications-microsoft-teams/">Microsoft Teams Notifications</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Configuration 1. Add an Incoming Webhook in Microsoft Teams  Login to your Microsoft Teams account. Navigate to Store and search for Incoming Webhook.  Choose a Microsoft Team that will receive Metricly notifications. Click Install. Select a channel from your Microsoft team and click Set up.  Provide a name for your Webhook. You may also upload a photo at this point. Click Create. Copy the Webhook URL that is generated. <a class="read-more" href="/alerts-notifications/notifications/notifications-microsoft-teams/">&raquo;</a></p>
+        
+        <p>Configuration 1. Add an Incoming Webhook in Microsoft Teams  Login to your Microsoft Teams account. Navigate to Store and search for Incoming Webhook.  Choose a Microsoft Team that will receive Metricly notifications. Click Install. Select a channel from your Microsoft team and click Set up.  Provide a name for your Webhook. You may also upload a photo at this point. Click Create. Copy the Webhook URL that is generated.</p>
     </section>
     <footer class=" footline" >
          
@@ -1984,11 +2053,11 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/microsoft-teams/">microsoft teams</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#microsoft-teams/">#microsoft teams</a>
             
         
 
@@ -2000,8 +2069,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/mongodb-policies/">MongoDB Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Policy names are prefixed with MongoDB –
-    Policy name Duration Condition 1 (and) Condition 2 Category Description     Connections in Use Threshold Exceeded 5 min metricly.linux.mongo.connections.utilization percent has a static threshold &gt; 90%  CRITICAL More than 90% of the total connections to MongoDB are in use. You may need to scale your servers to handle the load.   Elevated Number of Queued Read Requests 30 min mongo. <a class="read-more" href="/alerts-notifications/policies/default-policies/mongodb-policies/">&raquo;</a></p>
+   Policy name Duration Condition 1 (and) Condition 2 Category Description     Connections in Use Threshold Exceeded 5 min metricly.linux.mongo.connections.utilization percent has a static threshold &gt; 90%  CRITICAL More than 90% of the total connections to MongoDB are in use. You may need to scale your servers to handle the load.   Elevated Number of Queued Read Requests 30 min mongo.</p>
     </section>
     <footer class=" footline" >
          
@@ -2010,15 +2080,15 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/mongodb/">mongoDB</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#mongodb/">#mongoDB</a>
             
         
 
@@ -2030,8 +2100,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/mute-policies/">Mute Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>This silences all attached notifications for the policies selected for a set duration. You can manually unmute a policy at any time as well.
- Select all policies you wish to mute. Click Mute Notifications. Input a mute duration and click OK. Your selected policies will remain muted until your chosen duration expires or when you manually unmute them.   <a class="read-more" href="/alerts-notifications/policies/mute-policies/">&raquo;</a></p>
+ Select all policies you wish to mute. Click Mute Notifications. Input a mute duration and click OK. Your selected policies will remain muted until your chosen duration expires or when you manually unmute them.  </p>
     </section>
     <footer class=" footline" >
          
@@ -2040,15 +2111,15 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/mute/">mute</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#mute/">#mute</a>
             
         
 
@@ -2060,8 +2131,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/notifications/">Notifications</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Notifications are optional alerts sent to another source (e.g., email, PagerDuty, OpsGenie) when an event occurs. You will only receive notifications from policies that have a notification(s) configured. While notifications are enabled by default, they will be automatically disabled if they are used in a policy and fail for a period of time.
-Using Notifications The Policy Editor Set up notifications by opening the desired policy in Policy Editor. To enable or disable existing notifications, see below. <a class="read-more" href="/alerts-notifications/notifications/">&raquo;</a></p>
+Using Notifications The Policy Editor Set up notifications by opening the desired policy in Policy Editor. To enable or disable existing notifications, see below.</p>
     </section>
     <footer class=" footline" >
          
@@ -2070,9 +2142,9 @@ Using Notifications The Policy Editor Set up notifications by opening the desire
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
         
 
@@ -2084,7 +2156,8 @@ Using Notifications The Policy Editor Set up notifications by opening the desire
         <h2 class="post-title"><a href="/alerts-notifications/notifications/notifications-opsgenie/">OpsGenie Notifications</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Configuration 1. Create a Metricly integration within OpsGenie  Log in to your OpsGenie account. Under Integrations, select Metricly. Copy the API key provided on this page to your clipboard. You will use this to set up a new OpsGenie notification in Metricly. Leave the Teams and Recipients fields as {{teams}} and {{recipients}}, respectively. This ensures that the Teams and Recipients you include in Part 2 are passed from Metricly to your OpsGenie account, and will receive alerts. <a class="read-more" href="/alerts-notifications/notifications/notifications-opsgenie/">&raquo;</a></p>
+        
+        <p>Configuration 1. Create a Metricly integration within OpsGenie  Log in to your OpsGenie account. Under Integrations, select Metricly. Copy the API key provided on this page to your clipboard. You will use this to set up a new OpsGenie notification in Metricly. Leave the Teams and Recipients fields as {{teams}} and {{recipients}}, respectively. This ensures that the Teams and Recipients you include in Part 2 are passed from Metricly to your OpsGenie account, and will receive alerts.</p>
     </section>
     <footer class=" footline" >
          
@@ -2093,11 +2166,11 @@ Using Notifications The Policy Editor Set up notifications by opening the desire
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/opsgenie/">opsgenie</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#opsgenie/">#opsgenie</a>
             
         
 
@@ -2109,7 +2182,8 @@ Using Notifications The Policy Editor Set up notifications by opening the desire
         <h2 class="post-title"><a href="/alerts-notifications/notifications/notifications-pageryduty/">PagerDuty Notifications</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Configuration 1. Create a service in PagerDuty  Log into your PagerDuty account. Navigate to Configuration &gt; Services. Click Add New Services.  Type a name for the service and select your incident settings. For Integration Type, click the Select a Tool dropdown &gt; Netuitive. Finish all other settings and click Add Service. Copy the Integration Key provided. This is needed to set up a new PagerDuty notification in Metricly. <a class="read-more" href="/alerts-notifications/notifications/notifications-pageryduty/">&raquo;</a></p>
+        
+        <p>Configuration 1. Create a service in PagerDuty  Log into your PagerDuty account. Navigate to Configuration &gt; Services. Click Add New Services.  Type a name for the service and select your incident settings. For Integration Type, click the Select a Tool dropdown &gt; Netuitive. Finish all other settings and click Add Service. Copy the Integration Key provided. This is needed to set up a new PagerDuty notification in Metricly.</p>
     </section>
     <footer class=" footline" >
          
@@ -2118,11 +2192,11 @@ Using Notifications The Policy Editor Set up notifications by opening the desire
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/slack/">slack</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#slack/">#slack</a>
             
         
 
@@ -2134,10 +2208,11 @@ Using Notifications The Policy Editor Set up notifications by opening the desire
         <h2 class="post-title"><a href="/alerts-notifications/policies/">Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>A policy is a set of conditional tests used to set custom rules for when Metricly will generate an event or other notifications. In other words, policies allow you to define various types of abnormal element behavior, then notify you when that abnormal behavior occurs.
 Use the Policy Editor to add, edit, enable, disable, or delete policies.
 A policy is made up of a scope, condition(s), duration, and notification(s).
- The Scope defines the element or elements to which a policy is applied. <a class="read-more" href="/alerts-notifications/policies/">&raquo;</a></p>
+ The Scope defines the element or elements to which a policy is applied.</p>
     </section>
     <footer class=" footline" >
          
@@ -2146,17 +2221,17 @@ A policy is made up of a scope, condition(s), duration, and notification(s).
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/conditions/">conditions</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#conditions/">#conditions</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/scope/">scope</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#scope/">#scope</a>
             
         
 
@@ -2168,8 +2243,9 @@ A policy is made up of a scope, condition(s), duration, and notification(s).
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/rabbitmq-policies/">RabbitMQ Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Policy names are prefixed with RabbitMQ –
-    Policy name Duration Conditions Category Description     Depressed Message Count 30 min rabbitmq.queue_totals.messages has a lower baseline deviation WARNING The number of messages across all queues has been lower than expected for at least the past 30 minutes.   Elevated Memory Usage 30 min rabbitmq.health.mem_used has an upper baseline deviation WARNING Memory usage has been higher than expected for at least the past 30 minutes. <a class="read-more" href="/alerts-notifications/policies/default-policies/rabbitmq-policies/">&raquo;</a></p>
+   Policy name Duration Conditions Category Description     Depressed Message Count 30 min rabbitmq.queue_totals.messages has a lower baseline deviation WARNING The number of messages across all queues has been lower than expected for at least the past 30 minutes.   Elevated Memory Usage 30 min rabbitmq.health.mem_used has an upper baseline deviation WARNING Memory usage has been higher than expected for at least the past 30 minutes.</p>
     </section>
     <footer class=" footline" >
          
@@ -2178,15 +2254,15 @@ A policy is made up of a scope, condition(s), duration, and notification(s).
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/rabbitmq/">rabbitMQ</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#rabbitmq/">#rabbitMQ</a>
             
         
 
@@ -2198,9 +2274,10 @@ A policy is made up of a scope, condition(s), duration, and notification(s).
         <h2 class="post-title"><a href="/alerts-notifications/policies/regex-guide/">Regex Guide</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Use Regex to Match Metric Conditions Regex uses all metrics that contain your input value. Typing aws.elb.httpcode.* would match both aws.elb.httpcode_backend_2xx, as well as netuitive.aws.elb.httpcodebackenderrorpercent.
  Exclude computed metrics using a ^ before the start of a metric name. Use Metric Tags to select a tag to further filter your condition.  We recommend testing any regular expressions that you create at https://regexr.com.
- Match String Match the start and end of the string contained between ^ and $. <a class="read-more" href="/alerts-notifications/policies/regex-guide/">&raquo;</a></p>
+Match String Match the start and end of the string contained between ^ and $.</p>
     </section>
     <footer class=" footline" >
          
@@ -2209,17 +2286,17 @@ A policy is made up of a scope, condition(s), duration, and notification(s).
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/conditions/">conditions</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#conditions/">#conditions</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/regex/">regex</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#regex/">#regex</a>
             
         
 
@@ -2231,8 +2308,9 @@ A policy is made up of a scope, condition(s), duration, and notification(s).
         <h2 class="post-title"><a href="/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/">SNS Payloads</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p> SNS Payloads You must have AWS SNS setup in your console to use this payload type. The below payload returns the event category when active; once the event has cleared it returns CLEAR.
-{ &quot;timestamp&quot;: &quot;${eventTimestamp}&quot;, &quot;category&quot;: &quot;&lt;#if payloadType == 'event_cleared'&gt;CLEAR&lt;#else&gt;${eventCategory.name}&lt;/#if&gt;&quot;, &quot;element&quot;: &quot;${elementFqn}&quot;, &quot;policy&quot;: &quot;${policyName}&quot; }   <a class="read-more" href="/alerts-notifications/notifications/customize-notification-payloads/freemarker-sns-payloads/">&raquo;</a></p>
+{ &quot;timestamp&quot;: &quot;${eventTimestamp}&quot;, &quot;category&quot;: &quot;&lt;#if payloadType == 'event_cleared'&gt;CLEAR&lt;#else&gt;${eventCategory.name}&lt;/#if&gt;&quot;, &quot;element&quot;: &quot;${elementFqn}&quot;, &quot;policy&quot;: &quot;${policyName}&quot; }  </p>
     </section>
     <footer class=" footline" >
          
@@ -2241,11 +2319,11 @@ A policy is made up of a scope, condition(s), duration, and notification(s).
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/sns/">sns</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#sns/">#sns</a>
             
         
 
@@ -2270,49 +2348,30 @@ A policy is made up of a scope, condition(s), duration, and notification(s).
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"> <i class="fa fa-chevron-left"></i><label>Resource Utilization</label></a>
-    <a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"><span><i class="icon-previous"></i> Previous</span><label>Resource Utilization</label></a>
+    <a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

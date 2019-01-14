@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:22 EST">
-<title>Integrations :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T17:43:25 EET">
+<title>#Integrations :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/integrations/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Integrations
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Integrations</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Integrations</h1>
+  
+
+
+
     
     
     
@@ -1975,8 +2043,9 @@
         <h2 class="post-title"><a href="/integrations/elastisearch/">Elastisearch</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Elasticsearch is a distributed, scalable search server that enables you to search through all kinds of documents. Metricly can be used to monitor the performance of your Elasticsearch server. Additional configuration options are available below the instructions.
-Configuration The Linux Agent must be installed before proceeding. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column. <a class="read-more" href="/integrations/elastisearch/">&raquo;</a></p>
+Configuration The Linux Agent must be installed before proceeding. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.</p>
     </section>
     <footer class=" footline" >
          
@@ -1985,9 +2054,9 @@ Configuration The Linux Agent must be installed before proceeding. If you need t
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elastisearch/">elastisearch</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elastisearch/">#elastisearch</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -1999,8 +2068,9 @@ Configuration The Linux Agent must be installed before proceeding. If you need t
         <h2 class="post-title"><a href="/integrations/agents/ruby-agent/ruby-agent-element-tags/">Element Tags</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Send Element tags To send element tags, update the agent.yml found in the netuitived gem by uncommenting the elementTags line. This file is located at netuitived/config/agent.yml.
-Key/Value pairs should be added in the following format: name1:value1, name2:value2. <a class="read-more" href="/integrations/agents/ruby-agent/ruby-agent-element-tags/">&raquo;</a></p>
+Key/Value pairs should be added in the following format: name1:value1, name2:value2.</p>
     </section>
     <footer class=" footline" >
          
@@ -2009,15 +2079,15 @@ Key/Value pairs should be added in the following format: name1:value1, name2:val
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/ruby/">ruby</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#ruby/">#ruby</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/tags/">tags</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#tags/">#tags</a>
             
         
 
@@ -2029,8 +2099,9 @@ Key/Value pairs should be added in the following format: name1:value1, name2:val
         <h2 class="post-title"><a href="/integrations/email/">Email Notifications</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>You can create email templates with custom messaging that are re-usable across multiple policies, or simply choose Metricly’s default email notifications. Read below for configuration steps.
-Configuration  Click your Username &gt; Notifications. Click Add Notification. Select Email for Notification Type. The following modal appears:  Choose your frequency via the Re-notify every field. Check Notify on clear if you want to be notified when the alert has ended. Click New Email to create a new email template. <a class="read-more" href="/integrations/email/">&raquo;</a></p>
+Configuration  Click your Username &gt; Notifications. Click Add Notification. Select Email for Notification Type. The following modal appears:  Choose your frequency via the Re-notify every field. Check Notify on clear if you want to be notified when the alert has ended. Click New Email to create a new email template.</p>
     </section>
     <footer class=" footline" >
          
@@ -2039,9 +2110,9 @@ Configuration  Click your Username &gt; Notifications. Click Add Notification. S
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/email/">email</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#email/">#email</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2053,8 +2124,9 @@ Configuration  Click your Username &gt; Notifications. Click Add Notification. S
         <h2 class="post-title"><a href="/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/">Enable Guest OS Diagnostic Metrics</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Azure Virtual Machines will share boot diagnostic metrics by default, which are a small subset of core metrics. To enable Guest OS diagnostic (basic) metrics that provide more information about your machine, you’ll need to follow these steps (depending on your situation):
-Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Select a virtual machine. Another window with options will open. Select Diagnostic settings. Under Configure required settings, select the checkbox next to Basic metrics. <a class="read-more" href="/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/">&raquo;</a></p>
+Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Select a virtual machine. Another window with options will open. Select Diagnostic settings. Under Configure required settings, select the checkbox next to Basic metrics.</p>
     </section>
     <footer class=" footline" >
          
@@ -2063,13 +2135,13 @@ Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Sel
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/microsoft/">microsoft</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#microsoft/">#microsoft</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/azure/">azure</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#azure/">#azure</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/optional-config/">optional config</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#optional-config/">#optional config</a>
             
         
 
@@ -2081,9 +2153,10 @@ Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Sel
         <h2 class="post-title"><a href="/integrations/agents/java-agent/java-enable-proxy/">Enable Proxy</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Enable a Proxy  Navigate to the zorka.properties file. Find the proxy section:
   netuitive.api.proxy = no netuitive.api.proxy.address = http://&lt;proxy host&gt;:&lt;proxy port&gt;  3. Change the netuitive.api.proxy line to yes.
-4. Add the correct proxy host and port to the netuitive.api.proxy.address line. <a class="read-more" href="/integrations/agents/java-agent/java-enable-proxy/">&raquo;</a></p>
+4. Add the correct proxy host and port to the netuitive.api.proxy.address line.</p>
     </section>
     <footer class=" footline" >
          
@@ -2092,11 +2165,11 @@ Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Sel
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2108,8 +2181,9 @@ Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Sel
         <h2 class="post-title"><a href="/integrations/etsy-statsd/">Etsy StatsD</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Etsy StatsD is one of the most popular StatsD libraries available. Metricly offers a backend plugin for the Etsy StatsD library that allows you to send your StatsD metric data to Metricly. We recommend using our Etsy StatsD integration if you currently have an Etsy StatsD server running and want to send your instrumented data to Metricly. For more information about Etsy StatsD, see the following documentation.
-Configuration 1. Copy API key  From the top navigation menu, click Integrations. <a class="read-more" href="/integrations/etsy-statsd/">&raquo;</a></p>
+Configuration 1. Copy API key  From the top navigation menu, click Integrations.</p>
     </section>
     <footer class=" footline" >
          
@@ -2118,9 +2192,9 @@ Configuration 1. Copy API key  From the top navigation menu, click Integrations.
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/statsd/">statsd</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#statsd/">#statsd</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2132,8 +2206,9 @@ Configuration 1. Copy API key  From the top navigation menu, click Integrations.
         <h2 class="post-title"><a href="/integrations/microsoft-azure/azure-filter-elements/">Filter Elements</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>You can filter what Azure elements are included in Metricly’s monitoring by using regex to match key-value pairs. Metricly offers opt-in (include) or opt-out (exclude) element filtering.
-Using opt-in filtering  In your Azure portal, create or choose an existing tag (key-value pair). Then, assign the tag to the Azure elements you do not want Metricly to monitor. In Metricly, navigate to your Azure integration card. Expand the element types you want to filter. <a class="read-more" href="/integrations/microsoft-azure/azure-filter-elements/">&raquo;</a></p>
+Using opt-in filtering  In your Azure portal, create or choose an existing tag (key-value pair). Then, assign the tag to the Azure elements you do not want Metricly to monitor. In Metricly, navigate to your Azure integration card. Expand the element types you want to filter.</p>
     </section>
     <footer class=" footline" >
          
@@ -2142,13 +2217,13 @@ Using opt-in filtering  In your Azure portal, create or choose an existing tag (
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/microsoft/">microsoft</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#microsoft/">#microsoft</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/azure/">azure</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#azure/">#azure</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/optional-config/">optional config</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#optional-config/">#optional config</a>
             
         
 
@@ -2160,8 +2235,9 @@ Using opt-in filtering  In your Azure portal, create or choose an existing tag (
         <h2 class="post-title"><a href="/integrations/collectors/flume/">Flume</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Flume collects and aggregates all of your log files distributed across your environment. Metricly can be used to monitor the performance of your Flume service.
-Configuration  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the FlumeCollector.conf file. Change the enabled setting to True. Update the req_host, req_port, and/or req_path settings as necessary. Save the configuration file and restart the Linux Agent.  Collector Options    Option Default Description     enabled FALSE Enable collecting Flume metrics. <a class="read-more" href="/integrations/collectors/flume/">&raquo;</a></p>
+Configuration  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the FlumeCollector.conf file. Change the enabled setting to True. Update the req_host, req_port, and/or req_path settings as necessary. Save the configuration file and restart the Linux Agent.  Collector Options    Option Default Description     enabled FALSE Enable collecting Flume metrics.</p>
     </section>
     <footer class=" footline" >
          
@@ -2170,11 +2246,11 @@ Configuration  Navigate to the collectors folder, /opt/netuitive-agent/conf/coll
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/flume/">flume</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#flume/">#flume</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2186,8 +2262,9 @@ Configuration  Navigate to the collectors folder, /opt/netuitive-agent/conf/coll
         <h2 class="post-title"><a href="/integrations/agents/ruby-agent/ruby-agent-garbage-collection/">Garbage Collection</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>The garbage collector attempts to return memory consumed by objects no longer in use by your application. Metricly can be used to collect metrics on how much time is spent in garbage collection for your Ruby applications. You should have Matz’s Ruby Interpreter (MRI) version 1.9.2 or greater or Ruby Enterprise Edition installed before enabling garbage collection metrics.
-Configure  Navigate to your application’s initialization file. Add the following call (depending on your Ruby version) to the file:  For MRI v1. <a class="read-more" href="/integrations/agents/ruby-agent/ruby-agent-garbage-collection/">&raquo;</a></p>
+Configure  Navigate to your application’s initialization file. Add the following call (depending on your Ruby version) to the file:  For MRI v1.</p>
     </section>
     <footer class=" footline" >
          
@@ -2196,11 +2273,11 @@ Configure  Navigate to your application’s initialization file. Add the followi
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/ruby/">ruby</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#ruby/">#ruby</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2212,7 +2289,8 @@ Configure  Navigate to your application’s initialization file. Add the followi
         <h2 class="post-title"><a href="/integrations/collectors/http-code-collector/">HTTP Code Collector</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>HTTP status codes are useful diagnostic tools for a website to help determine if all content on a website is being delivered properly. Enabling the HTTP code collector for your preferred website will log every status code returned by the website. The first time a status code is returned, our Linux agent will create a metric for that code in Metricly; each subsequent time the status code is returned, another metric will begin to count how many times the code has been returned. <a class="read-more" href="/integrations/collectors/http-code-collector/">&raquo;</a></p>
+        
+        <p>HTTP status codes are useful diagnostic tools for a website to help determine if all content on a website is being delivered properly. Enabling the HTTP code collector for your preferred website will log every status code returned by the website. The first time a status code is returned, our Linux agent will create a metric for that code in Metricly; each subsequent time the status code is returned, another metric will begin to count how many times the code has been returned.</p>
     </section>
     <footer class=" footline" >
          
@@ -2221,11 +2299,11 @@ Configure  Navigate to your application’s initialization file. Add the followi
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/http-code/">http code</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#http-code/">#http code</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2250,49 +2328,30 @@ Configure  Navigate to your application’s initialization file. Add the followi
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"> <i class="fa fa-chevron-left"></i><label>Resource Utilization</label></a>
-    <a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"><span><i class="icon-previous"></i> Previous</span><label>Resource Utilization</label></a>
+    <a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

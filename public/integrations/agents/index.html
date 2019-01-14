@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:19 EST">
+<meta name="revised" content="2019-01-14T17:43:23 EET">
 <title>Agents :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/integrations/agents/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a>
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </div>
         <ul>
@@ -643,28 +666,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -713,7 +736,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -851,21 +874,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1621,252 +1644,102 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/data-visualization/dashboards/">Dashboards</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/data-visualization/dashboards/copy-dashboard/" class="dd-item">
+      <li data-nav-id="/integrations/agents/ruby-agent/ruby-agent-api-options/" class="dd-item">
         <div>
-          <a href="/data-visualization/dashboards/copy-dashboard/">
-            Copy a Dashboard
+          <a href="/integrations/agents/ruby-agent/ruby-agent-api-options/">
+            API Options
           </a>
         </div>
     </li>
-      <li data-nav-id="/data-visualization/dashboards/create-new-dashboard/" class="dd-item">
+      <li data-nav-id="/integrations/agents/ruby-agent/ruby-agent-element-tags/" class="dd-item">
         <div>
-          <a href="/data-visualization/dashboards/create-new-dashboard/">
-            Create New Dashboard
+          <a href="/integrations/agents/ruby-agent/ruby-agent-element-tags/">
+            Element Tags
           </a>
         </div>
     </li>
-      <li data-nav-id="/data-visualization/dashboards/delete-dashboard/" class="dd-item">
+      <li data-nav-id="/integrations/agents/ruby-agent/ruby-agent-garbage-collection/" class="dd-item">
         <div>
-          <a href="/data-visualization/dashboards/delete-dashboard/">
-            Delete a Dashboard
+          <a href="/integrations/agents/ruby-agent/ruby-agent-garbage-collection/">
+            Garbage Collection
           </a>
         </div>
     </li>
-      <li data-nav-id="/data-visualization/dashboards/duration-refresh-intervals/" class="dd-item">
+      <li data-nav-id="/integrations/agents/ruby-agent/ruby-agent-interpret-exceptions/" class="dd-item">
         <div>
-          <a href="/data-visualization/dashboards/duration-refresh-intervals/">
-            Duration &amp; Refresh Intervals
+          <a href="/integrations/agents/ruby-agent/ruby-agent-interpret-exceptions/">
+            Interpret Exceptions
           </a>
         </div>
     </li>
-      <li data-nav-id="/data-visualization/dashboards/favorite-dashboard/" class="dd-item">
+      <li data-nav-id="/integrations/agents/ruby-agent/ruby-agent-metrics/" class="dd-item">
         <div>
-          <a href="/data-visualization/dashboards/favorite-dashboard/">
-            Favorites
+          <a href="/integrations/agents/ruby-agent/ruby-agent-metrics/">
+            Metrics
           </a>
         </div>
     </li>
-      <li data-nav-id="/data-visualization/dashboards/share-dashboard/" class="dd-item">
+      <li data-nav-id="/integrations/agents/ruby-agent/ruby-agent-options/" class="dd-item">
         <div>
-          <a href="/data-visualization/dashboards/share-dashboard/">
-            Share a Dashboard
+          <a href="/integrations/agents/ruby-agent/ruby-agent-options/">
+            Optional Config
           </a>
         </div>
-    </li>
-    <li data-nav-id="/data-visualization/dashboards/widgets/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/data-visualization/dashboards/widgets/">Widgets</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/data-visualization/dashboards/widgets/cost-explorer-widget/" class="dd-item">
-        <div>
-          <a href="/data-visualization/dashboards/widgets/cost-explorer-widget/">
-            Cost Explorer Widget
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/dashboards/widgets/events-widget/" class="dd-item">
-        <div>
-          <a href="/data-visualization/dashboards/widgets/events-widget/">
-            Events Metric Widget
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/dashboards/widgets/multi-metric-widget/" class="dd-item">
-        <div>
-          <a href="/data-visualization/dashboards/widgets/multi-metric-widget/">
-            Multi Metric Widget
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/dashboards/widgets/range-widget/" class="dd-item">
-        <div>
-          <a href="/data-visualization/dashboards/widgets/range-widget/">
-            Range Metric Widget
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/dashboards/widgets/alerts-widget/" class="dd-item">
-        <div>
-          <a href="/data-visualization/dashboards/widgets/alerts-widget/">
-            Single Metric Widget
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/dashboards/widgets/single-metric-widget/" class="dd-item">
-        <div>
-          <a href="/data-visualization/dashboards/widgets/single-metric-widget/">
-            Single Metric Widget
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/dashboards/widgets/table-widget/" class="dd-item">
-        <div>
-          <a href="/data-visualization/dashboards/widgets/table-widget/">
-            Table Widget
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/data-visualization/inventory/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/data-visualization/inventory/">Inventory</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/data-visualization/inventory/inventory-element-detail/" class="dd-item">
-        <div>
-          <a href="/data-visualization/inventory/inventory-element-detail/">
-            Element Detail Panel
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/inventory/inventory-main-navigation/" class="dd-item">
-        <div>
-          <a href="/data-visualization/inventory/inventory-main-navigation/">
-            Main Navigation
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/inventory/inventory-quickbar-actions/" class="dd-item">
-        <div>
-          <a href="/data-visualization/inventory/inventory-quickbar-actions/">
-            Quickbar Actions
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/inventory/inventory-sort-elements/" class="dd-item">
-        <div>
-          <a href="/data-visualization/inventory/inventory-sort-elements/">
-            Sort Elements
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/inventory/inventory-startstop-maintenance/" class="dd-item">
-        <div>
-          <a href="/data-visualization/inventory/inventory-startstop-maintenance/">
-            Start or Stop Maintenance
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/data-visualization/analytics/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/data-visualization/analytics/">Analytics</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/data-visualization/analytics/baseline-bands/" class="dd-item">
-        <div>
-          <a href="/data-visualization/analytics/baseline-bands/">
-            Baseline Bands
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/analytics/contextual-bands/" class="dd-item">
-        <div>
-          <a href="/data-visualization/analytics/contextual-bands/">
-            Contextual Bands
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/analytics/static-thresholds/" class="dd-item">
-        <div>
-          <a href="/data-visualization/analytics/static-thresholds/">
-            Static Thresholds
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/analytics/sudden-change-detection/" class="dd-item">
-        <div>
-          <a href="/data-visualization/analytics/sudden-change-detection/">
-            Sudden Change Detection
-          </a>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/data-visualization/metrics/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/data-visualization/metrics/">Metrics</a><i class="fa fa-angle-right fa-lg category-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/data-visualization/metrics/metric-add-to-dashboard/" class="dd-item">
-        <div>
-          <a href="/data-visualization/metrics/metric-add-to-dashboard/">
-            Add Metric to Dashboard
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/metrics/metric-charts/" class="dd-item">
-        <div>
-          <a href="/data-visualization/metrics/metric-charts/">
-            Chart Features
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/metrics/metric-charts-manipulate/" class="dd-item">
-        <div>
-          <a href="/data-visualization/metrics/metric-charts-manipulate/">
-            Manipulate Metric Charts
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/metrics/metric-page/" class="dd-item">
-        <div>
-          <a href="/data-visualization/metrics/metric-page/">
-            Page Features
-          </a>
-        </div>
-    </li>
-      <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
-        <div>
-          <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
-          </a>
-        </div>
-    </li>
-        </ul>
     </li>
         </ul>
     </li>
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1909,174 +1782,67 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option> 
-    <option value="/integrations/agents/"  selected>
-  - 
-   Agents</option> 
-    <option value="/integrations/agents/diamond-agent/" >
-  -- 
-   Diamond Agent</option>
-    <option value="/integrations/agents/java-agent/" >
-  -- 
-   Java Agent</option>
-    <option value="/integrations/agents/linux-agent/" >
-  -- 
-   Linux Agent</option>
-    <option value="/integrations/agents/ruby-agent/" >
-  -- 
-   Ruby Agent</option>
-    <option value="/integrations/agents/windows-agent/" >
-  -- 
-   Windows Agent</option>
-  
-    <option value="/integrations/aws-integration/" >
-  - 
-   AWS</option>
-    <option value="/integrations/anake/" >
-  - 
-   Anake</option>
-    <option value="/integrations/ansible/" >
-  - 
-   Ansible</option>
-    <option value="/integrations/cassandra/" >
-  - 
-   Cassandra</option>
-    <option value="/integrations/chef/" >
-  - 
-   Chef</option>
-    <option value="/integrations/collectors/" >
-  - 
-   Collectors</option>
-    <option value="/integrations/consul/" >
-  - 
-   Consul</option>
-    <option value="/integrations/docker/" >
-  - 
-   Docker</option>
-    <option value="/integrations/dropwizard/" >
-  - 
-   Dropwizard</option>
-    <option value="/integrations/elastisearch/" >
-  - 
-   Elastisearch</option>
-    <option value="/integrations/email/" >
-  - 
-   Email Notifications</option>
-    <option value="/integrations/etsy-statsd/" >
-  - 
-   Etsy StatsD</option>
-    <option value="/integrations/iris/" >
-  - 
-   Iris</option>
-    <option value="/integrations/kubernetes/" >
-  - 
-   Kubernetes</option>
-    <option value="/integrations/microsoft-azure/" >
-  - 
-   Microsoft Azure</option>
-    <option value="/integrations/microsoft-iis/" >
-  - 
-   Microsoft IIS</option>
-    <option value="/integrations/microsoft-net/" >
-  - 
-   Microsoft NET</option>
-    <option value="/integrations/microsoft-sql/" >
-  - 
-   Microsoft SQL</option>
-    <option value="/integrations/mongodb/" >
-  - 
-   MongoDB</option>
-    <option value="/integrations/mysql/" >
-  - 
-   MySQL</option>
-    <option value="/integrations/ngnix/" >
-  - 
-   NGNIX</option>
-    <option value="/integrations/nagios/" >
-  - 
-   Nagios</option>
-    <option value="/integrations/netuitive-statsd/" >
-  - 
-   Netuitive StatsD</option>
-    <option value="/integrations/nodejs/" >
-  - 
-   Node.js</option>
-    <option value="/integrations/php/" >
-  - 
-   PHP</option>
-    <option value="/integrations/postresql/" >
-  - 
-   PostreSQL</option>
-    <option value="/integrations/powerdns/" >
-  - 
-   PowerDNS</option>
-    <option value="/integrations/puppetdb/" >
-  - 
-   PuppetDB</option>
-    <option value="/integrations/python/" >
-  - 
-   Python</option>
-    <option value="/integrations/riemann/" >
-  - 
-   Riemann</option>
-    <option value="/integrations/salt/" >
-  - 
-   Salt</option>
-    <option value="/integrations/sensu/" >
-  - 
-   Sensu</option>
-    <option value="/integrations/solr/" >
-  - 
-   Solr</option>
-    <option value="/integrations/tomcat/" >
-  - 
-   Tomcat</option>
-    <option value="/integrations/webhook-integration/" >
-  - 
-   Webhook Integration</option>
-  
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+
+
+
+
+
+
+ <a href='/'></a> <span class='breadcrumb_separator'>/</span> <a href='/integrations/'>Integrations</a> <span class='breadcrumb_separator'>/</span> Agents
+
+ 
+
+ 
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
+  </div>
+
+
+<div id="body-inner">
+  
     <h1>Agents</h1>
+  
+
+
+
     
     
     
@@ -2107,57 +1873,38 @@
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/integrations/" title="Integrations"> <i class="fa fa-chevron-left"></i><label>Integrations</label></a>
-    <a class="nav nav-next" href="/integrations/agents/diamond-agent/" title="Diamond Agent" style="margin-right: 0px;"><label>Diamond Agent</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
+          
+  <div id="tags" class="cc-footer_tags">
     
-    <div class="tags"> 
-      
-        <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents">agents</a>
-      
-        <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/directory-page">directory page</a>
-      
-    </div>
+      <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents">#agents</a>
     
-
-    
-
-    
-
+      <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#directory-page">#directory page</a>
     
   </div>
 
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-prev" href="/integrations/" title="Integrations"><span><i class="icon-previous"></i> Previous</span><label>Integrations</label></a>
+    <a class="nav nav-next" href="/integrations/agents/diamond-agent/" title="Diamond Agent"><span>Next <i class="icon-next"></i></span><label>Diamond Agent</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

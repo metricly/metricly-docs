@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Knesis on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/knesis/</link>
-    <description>Recent content in Knesis on Metricly Docs</description>
+    <title>#Knesis on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/knesis/</link>
+    <description>Recent content in #Knesis on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/knesis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/knesis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Knesis Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-knesis/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-knesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-knesis/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-knesis/</guid>
       <description>Currently, Metricly only supports Kinesis Streams, but additional support for Kinesis Firehose may come in the future.
 Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.kinesis.getrecords.bytes GetRecords.Bytes average bytes zero yes yes   aws.kinesis.getrecords.iteratoragemilliseconds GetRecords.IteratorAgeMilliseconds average ms zero yes no   aws.kinesis.getrecords.latency GetRecords.Latency average ms zero yes yes   aws.kinesis.getrecords.records GetRecords.Records sum ops zero yes yes   aws.</description>
     </item>

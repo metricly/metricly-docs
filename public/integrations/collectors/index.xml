@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Collectors on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/</link>
+    <link>https://metriclyhelpsite.netlify.com/integrations/collectors/</link>
     <description>Recent content in Collectors on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/integrations/collectors/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/integrations/collectors/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

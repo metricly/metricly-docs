@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:20 EST">
-<title>Agents :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T17:43:23 EET">
+<title>#Agents :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/agents/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Agents
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Agents</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Agents</h1>
+  
+
+
+
     
     
     
@@ -1973,7 +2041,8 @@
         <h2 class="post-title"><a href="/integrations/agents/ruby-agent/ruby-agent-api-options/">API Options</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Log properties  logLocation: The absolute path of the log file. Leave this option blank to use the default location in the gem directory. logAge: Specify either the number of log files to keep or the frequency of rotation (daily, weekly, or monthly). logSize: Specify the maximum log file size (in bytes). debugLevel: Options include (in ascending order of severity) error, info, and debug.  Netuitived Connection Properties Netuitived address and port information. <a class="read-more" href="/integrations/agents/ruby-agent/ruby-agent-api-options/">&raquo;</a></p>
+        
+        <p>Log properties  logLocation: The absolute path of the log file. Leave this option blank to use the default location in the gem directory. logAge: Specify either the number of log files to keep or the frequency of rotation (daily, weekly, or monthly). logSize: Specify the maximum log file size (in bytes). debugLevel: Options include (in ascending order of severity) error, info, and debug.  Netuitived Connection Properties Netuitived address and port information.</p>
     </section>
     <footer class=" footline" >
          
@@ -1982,11 +2051,11 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/ruby/">ruby</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#ruby/">#ruby</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -1998,7 +2067,8 @@
         <h2 class="post-title"><a href="/integrations/agents/">Agents</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> <a class="read-more" href="/integrations/agents/">&raquo;</a></p>
+        
+        <p></p>
     </section>
     <footer class=" footline" >
          
@@ -2007,9 +2077,9 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/directory-page/">directory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#directory-page/">#directory page</a>
             
         
 
@@ -2021,7 +2091,8 @@
         <h2 class="post-title"><a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/">CPU Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     cpu.total.guest Percentage of CPU spent running virtual CPUs for guest operatingsystems. average percent 0 none none yes no no   cpu.total.guest_nice Percentage of CPU spent running low-priority virtual CPUs for guestoperating systems. average percent 0 none none yes no no   cpu.total.idle Percentage of CPU not doing any work. <a class="read-more" href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/">&raquo;</a></p>
+        
+        <p>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     cpu.total.guest Percentage of CPU spent running virtual CPUs for guest operatingsystems. average percent 0 none none yes no no   cpu.total.guest_nice Percentage of CPU spent running low-priority virtual CPUs for guestoperating systems. average percent 0 none none yes no no   cpu.total.idle Percentage of CPU not doing any work.</p>
     </section>
     <footer class=" footline" >
          
@@ -2030,13 +2101,13 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/diamond/">diamond</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#diamond/">#diamond</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/cpu/">cpu</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#cpu/">#cpu</a>
             
         
 
@@ -2048,7 +2119,8 @@
         <h2 class="post-title"><a href="/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/">Collected Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     *.calls The number of calls made to the method. sum count 0 none none yes no no   *.errors The number of method calls that resulted in errors. sum count 0 none none yes no no   *.time The amount of time spent executing the method totaled across all calls. <a class="read-more" href="/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/">&raquo;</a></p>
+        
+        <p>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     *.calls The number of calls made to the method. sum count 0 none none yes no no   *.errors The number of method calls that resulted in errors. sum count 0 none none yes no no   *.time The amount of time spent executing the method totaled across all calls.</p>
     </section>
     <footer class=" footline" >
          
@@ -2057,13 +2129,13 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2075,9 +2147,10 @@
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-collectors/">Collectors</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>There are three ways to configure the Linux Agent default collectors: via the BaseCollector, as a combination of individual collectors, or with just the SimpleCollector. This guide outlines their differences and how to use each; however, we encourage you to try the new SimpleCollector.
 Using the Simple Collector netuitive-diamond/src/collectors/simple
-Where the base or individual collectors include more data (which may be less useful or actionable), this SimpleCollector guarantees a cleaner streamlined experience. <a class="read-more" href="/integrations/agents/linux-agent/linux-collectors/">&raquo;</a></p>
+Where the base or individual collectors include more data (which may be less useful or actionable), this SimpleCollector guarantees a cleaner streamlined experience.</p>
     </section>
     <footer class=" footline" >
          
@@ -2086,11 +2159,11 @@ Where the base or individual collectors include more data (which may be less use
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2102,7 +2175,8 @@ Where the base or individual collectors include more data (which may be less use
         <h2 class="post-title"><a href="/integrations/collectors/">Collectors</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> <a class="read-more" href="/integrations/collectors/">&raquo;</a></p>
+        
+        <p></p>
     </section>
     <footer class=" footline" >
          
@@ -2111,11 +2185,11 @@ Where the base or individual collectors include more data (which may be less use
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/directory-page/">directory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#directory-page/">#directory page</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2127,11 +2201,12 @@ Where the base or individual collectors include more data (which may be less use
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-common-commands/">Common Commands</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> These commands may vary depending on your distro. Linux Commands  service netuitive-agent {stop|start|restart}
+        
+        <p> These commands may vary depending on your distro.Linux Commands  service netuitive-agent {stop|start|restart}
  /etc/init.d/netuitive-agent {stop|start|restart}
  initctl {stop|start|restart} netuitive-agent
  systemctl {stop|start|restart} netuitive-agent
-   <a class="read-more" href="/integrations/agents/linux-agent/linux-common-commands/">&raquo;</a></p>
+  </p>
     </section>
     <footer class=" footline" >
          
@@ -2140,11 +2215,11 @@ Where the base or individual collectors include more data (which may be less use
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/commands/">commands</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#commands/">#commands</a>
             
         
 
@@ -2156,7 +2231,8 @@ Where the base or individual collectors include more data (which may be less use
         <h2 class="post-title"><a href="/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/">Computed Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Computed    Fully Qualified Name (FQN) Description Statistic Units Min Max BASE CORR UTIL     netuitive.jvm.heap.utilizationpercent Percentage of the allocated heap memory that is currently in use.Computation:(Heap Used / Heap Committed) * 100 average percent 0 100 yes yes yes   netuitive.jvm.non-heap.utilizationpercent Percentage of the allocated non-heap memory that is currently in use.Computation:(Metaspace or PermGen Used + CodeCache Used / Metaspace or PermGen Committed + CodeCache Committed) * 100 average percent 0 100 yes yes yes   netuitive. <a class="read-more" href="/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/">&raquo;</a></p>
+        
+        <p>Computed    Fully Qualified Name (FQN) Description Statistic Units Min Max BASE CORR UTIL     netuitive.jvm.heap.utilizationpercent Percentage of the allocated heap memory that is currently in use.Computation:(Heap Used / Heap Committed) * 100 average percent 0 100 yes yes yes   netuitive.jvm.non-heap.utilizationpercent Percentage of the allocated non-heap memory that is currently in use.Computation:(Metaspace or PermGen Used + CodeCache Used / Metaspace or PermGen Committed + CodeCache Committed) * 100 average percent 0 100 yes yes yes   netuitive.</p>
     </section>
     <footer class=" footline" >
          
@@ -2165,13 +2241,13 @@ Where the base or individual collectors include more data (which may be less use
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2183,8 +2259,9 @@ Where the base or individual collectors include more data (which may be less use
         <h2 class="post-title"><a href="/integrations/agents/java-agent/java-custom-mbeans/">Custom MBeans</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>The Java agent can collect metrics from custom mbeans. We have provided a sample spring boot application that creates 2 custom mbeans with test attributes here.
-Multiple Custom MBean Diagram For a Single Custom MBean  Navigate to the zorka.properties file in your Java agent directory. Near the bottom of the file, set the attribute netuitive.api.custom.stats.mbean to the custom mbean you defined in your application  #custom mbean to collect metrics from netuitive. <a class="read-more" href="/integrations/agents/java-agent/java-custom-mbeans/">&raquo;</a></p>
+Multiple Custom MBean Diagram For a Single Custom MBean  Navigate to the zorka.properties file in your Java agent directory. Near the bottom of the file, set the attribute netuitive.api.custom.stats.mbean to the custom mbean you defined in your application  #custom mbean to collect metrics from netuitive.</p>
     </section>
     <footer class=" footline" >
          
@@ -2193,11 +2270,11 @@ Multiple Custom MBean Diagram For a Single Custom MBean  Navigate to the zorka.p
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2209,8 +2286,9 @@ Multiple Custom MBean Diagram For a Single Custom MBean  Navigate to the zorka.p
         <h2 class="post-title"><a href="/integrations/agents/diamond-agent/">Diamond Agent</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Diamond’s default HTTP Post Handler can be used to send Diamond data to Metricly.
-Configuration 1. Copy the unique API key from the Diamond integration in your account  In Metricly, navigate to Integrations. Click the Diamond card. Data collection should already be enabled, and a unique API key for your account has already been generated. Copy the API key.  2. Install &amp; Configure Diamond  Download and install Diamond using the instructions found here. <a class="read-more" href="/integrations/agents/diamond-agent/">&raquo;</a></p>
+Configuration 1. Copy the unique API key from the Diamond integration in your account  In Metricly, navigate to Integrations. Click the Diamond card. Data collection should already be enabled, and a unique API key for your account has already been generated. Copy the API key.  2. Install &amp; Configure Diamond  Download and install Diamond using the instructions found here.</p>
     </section>
     <footer class=" footline" >
          
@@ -2219,11 +2297,11 @@ Configuration 1. Copy the unique API key from the Diamond integration in your ac
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/diamond/">diamond</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#diamond/">#diamond</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2246,48 +2324,29 @@ Configuration 1. Copy the unique API key from the Diamond integration in your ac
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

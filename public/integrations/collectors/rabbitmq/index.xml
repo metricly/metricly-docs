@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rabbitMQ on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/rabbitmq/</link>
+    <link>https://metriclyhelpsite.netlify.com/integrations/collectors/rabbitmq/</link>
     <description>Recent content in rabbitMQ on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/integrations/collectors/rabbitmq/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/integrations/collectors/rabbitmq/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/rabbitmq/rabbitmq-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/collectors/rabbitmq/rabbitmq-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/rabbitmq/rabbitmq-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/collectors/rabbitmq/rabbitmq-metrics/</guid>
       <description>Collected    Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     rabbitmq.cluster.nodes GAUGE count average 0 none none no no no   rabbitmq.cluster.partitions GAUGE count average 0 none none no no no   rabbitmq.health.disk_free GAUGE bytes average 0 none none yes no no   rabbitmq.health.disk_free_limit GAUGE bytes average 0 none none no no no   rabbitmq.</description>
     </item>
     

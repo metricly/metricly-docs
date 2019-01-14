@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:22 EST">
-<title>Integrations :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T17:43:25 EET">
+<title>#Integrations :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/integrations/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Integrations
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Integrations</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Integrations</h1>
+  
+
+
+
     
     
     
@@ -1975,9 +2043,10 @@
         <h2 class="post-title"><a href="/integrations/collectors/http-collector/">HTTP Collector</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>The HTTP Collector gathers statistics from an HTTP or HTTPS connection.
 Prerequisites The Linux Agent is required before proceeding with the setup of the HTTP Collector. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
-Update the Configuration File  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. <a class="read-more" href="/integrations/collectors/http-collector/">&raquo;</a></p>
+Update the Configuration File  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors.</p>
     </section>
     <footer class=" footline" >
          
@@ -1986,11 +2055,11 @@ Update the Configuration File  Navigate to the collectors folder, /opt/netuitive
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/http/">http</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#http/">#http</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2002,9 +2071,10 @@ Update the Configuration File  Navigate to the collectors folder, /opt/netuitive
         <h2 class="post-title"><a href="/integrations/collectors/httpd/">HTTPD</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>The HTTP Collector gathers statistics from an HTTP or HTTPS connection.
 Prerequisites The Linux Agent is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
-Update the Configuration File  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. <a class="read-more" href="/integrations/collectors/httpd/">&raquo;</a></p>
+Update the Configuration File  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors.</p>
     </section>
     <footer class=" footline" >
          
@@ -2013,11 +2083,11 @@ Update the Configuration File  Navigate to the collectors folder, /opt/netuitive
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/httpd/">httpd</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#httpd/">#httpd</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2029,7 +2099,8 @@ Update the Configuration File  Navigate to the collectors folder, /opt/netuitive
         <h2 class="post-title"><a href="/integrations/collectors/collectd/collectd-interface-metrics/">Interface Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     interface-&lt;int&gt;.if_errors.rx Errors per second received. average errors/second 0 none none yes no no   interface-&lt;int&gt;.if_errors.tx Errors per second sent. average errors/second 0 none none yes no no   interface-&lt;int&gt;.if_octets.rx Bytes per second received. average bytes/second 0 none none yes no no   interface-&lt;int&gt;.if_octets.tx Bytes per second sent. <a class="read-more" href="/integrations/collectors/collectd/collectd-interface-metrics/">&raquo;</a></p>
+        
+        <p>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     interface-&lt;int&gt;.if_errors.rx Errors per second received. average errors/second 0 none none yes no no   interface-&lt;int&gt;.if_errors.tx Errors per second sent. average errors/second 0 none none yes no no   interface-&lt;int&gt;.if_octets.rx Bytes per second received. average bytes/second 0 none none yes no no   interface-&lt;int&gt;.if_octets.tx Bytes per second sent.</p>
     </section>
     <footer class=" footline" >
          
@@ -2038,15 +2109,15 @@ Update the Configuration File  Navigate to the collectors folder, /opt/netuitive
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectd/">collectd</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectd/">#collectd</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/interface/">interface</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#interface/">#interface</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2058,9 +2129,10 @@ Update the Configuration File  Navigate to the collectors folder, /opt/netuitive
         <h2 class="post-title"><a href="/integrations/agents/ruby-agent/ruby-agent-interpret-exceptions/">Interpret Exceptions</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>IF sendErrorEvents is enabled in the netuitive_rails_agent config/agent.yaml file AND actionErrorsEnabled and/or sidekiqEnabled = true, exceptions are sent to Metricly as external events.
 An Exception External event has the following tags to help you dissect the exception:
-   Tag Description     Action The action the error originated from.   Controller The name of the controller that the exception came from.   Exception The type of exception. <a class="read-more" href="/integrations/agents/ruby-agent/ruby-agent-interpret-exceptions/">&raquo;</a></p>
+   Tag Description     Action The action the error originated from.   Controller The name of the controller that the exception came from.   Exception The type of exception.</p>
     </section>
     <footer class=" footline" >
          
@@ -2069,11 +2141,11 @@ An Exception External event has the following tags to help you dissect the excep
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/ruby/">ruby</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#ruby/">#ruby</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2085,8 +2157,9 @@ An Exception External event has the following tags to help you dissect the excep
         <h2 class="post-title"><a href="/integrations/iris/">Iris</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Iris is a Java library that allows your Java applications to communicate with Metricly’s REST API. You can use Iris to send metrics from your applications to Metricly, create dashboards, tags, elements, and much more.
-Configuration  Include the proper dependency from Maven for the appropriate build manager. Invoke the REST API client interface in a central location that your various Java classes can access while ensuring you replace username and password with the appropriate values. <a class="read-more" href="/integrations/iris/">&raquo;</a></p>
+Configuration  Include the proper dependency from Maven for the appropriate build manager. Invoke the REST API client interface in a central location that your various Java classes can access while ensuring you replace username and password with the appropriate values.</p>
     </section>
     <footer class=" footline" >
          
@@ -2095,11 +2168,11 @@ Configuration  Include the proper dependency from Maven for the appropriate buil
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/iris/">iris</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#iris/">#iris</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
         
 
@@ -2111,8 +2184,9 @@ Configuration  Include the proper dependency from Maven for the appropriate buil
         <h2 class="post-title"><a href="/integrations/collectors/jmx/">JMX</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Prerequisites The Linux Agent is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
-Configuration  Download the Jolokia JVM JAR file. Move the downloaded file to the /opt/netuitive-agent/ directory. Pass the Java agent parameter into your application:  -javaagent:/opt/agent. <a class="read-more" href="/integrations/collectors/jmx/">&raquo;</a></p>
+Configuration  Download the Jolokia JVM JAR file. Move the downloaded file to the /opt/netuitive-agent/ directory. Pass the Java agent parameter into your application:  -javaagent:/opt/agent.</p>
     </section>
     <footer class=" footline" >
          
@@ -2121,11 +2195,11 @@ Configuration  Download the Jolokia JVM JAR file. Move the downloaded file to th
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/flume/">flume</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#flume/">#flume</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2137,9 +2211,10 @@ Configuration  Download the Jolokia JVM JAR file. Move the downloaded file to th
         <h2 class="post-title"><a href="/integrations/agents/java-agent/">Java Agent</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Metricly’s Java agent is a java monitoring agent with a programmable bytecode instrumentation engine that’s enabled by adding a JVM integration in Metricly. The Metricly Java integration allows Metricly to collect JVM runtime system metrics like CPU, Memory, GC, Threads and Classes Count, and application components method performance statistics, such as number of calls and execution time.
 Prerequisites Must have Java 6 Or greater.
-Configuration 1. Copy API key  From the top navigation menu, select Integrations. <a class="read-more" href="/integrations/agents/java-agent/">&raquo;</a></p>
+Configuration 1. Copy API key  From the top navigation menu, select Integrations.</p>
     </section>
     <footer class=" footline" >
          
@@ -2148,11 +2223,11 @@ Configuration 1. Copy API key  From the top navigation menu, select Integrations
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2164,8 +2239,9 @@ Configuration 1. Copy API key  From the top navigation menu, select Integrations
         <h2 class="post-title"><a href="/integrations/collectors/kafka/">Kafka</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Kafka is a publish-subscribe message queuing system that’s designed like a distributed commit log. Metricly can help monitor the performance and throughput of your Kafka server using our Kafka collector for the Linux agent. Kafka, Kafka Consumer Lag, and Zookeeper metrics are all collected using this collector.
-Prerequisites The [Linux Agent][1] is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column. <a class="read-more" href="/integrations/collectors/kafka/">&raquo;</a></p>
+Prerequisites The [Linux Agent][1] is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.</p>
     </section>
     <footer class=" footline" >
          
@@ -2174,11 +2250,11 @@ Prerequisites The [Linux Agent][1] is required before proceeding with the setup 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/kafka/">kafka</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#kafka/">#kafka</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2190,8 +2266,9 @@ Prerequisites The [Linux Agent][1] is required before proceeding with the setup 
         <h2 class="post-title"><a href="/integrations/collectors/kafka/kafka-metrics/">Kafka Metrics</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Due to the sheer volume of Kafka metrics, the individual metrics won’t be documented here. Instead, this page outlines general properties for the groups of metrics.
-Properties All Metrics Share:  Statistic: average Min: 0 CORR: no UTIL: no BASE:  On for most metrics Off for metrics matching the following regexes: ^kafka.cluster.* ^kafka\.utils\..* ^kafka\.log\..*(LogEndOffset|LogStartOffset)$ ^kafka\.controller\.((?!broker-\d).).* ^kafka\.consumer_group\.((?!consumer_lag$).)*$   Metrics That End With Percent:  Unit: percent Max: 1  Metrics With Bytes. <a class="read-more" href="/integrations/collectors/kafka/kafka-metrics/">&raquo;</a></p>
+Properties All Metrics Share:  Statistic: average Min: 0 CORR: no UTIL: no BASE:  On for most metrics Off for metrics matching the following regexes: ^kafka.cluster.* ^kafka\.utils\..* ^kafka\.log\..*(LogEndOffset|LogStartOffset)$ ^kafka\.controller\.((?!broker-\d).).* ^kafka\.consumer_group\.((?!consumer_lag$).)*$   Metrics That End With Percent:  Unit: percent Max: 1  Metrics With Bytes.</p>
     </section>
     <footer class=" footline" >
          
@@ -2200,13 +2277,13 @@ Properties All Metrics Share:  Statistic: average Min: 0 CORR: no UTIL: no BASE:
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/kafka/">kafka</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#kafka/">#kafka</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
         
 
@@ -2218,8 +2295,9 @@ Properties All Metrics Share:  Statistic: average Min: 0 CORR: no UTIL: no BASE:
         <h2 class="post-title"><a href="/integrations/collectors/kafka/kafka-in-docker/">Kafka in Docker</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Getting the Jolokia agent running in a Kafka container requires three additional modifications to the docker run command. To illustrate the modifications needed, we’re going to assume that your docker run command looks like this initially:
-docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=`docker-machine ip\`docker-machine active\`` --env ADVERTISED_PORT=9092 spotify/kafka  Update Docker Run Command  Make the Jolokia JAR file available to the container by passing it in as a mounted volume. <a class="read-more" href="/integrations/collectors/kafka/kafka-in-docker/">&raquo;</a></p>
+docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=`docker-machine ip\`docker-machine active\`` --env ADVERTISED_PORT=9092 spotify/kafka  Update Docker Run Command  Make the Jolokia JAR file available to the container by passing it in as a mounted volume.</p>
     </section>
     <footer class=" footline" >
          
@@ -2228,13 +2306,13 @@ docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=`docker-machine ip\`d
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/kafka/">kafka</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#kafka/">#kafka</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/docker/">docker</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#docker/">#docker</a>
             
         
 
@@ -2259,49 +2337,30 @@ docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=`docker-machine ip\`d
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"> <i class="fa fa-chevron-left"></i><label>Resource Utilization</label></a>
-    <a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"><span><i class="icon-previous"></i> Previous</span><label>Resource Utilization</label></a>
+    <a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

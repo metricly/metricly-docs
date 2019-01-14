@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fqns on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/fqns/</link>
-    <description>Recent content in Fqns on Metricly Docs</description>
+    <title>#Fqns on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/fqns/</link>
+    <description>Recent content in #Fqns on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/fqns/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/fqns/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Optional Config</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/linux-agent/linux-optional-config/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-optional-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/linux-agent/linux-optional-config/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-optional-config/</guid>
       <description>Changing Element Display Names You can change the display name of certain elements to help distinguish between each instance.
  Navigate to Integrations &amp;gt; Linux Integration. Click Advanced; a menu expands.  Click the Element Name field to edit it. Type the desired name into the field.  An element name of ${meta.originalName} would resolve to whatever name comes in with the original element payload before it would be replaced with the optional element name template.</description>
     </item>

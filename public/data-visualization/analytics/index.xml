@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Analytics on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/</link>
+    <link>https://metriclyhelpsite.netlify.com/data-visualization/analytics/</link>
     <description>Recent content in Analytics on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/data-visualization/analytics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Baseline Bands</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/baseline-bands/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/analytics/baseline-bands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/baseline-bands/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/analytics/baseline-bands/</guid>
       <description>Baseline Bands represent the normal operating range of a metric. Metricly determines the normal operating range of a metric based on weekly patterns in the behavior of that metric.
 The image below provides an example of Baseline bands in green surrounding the actual, current value for a CPU utilization metric in black. The green band demonstrates how Metricly learns the expected behavior of the metric based on patterns in the behavior of that metric.</description>
     </item>
     
     <item>
       <title>Contextual Bands</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/contextual-bands/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/analytics/contextual-bands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/contextual-bands/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/analytics/contextual-bands/</guid>
       <description>Contextual Bands represent the range of current expected values for a metric based on other correlated metrics in the learned model. In contrast to Baseline bands which look for patterns in a metric in isolation, Contextual bands take into account how the value of one metric may impact another.
 The image below provides an example of a Contextual band in purple surrounding the actual, current value for a metric called Bytes In Per Second.</description>
     </item>
     
     <item>
       <title>Static Thresholds</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/static-thresholds/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/analytics/static-thresholds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/static-thresholds/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/analytics/static-thresholds/</guid>
       <description>Static Thresholds are unchanging levels that are compared against a metric’s current value.
 Create Static Threshold conditions in policies to use static thresholds to monitor the elements in your environment. If the value of a metric is greater than, less than, greater than or equal to, less than or equal to, equal to, or not equal to the specified level of a Static Threshold condition (depending on the operator selected), then an event is generated.</description>
     </item>
     
     <item>
       <title>Sudden Change Detection</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/sudden-change-detection/</link>
+      <link>https://metriclyhelpsite.netlify.com/data-visualization/analytics/sudden-change-detection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/data-visualization/analytics/sudden-change-detection/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/data-visualization/analytics/sudden-change-detection/</guid>
       <description>Sudden Change is a time-series metric used to analyze trends of historical data and make predictions based on past behavior.
 This process finds an expected average of activity by generating data points every 5 minutes in a sliding, one-hour window of time. It then uses this data to make predictions on the next interval.
 When the future point is actualized and falls outside the expected prediction range, that interval is defined as a sudden change event.</description>

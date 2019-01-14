@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:20 EST">
-<title>Alerts :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T17:43:23 EET">
+<title>#Alerts :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/alerts/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Alerts
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Alerts</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Alerts</h1>
+  
+
+
+
     
     
     
@@ -1975,7 +2043,8 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/docker-policies/">Docker Policies</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Policy name Duration Conditions Category Description     Docker Container – CPU Throttling 15 min metricly.docker.cpu.container_throttling_percent has a static threshold &gt;0 WARNING The Docker container has had its CPU usage throttled for at least the past 15 minutes.   Docker Container – Elevated CPU Utilization 30 min metricly.docker.cpu.container_cpu_percent has an upper baseline deviation + an upper contextual deviation INFO CPU usage on the Docker container has been higher than expected for 30 minutes or longer. <a class="read-more" href="/alerts-notifications/policies/default-policies/docker-policies/">&raquo;</a></p>
+        
+        <p>Policy name Duration Conditions Category Description     Docker Container – CPU Throttling 15 min metricly.docker.cpu.container_throttling_percent has a static threshold &gt;0 WARNING The Docker container has had its CPU usage throttled for at least the past 15 minutes.   Docker Container – Elevated CPU Utilization 30 min metricly.docker.cpu.container_cpu_percent has an upper baseline deviation + an upper contextual deviation INFO CPU usage on the Docker container has been higher than expected for 30 minutes or longer.</p>
     </section>
     <footer class=" footline" >
          
@@ -1984,15 +2053,15 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/docker/">docker</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#docker/">#docker</a>
             
         
 
@@ -2004,7 +2073,8 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/elastic-search-policies/">Elasticsearch Policies</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Policy name Duration Conditions Category Description     Cluster Health Degraded to Red 15 min elasticsearch.cluster_health.status has a static threshold &lt; 1 CRITICAL The cluster health status is red which means that one or more primary shard(s) and its replica(s) is missing.   Cluster Health Degraded to Yellow 15 min elasticsearch.cluster_health.status is between 1 and 1.8 WARNING The cluster health status is yellow which means that one or more shard replica(s) is missing. <a class="read-more" href="/alerts-notifications/policies/default-policies/elastic-search-policies/">&raquo;</a></p>
+        
+        <p>Policy name Duration Conditions Category Description     Cluster Health Degraded to Red 15 min elasticsearch.cluster_health.status has a static threshold &lt; 1 CRITICAL The cluster health status is red which means that one or more primary shard(s) and its replica(s) is missing.   Cluster Health Degraded to Yellow 15 min elasticsearch.cluster_health.status is between 1 and 1.8 WARNING The cluster health status is yellow which means that one or more shard replica(s) is missing.</p>
     </section>
     <footer class=" footline" >
          
@@ -2013,15 +2083,15 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elasticsearch/">elasticsearch</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elasticsearch/">#elasticsearch</a>
             
         
 
@@ -2033,8 +2103,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/notifications/notifications-emails/">Email Notifications</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>You can create email templates with custom messaging that are re-usable across multiple policies, or simply choose Metricly’s default email notifications. Read below for configuration steps.
-Configuration  Click your Username &gt; Notifications. Click Add Notification. Select Email for Notification Type. The following modal appears:  Choose your frequency via the Re-notify every field. Check Notify on clear if you want to be notified when the alert has ended. Click New Email to create a new email template. <a class="read-more" href="/alerts-notifications/notifications/notifications-emails/">&raquo;</a></p>
+Configuration  Click your Username &gt; Notifications. Click Add Notification. Select Email for Notification Type. The following modal appears:  Choose your frequency via the Re-notify every field. Check Notify on clear if you want to be notified when the alert has ended. Click New Email to create a new email template.</p>
     </section>
     <footer class=" footline" >
          
@@ -2043,11 +2114,11 @@ Configuration  Click your Username &gt; Notifications. Click Add Notification. S
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/email/">email</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#email/">#email</a>
             
         
 
@@ -2059,9 +2130,10 @@ Configuration  Click your Username &gt; Notifications. Click Add Notification. S
         <h2 class="post-title"><a href="/alerts-notifications/notifications/customize-notification-payloads/freemarker-email-payloads/">Email Payloads</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>There are two event payload types that can be leveraged with email notification payloads: event and event_cleared. An event is generated when a policy is violating. An event_cleared is generated when a once-violating policy is no longer violating. Your custom event payloads can be setup to notify you on either type with unique messaging and details about the event.
 To create a custom event payload:
- Navigate to your Account &gt; Notifications &gt; Email. <a class="read-more" href="/alerts-notifications/notifications/customize-notification-payloads/freemarker-email-payloads/">&raquo;</a></p>
+ Navigate to your Account &gt; Notifications &gt; Email.</p>
     </section>
     <footer class=" footline" >
          
@@ -2070,9 +2142,9 @@ To create a custom event payload:
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
         
 
@@ -2084,8 +2156,9 @@ To create a custom event payload:
         <h2 class="post-title"><a href="/alerts-notifications/policies/enable-disable-policy/">Enable or Disable a Policy</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p> On the Alerts page, select the desired policy. In Policy Editor, select or deselect the Enable Policy checkbox.  You can also enable or disable policies directly from the List and Card Policy view options.
-  <a class="read-more" href="/alerts-notifications/policies/enable-disable-policy/">&raquo;</a></p>
+</p>
     </section>
     <footer class=" footline" >
          
@@ -2094,15 +2167,15 @@ To create a custom event payload:
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/delete/">delete</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#delete/">#delete</a>
             
         
 
@@ -2114,8 +2187,9 @@ To create a custom event payload:
         <h2 class="post-title"><a href="/alerts-notifications/events/">Events</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Events indicate that a policy has been violated, meaning all of the policy conditions have been met for the set duration. In other words, events indicate that Metricly has detected anomalous behavior in one or more of the elements in your environment.
-For example, if you create a policy for all EC2 elements with the condition CPU Utilization greater than 90% and a duration of 10 minutes, an event will be generated when an EC2 element’s CPU Utilization metric exceeds 90% for 10 consecutive minutes. <a class="read-more" href="/alerts-notifications/events/">&raquo;</a></p>
+For example, if you create a policy for all EC2 elements with the condition CPU Utilization greater than 90% and a duration of 10 minutes, an event will be generated when an EC2 element’s CPU Utilization metric exceeds 90% for 10 consecutive minutes.</p>
     </section>
     <footer class=" footline" >
          
@@ -2124,11 +2198,11 @@ For example, if you create a policy for all EC2 elements with the condition CPU 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/events/">events</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#events/">#events</a>
             
         
 
@@ -2140,8 +2214,9 @@ For example, if you create a policy for all EC2 elements with the condition CPU 
         <h2 class="post-title"><a href="/alerts-notifications/notifications/notifications-hipchat/">HipChat Notifications</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Send a notification to a HipChat room when an event occurs on your Metricly Policies. HipChat notifications are re-usable across multiple policies. Read below for configuration steps.
-Configuration 1. Generate a room token  Log in to your Hipchat account. Navigate to the Rooms section. Under My Rooms, select or create the desired room. On the left panel, select Tokens. Type a Label for the room and select Send Notification from the scopes list. <a class="read-more" href="/alerts-notifications/notifications/notifications-hipchat/">&raquo;</a></p>
+Configuration 1. Generate a room token  Log in to your Hipchat account. Navigate to the Rooms section. Under My Rooms, select or create the desired room. On the left panel, select Tokens. Type a Label for the room and select Send Notification from the scopes list.</p>
     </section>
     <footer class=" footline" >
          
@@ -2150,11 +2225,11 @@ Configuration 1. Generate a room token  Log in to your Hipchat account. Navigate
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/hipchat/">hipchat</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#hipchat/">#hipchat</a>
             
         
 
@@ -2166,7 +2241,8 @@ Configuration 1. Generate a room token  Log in to your Hipchat account. Navigate
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/java-policies/">Java Policies</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Policy name Duration Conditions Category Description     Elevated JVM CPU Activity 15 min cpu.used.percent has an upper baseline deviation + an upper contextual deviation + a static threshold &gt; 50% WARNING This policy will generate a WARNING event when the JVM’s CPU activity is higher than expected. Additionally, the CPU usage is above 50%.   Elevated JVM Heap Usage 15 min metricly.jvm.heap.utilizationpercent has an upper baseline deviation + an upper contextual deviation WARNING This policy will generate a WARNING event when the JVM’s heap usage is higher than expected. <a class="read-more" href="/alerts-notifications/policies/default-policies/java-policies/">&raquo;</a></p>
+        
+        <p>Policy name Duration Conditions Category Description     Elevated JVM CPU Activity 15 min cpu.used.percent has an upper baseline deviation + an upper contextual deviation + a static threshold &gt; 50% WARNING This policy will generate a WARNING event when the JVM’s CPU activity is higher than expected. Additionally, the CPU usage is above 50%.   Elevated JVM Heap Usage 15 min metricly.jvm.heap.utilizationpercent has an upper baseline deviation + an upper contextual deviation WARNING This policy will generate a WARNING event when the JVM’s heap usage is higher than expected.</p>
     </section>
     <footer class=" footline" >
          
@@ -2175,15 +2251,15 @@ Configuration 1. Generate a room token  Log in to your Hipchat account. Navigate
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
         
 
@@ -2195,8 +2271,9 @@ Configuration 1. Generate a room token  Log in to your Hipchat account. Navigate
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/kafka-policies/">Kafka Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Policy names are prefixed with Kakfa –
-    Policy name Duration Condition 1 (and) Condition 2 Category Description     Depressed Number of Zookeeper Connections 30 min kafka.zookeeper.zk_num_alive_connections has a lower baseline deviation  WARNING The number of active connections to Zookeeper has been lower than expected for at least the past 30 minutes.   Elevated Consumer Lag 15 min kafka.zookeeper.consumer_groups.*.comsuler_lag has an upper baseline deviation  WARNING Consumer lag has been higher than expected for at least 15 minutes. <a class="read-more" href="/alerts-notifications/policies/default-policies/kafka-policies/">&raquo;</a></p>
+   Policy name Duration Condition 1 (and) Condition 2 Category Description     Depressed Number of Zookeeper Connections 30 min kafka.zookeeper.zk_num_alive_connections has a lower baseline deviation  WARNING The number of active connections to Zookeeper has been lower than expected for at least the past 30 minutes.   Elevated Consumer Lag 15 min kafka.zookeeper.consumer_groups.*.comsuler_lag has an upper baseline deviation  WARNING Consumer lag has been higher than expected for at least 15 minutes.</p>
     </section>
     <footer class=" footline" >
          
@@ -2205,15 +2282,15 @@ Configuration 1. Generate a room token  Log in to your Hipchat account. Navigate
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/kafka/">kafka</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#kafka/">#kafka</a>
             
         
 
@@ -2225,8 +2302,9 @@ Configuration 1. Generate a room token  Log in to your Hipchat account. Navigate
         <h2 class="post-title"><a href="/alerts-notifications/checks/linux-checks/">Linux Checks</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Enable Linux Checks Currently, Metricly comes with three pre-built checks; Heartbeat, Processes, and Ports. These are turnkey checks that do not require any scripting or coding, just simple configuration setting in the respective configuration files.
- Make sure the Linux agent is installed. Metricly checks can be enabled via the configuration files included with the agent. All checks configuration files for the Linux agent can be found in /opt/netuitive-agent/conf/collectors Some of the checks are enabled by default, while you would need to enable other checks. <a class="read-more" href="/alerts-notifications/checks/linux-checks/">&raquo;</a></p>
+ Make sure the Linux agent is installed. Metricly checks can be enabled via the configuration files included with the agent. All checks configuration files for the Linux agent can be found in /opt/netuitive-agent/conf/collectors Some of the checks are enabled by default, while you would need to enable other checks.</p>
     </section>
     <footer class=" footline" >
          
@@ -2235,13 +2313,13 @@ Configuration 1. Generate a room token  Log in to your Hipchat account. Navigate
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/checks/">checks</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#checks/">#checks</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
         
 
@@ -2266,49 +2344,30 @@ Configuration 1. Generate a room token  Log in to your Hipchat account. Navigate
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"> <i class="fa fa-chevron-left"></i><label>Resource Utilization</label></a>
-    <a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"><span><i class="icon-previous"></i> Previous</span><label>Resource Utilization</label></a>
+    <a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     
