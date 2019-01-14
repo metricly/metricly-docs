@@ -1,4 +1,4 @@
-baseURL = "https://cranky-lalande-9d501c.netlify.com/"
+baseURL = "https://metriclyhelpsite.netlify.com/"
 languageCode = "en-us"
 title = "Metricly Docs"
 theme = "docdock"
