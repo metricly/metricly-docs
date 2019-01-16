@@ -319,6 +319,9 @@ body {
   width: 1em;
   margin-left: -1em;
 }
+#body-inner ul li p {
+  display: inline;
+}
 
 /*tips*/
 #body-inner div.notices {
