@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/docker/</link>
-    <description>Recent content in Docker on Metricly Docs</description>
+    <title>#Docker on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/docker/</link>
+    <description>Recent content in #Docker on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CPU Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-cpu-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/docker-cpu-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-cpu-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/docker-cpu-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Type Units Statistic* BASE CORR Description     cpu.cpu_usage.percpu_usage* COUNTER nanoseconds  yes no Each CPU has a separate metric which tracks the number of nanoseconds that that specific CPU has been used since the container was started.   cpu.cpu_usage.total_usage COUNTER nanoseconds  yes no This metric is the sum of all of the per-CPU usage metrics. Thus, it represents the total number of nanoseconds that all CPUs have been in use since the container was started.</description>
     </item>
     
     <item>
       <title>Computed Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-network-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/docker-network-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-network-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/docker-network-metrics/</guid>
       <description>Computed    Name FQN Computation Units Min Max BASE CORR Description     Container CPU Percent netuitive.docker.cpu.container_cpu_percent data[‘cpu.system_cpu_usage’].actual == 0 ? 0 :(data[‘cpu.cpu_usage.total_usage’].actual /data[‘cpu.system_cpu_usage’].actual) * 100 percent 0 100 yes yes The percentage of total CPU being used by the container.   Container Memory Percent netuitive.docker.cpu.container_memory_percent (data[‘memory.usage’].actual / data[‘memory.limit’].actual) * 100 percent 0 100 yes yes The amount of memory in use by the container, expressed as a percentage of the memory available to it.</description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/docker/</guid>
       <description>Docker is an open way of building, shipping, and running distributed applications anywhere using containers and images. Metricly can be used to monitor the performance of your Docker host and containers.
 Each Docker container you have running will be listed as Docker Container in your Inventory Explorer. Each Docker host you have running will be listed as SERVER in your Inventory Explorer. You’ll be able to identify which of your SERVER elements are Docker hosts via the Docker Summary dashboard (if you have the Docker package installed).</description>
     </item>
     
     <item>
       <title>Docker Install</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/linux-agent/linux-docker-install/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-docker-install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/linux-agent/linux-docker-install/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-docker-install/</guid>
       <description>1. Copy API Key From Docker Integration  From the Metricly top navigation menu, select Integrations.
  Click the Docker card.
  Ensure Data Collection is enabled. A unique API key for your account has already been generated.
@@ -53,40 +53,40 @@ Each Docker container you have running will be listed as Docker Container in you
     
     <item>
       <title>Docker Policies</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/docker-policies/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/docker-policies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/docker-policies/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/docker-policies/</guid>
       <description>Policy name Duration Conditions Category Description     Docker Container – CPU Throttling 15 min metricly.docker.cpu.container_throttling_percent has a static threshold &amp;gt;0 WARNING The Docker container has had its CPU usage throttled for at least the past 15 minutes.   Docker Container – Elevated CPU Utilization 30 min metricly.docker.cpu.container_cpu_percent has an upper baseline deviation + an upper contextual deviation INFO CPU usage on the Docker container has been higher than expected for 30 minutes or longer.</description>
     </item>
     
     <item>
       <title>Kafka in Docker</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-in-docker/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/collectors/kafka/kafka-in-docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/kafka/kafka-in-docker/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/collectors/kafka/kafka-in-docker/</guid>
       <description>Getting the Jolokia agent running in a Kafka container requires three additional modifications to the docker run command. To illustrate the modifications needed, we’re going to assume that your docker run command looks like this initially:
 docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=`docker-machine ip\`docker-machine active\`` --env ADVERTISED_PORT=9092 spotify/kafka  Update Docker Run Command  Make the Jolokia JAR file available to the container by passing it in as a mounted volume.</description>
     </item>
     
     <item>
       <title>Memory Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-memory-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/docker-memory-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/docker-memory-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/docker-memory-metrics/</guid>
       <description>Collected    Fully Qualified Name(FQN) Type Units Statistic* BASE CORR Description     memory.failcnt GAUGE count average no no A count of the number of times that the container requested memory and failed to obtain it. This value should always be 0.   memory.limit GAUGE bytes average no no The total amount of memory available to the container.   memory.max_usage GAUGE bytes average no no The maxiumum amount of memory the container has ever used.</description>
     </item>
     
     <item>
       <title>Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/docker/docker-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/docker/docker-metrics/</guid>
       <description> This folder contains all metrics for the Docker integration.
-Metrics Available  CPU Metrics   Computed Metrics   Memory Metrics   </description>
+Metrics Available CPU MetricsComputed MetricsMemory Metrics</description>
     </item>
     
   </channel>

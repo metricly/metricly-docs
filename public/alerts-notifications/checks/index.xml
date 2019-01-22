@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Checks on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/checks/</link>
+    <link>https://metriclyhelpsite.netlify.com/alerts-notifications/checks/</link>
     <description>Recent content in Checks on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/alerts-notifications/checks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/alerts-notifications/checks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>View Checks</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/checks/view-checks/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/checks/view-checks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/checks/view-checks/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/checks/view-checks/</guid>
       <description>Leveraging our saved filters is a good way to find your checks. All checks are tagged with the key n.checks and value check name.
  Click Type and select either SERVER (for Linux) or WINSRV (for Windows) to pick where the check has been configured. Navigate to More &amp;gt; Tag and search for n.checks.  </description>
     </item>
     
     <item>
       <title>Alert on a Check</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/checks/checks-alerting/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/checks/checks-alerting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/checks/checks-alerting/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/checks/checks-alerting/</guid>
       <description>Setting up an alert in Metricly requires the creation of a policy and the system checks are no exception. Any check coming into the system can have a corresponding alert as well as a notification.
  Click on policies and select New Policy. Name the policy and apply any scoping or filtering required (for example, narrowing the scope to WinServ in US-West region with Tag Environment:Production). Next click Conditions &amp;gt; Add Condition, and from the drop down you will see Add System Check Condition.</description>
     </item>
     
     <item>
       <title>Custom Checks</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/checks/custom-checks/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/checks/custom-checks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/checks/custom-checks/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/checks/custom-checks/</guid>
       <description>Our platform is flexible to support any custom checks, but you will need a mechanism to schedule the scripts to run. Linux cron jobs or Window task scheduler will typically work for most cases. If you are running on the Linux platform our agent can also schedule the running of your scripts via the Users Scripts Integration. This option will allow you to schedule a script that may post to our REST API as output either a system check, or a time-series metric value, or even a text-based data.</description>
     </item>
     
     <item>
       <title>Linux Checks</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/checks/linux-checks/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/checks/linux-checks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/checks/linux-checks/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/checks/linux-checks/</guid>
       <description>Enable Linux Checks Currently, Metricly comes with three pre-built checks; Heartbeat, Processes, and Ports. These are turnkey checks that do not require any scripting or coding, just simple configuration setting in the respective configuration files.
  Make sure the Linux agent is installed. Metricly checks can be enabled via the configuration files included with the agent. All checks configuration files for the Linux agent can be found in /opt/netuitive-agent/conf/collectors Some of the checks are enabled by default, while you would need to enable other checks.</description>
     </item>
     
     <item>
       <title>Windows Checks</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/checks/windows-checks/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/checks/windows-checks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/checks/windows-checks/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/checks/windows-checks/</guid>
       <description>Enable Windows Checks  Make sure the Windows agent is installed. Metricly checks can be enabled via the configuration files included with the agent. All checks configuration files for the Windows agent can be found in C:/Program Files (x86)/CollectdWin/conf/ or C:/Program Files/CollectdWin/conf/ (depending on the version of windows). Simply change the enable setting for the ReadSystemChecks from false to true in the CollectdWin.config file to enable the system checks. To configure the checks, edit the ReadSystemChecks.</description>
     </item>
     

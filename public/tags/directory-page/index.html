@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:21 EST">
-<title>Directory Page :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T18:15:16 EET">
+<title>#Directory Page :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/directory-page/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -508,6 +531,56 @@
       <a href="/integrations/agents/diamond-agent/">Diamond Agent</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
+    <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/">Metrics</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/">
+            CPU Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/">
+            Disk Usage Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/">
+            Diskspace Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-load-average-metrics/">
+            Load Average Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-memory-metrics/">
+            Memory Metrics
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/" class="dd-item">
+        <div>
+          <a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/">
+            Network Metrics
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
         </ul>
     </li>
     <li data-nav-id="/integrations/agents/java-agent/" class="dd-item haschildren
@@ -591,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -661,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -799,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1569,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1795,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1806,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1857,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Directory Page
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Directory Page</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Directory Page</h1>
+  
+
+
+
     
     
     
@@ -1921,7 +2039,8 @@
         <h2 class="post-title"><a href="/integrations/agents/">Agents</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> <a class="read-more" href="/integrations/agents/">&raquo;</a></p>
+        
+        <p></p>
     </section>
     <footer class=" footline" >
          
@@ -1930,9 +2049,9 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/directory-page/">directory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#directory-page/">#directory page</a>
             
         
 
@@ -1944,8 +2063,9 @@
         <h2 class="post-title"><a href="/data-visualization/analytics/">Analytics</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Metricly uses advanced analytics to monitor your environment and proactively notify you when problems occur. There are 3 basic data types that Metricly uses to do so:
- Raw data: Data collected from a third party integration that has not been interpreted, or aggregated, by Metricly. Because it has not been aggregated, raw data does not contribute to event creation. Aggregate data: Data collected from an integration that has been interpreted by Metricly. <a class="read-more" href="/data-visualization/analytics/">&raquo;</a></p>
+ Raw data: Data collected from a third party integration that has not been interpreted, or aggregated, by Metricly. Because it has not been aggregated, raw data does not contribute to event creation. Aggregate data: Data collected from an integration that has been interpreted by Metricly.</p>
     </section>
     <footer class=" footline" >
          
@@ -1954,9 +2074,9 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/directory-page/">directory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#directory-page/">#directory page</a>
             
         
 
@@ -1968,7 +2088,8 @@
         <h2 class="post-title"><a href="/integrations/collectors/">Collectors</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> <a class="read-more" href="/integrations/collectors/">&raquo;</a></p>
+        
+        <p></p>
     </section>
     <footer class=" footline" >
          
@@ -1977,11 +2098,11 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/directory-page/">directory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#directory-page/">#directory page</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -1993,9 +2114,10 @@
         <h2 class="post-title"><a href="/data-visualization/dashboards/">Dashboards</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Visualize your data in Metricly with dashboards.You can use the default, pre-packaged integration dashboards or create and customize your own using widgets. Default dashboards are not editable.
 View a Dashboard  Click on Dashboards in the main menu.
-or Navigate to Dashboards &gt; Manage Dashboards.  Edit a Dashboard Editing an existing dashboard can involve managing the layout of a dashboard, changing the dashboard’s settings, or manipulating the time frame setting/refresh interval. <a class="read-more" href="/data-visualization/dashboards/">&raquo;</a></p>
+or Navigate to Dashboards &gt; Manage Dashboards.  Edit a Dashboard Editing an existing dashboard can involve managing the layout of a dashboard, changing the dashboard’s settings, or manipulating the time frame setting/refresh interval.</p>
     </section>
     <footer class=" footline" >
          
@@ -2004,13 +2126,13 @@ or Navigate to Dashboards &gt; Manage Dashboards.  Edit a Dashboard Editing an e
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/directory-page/">directory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#directory-page/">#directory page</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/dashboards/">dashboards</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#dashboards/">#dashboards</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/widgets/">widgets</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#widgets/">#widgets</a>
             
         
 
@@ -2022,8 +2144,9 @@ or Navigate to Dashboards &gt; Manage Dashboards.  Edit a Dashboard Editing an e
         <h2 class="post-title"><a href="/getting-started/">Getting Started</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>1. Watch Our Product Demo There’s no faster way to get acquainted with the UI than by watching the demo video. This tour covers both the Cost and Monitoring products, including topics like: the EC2 recommendation report, the Utilization Boxplot report, and the Cost report.
-2. Register an Account You’re excited to right-size your environments and lower their costs. You’ve done all your research, and you’re ready to try Metricly’s 21-day free trial. <a class="read-more" href="/getting-started/">&raquo;</a></p>
+2. Register an Account You’re excited to right-size your environments and lower their costs. You’ve done all your research, and you’re ready to try Metricly’s 21-day free trial.</p>
     </section>
     <footer class=" footline" >
          
@@ -2032,9 +2155,35 @@ or Navigate to Dashboards &gt; Manage Dashboards.  Edit a Dashboard Editing an e
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/directory-page/">directory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#directory-page/">#directory page</a>
+            
+        
+
+    </footer>
+</article>
+
+   <article class="post reports">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/reports/reports-asg-recommendations/item_second/">Item Second</a></h2>
+    </header>
+    <section class="post-excerpt">
+        
+        <p></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+          
+            
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#reports/">#reports</a>
+            
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#asg/">#asg</a>
+            
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#directory-page/">#directory page</a>
             
         
 
@@ -2046,8 +2195,9 @@ or Navigate to Dashboards &gt; Manage Dashboards.  Edit a Dashboard Editing an e
         <h2 class="post-title"><a href="/reports/">Reports</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p> Reports provide a quick glance at some of the most important parts of your environment, including utilization, policy violation, and estimated cost of your inventory. Report Explorer allows you to toggle between different reports on the elements in your environment.
-Required Integrations for Metricly Reports    Report Name AWS w/ Cost Explorer AWS w/ CloudWatch AWS Cost w/ Detailed Billing List Price Estimation w/out AWS Cost Time from activation to first report     AWS Services Cost x    Immediate   Resource Utilization  x   Immediate   EC2 Cost  x x x 1 day   RDS Cost  x x  1 day   S3 Cost  x x  1 day   EC2 Recommendations  x x x 1 week   ASG Recommendations  x x x 1 week     <a class="read-more" href="/reports/">&raquo;</a></p>
+Required Integrations for Metricly Reports    Report Name AWS w/ Cost Explorer AWS w/ CloudWatch AWS Cost w/ Detailed Billing List Price Estimation w/out AWS Cost Time from activation to first report     AWS Services Cost x    Immediate   Resource Utilization  x   Immediate   EC2 Cost  x x x 1 day   RDS Cost  x x  1 day   S3 Cost  x x  1 day   EC2 Recommendations  x x x 1 week   ASG Recommendations  x x x 1 week    </p>
     </section>
     <footer class=" footline" >
          
@@ -2056,9 +2206,9 @@ Required Integrations for Metricly Reports    Report Name AWS w/ Cost Explorer A
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/reports/">reports</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#reports/">#reports</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/directory-page/">directory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#directory-page/">#directory page</a>
             
         
 
@@ -2070,7 +2220,8 @@ Required Integrations for Metricly Reports    Report Name AWS w/ Cost Explorer A
         <h2 class="post-title"><a href="/data-visualization/">Visualization</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>afafa <a class="read-more" href="/data-visualization/">&raquo;</a></p>
+        
+        <p>afafa</p>
     </section>
     <footer class=" footline" >
          
@@ -2079,9 +2230,9 @@ Required Integrations for Metricly Reports    Report Name AWS w/ Cost Explorer A
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/directory-page/">directory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#directory-page/">#directory page</a>
             
         
 
@@ -2093,8 +2244,9 @@ Required Integrations for Metricly Reports    Report Name AWS w/ Cost Explorer A
         <h2 class="post-title"><a href="/data-visualization/dashboards/widgets/">Widgets</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>This guide includes a list of all widget types available, their options, and the actions you can take. To take full advantage of widgets, you should strategize how to tag, group, and visualize the data in your environment. General knowledge on elements and the behavior of your metrics is strongly encouraged before making a custom dashboard.
-Move Widgets  Hover over the widget’s title to select. The header turns gray and your cursor is replaced with  when a widget is selected. <a class="read-more" href="/data-visualization/dashboards/widgets/">&raquo;</a></p>
+Move Widgets  Hover over the widget’s title to select. The header turns gray and your cursor is replaced with when a widget is selected.</p>
     </section>
     <footer class=" footline" >
          
@@ -2103,13 +2255,13 @@ Move Widgets  Hover over the widget’s title to select. The header turns gray a
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/getting-started/">getting started</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#getting-started/">#getting started</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/directory-page/">directory page</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#directory-page/">#directory page</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/user-guide/">user guide</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#user-guide/">#user guide</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/widgets/">widgets</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#widgets/">#widgets</a>
             
         
 
@@ -2130,48 +2282,29 @@ Move Widgets  Hover over the widget’s title to select. The header turns gray a
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

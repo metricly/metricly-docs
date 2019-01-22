@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dynamodb on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/dynamodb/</link>
-    <description>Recent content in Dynamodb on Metricly Docs</description>
+    <title>#Dynamodb on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/dynamodb/</link>
+    <description>Recent content in #Dynamodb on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/dynamodb/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/dynamodb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS DynamoDB Policies</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/aws-policies-dynamodb/</guid>
       <description>Policy names are prefixed with AWS DynamoDB –
-    Policy Name Duration Condition 1 Cat. Description     Elevated Read Capacity Utilization 30 Min metricly.aws.dynamodb.readcapacityutilization has an upper baseline deviation + an upper contextual deviation + a static threshold ≥ 50. WARNING Read Capacity Utilization has been higher than expected for over 30 minutes; also, the actual value has been above 50% for that time.   Elevated Write Capacity Utilization 30 Min metricly.</description>
+   Policy Name Duration Condition 1 Cat. Description     Elevated Read Capacity Utilization 30 Min metricly.aws.dynamodb.readcapacityutilization has an upper baseline deviation + an upper contextual deviation + a static threshold ≥ 50. WARNING Read Capacity Utilization has been higher than expected for over 30 minutes; also, the actual value has been above 50% for that time.   Elevated Write Capacity Utilization 30 Min metricly.</description>
     </item>
     
     <item>
       <title>DynamoDB Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-dynamodb/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-dynamodb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-dynamodb/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-dynamodb/</guid>
       <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Max Sparse Data Strategy (SDS) BASE CORR     aws.dynamodb.conditionalcheckfailedrequests ConditionalCheckFailedRequests sum count none zero no no   aws.dynamodb.consumedreadcapacityunits ConsumedReadCapacityUnits sum count none zero yes no   aws.dynamodb.consumedwritecapacityunits ConsumedWriteCapacityUnits sum count none zero yes no   aws.dynamodb.onlineindexconsumedwritecapacity OnlineIndexConsumedWriteCapacity sum count none zero yes no   aws.dynamodb.onlineindexpercentageprogress OnlineIndexPercentageProgress max percent 100 none no no   aws.</description>
     </item>
     

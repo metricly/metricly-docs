@@ -45,7 +45,7 @@
 }
 .icon-reports:before {
   content: "\e905";
-  color: #439bc3;
+  color: #444a54;
 }
 .icon-right-arrow:before {
   content: "\e906";
@@ -78,8 +78,11 @@ body {
 #header-wrapper {
   background-color: rgba(246, 247, 248, 0.27);
 }
+#header p {
+  text-align: left;
+}
 #header a img {
-  max-width: 90%;
+  max-height: 40px;
 }
 #sidebar {
   background-color: rgba(246, 247, 248, 0.27);
@@ -117,7 +120,7 @@ body {
           align-items: center;
   padding: 0 10px;
   margin-top: 0;
-  margin: 50px 0 25px 0;
+  margin: 40px 0 30px 0;
 }
 .searchbox label,
 .searchbox span {
@@ -182,25 +185,45 @@ body {
   border: unset;
 }
 
-/*level one*/
+/**level one**/
 #sidebar ul .parent.active > div > a {
   background: unset;
   padding-left: 0;
   color: #439BC3 !important;
 }
+#sidebar ul .parent.active > div > a,
+#sidebar ul .parent.active > div > a > i:before {
+  color: #439BC3 !important;
+}
+#sidebar ul .parent.haschildren > div > a,
+#sidebar ul .parent.haschildren > div > a > i:before {
+  color: #439BC3 !important;
+}
+
 #sidebar ul li.active > div > a:hover {
   color: #439BC3 !important;
 }
-/*level two*/
-#sidebar ul .parent ul .parent.active > div > a {
+/**level two**/
+#sidebar ul .parent ul .parent.active > div > a,
+#sidebar ul .parent ul .parent.active > div > a > i:before  {
   color: #434A54 !important;
 }
+#sidebar ul .parent ul .parent.haschildren > div > a,
+#sidebar ul .parent ul .parent.haschildren > div > a > i:before {
+  color: #434A54 !important;
+}
+
 #sidebar ul .parent ul li div {
   margin-bottom: 0;
 }
 #sidebar ul .parent ul li div a {
   color: rgba(67, 74, 84, 0.7) !important;
   font-size: 14px;
+}
+/*trick for icon*/
+.blue-icon:before{
+  color: #439BC3;
+  transition: color 0.15s ease;
 }
 /*==End Aside Navigation==*/
 
@@ -295,6 +318,9 @@ body {
   display: inline-block; 
   width: 1em;
   margin-left: -1em;
+}
+#body-inner ul li p {
+  display: inline;
 }
 
 /*tips*/
@@ -416,6 +442,47 @@ div.notices.info p {
   top: 25px;
 }
 /*==End Footer Content==*/
+
+
+/*==Tags Page==*/
+#body-inner .post .post-title a {
+  color: #434A54;
+  position: relative;
+}
+#body-inner .post .post-title a:before {
+  color: #439BC3;
+  content: '\e906';
+  font-family: 'icomoon';
+  font-size: 20px;
+  font-weight: normal;
+  speak: none;
+  position: absolute;
+  right: -35px;
+  bottom: 5px;
+}
+#body-inner .extra-pagination {
+  display: none;
+}
+/*footerline*/
+#body-inner .post .footline {
+  border-top: unset;
+  padding: 10px 0;
+  opacity: 1;
+}
+/*tags*/
+#body-inner .post .footline .label {
+  font-size: 16px;
+  line-height: 22px;
+  background-color: rgba(67, 74, 84, 0.08);
+  border-radius: 4px;
+  color: #434A54;
+  padding: .4em 1em;
+}
+#body-inner .post .footline .label:after {
+  display: none;
+}
+/*==End Tags Page==*/
+
 
 /*==404 Page==*/
 .pnf-body #top-bar,

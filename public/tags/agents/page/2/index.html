@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:20 EST">
-<title>Agents :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T18:15:15 EET">
+<title>#Agents :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/agents/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Agents
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Agents</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Agents</h1>
+  
+
+
+
     
     
     
@@ -1975,8 +2043,9 @@
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-disable/">Disable</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>If you need to disable an existing Linux integration or view the unique API key assigned to your account:
- Navigate to User Profile &gt; Integrations. Find the Integration with an Integration Type of Infrastructure. Click its name. Toggle Data Collection to disable it.   <a class="read-more" href="/integrations/agents/linux-agent/linux-disable/">&raquo;</a></p>
+ Navigate to User Profile &gt; Integrations. Find the Integration with an Integration Type of Infrastructure. Click its name. Toggle Data Collection to disable it.  </p>
     </section>
     <footer class=" footline" >
          
@@ -1985,9 +2054,9 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
         
 
@@ -1999,7 +2068,8 @@
         <h2 class="post-title"><a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/">Disk Usage Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.iostat.totalreads Total reads across all disks. Computation: data.sum(‘iostat\..*\.reads)  0 none yes no no   metriclyicly.linux.iostat.totalwrites Total writes across all disks. Computation: data.sum(‘iostat\..*\.writes)  0 none yes no no     <a class="read-more" href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/">&raquo;</a></p>
+        
+        <p> Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.iostat.totalreads Total reads across all disks. Computation: data.sum(‘iostat\..*\.reads)  0 none yes no no   metriclyicly.linux.iostat.totalwrites Total writes across all disks. Computation: data.sum(‘iostat\..*\.writes)  0 none yes no no    </p>
     </section>
     <footer class=" footline" >
          
@@ -2008,13 +2078,13 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/diamond/">diamond</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#diamond/">#diamond</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/diskspace/">diskspace</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#diskspace/">#diskspace</a>
             
         
 
@@ -2026,7 +2096,8 @@
         <h2 class="post-title"><a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/">Diskspace Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     diskspace..byte_percentfree Percentage of free bytes. average percent 0 100 none yes no no    Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.diskspace.*.byte_percentused Percentage of disk space used. Computation: 100 – diskspace.*.byte_percentfree percent 0 100 no no yes     <a class="read-more" href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/">&raquo;</a></p>
+        
+        <p> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     diskspace..byte_percentfree Percentage of free bytes. average percent 0 100 none yes no no    Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.diskspace.*.byte_percentused Percentage of disk space used. Computation: 100 – diskspace.*.byte_percentfree percent 0 100 no no yes    </p>
     </section>
     <footer class=" footline" >
          
@@ -2035,13 +2106,13 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/diamond/">diamond</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#diamond/">#diamond</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/diskspace/">diskspace</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#diskspace/">#diskspace</a>
             
         
 
@@ -2053,11 +2124,12 @@
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-docker-install/">Docker Install</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>1. Copy API Key From Docker Integration  From the Metricly top navigation menu, select Integrations.
  Click the Docker card.
  Ensure Data Collection is enabled. A unique API key for your account has already been generated.
  Highlight the one-line install command from the instructions and copy them. A unique API key for your account has already been generated and included in the command line.
-  The command runs a container named netuitive-agent in the background and publishes the port values to the host. <a class="read-more" href="/integrations/agents/linux-agent/linux-docker-install/">&raquo;</a></p>
+  The command runs a container named netuitive-agent in the background and publishes the port values to the host.</p>
     </section>
     <footer class=" footline" >
          
@@ -2066,11 +2138,11 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/docker/">docker</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#docker/">#docker</a>
             
         
 
@@ -2082,8 +2154,9 @@
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">Elastic Beanstalk</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Using an existing application file, you can deploy the Netuitive agent to a self-contained EC2 instance complete with a load balancer and everything else it needs to run. The Elastic Beanstalk instance can also scale by itself.
- Before creating your Elastic Beanstalk instance, find or create a folder called .ebextensions in your application’s directory. Copy the netuitive.config file to your .ebextensions folder. Replace the sample API key at the top of the netuitive. <a class="read-more" href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">&raquo;</a></p>
+ Before creating your Elastic Beanstalk instance, find or create a folder called .ebextensions in your application’s directory. Copy the netuitive.config file to your .ebextensions folder. Replace the sample API key at the top of the netuitive.</p>
     </section>
     <footer class=" footline" >
          
@@ -2092,11 +2165,11 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elastic-beanstalk/">elastic beanstalk</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elastic-beanstalk/">#elastic beanstalk</a>
             
         
 
@@ -2108,8 +2181,9 @@
         <h2 class="post-title"><a href="/integrations/agents/ruby-agent/ruby-agent-element-tags/">Element Tags</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Send Element tags To send element tags, update the agent.yml found in the netuitived gem by uncommenting the elementTags line. This file is located at netuitived/config/agent.yml.
-Key/Value pairs should be added in the following format: name1:value1, name2:value2. <a class="read-more" href="/integrations/agents/ruby-agent/ruby-agent-element-tags/">&raquo;</a></p>
+Key/Value pairs should be added in the following format: name1:value1, name2:value2.</p>
     </section>
     <footer class=" footline" >
          
@@ -2118,15 +2192,15 @@ Key/Value pairs should be added in the following format: name1:value1, name2:val
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/ruby/">ruby</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#ruby/">#ruby</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/tags/">tags</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#tags/">#tags</a>
             
         
 
@@ -2138,9 +2212,10 @@ Key/Value pairs should be added in the following format: name1:value1, name2:val
         <h2 class="post-title"><a href="/integrations/agents/java-agent/java-enable-proxy/">Enable Proxy</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Enable a Proxy  Navigate to the zorka.properties file. Find the proxy section:
   netuitive.api.proxy = no netuitive.api.proxy.address = http://&lt;proxy host&gt;:&lt;proxy port&gt;  3. Change the netuitive.api.proxy line to yes.
-4. Add the correct proxy host and port to the netuitive.api.proxy.address line. <a class="read-more" href="/integrations/agents/java-agent/java-enable-proxy/">&raquo;</a></p>
+4. Add the correct proxy host and port to the netuitive.api.proxy.address line.</p>
     </section>
     <footer class=" footline" >
          
@@ -2149,11 +2224,11 @@ Key/Value pairs should be added in the following format: name1:value1, name2:val
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2165,8 +2240,9 @@ Key/Value pairs should be added in the following format: name1:value1, name2:val
         <h2 class="post-title"><a href="/integrations/agents/ruby-agent/ruby-agent-garbage-collection/">Garbage Collection</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>The garbage collector attempts to return memory consumed by objects no longer in use by your application. Metricly can be used to collect metrics on how much time is spent in garbage collection for your Ruby applications. You should have Matz’s Ruby Interpreter (MRI) version 1.9.2 or greater or Ruby Enterprise Edition installed before enabling garbage collection metrics.
-Configure  Navigate to your application’s initialization file. Add the following call (depending on your Ruby version) to the file:  For MRI v1. <a class="read-more" href="/integrations/agents/ruby-agent/ruby-agent-garbage-collection/">&raquo;</a></p>
+Configure  Navigate to your application’s initialization file. Add the following call (depending on your Ruby version) to the file:  For MRI v1.</p>
     </section>
     <footer class=" footline" >
          
@@ -2175,11 +2251,11 @@ Configure  Navigate to your application’s initialization file. Add the followi
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/ruby/">ruby</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#ruby/">#ruby</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2191,9 +2267,10 @@ Configure  Navigate to your application’s initialization file. Add the followi
         <h2 class="post-title"><a href="/integrations/agents/ruby-agent/ruby-agent-interpret-exceptions/">Interpret Exceptions</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>IF sendErrorEvents is enabled in the netuitive_rails_agent config/agent.yaml file AND actionErrorsEnabled and/or sidekiqEnabled = true, exceptions are sent to Metricly as external events.
 An Exception External event has the following tags to help you dissect the exception:
-   Tag Description     Action The action the error originated from.   Controller The name of the controller that the exception came from.   Exception The type of exception. <a class="read-more" href="/integrations/agents/ruby-agent/ruby-agent-interpret-exceptions/">&raquo;</a></p>
+   Tag Description     Action The action the error originated from.   Controller The name of the controller that the exception came from.   Exception The type of exception.</p>
     </section>
     <footer class=" footline" >
          
@@ -2202,11 +2279,11 @@ An Exception External event has the following tags to help you dissect the excep
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/ruby/">ruby</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#ruby/">#ruby</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2218,9 +2295,10 @@ An Exception External event has the following tags to help you dissect the excep
         <h2 class="post-title"><a href="/integrations/agents/java-agent/">Java Agent</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Metricly’s Java agent is a java monitoring agent with a programmable bytecode instrumentation engine that’s enabled by adding a JVM integration in Metricly. The Metricly Java integration allows Metricly to collect JVM runtime system metrics like CPU, Memory, GC, Threads and Classes Count, and application components method performance statistics, such as number of calls and execution time.
 Prerequisites Must have Java 6 Or greater.
-Configuration 1. Copy API key  From the top navigation menu, select Integrations. <a class="read-more" href="/integrations/agents/java-agent/">&raquo;</a></p>
+Configuration 1. Copy API key  From the top navigation menu, select Integrations.</p>
     </section>
     <footer class=" footline" >
          
@@ -2229,11 +2307,11 @@ Configuration 1. Copy API key  From the top navigation menu, select Integrations
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2258,49 +2336,30 @@ Configuration 1. Copy API key  From the top navigation menu, select Integrations
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"> <i class="fa fa-chevron-left"></i><label>Resource Utilization</label></a>
-    <a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"><span><i class="icon-previous"></i> Previous</span><label>Resource Utilization</label></a>
+    <a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

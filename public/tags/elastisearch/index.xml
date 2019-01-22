@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Elastisearch on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/elastisearch/</link>
-    <description>Recent content in Elastisearch on Metricly Docs</description>
+    <title>#Elastisearch on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/elastisearch/</link>
+    <description>Recent content in #Elastisearch on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/elastisearch/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/elastisearch/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>All Elastisearch Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/elastisearch/elastisearch-all-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/elastisearch/elastisearch-all-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/elastisearch/elastisearch-all-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/elastisearch/elastisearch-all-metrics/</guid>
       <description>Collected For the table below, all metrics that begin with elasticsearch.indices.* are duplicated for each index being monitored, with the * replaced by the index name (your indices will vary based on your implementation). All metrics that start with elasticsearch.thread_pool.* are duplicated for each thread pool, with the * replaced by the thread pool name. The various thread pools are:
  bench bulk fetch_shard_started fetch_shard_store flush generic get index listener management merge optimize percolate refresh search snapshot suggest warmer     Fully Qualified Name (FQN) Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     elasticsearch.</description>
     </item>
     
     <item>
       <title>Elastisearch</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/elastisearch/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/elastisearch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/elastisearch/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/elastisearch/</guid>
       <description>Elasticsearch is a distributed, scalable search server that enables you to search through all kinds of documents. Metricly can be used to monitor the performance of your Elasticsearch server. Additional configuration options are available below the instructions.
 Configuration The Linux Agent must be installed before proceeding. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.</description>
     </item>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ansible on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/ansible/</link>
-    <description>Recent content in Ansible on Metricly Docs</description>
+    <title>#Ansible on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/ansible/</link>
+    <description>Recent content in #Ansible on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ansible</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/ansible/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/ansible/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/ansible/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/ansible/</guid>
       <description>Ansible is a configuration management tool that can be used to automate setup of servers, databases, and more. The Metricly Agent playbook will help get the Metricly Linux agent up and running in your environment quickly.
 Configuration  Copy the Metricly Agent playbook to your Ansible directory.
  cd /ansible git clone https://github.com/netuitive/ansible-netuitive-agent.git  In the Metricly Agent playbook (netuitive-agent.yml), update the hosts setting to use desired host or inventory file.</description>

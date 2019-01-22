@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:23 EST">
-<title>Integrations :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T18:15:17 EET">
+<title>#Integrations :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/integrations/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Integrations
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Integrations</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Integrations</h1>
+  
+
+
+
     
     
     
@@ -1973,8 +2041,9 @@
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/windows-agent-upgrade/">Upgrade Agent</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>To upgrade the Windows agent, follow the installation steps listed on the main Windows Integration page using the version of the agent you wish to upgrade to. The latest versions of the agent can be downloaded from the agent repo and details of the releases can be found on the Github project page.
-Installing a new version of the agent will overwrite changes you have made to existing agent configuration files located in C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config depending on your environment. <a class="read-more" href="/integrations/agents/windows-agent/windows-agent-upgrade/">&raquo;</a></p>
+Installing a new version of the agent will overwrite changes you have made to existing agent configuration files located in C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config depending on your environment.</p>
     </section>
     <footer class=" footline" >
          
@@ -1983,11 +2052,11 @@ Installing a new version of the agent will overwrite changes you have made to ex
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/install/">install</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#install/">#install</a>
             
         
 
@@ -1999,7 +2068,8 @@ Installing a new version of the agent will overwrite changes you have made to ex
         <h2 class="post-title"><a href="/integrations/agents/java-agent/java-upgrade/">Upgrade Java</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> How to Upgrade  Download the latest Java agent here. Copy the new netuitive.jar file to your existing Java agent files to replace the old netuitive.jar file. Optionally, manually merge the new zorka.properties file with the old file to receive any new fields or settings.   <a class="read-more" href="/integrations/agents/java-agent/java-upgrade/">&raquo;</a></p>
+        
+        <p> How to Upgrade  Download the latest Java agent here. Copy the new netuitive.jar file to your existing Java agent files to replace the old netuitive.jar file. Optionally, manually merge the new zorka.properties file with the old file to receive any new fields or settings.  </p>
     </section>
     <footer class=" footline" >
          
@@ -2008,11 +2078,11 @@ Installing a new version of the agent will overwrite changes you have made to ex
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2024,7 +2094,8 @@ Installing a new version of the agent will overwrite changes you have made to ex
         <h2 class="post-title"><a href="/integrations/collectors/collectd/collectd-uptime-metrics/">Uptime Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     uptime.uptime.value Number of seconds since the system was last booted. max seconds 0 none none yes no no     <a class="read-more" href="/integrations/collectors/collectd/collectd-uptime-metrics/">&raquo;</a></p>
+        
+        <p> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     uptime.uptime.value Number of seconds since the system was last booted. max seconds 0 none none yes no no    </p>
     </section>
     <footer class=" footline" >
          
@@ -2033,15 +2104,15 @@ Installing a new version of the agent will overwrite changes you have made to ex
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectd/">collectd</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectd/">#collectd</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/uptime/">uptime</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#uptime/">#uptime</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2053,8 +2124,9 @@ Installing a new version of the agent will overwrite changes you have made to ex
         <h2 class="post-title"><a href="/integrations/agents/java-agent/java-calculator-app/">Use Calculator App</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>To to run the calculator app with the zorka agent, use the following command:
-java -javaagent:/opt/netuitive-zorka-agent/netuitive.jar=/opt/netuitive-zorka-agent/ -jar /opt/zorka-core-test.jar  Calculator.java Source package com.netuitive.agent.test; public class Calculator { public Integer calculate(String operator, Integer first, Integer second) { if (operator.equals(“+”)) { return add(first, second); } else if (operator.equals(“-“)) { return minus(first, second); } else if (operator.equals(“*”)) { return multiply(first, second); } else if (operator.equals(“/”)) { return divide(first, second); } else { throw new IllegalArgumentException(“‘” + operator + “‘ is not supported, use one of [+|-|*|/] operators”); } } private Integer add(Integer first, Integer second) { return first + second; } private Integer minus(Integer first, Integer second) { return first – second; } private Integer multiply(Integer first, Integer second) { return first * second; } private Integer divide(Integer first, Integer second) { return first / second; } }  Example Below is an example file called calculator. <a class="read-more" href="/integrations/agents/java-agent/java-calculator-app/">&raquo;</a></p>
+java -javaagent:/opt/netuitive-zorka-agent/netuitive.jar=/opt/netuitive-zorka-agent/ -jar /opt/zorka-core-test.jar  Calculator.java Source package com.netuitive.agent.test; public class Calculator { public Integer calculate(String operator, Integer first, Integer second) { if (operator.equals(“+”)) { return add(first, second); } else if (operator.equals(“-“)) { return minus(first, second); } else if (operator.equals(“*”)) { return multiply(first, second); } else if (operator.equals(“/”)) { return divide(first, second); } else { throw new IllegalArgumentException(“‘” + operator + “‘ is not supported, use one of [+|-|*|/] operators”); } } private Integer add(Integer first, Integer second) { return first + second; } private Integer minus(Integer first, Integer second) { return first – second; } private Integer multiply(Integer first, Integer second) { return first * second; } private Integer divide(Integer first, Integer second) { return first / second; } }  Example Below is an example file called calculator.</p>
     </section>
     <footer class=" footline" >
          
@@ -2063,11 +2135,11 @@ java -javaagent:/opt/netuitive-zorka-agent/netuitive.jar=/opt/netuitive-zorka-ag
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2079,8 +2151,9 @@ java -javaagent:/opt/netuitive-zorka-agent/netuitive.jar=/opt/netuitive-zorka-ag
         <h2 class="post-title"><a href="/integrations/collectors/user-scripts-collector/">User Scripts Collector</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>The User Scripts Collector runs external scripts and collects their output for you to view in Metricly.
-Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the UserScriptsCollector.conf file. Change the enabled setting to True. Update scripts_path with the directory where your scripts are located (default: /opt/netuitive-agent/). Save the configuration file and restart the Linux Agent.  About Scripts For the collector to work properly, your monitored scripts must be executable and should output metrics in the form of: <a class="read-more" href="/integrations/collectors/user-scripts-collector/">&raquo;</a></p>
+Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the UserScriptsCollector.conf file. Change the enabled setting to True. Update scripts_path with the directory where your scripts are located (default: /opt/netuitive-agent/). Save the configuration file and restart the Linux Agent.  About Scripts For the collector to work properly, your monitored scripts must be executable and should output metrics in the form of:</p>
     </section>
     <footer class=" footline" >
          
@@ -2089,9 +2162,9 @@ Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/n
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/user-scripts/">user scripts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#user-scripts/">#user scripts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2103,8 +2176,9 @@ Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/n
         <h2 class="post-title"><a href="/integrations/webhook-integration/">Webhook Integration</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Webhooks are an HTTP/HTTPS callback request sent to a desired URL in response to some event, which could be pushing code to a repository or a comment being posted in an online community. A Webhook integration can be used to generate external events in Metricly’s Event Explorer, meaning you could create policies based on the content of those messages.
-Configure  From the top navigation menu, select Integrations. Select the Webhook card. <a class="read-more" href="/integrations/webhook-integration/">&raquo;</a></p>
+Configure  From the top navigation menu, select Integrations. Select the Webhook card.</p>
     </section>
     <footer class=" footline" >
          
@@ -2113,9 +2187,9 @@ Configure  From the top navigation menu, select Integrations. Select the Webhook
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/webhook/">webhook</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#webhook/">#webhook</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2127,8 +2201,9 @@ Configure  From the top navigation menu, select Integrations. Select the Webhook
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/">Windows Agent</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>The Metricly Windows Agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes. Microsoft SQL Server, IIS, and .NET metrics are native to our Windows Agent. Only one Windows integration in your account is necessary to receive all Windows-related metrics.
-Configure Installation is as easy as executing an MSI installer and configuring the service. The agent is pre-configured to send the most important performance metrics, windows events, and system attributes to Metricly. <a class="read-more" href="/integrations/agents/windows-agent/">&raquo;</a></p>
+Configure Installation is as easy as executing an MSI installer and configuring the service. The agent is pre-configured to send the most important performance metrics, windows events, and system attributes to Metricly.</p>
     </section>
     <footer class=" footline" >
          
@@ -2137,11 +2212,11 @@ Configure Installation is as easy as executing an MSI installer and configuring 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2153,7 +2228,8 @@ Configure Installation is as easy as executing an MSI installer and configuring 
         <h2 class="post-title"><a href="/integrations/postresql/postresql-metrics/">metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Friendly Name Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     Blocks Hit postgres.database.*.blks_hit The number of times disk blocks were found already in the PostgreSQLbuffer cache so a read was not necessary. average  0 none none yes no no   Blocks Read postgres.database.*.blks_read The number of disk blocks read in the database. <a class="read-more" href="/integrations/postresql/postresql-metrics/">&raquo;</a></p>
+        
+        <p>Collected    Friendly Name Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     Blocks Hit postgres.database.*.blks_hit The number of times disk blocks were found already in the PostgreSQLbuffer cache so a read was not necessary. average  0 none none yes no no   Blocks Read postgres.database.*.blks_read The number of disk blocks read in the database.</p>
     </section>
     <footer class=" footline" >
          
@@ -2162,11 +2238,11 @@ Configure Installation is as easy as executing an MSI installer and configuring 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/postresql/">postresql</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#postresql/">#postresql</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
         
 
@@ -2178,10 +2254,11 @@ Configure Installation is as easy as executing an MSI installer and configuring 
         <h2 class="post-title"><a href="/integrations/collectors/rabbitmq/">rabbitMQ</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Rabbit MQ is a message broker that manages queues between message producers and consumers. Metricly can be used to monitor your RabbitMQ server’s queuing performance.
 Prerequisites  Linux Agent  Before editing the configuration file, you should verify the RabbitMQ management module is enabled. If the module is not enabled, do the following:
  If the package is installed globally, type this into your command prompt:
-rabbitmq-plugins enable rabbitmq_management  If the package is installed in a directory, type this into your command prompt instead: <a class="read-more" href="/integrations/collectors/rabbitmq/">&raquo;</a></p>
+rabbitmq-plugins enable rabbitmq_management  If the package is installed in a directory, type this into your command prompt instead:</p>
     </section>
     <footer class=" footline" >
          
@@ -2190,9 +2267,9 @@ rabbitmq-plugins enable rabbitmq_management  If the package is installed in a di
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/rabbitmq/">rabbitmq</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#rabbitmq/">#rabbitmq</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2204,8 +2281,9 @@ rabbitmq-plugins enable rabbitmq_management  If the package is installed in a di
         <h2 class="post-title"><a href="/integrations/collectors/redis/">redis</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Redis is an adaptable, open source, in-memory data structure store that can be used as a database, cache, and message broker. Metricly can be used to monitor the performance of your Redis server.
-Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the RedisCollector.conf file. Change the enabled setting to True. Update the instances setting to contain any number of Redis instances you want to monitor as long as it follows the format hostname:port. <a class="read-more" href="/integrations/collectors/redis/">&raquo;</a></p>
+Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the RedisCollector.conf file. Change the enabled setting to True. Update the instances setting to contain any number of Redis instances you want to monitor as long as it follows the format hostname:port.</p>
     </section>
     <footer class=" footline" >
          
@@ -2214,9 +2292,9 @@ Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/n
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/redis/">redis</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#redis/">#redis</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2239,49 +2317,30 @@ Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/n
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"> <i class="fa fa-chevron-left"></i><label>Resource Utilization</label></a>
-    <a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"><span><i class="icon-previous"></i> Previous</span><label>Resource Utilization</label></a>
+    <a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

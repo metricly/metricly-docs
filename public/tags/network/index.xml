@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Network on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/network/</link>
-    <description>Recent content in Network on Metricly Docs</description>
+    <title>#Network on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/network/</link>
+    <description>Recent content in #Network on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/network/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/network/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Network Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-network-metrics/</guid>
       <description>Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.network.*.errors The total number of errors, both transmit and receive. Computation: network..rx_errors + network..tx_errors errors 0 none yes no no   metriclyicly.linux.network.*.packets The total number of packets, both transmitted and received. Computation: network..rx_packets + network..tx_packets packets 0 none yes yes no   metriclyicly.linux.network.*.errors.percent The percentage of errors, both transmit and receive.</description>
     </item>
     

@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Diskspace on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/diskspace/</link>
-    <description>Recent content in Diskspace on Metricly Docs</description>
+    <title>#Diskspace on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/diskspace/</link>
+    <description>Recent content in #Diskspace on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/diskspace/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/diskspace/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Disk Usage Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-disk-usage-metrics/</guid>
       <description> Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.iostat.totalreads Total reads across all disks. Computation: data.sum(‘iostat\..*\.reads)  0 none yes no no   metriclyicly.linux.iostat.totalwrites Total writes across all disks. Computation: data.sum(‘iostat\..*\.writes)  0 none yes no no    </description>
     </item>
     
     <item>
       <title>Diskspace Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-diskspace-metrics/</guid>
       <description> Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     diskspace..byte_percentfree Percentage of free bytes. average percent 0 100 none yes no no    Computed    Fully Qualified Name(FQN) Description Units Min Max BASE CORR UTIL     metriclyicly.linux.diskspace.*.byte_percentused Percentage of disk space used. Computation: 100 – diskspace.*.byte_percentfree percent 0 100 no no yes    </description>
     </item>
     

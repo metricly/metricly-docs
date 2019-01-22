@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Snmp on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/snmp/</link>
-    <description>Recent content in Snmp on Metricly Docs</description>
+    <title>#Snmp on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/snmp/</link>
+    <description>Recent content in #Snmp on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/snmp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/snmp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SNMP</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/snmp-interface-collector/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/collectors/snmp-interface-collector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/snmp-interface-collector/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/collectors/snmp-interface-collector/</guid>
       <description>The SNMP Collector is used to allow Metricly to monitor the performance of SNMP-enabled devices using a set of specified OIDs. The collector can gather data from as many devices as necessary by adding additional configuration sections under the [devices] header.
 Prerequisites You should have SNMP set-up and your community string ready prior to activating the SNMP collector.
  Linux Agent  Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors.</description>
@@ -23,20 +23,20 @@ Prerequisites You should have SNMP set-up and your community string ready prior 
     
     <item>
       <title>SNMP Interface</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/snmp-collector/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/collectors/snmp-collector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/snmp-collector/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/collectors/snmp-collector/</guid>
       <description>The Simple Network Management Protocol (SNMP) Interface collector is used to allow the Linux agent to monitor the performance of remote SNMP-enabled devices like routers and switches. The collector can gather data from as many devices as necessary by adding additional configuration sections under the [devices] header; see the example below for details.
 Prerequisites You should have SNMP set-up and your community string ready prior to activating the SNMP collector.</description>
     </item>
     
     <item>
       <title>TCP</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/tcp-collector/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/collectors/tcp-collector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/collectors/tcp-collector/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/collectors/tcp-collector/</guid>
       <description>The TCP Collector collects metrics on TCP stats.
 Prerequisites  Linux Agent  Configure  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the TCPCollector.conf file. Change the enabled setting to True. Save the configuration file and restart the Linux Agent.  Collector Options    Setting Default Description Type     allowed_names ListenOverflows, ListenDrops, TCPLoss, TCPTimeouts, TCPFastRetrans, TCPLostRetransmit, TCPForwardRetrans, TCPSlowStartRetrans, CurrEstab, TCPAbortOnMemory, TCPBacklogDrop, AttemptFails, EstabResets, InErrs, ActiveOpens, PassiveOpens list of entries to collect, empty to collect all str   byte_unit byte Default numeric output(s) str   enabled False Enable collecting these metrics bool   gauges CurrEstab, MaxConn list of metrics to be published as gauges str   measure_collector_time False Collect the collector run time in ms bool   metrics_blacklist None Regex to match metrics to block.</description>
     </item>

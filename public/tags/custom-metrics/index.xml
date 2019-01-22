@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Custom Metrics on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/custom-metrics/</link>
-    <description>Recent content in Custom Metrics on Metricly Docs</description>
+    <title>#Custom Metrics on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/custom-metrics/</link>
+    <description>Recent content in #Custom Metrics on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/custom-metrics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/custom-metrics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Anake</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/anake/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/anake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/anake/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/anake/</guid>
       <description>Ananke is a Java library that allows Java applications to communicate with and send information to a StatsD listener. You can use Ananke to send metrics from your Java applications to a StatsD server, which will then send the metrics to Metricly.
 Configuration  Setup the Metricly StatsD integration or the Etsy StatsD integration if you haven’t already. We recommend setting up the Metricly StatsD integration if you don’t have a StatsD server already; if you have a StatsD server setup, we recommend setting up the Etsy StatsD integration.</description>
     </item>
     
     <item>
       <title>Custom Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-custom-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/agents/windows-agent/windows-agent-custom-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/agents/windows-agent/windows-agent-custom-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/windows-agent/windows-agent-custom-metrics/</guid>
       <description>You can create additional Windows performance counters to add custom metrics monitored by Metricly.
 Add Custom Metrics 1. Open the Add Counters window  Open perfmon (Performance Monitor) on your computer. Click Performance Monitor in the Monitoring Tools folder. A graph generates. Click Add above the graph. An “Add Counters” window opens. Leave the window open.  2. Prepare a new Counter  Navigate to the ReadWindowsPerfCounters file (C:\Program Files\CollectdWin\config) and open it.</description>
     </item>
     
     <item>
       <title>Dropwizard</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/dropwizard/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/dropwizard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/dropwizard/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/dropwizard/</guid>
       <description>Dropwizard is part Java framework and part Java library that assists in operating web services. Dropwizard will take your web application and run it locally, recording metrics on its performance. You can integrate with Dropwizard via our custom Dropwizard Metrics Library to send these metrics to a StatsD server, which you can then forward to Metricly.
 Configuration  Include the appropriate Ananke library dependency. You’ll also need a working StatsD (Metricly StatsD or Etsy StatsD) integration.</description>
     </item>
     
     <item>
       <title>Netuitive StatsD</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/netuitive-statsd/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/netuitive-statsd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/netuitive-statsd/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/netuitive-statsd/</guid>
       <description>The Netuitive StatsD integration interprets, aggregates, and forwards custom metrics generated from your application. Using the values instrumented from your application’s key actions and data (method calls, database queries, etc.), Metricly aggregates the values, associates them with corresponding metrics, and analyzes them in our analytics cycles.
 The Netuitive StatsD server comes pre-installed as part of the Linux Agent. We recommend setting up a Netuitive StatsD integration if you do not have a StatsD server already.</description>
     </item>

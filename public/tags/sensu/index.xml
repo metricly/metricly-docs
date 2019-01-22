@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sensu on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/sensu/</link>
-    <description>Recent content in Sensu on Metricly Docs</description>
+    <title>#Sensu on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/sensu/</link>
+    <description>Recent content in #Sensu on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/sensu/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/sensu/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sensu</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/sensu/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/sensu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/sensu/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/sensu/</guid>
       <description>Sensu is a monitoring tool that can create events to alert users about server failures, application health, and more. Sensu can be configured to send external events to Metricly. This feature is only compatible with Linux machines.
 How to Send Events From Sensu  Hover on your account name in the top right-hand corner and click API Keys from the drop-down menu. Copy the API key from the custom integration in the table.</description>
     </item>

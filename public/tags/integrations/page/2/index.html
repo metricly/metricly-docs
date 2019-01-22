@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:22 EST">
-<title>Integrations :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T18:15:17 EET">
+<title>#Integrations :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/integrations/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Integrations
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Integrations</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Integrations</h1>
+  
+
+
+
     
     
     
@@ -1975,7 +2043,8 @@
         <h2 class="post-title"><a href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/">CPU Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     cpu.total.guest Percentage of CPU spent running virtual CPUs for guest operatingsystems. average percent 0 none none yes no no   cpu.total.guest_nice Percentage of CPU spent running low-priority virtual CPUs for guestoperating systems. average percent 0 none none yes no no   cpu.total.idle Percentage of CPU not doing any work. <a class="read-more" href="/integrations/agents/diamond-agent/diamond-agent-metrics/diamond-agent-cpu-metrics/">&raquo;</a></p>
+        
+        <p>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     cpu.total.guest Percentage of CPU spent running virtual CPUs for guest operatingsystems. average percent 0 none none yes no no   cpu.total.guest_nice Percentage of CPU spent running low-priority virtual CPUs for guestoperating systems. average percent 0 none none yes no no   cpu.total.idle Percentage of CPU not doing any work.</p>
     </section>
     <footer class=" footline" >
          
@@ -1984,13 +2053,13 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/diamond/">diamond</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#diamond/">#diamond</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/cpu/">cpu</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#cpu/">#cpu</a>
             
         
 
@@ -2002,7 +2071,8 @@
         <h2 class="post-title"><a href="/integrations/collectors/collectd/collectd-cpu-metrics/">CPU Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     cpu-#.cpu-idle.value Number of jiffies the CPU spent idle. average jiffies 0 none none yes no no   cpu-#.cpu-interrupt.value Number of jiffies the CPU spent processing hardware interrupts. average jiffies 0 none none yes no no   cpu-#.cpu-nice.value Number of jiffies the CPU spent processing low priority user threads. <a class="read-more" href="/integrations/collectors/collectd/collectd-cpu-metrics/">&raquo;</a></p>
+        
+        <p>Collected    Fully Qualified Name(FQN) Description Statistic Units Min Max Sparse Data Strategy(SDS) BASE CORR UTIL     cpu-#.cpu-idle.value Number of jiffies the CPU spent idle. average jiffies 0 none none yes no no   cpu-#.cpu-interrupt.value Number of jiffies the CPU spent processing hardware interrupts. average jiffies 0 none none yes no no   cpu-#.cpu-nice.value Number of jiffies the CPU spent processing low priority user threads.</p>
     </section>
     <footer class=" footline" >
          
@@ -2011,15 +2081,15 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectd/">collectd</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectd/">#collectd</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/cpu/">cpu</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#cpu/">#cpu</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2031,7 +2101,8 @@
         <h2 class="post-title"><a href="/integrations/docker/docker-metrics/docker-cpu-metrics/">CPU Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Fully Qualified Name(FQN) Type Units Statistic* BASE CORR Description     cpu.cpu_usage.percpu_usage* COUNTER nanoseconds  yes no Each CPU has a separate metric which tracks the number of nanoseconds that that specific CPU has been used since the container was started.   cpu.cpu_usage.total_usage COUNTER nanoseconds  yes no This metric is the sum of all of the per-CPU usage metrics. Thus, it represents the total number of nanoseconds that all CPUs have been in use since the container was started. <a class="read-more" href="/integrations/docker/docker-metrics/docker-cpu-metrics/">&raquo;</a></p>
+        
+        <p>Collected    Fully Qualified Name(FQN) Type Units Statistic* BASE CORR Description     cpu.cpu_usage.percpu_usage* COUNTER nanoseconds  yes no Each CPU has a separate metric which tracks the number of nanoseconds that that specific CPU has been used since the container was started.   cpu.cpu_usage.total_usage COUNTER nanoseconds  yes no This metric is the sum of all of the per-CPU usage metrics. Thus, it represents the total number of nanoseconds that all CPUs have been in use since the container was started.</p>
     </section>
     <footer class=" footline" >
          
@@ -2040,13 +2111,13 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/docker/">docker</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#docker/">#docker</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/cpu/">cpu</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#cpu/">#cpu</a>
             
         
 
@@ -2058,8 +2129,9 @@
         <h2 class="post-title"><a href="/integrations/cassandra/">Cassandra</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Cassandra is an open source distributed database management system. We use the Jolokia agent to monitor Cassandra’s performance as Cassandra exposes its metrics via JMX. Jolokia connects to a given mbean server and then exposes the server via a REST-like interface, acting as a bridge between JMX and HTTP/JSON.
-Configuration  Download the Jolokia JVM JAR file.  Move the downloaded file to the /opt/netuitive-agent/ directory. Add the following line to the very end of the cassandra-env. <a class="read-more" href="/integrations/cassandra/">&raquo;</a></p>
+Configuration  Download the Jolokia JVM JAR file.  Move the downloaded file to the /opt/netuitive-agent/ directory. Add the following line to the very end of the cassandra-env.</p>
     </section>
     <footer class=" footline" >
          
@@ -2068,9 +2140,9 @@ Configuration  Download the Jolokia JVM JAR file.  Move the downloaded file to t
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/cassandra/">cassandra</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#cassandra/">#cassandra</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2082,8 +2154,9 @@ Configuration  Download the Jolokia JVM JAR file.  Move the downloaded file to t
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/windows-agent-check-version/">Check Version</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>You may need the verify the version of the Windows agent you’re currently using.
- Open the [Element Detail panel][1] for a WINSRV element. Navigate to Attributes (squared in green). Verify that the agent (squared in blue) contains the correct version number.  [1] :/data-visualization/inventory <a class="read-more" href="/integrations/agents/windows-agent/windows-agent-check-version/">&raquo;</a></p>
+ Open the [Element Detail panel][1] for a WINSRV element. Navigate to Attributes (squared in green). Verify that the agent (squared in blue) contains the correct version number.  [1] :/data-visualization/inventory</p>
     </section>
     <footer class=" footline" >
          
@@ -2092,9 +2165,9 @@ Configuration  Download the Jolokia JVM JAR file.  Move the downloaded file to t
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2106,8 +2179,9 @@ Configuration  Download the Jolokia JVM JAR file.  Move the downloaded file to t
         <h2 class="post-title"><a href="/integrations/chef/">Chef</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Chef is a configuration automation management software that allows you setup multiple servers using a few commands from a Chef server and workstation. The Metricly Agent cookbook will help you get the Metricly Linux Agent up and running on all of your nodes quickly.
-Configuration If you’ve managed to set up your Chef workstation, server, and nodes, check out our open source Chef cookbook on Github, which will get you started on installing the Metricly Agent on all of your nodes. <a class="read-more" href="/integrations/chef/">&raquo;</a></p>
+Configuration If you’ve managed to set up your Chef workstation, server, and nodes, check out our open source Chef cookbook on Github, which will get you started on installing the Metricly Agent on all of your nodes.</p>
     </section>
     <footer class=" footline" >
          
@@ -2116,9 +2190,9 @@ Configuration If you’ve managed to set up your Chef workstation, server, and n
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/chef/">chef</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#chef/">#chef</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2130,8 +2204,9 @@ Configuration If you’ve managed to set up your Chef workstation, server, and n
         <h2 class="post-title"><a href="/integrations/collectors/collectd/">Collectd</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Collectd’s Write HTTP plugin can be used to configure collectd to send data to Metricly. If you need additional information about setting up Collectd, view their wiki.
-Configuration 1. Copy API Key in Metricly  From the top navigation menu, click Integrations. Click the collectd card. Data collection should already be enabled, and a unique API key for your account has already been generated. Copy the API key.  2. <a class="read-more" href="/integrations/collectors/collectd/">&raquo;</a></p>
+Configuration 1. Copy API Key in Metricly  From the top navigation menu, click Integrations. Click the collectd card. Data collection should already be enabled, and a unique API key for your account has already been generated. Copy the API key.  2.</p>
     </section>
     <footer class=" footline" >
          
@@ -2140,11 +2215,11 @@ Configuration 1. Copy API Key in Metricly  From the top navigation menu, click I
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectd/">collectd</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectd/">#collectd</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2156,7 +2231,8 @@ Configuration 1. Copy API Key in Metricly  From the top navigation menu, click I
         <h2 class="post-title"><a href="/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/">Collected Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     *.calls The number of calls made to the method. sum count 0 none none yes no no   *.errors The number of method calls that resulted in errors. sum count 0 none none yes no no   *.time The amount of time spent executing the method totaled across all calls. <a class="read-more" href="/integrations/agents/java-agent/java-metrics/java-agent-collected-metrics/">&raquo;</a></p>
+        
+        <p>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     *.calls The number of calls made to the method. sum count 0 none none yes no no   *.errors The number of method calls that resulted in errors. sum count 0 none none yes no no   *.time The amount of time spent executing the method totaled across all calls.</p>
     </section>
     <footer class=" footline" >
          
@@ -2165,13 +2241,13 @@ Configuration 1. Copy API Key in Metricly  From the top navigation menu, click I
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2183,7 +2259,8 @@ Configuration 1. Copy API Key in Metricly  From the top navigation menu, click I
         <h2 class="post-title"><a href="/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/">Computed Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Computed    Fully Qualified Name (FQN) Description Statistic Units Min Max BASE CORR UTIL     netuitive.jvm.heap.utilizationpercent Percentage of the allocated heap memory that is currently in use.Computation:(Heap Used / Heap Committed) * 100 average percent 0 100 yes yes yes   netuitive.jvm.non-heap.utilizationpercent Percentage of the allocated non-heap memory that is currently in use.Computation:(Metaspace or PermGen Used + CodeCache Used / Metaspace or PermGen Committed + CodeCache Committed) * 100 average percent 0 100 yes yes yes   netuitive. <a class="read-more" href="/integrations/agents/java-agent/java-metrics/java-agent-computed-metrics/">&raquo;</a></p>
+        
+        <p>Computed    Fully Qualified Name (FQN) Description Statistic Units Min Max BASE CORR UTIL     netuitive.jvm.heap.utilizationpercent Percentage of the allocated heap memory that is currently in use.Computation:(Heap Used / Heap Committed) * 100 average percent 0 100 yes yes yes   netuitive.jvm.non-heap.utilizationpercent Percentage of the allocated non-heap memory that is currently in use.Computation:(Metaspace or PermGen Used + CodeCache Used / Metaspace or PermGen Committed + CodeCache Committed) * 100 average percent 0 100 yes yes yes   netuitive.</p>
     </section>
     <footer class=" footline" >
          
@@ -2192,13 +2269,13 @@ Configuration 1. Copy API Key in Metricly  From the top navigation menu, click I
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/java/">java</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#java/">#java</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2210,7 +2287,8 @@ Configuration 1. Copy API Key in Metricly  From the top navigation menu, click I
         <h2 class="post-title"><a href="/integrations/docker/docker-metrics/docker-network-metrics/">Computed Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Computed    Name FQN Computation Units Min Max BASE CORR Description     Container CPU Percent netuitive.docker.cpu.container_cpu_percent data[‘cpu.system_cpu_usage’].actual == 0 ? 0 :(data[‘cpu.cpu_usage.total_usage’].actual /data[‘cpu.system_cpu_usage’].actual) * 100 percent 0 100 yes yes The percentage of total CPU being used by the container.   Container Memory Percent netuitive.docker.cpu.container_memory_percent (data[‘memory.usage’].actual / data[‘memory.limit’].actual) * 100 percent 0 100 yes yes The amount of memory in use by the container, expressed as a percentage of the memory available to it. <a class="read-more" href="/integrations/docker/docker-metrics/docker-network-metrics/">&raquo;</a></p>
+        
+        <p>Computed    Name FQN Computation Units Min Max BASE CORR Description     Container CPU Percent netuitive.docker.cpu.container_cpu_percent data[‘cpu.system_cpu_usage’].actual == 0 ? 0 :(data[‘cpu.cpu_usage.total_usage’].actual /data[‘cpu.system_cpu_usage’].actual) * 100 percent 0 100 yes yes The percentage of total CPU being used by the container.   Container Memory Percent netuitive.docker.cpu.container_memory_percent (data[‘memory.usage’].actual / data[‘memory.limit’].actual) * 100 percent 0 100 yes yes The amount of memory in use by the container, expressed as a percentage of the memory available to it.</p>
     </section>
     <footer class=" footline" >
          
@@ -2219,11 +2297,11 @@ Configuration 1. Copy API Key in Metricly  From the top navigation menu, click I
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/docker/">docker</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#docker/">#docker</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
         
 
@@ -2248,49 +2326,30 @@ Configuration 1. Copy API Key in Metricly  From the top navigation menu, click I
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"> <i class="fa fa-chevron-left"></i><label>Resource Utilization</label></a>
-    <a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"><span><i class="icon-previous"></i> Previous</span><label>Resource Utilization</label></a>
+    <a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

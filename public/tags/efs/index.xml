@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Efs on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/efs/</link>
-    <description>Recent content in Efs on Metricly Docs</description>
+    <title>#Efs on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/efs/</link>
+    <description>Recent content in #Efs on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/efs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/efs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS EFS Policies</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-efs/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/aws-policies-efs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-efs/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/aws-policies-efs/</guid>
       <description>Policy names are prefixed with AWS EFS –
-    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     AWS EFS – Depleted Burst Credit Balance 15 minutes aws.efs.burstcreditbalance = 0   Critical There are no burst credits left. The number of burst credits that a file system has is zero.   AWS EFS – IO Percentage Critical 15 minutes aws.</description>
+   Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     AWS EFS – Depleted Burst Credit Balance 15 minutes aws.efs.burstcreditbalance = 0   Critical There are no burst credits left. The number of burst credits that a file system has is zero.   AWS EFS – IO Percentage Critical 15 minutes aws.</description>
     </item>
     
     <item>
       <title>EFS Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-efs/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-efs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-efs/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-efs/</guid>
       <description>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max BASE CORR UTIL     aws.efs.burstcreditbalance The number of burst credits that a file system has. avg bytes   no yes no   aws.efs.clientconnections The number of client connections to a file system. sum bytes   no yes no   aws.efs.datawriteiobytes The number of bytes for each file write operation. sum bytes   no yes no   aws.</description>
     </item>
     

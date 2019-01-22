@@ -3,7 +3,8 @@
         <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
+        <!-- <p>{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p> -->
+        <p>{{ .Summary }}</p>
     </section>
     <footer class=" footline" >
          
@@ -14,7 +15,8 @@
         
         {{if .Params.tags }}  
             {{ range $index, $tag := .Params.tags }}
-                <a class="label label-default" href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}/">{{ $tag }}</a>
+                <!-- <a class="label label-default" href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}/">{{ $tag }}</a> -->
+                <a class="label label-default" href="{{$.Site.BaseURL}}tags/{{ trim $tag "#" | urlize }}">{{ $tag }}</a>
             {{ end }}
         {{end}}
 

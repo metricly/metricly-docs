@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Solr on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/solr/</link>
-    <description>Recent content in Solr on Metricly Docs</description>
+    <title>#Solr on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/solr/</link>
+    <description>Recent content in #Solr on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/solr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/solr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Solr</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/solr/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/solr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/solr/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/solr/</guid>
       <description>Solr is an open source search platform, allowing for full-text search, hit highlighting, faceted search, and much more. Metricly can be used to monitor the performance of your Solr server.
 Prerequisites  Linux Agent  Configuration  Navigate to the collectors folder, /opt/netuitive-agent/conf/collectors. Open the SolrCollector.conf file. Change the enabled setting to True. Save the configuration file and restart the Linux Agent.  Collector Options    Option Default Description     enabled FALSE Enable collecting Solr metrics.</description>
     </item>

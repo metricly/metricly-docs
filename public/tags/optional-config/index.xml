@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Optional Config on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/optional-config/</link>
-    <description>Recent content in Optional Config on Metricly Docs</description>
+    <title>#Optional Config on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/optional-config/</link>
+    <description>Recent content in #Optional Config on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/optional-config/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/optional-config/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Enable Guest OS Diagnostic Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</guid>
       <description>Azure Virtual Machines will share boot diagnostic metrics by default, which are a small subset of core metrics. To enable Guest OS diagnostic (basic) metrics that provide more information about your machine, you’ll need to follow these steps (depending on your situation):
 Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Select a virtual machine. Another window with options will open. Select Diagnostic settings. Under Configure required settings, select the checkbox next to Basic metrics.</description>
     </item>
     
     <item>
       <title>Filter Elements</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-filter-elements/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-filter-elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-filter-elements/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-filter-elements/</guid>
       <description>You can filter what Azure elements are included in Metricly’s monitoring by using regex to match key-value pairs. Metricly offers opt-in (include) or opt-out (exclude) element filtering.
 Using opt-in filtering  In your Azure portal, create or choose an existing tag (key-value pair). Then, assign the tag to the Azure elements you do not want Metricly to monitor. In Metricly, navigate to your Azure integration card. Expand the element types you want to filter.</description>
     </item>
     
     <item>
       <title>Optional Config</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-optional-config/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/aws-optional-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/aws-optional-config/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/aws-optional-config/</guid>
       <description>Change Element Display Names You can change how certain elements’ names are displayed in the application to help distinguish between each instance, e.g., you have 15 EC2 instances with the same name and want to know the difference between each.
  Under the Include Types list, expand the desired type.
  Beneath the Tag Key field, click Advanced. A menu expands.

@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:23 EST">
-<title>Linux :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T18:15:17 EET">
+<title>#Linux :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/linux/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Linux
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Linux</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Linux</h1>
+  
+
+
+
     
     
     
@@ -1973,9 +2041,10 @@
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-collectors/">Collectors</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>There are three ways to configure the Linux Agent default collectors: via the BaseCollector, as a combination of individual collectors, or with just the SimpleCollector. This guide outlines their differences and how to use each; however, we encourage you to try the new SimpleCollector.
 Using the Simple Collector netuitive-diamond/src/collectors/simple
-Where the base or individual collectors include more data (which may be less useful or actionable), this SimpleCollector guarantees a cleaner streamlined experience. <a class="read-more" href="/integrations/agents/linux-agent/linux-collectors/">&raquo;</a></p>
+Where the base or individual collectors include more data (which may be less useful or actionable), this SimpleCollector guarantees a cleaner streamlined experience.</p>
     </section>
     <footer class=" footline" >
          
@@ -1984,11 +2053,11 @@ Where the base or individual collectors include more data (which may be less use
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/collectors/">collectors</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#collectors/">#collectors</a>
             
         
 
@@ -2000,11 +2069,12 @@ Where the base or individual collectors include more data (which may be less use
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-common-commands/">Common Commands</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> These commands may vary depending on your distro. Linux Commands  service netuitive-agent {stop|start|restart}
+        
+        <p> These commands may vary depending on your distro.Linux Commands  service netuitive-agent {stop|start|restart}
  /etc/init.d/netuitive-agent {stop|start|restart}
  initctl {stop|start|restart} netuitive-agent
  systemctl {stop|start|restart} netuitive-agent
-   <a class="read-more" href="/integrations/agents/linux-agent/linux-common-commands/">&raquo;</a></p>
+  </p>
     </section>
     <footer class=" footline" >
          
@@ -2013,11 +2083,11 @@ Where the base or individual collectors include more data (which may be less use
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/commands/">commands</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#commands/">#commands</a>
             
         
 
@@ -2029,8 +2099,9 @@ Where the base or individual collectors include more data (which may be less use
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/diamond-linux-policies/">Diamond (Linux) Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Before reading about these default policies, note that both the Elevated User CPU and Elevated System CPU policies assume that the CPU Collector is configured to collect aggregate CPU metrics, rather than per core metrics.
-It also assumes that the metrics are being normalized. This is done by setting the percore setting set to FALSE (it is TRUE by default) and the normalize setting set to TRUE (it is FALSE by default) in your configuration file. <a class="read-more" href="/alerts-notifications/policies/default-policies/diamond-linux-policies/">&raquo;</a></p>
+It also assumes that the metrics are being normalized. This is done by setting the percore setting set to FALSE (it is TRUE by default) and the normalize setting set to TRUE (it is FALSE by default) in your configuration file.</p>
     </section>
     <footer class=" footline" >
          
@@ -2039,17 +2110,17 @@ It also assumes that the metrics are being normalized. This is done by setting t
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/diamond/">diamond</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#diamond/">#diamond</a>
             
         
 
@@ -2061,8 +2132,9 @@ It also assumes that the metrics are being normalized. This is done by setting t
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-disable/">Disable</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>If you need to disable an existing Linux integration or view the unique API key assigned to your account:
- Navigate to User Profile &gt; Integrations. Find the Integration with an Integration Type of Infrastructure. Click its name. Toggle Data Collection to disable it.   <a class="read-more" href="/integrations/agents/linux-agent/linux-disable/">&raquo;</a></p>
+ Navigate to User Profile &gt; Integrations. Find the Integration with an Integration Type of Infrastructure. Click its name. Toggle Data Collection to disable it.  </p>
     </section>
     <footer class=" footline" >
          
@@ -2071,9 +2143,9 @@ It also assumes that the metrics are being normalized. This is done by setting t
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
         
 
@@ -2085,11 +2157,12 @@ It also assumes that the metrics are being normalized. This is done by setting t
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-docker-install/">Docker Install</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>1. Copy API Key From Docker Integration  From the Metricly top navigation menu, select Integrations.
  Click the Docker card.
  Ensure Data Collection is enabled. A unique API key for your account has already been generated.
  Highlight the one-line install command from the instructions and copy them. A unique API key for your account has already been generated and included in the command line.
-  The command runs a container named netuitive-agent in the background and publishes the port values to the host. <a class="read-more" href="/integrations/agents/linux-agent/linux-docker-install/">&raquo;</a></p>
+  The command runs a container named netuitive-agent in the background and publishes the port values to the host.</p>
     </section>
     <footer class=" footline" >
          
@@ -2098,11 +2171,11 @@ It also assumes that the metrics are being normalized. This is done by setting t
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/docker/">docker</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#docker/">#docker</a>
             
         
 
@@ -2114,8 +2187,9 @@ It also assumes that the metrics are being normalized. This is done by setting t
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">Elastic Beanstalk</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Using an existing application file, you can deploy the Netuitive agent to a self-contained EC2 instance complete with a load balancer and everything else it needs to run. The Elastic Beanstalk instance can also scale by itself.
- Before creating your Elastic Beanstalk instance, find or create a folder called .ebextensions in your application’s directory. Copy the netuitive.config file to your .ebextensions folder. Replace the sample API key at the top of the netuitive. <a class="read-more" href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">&raquo;</a></p>
+ Before creating your Elastic Beanstalk instance, find or create a folder called .ebextensions in your application’s directory. Copy the netuitive.config file to your .ebextensions folder. Replace the sample API key at the top of the netuitive.</p>
     </section>
     <footer class=" footline" >
          
@@ -2124,11 +2198,11 @@ It also assumes that the metrics are being normalized. This is done by setting t
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elastic-beanstalk/">elastic beanstalk</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elastic-beanstalk/">#elastic beanstalk</a>
             
         
 
@@ -2140,8 +2214,9 @@ It also assumes that the metrics are being normalized. This is done by setting t
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/">Linux Agent</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Using the Linux Agent, you can quickly deploy and collect metrics with a rich set of metadata.
-The agent discovers and collects KPI metrics, integrates with CloudWatch, and can leverage other agent metrics. Using various plugins, the Linux Agent can also pull metrics from many different products running on a Linux operating system (in addition to pulling metrics from the host Linux OS). <a class="read-more" href="/integrations/agents/linux-agent/">&raquo;</a></p>
+The agent discovers and collects KPI metrics, integrates with CloudWatch, and can leverage other agent metrics. Using various plugins, the Linux Agent can also pull metrics from many different products running on a Linux operating system (in addition to pulling metrics from the host Linux OS).</p>
     </section>
     <footer class=" footline" >
          
@@ -2150,9 +2225,9 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
         
 
@@ -2164,8 +2239,9 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         <h2 class="post-title"><a href="/alerts-notifications/checks/linux-checks/">Linux Checks</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Enable Linux Checks Currently, Metricly comes with three pre-built checks; Heartbeat, Processes, and Ports. These are turnkey checks that do not require any scripting or coding, just simple configuration setting in the respective configuration files.
- Make sure the Linux agent is installed. Metricly checks can be enabled via the configuration files included with the agent. All checks configuration files for the Linux agent can be found in /opt/netuitive-agent/conf/collectors Some of the checks are enabled by default, while you would need to enable other checks. <a class="read-more" href="/alerts-notifications/checks/linux-checks/">&raquo;</a></p>
+ Make sure the Linux agent is installed. Metricly checks can be enabled via the configuration files included with the agent. All checks configuration files for the Linux agent can be found in /opt/netuitive-agent/conf/collectors Some of the checks are enabled by default, while you would need to enable other checks.</p>
     </section>
     <footer class=" footline" >
          
@@ -2174,13 +2250,13 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/checks/">checks</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#checks/">#checks</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
         
 
@@ -2192,7 +2268,8 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">Manual Install</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> Via RPM rpm --import https://repos.app.netuitive.com/RPM-GPG-KEY-netuitive rpm -ivh https://repos.app.netuitive.com/rpm/noarch/netuitive-repo-1-0.2.noarch.rpm yum -y install netuitive-agent  Via DEB curl -s https://repos.app.netuitive.com/netuitive.gpg | apt-key add -apt-get install -y apt-transport-https echo &quot;deb https://repos.app.netuitive.com/deb/ stable main&quot; &gt; /etc/apt/sources.list.d/netuitive.list apt-get -y update apt-get install -y netuitive-agent   <a class="read-more" href="/integrations/agents/linux-agent/linux-elastic-manual-install/">&raquo;</a></p>
+        
+        <p> Via RPM rpm --import https://repos.app.netuitive.com/RPM-GPG-KEY-netuitive rpm -ivh https://repos.app.netuitive.com/rpm/noarch/netuitive-repo-1-0.2.noarch.rpm yum -y install netuitive-agent  Via DEB curl -s https://repos.app.netuitive.com/netuitive.gpg | apt-key add -apt-get install -y apt-transport-https echo &quot;deb https://repos.app.netuitive.com/deb/ stable main&quot; &gt; /etc/apt/sources.list.d/netuitive.list apt-get -y update apt-get install -y netuitive-agent  </p>
     </section>
     <footer class=" footline" >
          
@@ -2201,9 +2278,9 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
         
 
@@ -2215,8 +2292,9 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-optional-config/">Optional Config</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Changing Element Display Names You can change the display name of certain elements to help distinguish between each instance.
- Navigate to Integrations &gt; Linux Integration. Click Advanced; a menu expands.  Click the Element Name field to edit it. Type the desired name into the field.  An element name of ${meta.originalName} would resolve to whatever name comes in with the original element payload before it would be replaced with the optional element name template. <a class="read-more" href="/integrations/agents/linux-agent/linux-optional-config/">&raquo;</a></p>
+ Navigate to Integrations &gt; Linux Integration. Click Advanced; a menu expands.  Click the Element Name field to edit it. Type the desired name into the field.  An element name of ${meta.originalName} would resolve to whatever name comes in with the original element payload before it would be replaced with the optional element name template.</p>
     </section>
     <footer class=" footline" >
          
@@ -2225,13 +2303,13 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/fqns/">FQNs</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#fqns/">#FQNs</a>
             
         
 
@@ -2254,48 +2332,29 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

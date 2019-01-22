@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:24 EST">
-<title>Notifications :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T18:15:18 EET">
+<title>#Notifications :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/notifications/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Notifications
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Notifications</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Notifications</h1>
+  
+
+
+
     
     
     
@@ -1973,8 +2041,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/aws-policies-asg/">AWS ASG Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Policy names are prefixed with AWS ASG –
-    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated CPUActivity (Normal Network Activity) 30 min aws.ec2.cpuutilization has an upper baseline + upper contextual deviation metricly.aws.ec2.bytesinperse does not have a upper baseline + upper contextual deviation metricly.aws.ec2.bytesoutpersec does not have a upper baseline + upper contextual deviation. INFO This policy is designed to catch cases where CPU activity is higher than than normal and cannot be explained by a corresponding increase in network traffic. <a class="read-more" href="/alerts-notifications/policies/default-policies/aws-policies-asg/">&raquo;</a></p>
+   Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated CPUActivity (Normal Network Activity) 30 min aws.ec2.cpuutilization has an upper baseline + upper contextual deviation metricly.aws.ec2.bytesinperse does not have a upper baseline + upper contextual deviation metricly.aws.ec2.bytesoutpersec does not have a upper baseline + upper contextual deviation. INFO This policy is designed to catch cases where CPU activity is higher than than normal and cannot be explained by a corresponding increase in network traffic.</p>
     </section>
     <footer class=" footline" >
          
@@ -1983,17 +2052,17 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/asg/">asg</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#asg/">#asg</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
         
 
@@ -2005,8 +2074,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/aws-policies-dynamodb/">AWS DynamoDB Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Policy names are prefixed with AWS DynamoDB –
-    Policy Name Duration Condition 1 Cat. Description     Elevated Read Capacity Utilization 30 Min metricly.aws.dynamodb.readcapacityutilization has an upper baseline deviation + an upper contextual deviation + a static threshold ≥ 50. WARNING Read Capacity Utilization has been higher than expected for over 30 minutes; also, the actual value has been above 50% for that time.   Elevated Write Capacity Utilization 30 Min metricly. <a class="read-more" href="/alerts-notifications/policies/default-policies/aws-policies-dynamodb/">&raquo;</a></p>
+   Policy Name Duration Condition 1 Cat. Description     Elevated Read Capacity Utilization 30 Min metricly.aws.dynamodb.readcapacityutilization has an upper baseline deviation + an upper contextual deviation + a static threshold ≥ 50. WARNING Read Capacity Utilization has been higher than expected for over 30 minutes; also, the actual value has been above 50% for that time.   Elevated Write Capacity Utilization 30 Min metricly.</p>
     </section>
     <footer class=" footline" >
          
@@ -2015,17 +2085,17 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/dynamodb/">dynamoDB</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#dynamodb/">#dynamoDB</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
         
 
@@ -2037,8 +2107,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/aws-policies-ebs/">AWS EBS Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Before reading about the EBS default policy, it is important to understand the following Metricly computed metrics.
- Average Latency: Average Latency is straightforward as it represents the average amount of time that it takes for a disk operation to complete. Queue Length Differential: Queue Length Differential measures the difference between the actual disk queue length and the “ideal” disk queue length.The ideal queue length is based on Amazon’s rule of thumb that for every 200 IOPS you should have a queue length of 1. <a class="read-more" href="/alerts-notifications/policies/default-policies/aws-policies-ebs/">&raquo;</a></p>
+ Average Latency: Average Latency is straightforward as it represents the average amount of time that it takes for a disk operation to complete. Queue Length Differential: Queue Length Differential measures the difference between the actual disk queue length and the “ideal” disk queue length.The ideal queue length is based on Amazon’s rule of thumb that for every 200 IOPS you should have a queue length of 1.</p>
     </section>
     <footer class=" footline" >
          
@@ -2047,17 +2118,17 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/ebs/">ebs</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#ebs/">#ebs</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
         
 
@@ -2069,8 +2140,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/aws-policies-ec2/">AWS EC2 Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Policy names are prefixed with AWS EC2 –
-    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated CPUActivity (Normal Network Activity) 30 min aws.ec2.cpuutilization has an upper baseline deviation + an upper contextual deviation metricly.aws.ec2.bytesinpersec does not have a upper baseline deviation + does not have a upper contextual deviation metricly.aws.ec2.bytesoutpersec does not have a upper baseline deviation + does not have a upper contextual deviationn INFO Increases in CPU activity are not uncommon when there is a rise in network activity. <a class="read-more" href="/alerts-notifications/policies/default-policies/aws-policies-ec2/">&raquo;</a></p>
+   Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated CPUActivity (Normal Network Activity) 30 min aws.ec2.cpuutilization has an upper baseline deviation + an upper contextual deviation metricly.aws.ec2.bytesinpersec does not have a upper baseline deviation + does not have a upper contextual deviation metricly.aws.ec2.bytesoutpersec does not have a upper baseline deviation + does not have a upper contextual deviationn INFO Increases in CPU activity are not uncommon when there is a rise in network activity.</p>
     </section>
     <footer class=" footline" >
          
@@ -2079,17 +2151,17 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/ec2/">ec2</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#ec2/">#ec2</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
         
 
@@ -2101,8 +2173,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/aws-policies-efs/">AWS EFS Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Policy names are prefixed with AWS EFS –
-    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     AWS EFS – Depleted Burst Credit Balance 15 minutes aws.efs.burstcreditbalance = 0   Critical There are no burst credits left. The number of burst credits that a file system has is zero.   AWS EFS – IO Percentage Critical 15 minutes aws. <a class="read-more" href="/alerts-notifications/policies/default-policies/aws-policies-efs/">&raquo;</a></p>
+   Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     AWS EFS – Depleted Burst Credit Balance 15 minutes aws.efs.burstcreditbalance = 0   Critical There are no burst credits left. The number of burst credits that a file system has is zero.   AWS EFS – IO Percentage Critical 15 minutes aws.</p>
     </section>
     <footer class=" footline" >
          
@@ -2111,17 +2184,17 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/efs/">efs</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#efs/">#efs</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
         
 
@@ -2133,8 +2206,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/aws-policies-elb/">AWS ELB Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Policy names are prefixed with AWS ELB –
-    Policy name Duration Condition 1 (and) Condition 2 Category Description     Elevated BackendError Rate (Low Volume) 15 min metricly.aws.elb.httpcodebackenderrorpercent has an upper baseline deviation + an upper contextual deviation metricly.aws.elb.requestcount has a static threshold &lt;1,000 WARNING This is the first of three policies that look at elevated backend error rates. This policy looks specifically at low traffic volume cases. <a class="read-more" href="/alerts-notifications/policies/default-policies/aws-policies-elb/">&raquo;</a></p>
+   Policy name Duration Condition 1 (and) Condition 2 Category Description     Elevated BackendError Rate (Low Volume) 15 min metricly.aws.elb.httpcodebackenderrorpercent has an upper baseline deviation + an upper contextual deviation metricly.aws.elb.requestcount has a static threshold &lt;1,000 WARNING This is the first of three policies that look at elevated backend error rates. This policy looks specifically at low traffic volume cases.</p>
     </section>
     <footer class=" footline" >
          
@@ -2143,17 +2217,17 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elb/">elb</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elb/">#elb</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
         
 
@@ -2165,8 +2239,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/aws-policies-elasticache/">AWS Elasticache Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Policy names are prefixed with AWS Elasticache –
-    Policy name Duration Condition 1 (and) Condition 2 Category Description     Memcached – CPU Threshold Exceeded 5 min aws.elasticache.cpuutilization has a static threshold &gt;90%  CRITICAL The Memcached Node has exceeded the CPU threshold of 90%. The cache cluster may need to be scaled, either by using a larger node type or by adding more nodes. <a class="read-more" href="/alerts-notifications/policies/default-policies/aws-policies-elasticache/">&raquo;</a></p>
+   Policy name Duration Condition 1 (and) Condition 2 Category Description     Memcached – CPU Threshold Exceeded 5 min aws.elasticache.cpuutilization has a static threshold &gt;90%  CRITICAL The Memcached Node has exceeded the CPU threshold of 90%. The cache cluster may need to be scaled, either by using a larger node type or by adding more nodes.</p>
     </section>
     <footer class=" footline" >
          
@@ -2175,17 +2250,17 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elasticache/">elasticache</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elasticache/">#elasticache</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
         
 
@@ -2197,8 +2272,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/aws-policies-lambda/">AWS Lambda Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Policy names are prefixed with AWS Lambda –
-    Policy name Duration Conditions Category Description     Elevated Invocation Count 30 min aws.lambda.invocations has an upper baseline deviation + an upper contextual deviation WARNING The number of calls to the function (invocations) have been greater than expected for at least the last 30 minutes.   Depressed Invocation Count 10 min aws.lambda.invocations has a lower baseline deviation + a lower contextual deviation WARNING The number of calls to the function (invocations) have been lower than expected for at least the last 10 minutes. <a class="read-more" href="/alerts-notifications/policies/default-policies/aws-policies-lambda/">&raquo;</a></p>
+   Policy name Duration Conditions Category Description     Elevated Invocation Count 30 min aws.lambda.invocations has an upper baseline deviation + an upper contextual deviation WARNING The number of calls to the function (invocations) have been greater than expected for at least the last 30 minutes.   Depressed Invocation Count 10 min aws.lambda.invocations has a lower baseline deviation + a lower contextual deviation WARNING The number of calls to the function (invocations) have been lower than expected for at least the last 10 minutes.</p>
     </section>
     <footer class=" footline" >
          
@@ -2207,17 +2283,17 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elb/">elb</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elb/">#elb</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
         
 
@@ -2229,8 +2305,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/policies/default-policies/aws-policies-rds/">AWS RDS Policies</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Policy names are prefixed with AWS RDS –
-    Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated RDS CPU Activity (Normal Network Activity) 30 min metricly.aws.rds.cpuutilization has an upper baseline deviation + an upper contextual deviation + a static threshold &gt; 20 metricly.aws.rds.networkreceivethroughput does not have an upper baseline deviation + does not have a upper contextual deviation metricly. <a class="read-more" href="/alerts-notifications/policies/default-policies/aws-policies-rds/">&raquo;</a></p>
+   Policy name Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     Elevated RDS CPU Activity (Normal Network Activity) 30 min metricly.aws.rds.cpuutilization has an upper baseline deviation + an upper contextual deviation + a static threshold &gt; 20 metricly.aws.rds.networkreceivethroughput does not have an upper baseline deviation + does not have a upper contextual deviation metricly.</p>
     </section>
     <footer class=" footline" >
          
@@ -2239,17 +2316,17 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/policies/">policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#policies/">#policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/default-policies/">default policies</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#default-policies/">#default policies</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/rds/">rds</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#rds/">#rds</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
         
 
@@ -2261,8 +2338,9 @@
         <h2 class="post-title"><a href="/alerts-notifications/notifications/notifications-aws-sns/">AWS SNS Notifications</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>You can leverage AWS’s Simple Notification Service as one of your notification methods in Metricly. There are two ways to accomplish this: through an IAM Role or Access Key. It is recommended that you have first set up the AWS Integration and are familiar with terms such as ARN (Amazon Resource Names), which are needed to complete setup.
-Inbound &amp; Outbound This guide tackles outbound SNS setup, however you can also ingest inbound SNS notifications. <a class="read-more" href="/alerts-notifications/notifications/notifications-aws-sns/">&raquo;</a></p>
+Inbound &amp; Outbound This guide tackles outbound SNS setup, however you can also ingest inbound SNS notifications.</p>
     </section>
     <footer class=" footline" >
          
@@ -2271,11 +2349,11 @@ Inbound &amp; Outbound This guide tackles outbound SNS setup, however you can al
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/alerts/">alerts</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#alerts/">#alerts</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/notifications/">notifications</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#notifications/">#notifications</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/sns/">sns</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#sns/">#sns</a>
             
         
 
@@ -2298,48 +2376,29 @@ Inbound &amp; Outbound This guide tackles outbound SNS setup, however you can al
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:25 EST">
-<title>Windows :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+<meta name="revised" content="2019-01-14T18:15:19 EET">
+<title>#Windows :: Metricly Docs</title>
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/tags/windows/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ #Windows
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
-    <h1>Windows</h1>
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>#Windows</h1>
+  
+
+
+
     
     
     
@@ -1973,8 +2041,9 @@
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/windows-agent-check-version/">Check Version</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>You may need the verify the version of the Windows agent you’re currently using.
- Open the [Element Detail panel][1] for a WINSRV element. Navigate to Attributes (squared in green). Verify that the agent (squared in blue) contains the correct version number.  [1] :/data-visualization/inventory <a class="read-more" href="/integrations/agents/windows-agent/windows-agent-check-version/">&raquo;</a></p>
+ Open the [Element Detail panel][1] for a WINSRV element. Navigate to Attributes (squared in green). Verify that the agent (squared in blue) contains the correct version number.  [1] :/data-visualization/inventory</p>
     </section>
     <footer class=" footline" >
          
@@ -1983,9 +2052,9 @@
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -1997,8 +2066,9 @@
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/windows-agent-custom-metrics/">Custom Metrics</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>You can create additional Windows performance counters to add custom metrics monitored by Metricly.
-Add Custom Metrics 1. Open the Add Counters window  Open perfmon (Performance Monitor) on your computer. Click Performance Monitor in the Monitoring Tools folder. A graph generates. Click Add above the graph. An “Add Counters” window opens. Leave the window open.  2. Prepare a new Counter  Navigate to the ReadWindowsPerfCounters file (C:\Program Files\CollectdWin\config) and open it. <a class="read-more" href="/integrations/agents/windows-agent/windows-agent-custom-metrics/">&raquo;</a></p>
+Add Custom Metrics 1. Open the Add Counters window  Open perfmon (Performance Monitor) on your computer. Click Performance Monitor in the Monitoring Tools folder. A graph generates. Click Add above the graph. An “Add Counters” window opens. Leave the window open.  2. Prepare a new Counter  Navigate to the ReadWindowsPerfCounters file (C:\Program Files\CollectdWin\config) and open it.</p>
     </section>
     <footer class=" footline" >
          
@@ -2007,13 +2077,13 @@ Add Custom Metrics 1. Open the Add Counters window  Open perfmon (Performance Mo
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/custom-metrics/">custom metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#custom-metrics/">#custom metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
         
 
@@ -2025,7 +2095,8 @@ Add Custom Metrics 1. Open the Add Counters window  Open perfmon (Performance Mo
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/windows-agent-manual-install/">Manual Install</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Manually Install the Windows Agent  Download the latest Windows Agent. Ensure you download the correct version for your environment. Run the setup wizard and follow the instructions to install it. Navigate to the** WriteNetuitive.config** file (C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config depending on your environment. Open the file and locate the line &lt;WriteNetuitiveURL=&quot;https://api.app.metricly.com/ingest/windows/{apikey}&quot; /&gt;. Replace {apikey} in the URL with the API key generated in step 1. Save the file and restart the agent. <a class="read-more" href="/integrations/agents/windows-agent/windows-agent-manual-install/">&raquo;</a></p>
+        
+        <p>Manually Install the Windows Agent  Download the latest Windows Agent. Ensure you download the correct version for your environment. Run the setup wizard and follow the instructions to install it. Navigate to the** WriteNetuitive.config** file (C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config depending on your environment. Open the file and locate the line &lt;WriteNetuitiveURL=&quot;https://api.app.metricly.com/ingest/windows/{apikey}&quot; /&gt;. Replace {apikey} in the URL with the API key generated in step 1. Save the file and restart the agent.</p>
     </section>
     <footer class=" footline" >
          
@@ -2034,11 +2105,11 @@ Add Custom Metrics 1. Open the Add Counters window  Open perfmon (Performance Mo
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/install/">install</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#install/">#install</a>
             
         
 
@@ -2050,7 +2121,8 @@ Add Custom Metrics 1. Open the Add Counters window  Open perfmon (Performance Mo
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/windows-agent-metrics/">Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Friendly Name Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     Avg. Disk Queue Length logical_disk.*.avg_queue_length Average queue length for the logical disk. average count 0 none none yes no no   Free Megabytes logical_disk.*.megabytes_free Space free on the logical disk expressed in megabytes. average megabytes 0 none none yes no no   % Free Space logical_disk. <a class="read-more" href="/integrations/agents/windows-agent/windows-agent-metrics/">&raquo;</a></p>
+        
+        <p>Collected    Friendly Name Fully Qualified Name (FQN) Description Statistic Units Min Max Sparse Data Strategy (SDS) BASE CORR UTIL     Avg. Disk Queue Length logical_disk.*.avg_queue_length Average queue length for the logical disk. average count 0 none none yes no no   Free Megabytes logical_disk.*.megabytes_free Space free on the logical disk expressed in megabytes. average megabytes 0 none none yes no no   % Free Space logical_disk.</p>
     </section>
     <footer class=" footline" >
          
@@ -2059,11 +2131,11 @@ Add Custom Metrics 1. Open the Add Counters window  Open perfmon (Performance Mo
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
         
 
@@ -2075,9 +2147,10 @@ Add Custom Metrics 1. Open the Add Counters window  Open perfmon (Performance Mo
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/windows-agent-plugins/">Plugins</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>There are two types of Windows plugins: Read (which allow our Windows agent to read data) and Write (which allow our Windows agent to write data). The following plugins are enabled by default:
  ReadWindowsPerfCounters ReadWindowsAttributes ReadWindowsEvents WriteNetuitive  This configuration is recommended for monitoring a Windows server with Metricly. Other Read/Write plugins are available as documented below (note that the Write Console plugin has no configuration settings).
-Enable/Disable To change which plugins are enabled, edit the CollectdWin. <a class="read-more" href="/integrations/agents/windows-agent/windows-agent-plugins/">&raquo;</a></p>
+Enable/Disable To change which plugins are enabled, edit the CollectdWin.</p>
     </section>
     <footer class=" footline" >
          
@@ -2086,11 +2159,11 @@ Enable/Disable To change which plugins are enabled, edit the CollectdWin. <a cla
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/plugins/">plugins</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#plugins/">#plugins</a>
             
         
 
@@ -2102,7 +2175,8 @@ Enable/Disable To change which plugins are enabled, edit the CollectdWin. <a cla
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/windows-agent-proxy/">Proxy</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Determining if you have a proxy enabled  Open Internet Explorer. Click the Tools icon, and then click Internet Options. On the Connections tab, click LAN settings. If any of the checkboxes are selected and the appropriate information is filled out, you may need to configure proxy settings to enable data being posted by the agent on your server.  Configuring the proxy  Add the following to the end of the CollectdWinService. <a class="read-more" href="/integrations/agents/windows-agent/windows-agent-proxy/">&raquo;</a></p>
+        
+        <p>Determining if you have a proxy enabled  Open Internet Explorer. Click the Tools icon, and then click Internet Options. On the Connections tab, click LAN settings. If any of the checkboxes are selected and the appropriate information is filled out, you may need to configure proxy settings to enable data being posted by the agent on your server.  Configuring the proxy  Add the following to the end of the CollectdWinService.</p>
     </section>
     <footer class=" footline" >
          
@@ -2111,11 +2185,11 @@ Enable/Disable To change which plugins are enabled, edit the CollectdWin. <a cla
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/plugins/">plugins</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#plugins/">#plugins</a>
             
         
 
@@ -2127,8 +2201,9 @@ Enable/Disable To change which plugins are enabled, edit the CollectdWin. <a cla
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/windows-agent-troubleshooting/">Troubleshooting</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Logs are written to C:\ProgramData\CollectdWin\CollectdWin.log by default. Errors are written to the Event Log.  To adjust the log file level, edit the line below near the end of the CollectdWinService.exe.config:
- Navigate to C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config. Edit&lt;logger name=&quot;*&quot; writeTo=&quot;default&quot; minlevel=&quot;[Trace/Debug/Info/Warn/Error/Fatal]&quot; /&gt;. Save file.  Windows Server 2003 If you are monitoring a Windows Server 2003 instance and are having trouble seeing data in Metricly, you may need to install a hotfix from Microsoft. <a class="read-more" href="/integrations/agents/windows-agent/windows-agent-troubleshooting/">&raquo;</a></p>
+ Navigate to C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config. Edit&lt;logger name=&quot;*&quot; writeTo=&quot;default&quot; minlevel=&quot;[Trace/Debug/Info/Warn/Error/Fatal]&quot; /&gt;. Save file.  Windows Server 2003 If you are monitoring a Windows Server 2003 instance and are having trouble seeing data in Metricly, you may need to install a hotfix from Microsoft.</p>
     </section>
     <footer class=" footline" >
          
@@ -2137,9 +2212,9 @@ Enable/Disable To change which plugins are enabled, edit the CollectdWin. <a cla
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2151,7 +2226,8 @@ Enable/Disable To change which plugins are enabled, edit the CollectdWin. <a cla
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/windows-agent-uninstall/">Uninstall</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> Open the Programs and Features list. Right click the CollectdWinService (64 bit) program.  Click Uninstall. If any prompt appears, click Yes to confirm that you want to delete the program.   <a class="read-more" href="/integrations/agents/windows-agent/windows-agent-uninstall/">&raquo;</a></p>
+        
+        <p> Open the Programs and Features list. Right click the CollectdWinService (64 bit) program.  Click Uninstall. If any prompt appears, click Yes to confirm that you want to delete the program.  </p>
     </section>
     <footer class=" footline" >
          
@@ -2160,11 +2236,11 @@ Enable/Disable To change which plugins are enabled, edit the CollectdWin. <a cla
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/uninstall/">uninstall</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#uninstall/">#uninstall</a>
             
         
 
@@ -2176,8 +2252,9 @@ Enable/Disable To change which plugins are enabled, edit the CollectdWin. <a cla
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/windows-agent-upgrade/">Upgrade Agent</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>To upgrade the Windows agent, follow the installation steps listed on the main Windows Integration page using the version of the agent you wish to upgrade to. The latest versions of the agent can be downloaded from the agent repo and details of the releases can be found on the Github project page.
-Installing a new version of the agent will overwrite changes you have made to existing agent configuration files located in C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config depending on your environment. <a class="read-more" href="/integrations/agents/windows-agent/windows-agent-upgrade/">&raquo;</a></p>
+Installing a new version of the agent will overwrite changes you have made to existing agent configuration files located in C:\Program Files\CollectdWin\config or C:\Program Files (x86)\CollectdWin\config depending on your environment.</p>
     </section>
     <footer class=" footline" >
          
@@ -2186,11 +2263,11 @@ Installing a new version of the agent will overwrite changes you have made to ex
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/install/">install</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#install/">#install</a>
             
         
 
@@ -2202,8 +2279,9 @@ Installing a new version of the agent will overwrite changes you have made to ex
         <h2 class="post-title"><a href="/integrations/agents/windows-agent/">Windows Agent</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>The Metricly Windows Agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes. Microsoft SQL Server, IIS, and .NET metrics are native to our Windows Agent. Only one Windows integration in your account is necessary to receive all Windows-related metrics.
-Configure Installation is as easy as executing an MSI installer and configuring the service. The agent is pre-configured to send the most important performance metrics, windows events, and system attributes to Metricly. <a class="read-more" href="/integrations/agents/windows-agent/">&raquo;</a></p>
+Configure Installation is as easy as executing an MSI installer and configuring the service. The agent is pre-configured to send the most important performance metrics, windows events, and system attributes to Metricly.</p>
     </section>
     <footer class=" footline" >
          
@@ -2212,11 +2290,11 @@ Configure Installation is as easy as executing an MSI installer and configuring 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/windows/">windows</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#windows/">#windows</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
         
 
@@ -2239,48 +2317,29 @@ Configure Installation is as easy as executing an MSI installer and configuring 
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

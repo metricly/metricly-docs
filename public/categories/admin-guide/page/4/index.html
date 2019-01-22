@@ -5,42 +5,65 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2018-12-18T14:34:20 EST">
+<meta name="revised" content="2019-01-14T18:15:19 EET">
 <title>Admin Guide :: Metricly Docs</title>
-<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="/images/metricly-favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
-<link href="/theme-flex/style.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/hybrid.css" rel="stylesheet">
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<link href="/css/auto-complete.css" rel="stylesheet">
+<link href="/theme-original/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
-<script type="text/javascript">
-      var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-</script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
 <meta name="description" content="">
 
-
+<link rel="stylesheet" href="/css/custom.css">
 
     
   </head>
   <body data-url="/categories/admin-guide/">
     
-      <header>
-  <div class="logo">
-    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
 	
   
-    <p><a href="/"><img src="/images/_header/white-logo.png" alt="This is my image" /></a></p>
+    <p><a href="/"><img src="/images/_header/logo_dark.png" alt="This is my image" /></a></p>
 
   
 
 
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search ...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/metriclyhelpsite.netlify.com\/";
+        
+		</script>
+		<script type="text/javascript" src="/js/search.js"></script>
   </div>
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
-</header>
-<article>
-  <aside>
-    <ul class="menu">
+
+      <ul class="topics">
     <li data-nav-id="/getting-started/" class="dd-item haschildren
         ">
       <div>
@@ -66,7 +89,7 @@
     <li data-nav-id="/alerts-notifications/" class="dd-item haschildren
         ">
       <div>
-      <a href="/alerts-notifications/">Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/alerts-notifications/"><i class='icon-alert'></i> &nbsp; Alerts &amp; Notifications</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/alerts-notifications/alerts-page/" class="dd-item">
@@ -493,7 +516,7 @@
     <li data-nav-id="/integrations/" class="dd-item haschildren
         ">
       <div>
-      <a href="/integrations/">Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/integrations/"><i class='icon-integration'></i> &nbsp;Integrations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/integrations/agents/" class="dd-item haschildren
@@ -641,28 +664,28 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-standard-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-standard-install/">
-            <i class='fa fa-download'></i> &nbsp;Standard Install
+            Standard Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-docker-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-docker-install/">
-            <i class='fa fa-download'></i> &nbsp; Docker Install
+            Docker Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-manual-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">
-            <i class='fa fa-download'></i> &nbsp; Manual Install
+            Manual Install
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-elastic-beanstalk-install/">
-            <i class='fa fa-download'></i> &nbsp; Elastic Beanstalk
+            Elastic Beanstalk
           </a>
         </div>
     </li>
@@ -711,7 +734,7 @@
       <li data-nav-id="/integrations/agents/linux-agent/linux-troubleshooting/" class="dd-item">
         <div>
           <a href="/integrations/agents/linux-agent/linux-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -849,21 +872,21 @@
       <li data-nav-id="/integrations/aws-integration/aws-cloudformation-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-cloudformation-installation/">
-            <i class='fa fa-download'></i> &nbsp; CloudFormation
+            CloudFormation
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/aws-iam-installation/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/aws-iam-installation/">
-            <i class='fa fa-download'></i> &nbsp; IAM
+            IAM
           </a>
         </div>
     </li>
       <li data-nav-id="/integrations/aws-integration/acess-key-aws/" class="dd-item">
         <div>
           <a href="/integrations/aws-integration/acess-key-aws/">
-            <i class='fa fa-download'></i> &nbsp; Access Key
+            Access Key
           </a>
         </div>
     </li>
@@ -1619,7 +1642,7 @@
     <li data-nav-id="/data-visualization/" class="dd-item haschildren
         ">
       <div>
-      <a href="/data-visualization/">Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/data-visualization/"><i class='icon-visualization'></i> &nbsp;Visualization</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
     <li data-nav-id="/data-visualization/dashboards/" class="dd-item haschildren
@@ -1845,7 +1868,7 @@
       <li data-nav-id="/data-visualization/metrics/metrics-troubleshooting/" class="dd-item">
         <div>
           <a href="/data-visualization/metrics/metrics-troubleshooting/">
-            <i class='fa fa-bug'></i> &nbsp;Troubleshooting
+            Troubleshooting
           </a>
         </div>
     </li>
@@ -1856,15 +1879,52 @@
     <li data-nav-id="/reports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/reports/">Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      <a href="/reports/"><i class='icon-reports'></i> &nbsp;Reports</a><i class="fa fa-angle-right fa-lg category-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item">
+    <li data-nav-id="/reports/reports-asg-recommendations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/">ASG Recommendations</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_first/" class="dd-item">
         <div>
-          <a href="/reports/reports-asg-recommendations/">
-            ASG Recommendations
+          <a href="/reports/reports-asg-recommendations/item_first/">
+            Item First
           </a>
         </div>
+    </li>
+    <li data-nav-id="/reports/reports-asg-recommendations/item_second/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/reports/reports-asg-recommendations/item_second/">Item Second</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_first_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_first_item/">
+            Inside First Item
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_second/inside_second_item/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_second/inside_second_item/">
+            Inside Second Item
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+      <li data-nav-id="/reports/reports-asg-recommendations/item_third/" class="dd-item">
+        <div>
+          <a href="/reports/reports-asg-recommendations/item_third/">
+            Item Third
+          </a>
+        </div>
+    </li>
+        </ul>
     </li>
       <li data-nav-id="/reports/reports-cost/" class="dd-item">
         <div>
@@ -1907,49 +1967,57 @@
 
 
 
+    <hr />
+    <li></li>
+    
     </ul>
-    <section>
+
+ <section id="footer">
     </section>
-  </aside>
-  <section class="page">
-    
-    <div class="nav-select">
-      <center>Navigation : 
-        <select onchange="javascript:location.href = this.value;">
-          
-    <option value="/getting-started/" >
-   Getting Started</option>
-    <option value="/alerts-notifications/" >
-   Alerts &amp; Notifications</option>
-    <option value="/integrations/" >
-   Integrations</option>
-    <option value="/data-visualization/" >
-   Visualization</option>
-    <option value="/reports/" >
-   Reports</option>
+  </div>
+</nav>
 
 
 
-        </select>
-      </center>
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="icon-home"></i></span>
+        <span class="links">
+        
+
+ Admin Guide
+
+   
+        </span>
     </div>
-      <div>
-        <div class="searchbox">
-          <input data-search-input id="search-by" type="text" placeholder="Search...">
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    
         </div>
-        <script type="text/javascript" src="/js/lunr.min.js"></script>
-        <script type="text/javascript" src="/js/auto-complete.js"></script>
-        <link href="/css/auto-complete.css" rel="stylesheet">
-        <script type="text/javascript">
-          
-              var baseurl = "https:\/\/cranky-lalande-9d501c.netlify.com\/";
-          
-        </script>
-        <script type="text/javascript" src="/js/search.js"></script>
-      </div>
+    </div>
     
 
+  </div>
+
+
+<div id="body-inner">
+  
     <h1>Admin Guide</h1>
+  
+
+
+
     
     
     
@@ -1975,8 +2043,9 @@
         <h2 class="post-title"><a href="/integrations/aws-integration/metrics/aws-metrics-knesis/">Knesis Metrics</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Currently, Metricly only supports Kinesis Streams, but additional support for Kinesis Firehose may come in the future.
-Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.kinesis.getrecords.bytes GetRecords.Bytes average bytes zero yes yes   aws.kinesis.getrecords.iteratoragemilliseconds GetRecords.IteratorAgeMilliseconds average ms zero yes no   aws.kinesis.getrecords.latency GetRecords.Latency average ms zero yes yes   aws.kinesis.getrecords.records GetRecords.Records sum ops zero yes yes   aws. <a class="read-more" href="/integrations/aws-integration/metrics/aws-metrics-knesis/">&raquo;</a></p>
+Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.kinesis.getrecords.bytes GetRecords.Bytes average bytes zero yes yes   aws.kinesis.getrecords.iteratoragemilliseconds GetRecords.IteratorAgeMilliseconds average ms zero yes no   aws.kinesis.getrecords.latency GetRecords.Latency average ms zero yes yes   aws.kinesis.getrecords.records GetRecords.Records sum ops zero yes yes   aws.</p>
     </section>
     <footer class=" footline" >
          
@@ -1985,11 +2054,11 @@ Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data S
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/knesis/">knesis</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#knesis/">#knesis</a>
             
         
 
@@ -2001,7 +2070,8 @@ Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data S
         <h2 class="post-title"><a href="/integrations/aws-integration/metrics/aws-metrics-lambda/">Lambda Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.lambda.duration GAUGE average milliseconds zero yes yes   aws.lambda.errors GAUGE sum count zero no no   aws.lambda.invocations GAUGE sum count zero yes yes   aws.lambda.throttles GAUGE sum count zero no no    Computed    Friendly Name FQN Computation Units Min Max Description     Error Percent netuitive. <a class="read-more" href="/integrations/aws-integration/metrics/aws-metrics-lambda/">&raquo;</a></p>
+        
+        <p>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.lambda.duration GAUGE average milliseconds zero yes yes   aws.lambda.errors GAUGE sum count zero no no   aws.lambda.invocations GAUGE sum count zero yes yes   aws.lambda.throttles GAUGE sum count zero no no    Computed    Friendly Name FQN Computation Units Min Max Description     Error Percent netuitive.</p>
     </section>
     <footer class=" footline" >
          
@@ -2010,11 +2080,11 @@ Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data S
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/lambda/">lambda</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#lambda/">#lambda</a>
             
         
 
@@ -2026,8 +2096,9 @@ Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data S
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/">Linux Agent</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Using the Linux Agent, you can quickly deploy and collect metrics with a rich set of metadata.
-The agent discovers and collects KPI metrics, integrates with CloudWatch, and can leverage other agent metrics. Using various plugins, the Linux Agent can also pull metrics from many different products running on a Linux operating system (in addition to pulling metrics from the host Linux OS). <a class="read-more" href="/integrations/agents/linux-agent/">&raquo;</a></p>
+The agent discovers and collects KPI metrics, integrates with CloudWatch, and can leverage other agent metrics. Using various plugins, the Linux Agent can also pull metrics from many different products running on a Linux operating system (in addition to pulling metrics from the host Linux OS).</p>
     </section>
     <footer class=" footline" >
          
@@ -2036,9 +2107,9 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
         
 
@@ -2050,7 +2121,8 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         <h2 class="post-title"><a href="/integrations/aws-integration/metrics/aws-metrics-mq/">MQ Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.mq.cpuutilization CpuUtilization  percent      aws.mq.heapusage HeapUsage  percent      aws.mq.networkin NetworkIn  bytes      aws.mq.networkout NetworkOut  bytes      aws.mq.totalmessagecount TotalMessageCount  count        <a class="read-more" href="/integrations/aws-integration/metrics/aws-metrics-mq/">&raquo;</a></p>
+        
+        <p> Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.mq.cpuutilization CpuUtilization  percent      aws.mq.heapusage HeapUsage  percent      aws.mq.networkin NetworkIn  bytes      aws.mq.networkout NetworkOut  bytes      aws.mq.totalmessagecount TotalMessageCount  count       </p>
     </section>
     <footer class=" footline" >
          
@@ -2059,11 +2131,11 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/mq/">mq</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#mq/">#mq</a>
             
         
 
@@ -2075,7 +2147,8 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-elastic-manual-install/">Manual Install</a></h2>
     </header>
     <section class="post-excerpt">
-        <p> Via RPM rpm --import https://repos.app.netuitive.com/RPM-GPG-KEY-netuitive rpm -ivh https://repos.app.netuitive.com/rpm/noarch/netuitive-repo-1-0.2.noarch.rpm yum -y install netuitive-agent  Via DEB curl -s https://repos.app.netuitive.com/netuitive.gpg | apt-key add -apt-get install -y apt-transport-https echo &quot;deb https://repos.app.netuitive.com/deb/ stable main&quot; &gt; /etc/apt/sources.list.d/netuitive.list apt-get -y update apt-get install -y netuitive-agent   <a class="read-more" href="/integrations/agents/linux-agent/linux-elastic-manual-install/">&raquo;</a></p>
+        
+        <p> Via RPM rpm --import https://repos.app.netuitive.com/RPM-GPG-KEY-netuitive rpm -ivh https://repos.app.netuitive.com/rpm/noarch/netuitive-repo-1-0.2.noarch.rpm yum -y install netuitive-agent  Via DEB curl -s https://repos.app.netuitive.com/netuitive.gpg | apt-key add -apt-get install -y apt-transport-https echo &quot;deb https://repos.app.netuitive.com/deb/ stable main&quot; &gt; /etc/apt/sources.list.d/netuitive.list apt-get -y update apt-get install -y netuitive-agent  </p>
     </section>
     <footer class=" footline" >
          
@@ -2084,9 +2157,9 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
         
 
@@ -2098,8 +2171,9 @@ The agent discovers and collects KPI metrics, integrates with CloudWatch, and ca
         <h2 class="post-title"><a href="/integrations/aws-integration/metrics/">Metrics</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p> All of the metrics for AWS can be found in this folder.
-Metrics Available  ALB Metrics   ASG Metrics   DynamoDB Metrics   EBS Metrics   EC2 Metrics   ECS Metrics   EFS Metrics   ELB Metrics   EMR Metrics   Elasticache Metrics   Knesis Metrics   Lambda Metrics   MQ Metrics   NLB Metrics   Redshift Metrics   S3 Metrics   SQS Metrics    <a class="read-more" href="/integrations/aws-integration/metrics/">&raquo;</a></p>
+Metrics Available ALB MetricsASG MetricsDynamoDB MetricsEBS MetricsEC2 MetricsECS MetricsEFS MetricsELB MetricsEMR MetricsElasticache MetricsKnesis MetricsLambda MetricsMQ MetricsNLB MetricsRedshift MetricsS3 MetricsSQS Metrics</p>
     </section>
     <footer class=" footline" >
          
@@ -2108,9 +2182,9 @@ Metrics Available  ALB Metrics   ASG Metrics   DynamoDB Metrics   EBS Metrics   
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
         
 
@@ -2122,8 +2196,9 @@ Metrics Available  ALB Metrics   ASG Metrics   DynamoDB Metrics   EBS Metrics   
         <h2 class="post-title"><a href="/integrations/microsoft-azure/">Microsoft Azure</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p> Microsoft Azure is a cloud computing platform, similar to Amazon Web Services. With Azure integration in Metricly, you can monitor the performance of your entire cloud infrastructure. Metricly requires Reader role permissions of your Azure environment, which can be granted using the Owner or User Access Administrator roles.
-Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic Metrics   Filter Elements    <a class="read-more" href="/integrations/microsoft-azure/">&raquo;</a></p>
+Related Topics Azure InstallationAzure MetricsEnable Guest OS Diagnostic MetricsFilter Elements</p>
     </section>
     <footer class=" footline" >
          
@@ -2132,11 +2207,11 @@ Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/microsoft/">microsoft</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#microsoft/">#microsoft</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/azure/">azure</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#azure/">#azure</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/integrations/">integrations</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#integrations/">#integrations</a>
             
         
 
@@ -2148,7 +2223,8 @@ Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic 
         <h2 class="post-title"><a href="/integrations/aws-integration/metrics/aws-metrics-nlb/">NLB Metrics</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>Collected    Friendly Name FQN Statistic Baseline Correlation     Active Flow Count aws.networkelb.activeflowcount AVG yes no   ELB Consumed ICUs aws.networkelb.consumedlcus MAX no no   ELB Healthy Host Count aws.networkelb.healthyhostcount MAX no no   ELB New Flow Count aws.networkelb.newflowcount SUM yes no   ELB Processed Bytes aws.networkelb.processedbytes SUM yes no   TCP Client Reset Count aws.networkelb.tcp_client_reset_count SUM no no   TCP ELB Reset Count aws. <a class="read-more" href="/integrations/aws-integration/metrics/aws-metrics-nlb/">&raquo;</a></p>
+        
+        <p>Collected    Friendly Name FQN Statistic Baseline Correlation     Active Flow Count aws.networkelb.activeflowcount AVG yes no   ELB Consumed ICUs aws.networkelb.consumedlcus MAX no no   ELB Healthy Host Count aws.networkelb.healthyhostcount MAX no no   ELB New Flow Count aws.networkelb.newflowcount SUM yes no   ELB Processed Bytes aws.networkelb.processedbytes SUM yes no   TCP Client Reset Count aws.networkelb.tcp_client_reset_count SUM no no   TCP ELB Reset Count aws.</p>
     </section>
     <footer class=" footline" >
          
@@ -2157,11 +2233,11 @@ Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/metrics/">metrics</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#metrics/">#metrics</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/nlb/">nlb</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#nlb/">#nlb</a>
             
         
 
@@ -2173,10 +2249,11 @@ Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic 
         <h2 class="post-title"><a href="/integrations/aws-integration/aws-optional-config/">Optional Config</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Change Element Display Names You can change how certain elements’ names are displayed in the application to help distinguish between each instance, e.g., you have 15 EC2 instances with the same name and want to know the difference between each.
  Under the Include Types list, expand the desired type.
  Beneath the Tag Key field, click Advanced. A menu expands.
- Hover next to Element Name; an edit icon will appear. <a class="read-more" href="/integrations/aws-integration/aws-optional-config/">&raquo;</a></p>
+ Hover next to Element Name; an edit icon will appear.</p>
     </section>
     <footer class=" footline" >
          
@@ -2185,11 +2262,11 @@ Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/aws/">aws</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#aws/">#aws</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/optional-config/">optional config</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#optional-config/">#optional config</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
         
 
@@ -2201,8 +2278,9 @@ Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic 
         <h2 class="post-title"><a href="/integrations/agents/linux-agent/linux-optional-config/">Optional Config</a></h2>
     </header>
     <section class="post-excerpt">
+        
         <p>Changing Element Display Names You can change the display name of certain elements to help distinguish between each instance.
- Navigate to Integrations &gt; Linux Integration. Click Advanced; a menu expands.  Click the Element Name field to edit it. Type the desired name into the field.  An element name of ${meta.originalName} would resolve to whatever name comes in with the original element payload before it would be replaced with the optional element name template. <a class="read-more" href="/integrations/agents/linux-agent/linux-optional-config/">&raquo;</a></p>
+ Navigate to Integrations &gt; Linux Integration. Click Advanced; a menu expands.  Click the Element Name field to edit it. Type the desired name into the field.  An element name of ${meta.originalName} would resolve to whatever name comes in with the original element payload before it would be replaced with the optional element name template.</p>
     </section>
     <footer class=" footline" >
          
@@ -2211,13 +2289,13 @@ Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic 
         
           
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/agents/">agents</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#agents/">#agents</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/linux/">linux</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#linux/">#linux</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/elements/">elements</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#elements/">#elements</a>
             
-                <a class="label label-default" href="https://cranky-lalande-9d501c.netlify.com/tags/fqns/">FQNs</a>
+                <a class="label label-default" href="https://metriclyhelpsite.netlify.com/tags/#fqns/">#FQNs</a>
             
         
 
@@ -2242,49 +2320,30 @@ Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic 
 
     
     
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"> <i class="fa fa-chevron-left"></i><label>Resource Utilization</label></a>
-    <a class="nav nav-next" href="/getting-started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
-
-  </section>
-</article>
-
-<footer>
-
-<div class="footline">
-    
-
-    
-
-    
-
-    
-  </div>
-
-
-	<div>
-
-
-  
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  
-
-
-
-	</div>
+          
+<footer class="footline">
+	
 </footer>
+<div id="navigation">
+<a class="nav nav-prev" href="/reports/reports-resource-utilization/" title="Resource Utilization"><span><i class="icon-previous"></i> Previous</span><label>Resource Utilization</label></a>
+    <a class="nav nav-next" href="/getting-started/" title="Getting Started"><span>Next <i class="icon-next"></i></span><label>Getting Started</label></a></div>
+  </div>
+</div>
+
+
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
 
 <script src="/js/clipboard.min.js"></script>
-
-<link href="/css/featherlight.min.css" rel="stylesheet">
 <script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
 
-
-
-<script src="/theme-flex/script.js"></script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/docdock.js"></script>
+<script src="/theme-original/script.js"></script>
 
 
     

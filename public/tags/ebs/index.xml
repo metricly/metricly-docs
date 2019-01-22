@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ebs on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/ebs/</link>
-    <description>Recent content in Ebs on Metricly Docs</description>
+    <title>#Ebs on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/ebs/</link>
+    <description>Recent content in #Ebs on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/ebs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/ebs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS EBS Policies</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-ebs/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/aws-policies-ebs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/aws-policies-ebs/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/aws-policies-ebs/</guid>
       <description>Before reading about the EBS default policy, it is important to understand the following Metricly computed metrics.
  Average Latency: Average Latency is straightforward as it represents the average amount of time that it takes for a disk operation to complete. Queue Length Differential: Queue Length Differential measures the difference between the actual disk queue length and the “ideal” disk queue length.The ideal queue length is based on Amazon’s rule of thumb that for every 200 IOPS you should have a queue length of 1.</description>
     </item>
     
     <item>
       <title>EBS Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-ebs/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-ebs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-ebs/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-ebs/</guid>
       <description>Collected    Fully Qualified Name (FQN) Description Units BASE CORR UTIL Related Global Policies     netuitive.aws.ebs.totalops This metric expresses the total number of read and write operations against this EBS instance. This metric is useful for monitoring EBS I/Oactivity.Computation: Read Ops + Write Ops operations yes no no    netuitive.aws.ebs.totalbytes This metric expresses the total number of bytes read and written from/to this EBS instance.</description>
     </item>
     

@@ -1,100 +1,100 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Azure on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/azure/</link>
-    <description>Recent content in Azure on Metricly Docs</description>
+    <title>#Azure on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/azure/</link>
+    <description>Recent content in #Azure on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Application Gateway</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</guid>
       <description>   Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy BASE CORR UTIL Description     azure.applicationgateway.throughput GAUGE bytes/second average 0 none none yes no no The number of bytes per second being processed by the gateway.    </description>
     </item>
     
     <item>
       <title>Azure Installation</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-installation/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-installation/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-installation/</guid>
       <description>1. Create a Microsoft Azure Integration Card  From the top navigation menu, select Integrations. Click the Microsoft Azure card. In a separate, new tab, open the Azure portal.  The following instructions were created using the Azure portal not the classic portal. Instructions vary depending on which portal you’re using.
- 2. Create an Active Directory Application in Azure  Once in the Azure portal, click Azure Active Directory from the left side menu.</description>
+2. Create an Active Directory Application in Azure  Once in the Azure portal, click Azure Active Directory from the left side menu.</description>
     </item>
     
     <item>
       <title>Azure Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/</guid>
       <description> All of the metrics for Azure can be found in this folder.
-Metrics Available  Application Gateway   Basic Metrics   Boot Diagnostics   </description>
+Metrics Available Application GatewayBasic MetricsBoot Diagnostics</description>
     </item>
     
     <item>
       <title>Azure Policies</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/microsoft-azure-policies/</link>
+      <link>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/microsoft-azure-policies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/alerts-notifications/policies/default-policies/microsoft-azure-policies/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/alerts-notifications/policies/default-policies/microsoft-azure-policies/</guid>
       <description>Policy names are prefixed with Azure VM –
-    Policy name Metrics Required Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     CPU Threshold Exceeded Boot Diagnostics 15 min Processor.PercentProcessorTime has a static threshold &amp;gt; 50%   WARNING The CPU on the Azure Virtual Machine has exceeded 95% for at least 15 minutes.   Elevated CPU Activity (Normal Network Activity) Boot Diagnostics 30 min Processor.</description>
+   Policy name Metrics Required Duration Condition 1 (and) Condition 2 (and) Condition 3 Cat. Description     CPU Threshold Exceeded Boot Diagnostics 15 min Processor.PercentProcessorTime has a static threshold &amp;gt; 50%   WARNING The CPU on the Azure Virtual Machine has exceeded 95% for at least 15 minutes.   Elevated CPU Activity (Normal Network Activity) Boot Diagnostics 30 min Processor.</description>
     </item>
     
     <item>
       <title>Basic Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</guid>
       <description>Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL Description     azure.virtualmachine.memory.availablememory GAUGE bytes average 0 none none yes no no The total amount of available memory in bytes.   azure.virtualmachine.memory.availableswap GAUGE bytes average 0 none none yes no no The total amount of swap space available in bytes.   azure.virtualmachine.memory.pagespersec GAUGE pages / second average 0 none none yes yes no The total number of pages read and written per second.</description>
     </item>
     
     <item>
       <title>Boot Diagnostics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</guid>
       <description>Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL Description     azure.virtualmachine.networkin GAUGE bytes average 0 none none yes yes no Bytes received over the network. Note that this metric is the same as the Basic Metric azure.virtualmachine.networkinterface.bytesreceived   azure.virtualmachine.networkout GAUGE bytes average 0 none none yes yes no Bytes transmitted over the network. Note that this metric is the same as the Basic Metric azure.</description>
     </item>
     
     <item>
       <title>Enable Guest OS Diagnostic Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</guid>
       <description>Azure Virtual Machines will share boot diagnostic metrics by default, which are a small subset of core metrics. To enable Guest OS diagnostic (basic) metrics that provide more information about your machine, you’ll need to follow these steps (depending on your situation):
 Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Select a virtual machine. Another window with options will open. Select Diagnostic settings. Under Configure required settings, select the checkbox next to Basic metrics.</description>
     </item>
     
     <item>
       <title>Filter Elements</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-filter-elements/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-filter-elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/azure-filter-elements/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-filter-elements/</guid>
       <description>You can filter what Azure elements are included in Metricly’s monitoring by using regex to match key-value pairs. Metricly offers opt-in (include) or opt-out (exclude) element filtering.
 Using opt-in filtering  In your Azure portal, create or choose an existing tag (key-value pair). Then, assign the tag to the Azure elements you do not want Metricly to monitor. In Metricly, navigate to your Azure integration card. Expand the element types you want to filter.</description>
     </item>
     
     <item>
       <title>Microsoft Azure</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/microsoft-azure/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/</guid>
       <description> Microsoft Azure is a cloud computing platform, similar to Amazon Web Services. With Azure integration in Metricly, you can monitor the performance of your entire cloud infrastructure. Metricly requires Reader role permissions of your Azure environment, which can be granted using the Owner or User Access Administrator roles.
-Related Topics  Azure Installation   Azure Metrics   Enable Guest OS Diagnostic Metrics   Filter Elements   </description>
+Related Topics Azure InstallationAzure MetricsEnable Guest OS Diagnostic MetricsFilter Elements</description>
     </item>
     
   </channel>

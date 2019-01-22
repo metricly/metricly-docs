@@ -1,80 +1,109 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reports on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/reports/</link>
-    <description>Recent content in Reports on Metricly Docs</description>
+    <title>#Reports on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/reports/</link>
+    <description>Recent content in #Reports on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/reports/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/reports/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ASG Recommendations</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-asg-recommendations/</link>
+      <link>https://metriclyhelpsite.netlify.com/reports/reports-asg-recommendations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-asg-recommendations/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/reports/reports-asg-recommendations/</guid>
       <description>The Auto Scaling Group (ASG) Recommendations report provides a summary of the EC2 instance hours managed by all of your Auto Scaling Groups over the past few weeks. The data is summarized by hour and day for the preceding one-to-four weeks depending on how long Metricly has been monitoring the ASG.  Total Instance Count graph: This graph depicts the average total number of instances managed by all of your ASG(s) by hour and day.</description>
     </item>
     
     <item>
       <title>Cost Reports</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-cost/</link>
+      <link>https://metriclyhelpsite.netlify.com/reports/reports-cost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-cost/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/reports/reports-cost/</guid>
       <description>Cost reports enable you to easily identify expensive instances and compare them against utilization, type, elements, and tags. These multi-dimensional reports also break down information like total versus individual instance costs and even how much each instance state (Reserved, On-Demand) costs. Custom tagging is another easy way to group your instances.
 Cost Reports are generated once per week. It may take up to 7 days before your first report is available.</description>
     </item>
     
     <item>
       <title>EC2 Recommendations</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-ec2-recommendations/</link>
+      <link>https://metriclyhelpsite.netlify.com/reports/reports-ec2-recommendations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-ec2-recommendations/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/reports/reports-ec2-recommendations/</guid>
       <description>The EC2 Recommendation report is designed to help you reduce EC2 instance running costs by suggesting alternative instance types that may provide a similar level of service at a lower cost. The report presents details on the current EC2 instance types and their respective memory, VCPUs, and hourly instance running costs. Using these characteristics and the utilization observed during the reporting period, it estimates the memory and number of VCPUs that are actually needed, subject to optional constraints such as CPU utilization not exceeding a particular level, etc.</description>
     </item>
     
     <item>
       <title>Email Reports</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-email/</link>
+      <link>https://metriclyhelpsite.netlify.com/reports/reports-email/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-email/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/reports/reports-email/</guid>
       <description>Email Reports are generated and sent after business hours (EST) and can be enabled from your user account profile. Email Reports provide a quick look into your environment from the last 24 hours. Clicking any of the links within the email opens Metricly to the appropriate section.
 Available Reports There are three main email reports available: the Weekly Recommendation Report, the Daily Top Violator Report, and the Daily AWS Cost Report.</description>
     </item>
     
     <item>
       <title>Idle Resources</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/reports/idle-resources/</link>
+      <link>https://metriclyhelpsite.netlify.com/reports/idle-resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/reports/idle-resources/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/reports/idle-resources/</guid>
       <description>Keep track of all of your unused resources with our EBS &amp;amp; ELB Idle Resource reports. Each report supports daily email notifications to keep you informed of changes.
 To Use Unattached EBS or ELB Reports  Navigate to Reports &amp;gt; Idle Resources. Select Unattached EBS (or ELB).  Available View Sorting Unattached Resource reports can be sorted by each column:
  Name Location Size VolumeId IOPS Type Monthly Cost Simply click on the column header to sort using that preferred column.</description>
     </item>
     
     <item>
-      <title>Reports</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/reports/</link>
+      <title>Item First</title>
+      <link>https://metriclyhelpsite.netlify.com/reports/reports-asg-recommendations/item_first/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/reports/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/reports/reports-asg-recommendations/item_first/</guid>
+      <description>Bacon ipsum dolor amet ball tip picanha kevin meatloaf strip steak leberkas. Prosciutto venison kevin shank ground round sirloin capicola drumstick meatball filet mignon andouille shoulder. Chuck porchetta capicola, sirloin prosciutto rump bacon buffalo cow picanha corned beef t-bone ham spare ribs. Leberkas short loin spare ribs beef burgdoggen ribeye filet mignon biltong.
+Ground round alcatra shoulder, ham spare ribs flank pastrami ribeye meatball prosciutto turducken fatback strip steak bresaola cupim.</description>
+    </item>
+    
+    <item>
+      <title>Item Second</title>
+      <link>https://metriclyhelpsite.netlify.com/reports/reports-asg-recommendations/item_second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://metriclyhelpsite.netlify.com/reports/reports-asg-recommendations/item_second/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Item Third</title>
+      <link>https://metriclyhelpsite.netlify.com/reports/reports-asg-recommendations/item_third/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://metriclyhelpsite.netlify.com/reports/reports-asg-recommendations/item_third/</guid>
+      <description>Bacon ipsum dolor amet ball tip picanha kevin meatloaf strip steak leberkas. Prosciutto venison kevin shank ground round sirloin capicola drumstick meatball filet mignon andouille shoulder. Chuck porchetta capicola, sirloin prosciutto rump bacon buffalo cow picanha corned beef t-bone ham spare ribs. Leberkas short loin spare ribs beef burgdoggen ribeye filet mignon biltong.
+Ground round alcatra shoulder, ham spare ribs flank pastrami ribeye meatball prosciutto turducken fatback strip steak bresaola cupim.</description>
+    </item>
+    
+    <item>
+      <title>Reports</title>
+      <link>https://metriclyhelpsite.netlify.com/reports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://metriclyhelpsite.netlify.com/reports/</guid>
       <description> Reports provide a quick glance at some of the most important parts of your environment, including utilization, policy violation, and estimated cost of your inventory. Report Explorer allows you to toggle between different reports on the elements in your environment.
 Required Integrations for Metricly Reports    Report Name AWS w/ Cost Explorer AWS w/ CloudWatch AWS Cost w/ Detailed Billing List Price Estimation w/out AWS Cost Time from activation to first report     AWS Services Cost x    Immediate   Resource Utilization  x   Immediate   EC2 Cost  x x x 1 day   RDS Cost  x x  1 day   S3 Cost  x x  1 day   EC2 Recommendations  x x x 1 week   ASG Recommendations  x x x 1 week    </description>
     </item>
     
     <item>
       <title>Resource Utilization</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/reports/reports-resource-utilization/</link>
+      <link>https://metriclyhelpsite.netlify.com/reports/reports-resource-utilization/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/reports/reports-resource-utilization/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/reports/reports-resource-utilization/</guid>
       <description>The Resource Utilization report uses boxplots to provide simple visualizations of each of your element’s utilization. The types of boxplots shown are controlled by optional filters. Filters allow you to narrow the elements displayed by element name, element type, element tags, and element attributes.
 Boxplots are a standard way of displaying a distribution of data based on five values: the minimum, the lower quartile (25th percentile), the median, the upper quartile (the 75th percentile), and the maximum.</description>
     </item>

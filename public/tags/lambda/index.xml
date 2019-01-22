@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lambda on Metricly Docs</title>
-    <link>https://cranky-lalande-9d501c.netlify.com/tags/lambda/</link>
-    <description>Recent content in Lambda on Metricly Docs</description>
+    <title>#Lambda on Metricly Docs</title>
+    <link>https://metriclyhelpsite.netlify.com/tags/lambda/</link>
+    <description>Recent content in #Lambda on Metricly Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://cranky-lalande-9d501c.netlify.com/tags/lambda/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://metriclyhelpsite.netlify.com/tags/lambda/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lambda Metrics</title>
-      <link>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-lambda/</link>
+      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-lambda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cranky-lalande-9d501c.netlify.com/integrations/aws-integration/metrics/aws-metrics-lambda/</guid>
+      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-lambda/</guid>
       <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.lambda.duration GAUGE average milliseconds zero yes yes   aws.lambda.errors GAUGE sum count zero no no   aws.lambda.invocations GAUGE sum count zero yes yes   aws.lambda.throttles GAUGE sum count zero no no    Computed    Friendly Name FQN Computation Units Min Max Description     Error Percent netuitive.</description>
     </item>
     
