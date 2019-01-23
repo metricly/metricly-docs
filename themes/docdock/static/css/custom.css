@@ -72,11 +72,18 @@
 body {
   font-family: 'OpenSans', sans-serif;
 }
-
+#body {
+  margin-left: 360px;
+}
+#body .padding {
+  padding-left: 110px;
+}
 /*==Aside Navigation==*/
 /*general styles*/
 #header-wrapper {
   background-color: rgba(246, 247, 248, 0.27);
+  padding-left: 60px;
+  padding-right: 30px;
 }
 #header p {
   text-align: left;
@@ -86,6 +93,8 @@ body {
 }
 #sidebar {
   background-color: rgba(246, 247, 248, 0.27);
+  width: 360px;
+  /* background: red !important; */
 }
 #sidebar a {
   color: #434A54;
@@ -97,6 +106,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 28px;
+  margin-left: 60px;
 }
 #sidebar ul.topics li > div > a {
   padding: 0;
@@ -107,7 +117,13 @@ body {
 #sidebar ul.topics li > div > a > i {
   font-size: 20px;
 }
-
+#body #sidebar-toggle {
+  font-size: 20px;
+  color: #323232;
+}
+#body #sidebar-toggle:after {
+  display: none;
+}
 /*search box*/
 .searchbox {
   border: 1px solid rgba(67,74,84,0.08);
@@ -259,7 +275,13 @@ body {
   color: #c7c7c7;
 }
 /*==End Breadcrumbs==*/
-
+#body .progress #TableOfContents > ul > li > ul > li > a {
+  color: #323232;
+}
+#body .progress #TableOfContents > ul > li > ul > li > ul li a {
+  /* color: #439BC3; */
+  color: #323232;
+}
 
 /*==Body Inner Content==*/
 #body-inner h1:first-of-type {
@@ -492,6 +514,7 @@ div.notices.info p {
 }
 .pnf-body #body-inner img {
   margin: 5rem auto;
+  width: 40%;
 }
 .pnf-body #body-inner h1 {
   font: 44px/46px "OpenSans-Bold", sans-serif;
@@ -512,3 +535,39 @@ div.notices.info p {
   display: inline-block;
 }
 /*==End 404 Page==*/
+
+@media only all and (max-width: 59.938em) {
+  #body .padding {
+    padding-left: 3rem;
+  }
+  .pnf-body #body-inner img {
+    width: 80%;
+  }
+  
+  #body .nav {
+    font-size: 16px;
+    line-height: 28px;
+    width: 30%;
+  }
+}
+
+@media only all and (max-width: 47.938em) {
+  #body .padding {
+    padding-left: 1rem;
+  }
+  #header-wrapper {
+    padding: 1rem;
+  }
+  #sidebar ul.topics {
+    margin: 0 0 0 1rem;
+  }
+  #sidebar {
+    width: 230px;
+  }
+  #body {
+    margin-left: 0;
+  }
+  #tags.cc-footer_tags .label {
+    font-size: 14px;
+  }
+}
