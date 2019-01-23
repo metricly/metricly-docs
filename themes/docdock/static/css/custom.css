@@ -259,7 +259,13 @@ body {
   color: #c7c7c7;
 }
 /*==End Breadcrumbs==*/
-
+#body .progress #TableOfContents > ul > li > ul > li > a {
+  color: #323232;
+}
+#body .progress #TableOfContents > ul > li > ul > li > ul li a {
+  /* color: #439BC3; */
+  color: #323232;
+}
 
 /*==Body Inner Content==*/
 #body-inner h1:first-of-type {
