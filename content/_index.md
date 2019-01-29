@@ -1,11 +1,6 @@
-# Metricly Help
+# Metricly Docs
 
-Here are some quick links to help you find exactly what you need.
-
-## Getting Started
-
-- [Cost Tools][1]
-- [Metric Monitoring][2]
+New to Metricly? start with these pages to familiarize yourself with some of our most important features. 
 
 ## Alerts & Notifications
 
@@ -18,8 +13,20 @@ Here are some quick links to help you find exactly what you need.
 - [Linux Agent][6]
 
 ## Visualization
+- [Dashboards](7)
+- [Metrics](8)
 
 ## Reports
+- [Cost (EC2, RDS, S3)](/reports/reports-cost)
+- [Idle Resources](/reports/idle-resources)
+- [Resource Utilization](/reports/reports-resource-utilization)
+- [EC2 Recommendations](/reports/ec2-recommendations) or [ASG Recommendations](/reports/reports-asg-recommendations)
+
+## Resources
+
+- [Github Repository](https://github.com/Netuitive)
+- [Community Packages](https://github.com/netuitive-community-packages)
+- [Status Page](http://status.metricly.com/)
 
 [1]: /getting-started/cost-tools
 [2]: /getting-started/metric-monitoring
@@ -27,3 +34,5 @@ Here are some quick links to help you find exactly what you need.
 [4]: /alerts-notifications/policies
 [5]: /integrations/agents/aws-integrations
 [6]: /integrations/agents/linux-agent
+[7]: /data-visualization/dashboards
+[8]: /data-visualization/metrics
