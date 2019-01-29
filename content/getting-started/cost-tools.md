@@ -32,6 +32,7 @@ Get per-instance recommendations that consider your workload's behavior and any 
 
 ## Utilization Report
 Track the min-max of key utilization metrics across your environment.
+
 - [Resource Utilization][6]
 
 
