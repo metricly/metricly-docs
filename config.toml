@@ -1,4 +1,4 @@
-baseURL = "https://metriclyhelpsite.netlify.com/"
+baseURL = "https://docs.metricly.com/"
 languageCode = "en-us"
 title = "Metricly Docs"
 theme = "docdock"
