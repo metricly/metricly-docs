@@ -1,32 +1,46 @@
 # Metricly Docs
 
-New to Metricly? start with these pages to familiarize yourself with some of our most important features. 
+`docs.metricly.com` is home to [Metricly][9]'s documentation for end users, API developers, and DevOps admins.
 
-## Alerts & Notifications
+### {{< icon name="fa-compass" >}} Navigation
+
+- Search by using **folder tree** {{< icon name="fa-folder-open" >}} or by the **search bar** {{< icon name="fa-search" >}}
+- Select **tags** {{< icon name="fa-tags" >}} to help you find key related articles
+- Tab through articles using {{< icon name="fa-caret-square-o-left" >}} {{< icon name="fa-caret-square-o-right" >}} arrow keys
+- Select {{< icon name="fa-home" >}} for an article's table of contents
+
+---
+
+## <i class='icon-alert'></i> Alerts & Notifications
 
 - [Notifications][3]
 - [Policies][4]
 
-## Integrations
+## <i class='icon-integration'></i> Integrations
 
 - [AWS][5]
 - [Linux Agent][6]
 
-## Visualization
+## <i class='icon-visualization'></i> Visualization
 - [Dashboards](7)
 - [Metrics](8)
 
-## Reports
+## <i class='icon-reports'></i> Reports
 - [Cost (EC2, RDS, S3)](/reports/reports-cost)
 - [Idle Resources](/reports/idle-resources)
 - [Resource Utilization](/reports/reports-resource-utilization)
 - [EC2 Recommendations](/reports/ec2-recommendations) or [ASG Recommendations](/reports/reports-asg-recommendations)
 
-## Resources
+---
+
+## More Resources
 
 - [Github Repository](https://github.com/Netuitive)
 - [Community Packages](https://github.com/netuitive-community-packages)
 - [Status Page](http://status.metricly.com/)
+- [Cloud Compass Blog](https://www.metricly.com/blog)
+
+
 
 [1]: /getting-started/cost-tools
 [2]: /getting-started/metric-monitoring
@@ -36,3 +50,4 @@ New to Metricly? start with these pages to familiarize yourself with some of our
 [6]: /integrations/agents/linux-agent
 [7]: /data-visualization/dashboards
 [8]: /data-visualization/metrics
+[9]: https://www.metricly.com
