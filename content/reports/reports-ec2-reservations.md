@@ -22,7 +22,7 @@ An AWS integration with Detailed Billing must be enabled before using this repor
 
 ## Visualization Options
 
-![visualization-options](static/images/reports-ec2-reservations/visualization-options.png)
+![visualization-options](/images/reports-ec2-reservations/visualization-options.png)
 
 ### Switch Between Views
 1. Click **CONFIGURE**.
@@ -43,23 +43,23 @@ Every report comes with a simple table of the visualized data. You can toggle as
 
 ## Configuration Options
 
-![config-visualization](static/images/reports-ec2-reservations/config-visualization.png)
+![config-visualization](/images/reports-ec2-reservations/config-visualization.png)
 
 ### Reservation Preference
 
-![reservation-preference](static/images/reports-ec2-reservations/reservation-preference.png)
+![reservation-preference](/images/reports-ec2-reservations/reservation-preference.png)
 
 ### Filter Elements
 
-![filter-elements](static/images/reports-ec2-reservations/filter-elements.png)
+![filter-elements](images/reports-ec2-reservations/filter-elements.png)
 
 ### Filter Types
 
-![filter-types](static/images/reports-ec2-reservations/filter-types.png)
+![filter-types](/images/reports-ec2-reservations/filter-types.png)
 
 ### Other Options
 
-![other-options](static/images/reports-ec2-reservations/other-options.png)
+![other-options](/images/reports-ec2-reservations/other-options.png)
 
 ## Save & Send Reports
 
@@ -68,9 +68,9 @@ Every report comes with a simple table of the visualized data. You can toggle as
 2. Input the **`Saved Report Name`**
 3. Hit **Save**.
 
-![save-send-report](static/images/reports-ec2-reservations/save-send-report.png)
+![save-send-report](/images/reports-ec2-reservations/save-send-report.png)
 
 ### Save
 By clicking **SAVE** instead of **SAVE AS**, you an overwrite an existing report that has been loaded via the saved report drop-down panel.
 
-![standard-save](static/images/reports-ec2-reservations/standard-save.png)
+![standard-save](/images/reports-ec2-reservations/standard-save.png)

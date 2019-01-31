@@ -28,17 +28,17 @@ How to Switch Between Views
 2. Choose a visualization.
 3. Click **Apply**.
 
-![switch-between-views](static/images/reports-aws-services-cost/switch-between-views.png)
+![switch-between-views](/images/reports-aws-services-cost/switch-between-views.png)
 
 ### Period Comparison
 Uses the current determined date interval (e.g. Latest 30 Days) and compares it to the previous interval (in this case, 30 days). See the Time Intervals section for more information on changing the periods compared.
 
-![period-comparison](static/images/reports-aws-services-cost/period-comparison.png)
+![period-comparison](/images/reports-aws-services-cost/period-comparison.png)
 
 ### Stacked View
 Shows all of your services individually; each service can be shown or hidden via toggling on the menu below the graph.
 
-![stacked-view](static/images/reports-aws-services-cost/stacked-view.png)
+![stacked-view](/images/reports-aws-services-cost/stacked-view.png)
 
 ## Time Intervals
 When using the Period Comparison view, you can choose between several Time Intervals to display:
@@ -52,17 +52,17 @@ When using the Period Comparison view, you can choose between several Time Inter
 - Latest 12 Months
 - Year to Date
 
-![time-intervals](static/images/reports-aws-services-cost/time-intervals.png)
+![time-intervals](/images/reports-aws-services-cost/time-intervals.png)
 
 ## Report Table
 Every report comes with a simple table of the visualized data. You can toggle ascending/descending across the columns; changes made to the table are automatically reflected in the visualization above. A CSV file containing this table can be obtained by clicking the **Download** button.
 
-![report-table](static/images/reports-aws-services-cost/report-table.png)
+![report-table](/images/reports-aws-services-cost/report-table.png)
 
 ## Filtering & Other Options
 All filtering and grouping for your report can be done by opening the **CONFIGURE** modal from the navigation panel.
 
-![configure-modal](static/images/reports-aws-services-cost/configure-modal.png)
+![configure-modal](/images/reports-aws-services-cost/configure-modal.png)
 
 ### Filtering Options
 
@@ -95,4 +95,4 @@ To save a report:
   - Emails are sent to your account email address by default, however, you can input any email address in the **Send Email** field.
 3. Hit **SAVE**.
 
-![save-send-reports](static/images/reports-aws-services-cost/save-send-reports.png)
+![save-send-reports](/images/reports-aws-services-cost/save-send-reports.png)
