@@ -1,490 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Getting Started on Metricly Docs</title>
-    <link>https://metriclyhelpsite.netlify.com/categories/getting-started/</link>
-    <description>Recent content in Getting Started on Metricly Docs</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://metriclyhelpsite.netlify.com/categories/getting-started/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>ALB Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-alb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-alb/</guid>
-      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Sparse Data Strategy (SDS) BASE     Active Connection Count aws.applicationelb.activeconnectioncount ActiveConnectionCount sum none yes   Client TLS Negotiation Error Count aws.applicationelb.clienttlsnegotiationerrorcount ClientTLSNegotiationErrorCount sum none yes   Consumed LCUs aws.applicationelb.consumedlcus ConsumedLCUs sum none no   Healthy Host Count aws.applicationelb.healthyhostcount HealthyHostCount average none yes   HTTP Code ELB 4XX Count aws.applicationelb.httpcode_elb_4xx_count HTTPCode_ELB_4XX_Count sum ReplaceWithZero yes   HTTP Code ELB 5XX Count aws.</description>
-    </item>
-    
-    <item>
-      <title>ASG Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-asg/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-asg/</guid>
-      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     CPU Credit Balance aws.ec2.cpucreditbalance CPUCreditBalance average  none yes no no   CPU Credit Usage aws.ec2.cpucreditusage CPUCreditUsage sum  none yes no no   CPU Utilization Percent aws.ec2.cpuutilization CPUUtilizationPercent average percent 100 yes yes yes   Ephemeral Disk Read Bytes aws.ec2.diskreadbytes DiskReadBytes sum bytes none no no no   Ephemeral Disk Read Ops aws.</description>
-    </item>
-    
-    <item>
-      <title>AWS</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/</guid>
-      <description>The Amazon Web Services (AWS) Integration allows performance data to be collected at regular intervals from AWS for analysis in Metricly.
-Metrics
-For a list of collected and computed metrics, visit our Metrics List.
-Dependencies
-Must have access to an AWS account and CloudWatch metrics.
-   ASG EC2 EBS     ELB RDS SQS   DynamoDB Kinesis Stream Redshift   ElastiCache EMR ECS   Lambda Custom CloudWatch Metric S3 Bucket   Application Load Balancer Target Group MQ Broker    Prerequisite: Enable Cost Explorer Regardless of the installation method used below, Cost Explorer must be enabled from the master billing account–even if set up on a sub-account.</description>
-    </item>
-    
-    <item>
-      <title>Access Key</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/acess-key-aws/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/acess-key-aws/</guid>
-      <description>Access key Setting up an AWS integration is a two step process:
- Create a new AWS integration in Metricly and share the Access Key ID and Secret Access Key of the desired IAM read-only user.
- Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
-  Step 1: Create a new AWS integration  From the top navigation menu, select Integrations.</description>
-    </item>
-    
-    <item>
-      <title>Agents</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Application Gateway</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/azure-app-gateway/</guid>
-      <description>   Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy BASE CORR UTIL Description     azure.applicationgateway.throughput GAUGE bytes/second average 0 none none yes no no The number of bytes per second being processed by the gateway.    </description>
-    </item>
-    
-    <item>
-      <title>Azure Installation</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-installation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-installation/</guid>
-      <description>1. Create a Microsoft Azure Integration Card  From the top navigation menu, select Integrations. Click the Microsoft Azure card. In a separate, new tab, open the Azure portal.  The following instructions were created using the Azure portal not the classic portal. Instructions vary depending on which portal you’re using.
-2. Create an Active Directory Application in Azure  Once in the Azure portal, click Azure Active Directory from the left side menu.</description>
-    </item>
-    
-    <item>
-      <title>Azure Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/</guid>
-      <description> All of the metrics for Azure can be found in this folder.
-Metrics Available Application GatewayBasic MetricsBoot Diagnostics</description>
-    </item>
-    
-    <item>
-      <title>Basic Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/azure-basic-metrics/</guid>
-      <description>Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL Description     azure.virtualmachine.memory.availablememory GAUGE bytes average 0 none none yes no no The total amount of available memory in bytes.   azure.virtualmachine.memory.availableswap GAUGE bytes average 0 none none yes no no The total amount of swap space available in bytes.   azure.virtualmachine.memory.pagespersec GAUGE pages / second average 0 none none yes yes no The total number of pages read and written per second.</description>
-    </item>
-    
-    <item>
-      <title>Boot Diagnostics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-metrics/azure-boot-diagnostics/</guid>
-      <description>Fully Qualified Name (FQN) Type Units Statistic Min Max Sparse Data Strategy (SDS) BASE CORR UTIL Description     azure.virtualmachine.networkin GAUGE bytes average 0 none none yes yes no Bytes received over the network. Note that this metric is the same as the Basic Metric azure.virtualmachine.networkinterface.bytesreceived   azure.virtualmachine.networkout GAUGE bytes average 0 none none yes yes no Bytes transmitted over the network. Note that this metric is the same as the Basic Metric azure.</description>
-    </item>
-    
-    <item>
-      <title>CloudFormation</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/aws-cloudformation-installation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/aws-cloudformation-installation/</guid>
-      <description>This installation method leverages a CloudFormation script found in step 1.4. After you make a new AWS integration in Metricly, the script populates a read-only IAM role in your AWS account and links it using the integration’s Account ID and External ID. Once created, it may take a few minutes for the status to be updated.
-Create an AWS Integration in Metricly  Open Metricly and navigate to Integrations &amp;gt; AWS.</description>
-    </item>
-    
-    <item>
-      <title>Collectors</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-collectors/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-collectors/</guid>
-      <description>There are three ways to configure the Linux Agent default collectors: via the BaseCollector, as a combination of individual collectors, or with just the SimpleCollector. This guide outlines their differences and how to use each; however, we encourage you to try the new SimpleCollector.
-Using the Simple Collector netuitive-diamond/src/collectors/simple
-Where the base or individual collectors include more data (which may be less useful or actionable), this SimpleCollector guarantees a cleaner streamlined experience.</description>
-    </item>
-    
-    <item>
-      <title>Collectors</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/collectors/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/collectors/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Common Commands</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-common-commands/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-common-commands/</guid>
-      <description> These commands may vary depending on your distro.Linux Commands  service netuitive-agent {stop|start|restart}
- /etc/init.d/netuitive-agent {stop|start|restart}
- initctl {stop|start|restart} netuitive-agent
- systemctl {stop|start|restart} netuitive-agent
-  </description>
-    </item>
-    
-    <item>
-      <title>Detailed Billing</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/aws-detailed-billing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/aws-detailed-billing/</guid>
-      <description>How to Enable Detailed Billing  If you already have an S3 bucket receiving billing files from Amazon, then you do not need to complete steps 1 and 2. You can go directly to step 3 to provide Metricly access to the existing files. If you have already created an S3 bucket, you will not need to create a separate one. Just be sure to select the correct S3 bucket in step 2.</description>
-    </item>
-    
-    <item>
-      <title>Disable</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-disable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-disable/</guid>
-      <description>If you need to disable an existing Linux integration or view the unique API key assigned to your account:
- Navigate to User Profile &amp;gt; Integrations. Find the Integration with an Integration Type of Infrastructure. Click its name. Toggle Data Collection to disable it.  </description>
-    </item>
-    
-    <item>
-      <title>Docker Install</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-docker-install/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-docker-install/</guid>
-      <description>1. Copy API Key From Docker Integration  From the Metricly top navigation menu, select Integrations.
- Click the Docker card.
- Ensure Data Collection is enabled. A unique API key for your account has already been generated.
- Highlight the one-line install command from the instructions and copy them. A unique API key for your account has already been generated and included in the command line.
-  The command runs a container named netuitive-agent in the background and publishes the port values to the host.</description>
-    </item>
-    
-    <item>
-      <title>DynamoDB Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-dynamodb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-dynamodb/</guid>
-      <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Max Sparse Data Strategy (SDS) BASE CORR     aws.dynamodb.conditionalcheckfailedrequests ConditionalCheckFailedRequests sum count none zero no no   aws.dynamodb.consumedreadcapacityunits ConsumedReadCapacityUnits sum count none zero yes no   aws.dynamodb.consumedwritecapacityunits ConsumedWriteCapacityUnits sum count none zero yes no   aws.dynamodb.onlineindexconsumedwritecapacity OnlineIndexConsumedWriteCapacity sum count none zero yes no   aws.dynamodb.onlineindexpercentageprogress OnlineIndexPercentageProgress max percent 100 none no no   aws.</description>
-    </item>
-    
-    <item>
-      <title>EBS Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-ebs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-ebs/</guid>
-      <description>Collected    Fully Qualified Name (FQN) Description Units BASE CORR UTIL Related Global Policies     netuitive.aws.ebs.totalops This metric expresses the total number of read and write operations against this EBS instance. This metric is useful for monitoring EBS I/Oactivity.Computation: Read Ops + Write Ops operations yes no no    netuitive.aws.ebs.totalbytes This metric expresses the total number of bytes read and written from/to this EBS instance.</description>
-    </item>
-    
-    <item>
-      <title>EC2 Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-ec2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-ec2/</guid>
-      <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     aws.ec2.cpucreditbalance CPUCreditBalance average  none yes no no   aws.ec2.cpucreditusage CPUCreditUsage sum  none yes no no   aws.ec2.cpuutilization CPUUtilizationPercent average percent 100 yes yes yes   aws.ec2.diskreadbytes DiskReadBytes sum bytes none no no no   aws.ec2.diskreadops DiskReadOps sum  none no no no   aws.</description>
-    </item>
-    
-    <item>
-      <title>ECS Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-ecs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-ecs/</guid>
-      <description>Collected    Cluster Service Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE UTIL     yes no aws.ecs.cpureservation CPUReservation average percent 100 yes    yes no aws.ecs.memoryreservation MemoryReservation average percent 100 yes    yes yes aws.ecs.cpuutilization CPUUtilization average percent 100 yes yes   yes yes aws.ecs.memoryutilization MemoryUtilization average percent 100 yes yes   yes no aws.ecs.activeservicecount Active Service Count average  none yes    yes no aws.</description>
-    </item>
-    
-    <item>
-      <title>EFS Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-efs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-efs/</guid>
-      <description>Collected    Fully Qualified Name (FQN) Description Statistic Units Min Max BASE CORR UTIL     aws.efs.burstcreditbalance The number of burst credits that a file system has. avg bytes   no yes no   aws.efs.clientconnections The number of client connections to a file system. sum bytes   no yes no   aws.efs.datawriteiobytes The number of bytes for each file write operation. sum bytes   no yes no   aws.</description>
-    </item>
-    
-    <item>
-      <title>ELB Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-elb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-elb/</guid>
-      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units Max Sparse Data Strategy (SDS) BASE CORR     Healthy Host Count aws.elb.healthyhostcount HealthyHostCount average  none last no no   Unhealthy Host Count aws.elb.unhealthyhostcount UnHealthyHostCount average  none last no no   Request Count aws.elb.requestcount RequestCount sum  none zero yes yes   Average Latency aws.elb.latency Latency average s none zero yes yes   HTTPCode ELB 4XX Response Count aws.</description>
-    </item>
-    
-    <item>
-      <title>EMR Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-emr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-emr/</guid>
-      <description>AWS groups EMR metrics into different categories (cluster status, node status, IO, etc.), but this has no impact on how Metricly monitors EMR.
-Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     Cluster Status aws.elasticmapreduce.appscompleted AppsCompleted average count none no no no   Cluster Status aws.elasticmapreduce.appsfailed AppsFailed average count none no no no   Cluster Status aws.</description>
-    </item>
-    
-    <item>
-      <title>Elastic Beanstalk</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-elastic-beanstalk-install/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-elastic-beanstalk-install/</guid>
-      <description>Using an existing application file, you can deploy the Netuitive agent to a self-contained EC2 instance complete with a load balancer and everything else it needs to run. The Elastic Beanstalk instance can also scale by itself.
- Before creating your Elastic Beanstalk instance, find or create a folder called .ebextensions in your application’s directory. Copy the netuitive.config file to your .ebextensions folder. Replace the sample API key at the top of the netuitive.</description>
-    </item>
-    
-    <item>
-      <title>Elasticache Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-elasticache/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-elasticache/</guid>
-      <description>Elasticache instances can come in a few “flavors”, which means metrics are unique to each “flavor” of Elasticache.
- Host-level metrics are present on both Memcached as well as Redis clusters Memcached metrics are available only on Memcached clusters, Memcached 1.4.14 metrics are only available on Memcached clusters using at least version 1.4.14 Redis metrics are present only on Redis clusters.  Collected    Metric Type Fully Qualified Name (FQN) AWS Metric Statistic Units Max BASE CORR UTIL     Host-level aws.</description>
-    </item>
-    
-    <item>
-      <title>Enable Guest OS Diagnostic Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/</guid>
-      <description>Azure Virtual Machines will share boot diagnostic metrics by default, which are a small subset of core metrics. To enable Guest OS diagnostic (basic) metrics that provide more information about your machine, you’ll need to follow these steps (depending on your situation):
-Enable Basic Metrics on Existing VM  In Azure, navigate to Virtual machines. Select a virtual machine. Another window with options will open. Select Diagnostic settings. Under Configure required settings, select the checkbox next to Basic metrics.</description>
-    </item>
-    
-    <item>
-      <title>Filter Elements</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-filter-elements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/azure-filter-elements/</guid>
-      <description>You can filter what Azure elements are included in Metricly’s monitoring by using regex to match key-value pairs. Metricly offers opt-in (include) or opt-out (exclude) element filtering.
-Using opt-in filtering  In your Azure portal, create or choose an existing tag (key-value pair). Then, assign the tag to the Azure elements you do not want Metricly to monitor. In Metricly, navigate to your Azure integration card. Expand the element types you want to filter.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started</title>
-      <link>https://metriclyhelpsite.netlify.com/getting-started/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/getting-started/</guid>
-      <description>1. Watch Our Product Demo There’s no faster way to get acquainted with the UI than by watching the demo video. This tour covers both the Cost and Monitoring products, including topics like: the EC2 recommendation report, the Utilization Boxplot report, and the Cost report.
-2. Register an Account You’re excited to right-size your environments and lower their costs. You’ve done all your research, and you’re ready to try Metricly’s 21-day free trial.</description>
-    </item>
-    
-    <item>
-      <title>Gov Cloud</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/aws-gov-cloud/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/aws-gov-cloud/</guid>
-      <description>AWS GovCloud (US) is a segment of Amazon Web Services cloud offerings that restrict physical and logical administrative access to U.S. citizens only. The region meets the requirements for U.S. International Traffic in Arms Regulations (ITAR), and allows users to move Controlled Unclassified Information (CUI) into the cloud. Check out our blog post, Monitor AWS GovCloud With Metricly, or the official AWS Guide for more information.
-Configuration Leave GovCloud disabled unless you have signed up for and are using a GovCloud-restricted AWS account.</description>
-    </item>
-    
-    <item>
-      <title>IAM</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/aws-iam-installation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/aws-iam-installation/</guid>
-      <description>IAM Role Method Setting up an AWS integration via IAM Role is a two step process:
-Create a new AWS integration in Metricly using an IAM read-only role. Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
-Step 1: Create a new AWS integration  From the top navigation menu, select Integrations.</description>
-    </item>
-    
-    <item>
-      <title>Knesis Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-knesis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-knesis/</guid>
-      <description>Currently, Metricly only supports Kinesis Streams, but additional support for Kinesis Firehose may come in the future.
-Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.kinesis.getrecords.bytes GetRecords.Bytes average bytes zero yes yes   aws.kinesis.getrecords.iteratoragemilliseconds GetRecords.IteratorAgeMilliseconds average ms zero yes no   aws.kinesis.getrecords.latency GetRecords.Latency average ms zero yes yes   aws.kinesis.getrecords.records GetRecords.Records sum ops zero yes yes   aws.</description>
-    </item>
-    
-    <item>
-      <title>Lambda Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-lambda/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-lambda/</guid>
-      <description>Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.lambda.duration GAUGE average milliseconds zero yes yes   aws.lambda.errors GAUGE sum count zero no no   aws.lambda.invocations GAUGE sum count zero yes yes   aws.lambda.throttles GAUGE sum count zero no no    Computed    Friendly Name FQN Computation Units Min Max Description     Error Percent netuitive.</description>
-    </item>
-    
-    <item>
-      <title>Linux Agent</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/</guid>
-      <description>Using the Linux Agent, you can quickly deploy and collect metrics with a rich set of metadata.
-The agent discovers and collects KPI metrics, integrates with CloudWatch, and can leverage other agent metrics. Using various plugins, the Linux Agent can also pull metrics from many different products running on a Linux operating system (in addition to pulling metrics from the host Linux OS).</description>
-    </item>
-    
-    <item>
-      <title>MQ Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-mq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-mq/</guid>
-      <description> Collected    Fully Qualified Name (FQN) AWS Metric Statistic Units Sparse Data Strategy (SDS) BASE CORR     aws.mq.cpuutilization CpuUtilization  percent      aws.mq.heapusage HeapUsage  percent      aws.mq.networkin NetworkIn  bytes      aws.mq.networkout NetworkOut  bytes      aws.mq.totalmessagecount TotalMessageCount  count       </description>
-    </item>
-    
-    <item>
-      <title>Manual Install</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-elastic-manual-install/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-elastic-manual-install/</guid>
-      <description> Via RPM rpm --import https://repos.app.netuitive.com/RPM-GPG-KEY-netuitive rpm -ivh https://repos.app.netuitive.com/rpm/noarch/netuitive-repo-1-0.2.noarch.rpm yum -y install netuitive-agent  Via DEB curl -s https://repos.app.netuitive.com/netuitive.gpg | apt-key add -apt-get install -y apt-transport-https echo &amp;quot;deb https://repos.app.netuitive.com/deb/ stable main&amp;quot; &amp;gt; /etc/apt/sources.list.d/netuitive.list apt-get -y update apt-get install -y netuitive-agent  </description>
-    </item>
-    
-    <item>
-      <title>Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/</guid>
-      <description> All of the metrics for AWS can be found in this folder.
-Metrics Available ALB MetricsASG MetricsDynamoDB MetricsEBS MetricsEC2 MetricsECS MetricsEFS MetricsELB MetricsEMR MetricsElasticache MetricsKnesis MetricsLambda MetricsMQ MetricsNLB MetricsRedshift MetricsS3 MetricsSQS Metrics</description>
-    </item>
-    
-    <item>
-      <title>Microsoft Azure</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/microsoft-azure/</guid>
-      <description> Microsoft Azure is a cloud computing platform, similar to Amazon Web Services. With Azure integration in Metricly, you can monitor the performance of your entire cloud infrastructure. Metricly requires Reader role permissions of your Azure environment, which can be granted using the Owner or User Access Administrator roles.
-Related Topics Azure InstallationAzure MetricsEnable Guest OS Diagnostic MetricsFilter Elements</description>
-    </item>
-    
-    <item>
-      <title>NLB Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-nlb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-nlb/</guid>
-      <description>Collected    Friendly Name FQN Statistic Baseline Correlation     Active Flow Count aws.networkelb.activeflowcount AVG yes no   ELB Consumed ICUs aws.networkelb.consumedlcus MAX no no   ELB Healthy Host Count aws.networkelb.healthyhostcount MAX no no   ELB New Flow Count aws.networkelb.newflowcount SUM yes no   ELB Processed Bytes aws.networkelb.processedbytes SUM yes no   TCP Client Reset Count aws.networkelb.tcp_client_reset_count SUM no no   TCP ELB Reset Count aws.</description>
-    </item>
-    
-    <item>
-      <title>Optional Config</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/aws-optional-config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/aws-optional-config/</guid>
-      <description>Change Element Display Names You can change how certain elements’ names are displayed in the application to help distinguish between each instance, e.g., you have 15 EC2 instances with the same name and want to know the difference between each.
- Under the Include Types list, expand the desired type.
- Beneath the Tag Key field, click Advanced. A menu expands.
- Hover next to Element Name; an edit icon will appear.</description>
-    </item>
-    
-    <item>
-      <title>Optional Config</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-optional-config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-optional-config/</guid>
-      <description>Changing Element Display Names You can change the display name of certain elements to help distinguish between each instance.
- Navigate to Integrations &amp;gt; Linux Integration. Click Advanced; a menu expands.  Click the Element Name field to edit it. Type the desired name into the field.  An element name of ${meta.originalName} would resolve to whatever name comes in with the original element payload before it would be replaced with the optional element name template.</description>
-    </item>
-    
-    <item>
-      <title>Redshift Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-redshift/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-redshift/</guid>
-      <description>For each Redshift cluster, two types of elements are collected:
- RedshiftCluster: Contains cluster-specific metrics as well as metrics that are averages across all nodes. RedshiftNode: Contains node-specific metrics. There will be one element per Redshift node.  The table below denotes which metrics are cluster- or node-based (or both).
-Collected    Fully Qualified Name (FQN) Cluster Node AWS Metric Statistic Units Max BASE CORR UTIL     aws.</description>
-    </item>
-    
-    <item>
-      <title>Remove</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-remove/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-remove/</guid>
-      <description> Stop the Linux Agent (use the appropriate command for your distro). The most common being:  service netuitive-agent stop /etc/init.d/netuitive-agent stop initctl stop netuitive-agent systemctl stop netuitive-agent  Remove the directory containing the Linux Agent. Default: rm -r /opt/netuitive-agent.  If you don’t want to be prompted for each file that needs to be deleted, use rm -rf /opt/netuitive-agent   </description>
-    </item>
-    
-    <item>
-      <title>S3 Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-s3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-s3/</guid>
-      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units BASE     Bucket Size Bytes aws.s3.bucketsizebytes BucketSizeBytes average GiB/KiB yes   Number of Objects aws.s3.NumberOfObjects NumberOfObjects average K yes   4xx Errors aws.s3.4xxerrors 4xxErrors average count yes   4xx Errors aws.s3.5xxerrors 5xxErrors average count yes   All Requests aws.s3.allrequests AllRequests average count yes   First Byte Latency aws.</description>
-    </item>
-    
-    <item>
-      <title>SQS Metrics</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-sqs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/aws-integration/metrics/aws-metrics-sqs/</guid>
-      <description>Collected    Friendly Name Fully Qualified Name (FQN) AWS Metric Statistic Units BASE     Approximate Age of Oldest Message aws.sqs.approximateageofoldestmessage ApproximateAgeOfOldestMessage average seconds yes   Approximate Number of Messages Delayed aws.sqs.approximatenumberofmessagesdelayed ApproximateNumberOfMessagesDelayed sum Count yes   Approximate Number of Messages Not Visible aws.sqs.approximatenumberofmessagesnotvisible ApproximateNumberOfMessagesNotVisible sum Count yes   Approximate Number of Messages Visible aws.sqs.approximatenumberofmessagesvisible ApproximateNumberOfMessagesVisible sum Count yes   Number of Empty Receives aws.</description>
-    </item>
-    
-    <item>
-      <title>Standard Install</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-standard-install/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-standard-install/</guid>
-      <description>This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as Metricly receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
-1. Copy Install Command From Linux Integration Setup Page  From the top navigation menu, select Integrations.</description>
-    </item>
-    
-    <item>
-      <title>Troubleshooting</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-troubleshooting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-troubleshooting/</guid>
-      <description>Set Logs to Debugging Mode To set the Linux Agent logs to Debugging Mode, update the netuitive-agent.conf file.
- Navigate to the netuitive-agent.conf file. Update level = INFO to level = DEBUG. Save and restart your agent.  # to increase verbosity, set DEBUG level = DEBUG handlers = rotated_file propagate = 1  Need Help? 1. Save as Zip File Copy /opt/netuitive-agent/bin/get-support and paste it into your command line interface to zip up your agent configurations, logs, and system metadata.</description>
-    </item>
-    
-    <item>
-      <title>Upgrade</title>
-      <link>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-upgrade/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://metriclyhelpsite.netlify.com/integrations/agents/linux-agent/linux-upgrade/</guid>
-      <description>It’s important you upgrade to the latest version of the Linux Agent whenever possible, as we’re constantly improving it. Check out the recently closed issues and pull requests, as well as the release history, to see why you should upgrade.
- Stop the Linux Agent (use the appropriate command for your distro). The most common being:  service netuitive-agent stop /etc/init.d/netuitive-agent stop initctl stop netuitive-agent systemctl stop netuitive-agent  Run yum -y update netuitive-agent.</description>
-    </item>
-    
-  </channel>
-</rss>
