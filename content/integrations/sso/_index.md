@@ -2,7 +2,7 @@
 title: "SSO"
 #date: 2018-12-11
 draft: false
-tags: ["#sso", "#integrations", "#authentication"]
+tags: ["#sso", "#integrations", "#authentication", "#okta"]
 author: Lawrence Lane
 ---
 
@@ -38,12 +38,13 @@ author: Lawrence Lane
   - Click **Add Another**.
   - In the first default blank attribute, type `role` in the **Name field** and `user.role` into the **Value field**  `user.role` must be entered manually and does not appear in the dropdown.
     - Metricly requires administrator access for creating and editing data. To grant administrator privileges enter `user.isMemberOfGroupName(“OurAdminGroup”) ? ‘Administrator’ : null` as your role value.
-![add-attributes](/images/_index/add-attributes.png)
+    ![add-attributes](/images/_index/add-attributes.png)
 12. Click **Next**.
 13. Click **Finish**.
 14. Click **View Setup Instructions** in your app.
 15. Click **Download Certificate** (this is your public key)
 16. **Copy** and **save** the metadata as an `XML file`. This is under _Optional_ in Okta.
+![optional-metadata](/images/_index/optional-metadata.png)
 
 {{% notice tip %}}
 Add your `tenant name` to the SSO settings in the **Default Relay State field** if you want users to bypass entering the tenant ID when logging into Metricly.
