@@ -14,7 +14,7 @@ author: Lawrence Lane
 3. Copy the generated certificate and use it to create a `.cert` file.
 4. Click **Continue**. Keep this tab open and open a new tab; you must now go to your SSO provider and upload the certificate. Each provider will be slightly different.
 
-## 2. Link to your SSO Provider & Download Private Key (Okta Example)
+## 2. Link to your SSO Provider & Download Certificate (Public Key)
 
 1. Log into **Okta** as an administrator and navigate to _Applications_.
 2. Click **Add Application**.
@@ -47,12 +47,14 @@ author: Lawrence Lane
 ![optional-metadata](/images/_index/optional-metadata.png)
 
 {{% notice tip %}}
-Add your `tenant name` to the SSO settings in the **Default Relay State field** if you want users to bypass entering the tenant ID when logging into Metricly.
+Add your `tenant name` to the SSO settings in the **Default Relay State field** if you want users to bypass entering the tenant name when logging into Metricly. Contact support if you do not know your tenant name.
 ![default-relay-state](/images/_index/default-relay-state.png)
 {{% /notice %}}
 
 ## 3. Finish SSO Set-up in Metricly
 
-1. Upload the certification (public key) from Okta.
+1. Upload the certificate (public key) from Okta.
+2. Upload the `metadata.xml` file from Okta.
+![upload-metadata-xml](/images/_index/upload-metadata-xml.png)
 2. When finished, it should look like this:
 ![setup-complete](/images/_index/setup-complete.png)
