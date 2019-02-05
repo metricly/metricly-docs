@@ -204,7 +204,7 @@ Returns a dashboard for the given ID.
 ### POST a Copy from /dashboards/{id}/copy
 Copies an existing dashboard.
 
-### | Parameters | Required/Optional | Description |
+| Parameters | Required/Optional | Description |
 |------------|-------------------|--------------------------------------------------|
 | id | Required | URL (path) parameter. The ID of the integration. |
 
