@@ -10,6 +10,11 @@ pre: ""
 
 ## Request Header
 
+| Header Name | Header Value |
+|----------------------|---------------------------------------|
+| Content-Type | application/json |
+| Authorization: Basic | (Base64 encoded authentication value) |
+
 ## POST to /datasources
 Creates a new integration for a tenant account.
 
@@ -133,3 +138,4 @@ Replace {id} in the above URL with the ID from any of your integrations.
 | name | Optional | The name of the integration (displayed in the Inventory Explorer). |
 | properties | Optional | The fields available for the integration (unique to each integration type). |
 | type | Required | The type of integration. Can be one of the following: AWS, AWSCOST, AZURE |
+|   |   |   |
