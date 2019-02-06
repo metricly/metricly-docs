@@ -16,7 +16,8 @@ The metrics API allows you access to your element’s metrics.
 | Content-Type | application/json |
 | Authorization: Basic | (Base64 encoded authentication value) |
 
-## GET from /metrics
+## GET
+### GET from /metrics
 Returns a list of metrics that match given parameters.
 
 **Parameters**
@@ -25,7 +26,7 @@ Returns a list of metrics that match given parameters.
 | startTime | Required | Query parameter. The start of the window of time from which metrics will be returned. The startTime must be in ISO 8601 format. The default startTime is 12:00 AM in the authenticating user’s specified time zone. |
 | endTime | Required | Query parameter. The end of the window of time from which metrics will be returned. The endTime must be in ISO 8601 format. The default endTime is the current time. |
 
-## Get from /metrics/fqns
+### GET from /metrics/fqns
 Returns a list of fully qualified names (FQNS) for metrics matching given parameters.
 
 | Parameters | Required/Optional | Description |
@@ -39,7 +40,7 @@ Returns a list of fully qualified names (FQNS) for metrics matching given parame
 | metricFqn | Optional | Query parameter. The fully qualified name (FQN) of the metric. |
 | metricTag | Optional | Query parameter. The tag-value pair associated with the metric. metricTag={"foo":["one","two"], "bar":["three","four"]} |
 
-## Get from /metrics/statistics
+### GET from /metrics/statistics
 Returns metric data based on the parameters given.
 
 | Parameters | Required/Optional | Description |
@@ -51,7 +52,7 @@ Returns metric data based on the parameters given.
 | rollup | Optional | Query parameter. Select the data aggregation roll-up you wish to receive: ZERO (none), PT5M (past 5 minutes), PT1H (past 1 hour), or PT24H (past 24 hours). |
 | showValues | Optional | Query parameter. Provides the values for the metric statistics (if set to true) or only displays zeroes for the statistics (if set to false). |
 
-## GET from /metrics/statistics/aggregate
+### GET from /metrics/statistics/aggregate
 returns aggregate statistics for a metric.
 
 **Parameters**
@@ -80,7 +81,7 @@ returns aggregate statistics for a metric.
 | tenantId | Optional | The ID of the tenant the element is associated with. |
 | types | Optional | The type of the element. Read more about element types here. |
 
-## Get from /metrics/statistics
+### GET from /metrics/statistics
 Returns descriptive statistics for a metric.
 
 **Parameters**
@@ -108,7 +109,7 @@ Returns descriptive statistics for a metric.
 | tenantId | Optional | The ID of the tenant the element is associated with. |
 | types | Optional | The type of the element. Read more about element types here. |
 
-# Creating Metric Data
+## Creating Metric Data
 The ingest API allows you to send raw data to Metricly. At least one integration must be set up in your Metricly account to use the ingest endpoint. We recommend using the unique API key (found on the API keys page under the Account Profile drop-down menu) for the Custom integration automatically created for your account as your go-to for anything related to using our API.
 
 To properly use the ingest endpoint, you should first understand the following concepts:
@@ -119,7 +120,7 @@ To properly use the ingest endpoint, you should first understand the following c
 - **Samples**: A sample is a raw data value that is delivered from an ingestion service (integration) to Metricly.
 - **Tags**: A tag is a key-value pair that is applied to an entity in Metricly.
 - **Relationships**: A uni- or bi-directional relationship between two elements.
-
+## POST
 ### POST to /ingest/{apiId}
 Creates a data sample for a given element.
 

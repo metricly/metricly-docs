@@ -15,7 +15,8 @@ pre: ""
 | Content-Type | application/json |
 | Authorization: Basic | (Base64 encoded authentication value) |
 
-## POST to /datasources
+## POST
+### POST to /datasources
 Creates a new integration for a tenant account.
 
 This method can be used to create one or many integrations and **should only be used by an experienced power user**. Properties associated to datasources are mapped as strings and cannot be validated, meaning typos are not caught and returned as errors. Metricly recommends creating your datasources through the UI; updating an existing datasource via PUT is less complex than POSTing a new datasource.
@@ -36,7 +37,7 @@ This method can be used to create one or many integrations and **should only be 
 }
 ```
 
-### AWS Example
+#### AWS Example
 
 ```
 curl -X POST -k -H 'Authorization: Basic dGVzdDp0ZXN0' -i 'https://api.app.metricly.com/datasources' --data '[
@@ -54,7 +55,7 @@ curl -X POST -k -H 'Authorization: Basic dGVzdDp0ZXN0' -i 'https://api.app.metri
 ]'
 ```
 
-### AWS Cost Example
+#### AWS Cost Example
 
 ```
 curl -X POST -k -H 'Authorization: Basic dGVzdDp0ZXN0' -i 'https://api.app.metricly.com/datasources' --data '[
@@ -96,12 +97,22 @@ curl -X POST -k -H 'Authorization: Basic dGVzdDp0ZXN0' -i 'https://api.app.metri
 | properties | Optional | The fields available for the integration (unique to each integration type). |
 | type | Required | The type of integration. Can be one of the following: AWS, AWS COST, AZURE |
 
-## GET from /datasources
+## GET
+### GET from /datasources
 Returns a list of all datasources associated with a tenant.
 
 This method provides a list that includes datasources created upon account setup by Metricly; these datasources cannot be deleted by the DELETE method.
 
-## DELETE  from /datasources/{id}
+### GET from /datasources/{id}
+Returns an integration for the given ID.
+Replace {id} in the above URL with the ID from any of your integrations.
+
+| Parameters | Required/Optional | Description |
+|------------|-------------------|--------------------------------------------------|
+| id | Required | URL (path) parameter. The ID of the integration. |
+
+## DELETE
+### DELETE  from /datasources/{id}
 Deletes a given integration.
 
 Replace {id} in the above URL with the ID of the integration you want deleted. Any integration you have created can be deleted. Metricly provisioned datasources cannot be deleted.
@@ -110,15 +121,8 @@ Replace {id} in the above URL with the ID of the integration you want deleted. A
 |------------|-------------------|--------------------------------------------------|
 | id | Required | URL (path) parameter. The ID of the integration. |
 
-## GET from /datasources/{id}
-Returns an integration for the given ID.
-Replace {id} in the above URL with the ID from any of your integrations.
-
-| Parameters | Required/Optional | Description |
-|------------|-------------------|--------------------------------------------------|
-| id | Required | URL (path) parameter. The ID of the integration. |
-
-## PUT to /datasources/{id}
+## PUT
+### PUT to /datasources/{id}
 Returns an integration for the given ID.
 Replace {id} in the above URL with the ID from any of your integrations.
 
