@@ -1,5 +1,5 @@
 ---
-title: "Ingest API"
+title: "Metrics API"
 draft: false
 categories:
 tags: ["#api",]
