@@ -1,8 +1,8 @@
 ---
-title: "Elastisearch"
+title: "Elasticsearch"
 #date: 2018-12-11
 draft: false
-tags: ["#elastisearch", "#integrations" ]
+tags: ["#elasticsearch", "#integrations" ]
 author: Lawrence Lane
 ---
 Elasticsearch is a distributed, scalable search server that enables you to search through all kinds of documents. Metricly can be used to monitor the performance of your Elasticsearch server. Additional configuration options are available below the instructions.
