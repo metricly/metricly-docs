@@ -46,7 +46,7 @@ This method will allow you to test a notification.
 
 | Attribute | Required/Optional | Description |
 |--------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| notification | Required | id (required) The notification ID. tenantId (required) The ID for the tenant that the notification was created for. enabled (optional) True or false; if the notification is enabled. type (required) The type of notification: email, hipchat, webhook, opsgenie, or pagerduty. properties (required) The fields filled out for each notification type. See above for more information. For an email notification, the properties attribute would contain templateType, address, bodyTemplate, and subjectTemplate. |
+| notification | Required | id (required) The notification ID. tenantId (required) The ID for the tenant that the notification was created for. enabled (optional) True or false; if the notification is enabled. type (required) The type of notification: email, webhook, opsgenie, or pagerduty. properties (required) The fields filled out for each notification type. See above for more information. For an email notification, the properties attribute would contain templateType, address, bodyTemplate, and subjectTemplate. |
 
 ### POST (replace) a notification from /notificaitons/{id}
 This method will allow you to replace a given notification.
@@ -61,7 +61,7 @@ This method will allow you to replace a given notification.
 
 | Attribute | Required/Optional | Description |
 |--------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| notification | Required | id (required) The notification ID. tenantId (required) The ID for the tenant that the notification was created for. enabled (optional) True or false; if the notification is enabled. type (required) The type of notification: email, hipchat, webhook, opsgenie, or pagerduty. properties (required) The fields filled out for each notification type. See above for more information. |
+| notification | Required | id (required) The notification ID. tenantId (required) The ID for the tenant that the notification was created for. enabled (optional) True or false; if the notification is enabled. type (required) The type of notification: email,   webhook, opsgenie, or pagerduty. properties (required) The fields filled out for each notification type. See above for more information. |
 
 ## DELETE
 ### DELETE a Notification from /notifications/{id}

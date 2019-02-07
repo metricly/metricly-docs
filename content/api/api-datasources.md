@@ -143,3 +143,134 @@ Replace {id} in the above URL with the ID from any of your integrations.
 | properties | Optional | The fields available for the integration (unique to each integration type). |
 | type | Required | The type of integration. Can be one of the following: AWS, AWSCOST, AZURE |
 |   |   |   |
+
+## Datasource Template
+
+Use the following JSON template as a guide when creating datasources through the Datasources API endpoint. Fields not listed here are not supported; they will be accepted by the endpoint, but not used in any way.
+
+```
+{
+      "name": "DatasourceName",
+      "type": "AWS",
+      "properties": {
+        "awsAuthentication": "ROLE or USER",
+        "iamRole": "required if ROLE",
+        "accessKey": "required if USER",
+        "secretKey": "required if USER",
+        "bucketName": "Optional field containing the S3 bucket name where your billing data is stored. required if you wish to use detailed billing reports.",
+        "costExplorerEnabled": "Optional field. TRUE or FALSE. must still have cost explorer active in AWS Console.",
+        "isGovCloud": "Optional field. TRUE or FALSE; is this datasource GovCloud?",
+        "regions": "Optional field. List of regions that are INCLUDED -- by default, this populates after creation with all regions listed",
+
+        "albEnabled": "TRUE or FALSE; turns collection on.",
+        "albFilteringEnabled": "TRUE or FALSE; allows filtering.",
+        "albFilterTagType": "INCLUDE or EXCLUDE; determines how filter operates.",
+        "albFilterTagValue": "ONLY useable WHEN FilteringEnabled is TRUE.",
+        "albFilterTagName": "ONLY useable WHEN FilteringENabled is TRUE.",
+
+        "asgEnabled": "true",
+        "asgFilteringEnabled": "true",
+        "asgFilterTagType": "include",
+        "asgFilterTagValue": "",
+        "asgFilterTagName": "",
+
+        "ctmEnabled": "true",
+        "ctmFilteringEnabled": "false",
+        "ctmFilterTagType": "include",
+        "ctmFilterTagValue": "",
+        "ctmFilterTagName": "not applicable. use FilterTagValue instead.",
+
+        "dynEnabled": "false",
+        "dynFilteringEnabled": "false",
+        "dynFilterTagType": "include",
+        "dynFilterTagValue": "",
+        "dynFilterTagName": "not applicable. use FilterTagValue instead.",
+
+        "ebsEnabled": "true",
+        "ebsFilteringEnabled": "false",
+        "ebsFilterTagType": "include",
+        "ebsFilterTagValue": "",
+        "ebsFilterTagName": "",
+
+        "echEnabled": "false",
+        "echFilteringEnabled": "false",
+        "echFilterTagType": "include",
+        "echFilterTagValue": "",
+        "echFilterTagName": "",
+
+        "ecsEnabled": "false",
+        "ecsFilteringEnabled": "false",
+        "ecsFilterTagType": "include",
+        "ecsFilterTagValue": "",
+        "ecsFilterTagName": "not applicable. use FilterTagValue instead.",
+
+        "ec2Enabled": "true",
+        "ec2FilteringEnabled": "false",
+        "ec2FilterTagType": "include",
+        "ec2FilterTagValue": "",
+        "ec2FilterTagName": "",
+
+        "elbEnabled": "true",
+        "elbFilteringEnabled": "false",
+        "elbFilterTagType": "include",
+        "elbFilterTagValue": "",
+        "elbFilterTagName": "",
+
+        "emrEnabled": "false",
+        "emrFilteringEnabled": "false",
+        "emrFilterTagType": "include",
+        "emrFilterTagValue": "",
+        "emrFilterTagName": "",
+
+        "knsEnabled": "false",
+        "knsFilteringEnabled": "false",
+        "knsFilterTagType": "include",
+        "knsFilterTagValue": "",
+        "knsFilterTagName": "not applicable. use FilterTagValue instead.",
+
+        "lamEnabled": "false",
+        "lamFilteringEnabled": "false",
+        "lamFilterTagType": "include",
+        "lamFilterTagValue": "",
+        "lamFilterTagName": "",
+
+        "mqEnabled": "false",
+        "mqFilteringEnabled": "false",
+        "mqFilterTagType": "include",
+        "mqFilterTagValue": "",
+        "mqFilterTagName": "not applicable. use FilterTagValue instead.",
+
+        "rdsEnabled": "true",
+        "rdsFilteringEnabled": "false",
+        "rdsFilterTagType": "include",
+        "rdsFilterTagValue": "",
+        "rdsFilterTagName": "",
+
+        "redEnabled": "false",
+        "redFilteringEnabled": "false",
+        "redFilterTagType": "include",
+        "redFilterTagValue": "",
+        "redFilterTagName": "",
+
+        "sqsEnabled": "true",
+        "sqsFilteringEnabled": "false",
+        "sqsFilterTagType": "include",
+        "sqsFilterTagValue": "",
+        "sqsFilterTagName": "not applicable. use FilterTagValue instead.",
+
+        "s3Enabled": "false",
+        "s3FilteringEnabled": "false",
+        "s3FilterTagType": "include",
+        "s3FilterTagValue": "",
+        "s3FilterTagName": "not applicable. use FilterTagValue instead.",
+
+        "tagEnabled": "false; tag here stands for target groups.",
+        "tagFilteringEnabled": "false",
+        "tagFilterTagType":"include",
+        "tagFilterTagValue": "",
+        "tagFilterTagName": "not applicable. use FilterTagValue instead.",
+
+      },
+
+    }
+```
