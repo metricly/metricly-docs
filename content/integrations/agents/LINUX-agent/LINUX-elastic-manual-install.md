@@ -17,7 +17,8 @@ yum -y install netuitive-agent
 
 ## Via DEB
 ```
-curl -s https://repos.app.netuitive.com/netuitive.gpg | apt-key add -apt-get install -y apt-transport-https
+curl -s https://repos.app.netuitive.com/netuitive.gpg | apt-key add
+apt-get install -y apt-transport-https
 echo "deb https://repos.app.netuitive.com/deb/ stable main" > /etc/apt/sources.list.d/netuitive.list
 apt-get -y update
 apt-get install -y netuitive-agent
