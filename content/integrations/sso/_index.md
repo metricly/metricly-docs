@@ -58,3 +58,9 @@ Add your `tenant name` to the SSO settings in the **Default Relay State field** 
 ![upload-metadata-xml](/images/_index/upload-metadata-xml.png)
 2. When finished, it should look like this:
 ![setup-complete](/images/_index/setup-complete.png)
+
+- **login URL:**
+`https://app.metricly.com/#/login?sso=true`
+
+- **login URL (tenant name pre populated):**
+`https://app.metricly.com/#/login?sso=true&tenantName=Your+Tenant+Name`
