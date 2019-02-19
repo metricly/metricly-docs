@@ -6,7 +6,7 @@
 
 - Search by using **folder tree** {{< icon name="fa-folder-open" >}} or by the **search bar** {{< icon name="fa-search" >}}
 - Select **tags** {{< icon name="fa-tags" >}} to help you find key related articles
-- Tab through articles using arrow keys {{< icon name="fa-caret-square-o-left" >}} {{< icon name="fa-caret-square-o-right" >}}
+- Tab through articles using **arrow keys** {{< icon name="fa-caret-square-o-left" >}} {{< icon name="fa-caret-square-o-right" >}}
 - Select {{< icon name="fa-home" >}} for an article's table of contents
 
 ---

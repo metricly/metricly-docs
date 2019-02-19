@@ -6,7 +6,7 @@ categories:
 tags:
 author: Lawrence Lane
 pre:
-weight: 2
+weight: 3
 ---
 
 ## 1. Integrate with AWS
@@ -27,7 +27,7 @@ Most of our integrations come with default policies out of the box. If you would
 Use our [Notification guides][5] to set up your preferred contact method for firing policies.
 
 ## 5. Build a Custom Dashboards
-Got everything set up? Great! Now's a great time to build the dashboard of your dreams. You can do that by following the [Create a New Dashboard][7] guide. 
+Got everything set up? Great! Now's a great time to build the dashboard of your dreams. You can do that by following the [Create a New Dashboard][7] guide.
 
 ## 6. Explore the Docs
 
