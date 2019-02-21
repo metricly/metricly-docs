@@ -47,7 +47,7 @@ Check out our most popular agents! Click on the links to read their in-depth set
 - [Windows Agent][4]  
   Monitor windows performance counters and attributes with the Windows Agent. Pre-configured to send the most important performance metrics, windows events, and system attributes, it’s powerful from the start. You can also customize it to send additional data as needed.
 
-[1]:tbd
+[1]:https://www.metricly.com/demo/
 [2]:/integrations/aws-integration/aws-cloudformation-installation/
 [3]:/integrations/agents/linux-agent
-[4]:tbd
+[4]:/integrations/agents/windows-agent
