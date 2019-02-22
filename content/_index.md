@@ -10,22 +10,23 @@
 - Select {{< icon name="fa-home" >}} for an article's table of contents
 
 ---
+## Popular Topics
 
-## <i class='icon-alert'></i> Alerts & Notifications
+### <i class='icon-alert'></i> Alerts & Notifications
 
 - [Notifications][3]
 - [Policies][4]
 
-## <i class='icon-integration'></i> Integrations
+### <i class='icon-integration'></i> Integrations
 
 - [AWS][5]
 - [Linux Agent][6]
 
-## <i class='icon-visualization'></i> Visualization
+### <i class='icon-visualization'></i> Visualization
 - [Dashboards](7)
 - [Metrics](8)
 
-## <i class='icon-reports'></i> Reports
+### <i class='icon-reports'></i> Reports
 - [Cost (EC2, RDS, S3)](/reports/reports-cost)
 - [Idle Resources](/reports/idle-resources)
 - [Resource Utilization](/reports/reports-resource-utilization)

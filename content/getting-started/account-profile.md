@@ -20,7 +20,7 @@ Hover over any input field (other than username) and click to edit.
 
 - **Daily Report Email**: Sends you a summary of the monitoring activity that occurred the previous day.
 
-- **Alert Badge**:
+- **Alert Badge**: Toggles the open alert count in the navigation pane.
 
 ### Password
 Update your password here.
