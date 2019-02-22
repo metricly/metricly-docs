@@ -11,3 +11,9 @@ disableHomeIcon = true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[[menu.shortcuts]]
+name = " <i class='fa fa-compass fa-lg'></i> Metricly"
+identifier = "metricly"
+url = "https://www.metricly.com"
+weight = 1
