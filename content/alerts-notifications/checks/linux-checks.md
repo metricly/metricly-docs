@@ -21,7 +21,7 @@ This check **is enabled** by default. For additional configuration, you can modi
 
 ```
 enabled = True
-ttl = 120
+ttl = 150
 ```
 
 ### Port Checks
