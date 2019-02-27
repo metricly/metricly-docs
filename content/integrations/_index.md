@@ -12,8 +12,8 @@ An integration is a system from which Metricly collects data. Metricly offers in
 ### OS
 - Redhat 6 and 7
 - CentOS 6 and 7
-- Amazon Linux (latest)
-- Ubuntu 12, 14, 15, and 16
+- Amazon Linux (latest) and Amazon Linux 2 (latest)
+- Ubuntu 12, 14, 15, 16, and 18
 - Debian 7, 8, and 9
 
 ###  Miscellaneous
