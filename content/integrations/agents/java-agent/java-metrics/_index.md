@@ -1,5 +1,5 @@
 ---
-title: "Metrics"
+title: "Java Metrics"
 #date: 2018-12-11
 draft: false
 tags: ["#java", "#integrations", "#metrics", "#agents"]

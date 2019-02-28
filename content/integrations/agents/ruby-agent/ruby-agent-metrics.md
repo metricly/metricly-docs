@@ -1,5 +1,5 @@
 ---
-title: "Metrics"
+title: "Ruby Metrics"
 #date: 2018-12-12
 draft: false
 tags: ["#ruby", "#integrations", "#agents", "#metrics" ]
