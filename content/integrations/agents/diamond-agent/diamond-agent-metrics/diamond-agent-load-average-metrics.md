@@ -1,5 +1,5 @@
 ---
-title: "Load Average Metrics"
+title: "Diamond Load Average Metrics"
 #date: 2018-12-11
 draft: false
 tags: ["#diamond", "#integrations", "#agents", "#load average" ]

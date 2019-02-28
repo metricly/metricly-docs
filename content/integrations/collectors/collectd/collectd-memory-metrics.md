@@ -1,5 +1,5 @@
 ---
-title: "Memory Metrics"
+title: "Collectd Memory Metrics"
 #date: 2018-12-11
 draft: false
 tags: ["#collectd", "#integrations", "#metrics", "#memory", "#collectors" ]

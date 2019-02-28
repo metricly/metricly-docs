@@ -1,5 +1,5 @@
 ---
-title: "Metrics"
+title: "Cassandra Metrics"
 #date: 2018-12-11
 draft: false
 tags: ["#cassandra", "#integrations", "#metrics" ]

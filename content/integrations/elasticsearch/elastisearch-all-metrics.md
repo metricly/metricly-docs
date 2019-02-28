@@ -1,5 +1,5 @@
 ---
-title: "All Elasticsearch Metrics"
+title: "Elasticsearch Metrics"
 #date: 2018-12-11
 draft: false
 tags: ["#elasticsearch", "#integrations", "#metrics", "#cluster", "#disk", "#threadpool", "#indices" ]

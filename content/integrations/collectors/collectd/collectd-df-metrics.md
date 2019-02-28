@@ -1,5 +1,5 @@
 ---
-title: "DF Metrics"
+title: "Collectd DF Metrics"
 #date: 2018-12-11
 draft: false
 tags: ["#collectd", "#integrations", "#metrics", "#df", "#collectors" ]

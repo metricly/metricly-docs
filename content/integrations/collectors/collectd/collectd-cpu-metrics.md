@@ -1,5 +1,5 @@
 ---
-title: "CPU Metrics"
+title: "Collectd CPU Metrics"
 #date: 2018-12-11
 draft: false
 tags: ["#collectd", "#integrations", "#metrics", "#cpu", "#collectors" ]

@@ -1,5 +1,5 @@
 ---
-title: "Diskspace Metrics"
+title: "Diamond Diskspace Metrics"
 #date: 2018-12-11
 draft: false
 tags: ["#diamond", "#integrations", "#agents", "#diskspace" ]

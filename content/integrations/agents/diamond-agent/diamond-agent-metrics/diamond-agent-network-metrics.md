@@ -1,5 +1,5 @@
 ---
-title: "Network Metrics"
+title: "Diamond Network Metrics"
 #date: 2018-12-11
 draft: false
 tags: ["#diamond", "#integrations", "#agents", "#network" ]

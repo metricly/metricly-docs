@@ -1,5 +1,5 @@
 ---
-title: "Metrics"
+title: "Redis Metrics"
 #date: 2018-12-12
 draft: false
 tags: ["#redis", "#integrations", "#metrics" ]

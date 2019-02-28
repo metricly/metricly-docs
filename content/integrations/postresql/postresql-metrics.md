@@ -1,5 +1,5 @@
 ---
-title: "metrics"
+title: "postgresql metrics"
 #date: 2018-12-12
 draft: false
 tags: ["#postresql", "#integrations", "#metrics" ]

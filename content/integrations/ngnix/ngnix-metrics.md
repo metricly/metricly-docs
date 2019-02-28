@@ -1,5 +1,5 @@
 ---
-title: "Metrics"
+title: "NGNIX Metrics"
 #date: 2018-12-12
 draft: false
 tags: ["#ngnix", "#integrations", "#metrics" ]

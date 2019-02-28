@@ -1,5 +1,5 @@
 ---
-title: "Processes Metrics"
+title: "Collectd Processes Metrics"
 #date: 2018-12-11
 draft: false
 tags: ["#collectd", "#integrations", "#metrics", "#processes", "#collectors" ]

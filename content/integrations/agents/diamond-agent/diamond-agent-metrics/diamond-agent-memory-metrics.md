@@ -1,5 +1,5 @@
 ---
-title: "Memory Metrics"
+title: "Diamond Memory Metrics"
 #date: 2018-12-11
 draft: false
 tags: ["#diamond", "#integrations", "#agents", "#memory" ]
