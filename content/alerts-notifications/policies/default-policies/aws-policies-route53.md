@@ -7,8 +7,6 @@ tags: ["#alerts", "#notifications", "#policies", "#default policies", "#route53"
 author: Lawrence Lane
 ---
 
-
-
 ## Connection Time
 The connection time is higher than usual. ConnectionTime is the average time, in milliseconds, that it took Route 53 health checkers to establish a TCP connection with the endpoint.
 
