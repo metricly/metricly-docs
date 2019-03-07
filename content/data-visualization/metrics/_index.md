@@ -34,7 +34,7 @@ Computed metrics are metrics that Metricly calculates using the data from multip
 | netuitive.aws.alb.totaltargethttperrors | Total Target HTTP Errors | count | yes  |
 
 
-[1]: afa
-[2]: afda
-[3]: adfaa
-[4]: adfa
+[1]: /data-visualization/inventory/
+[2]: /alerts-notifications/policies/
+[3]: /alerts-notifications/alerts-page/
+[4]: /alerts-notifications/notifications/
