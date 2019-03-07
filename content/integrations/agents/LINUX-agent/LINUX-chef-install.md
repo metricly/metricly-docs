@@ -1,8 +1,8 @@
 ---
-title: "Chef"
+title: "Chef Install"
 #date: 2018-12-11
 draft: false
-tags: ["#chef", "#integrations"]
+tags: ["#chef", "#integrations", "linux agent"]
 author: Lawrence Lane
 ---
 
