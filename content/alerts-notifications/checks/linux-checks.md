@@ -72,12 +72,10 @@ cmdline=java.*Elasticsearch
 ```
 
 #### DNS Checks
-The DNS check is **not enabled** by default. Users need to update the `DNSLookupCheckCollector.conf` file to enable this collector. URLs added to this list must be in the following format: `www.google.com`.  Note that the `dnsAddressLis`t requires a comma even when only one URL is provided. If the comma is not added, the collector returns with a ‘`cannot resolve hostname`‘ error.
+The DNS check is **not enabled** by default. Users need to update the `DNSLookupCheckCollector.conf` file to enable this collector. URLs and FQDNs are accepted. Note that the `dnsAddressList` requires a comma even when only one URL is provided. If the comma is not added, the collector returns with a `cannot resolve hostname` error.
 
 ```
-enabled = true
+enabled = False
 ttl = 150
-
-#Replace www.google.com and www.yahoo.com with the DNS names you want to check
-dnsAddressList = www.google.com, www.yahoo.com
+dnsAddressList = host01.example.com, example.com
 ```
