@@ -3,7 +3,7 @@ title: "Account Admin"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#tools", "#directory page", "#getting started"]
+tags: ["#user", "#account profile", "#billing", "#SSO", "#password", "#daily report", "#dark theme",]
 author: Lawrence Lane
 alwaysopen: false
 weight: 8
@@ -37,7 +37,16 @@ A list of all active [integrations][1] in your account.
 Home to all of your [notifications][2], divided into the following categories: Email, OpsGenie, PagerDuty, SNS, Slack, and Webhook.
 
 ### Users
-Create & assume sub-accounts from the users panel.
+Create & assume sub-accounts from the users panel. There are three types of users:
+
+- **Account Owners**: Can create & assume all user types.
+- **Admins**: Can create & assume admin + read-only users.
+- **Read-only Users**: Cannot create or assume other users.
+
+Account Owners are the only user group that can view billing details for Metricly.
+
+![create-user](/images/account-profile/create-user.png)
+
 
 ### Billing
 A monthly breakdown of your Metricly bill.
