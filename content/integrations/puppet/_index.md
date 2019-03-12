@@ -70,8 +70,6 @@ class puppet_metricly_agents::linux {
 
 ### 3. Update Windows.pp
 
-The [MSI package](https://repos.app.netuitive.com/windows-agent/index.html) must be installed in the puppet module's local folder.
-
 1. Navigate to `puppet_metricly_agents/manifests/windows.pp`.
 2. Find the `puppet_metricly_agents::windows` class.
 3. Replace `{agentversion}` with an agent version (e.g **0.10.6.75**) See [Windows Agent versions](https://repos.app.netuitive.com/windows-agent/index.html) for more info.
@@ -83,6 +81,7 @@ package { 'CollectdWinService (64 bit)':
    install_options => ['/quiet', "NETUITIVE_API_KEY=${net_api_key_win}",],
 ```
 4. **Save** the file.
+5. Download and install the [MSI package](https://repos.app.netuitive.com/windows-agent/index.html) to the `/modules/puppet_metricly_agents/files/` folder
 
 [1]: https://docs.metricly.com/integrations/agents/linux-agent/
 [2]: https://docs.metricly.com/integrations/agents/windows-agent/
