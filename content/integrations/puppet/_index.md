@@ -81,7 +81,7 @@ package { 'CollectdWinService (64 bit)':
    install_options => ['/quiet', "NETUITIVE_API_KEY=${net_api_key_win}",],
 ```
 4. **Save** the file.
-5. Download and install the [MSI package](https://repos.app.netuitive.com/windows-agent/index.html) to the `/modules/puppet_metricly_agents/files/` folder
+5. Download and install the [MSI package](https://repos.app.netuitive.com/windows-agent/index.html) to the `/modules/puppet_metricly_agents/files/` folder.
 
 [1]: https://docs.metricly.com/integrations/agents/linux-agent/
 [2]: https://docs.metricly.com/integrations/agents/windows-agent/
