@@ -1,1 +1,2 @@
-This is the repository for our help documentation, powered by Hugo. Visit [help.metricly.com](www.metricly.com/support) to begin reading our docs.
+
+This is the repository for [Metricly](https://github.com/metricly)'s help documentation, powered by Hugo. Visit [docs.metricly.com](https://docs.metricly.com) to begin reading our docs.
