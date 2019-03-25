@@ -36,7 +36,7 @@
 
 ## More Resources
 
-- [Github Repository](https://github.com/Netuitive)
+- [Github Repository](https://github.com/metricly/metricly-docs)
 - [Community Packages](https://github.com/netuitive-community-packages)
 - [Status Page](http://status.metricly.com/)
 - [Cloud Compass Blog](https://www.metricly.com/blog)
