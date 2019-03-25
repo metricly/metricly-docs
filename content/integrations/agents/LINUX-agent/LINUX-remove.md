@@ -8,10 +8,10 @@ author: Lawrence Lane
 weight: 10
 ---
 
-1. Stop the Linux Agent (use the appropriate command for your distro). The most common being:
- - `service netuitive-agent stop`
- - ``/etc/init.d/netuitive-agent stop``
- - `initctl stop netuitive-agent`
- - `systemctl stop netuitive-agent`
-2. Remove the directory containing the Linux Agent. Default: ``rm -r /opt/netuitive-agent``.
- - If you don’t want to be prompted for each file that needs to be deleted, use `rm -rf /opt/netuitive-agent`
+For debian-based systems such as Ubuntu: 
+ - ``apt remove netuitive-agent``
+
+For rpm-based systems such as Redhat, CentOS:
+ - ``yum remove netuitive-agent``
+
+For other system types, please refer to your distrubution's package management conventions or reach out to support for assistance.
