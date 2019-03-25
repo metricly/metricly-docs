@@ -1,5 +1,5 @@
 ---
-title: "Diamong Agent Metrics"
+title: "Diamond Agent Metrics"
 #date: 2018-12-11
 draft: false
 tags: ["#diamond", "#integrations", "#agents" ]
