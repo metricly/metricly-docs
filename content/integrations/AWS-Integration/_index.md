@@ -54,6 +54,6 @@ If you’ve already created an AWS integration and want to edit the configuratio
 ### Edit Any AWS Integration
 If you want to edit a different AWS integration, click **View Current Integrations** on the AWS integration setup page, then select the desired AWS integration.
 
-[1]:/integrations/aws-integration/cloudformation-installation
-[2]:/integraitons/aws-integration/iam-installation
-[3]: /integrations/aws-integration/acess-Key
+[1]:/integrations/aws-integration/aws-cloudformation-installation
+[2]:/integrations/aws-integration/aws-iam-installation
+[3]:/integrations/aws-integration/aws-access-key-installation
