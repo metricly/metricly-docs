@@ -17,7 +17,6 @@ The Lambda Function Sizing tool parses Lambda function CloudWatch logs to pull b
 3. Each log from CloudWatch is parsed and produces Metricly samples
 4. Samples from all logs are collapsed into a single Metricly ingest payload and sent to Metricly
 
-
 ## Installation
 
 ### Quickstart via CloudFormation Script
@@ -27,6 +26,8 @@ The Lambda Function Sizing tool parses Lambda function CloudWatch logs to pull b
 3. Add any Lambda function names you want monitored to the **FunctionNames** parameter in a comma delimited list. (This function monitors itself by default.)
 4. Check **I acknowledge…** checkbox at the bottom.
 5. Click **Create**. In about 5 minutes, you’ll start seeing the additional metrics in Metricly!
+
+`aws.lambda.memory.utilization` and `aws.lambda.billed` are the metrics created upon installation. You can find these throughout the product in [dashboards][3], the [Metric Explorer][1] page, and the [Resource Utilization][2] report.
 
 
 ## Rightsizing Lambda Functions
@@ -45,5 +46,10 @@ If your function is CPU intensive, you may not save much money reducing the memo
 ### 4. Check if invocation durations are close to the 300 second limit.
 Reducing the memory can increase the invocation duration which could cause more functions to time out.
 
-### 5. Determine if function primarily makes network calls. 
+### 5. Determine if function primarily makes network calls.
 If so, your function is a perfect candidate to optimize memory. Network intensive Lambda functions don’t usually see much of an increase in invocation duration, which means a 50% reduction in memory is a 50% reduction in cost.
+
+
+[1]: /data-visualization/metrics/metric-page/
+[2]: /reports/reports-resource-utilization/
+[3]: /data-visualization/dashboards/
