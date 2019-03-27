@@ -3,7 +3,7 @@ title: "AWS Services Cost"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#reports", "#aws services", "#cost"]
+tags: ["#reports", "#aws services", "#cost", "#getting started"]
 author: Lawrence Lane
 ---
 
