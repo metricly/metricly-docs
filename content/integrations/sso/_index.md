@@ -37,7 +37,7 @@ author: Lawrence Lane
   - In the first default blank attribute, type `email` in the **Name field** and `user.email` into the **Value field**.
   - Click **Add Another**.
   - In the first default blank attribute, type `role` in the **Name field** and `user.role` into the **Value field**  `user.role` must be entered manually and does not appear in the dropdown.
-    - Metricly requires administrator access for creating and editing data. To grant administrator privileges enter `user.isMemberOfGroupName("OurAdminGroup") ? 'Administrator' : null` as your role value.
+    - Metricly requires administrator access for creating and editing data. To grant administrator privileges enter `user.isMemberOfGroupName("OurAdminGroup") ? 'Administrator' : null` as your role value and replace _OurAdminGroup_ with your group for Metricly Administrators.
     ![add-attributes](/images/_index/add-attributes.png)
 12. Click **Next**.
 13. Click **Finish**.
