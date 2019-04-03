@@ -47,7 +47,7 @@ author: Lawrence Lane
 ![optional-metadata](/images/_index/optional-metadata.png)
 
 {{% notice tip %}}
-Add your `tenant name` to the SSO settings in the **Default Relay State field** if you want users to bypass entering the tenant name when logging into Metricly. Contact support if you do not know your tenant name.
+Add your tenant name to the **Default Relay State** field if you do not want to enter it when logging into Metricly from Okta. Your tenant name is the company name you used when you signed up for a Metricly account. Contact support if you do not know your tenant name.
 ![default-relay-state](/images/_index/default-relay-state.png)
 {{% /notice %}}
 
