@@ -23,7 +23,7 @@ author: Lawrence Lane
 5. Type an `App name` and upload a logo (if desired). Leave the App visibility options as they are.
 6. Click **Next**.
 7. For the Single sign on URL, use `https://app.metricly.com/saml/SSO` and leave **Use this for Recipient URL and Destination URL** checkmarked.
-8. For the **Audience URI** (SP Entity ID), use `netuitive-api`.
+8. For the **Audience URI (SP Entity ID)**, use `netuitive-api`.
 9. For **Name ID format**, select **EmailAddress**. Leave Application username as the default, and click **Show Advanced Settings**.
 10. Under the Advanced Settings:
   - Select **Encrypted** for **Assertion Encryption.**
@@ -37,7 +37,7 @@ author: Lawrence Lane
   - In the first default blank attribute, type `email` in the **Name field** and `user.email` into the **Value field**.
   - Click **Add Another**.
   - In the first default blank attribute, type `role` in the **Name field** and `user.role` into the **Value field**  `user.role` must be entered manually and does not appear in the dropdown.
-    - Metricly requires administrator access for creating and editing data. To grant administrator privileges enter `user.isMemberOfGroupName("OurAdminGroup") ? 'Administrator' : null` as your role value.
+    - Metricly requires administrator access for creating and editing data. To grant administrator privileges enter `user.isMemberOfGroupName("OurAdminGroup") ? 'Administrator' : null` as your role value and replace _OurAdminGroup_ with your group for Metricly Administrators.
     ![add-attributes](/images/_index/add-attributes.png)
 12. Click **Next**.
 13. Click **Finish**.
@@ -47,7 +47,7 @@ author: Lawrence Lane
 ![optional-metadata](/images/_index/optional-metadata.png)
 
 {{% notice tip %}}
-Add your `tenant name` to the SSO settings in the **Default Relay State field** if you want users to bypass entering the tenant name when logging into Metricly. Contact support if you do not know your tenant name.
+Add your tenant name to the **Default Relay State** field if you do not want to enter it when logging into Metricly from Okta. Your tenant name is the company name you used when you signed up for a Metricly account. Contact support if you do not know your tenant name.
 ![default-relay-state](/images/_index/default-relay-state.png)
 {{% /notice %}}
 
