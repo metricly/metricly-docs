@@ -22,7 +22,7 @@ author: Lawrence Lane
 4. Select **Web** in the _Platform_ dropdown and then choose **SAML 2.0**;  click **Create**.
 5. Type an `App name` and upload a logo (if desired). Leave the App visibility options as they are.
 6. Click **Next**.
-7. For the Single sign on URL, use `https://app.metricly.com/saml/SSO` and leave **Use this for Recipient URL and Destination URL** checkmarked.
+7. For the **Single Sign On URL**, use `https://app.metricly.com/saml/SSO` and leave **Use this for Recipient URL and Destination URL** checkmarked.
 8. For the **Audience URI (SP Entity ID)**, use `netuitive-api`.
 9. For **Name ID format**, select **EmailAddress**. Leave Application username as the default, and click **Show Advanced Settings**.
 10. Under the Advanced Settings:
