@@ -48,3 +48,7 @@ Paste the command from 1.3 into your command line. Replace my-docker-host in the
 `metrics_blacklist = containers\..*\.blkio\..*`
 - Match multiple containers between ( ) and separated by |. The following would match any of the following container IDs and exclude them from collection: `abcdef123456`, `123456abcdef`, `ghijkl789012`.  
 `metrics_blacklist = containers\.(abcdef123456|123456abcdef|ghijkl789012)\..*`
+
+### Agent Logging
+- Agent logs will not be available from the netuitive-agent container directly, as they're redirected to stdout via /proc for viewing from the docker CLI. See https://docs.docker.com/config/containers/logging/
+- To view agent logs from the Docker CLI run `docker logs netuitive-agent`
