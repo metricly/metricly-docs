@@ -32,7 +32,7 @@ Choose a metric from the element you picked.
 2. A **Unit** is chosen automatically, however you can choose a different one.
 3. The _5 minutes_ **Period** is set as default, however you can chose _Raw_ and _1 Hour_ as well. Periods determine how many data points are displayed in the visualization. See [analytics][1] for more info about data types.
 4. **Save** to apply changes.
-5.
+
 ![set-name](/images/single-metric-widget/set-name.png)
 
 [1]: /data-visualization/analytics/
