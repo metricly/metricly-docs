@@ -11,11 +11,11 @@ author: Lawrence Lane
 
 Options for this widget type include: **Heat Map** and **Ticker**.
 
-![Events Widget](/images/events-widget/events-widget.png)
-
 ### Heat Map Options
 - **Status**: Shows events from the past 5 minutes
 - **Summary**: Shows events from the past hour
+
+![Events Widget](/images/events-widget/events-widget.png)
 
 ## Scope
 
