@@ -20,7 +20,7 @@ Set the scope for your Range Metric Widget by inputting an element name, selecti
 ## Display
 1. Choose the metric you want displayed.
 2. Choose the number of elements to be added to the range (top 10 by sum, average, max, or min).
-3. Choose a unit (optional)
+3. Choose a unit (optional).
 
 ![set-metrics](/images/range-widget/set-metrics.png)
 
