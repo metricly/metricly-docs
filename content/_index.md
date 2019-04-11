@@ -23,8 +23,8 @@
 - [Linux Agent][6]
 
 ### <i class='icon-visualization'></i> Visualization
-- [Dashboards](7)
-- [Metrics](8)
+- [Dashboards][7]
+- [Metrics][8]
 
 ### <i class='icon-reports'></i> Reports
 - [Cost (EC2, RDS, S3)](/reports/reports-cost)
