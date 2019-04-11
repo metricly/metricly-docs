@@ -20,11 +20,3 @@ author: Lawrence Lane
 | Buffer Manager     | N/A       | sql_server.buffer_cache_hit_ratio     | The ratio of how many pages are going to memory versus the disk.          |
 | Buffer Manager     | N/A       | sql_server.page_life_expectancy       | The number of seconds a page is in the buffer pool without references.    |
 | Access Methods     | N/A       | sql_server.page_splits_per_sec        | The number of page splits occurring per second.                           |
-
-## Computed
-
-| Fully Qualified Name (FQN)                          | Description                                                                                                                                                                                                | Units   | Min | Max  | BASE | CORR | UTIL |
-|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-----|------|------|------|------|
-| metricly.linux.mongo.connections.utilizationpercent | The percentage of available connections currently being utilized. Computation: (mongo.connections.current / (mongo.connections.current +mongo.connections.available)) * 100                                | percent | 0   | 100  | yes  | no   | yes  |
-| metricly.linux.mongo.opcounters.totalreads          | The total number of read operations currently taking place (reads include both query and getmore requests). Computation: mongo.opcounters.query + mongo.opcounters.germore                                 | count   | 0   | none | yes  | no   | no   |
-| metricly.linux.mongo.opcounters.totalwrites         | The total number of write operations currently taking place (writes include insert, update, and delete requests). Computation: mongo.opcounters.insert + mongo.opcounters.update + mongo.opcounters.delete | count   | 0   | none | yes  | no   | no   |
