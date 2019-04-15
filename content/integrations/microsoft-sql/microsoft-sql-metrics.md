@@ -20,3 +20,8 @@ author: Lawrence Lane
 | Buffer Manager     | N/A       | sql_server.buffer_cache_hit_ratio     | The ratio of how many pages are going to memory versus the disk.          |
 | Buffer Manager     | N/A       | sql_server.page_life_expectancy       | The number of seconds a page is in the buffer pool without references.    |
 | Access Methods     | N/A       | sql_server.page_splits_per_sec        | The number of page splits occurring per second.                           |
+
+
+To see a full list of metrics for the [Windows Agent][1], see [this page][1].
+[1]: /integrations/agents/windows-agent/
+[2]: /integrations/agents/windows-agent/windows-agent-metrics
