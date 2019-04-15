@@ -8,7 +8,7 @@ author: Lawrence Lane
 #pre: "<i class='fa fa-download'></i> &nbsp; "
 weight: 4
 ---
-Using an existing application file, you can deploy the Netuitive agent to a self-contained EC2 instance complete with a load balancer and everything else it needs to run. The Elastic Beanstalk instance can also scale by itself.
+Using an existing application file, you can deploy the Netuitive agent to a self-contained EC2 instance complete with a load balancer and everything else it needs to run. The Elastic Beanstalk instance can also scale by itself.[Check out our Elastic Beanstalk repo here](https://github.com/Netuitive/netuitive-agent-elasticbeanstalk/).
 
 1. Before creating your Elastic Beanstalk instance, find or create a folder called .ebextensions in your application’s directory.
 2. Copy the netuitive.config file to your .ebextensions folder.
