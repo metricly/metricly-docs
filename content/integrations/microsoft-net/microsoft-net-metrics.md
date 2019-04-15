@@ -14,3 +14,6 @@ author: Lawrence Lane
 | Request Wait Time            | ASP_request_wait_time       | The time (in ms) that the most recent request waited in the processing queue.                                                                                                                                                                                                                        |
 | Requests Queued              | ASP_requests_queued         | The number of requests waiting for service from the queue.                                                                                                                                                                                                                                           |
 | Request Execution Time       | ASP_request_execution_time  | The time it took (in ms) to execute the most recent request.                                                                                                                                                                                                                                         |
+To see a full list of metrics for the [Windows Agent][1], see [this page][1].
+[1]: /integrations/agents/windows-agent/
+[2]: /integrations/agents/windows-agent/windows-agent-metrics
