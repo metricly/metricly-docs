@@ -44,6 +44,7 @@ author: Lawrence Lane
 | rabbitmq.queue_totals.messages_unacknowledged              | GAUGE   | count | average   | 0    | none | none                       | yes  | no   | no   |
 | rabbitmq.queue_totals.messages_unacknowledged_details.rate | GAUGE   | ops   | average   | none | none | none                       | yes  | no   | no   |
 | rabbitmq.health.running                                    | GAUGE   | none  | minimum   | none | none | none                       | no   | no   | no   |
+| rabbitmq.shovels.<shovel-name>.state                       | COUNTER | none  | minimum   | 0    | 1    | none                       | no   | no   | no   |
 
 ## Computed
 
