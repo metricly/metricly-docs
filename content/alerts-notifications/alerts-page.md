@@ -26,7 +26,7 @@ This page has additional filters to display all Open and Closed policies.
 2. On the **Open** tab, select the policy that is firing.
 ![select-policy](/images/alerts-page/select-policy.png)
 3. The Policy Details modal appears. Under Impacted Elements, select any (or all) elements affected.
-4. Select **close**.
+4. Select **Close**.
 ![close-alerts](/images/alerts-page/close-alerts.png)
 
 You have now successfully closed the alert. 
