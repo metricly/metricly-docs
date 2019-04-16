@@ -109,15 +109,16 @@ If you want to use a limited read only access policy, you’ll need to create a 
 
 This section is for customers who created Metricly accounts before 12/01/2018 or any customer who has an existing IAM role that is missing a policy for Cost Explorer. Adding this policy enables Metricly to report on and analyze your AWS Detailed Billing files.
 
+### Step 1: Update IAM Role
+
 1. In the AWS Console, Navigate to **IAM** > **Roles**.
 2. Select your **Metricly** Iam role (or _Netuitive_, if you created this policy before the rebrand).
 
 ![iam-role-img](/images/AWS-IAM-Installation/iam-role-img.png)
-
 The last policy in this list is created by our current cloud formation script.  But if this policy does not exist in your current IAM role, you can create and add it from your AWS console.
 
-3. Select **Add inline policy** and choose the **JSON** tab to paste the following in the editor:
 
+3. Select **Add inline policy** and choose the **JSON** tab to paste the following in the editor:
 ```
 "Version": "2012-10-17",
 "Statement": [
@@ -129,10 +130,13 @@ The last policy in this list is created by our current cloud formation script.  
 ]
 ```
 4. Select **Review Policy**.
-
 ![create-policy](/images/AWS-IAM-Installation/create-policy.png)
+
 5. Name the policy and select **Create Policy**.
 ![name-policy](/images/AWS-IAM-Installation/name-policy.png)
 
-6. You can now enable Detailed Billing in Metricly.
+### Step 2: Enable Detailed Billing
+1. Login to your Metricly account.
+2. Navigate to **Integrations** > **AWS** > your datasource.
+3. Enable **Detailed Billing** in Metricly.
 ![enable-detailed-billing](/images/AWS-IAM-Installation/enable-detailed-billing.png)
