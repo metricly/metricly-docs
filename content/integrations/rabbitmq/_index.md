@@ -49,6 +49,6 @@ rabbitmq-plugins enable rabbitmq_management
 | queues                 |                    | List of queues to publish. Leave empty to publish all.                                                                                                                                                                                  |
 | queues_ignored         |                    | A list of queues or regexes for queue names not to report on.                                                                                                                                                                           |
 | vhosts                 |                    | A list of vhosts and queues to collect.                                                                                                                                                                                                 |
-| shovels                |                    | Collects the states of shovels when enabled. It is collected for each shovel if `shovels = True`. The metric's notation is `rabbitmq.shovels.<shovel-name>.state`. It has a value of `1` if the state is `running`; else it has a value of `0`. |
+| shovels                |                    | Collects the states of shovels when enabled. It is collected for each shovel if `shovels = True`. The metric's notation is `rabbitmq.shovels.<shovel-name>.state`. It has a value of **1** if the state is **running**; else it has a value of **0**. |
 
 [1]: /integrations/agents/linux-agent
