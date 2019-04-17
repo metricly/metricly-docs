@@ -1,5 +1,5 @@
 ---
-title: "Diamond (Linux) Policies"
+title: "Linux Policies"
 #date: 2018-04-12
 draft: false
 categories:
