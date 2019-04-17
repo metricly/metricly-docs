@@ -20,6 +20,17 @@ This page has additional filters to display all Open and Closed policies.
 - Filtering by Open will display only the policies that are currently (Now) violating a set condition(s). We use the term “firing” to refer to policies that are violating a set of conditions.
 - Clicking on Closed will show any policies that have fired during the selected time range.
 
+### How to Close an Open Alert
+
+1. Navigate to the Alerts page in Metricly.
+2. On the **Open** tab, select the policy that is firing.
+![select-policy](/images/alerts-page/select-policy.png)
+3. The Policy Details modal appears. Under Impacted Elements, select any (or all) elements affected.
+4. Select **Close**.
+![close-alerts](/images/alerts-page/close-alerts.png)
+
+You have now successfully closed the alert. 
+
 ## Search Policies
 
 You can search for a particular policy or filter the policy by using the policy filters.
