@@ -1,5 +1,5 @@
 ---
-title: "Process Resource Collector"
+title: "Process Resources"
 #date: 2018-12-12
 draft: false
 tags: ["#process resource collector", "#integrations", "#collectors" ]
