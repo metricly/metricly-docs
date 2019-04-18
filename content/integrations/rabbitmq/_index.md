@@ -1,5 +1,5 @@
 ---
-title: "rabbitMQ"
+title: "RabbitMQ"
 #date: 2018-12-12
 draft: false
 tags: ["#rabbitmq", "#integrations" ]
