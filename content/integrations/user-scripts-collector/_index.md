@@ -1,5 +1,5 @@
 ---
-title: "User Scripts Collector"
+title: "User Scripts"
 #date: 2018-12-12
 draft: false
 tags: ["#user scripts", "#integrations" ]

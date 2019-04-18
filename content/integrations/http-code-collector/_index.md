@@ -1,5 +1,5 @@
 ---
-title: "HTTP Code Collector"
+title: "HTTP Code"
 #date: 2018-12-11
 draft: false
 tags: ["#http code", "#integrations", "#collectors"]
