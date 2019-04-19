@@ -1,11 +1,11 @@
 ---
-title: "HTTPD"
+title: "Apache HTTPD"
 #date: 2018-12-11
 draft: false
 tags: ["#httpd", "#integrations", "#collectors"]
 author: Lawrence Lane
 ---
-The HTTP Collector gathers statistics from an HTTP or HTTPS connection.
+The HTTPD Collector gathers statistics from an Apache HTTPD server.
 
 ## Prerequisites
 
