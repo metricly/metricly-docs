@@ -1,0 +1,23 @@
+---
+title: "Delete an Element"
+#date: 2018-04-12
+draft: false
+categories:
+tags: ["#getting started", "#metrics", "#elements", "#maintenance", "#cli", "#inventory page"]
+author: Lawrence Lane
+---
+You can delete an element from the [Inventory Explorer page][1]. Deleting an element in Metricly persists only until the next collection cycle **unless** the element is also no longer being collected or posting to Metricly.
+
+- The analytic history for a deleted element is retained for 30 days.
+- Stale metadata (old metrics no longer collecting, attributes and tags that no longer exist) gets permanently deleted.
+
+## How to Delete an Element from the UI
+
+1. Open the Inventory Explorer.
+2. Select the **check box** next to as many elements you wish to delete.
+3. Select **Delete Element(s)**.
+![delete-elements](/images/inventory-delete-element/delete-elements.png)
+4. Select **Yes, Delete** in the confirmation modal.
+
+
+[1]: /data-visualization/inventory/inventory-main-navigation
