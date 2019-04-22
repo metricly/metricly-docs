@@ -37,6 +37,3 @@ Editing an existing dashboard can involve managing the layout of a dashboard, ch
 
 
 [1]: /data-visualization/dashboards/widgets
-[2]:??
-[3]:??
-[4]:??
