@@ -8,8 +8,9 @@ author: Lawrence Lane
 ---
 You can delete an element from the [Inventory Explorer page][1]. Deleting an element in Metricly persists only until the next collection cycle **unless** the element is also no longer being collected or posting to Metricly.
 
-- The analytic history for a deleted element is retained for 30 days.
+- The metadata for a deleted element is retained for 60 days.
 - Stale metadata (old metrics no longer collecting, attributes and tags that no longer exist) gets permanently deleted.
+- The band analytic history for metrics associated with the deleted element is retained for 90 days.
 
 ## How to Delete an Element from the UI
 
