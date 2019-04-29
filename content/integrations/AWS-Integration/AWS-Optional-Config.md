@@ -21,6 +21,17 @@ You can change how certain elements’ names are displayed in the application to
 
 Exit the integration setup page and wait until the next analytics cycle (5 minutes) to see your changes.  
 
+## Collection Frequency
+
+The default collection frequency for CloudWatch metrics is every 5 minutes. If you need to reduce this frequency, return to your AWS integration card settings in **Integrations** > **AWS**.  You can also access a full list of your integrations by navigating to your User **Profile** > **Integrations** > Select an AWS Integration.
+
+1. Navigate to your AWS integration.
+2. Select the **60 Minutes** button under _Collection Frequency_.
+![collection-frequency](/images/AWS-Optional-Config/collection-frequency.png)
+3. **Save**. 
+
+This can be undone by selecting the **5 Minutes**  _Collection Frequency_ option and saving the integration.
+
 ### Naming Tips
 When choosing a name, replace the following with underscores:  
 
