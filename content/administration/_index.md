@@ -9,3 +9,4 @@ alwaysopen: false
 weight: 3
 pre: "<i class='icon-alert'></i> &nbsp; "
 ---
+![image-test](/images/_index/image-test.png)

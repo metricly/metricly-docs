@@ -1,5 +1,7 @@
 # Metricly Docs
 
+![metricly-docs](/images/_index/metricly-docs.png)
+
 `docs.metricly.com` is home to [Metricly][9]'s documentation for end users, API developers, and DevOps admins.
 
 ### {{< icon name="fa-compass" >}} Navigation

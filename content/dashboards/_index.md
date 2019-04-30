@@ -8,3 +8,4 @@ author: Lawrence Lane
 weight: 2
 pre: "<i class='icon-visualization'></i> &nbsp;"
 ---
+![dashboards](/images/_index/dashboards.png)

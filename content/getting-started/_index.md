@@ -10,6 +10,8 @@ weight: 1
 pre: "<i class='icon-visualization'></i> &nbsp;"
 ---
 
+![getting-started](/images/_index/getting-started.png)
+
 ## 1. Watch Our Product Demo
 There’s no faster way to get acquainted with the UI than by watching the [demo video][1]. This tour covers both the Cost and Monitoring products, including topics like: the EC2 recommendation report, the Utilization Boxplot report, and the Cost report.
 

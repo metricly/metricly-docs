@@ -9,6 +9,8 @@ alwaysopen: false
 weight: 5
 pre: "<i class='icon-alert'></i> &nbsp; "
 ---
+![capacity-monitoring](/images/_index/capacity-monitoring.png)
+
 New to Metricly? Use this page as an overview for the features related to Alerts, Events, Policies, and Notifications. For a more technical walkthrough on each, see our related articles.
 
 ## Alerts
