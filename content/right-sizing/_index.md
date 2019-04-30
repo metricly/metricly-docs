@@ -9,4 +9,4 @@ alwaysopen: false
 weight: 5
 pre: "<i class='icon-alert'></i> &nbsp; "
 ---
-![right-sizing](/images/_index/right-sizing.png)
+![new-right-sizing](/images/_index/new-right-sizing.png)

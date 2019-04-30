@@ -9,6 +9,9 @@ alwaysopen: false
 weight: 8
 pre: "<i class='icon-reports'></i> &nbsp;"
 ---
+
+![accnt-admin-header](/images/_index/accnt-admin-header.png)
+
 This guide outlines all of the features and functionality found in the Account Profile menu.
 
 ## Features

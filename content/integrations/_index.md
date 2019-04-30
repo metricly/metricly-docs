@@ -5,6 +5,9 @@ draft: false
 weight: 10
 pre: "<i class='icon-integration'></i> &nbsp;"
 ---
+
+![integreations](/images/_index/integreations.png)
+
 An integration is a system from which Metricly collects data. Metricly offers integrations with *collectors*, *agents*, and *automation software*.
 
 ## Common Dependencies

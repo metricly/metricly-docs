@@ -9,4 +9,4 @@ alwaysopen: false
 weight: 6
 pre: "<i class='icon-alert'></i> &nbsp; "
 ---
-![purchase-planning](/images/_index/purchase-planning.png)
+![purhcase-planning-new](/images/_index/purhcase-planning-new.png)

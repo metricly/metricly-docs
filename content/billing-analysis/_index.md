@@ -9,7 +9,7 @@ alwaysopen: false
 weight: 3
 pre: "<i class='icon-alert'></i> &nbsp; "
 ---
-![cost-analysis](/images/_index/cost-analysis.png)
+![cost-test](/images/_index/cost-test.png)
 
 View data across all of your AWS services with the Billing Analysis tool. This tool shows not only services currently used, but all services–including those not currently monitored by Metricly–-to provide an overall view of your AWS cost. This report can include data from multiple accounts if consolidated billing has been set up and configured. See the admin guide for any installation and configuration steps.
 
