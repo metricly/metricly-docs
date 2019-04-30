@@ -1,10 +1,13 @@
 ---
-title: "Idle Resources"
-#date: 2018-12-03
+title: "Administration"
+#date: 2018-04-12
 draft: false
 categories:
-tags: ["#reports", "#idle resources", "#cost", "#getting started"]
+tags: ["#ebs", "#elb", "#archive"]
 author: Lawrence Lane
+alwaysopen: false
+weight: 3
+pre: "<i class='icon-alert'></i> &nbsp; "
 ---
 
 Keep track of all of your unused resources with our EBS & ELB Idle Resource reports. Each report supports daily email notifications to keep you informed of changes.

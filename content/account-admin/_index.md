@@ -6,7 +6,7 @@ categories:
 tags: ["#reports", "#directory page", "#getting started"]
 author: Lawrence Lane
 alwaysopen: false
-weight: 5
+weight: 8
 pre: "<i class='icon-reports'></i> &nbsp;"
 ---
 Reports provide a quick glance at some of the most important parts of your environment, including utilization, policy violation, and estimated cost of your inventory. Report Explorer allows you to toggle between different reports on the elements in your environment.

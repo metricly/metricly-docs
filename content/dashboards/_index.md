@@ -6,5 +6,5 @@ categories:
 tags: ["#getting started", "#directory page", "#dashboards", "#widgets"]
 author: Lawrence Lane
 weight: 1
+pre: "<i class='icon-visualization'></i> &nbsp;"
 ---
-{{% children %}}
