@@ -7,6 +7,7 @@ tags: ["#getting started", "#directory page",]
 author: Lawrence Lane
 alwaysopen: false
 weight: 1
+pre: "<i class='icon-visualization'></i> &nbsp;"
 ---
 
 ## 1. Watch Our Product Demo

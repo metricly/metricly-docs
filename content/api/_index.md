@@ -6,7 +6,7 @@ categories:
 tags: ["#api",]
 author: Lawrence Lane
 alwaysopen: false
-pre: ""
+pre: "<i class='icon-integration'></i> &nbsp;"
 weight: 15
 ---
 Metricly’s RESTful API allows you read and write data programmatically. This means that you can perform a wide variety of tasks, including adding a new integration, returning a filtered list of Events, removing elements from your account, and more.
