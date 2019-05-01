@@ -18,7 +18,7 @@ Alerts are a continuous series of events. They group anomalous behavior and enab
 
 You can **view**, **edit**, and **create** policies in this menu; you can also **enable notifications** for policies. Clicking on a policy name expands its details, such as conditions and associated elements.
 
-![Create New Policy](/images/_index/create-new-policy.png)
+![create new policy](static/images/_index/create-new-policy.png)
 
 ## Events
 Events are violations that have met all of a policy’s conditions for a set duration. They indicate that Metricly has detected anomalous behavior in your environment. You can **view**, **categorize**, and **analyze** events. Organized most-to-least recent, finding the right event is easy.
