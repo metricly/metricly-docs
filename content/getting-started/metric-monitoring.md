@@ -1,5 +1,5 @@
 ---
-title: "Metric Monitoring"
+title: "Capacity Monitoring"
 #date: 2018-12-3
 draft: false
 categories:
@@ -31,12 +31,12 @@ Got everything set up? Great! Now's a great time to build the dashboard of your 
 
 ## 6. Explore the Docs
 
-Curious to know all you can about our Monitoring platform? the [Alerts & Notifications][6] section of this help site has a comprehensive breakdown of alerts, events, checks, and policies.
+Curious to know all you can about our Capacity Monitoring platform? the [Alerts & Notifications][6] section of this help site has a comprehensive breakdown of alerts, events, checks, and policies.
 
-[1]: /integrations/aws-integration/aws-CloudFormation-Installation
-[2]: /integrations/agents/LINUX-agent/linux-standard-install
-[3]: /integrations
-[4]: /alerts-notifications/policies/create-edit-policies
-[5]: /alerts-notifications/notifications
-[6]: /alerts-notifications
-[7]: /data-visualization/dashboards/create-new-dashboard
+[1]: /integrations/aws-integration/aws-cloudformation-installation/
+[2]: /integrations/agents/linux-agent/linux-standard-install/
+[3]: /integrations/
+[4]: /capacity-monitoring/policies/create-edit-policies/
+[5]: /capacity-monitoring/notifications/
+[6]: /capacity-monitoring/
+[7]: /dashboards/create-new-dashboard/

@@ -38,4 +38,4 @@ You can set several groupings to an individual metric or to several metrics with
 3. The _5 minutes_ **Period** is set as default, however you can chose _Raw_ and _1 Hour_ as well. Periods determine how many data points are displayed in the visualization. See [analytics][1] for more info about data types.
 4. **Save** to apply changes.
 
-[1]: /data-visualization/analytics/
+[1]: /capacity-monitoring/analytics/

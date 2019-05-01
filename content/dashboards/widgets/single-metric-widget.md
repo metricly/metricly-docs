@@ -35,4 +35,4 @@ Choose a metric from the element you picked.
 
 ![set-name](/images/single-metric-widget/set-name.png)
 
-[1]: /data-visualization/analytics/
+[1]: /capacity-monitoring/analytics/

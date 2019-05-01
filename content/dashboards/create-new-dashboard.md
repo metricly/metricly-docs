@@ -16,4 +16,4 @@ author: Lawrence Lane
 ![Widget Library](/images/_index/widget-library.png)
 
 
-[1]: /data-visualization/dashboards/widgets
+[1]: /dashboards/widgets/
