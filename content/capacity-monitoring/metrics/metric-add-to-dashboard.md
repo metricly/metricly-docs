@@ -34,8 +34,3 @@ author: Lawrence Lane
  - Click None to clear all elements with the selected metrics.
  - You can also search for an element using the Search Elements field.
 4. Click Done. The metric charts open in the Metrics page.
-
-
-[1]: adfafa
-[2]: adfa
-[3]: adfa

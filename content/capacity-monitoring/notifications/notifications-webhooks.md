@@ -160,4 +160,4 @@ Select **Custom** from the Payload drop-down menu. A text field will open after 
 }
 ```
 
-[1]: /alerts-notifications/events/cloudwatch-events
+[1]: /capacity-monitoring/events/cloudwatch-events

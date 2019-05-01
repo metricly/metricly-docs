@@ -7,7 +7,7 @@ tags: ["#getting started", "#metrics", "#charts",]
 author: Lawrence Lane
 ---
 
-Metric charts on the Metrics page allow you to view time-series data collected on [elements][2] in your environment. The range of data shown in metric charts corresponds to the range of data shown in the Events graph. This allows you to compare event data to the metric behavior that caused it.
+Metric charts on the Metrics page allow you to view time-series data collected on [elements][1] in your environment. The range of data shown in metric charts corresponds to the range of data shown in the Events graph. This allows you to compare event data to the metric behavior that caused it.
 
 ## Metric Metadata
 Click the **`metric name`** to open the metric metadata panel.
@@ -50,6 +50,4 @@ Click the **`metric name`** to open the metric metadata panel.
 
 
 
-[1]: adfafa
-[2]: adfa
-[3]: adfa
+[1]: /administration/inventory/

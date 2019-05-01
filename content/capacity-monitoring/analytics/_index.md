@@ -27,6 +27,6 @@ On the [Metrics page][1], the [Element Detail panel][2], and [Event Explorer][3]
 
 
 
-[1]: adfa
-[2]: abb
-[3]: afda
+[1]: /capacity-monitoring/metrics-page/
+[2]: /administration/inventory/inventory-element-detail/
+[3]: /capacity-monitoring/events/

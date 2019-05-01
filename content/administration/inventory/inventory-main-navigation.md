@@ -33,8 +33,3 @@ You can add and remove columns to the Inventory Explorer Elements table for a cu
 2. Select or deselect options from the Tags and Attributes filters to show or hide columns in the Elements table. Some attributes may be available for AWS elements only.
   - To return to the default columns in Inventory Explorer, select **Reset Defaults** in the Table Columns dialog.
 3. Click {{< icon name="fa-cog" size="large" >}} again to view your changes.
-
-
-
-[1]: adfa
-[2]: /data-visualization/metrics

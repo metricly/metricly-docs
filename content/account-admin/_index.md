@@ -44,5 +44,5 @@ A monthly breakdown of your Metricly bill.
 Where you can set up your SSO. [Read our full SSO guide here][3].
 
 [1]: /integrations/
-[2]: /alerts-notifications/notifications/
+[2]: /capacity-monitoring/notifications/
 [3]: /integrations/sso/

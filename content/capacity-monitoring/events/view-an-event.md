@@ -28,5 +28,5 @@ If one of your policies is particularly noisy, you can delete all events associa
 4. **Time Frame**: The Time Frame controls the range of data displayed. To refresh data, click the refresh  button. Selecting “1w” in the Time Frame displays the most recent week of data and/or elements. By selecting “Ending Now,” you can specify a range of data beginning with a date other than today. For more information, see Time Frame.
 
 
-[1]: /data-visualization/metrics/metric-page
-[2]: /data-visualizaiton/metrics/create-edit-policies
+[1]: /capacity-monitoring/metrics/metric-page
+[2]: /capacity-monitoring/metrics/create-edit-policies

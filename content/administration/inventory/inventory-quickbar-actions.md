@@ -49,5 +49,5 @@ Once you delete an element the metadata will be permanently removed. This cannot
 
 
 
-[1]: adfa
-[2]: /data-visualization/metrics
+[1]: /administration/inventory/
+[2]: /capacity-monitoring/metrics/

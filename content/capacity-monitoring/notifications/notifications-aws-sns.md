@@ -167,5 +167,5 @@ Below is the default payload used in the SNS integration, but it’s a good star
 
 ![Test and Save](/images/notifications-aws-sns/test-and-save.png)
 
-[1]: /alerts-notifications/events/cloudwatch-events
+[1]: /capacity-monitoring/events/cloudwatch-events
 [2]: /integrations/aws-integration/aws-iam-installation

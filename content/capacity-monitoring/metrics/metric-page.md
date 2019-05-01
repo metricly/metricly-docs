@@ -16,7 +16,7 @@ author: Lawrence Lane
 - **Grouped By**: Contains a menu of all quick groups, tags, and attributes available to Metricly. After you’ve rendered some metric charts, choose one of the groupings and Metricly will automatically group the metric charts based on your selection.
 
 {{% notice note %}}
-If you chose to display all EC2 metrics and then grouped by instance ID, each instance’s set of metrics would be grouped in a section together under the instance’s ID. 
+If you chose to display all EC2 metrics and then grouped by instance ID, each instance’s set of metrics would be grouped in a section together under the instance’s ID.
 {{% /notice %}}
 
 Once you have added all needed search criteria, click **Render Charts** to populate results.
@@ -46,8 +46,3 @@ Select the type of data displayed on the metric charts.
 | Raw                                                                            | Shows data that has not been aggregated by Metricly. Computed metrics do not have raw data because they are calculated by Metricly.                                |
 | 5 Min                                                                          | Displays aggregate data that Metricly generates by averaging the data collected from a given integration at 5 minute intervals. |
 | 1 Hour                                                                         | Displays aggregate data that Metricly generates by averaging the data collected from a given integration at 1 hour intervals.   |
-
-
-[1]: adfafa
-[2]: adfa
-[3]: adfa

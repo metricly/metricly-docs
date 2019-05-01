@@ -27,5 +27,5 @@ Event categories are user-assigned via the [Policy Editor][2] and associated wit
 2. Underneath the Policy’s name, in the Category drop-down menu, select _Info_, _Warning_, or _Critical_.
 3. After completing the remaining fields in Policy Editor, click **Save**.
 
-[1]: /alert-notifications/policies/create-conditions
-[2]: /alert-notifications/policies/create-edit-policies
+[1]: /capacity-monitoring/policies/create-conditions
+[2]: /capacity-monitoring/policies/create-edit-policies
