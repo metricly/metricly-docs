@@ -3,7 +3,7 @@ title: "How to Filter RIs from Cost Analysis"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#reports", "#aws services", "#cost", "#getting started", "guides"]
+tags: ["#tools", "#aws services", "#cost", "#getting started", "guides"]
 author: Dmitry Yashchenko
 ---
 Getting an accurate picture of your entire AWS bill requires looking at your costs from multiple perspectives. Examining dimensions like AWS Services, Reservations, and Storage usage individually often gives you new insights you wouldn’t otherwise have viewing them together as a whole.

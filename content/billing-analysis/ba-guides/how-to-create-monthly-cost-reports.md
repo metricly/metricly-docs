@@ -3,7 +3,7 @@ title: "How to Create a Monthly Cost Report"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#reports", "#aws services", "#cost", "#getting started", "guides"]
+tags: ["#tools", "#aws services", "#cost", "#getting started", "guides"]
 author: Lawrence Lane  
 ---
 

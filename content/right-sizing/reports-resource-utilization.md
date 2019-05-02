@@ -3,7 +3,7 @@ title: "Resource Utilization"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#reports", "#getting started"]
+tags: ["#tools", "#getting started"]
 author: Lawrence Lane
 ---
 

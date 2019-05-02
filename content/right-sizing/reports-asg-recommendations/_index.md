@@ -3,7 +3,7 @@ title: "ASG Recommendations"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#reports", "#asg"]
+tags: ["#tools", "#asg"]
 author: Lawrence Lane
 ---
 

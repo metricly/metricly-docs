@@ -3,7 +3,7 @@ title: "EC2 Reservation Recommendations"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#reports", "#ec2", "#cost", "#ec2 reservations", "#getting started"]
+tags: ["#tools", "#ec2", "#cost", "#ec2 reservations", "#getting started"]
 author: Lawrence Lane
 ---
 
