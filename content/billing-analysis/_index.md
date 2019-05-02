@@ -6,7 +6,7 @@ categories:
 tags: ["#alerts", "#notifications", "#events", "#policies"]
 author: Lawrence Lane
 alwaysopen: false
-weight: 3
+weight: 4
 pre: "<i class='icon-alert'></i> &nbsp; "
 ---
 ![cost-test](/images/_index/cost-test.png)

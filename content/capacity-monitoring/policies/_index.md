@@ -23,4 +23,4 @@ A policy is made up of a scope, condition(s), duration, and notification(s).
 Policies with Metricly listed in the Created By column are called **default policies**. They serve as recommended policy configurations that you can edit, enable, disable, or delete. For more information about default policies, see Default policies.
 {{% /notice %}}
 
-[1]: /alerts-notifications/policies/create-edit-policies
+[1]: /capacity-monitoring/policies/create-edit-policies

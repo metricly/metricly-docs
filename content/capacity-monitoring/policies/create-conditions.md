@@ -68,7 +68,7 @@ The Analytics Engine uses the following steps to detect a sudden change:
 ## Metric Threshold
 Metric thresholds are unchanging levels that are compared against another metric’s current value. A Metric Threshold test can be used to indicate when the value of the specified metric is more than, less than, equal to, or not equal to another metric.
 
-[1]: /data-visualization/analytics/baseline-bands
-[2]: /data-visualitzation/analytics/contextual-bands
-[3]: /data-visualitzation/analytics/static-thresholds
-[4]: /data-visualitzation/analytics/sudden-change-detection
+[1]: /capacity-monitoring/analytics/baseline-bands
+[2]: /capacity-monitoring/analytics/contextual-bands
+[3]: /capacity-monitoring/analytics/static-thresholds
+[4]: /capacity-monitoring/analytics/sudden-change-detection

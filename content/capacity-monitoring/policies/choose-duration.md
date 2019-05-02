@@ -20,4 +20,4 @@ On Policy Editor, under the **2. Conditions** section:
 2. **External Event Conditions**: Real-time is the only available option.
 
 
-[1]: afadf 
+[1]: /capacity-monitoring/notifications/

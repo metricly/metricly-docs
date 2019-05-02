@@ -13,4 +13,4 @@ alwaysopen: false
 2. In Policy Editor, click **Delete**.
 
 
-[1]: /alerts-notifications/alerts-page
+[1]: /capacity-monitoring/alerts-page

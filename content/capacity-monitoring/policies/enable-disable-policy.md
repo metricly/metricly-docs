@@ -16,4 +16,4 @@ You can also enable or disable policies directly from the List and Card Policy v
 {{% /notice %}}
 
 
-[1]: /alerts-notifications/alerts-page
+[1]: /capacity-monitoring/alerts-page

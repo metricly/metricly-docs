@@ -18,18 +18,18 @@ Alerts are a continuous series of events. They group anomalous behavior and enab
 
 You can **view**, **edit**, and **create** policies in this menu; you can also **enable notifications** for policies. Clicking on a policy name expands its details, such as conditions and associated elements.
 
-![create new policy](static/images/_index/create-new-policy.png)
+![create new policy](/images/_index/create-new-policy.png)
 
 ## Events
 Events are violations that have met all of a policy’s conditions for a set duration. They indicate that Metricly has detected anomalous behavior in your environment. You can **view**, **categorize**, and **analyze** events. Organized most-to-least recent, finding the right event is easy.
 
 You can zoom in on a series of events by clicking and dragging across the timeline.
 
-![Zoom Events](/images/_index/zoom-events.png)
+![events-zoom](/images/_index/events-zoom.png)
 
 ## Notifications
 Notifications can be set on any policy that is important to you and your team. From **Email**, to **OpsGenie**, to **Slack**—rest assured you can get notified in the way most convenient to you. You can also customize the frequency of your notifications.
 
 You can create a notification by editing a policy and navigating to 3: Notifications
 
-![Create Notification](/images/_index/create-notification.png)
+![notification-creation](/images/_index/notification-creation.png)

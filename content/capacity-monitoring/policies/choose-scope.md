@@ -24,5 +24,5 @@ When using multiple fields, an element must meet each criterion to be included i
 - Search a drop-down list of all each category and **check** all objects that apply to include them in the policy
 - Input a string of characters to search
 
-[1]: /alerts-notifications/policies
-[2]: /data-visualization/inventory
+[1]: /capacity-monitoring/policies
+[2]: /administration/inventory

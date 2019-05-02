@@ -79,7 +79,7 @@ Below is the default payload used in the SNS integration, but it’s a good star
 1. Click your **Username** > **Notifications**.
 2. Click **SNS**.
 3. Click **Add SNS**.
-![Add SNS](/images/notifications-aws-sns/add-sns.png)
+![add-sns](/images/notifications-aws-sns/add-sns.png)
 
 #### 4. Input Information
 1. Input a `Name` for the SNS notification.
@@ -155,7 +155,7 @@ Below is the default payload used in the SNS integration, but it’s a good star
 1. Click your **Username** > **Notifications**.
 2. Click **SNS**.
 3. Click **Add SNS**.
-![Add SNS](/images/notifications-aws-sns/add-sns.png)
+![add-sns](/images/notifications-aws-sns/add-sns.png)
 
 #### 4. Input Information
 1. Input a `Name` for the SNS notification.
