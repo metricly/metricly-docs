@@ -10,7 +10,7 @@ pre: ""
 ---
 Metricly’s RESTful API allows you read and write data programmatically. This means that you can perform a wide variety of tasks, including adding a new integration, returning a filtered list of Events, removing elements from your account, and more.
 
-To view and try out the available API endpoints, visit the [Metricly Swagger UI](https://app.metricly.com/swagger-ui.html).  This web based user interface allows users to view all the APIs, see additional documentation, and test the calls from your browser.
+To view and try out the available API endpoints, visit the [Metricly Swagger UI](https://app.metricly.com/swagger-ui.html). This web based user interface allows users to view all the APIs, see additional documentation, and test the calls from your browser.
 
 ## Did you know we have a Metricly CLI?
 
