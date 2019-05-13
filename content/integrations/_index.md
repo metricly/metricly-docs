@@ -3,7 +3,7 @@ title: "Integrations"
 #date: 2018-11-30T15:34:11-05:00
 draft: false
 weight: 10
-pre: "<i class='icon-integration'></i> &nbsp;"
+pre: 
 ---
 
 ![integreations](/images/_index/integreations.png)

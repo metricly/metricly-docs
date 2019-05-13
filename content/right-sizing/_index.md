@@ -7,6 +7,12 @@ tags: ["#cost management", "#ec2", "#rds", "#utilization"]
 author: Lawrence Lane
 alwaysopen: false
 weight: 5
-pre: "<i class='icon-alert'></i> &nbsp; "
+pre:
 ---
 ![new-right-sizing](/images/_index/new-right-sizing.png)
+
+
+
+## About Right Sizing
+
+Right Sizing is the practice of finding the perfect balance between cost efficiency and stability for each of your resources. Metricly provides several tools that help you understand the current performance of your workloads and their true needs—both now and in the future.

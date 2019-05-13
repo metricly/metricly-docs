@@ -7,10 +7,12 @@ tags: ["#ebs", "#elb", "#archive"]
 author: Lawrence Lane
 alwaysopen: false
 weight: 4
-pre: "<i class='icon-alert'></i> &nbsp; "
+pre:
 ---
 
 ![idle-resources-header](/images/_index/idle-resources-header.png)
+
+## About Idle Resources
 
 Keep track of all of your unused resources with our EBS & ELB Idle Resource reports. Each report supports daily email notifications to keep you informed of changes.
 

@@ -6,6 +6,10 @@ categories:
 tags: ["#getting started", "#directory page", "#dashboards", "#widgets"]
 author: Lawrence Lane
 weight: 2
-pre: "<i class='icon-visualization'></i> &nbsp;"
+pre:
 ---
 ![new-dashboard](/images/_index/new-dashboard.png)
+
+## About Dashboards
+
+Dashboards give you and your team a quick view into the state of your savings projects and monitored resources. 

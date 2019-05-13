@@ -7,11 +7,13 @@ tags: ["#alerts", "#notifications", "#events", "#policies"]
 author: Lawrence Lane
 alwaysopen: false
 weight: 5
-pre: "<i class='icon-alert'></i> &nbsp; "
+pre:
 ---
 ![capacity-monitoring-graphic](/images/_index/capacity-monitoring-graphic.png)
 
-New to Metricly? Use this page as an overview for the features related to Alerts, Events, Policies, and Notifications. For a more technical walkthrough on each, see our related articles.
+## About Capacity Monitoring
+
+Capacity Monitoring provides IT professionals the opportunity to catch performance bottlenecks and pinpoint where and why these performance issues occur.  The alerting process is fully automated, using preset multi-conditional policies based on industry best practices for every AWS resource type.
 
 ## Alerts
 Alerts are a continuous series of events. They group anomalous behavior and enable you to view open (active) or closed (inactive) incidents. The Open Policies list is the first you see when navigating to the Alerts menu. This list is updated every 30 seconds.

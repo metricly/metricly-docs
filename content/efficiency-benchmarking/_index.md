@@ -7,6 +7,10 @@ tags: ["#benchmarking", "#efficiency index", "#tagging"]
 author: Lawrence Lane
 alwaysopen: false
 weight: 3
-pre: "<i class='icon-alert'></i> &nbsp; "
+pre:
 ---
 ![administration-header](/images/_index/administration-header.png)
+
+## About Efficiency Benchmarking
+
+Efficiency Benchmarking is the phase for obtaining data-driven assessments that are crucial to the initial scoping and tracking of cloud cost projects. IT Leaders can use benchmarking data and index scores to communicate infrastructure needs and trends to key stakeholders.

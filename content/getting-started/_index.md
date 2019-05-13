@@ -7,7 +7,7 @@ tags: ["#getting started", "#directory page",]
 author: Lawrence Lane
 alwaysopen: false
 weight: 1
-pre: "<i class='icon-visualization'></i> &nbsp;"
+pre: 
 ---
 
 ![getting-started-header-1](/images/_index/getting-started-header-1.png)
