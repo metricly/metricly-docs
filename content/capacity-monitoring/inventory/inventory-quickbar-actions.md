@@ -49,5 +49,5 @@ Once you delete an element the metadata will be permanently removed. This cannot
 
 
 
-[1]: /administration/inventory/
+[1]: /capacity-monitoring/inventory/
 [2]: /capacity-monitoring/metrics/

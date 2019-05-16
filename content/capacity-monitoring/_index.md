@@ -13,7 +13,7 @@ pre:
 
 ## About Capacity Monitoring
 
-Capacity Monitoring provides IT professionals the opportunity to catch performance bottlenecks and pinpoint where and why these performance issues occur.  The alerting process is fully automated, using preset multi-conditional policies based on industry best practices for every AWS resource type.
+[Capacity Monitoring](https://www.metricly.com/monitoring/) provides IT professionals the opportunity to catch performance bottlenecks and pinpoint where and why these performance issues occur.  The alerting process is fully automated, using preset multi-conditional policies based on industry best practices for every AWS resource type.
 
 ## Alerts
 Alerts are a continuous series of events. They group anomalous behavior and enable you to view open (active) or closed (inactive) incidents. The Open Policies list is the first you see when navigating to the Alerts menu. This list is updated every 30 seconds.
