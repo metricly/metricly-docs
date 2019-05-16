@@ -6,3 +6,7 @@ categories: ["integration", "admin guide", "getting started"]
 tags: ["#agents", "#linux", "#getting started", "Salt", "Ansible", "Chef"]
 author: Lawrence Lane
 ---
+
+### You can choose between the following:
+
+{{ % children % }}
