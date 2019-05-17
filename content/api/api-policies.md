@@ -459,4 +459,4 @@ curl -X DELETE --header 'Accept: */*' 'https://app.metricly.com/policies/####pol
 ```
 
 
-[1]: /api/api-cil
+[1]: /api/api-cli
