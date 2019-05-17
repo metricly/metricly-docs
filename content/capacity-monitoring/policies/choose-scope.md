@@ -25,4 +25,4 @@ When using multiple fields, an element must meet each criterion to be included i
 - Input a string of characters to search
 
 [1]: /capacity-monitoring/policies
-[2]: /administration/inventory
+[2]: /capacity-monitoring/inventory

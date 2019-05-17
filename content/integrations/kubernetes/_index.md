@@ -104,7 +104,7 @@ Once setup is complete, it takes approximately 5 minutes for data to display in 
 If you do not wish to use the packaged policies and dashboards that Metricly provides, navigate to **Integrations** > **Kubernetes** and disable the `PACKAGES` toggle.
 
 [1]: /data-visualizaiton/metrics
-[2]: /data-visualization/inventory
+[2]: /capacity-monitoring/inventory
 
 ## Kubernetes Types
 

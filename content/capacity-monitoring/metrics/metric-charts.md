@@ -50,4 +50,4 @@ Click the **`metric name`** to open the metric metadata panel.
 
 
 
-[1]: /administration/inventory/
+[1]: /capacity-monitoring/inventory/

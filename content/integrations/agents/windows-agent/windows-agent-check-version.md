@@ -15,4 +15,4 @@ You may need the verify the version of the Windows agent you’re currently usin
 ![step 2-3](/images/windows-agent-check-version/step-2-3.png)
 
 
-[1] :/data-visualization/inventory
+[1] :/capacity-monitoring/inventory

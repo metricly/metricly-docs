@@ -26,14 +26,14 @@
 - [Linux Agent][6]
 
 ### <i class='icon-visualization'></i> Visualization
-- [Dashboards][7]
-- [Metrics][8]
+- [Dashboards](7)
+- [Metrics](8)
 
 ### <i class='icon-reports'></i> Reports
-- [Cost (EC2, RDS, S3)](/reports/reports-cost)
-- [Idle Resources](/reports/idle-resources)
-- [Resource Utilization](/reports/reports-resource-utilization)
-- [EC2 Recommendations](/reports/ec2-recommendations) or [ASG Recommendations](/reports/reports-asg-recommendations)
+- [Cost (EC2, RDS, S3)](/right-sizing/reports-cost)
+- [Idle Resources](/idle-resources)
+- [Resource Utilization](/right-sizing/resource-utilization)
+- [EC2 Recommendations](/right-sizing/ec2-recommendations) or [ASG Recommendations](/right-sizing/reports-asg-recommendations)
 
 ---
 
@@ -48,10 +48,10 @@
 
 [1]: /getting-started/cost-tools
 [2]: /getting-started/metric-monitoring
-[3]: /alerts-notifications/notifications
-[4]: /alerts-notifications/policies
-[5]: /integrations/agents/aws-integrations
+[3]: /capacity-monitoring/notifications
+[4]: /capacity-monitoring/policies
+[5]: /integrations/aws-integration/
 [6]: /integrations/agents/linux-agent
-[7]: /data-visualization/dashboards
-[8]: /data-visualization/metrics
+[7]: /dashboards
+[8]: /capacity-monitoring/metrics
 [9]: https://www.metricly.com

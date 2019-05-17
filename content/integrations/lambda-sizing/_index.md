@@ -50,6 +50,6 @@ Reducing the memory can increase the invocation duration which could cause more 
 If so, your function is a perfect candidate to optimize memory. Network intensive Lambda functions don’t usually see much of an increase in invocation duration, which means a 50% reduction in memory is a 50% reduction in cost.
 
 
-[1]: /data-visualization/metrics/metric-page/
-[2]: /reports/reports-resource-utilization/
-[3]: /data-visualization/dashboards/
+[1]: /capacity-monitoring/metrics/metric-page/
+[2]: /right-sizing/reports-resource-utilization/
+[3]: /dashboards/
