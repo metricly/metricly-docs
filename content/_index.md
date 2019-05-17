@@ -50,7 +50,7 @@
 [2]: /getting-started/metric-monitoring
 [3]: /capacity-monitoring/notifications
 [4]: /capacity-monitoring/policies
-[5]: /integrations/agents/aws-integrations
+[5]: /integrations/aws-integration/
 [6]: /integrations/agents/linux-agent
 [7]: /dashboards
 [8]: /capacity-monitoring/metrics
