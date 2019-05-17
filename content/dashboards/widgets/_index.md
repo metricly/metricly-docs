@@ -50,5 +50,5 @@ This guide includes a list of all **widget types** available, their **options**,
 Receive daily or weekly emails that snapshot widget data (limited to the table widget).
 
 
-[1]:/administration/inventory/
+[1]:/capacity-monitoring/inventory/
 [2]:/capacity-monitoring/metrics/
