@@ -27,4 +27,4 @@ You can filter what Azure elements are included in Metricly’s monitoring by us
 ## Using Regex
 Check out our [Regex Guide][1] for some examples.
 
-[1]: /alerts-notifications/policies/regex-guide
+[1]: /capacity-monitoring/policies/regex-guide

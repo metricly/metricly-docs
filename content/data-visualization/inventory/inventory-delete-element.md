@@ -26,5 +26,5 @@ You must update your collectors and ingest API calls for permanent element delet
 
 
 [1]: /data-visualization/inventory/inventory-main-navigation
-[2]: /alerts-notifications/policies/
-[3]: /alerts-notifications/notifications/
+[2]: /capacity-monitoring/policies/
+[3]: /capacity-monitoring/notifications/

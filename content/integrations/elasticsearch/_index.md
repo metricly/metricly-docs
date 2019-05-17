@@ -51,4 +51,4 @@ For a full breakdown and troubleshooting, see elastic’s [Cluster Health](https
 
 
 [1]: /integrations/agents/linux-agent
-[2]: /alerts-notifications/policies/regex-guide
+[2]: /capacity-monitoring/policies/regex-guide

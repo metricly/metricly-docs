@@ -40,4 +40,4 @@ You cannot activate the PowerDNS integration until Metricly begins receiving dat
 
 [1]: /integrations/agents/linux-agent
 [2]: /data-visualization/dashboards
-[3]: /alerts-notifications/policies
+[3]: /capacity-monitoring/policies

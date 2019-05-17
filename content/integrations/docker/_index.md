@@ -37,4 +37,4 @@ This integration’s package (computed metrics, dashboards, and policies that wi
 [2]: /data-visualization/dashboards
 [3]: /integrations/agents/linux-agent/LINUX-docker-install
 [4]: /integrations/agents/linux-agent
-[5]: /alerts-notifications/policies/regex-guide
+[5]: /capacity-monitoring/policies/regex-guide

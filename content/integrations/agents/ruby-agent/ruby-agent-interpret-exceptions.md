@@ -20,4 +20,4 @@ An Exception External event has the following tags to help you dissect the excep
 
 Because these tags are located within the message body, you can create a [policy][1] matching against the body of the message.
 
-[1]: /alerts-notifications/policies
+[1]: /capacity-monitoring/policies
