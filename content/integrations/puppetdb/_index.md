@@ -50,5 +50,5 @@ Metricly starts displaying data **in approximately 5 minutes**.You can adjust th
 
 
 [1]: /integrations/agents/linux-agent
-[2]: //dashboards/
+[2]: /dashboards/
 [3]: /capacity-monitoring/policies

@@ -51,5 +51,5 @@ If so, your function is a perfect candidate to optimize memory. Network intensiv
 
 
 [1]: /capacity-monitoring/metrics/metric-page/
-[2]: /reports/reports-resource-utilization/
-[3]: //dashboards//
+[2]: /right-sizing/reports-resource-utilization/
+[3]: /dashboards/
