@@ -25,6 +25,6 @@ You must update your collectors and ingest API calls for permanent element delet
 4. Select **Yes, Delete** in the confirmation modal.
 
 
-[1]: /data-visualization/inventory/inventory-main-navigation
+[1]: /capacity-monitoring/inventory/inventory-main-navigation
 [2]: /capacity-monitoring/policies/
 [3]: /capacity-monitoring/notifications/
