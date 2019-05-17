@@ -7,7 +7,10 @@ tags: ["#getting started", "#directory page",]
 author: Lawrence Lane
 alwaysopen: false
 weight: 1
+pre: 
 ---
+
+![getting-started-header-1](/images/_index/getting-started-header-1.png)
 
 ## 1. Watch Our Product Demo
 There’s no faster way to get acquainted with the UI than by watching the [demo video][1]. This tour covers both the Cost and Monitoring products, including topics like: the EC2 recommendation report, the Utilization Boxplot report, and the Cost report.
@@ -19,7 +22,7 @@ You’re excited to right-size your environments and lower their costs. You’ve
 Make sure you’re able to receive all of your emailed reports and notifications by whitelisting ``@metricly.com`` and ``@metriclyinc.com``  This prevents your reports from getting caught in spam filters.
 
 ## 3. Set Up The AWS Integration
-![AWS Integration Card Setup](/images/cost-tools/aws-integration-card-setup.png)
+![getting-started-setup-aws](/images/_index/getting-started-setup-aws.png)
 
 Chances are, you’re going to want to start with AWS.  
 

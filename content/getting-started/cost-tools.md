@@ -36,10 +36,10 @@ Track the min-max of key utilization metrics across your environment.
 - [Resource Utilization][6]
 
 
-[1]: /reports/reports-aws-services-cost
-[2]: /reports/reports-cost
-[3]: /reports/reports-asg-recommendations
-[4]: /reports/reports-ec2-recommendations
-[5]: /reports/reports-e2-reservations
-[6]: /reports/reports-resource-utilization
-[7]: /reports/idle-resources
+[1]: /billing-analysis/
+[2]: /right-sizing/reports-cost
+[3]: /right-sizing/reports-asg-recommendations
+[4]: /right-sizing/reports-ec2-recommendations
+[5]: /right-sizing/reports-ec2-reservations
+[6]: /right-sizing/reports-resource-utilization
+[7]: /idle-resources/
