@@ -22,12 +22,6 @@ author: Lawrence Lane
 | Status Check Failed            | aws.ec2.statuscheckfailed                     | StatusCheckFailed          | sum       |                 | 5    | no   | no   | no   |
 | Status Check Failed – Instance | aws.ec2.statuscheckfailed_instance            | StatusCheckFailed_Instance | sum       |                 | 5    | no   | no   | no   |
 | Status Check Failed – System   | aws.ec2.statuscheckfailed_system              | StatusCheckFailed_System   | sum       |                 | 5    | no   | no   | no   |
-| RequestCount                   | aws.applicationelb.requestcount               | RequestCount               | sum       | ReplaceWithZero | yes  | no   | no   | no   |
-| Request Count Per Target       | aws.applicationelb.requestcountpertarget      | RequestCountPerTarget      | average   | none            | yes  | no   | no   | no   |
-| Rule Evaluations               | aws.applicationelb.ruleevaluations            | RuleEvaluations            | average   | none            | yes  | no   | no   | no   |
-| Target Connection Error Count  | aws.applicationelb.targetconnectionerrorcount | TargetConnectionErrorCount | sum       | ReplaceWithZero | yes  | yes  | no   | no   |
-| Target Response Time           | aws.applicationelb.targetresponsetime         | TargetResponseTime         | average   | ReplaceWithZero | yes  | yes  | no   | no   |
-| Unhealthy Host Count           | aws.applicationelb.unhealthyhostcount         | UnHealthyHostCount         | average   | none            | yes  | yes  | no   | no   |
 
 ## Computed
 
