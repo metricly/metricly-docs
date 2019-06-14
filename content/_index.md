@@ -17,17 +17,17 @@
 
 ### <i class='icon-alert'></i> Alerts & Notifications
 
-- [Notifications][3]
-- [Policies][4]
+- [Notifications](/capacity-monitoring/notifications/)
+- [Policies](/capacity-monitoring/policies/)
 
 ### <i class='icon-integration'></i> Integrations
 
-- [AWS][5]
-- [Linux Agent][6]
+- [AWS](/integrations/aws-integration/)
+- [Linux Agent](/integrations/agents/linux-agent/)
 
 ### <i class='icon-visualization'></i> Visualization
-- [Dashboards](7)
-- [Metrics](8)
+- [Dashboards](/dashboards/)
+- [Metrics](/capacity-monitoring/metrics/)
 
 ### <i class='icon-reports'></i> Reports
 - [Cost (EC2, RDS, S3)](/right-sizing/reports-cost)
@@ -43,15 +43,3 @@
 - [Community Packages](https://github.com/netuitive-community-packages)
 - [Status Page](http://status.metricly.com/)
 - [Cloud Compass Blog](https://www.metricly.com/blog)
-
-
-
-[1]: /getting-started/cost-tools
-[2]: /getting-started/metric-monitoring
-[3]: /capacity-monitoring/notifications
-[4]: /capacity-monitoring/policies
-[5]: /integrations/aws-integration/
-[6]: /integrations/agents/linux-agent
-[7]: /dashboards
-[8]: /capacity-monitoring/metrics
-[9]: https://www.metricly.com
