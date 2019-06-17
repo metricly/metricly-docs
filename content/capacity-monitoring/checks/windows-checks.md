@@ -35,7 +35,7 @@ Configure HTTP checks to send an `HTTP GET` request to a URL. If a successful re
 ```
 <HttpCheck Name="MyTestHTTPCheck" Url="http://www.google.com" StatusMatches="^(?!4|5)" />
 ```
-**To your ReadySystemChecks.config file:**
+**To your ReadSystemChecks.config file:**
 
 ```
 <ReadSystemChecks EnableAgentHeartbeat="true" HeartbeatTTLMultiplier="2.5">
