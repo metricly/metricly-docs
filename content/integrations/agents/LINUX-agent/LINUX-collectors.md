@@ -13,7 +13,11 @@ weight: 6
 ## Using the Simple Collector
 `netuitive-diamond/src/collectors/simple`
 
+**Compatibility:** The Simple Collector should be used **instead** of the [Base Collector](#using-the-basecollector) and the [Individual Collectors](#using-individual-collectors).
+
  Where the base or individual collectors include more data (which may be less useful or actionable), this SimpleCollector guarantees a cleaner streamlined experience. The SimpleCollector can be activated by updating the ``/opt/netuitive-agent/conf/netuitive-agent.conf`` file.
+
+ Please use this collector **and no other collectors** when using the Metricly Cost Optimization product.
 
 ![Linux Simple Collector](/images/LINUX-collectors/linux-simple-collector.png)
 
@@ -27,14 +31,18 @@ weight: 6
 ## Using the BaseCollector
 `netuitive-diamond/src/collectors/base`
 
+**Compatibility:** The Base Collector should be used **instead** of the [Simple Collector](#using-the-basecollector) and the [Individual Collectors](#using-individual-collectors). It will perform the same function as the [Individual Collectors](#using-individual-collectors), but will use fewer system resources.
+
 The BaseCollector is a compilation of all individual collectors bundled together and reports on all of their supported metrics. The base collector is set to `TRUE` by default and should not be used with any of the later mentioned diamond collectors active.
 
-Collectors are turned on or off by updating the ``/opt/netuitive-agent/conf/netuitive-agent.conf`` file.
+Collectors are turned on or off by updating the ``/opt/netuitive-agent/conf/netuitive-agent.conf`` file. **Using the Base Collector will automatically disable the Individual Collectors as they perform the same function.**
 
 ![Linux Base Collector](/images/LINUX-collectors/linux-base-collector.png)
 
 ## Using Individual Collectors
 `netuitive-diamond/src/collectors/*``
+
+**Compatibility:** Individual Collectors should be used **instead** of the [Simple Collector](#using-the-basecollector) and the [Base Collector](#using-the-basecollector).
 
 Each individual collector can be turned on or off to get exactly what you want. Set to `FALSE` by default; should not be used with the base collector set to `TRUE`. These are the individual collectors:
 
