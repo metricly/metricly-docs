@@ -25,6 +25,14 @@ sudo N_APIKEY=your-apikey N_HOSTNAME=your-element-name bash -c "$(curl -Ls http:
 
 `your-apikey` is the API key generated from the integration and `your-element-name` can be any element name you wish (it must be unique from your other elements).
 
+If you’d prefer to choose a different hostname method, copy the following instead:
+
+```
+sudo N_APIKEY=your-apikey N_HOSTNAME_METHOD=hostname-method bash -c "$(curl -Ls http://repos.app.netuitive.com/linux.sh)"
+```
+
+`hostname-method` can be a hostname method described on the [Optional Config](https://docs.metricly.com/integrations/agents/linux-agent/linux-optional-config/#update-the-hostname-manually) page.
+
 ## 2. Install Linux Agent
 1. Paste the command from step 1.3 into your command line. This  installs the agent and adds your account’s unique API key to the configuration file.
 
