@@ -21,6 +21,7 @@ All filtering and grouping for your report can be done by opening the **CONFIGUR
 ### Grouping  Options
 
 - Group By (Period, Attribute, Service)
+- Show costs as (Blended, Unblended, Amortized)
 - Limit (From One to All)
 - Sort By (Service, Total Cost, Delta)
 - Sort Order (Ascending or Descending)
