@@ -37,7 +37,7 @@ Blended and Unblended refer to different ways of incorporating reservation costs
 If you only have one account or you do not have consolidated billing setup or you do not use reserved instance then the blended costs are the same as the unblended costs and are the simple usage costs.
 {{% /notice %}}
 
-**Unblended** costs are the sum of the applicateble rates times the usage for each AWS resource and represent the common understanding of incurred cost.
+**Unblended** costs are the sum of the applicable rates times the usage for each AWS resource and represent the common understanding of incurred cost.
 
 **Blended** costs attempt to present a fair allocation of RI costs across different accounts by taking into account the relative RI usage. The grand-total of blended costs always matches the unblended, simple total but the sub-totals allocated to each AWS account may differ according to relative RI usage by that account, so accounts that make more use of reserved instances will be allocated a higher proportion of the overall costs. This takes into account the fact that reserved instances purchases can be shared within consolidate accounts.
 
