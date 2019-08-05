@@ -10,7 +10,7 @@ Riemann is a powerful network monitoring tool that aggregates events from your s
 
 ## Configure
 
-1. Download the [Metricly Riemann library](https://github.com/riemann/riemann/tree/master/src/riemann/metricly.clj).
+1. Download the [Metricly Riemann library](https://github.com/riemann/riemann/tree/master/src/riemann/netuitive.clj).
 2. Place the **metricly.clj** file in the `<riemann-directory>/etc` directory, where `<riemann-directory>` is the location of your Riemann files.
 3. At the top of your **riemann.config** file (typically found at `<riemann-directory>/etc/riemann.config`), add:
 
