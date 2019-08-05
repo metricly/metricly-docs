@@ -79,7 +79,7 @@ Below is an example of filtering events that contain any of the listed tags for 
       (email "staff@vonbraun.mil"))))
 ```
 
-Below is an example of usgin a regex to find all metrics that start with “riemann server” and forwards only the matching metrics.
+Below is an example of using a regex to find all metrics that start with “riemann server” and forwards only the matching metrics.
 
 ```
 (streams
