@@ -1,8 +1,8 @@
 ---
-title: "NGNIX"
+title: "NGINX"
 #date: 2018-12-12
 draft: false
-tags: ["#ngnix", "#integrations" ]
+tags: ["#nginx", "#integrations" ]
 author: Lawrence Lane
 ---
 

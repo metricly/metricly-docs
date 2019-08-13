@@ -1,8 +1,8 @@
 ---
-title: "NGNIX Metrics"
+title: "NGINX Metrics"
 #date: 2018-12-12
 draft: false
-tags: ["#ngnix", "#integrations", "#metrics" ]
+tags: ["#nginx", "#integrations", "#metrics" ]
 author: Lawrence Lane
 ---
 ## Collected
