@@ -6,3 +6,4 @@
 /integrations/linux-agent   /integrations/agents/linux-agent/
 /data-visualizaiton/metrics   /capacity-monitoring/metrics/
 /alerts-notificaitons/policies   /capacity-monitoring/policies/
+/integrations/collectors/rabbitmq/   /integrations/rabbitmq/
