@@ -32,18 +32,6 @@ metric.path.c value
 
 #### Examples
 
-##### Checks Status of Metricly-Agent Service
-This example checks the status of the **metricly-agent** service and outputs the value of `1` if it is running or `0` if it is not running. The value is stored in the `processes-running.netuitive-agent.count.value` metric.
-
-```
-#!/bin/sh
-
-procscnt=`ps aux | grep -c "[n]etuitive-agent - Handlers"`
-echo processes-running.netuitive-agent.count.value $procscnt
-```
-- Sets the **procscnt** variable to the value output by the command `ps aux | grep -c “[n]etuitive-agent – Handlers”`
-- Returns the metric, **processes-running.netuitive-agent.count.value**, with the value stored in the variable proscnt.
-
 ##### Checks Total Running Processes & Threads
 This example checks for total running processes and total running threads every 60 seconds.
 
