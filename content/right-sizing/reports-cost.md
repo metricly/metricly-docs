@@ -12,13 +12,13 @@ Cost reports enable you to easily identify expensive instances and compare them 
 Cost Reports are generated once per week. It may take up to 7 days before your first report is available.
 
 ## Report Versions
-### Estimated Cost (AWS Integration Only)
-If you just have an AWS integration in Metricly, the Estimated Cost report is available. Instance costs are estimated based on current list prices and simple assumptions to fill in missing information. For a more accurate view including reservations, data transfer costs, iops guarantees and other account specific charges, you can add an AWS Cost integration that allows Metricly to use your actual billing files from AWS.
+### Estimated Cost (AWS CloudWatch Only)
+If you just have an AWS integration in Metricly, the Estimated Cost report is available. Instance costs are estimated based on current list prices and simple assumptions to fill in missing information. For a more accurate view including reservations, data transfer costs, iops guarantees and other account specific charges, you can configure Detailed Billing on your AWS integration which then allows Metricly to use your actual billing files from AWS.
 
 Estimated Cost reports use 7 days of metric results and the current list prices to estimate element instance costs for all instances monitored by Metricly. Estimated Reports do not include data transfer costs and assumes all instances are on-demand.
 
-### Full Cost (AWS+AWS Cost Integration)
-If you have both an AWS and AWS Cost integration, the Full Cost report is available and based on your billing files. The Full Cost report reads 7 days of billing data associated with the instances monitored by Metricly.
+### Full Cost (AWS CloudWatch and Detailed Billing)
+If you have both an AWS integration set up with Detailed Billing configured, the Full Cost report is available and based on your billing files. The Full Cost report reads 7 days of billing data associated with the instances monitored by Metricly.
 
 Costs are aggregated, simplified, and reduced to the following categories element:
 
