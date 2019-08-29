@@ -6,6 +6,10 @@ tags: ["#sso", "#integrations", "#authentication", "#okta"]
 author: Lawrence Lane
 ---
 
+{{% notice warning %}}
+Single Sign On is a paid-only feature. Please only follow these steps if you are a paid user of Metricly.
+{{% /notice %}}
+
 ## 1. Generate a Certificate in Metricly
 
 1. Navigate to **Account Profile** > **SSO**.
