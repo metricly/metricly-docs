@@ -18,7 +18,8 @@ This guide assumes you have already created User-Defined Cost Allocation Tags fr
 
 ### Promote Resource Tags to Cost Allocation Tags
 
-There are two kinds of Cost Allocation tags
+There are two kinds of Cost Allocation tags:
+
 - AWS-Generated Cost Allocation Tags
 - User-Defined Cost Allocation Tags
 
