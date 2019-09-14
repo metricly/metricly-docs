@@ -93,8 +93,7 @@ These files must be uploaded to Metricly.
 2. When finished, it should look like this:
 ![metricly-sso-complete](/images/sso-azure/metricly-sso-complete.png)
 
-- **login URL:**
-`https://app.metricly.com/#/login?sso=true`
+## Login URLs
 
-- **login URL (tenant name pre populated):**
-`https://app.metricly.com/#/login?sso=true&tenantName=Your+Tenant+Name`
+- **login URL:** `https://app.metricly.com/#/login?sso=true`
+- **login URL (tenant name pre populated):** `https://app.metricly.com/#/login?sso=true&tenantName=Your+Tenant+Name`

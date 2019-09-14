@@ -7,7 +7,7 @@ author: Lawrence Lane
 ---
 
 {{% alert success %}}
-Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [sales rep](google.com).
+Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your Sales Representative.
 {{% /alert %}}
 
 ## Supported SSO integrations

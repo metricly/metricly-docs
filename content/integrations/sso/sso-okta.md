@@ -4,7 +4,7 @@ title: "Okta SSO"
 draft: false
 tags: ["#sso", "#integrations", "#authentication", "#okta"]
 author: Lawrence Lane
-weight: 2
+weight: 3
 ---
 
 {{% alert success %}}
@@ -64,8 +64,7 @@ Add your tenant name to the **Default Relay State** field if you do not want to 
 2. When finished, it should look like this:
 ![setup-complete](/images/_index/setup-complete.png)
 
-- **login URL:**
-`https://app.metricly.com/#/login?sso=true`
+## Login URLs
 
-- **login URL (tenant name pre populated):**
-`https://app.metricly.com/#/login?sso=true&tenantName=Your+Tenant+Name`
+- **login URL:** `https://app.metricly.com/#/login?sso=true`
+- **login URL (tenant name pre populated):** `https://app.metricly.com/#/login?sso=true&tenantName=Your+Tenant+Name`
