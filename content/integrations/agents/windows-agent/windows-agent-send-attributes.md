@@ -1,5 +1,5 @@
 ---
-title: "Send Tags & Attributes"
+title: "Tags & Attributes"
 #date: 2018-12-11
 draft: false
 tags: ["#windows", "#integrations", "#install", "#tags", "#attributes", "#elements"]
@@ -12,18 +12,22 @@ You can send tags and attributes through the Windows Agent by updating files in 
 
 1. Navigate to the `/CollectdWin/config/ReadWindowsTags.config` file.
 2. Update the **`<Tags>`** section.
+  - **Tag Name ="tag1"**: replace `tag1` with the static key for this tag.
+  - **Value="value1"**: replace `value1` with the host's tag value.
+3. **Save** your file.
+
+### Tag Example
 
 ```
 <ReadWindowsTags>
   <Tags>
     <!-- Example
-    <Tag Name="tag1" Value="value1"/>
+    <Tag Name="candle" Value="fresh-linen"/>
+    <Tag Name="spice" Value="ginger"/>
     -->
   </Tags>
 </ReadWindowsTags>
-
 ```
-3\. **Save** your file.
 
 ## Sending Attributes
 
@@ -35,7 +39,12 @@ You can send tags and attributes through the Windows Agent by updating files in 
 
 ### Attribute Example
 ```
-<EnvironmentVariable Name="processor_architecture" Value="PROCESSOR_ARCHITECTURE"/>
+<ReadWindowsAttributes ReadEC2InstanceMetadata="true">
+  <EnvironmentVariables>
+    <EnvironmentVariable Name="processor_architecture" Value="PROCESSOR_ARCHITECTURE"/>
+    <EnvironmentVariable Name="number_of_processors" Value="NUMBER_OF_PROCESSORS"/>
+  </EnvironmentVariables>
+</ReadWindowsAttributes>
 ```
 
 {{% notice tip %}}
