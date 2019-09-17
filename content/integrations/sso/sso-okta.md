@@ -8,7 +8,7 @@ weight: 3
 ---
 
 {{% alert success %}}
-Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [sales rep](google.com).
+Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [Sales Representative](mailto:sales@metricly.com).
 {{% /alert %}}
 
 ## 1. Generate a Certificate in Metricly

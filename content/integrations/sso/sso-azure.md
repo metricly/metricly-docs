@@ -8,7 +8,7 @@ weight: 1
 ---
 
 {{% alert success %}}
-Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your Sales Representative.
+Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [Sales Representative](mailto:sales@metricly.com).
 {{% /alert %}}
 
 ## 1. Generate a Certificate in Metricly
@@ -81,14 +81,15 @@ You are now ready to define your new SSO application's SAML and user settings. I
   - **Signing Algorithm**: `SHA-256`
 3. Download the **Certificate (Base64)**.
 4. Download the **Federation Metadata XML**.
+![azure-download-cert](/images/sso-azure/azure-download-cert.png)
 
 These files must be uploaded to Metricly.
 
 ## 3. Finish SSO Set-up in Metricly
 
 1. Navigate to **Account Profile** > **SSO**.
-2. Upload the **Certificate (Base64)** file from Azure.
-2. Upload the **Federation Metadata.xml** file from Azure.
+2. Upload the **Certificate (Base64)** file from JumpCloud.
+2. Upload the **Federation Metadata.xml** file from JumpCloud.
 ![upload-metadata-xml](/images/_index/upload-metadata-xml.png)
 2. When finished, it should look like this:
 ![metricly-sso-complete](/images/sso-azure/metricly-sso-complete.png)
