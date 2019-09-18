@@ -107,7 +107,7 @@ If you want to use a limited read only access policy, you’ll need to create a 
 
 ## Add Inline Policy to Existing IAM Role
 
-This section is for customers who created Metricly accounts before 12/01/2018 or any customer who has an existing IAM role that is missing a policy for Cost Explorer. Adding this policy enables Metricly to report on and analyze your AWS Detailed Billing files.
+This section is for customers who created Metricly accounts before 12/01/2018 or any customer who has an existing IAM role that is missing a policy for Cost Explorer. Adding this policy enables Metricly to report on and analyze your AWS Cost Explorer data.
 
 ### Step 1: Update IAM Role
 
