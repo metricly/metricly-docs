@@ -30,8 +30,8 @@ Keep this tab open and open a new tab; you must now login to JumpCloud and uploa
 ![jc-new-application](/images/sso-jumpcloud/jc-new-application.png)
 3. Search for `SAML` and select **Custom SAML App** > **Configure**.
 4. Input the following values:
-  - **DISPLAY LABEL**: `Your SSO Label` (whatever string you want)
-  - **IDP ENTITY ID**: `support.netuitive.com`
+  - **DISPLAY LABEL**: `Your SSO Label` ("A name of your choosing to identify this configuration.)
+  - **IDP ENTITY ID**: `jumpcloud-metricly`
   - **SP ENTITY ID**: `netuitive-api`
   - **ACS URL**: `https://app.metricly.com/saml/SSO`
   - **SP CERTIFICATE**:  Upload the .`cert` file from section 1.
@@ -49,7 +49,7 @@ Be careful not to accidentally create your **USER ATTRIBUTES** (green) under **C
 ![jc-user-attributes-tip](/images/sso-jumpcloud/jc-user-attributes-tip.png)
 {{% /notice %}}
 
-Now you are ready to download your certification and public key to be uploaded to Metricly.
+Now you are ready to download your certification and metadata to be uploaded to Metricly.
 
 ### Download IDP Certificate & Export Metadata
 1. Expand the **IDP Certificate Valid** menu on the left of the app.
