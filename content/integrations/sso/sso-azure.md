@@ -34,7 +34,7 @@ Keep this tab open and open a new tab; you must now login to Azure and upload th
 ![azure-name-add-application](/images/sso-azure/azure-name-add-application.png)
 6. Select **Configure single sign-on (required)**.
 ![azure-configure-sso-required](/images/sso-azure/azure-configure-sso-required.png)
-7. Select **SAML** for the single sing-on method.
+7. Select **SAML** for the single sign-on method.
 ![azure-saml-method](/images/sso-azure/azure-saml-method.png)
 
 You are now ready to define your new SSO application's SAML and user settings. If you need to return to these settings in the future, follow this path: **Azure Active Directory** > **Enterprise applications** > `Your Application Name` > **Single sign-on** > **SAML-based Sign-on**.
@@ -77,7 +77,7 @@ You are now ready to define your new SSO application's SAML and user settings. I
 
 1. Select **Edit** on the SAML Signing Certificate card.
 2. Select the following dropdowns:
-  - **Singing Option**: `Sign SAML Assertion`
+  - **Signing Option**: `Sign SAML Assertion`
   - **Signing Algorithm**: `SHA-256`
 3. Download the **Certificate (Base64)**.
 4. Download the **Federation Metadata XML**.
@@ -88,8 +88,8 @@ These files must be uploaded to Metricly.
 ## 3. Finish SSO Set-up in Metricly
 
 1. Navigate to **Account Profile** > **SSO**.
-2. Upload the **Certificate (Base64)** file from JumpCloud.
-2. Upload the **Federation Metadata.xml** file from JumpCloud.
+2. Upload the **Certificate (Base64)** file from Azure.
+2. Upload the **Federation Metadata XML** file from Azure.
 ![upload-metadata-xml](/images/_index/upload-metadata-xml.png)
 2. When finished, it should look like this:
 ![metricly-sso-complete](/images/sso-azure/metricly-sso-complete.png)

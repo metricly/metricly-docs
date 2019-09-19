@@ -28,7 +28,7 @@ Keep this tab open and open a new tab; you must now login to JumpCloud and uploa
 {{% /notice %}}
 2. Navigate to **Applications** > **+** (New Application). A slide-out panel appears.
 ![jc-new-application](/images/sso-jumpcloud/jc-new-application.png)
-3. Search for `SAML` and select **CustomSAML_App** > **Configure**.
+3. Search for `SAML` and select **Custom SAML App** > **Configure**.
 4. Input the following values:
   - **DISPLAY LABEL**: `Your SSO Label` (whatever string you want)
   - **IDP ENTITY ID**: `support.netuitive.com`
