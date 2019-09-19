@@ -3,7 +3,7 @@
 ![metricly-docs-home](/images/_index/metricly-docs-home.png)
 
 
-`docs.metricly.com` is home to [Metricly][9]'s documentation for end users, API developers, and DevOps admins.
+`docs.metricly.com` is home to [Metricly's](https://www.metricly.com) documentation for end users, API developers, and DevOps admins.
 
 ### {{< icon name="fa-compass" >}} Navigation
 
