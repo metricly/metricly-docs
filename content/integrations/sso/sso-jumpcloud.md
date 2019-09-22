@@ -42,7 +42,7 @@ Keep this tab open and open a new tab; you must now login to JumpCloud and uploa
   - **firstName**: `firstname`
   - **lastName**: `lastname`
   - **role**: `"Read Only"`
-6. Add your tenant name to the **Default Relay State** field if you do not want to enter it when logging into Metricly from Azure. Your tenant name is the company name you used when you signed up for a Metricly account. Contact support if you do not know your tenant name.
+6. Add your tenant name to the **Default Relay State** field if you do not want to enter it when logging into Metricly from JumpCloud. Your tenant name is the company name you used when you signed up for a Metricly account. Contact support if you do not know your tenant name.
 ![jc-relay-state](/images/sso-jumpcloud/jc-relay-state.png)
 7. **Save** your new SSO application.
 
