@@ -7,7 +7,7 @@ author: Lawrence Lane
 ---
 
 {{% alert success %}}
-Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your Sales Representative.
+Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [Sales Representative](mailto:sales@metricly.com).
 {{% /alert %}}
 
 ## Supported SSO integrations
