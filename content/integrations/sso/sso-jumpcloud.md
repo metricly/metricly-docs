@@ -51,7 +51,7 @@ Be careful not to accidentally create your **USER ATTRIBUTES** (green) under **C
 ![jc-user-attributes-tip](/images/sso-jumpcloud/jc-user-attributes-tip.png)
 {{% /notice %}}
 
-Now you are ready to download your certification and metadata to be uploaded to Metricly.
+Now you are ready to download your certificate and metadata to be uploaded to Metricly.
 
 ### Download IDP Certificate & Export Metadata
 1. Expand the **IDP Certificate Valid** menu on the left of the app.
