@@ -10,7 +10,7 @@ weight: 3
 
 You already have a tagging strategy in place and you've mastered exploring your costs by services, attributes, and tags. So what's next?
 
-Another great way to discover savings opportunities (or simply gain more context for your bill) is to examine what _hasn't_ been tagged. The easiest way to find resources that are missing tags is to use the Billing Analysis tool.
+Another great way to discover savings opportunities (or simply gain more context for your bill) is to examine what _hasn't_ been given a particular value for a tag. The easiest way to find resources that are missing tags is to use the Billing Analysis tool.
 
 ## Prerequisites
 
@@ -62,19 +62,19 @@ Now you are ready to use Cost Allocation Tags to analyze your bill in Metricly.
 
 Use this information to triangulate resources you are paying for that may have gone unlabeled. Keeping untagged resources to a minimum is a great way to prevent cost creep!
 
-### 2. Filter billing data by not specified tag
+### 2. Filter billing data for resources where a specific tag is missing
 
-You can also jump straight to untagged resources by filtering by **Tags** > ` * Not Specified *`.
+You can search for resources where no value for a specific tag has been specified. This can be particularly useful for tags that clearly divide your resources by applications, departments, and projects.
 
 1. Log in to Metricly and navigate to **Cost Management** > **Billing Analysis**.
 2. Select the time frame you wish to analyze.
   - A larger time frame may help you discover the most significant resources missing tags.
 3. Select **Configure**. A modal appears.
 4. Choose the **Stacked View** visalization.
-5. Filter by **Tag** > `* Not Specified *`. This automatically selects all costs which are not tagged.
-![tag-not-specified-filter](/images/how-to-find-uncategorized-costs/tag-not-specified-filter.png)
+5. Filter by **Tag** > input a key, such as `app` > `* Not Specified *`. This automatically selects all costs that have no specified tag value for the `app` key selected.
+![app-no-value-specified](/images/how-to-find-resources-missing-tags/app-no-value-specified.png)
 6. Now you can group by other dimensions to quickly analyze all untagged spend.
 7. Change the **Grouped By** value to `Operations`.
 8. Change the **Stacked By** value to `Usage Type`.
 9. Now, all untagged operations are broken down by usage type. Hover over a bar to see each operation's amount of spend by usage type.
-![untagged-spend-grouped-by-operations](/images/how-to-find-uncategorized-costs/untagged-spend-grouped-by-operations.png)
+![untagged-spend-grouped-by-ops](/images/how-to-find-resources-missing-tags/untagged-spend-grouped-by-ops.png)
