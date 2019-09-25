@@ -8,7 +8,7 @@ author: Lawrence Lane
 weight: 4
 ---
 
-## 1. Enable Detailed Billing
+## 1. Enable Detailed Billing Reports in AWS
 
 1. Log in to your AWS console.
 2. Navigate to **Username** > **My Billing Dashboard**.
