@@ -8,67 +8,28 @@ author: Lawrence Lane
 weight: 4
 ---
 
-## How to Enable Detailed Billing
-- If you already have an S3 bucket receiving billing files from Amazon, then you do not need to complete steps 1 and 2. You can go directly to step 3 to provide Metricly access to the existing files.
-- If you have already created an S3 bucket, you will not need to create a separate one. Just be sure to select the correct S3 bucket in step 2.
+## 1. Enable Detailed Billing
 
-### 1. Create an S3 Bucket
+1. Log in to your AWS console.
+2. Navigate to **Username** > **My Billing Dashboard**.
+![my-billing-dboard](/images/AWS-Detailed-Billing/my-billing-dboard.png)
+3. Navigate to **Billing Preferences**.
+![navigate-billing-preferences](/images/AWS-Detailed-Billing/navigate-billing-preferences.png)
+4. Expand **Detailed Billing Reports [Legacy]** and check **Turn on the legacy Detailed Billing...**.
+![enable-detail-billing-legacy](/images/AWS-Detailed-Billing/expand legacy.gif)
+5. Select **Configure**. A modal appears.
+6. Create an S3 bucket with a name, such as `metricly-detailed-billing`.
+![create s3](/images/AWS-Detailed-Billing/create-s3.png)
+7. Select **Next**. A default policy is generated.
+8. Confirm the policy is correct.
+![confirm policy](/images/AWS-Detailed-Billing/confirm-policy.png)
+9. **Save**. Report options populate on your AWS console's Billing Preferences.
+11. Enable all reports.
+![enable all reports](/images/AWS-Detailed-Billing/enable-all-reports.png)
+12. Select **Save Preferences**.
 
-1. Log into AWS and navigate to the **Services** > **S3**.  
-2. Click **Create Bucket**.  
-![Create s3 Bucket](/images/AWS-Detailed-Billing/create-s3-bucket.png)
-3. Type a unique `Bucket Name`, select a region, and click **Create**.  
-![Create s3 Bucket pt2](/images/AWS-Detailed-Billing/create-s3-bucket-pt2.png)
 
-## 2. Enable Detailed Billing Reports
-1. In AWS, click your **Username** > **My Billing Dashboard**. Then in the left-hand menu, click **Preferences**.  
-2. Select the **Receive Billing Reports** checkbox.  
-3. In the Save to S3 Bucket field, enter the bucket name of the bucket you created in Step 1 and click **Sample Policy**.    
-![Recieve Billing Reports](/images/AWS-Detailed-Billing/recieve-billing-reports.png)
-4. Copy the generated policy.
-5. In a new, separate tab, navigate to the S3 bucket you created in Step 1 (**Services** > **S3** > **Bucket Name**).
-6. Navigate to the Permissions tab and click **Bucket Policy**.
-7. Paste the following policy and click **Save**:
-![Bucket Policy](/images/AWS-Detailed-Billing/bucket-policy.png)
-
-```  
-{
-  "Version": "2008-10-17",
-  "Id": "Policy1335892530063",
-  "Statement": [
-    {
-      "Sid": "Stmt1335892150622",
-      "Effect": "Allow",
-      "Principal": {
-        "AWS": "arn:aws:iam::386209384616:root"
-      },
-      "Action": [
-        "s3:GetBucketAcl",
-        "s3:GetBucketPolicy"
-      ],
-      "Resource": "arn:aws:s3:::metricly-example"
-    },
-    {
-      "Sid": "Stmt1335892526596",
-      "Effect": "Allow",
-      "Principal": {
-        "AWS": "arn:aws:iam::386209384616:root"
-      },
-      "Action": [
-        "s3:PutObject"
-      ],
-      "Resource": "arn:aws:s3:::metricly-example/*"
-    }
-  ]
-}
-```
-8. Return to the previous tab (Preferences section in the Billing & Cost Management page), and click **Verify** next to the Save to S3 Bucket field. For Amazon to correctly verify the bucket, the bucket must exist--_match the name you typed in the field_--and have appropriate permissions set (e.g., the sample policy you added in the previous step).  
-9. Once your bucket is verified, select the check boxes within the Report section next to all of the reports, including Monthly report, Detailed billing report, Cost allocation report, and Detailed billing report with resources and tags.  
-![Select Reports](/images/AWS-Detailed-Billing/select-reports.png)
-10. Optionally, click **Manage report tags** below the billing report options and enable all desired tags.  
-11. Click **Save Preferences**. It can take up to 24 hours before files start arriving in the S3 bucket.  
-
-## 3. Update your AWS integration in Metricly
+## 2. Update your AWS integration in Metricly
 1. From the top navigation menu, select **Integrations**.
 2. Click the **Amazon Web Services** card.
 3. Toggle **Detailed Billing** and scroll to the final section.
