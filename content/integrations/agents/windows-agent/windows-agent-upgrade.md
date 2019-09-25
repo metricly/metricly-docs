@@ -10,3 +10,16 @@ To upgrade the Windows agent, follow the installation steps listed on the main W
 {{% notice info %}}
 Installing a new version of the agent will overwrite changes you have made to existing agent configuration files located in `C:\Program Files\CollectdWin\config` or `C:\Program Files (x86)\CollectdWin\config` depending on your environment. To preserve those changes, it is recommended you create backups of the files prior to upgrading.
 {{% /notice%}}
+
+## Check Version
+
+You may need the verify the version of the Windows agent you’re currently using.
+
+1. Open the [Element Detail panel][1] for a WINSRV element.
+2. Navigate to **Attributes** (squared in green).
+3. Verify that the **agent** (squared in blue) contains the correct version number.
+
+![step 2-3](/images/windows-agent-check-version/step-2-3.png)
+
+
+[1]: /capacity-monitoring/inventory
