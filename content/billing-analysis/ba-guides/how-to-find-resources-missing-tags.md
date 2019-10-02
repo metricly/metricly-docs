@@ -62,16 +62,16 @@ Now you are ready to use Cost Allocation Tags to analyze your bill in Metricly.
 
 Use this information to triangulate resources you are paying for that may have gone unlabeled. Keeping untagged resources to a minimum is a great way to prevent cost creep!
 
-### 2. Filter billing data for resources where a specific tag is missing
+### 2. Filter billing data for resources where a given tag is missing
 
-You can search for resources where no value for a specific tag has been specified. This can be particularly useful for tags that clearly divide your resources by applications, departments, and projects.
+You can search for resources where no value for a given tag has been specified. This can be particularly useful for tags that clearly divide your resources by applications, departments, and projects.
 
 1. Log in to Metricly and navigate to **Cost Management** > **Billing Analysis**.
 2. Select the time frame you wish to analyze.
   - A larger time frame may help you discover the most significant resources missing tags.
 3. Select **Configure**. A modal appears.
 4. Choose the **Stacked View** visalization.
-5. Filter by **Tag** > input a key, such as `app` > `* Not Specified *`. This automatically selects all costs that have no specified tag value for the `app` key selected.
+5. Filter by **Tag** > input a key, such as `app` > `* Not Specified *`. This selects all costs that have no value for the `app` tag.
 ![app-no-value-specified](/images/how-to-find-resources-missing-tags/app-no-value-specified.png)
 6. Now you can group by other dimensions to quickly analyze all untagged spend.
 7. Change the **Grouped By** value to `Operations`.
