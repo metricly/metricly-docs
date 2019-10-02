@@ -69,17 +69,11 @@ There are three Docker Agent collector modes: Simple Mode, Minimal Mode, and Sta
 
 #### Network
 
-| Fully Qualified Name(FQN) | Type | Units | Statistic* | BASE | CORR | Description |
-|---------------------------|------|-------|------------|------|------|-------------|
-| network.eth0.rx_bytes |  |  |  |  |  |  |
-| network.eth0.rx_dropped |  |  |  |  |  |  |
-| network.eth0.rx_errors |  |  |  |  |  |  |
-| network.eth0.rx_packets |  |  |  |  |  |  |
-| network.eth0.tx_bytes |  |  |  |  |  |  |
-| network.eth0.tx_dropped |  |  |  |  |  |  |
-| network.eth0.tx_errors |  |  |  |  |  |  |
-| network.eth0.tx_packets |  |  |  |  |  |  |
-
+| Fully Qualified Name(FQN) | Units | Statistic* | BASE | CORR |
+|---------------------------|-------|------------|------|------|
+| network.eth0.rx_bytes | sum | counter | yes | yes |
+| network.eth0.rx_dropped | count | counter | no | no |
+| network.eth0.rx_errors | count | counter | no | no |
 ## Standard Mode
 
 See our [docker metrics][1] pages for a list of all metrics ingested by Standard Mode.
