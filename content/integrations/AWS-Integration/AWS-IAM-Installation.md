@@ -12,8 +12,8 @@ weight: 2
 
 Setting up an AWS integration via IAM Role is a three step process:
 
-1. Create a new AWS integration in Metricly using an IAM read-only role.
- - Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
+1. Create a new AWS integration in Metricly.
+ - Optionally, define data filters for AWS elements to be included/excluded in Metricly using tags (key-value pair).
 2. Create an IAM role in your AWS Console.
 3. Add your IAM Role's ARN to your AWS integration in Metricly.
 
