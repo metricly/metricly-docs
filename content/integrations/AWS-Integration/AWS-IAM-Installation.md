@@ -117,15 +117,14 @@ If you want to use a limited read only access policy, you’ll need to create a 
 7. Select **Review Policy**.
 8. Provide a **Name**.
 9. Review the permissions summary and select **Create Policy**.
-10. Follow **Section 2** of this guide, replacing **step 8** with your custom minimal policy.
+10. Follow **Section 2** of this guide, replacing **step 8** with your custom minimal permissions policy.
 
 ### Step 3: Update AWS Integration in Metrily with the Role ARN
 
-1. Login to Metricly and navigate to **Integrations**.
-2. Open the **Amazon Web Services** card.
-3. Add the Role ARN from the IAM role found in your AWS Console.
+1. Return to the open Metricly tab from **Step 1**.
+2. Add the Role ARN from the IAM role found in your AWS Console.
 ![arn-role](/images/AWS-IAM-Installation/arn-role.png)
-4. **Save**.
+3. **Save**.
 
 ---
 
