@@ -10,53 +10,63 @@ weight: 2
 ---
 ## IAM Role Method
 
-Setting up an AWS integration via IAM Role is a two step process:
+Setting up an AWS integration via IAM Role is a three step process:
 
-Create a new AWS integration in Metricly using an IAM read-only role.
-Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
+1. Create a new AWS integration in Metricly using an IAM read-only role.
+ - Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
+2. Create an IAM role in your AWS Console.
+3. Add your IAM Role's ARN to your AWS integration in Metricly.
+
 
 {{% notice tip %}}
 If you already have an existing IAM role for Metricly but it does not include a policy for Cost Explorer, skip to the last section.
 {{% /notice %}}
 
-### Step 1: Create a new AWS integration
-1. From the top navigation menu, select Integrations.
-2. Click the Amazon Web Services card.
-3. Type a name for the new AWS integration. Ensure that Data Collection is selected.
-4. For AWS Authentication, select IAM Role.
+### Step 1: Create a new AWS integration in Metricly
+1. Login to Metricly and select the **Integrations** icon.
+![integrations-icon](/images/AWS-IAM-Installation/integrations-icon.png)
+2. Select the **Amazon Web Services** card.
+3. Provide a name for the new AWS integration.
+4. Enable **Detailed Billing** and **Explorer API**.
+   - Once you have finished all setup on this page, see the [Detailed Billing steps](/integrations/aws-integration/aws-detailed-billing).
+4. For Authentication, select **IAM Role**.
 5. In a separate, new tab, open your AWS console.
 
-### Step 2a: Create Read Only Role (with standard permissions)
-1. Log in to your AWS Identity & Access Management (IAM) Console.
-2. Once in the IAM dashboard, navigate to the Roles section.
-3. Click Create New Role.
-4. For Role Name, type Metricly and click Next Step.
-5. For Role Type, select Role for Cross-Account Access.
-6. Click Select next to the “Provide access between your AWS account and a 3rd party AWS account” option.
-7. On the tab that has the AWS Integration Setup page open, copy the Account ID and the External ID provided to you.
-8. On the tab that has the AWS console open, paste your Account ID and External ID into the appropriate fields. Leave Require MFA unchecked. Click Next Step.
-9. For Attach Policy, add all of the following:
+### Step 2: Create Read Only Role (with standard permissions)
+
+1. Log in to your **AWS Console**.
+2. In **Find Services**, search for `IAM` and select the result.
+![select-IAM](/images/AWS-IAM-Installation/select-iam.png)
+3. Select **Roles**.
+4. Select **Create role**.
+5. Select **Another AWS Account**
+![another-aws-accnt](/images/AWS-IAM-Installation/another-aws-accnt.png)
+6. Provide the **Account ID** from your Metricly AWS integration. _Leave Require MFA unchecked_.
+7. Select **Next: Permissions**.
+8. For Attach permission policies, add all of the following:
  - CostExplorerAPIAccess
  - AmazonMQReadOnlyAccess
  - ReadOnlyAccess
-10. Click Next Step to review the role and access the Role ARN.
-11. Copy the Role ARN.
-12. After copying the Role ARN, click Create Role.
+9. Select **Next Step: Tags** and add any needed tags.
+10. Select **Next: Review**.
+11. Add **Role Name**: `Metricly`.
+12. Select **Create Role**.  You are returned to IAM Roles in your AWS console.
+13. Select the new role you have created.
+14. Copy the **Role ARN**.
+![role-arn](/images/AWS-IAM-Installation/role-arn.png)
 
-If you are not able to create a new read only role through the AWS Identity & Access Management (IAM) dashboard, see Access Key authentication.
 
-Please make sure you save the role in the AWS console before you attempt the next step.
+#### Alternative: Create a Custom Policy with Minimal Permissions (Read Only Role)
 
-### Step 2b: Creating a Read Only Role (with minimal permissions)
-If you want to use a limited read only access policy, you’ll need to create a custom policy first.
+If you want to use a limited read only access policy, you’ll need to create a custom policy _before_  creating an IAM role.
 
-1. Log in to your AWS Identity & Access Management (IAM) Console.
-2. Once in the IAM dashboard, navigate to the Policies section.
-3. Click Create Policy in the top left-hand corner.
-4. Click Select next to Create Your Own Policy.
-5. Type a Policy Name into the field.
-6. Type a description of the policy.
-7. Copy and paste the following code into the Policy Document section.
+1. Log in to your **AWS Console**.
+2. In **Find Services**, search for `IAM` and select the result.
+![select-IAM](/images/AWS-IAM-Installation/select-iam.png)
+3. Select **Policies**.
+4. Select **Create Policy**.
+5. Switch to the **JSON** tab.
+6. Copy and paste the following code into the Policy Document section.
 
 ```json
 {
@@ -104,6 +114,20 @@ If you want to use a limited read only access policy, you’ll need to create a 
 ]
 }
 ```
+7. Select **Review Policy**.
+8. Provide a **Name**.
+9. Review the permissions summary and select **Create Policy**.
+10. Follow **Section 2** of this guide, replacing **step 8** with your custom minimal policy.
+
+### Step 3: Update AWS Integration in Metrily with the Role ARN
+
+1. Login to Metricly and navigate to **Integrations**.
+2. Open the **Amazon Web Services** card.
+3. Add the Role ARN from the IAM role found in your AWS Console.
+![arn-role](/images/AWS-IAM-Installation/arn-role.png)
+4. **Save**.
+
+---
 
 ## Add Inline Policy to Existing IAM Role
 
