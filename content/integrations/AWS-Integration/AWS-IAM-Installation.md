@@ -10,53 +10,92 @@ weight: 2
 ---
 ## IAM Role Method
 
-Setting up an AWS integration via IAM Role is a two step process:
+Setting up an AWS integration via IAM Role is a four step process:
 
-Create a new AWS integration in Metricly using an IAM read-only role.
-Optionally, filter your AWS elements for inclusion in Metricly by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.
+1. Create a new AWS integration in Metricly.
+ - Optionally, define data filters for AWS elements to be included/excluded in Metricly using tags (key-value pair).
+2. Create a custom in-line policy for Cost Explorer API access.
+3. Create an IAM role in your AWS Console.
+4. Add your IAM Role's ARN to your AWS integration in Metricly.
+
 
 {{% notice tip %}}
 If you already have an existing IAM role for Metricly but it does not include a policy for Cost Explorer, skip to the last section.
 {{% /notice %}}
 
-### Step 1: Create a new AWS integration
-1. From the top navigation menu, select Integrations.
-2. Click the Amazon Web Services card.
-3. Type a name for the new AWS integration. Ensure that Data Collection is selected.
-4. For AWS Authentication, select IAM Role.
-5. In a separate, new tab, open your AWS console.
+### 1: Create a new AWS integration in Metricly
+1. Login to Metricly and select the **Integrations** icon.
+![integrations-icon](/images/AWS-IAM-Installation/integrations-icon.png)
+2. Select the **Amazon Web Services** card.
+3. Select **Add Integration** to create a new integration. (If updating an existing integration, select **View Current Integrations**).
+![add-integration](/images/AWS-IAM-Installation/add-integration.png)
+4. Provide a name for the new AWS integration.
+5. Enable **Detailed Billing** and **Explorer API**.
+   - Once you have finished all setup on this page, see the [Detailed Billing steps](/integrations/aws-integration/aws-detailed-billing).
+6. For Authentication, select **IAM Role**.
+7. In a separate, new tab, open your AWS console.
 
-### Step 2a: Create Read Only Role (with standard permissions)
-1. Log in to your AWS Identity & Access Management (IAM) Console.
-2. Once in the IAM dashboard, navigate to the Roles section.
-3. Click Create New Role.
-4. For Role Name, type Metricly and click Next Step.
-5. For Role Type, select Role for Cross-Account Access.
-6. Click Select next to the “Provide access between your AWS account and a 3rd party AWS account” option.
-7. On the tab that has the AWS Integration Setup page open, copy the Account ID and the External ID provided to you.
-8. On the tab that has the AWS console open, paste your Account ID and External ID into the appropriate fields. Leave Require MFA unchecked. Click Next Step.
-9. For Attach Policy, add all of the following:
- - CostExplorerAPIAccess
+### 2: Create a Custom In-line Policy for Cost Explorer API Access
+
+1. Log in to your **AWS Console**.
+2. In **Find Services**, search for `IAM` and select the result.
+![select-IAM](/images/AWS-IAM-Installation/select-iam.png)
+3. Select **Policies**.
+4. Select **Create Policy**.
+5. Switch to the **JSON** tab.
+6. Copy and paste the following code into the Policy Document section.
+```
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+"Action": "ce:*",
+"Resource": "*",
+"Effect": "Allow"
+}
+]
+}
+```
+7. Select **Review Policy**.
+8. Provide a **Name**, such as `CostExplorerAPIAccess`. You must add this customer managed policy to your IAM role in **Part 3**.
+9. Review the permissions summary and select **Create Policy**.
+
+### 3: Create Read Only Role (with standard permissions)
+
+1. Log in to your **AWS Console**.
+2. In **Find Services**, search for `IAM` and select the result.
+![select-IAM](/images/AWS-IAM-Installation/select-iam.png)
+3. Select **Roles**.
+4. Select **Create role**.
+5. Select **Another AWS Account**
+![another-aws-accnt](/images/AWS-IAM-Installation/another-aws-accnt.png)
+6. Provide the **Account ID** from your Metricly AWS integration. _Leave Require MFA unchecked_.
+7. Select **Next: Permissions**.
+8. For Attach permission policies, add all of the following:
+ - CostExplorerAPIAccess (**Filter policies** > **Customer Managed**)
  - AmazonMQReadOnlyAccess
  - ReadOnlyAccess
-10. Click Next Step to review the role and access the Role ARN.
-11. Copy the Role ARN.
-12. After copying the Role ARN, click Create Role.
+ ![customer-managed](/images/AWS-IAM-Installation/customer-managed.png)
+9. Select **Next Step: Tags** and add any needed tags; **this is an optional step and you may skip it.**
+10. Select **Next: Review**.
+11. Add **Role Name**: `Metricly`.
+12. Select **Create Role**.  You are returned to IAM Roles in your AWS console.
+13. Select the new role you have created.
+14. Copy the **Role ARN**.
+![role-arn](/images/AWS-IAM-Installation/role-arn.png)
 
-If you are not able to create a new read only role through the AWS Identity & Access Management (IAM) dashboard, see Access Key authentication.
 
-Please make sure you save the role in the AWS console before you attempt the next step.
+#### Alternative: Create a Custom Policy with Minimal Permissions (Read Only Role)
 
-### Step 2b: Creating a Read Only Role (with minimal permissions)
-If you want to use a limited read only access policy, you’ll need to create a custom policy first.
+If you want to use a limited read only access policy, you’ll need to create a custom policy _before_  creating an IAM role.
 
-1. Log in to your AWS Identity & Access Management (IAM) Console.
-2. Once in the IAM dashboard, navigate to the Policies section.
-3. Click Create Policy in the top left-hand corner.
-4. Click Select next to Create Your Own Policy.
-5. Type a Policy Name into the field.
-6. Type a description of the policy.
-7. Copy and paste the following code into the Policy Document section.
+1. Log in to your **AWS Console**.
+2. In **Find Services**, search for `IAM` and select the result.
+![select-IAM](/images/AWS-IAM-Installation/select-iam.png)
+3. Select **Policies**.
+4. Select **Create Policy**.
+5. Switch to the **JSON** tab.
+6. Copy and paste the following code into the Policy Document section.
 
 ```json
 {
@@ -104,39 +143,14 @@ If you want to use a limited read only access policy, you’ll need to create a 
 ]
 }
 ```
+7. Select **Review Policy**.
+8. Provide a **Name**.
+9. Review the permissions summary and select **Create Policy**.
+10. Follow **Part 3** of this guide, replacing **step 8** with your custom minimal permissions policy.
 
-## Add Inline Policy to Existing IAM Role
+### 4: Update AWS Integration in Metricly with the Role ARN
 
-This section is for customers who created Metricly accounts before 12/01/2018 or any customer who has an existing IAM role that is missing a policy for Cost Explorer. Adding this policy enables Metricly to report on and analyze your AWS Cost Explorer data.
-
-### Step 1: Update IAM Role
-
-1. In the AWS Console, Navigate to **IAM** > **Roles**.
-2. Select your **Metricly** Iam role (or _Netuitive_, if you created this policy before the rebrand).
-
-![iam-role-img](/images/AWS-IAM-Installation/iam-role-img.png)
-The last policy in this list is created by our current cloud formation script.  But if this policy does not exist in your current IAM role, you can create and add it from your AWS console.
-
-
-3. Select **Add inline policy** and choose the **JSON** tab to paste the following in the editor:
-```
-"Version": "2012-10-17",
-"Statement": [
-{
-"Action": "ce:*",
-"Resource": "*",
-"Effect": "Allow"
-}
-]
-```
-4. Select **Review Policy**.
-![create-policy](/images/AWS-IAM-Installation/create-policy.png)
-
-5. Name the policy and select **Create Policy**.
-![name-policy](/images/AWS-IAM-Installation/name-policy.png)
-
-### Step 2: Enable Detailed Billing
-1. Login to your Metricly account.
-2. Navigate to **Integrations** > **AWS** > your datasource.
-3. Enable **Detailed Billing** in Metricly.
-![enable-detailed-billing](/images/AWS-IAM-Installation/enable-detailed-billing.png)
+1. Return to the open Metricly tab from **Step 1**.
+2. Add the Role ARN from the IAM role found in your AWS Console.
+![arn-role](/images/AWS-IAM-Installation/arn-role.png)
+3. **Save**.
