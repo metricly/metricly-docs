@@ -48,24 +48,24 @@ There are three Docker Agent collector modes: Simple Mode, Minimal Mode, and Sta
 |----------------------------------|---------|-------|------------|------|------|-------------------------------------------------------------|
 | memory.limit | GAUGE | bytes | average | no | no | The total amount of memory available to the container. |
 | memory.max_usage | GAUGE | bytes | average | no | no | The maxiumum amount of memory the container has ever used. |
-| memory.stats.active_anon | GAUGE | bytes | average | no | no |  |
-| memory.stats.active_file | GAUGE | bytes | average | no | no |  |
-| memory.stats.inactive_anon | GAUGE | bytes | average | no | no |  |
-| memory,stats.inactive_file | GAUGE | bytes | average | no | no |  |
-| memory.stats.mapped_file | GAUGE | bytes | average | no | no |  |
-| memory.stats.total_active_anon | GAUGE | bytes | average | yes | no |  |
-| memory.stats.total_active_file | GAUGE | bytes | average | no | no |  |
-| memory.stats_total_cache | GAUGE | bytes | average | no | no |  |
-| memory.stats.total_inactive_anon | GAUGE | bytes | average | no | no |  |
-| memory.stats.total_inactive_file | GAUGE | bytes | average | no | no |  |
-| memory.stats.total_mapped_file | GAUGE | bytes | average | no | no |  |
-| memory.stats.total_pgpgin | COUNTER | bytes |  | yes | no |  |
-| memory.stats.total_pgpgout | COUNTER | bytes |  | yes | no |  |
-| memory.stats.total_rss | GAUGE | bytes | average | yes | no |  |
-| memory.stats.total_unevictable | GAUGE | bytes | average | no | no |  |
+| memory.stats.active_anon | GAUGE | bytes | average | no | no | The amount of anonymous memory that has been identified as active and by the kernel. “Anonymous” memory is the memory that is not linked to disk pages. |
+| memory.stats.active_file | GAUGE | bytes | average | no | no | Part of cache memory. Cache = active_file + inactive_file + tmpfs.  |
+| memory.stats.inactive_anon | GAUGE | bytes | average | no | no |The amount of anonymous memory that has been identified as inactive and by the kernel. “Anonymous” memory is the memory that is not linked to disk pages.|
+| memory.stats.inactive_file | GAUGE | bytes | average | no | no | Part of cache memory. Cache = active_file + inactive_file + tmpfs.  |
+| memory.stats.mapped_file | GAUGE | bytes | average | no | no | 	Indicates the amount of memory mapped by the processes in the control group. It doesn’t give you information about how much memory is used; it rather tells you how it is used. |
+| memory.stats.total_active_anon | GAUGE | bytes | average | yes | no | The total amount of anonymous memory that has been identified as active and by the kernel. “Anonymous” memory is the memory that is not linked to disk pages.|
+| memory.stats.total_active_file | GAUGE | bytes | average | no | no | Part of cache memory. Cache = active_file + inactive_file + tmpfs. |
+| memory.stats_total_cache | GAUGE | bytes | average | no | no | The amount of memory used by the processes of this control group that can be associated precisely with a block on a block device. |
+| memory.stats.total_inactive_anon | GAUGE | bytes | average | no | no | The total amount of anonymous memory that has been identified as inactive and by the kernel. “Anonymous” memory is the memory that is not linked to disk pages.|
+| memory.stats.total_inactive_file | GAUGE | bytes | average | no | no | Part of cache memory. Cache = active_file + inactive_file + tmpfs. |
+| memory.stats.total_mapped_file | GAUGE | bytes | average | no | no | The total amount of memory mapped by the processes in the control group.|
+| memory.stats.total_pgpgin | COUNTER | bytes | count | yes | no | Total number of charging events. |
+| memory.stats.total_pgpgout | COUNTER | bytes | count | yes | no | Total number of uncharging events. |
+| memory.stats.total_rss | GAUGE | bytes | average | yes | no | The amount of memory that doesn’t correspond to anything on disk: stacks, heaps, and anonymous memory maps. |
+| memory.stats.total_unevictable | GAUGE | bytes | average | no | no | The amount of memory that cannot be reclaimed; generally, it accounts for memory that has been “locked” with mlock. It is often used by crypto frameworks to make sure that secret keys and other sensitive material never gets swapped out to disk. |
 | memory.usage | GAUGE | bytes | average | yes | no | The amount of memory currently being used by the container. |
-| memory.stats.total_rss_huge | GAUGE | bytes | average | yes | no |  |
-| memory.stats.total_writeback | GAUGE | bytes | average | yes | no |  |
+| memory.stats.total_rss_huge | GAUGE | bytes | average | yes | no | The total amount of memory used by anonymous transparent hugepages.|
+| memory.stats.total_writeback | GAUGE | bytes | average | yes | no | The total amount of file/anon cache memory queued for syncing to the disk |
 
 #### Network
 
