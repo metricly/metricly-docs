@@ -1,5 +1,5 @@
 ---
-title: "Billing Analysis"
+title: "Bill Analysis"
 #date: 2018-04-12
 draft: false
 categories:
