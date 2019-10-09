@@ -1,5 +1,5 @@
 ---
-title: "Billing Analysis"
+title: "Bill Analysis"
 #date: 2018-04-12
 draft: false
 categories:
@@ -11,9 +11,9 @@ pre:
 ---
 ![cost-test](/images/_index/cost-test.png)
 
-## About Billing Analysis
+## About Bill Analysis
 
-View data across all of your AWS services with the Billing Analysis tool. This tool shows not only services currently used, but all services–including those not currently monitored by Metricly–-to provide an overall view of your [AWS cost](https://www.metricly.com/aws-cost-tool/). This report can include data from multiple accounts if consolidated billing has been set up and configured. See the admin guide for any installation and configuration steps.
+View data across all of your AWS services with the Bill Analysis tool. This tool shows not only services currently used, but all services–including those not currently monitored by Metricly–-to provide an overall view of your [AWS cost](https://www.metricly.com/aws-cost-tool/). This report can include data from multiple accounts if consolidated billing has been set up and configured. See the admin guide for any installation and configuration steps.
 
 **This tool helps you:**
 
