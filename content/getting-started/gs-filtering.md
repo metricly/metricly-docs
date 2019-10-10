@@ -19,7 +19,7 @@ There are several types of filters used in Metricly. Each one provides a unique 
 
 Inclusion filters limit the scope of your search results to a set of items matching a given criteria, such as an `element name` or `tag value`. This filter is best used when you have a few, specific items you want selected.
 
-#### Inclusion Examples
+#### Inclusion Filter Examples
 
 - **Name contains**: A search field that returns a list of items with names including the value provided (e.g., `ECS-spot`).
 - **Element**: A dropdown multi-select of all elements; includes a search field.  
@@ -34,11 +34,11 @@ Inclusion filters limit the scope of your search results to a set of items match
 
 Exclusion filters limit the scope of your search results to everything _except_ the selected items that match a given criteria. For example, excluding the App tag `VPN` would return a list of all elements which **do not include** the VPN tag. This filter is best used when you want the bulk of given elements available--except for those with certain attributes or tags.
 
-#### Exclusion Examples
+#### Exclusion Filter Examples
 
-- **Name excludes**: A search field that returns a list of items with names including the value provided (e.g., `EC2`).
-- **Exclude Attribute**: A dropdown multi-select of all attributes; includes a search field and all/any option.
-- **Exclude Tag**: A dropdown multi-select of all tags; includes a search field and all/any option.
+- **Name excludes**: A search field that removes items from a displayed list which match the value provided (e.g., `EC2`).
+- **Exclude Attribute**: A dropdown multi-select of all excludable attributes ; includes a search field and all/any option.
+- **Exclude Tag**: A dropdown multi-select of all excludable tags; includes a search field and all/any option.
 
 ![exclusion-filters](/images/gs-filtering/exclusion-filters.png)
 
