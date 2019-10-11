@@ -10,7 +10,7 @@ weight: 3
 
 You already have a tagging strategy in place and you've mastered exploring your costs by services, attributes, and tags. So what's next?
 
-Another great way to discover savings opportunities (or simply gain more context for your bill) is to examine what _hasn't_ been given a particular value for a tag. The easiest way to find resources that are missing tags is to use the Billing Analysis tool.
+Another great way to discover savings opportunities (or simply gain more context for your bill) is to examine what _hasn't_ been given a particular value for a tag. The easiest way to find resources that are missing tags is to use the Bill Analysis tool.
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ Now you are ready to use Cost Allocation Tags to analyze your bill in Metricly.
 
 ### 1. Group costs by tag
 
-1. Log in to Metricly and navigate to **Cost Management** > **Billing Analysis**.
+1. Log in to Metricly and navigate to **Cost Management** > **Bill Analysis**.
 2. Select the time frame you wish to analyze.
   - A larger time frame may help you discover the most significant resources missing tags.
 3. Select **Configure**. A modal appears.
@@ -66,7 +66,7 @@ Use this information to triangulate resources you are paying for that may have g
 
 You can search for resources where no value for a given tag has been specified. This can be particularly useful for tags that clearly divide your resources by applications, departments, and projects.
 
-1. Log in to Metricly and navigate to **Cost Management** > **Billing Analysis**.
+1. Log in to Metricly and navigate to **Cost Management** > **Bill Analysis**.
 2. Select the time frame you wish to analyze.
   - A larger time frame may help you discover the most significant resources missing tags.
 3. Select **Configure**. A modal appears.

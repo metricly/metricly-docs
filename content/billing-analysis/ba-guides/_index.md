@@ -12,8 +12,8 @@ Metricly’s Bill Analysis tool uncomplicates the task of tracking and budgeting
 
 ### About
 
-- These guide show you how to use the Billing Analysis tool using different scenarios; for a **full list of features, see our Billing Analysis Documentation pages**.
-- The Billing Analysis tool **requires at least one AWS datasource enabled** on your account.
+- These guide show you how to use the Bill Analysis tool using different scenarios; for a **full list of features, see our Bill Analysis Documentation pages**.
+- The Bill Analysis tool **requires at least one AWS datasource enabled** on your account.
 
 ## Guides  
 
