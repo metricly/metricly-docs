@@ -49,23 +49,20 @@ The bucket name is case sensitive and must exactly match the bucket created in S
 The following best practices ensure optimal detailed billing setup.
 
 ### 1. Use Dedicated S3  Buckets
-Keep your billing files in one dedicated s3 bucket for each AWS account you have.
 
-**Doing so prevents**:
+Keep your billing files in a dedicated S3 bucket. Having a large number of other files in the same S3 bucket requires more API calls to locate your billing files.
 
-- longer file queries
-- high processing cost
-- duplicate file names
+Don't write billing files from more than one AWS account into the same S3 bucket, as the filenames can be confused.
 
 
 ### 2. Request Detailed Billing Setup for Resold Resources
 
-You may not have access to your billing preferences if you have purchased AWS services through a reseller. You must contact your reseller and request to be set up with an s3 bucket to store your detailed billing data.
+You may not have access to your billing preferences if you have purchased AWS services through a reseller. You must contact your reseller and request to be set up with an S3 bucket to store your detailed billing data.
 
 {{% notice tip %}}
 Extracts or summaries of your billing data must have the exact same file name format and file structure of AWS detailed billing files to be ingested by Metricly.
 {{% /notice %}}
 
-**Reseller concerned about sharing an s3 bucket?**
+**Reseller concerned about sharing an S3 bucket?**
 
 Metricly only reads the costs for accounts that we monitor; we discard all data for any unrelated accounts. You can also have them reach out to our support team with any questions they may have.
