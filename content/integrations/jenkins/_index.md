@@ -23,7 +23,7 @@ Jenkins is  an open source automation server which enables developers around the
 ![jenkins-manage-plugins](/images/_index/jenkins-manage-plugins.png)
 4. Select the **Advanced** tab.
 ![jenkins-adv-tab](/images/_index/jenkins-adv-tab.png)
-5. Under Upload Plugin, select **Choose File** > **jenkins-metricly-plugin.phi**.
+5. Under Upload Plugin, select **Choose File** > **jenkins-metricly-plugin.hpi**.
 6. Select **Upload**.
 7. Enable the **Restart** checkbox.
 ![restart-jenkins](/images/_index/restart-jenkins.png)
