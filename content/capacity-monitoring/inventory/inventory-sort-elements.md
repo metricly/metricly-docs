@@ -5,6 +5,7 @@ draft: false
 categories:
 tags: ["#getting started", "#metrics", "#elements", "#inventory page"]
 author: Lawrence Lane
+weight: 4
 ---
 
 Select two or more elements and then click **View Metrics** to open multiple elements on the Metrics page. The Elements table initially has six columns:

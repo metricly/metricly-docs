@@ -5,6 +5,7 @@ draft: false
 categories:
 tags: ["#getting started", "#metrics", "#elements", "#inventory page"]
 author: Lawrence Lane
+weight: 1
 ---
 
 ## Select Filters

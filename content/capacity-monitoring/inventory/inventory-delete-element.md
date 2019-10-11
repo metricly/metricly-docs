@@ -5,6 +5,7 @@ draft: false
 categories:
 tags: ["#getting started", "#metrics", "#elements", "#maintenance", "#cli", "#inventory page"]
 author: Lawrence Lane
+weight: 6
 ---
 You can delete an element from the [Inventory Explorer page][1]. Deleting an element in Metricly persists only until the next collection cycle **unless** the element is also no longer being _collected_ or _posting_ to Metricly.
 
