@@ -5,6 +5,7 @@ draft: false
 categories:
 tags: ["#getting started", "#metrics", "#elements", "#bulk actions", "#inventory page" ]
 author: Lawrence Lane
+weight: 3
 ---
 The inventory page allows you to quickly navigate through all of your [elements][1], sort, and perform bulk actions. The Inventory Explorer displays all the elements in your environment that were processed in the last hour. Elements are removed from the elements table roughly seven hours after an associated datasource is disabled.
 

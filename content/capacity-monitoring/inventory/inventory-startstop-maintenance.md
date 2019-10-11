@@ -5,6 +5,7 @@ draft: false
 categories:
 tags: ["#getting started", "#metrics", "#elements", "#maintenance", "#cli", "#inventory page"]
 author: Lawrence Lane
+weight:  5
 ---
 
 You can place elements into maintenance mode from the Inventory Explorer or via the Metricly CLI (Command Line Interface). While an element is in maintenance mode, learning for that element is disabled (i.e. no contextual or baseline bands will be displayed) and events will not be generated for the element.

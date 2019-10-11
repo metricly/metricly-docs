@@ -30,6 +30,6 @@ Get a per-instance breakdown of your CPU Utilization across your AWS accounts. T
 
 ## The Efficiency Index
 
-The Efficiency Index generates a score by dividing your total EC2 utilization by the average cost per element. A lower score means better maximization of your cloud budget. 
+The Efficiency Index generates a score by dividing your total EC2 utilization by the average cost per element. A lower score means better maximization of your cloud budget.
 
 ![index score](/images/efficiency-index/index-score.png)

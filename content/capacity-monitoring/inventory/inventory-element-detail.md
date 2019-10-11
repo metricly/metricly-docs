@@ -5,6 +5,7 @@ draft: false
 categories:
 tags: ["#getting started", "#metrics", "#elements", "#inventory page"]
 author: Lawrence Lane
+weight: 2
 ---
 
 The Element Detail panel displays tabs for the metric **summary**, **policies**, and **relationships** associated with the selected element.
