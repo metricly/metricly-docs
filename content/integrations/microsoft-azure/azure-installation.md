@@ -43,7 +43,7 @@ Once you have completed part 2, you are redirected to the `Azure-Metricly Integr
 ![copy-secret-value](/images/azure-installation/copy-secret-value.png)
 8. Return to Azure and select **Overview**.
 9. Copy the **Directory(tenant)ID**. Open your Metricly tab and paste the ID into the **Tenant ID** field.
-![tentant-id](static/images/azure-installation/tentant-id.png)
+![tentant-id](/images/azure-installation/tentant-id.png)
 
 Return to the Azure tab once you have added the Directory (Tenant) ID to your Metricly integration.
 
@@ -60,18 +60,21 @@ Return to the Azure tab once you have added the Directory (Tenant) ID to your Me
 
 ## 5. Collect Subscription ID and Set Role
 
-To assign a role to the application, you’ll need the Owner or User Access Administrator role in Azure (the Contributor role will not work) or a custom role that grans write access for `Microsoft.Authorization`. You can check your permissions for the subscription by opening the user account menu (top right-hand corner), clicking My permissions, and then selecting the relevant subscription from the drop-down menu. If you don’t have the correct permissions, contact your subscription administrator.
+To assign a role to the application, you’ll need the **Owner** or **User Access Administrator** role in Azure (the Contributor role will not work) or a custom role that grans write access for `Microsoft.Authorization`.
 
-1. Navigate to **Subscriptions** in Azure.
-{{% notice tip %}}
-If you don’t see Subscriptions in your side menu, click **More services** and search for `Subscriptions` using the filter.
-{{% /notice %}}
+1. Navigate to **Home** > **Subscriptions** in Azure.
 2. Copy the **Subscription ID** and return to the tab with Metricly open. Paste it into the appropriate field. Once it’s pasted, return to the Azure tab.
-3. Click the appropriate subscription.
-4. Click **Access Control (IAM)**.
-5. Click **Add**.
-6. Select Reader for the role.
-7. Search for the application you created in Step 1, and select it. Click **Select** at the bottom of the window.
+![copy-subscription-id](/images/azure-installation/copy-subscription-id.png)
+3. Navigate to this subscription's **Access Control (IAM)** tab.
+![access-control-tab](/images/azure-installation/access-control-tab.png)
+4. Select **Add** > **Add role assignment**. A side panel appears.
+![add-role-assignment](/images/azure-installation/add-role-assignment.png)
+5. Complete the following fields:
+ - **Role**: Reader
+ - **Assign access to**: App service
+ - **Subscription**: Select the same subscription from step 2.
+ - **Select**: the Metricly app you created.
+6. Select **Add**.
 
 After permissions have been set, return to Metricly to include or exclude as many Azure element types as you want. **Azure VM and Azure Application Gateway are enabled by default**.
 
