@@ -1,7 +1,12 @@
 # Metricly Docs
 
-![metricly-docs-home](/images/_index/metricly-docs-home.png)
+Looking for Metricly? You're in the right place!
 
+Metricly joined the Virtana (formerly Virtual Instruments) family in August 2019. To celebrate, we're getting a new name: CloudWisdom.
+
+**Welcome to CloudWisdom by Virtana!**
+
+![metricly-docs-home](/images/_index/metricly-docs-home.png)
 
 `docs.metricly.com` is home to [Metricly's](https://www.metricly.com) documentation for end users, API developers, and DevOps admins.
 

@@ -1,3 +1,3 @@
 
 
-[![docs-logo](/images/_header/docs-logo.svg)]({{< relref "/_index.md" >}})
+[![docs-logo](/images/_header/docs-logo.png)]({{< relref "/_index.md" >}})
