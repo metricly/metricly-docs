@@ -2,7 +2,7 @@
 
 Looking for Metricly? You're in the right place!
 
-Metricly joined the Virtana (formerly Virtual Instruments) family in [August 2019](https://www.virtualinstruments.com/virtualwisdom/virtual-instruments-metricly/). To celebrate, we're getting a new name: [CloudWisdom](https://www.metricly.com/metricly-cloudwisdom/).
+Metricly joined the [Virtana](https://www.virtana.com/) (formerly Virtual Instruments) family in [August 2019](https://www.virtualinstruments.com/virtualwisdom/virtual-instruments-metricly/). To celebrate, we're getting a new name: [CloudWisdom](https://www.metricly.com/metricly-cloudwisdom/).
 
 **Welcome to CloudWisdom by Virtana!**
 
