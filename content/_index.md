@@ -1,4 +1,4 @@
-# Metricly Docs
+# CloudWisdom Docs
 
 Looking for Metricly? You're in the right place!
 

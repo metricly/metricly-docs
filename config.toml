@@ -1,6 +1,6 @@
 baseURL = "https://docs.metricly.com/"
 languageCode = "en-us"
-title = "Metricly Docs"
+title = "CloudWisdom Docs"
 theme = "docdock"
 
 [params]
