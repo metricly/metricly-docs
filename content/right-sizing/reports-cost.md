@@ -45,7 +45,7 @@ Costs are aggregated, simplified, and reduced to the following categories elemen
 This section outlines all of the available report views.
 
 ### Total Cost Pareto
-This graph shows the total costs incurred for all the instances monitored by Metricly (or the subset if a filter has been applied). The line is plotted against the right-hand axis and shows a cumulative percent contribution of each of the bars. Use this view to see the total cost of your environment and total contributions by category.
+This graph shows the total costs incurred for all the instances monitored by CloudWisdom(or the subset if a filter has been applied). The line is plotted against the right-hand axis and shows a cumulative percent contribution of each of the bars. Use this view to see the total cost of your environment and total contributions by category.
 
 All cost categories are shown in this chart even if you have incurred no costs of a particular type. For the Estimated Cost report, you may see just one bar.
 ![total cost pareto](/images/reports-cost/total-cost-pareto.png)

@@ -46,7 +46,7 @@ include(spy.byMethod("com.netuitive.agent.myappclass", "invoke")));
 ```
  zorka.application = my-app
 ```
-9\. **Save** all edited files and restart the Java agent. You should find your JVM element in Metricly with general JVM system metrics and MyAppStats method call metrics.
+9\. **Save** all edited files and restart the Java agent. You should find your JVM element in CloudWisdomwith general JVM system metrics and MyAppStats method call metrics.
 
 ## Config Options
 

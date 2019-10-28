@@ -43,7 +43,7 @@ You are now ready to define your new SSO application's SAML and user settings. I
 
 1. Select **Upload metadata file**.
 ![azure-upload-cert](/images/sso-azure/azure-upload-cert.png)
-2. Upload the `.cert` file created in Metricly from the first step.
+2. Upload the `.cert` file created in CloudWisdomfrom the first step.
 
 ### Define Azure SAML SSO Configuration
 
@@ -56,7 +56,7 @@ You are now ready to define your new SSO application's SAML and user settings. I
   - **Relay State**: `Your Tenant Name` (optional)
 
   {{% notice tip %}}
-  Add your tenant name to the **Relay State** field if you do not want to enter it when logging into Metricly from Azure. Your tenant name is the company name you used when you signed up for a Metricly account. Contact support if you do not know your tenant name.
+  Add your tenant name to the **Relay State** field if you do not want to enter it when logging into CloudWisdom from Azure. Your tenant name is the company name you used when you signed up for a Metricly account. Contact support if you do not know your tenant name.
   {{% /notice %}}
 
 ### Define User Attributes & Claims

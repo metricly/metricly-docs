@@ -8,14 +8,14 @@ author: Lawrence Lane
 
 ---
 
-Your inventory is the elements that make up your environment, from your java virtual machines to your Amazon EC2s. Metricly’s Inventory Explorer allows you to view and search the elements in your inventory.
+Your inventory is the elements that make up your environment, from your java virtual machines to your Amazon EC2s. CloudWisdom’s Inventory Explorer allows you to view and search the elements in your inventory.
 
 ## About Elements
-The physical or logical components that Metricly monitors are called elements. An element can be a physical entity, such as a server or network element, a virtual entity, such as a transaction, or a business entity, such as a company traded on the stock market. Elements are the base component that Metricly uses to analyze metrics and determine the status of your environment.
+The physical or logical components that CloudWisdom monitors are called elements. An element can be a physical entity, such as a server or network element, a virtual entity, such as a transaction, or a business entity, such as a company traded on the stock market. Elements are the base component that CloudWisdom uses to analyze metrics and determine the status of your environment.
 
 All elements share the following characteristics:
 
-- A unique name and identifier in Metricly.
+- A unique name and identifier in CloudWisdom.
 - Descriptive attributes, or characteristics, assigned by an integration.
 - Events that are triggered when the conditions in policies are met.
 - A tag or tags used to label and organize elements.
@@ -31,9 +31,9 @@ For example, with attribute information, you can see the number and type of CPU 
 
 ### Element Types
 
-Each element has a type that determines how it is processed and represented by Metricly. Element type is also used as a filter in list pages in the UI. The types of elements in your environment will vary based on the integration that you use<superscript>1</superscript>.
+Each element has a type that determines how it is processed and represented by CloudWisdom. Element type is also used as a filter in list pages in the UI. The types of elements in your environment will vary based on the integration that you use<superscript>1</superscript>.
 
-| Integration      | Element Type in Metricly          |
+| Integration      | Element Type in CloudWisdom          |
 |------------------|-----------------------------------|
 | AWS              | ASG (Auto Scaling Group)          |
 | AWS              | Custom Cloudwatch Metrics         |

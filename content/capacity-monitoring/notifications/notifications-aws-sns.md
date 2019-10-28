@@ -39,7 +39,7 @@ You must have a **Topic ARN** set up in AWS to use SNS with Metricly. Completing
 4. Back in the SNS console, select the same topic, and then click **Edit topic policy** in the Actions menu.
 5. Under the _Allow these users to publish messages to this topic_ section, select Only these AWS users and add the `Account ID` from Metricly to the field.
 6. Click **Update Policy**.
-7. Return to Metricly and optionally select **Custom** from the Payload drop-down menu. A text field will open after selecting Custom. Create a custom JSON payload in the textbox. You can use the following variables to make your notification more dynamic.
+7. Return to CloudWisdom and optionally select **Custom** from the Payload drop-down menu. A text field will open after selecting Custom. Create a custom JSON payload in the textbox. You can use the following variables to make your notification more dynamic.
 8. Click **Save**.
 
 | Variable              | Description                                              |
@@ -115,7 +115,7 @@ You must have a **Topic ARN** set up in AWS to use SNS with Metricly. Completing
 4. Back in the SNS console, select the same topic, and then click **Edit topic policy** in the Actions menu.
 5. Under the _Allow these users to publish messages to this topic section_, select **Only these AWS users** and add the `Account ID` from Metricly to the field.
 6. Click **Update Policy**.
-7. Return to Metricly and optionally select Custom from the Payload drop-down menu. A text field will open after selecting Custom. Create a custom JSON payload in the textbox. You can use the following variables to make your notification more dynamic.
+7. Return to CloudWisdom and optionally select Custom from the Payload drop-down menu. A text field will open after selecting Custom. Create a custom JSON payload in the textbox. You can use the following variables to make your notification more dynamic.
 8. Click **Save**.
 
 | Variable              | Description                                              |

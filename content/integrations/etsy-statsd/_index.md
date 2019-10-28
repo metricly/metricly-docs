@@ -103,5 +103,5 @@ Each mapping uses a pattern with a regular expression (`regex`) that corresponds
   }
 }
 ```
-5\. We recommend that you set the `flushInterval` in your StatsD configuration file to **60000 milliseconds**. This will ensure that your StatsD data is collected by Metricly every 1 minute.
+5\. We recommend that you set the `flushInterval` in your StatsD configuration file to **60000 milliseconds**. This will ensure that your StatsD data is collected by CloudWisdomevery 1 minute.
 6. Sa**v**e the configuration file and **restart** StatsD. 

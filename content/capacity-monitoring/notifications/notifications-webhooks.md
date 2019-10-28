@@ -7,7 +7,7 @@ tags: ["#alerts", "#notifications", "#webhooks"]
 author: Lawrence Lane
 ---
 
-There are two main uses for webhooks: pushing data into metricly (_inbound_) and pulling data like notifications out (_outbound_).
+There are two main uses for webhooks: pushing data into CloudWisdom (_inbound_) and pulling data like notifications out (_outbound_).
 
 - **Inbound**: Achieved via POST URL that can be found on the Webhook integration card.
 - **Outbound**: Used by several of our notification integrations and accessible through the Webhook GET API endpoint.

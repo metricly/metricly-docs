@@ -12,7 +12,7 @@ This installation method leverages a CloudFormation script which can be viewed [
 
 After you make a new AWS integration in Metricly, the script populates a read-only IAM role in your AWS account and links it using the integration’s Account ID and External ID. Once created, it may take a few minutes for the status to be updated.
 
-## Create an AWS Integration in Metricly  
+## Create an AWS Integration in CloudWisdom 
 1. Open Metricly and navigate to Integrations > AWS.  
 2. Create a new AWS integration. Ensure that the below tabled properties are set according to your needs.
 

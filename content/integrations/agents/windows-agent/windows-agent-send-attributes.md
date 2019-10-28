@@ -33,7 +33,7 @@ You can send tags and attributes through the Windows Agent by updating files in 
 
 1. Navigate to the `/CollectdWim/config/ReadWindowsAttributes.config` file.
 2. Update the **`<EnvironmentVariables>`** section.
-  - **EnvironmentVariable Name="static_display_name_here"**: replace `static_display_name_here` with the key for your attribute. This string shows up in Metricly next to the attribute's value.
+  - **EnvironmentVariable Name="static_display_name_here"**: replace `static_display_name_here` with the key for your attribute. This string shows up in CloudWisdomnext to the attribute's value.
     - **Value="ATTRIBUTE_NAME"**: replace  `ATTRIBUTE_NAME` with the exact environment variable name you wish to send.
 3. **Save** your file.
 

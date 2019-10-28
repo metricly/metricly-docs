@@ -142,7 +142,7 @@ Value="PROCESSOR_ARCHITECTURE"/>
 
 
 ## Write Netuitive plugin
-This plugin is already configured to send all data gathered by the read plugins to Metricly via its REST API in step 2 of the installation instructions. The following are additional, advanced settings that should only be changed in discussion with Metricly support.
+This plugin is already configured to send all data gathered by the read plugins to CloudWisdom via its REST API in step 2 of the installation instructions. The following are additional, advanced settings that should only be changed in discussion with Metricly support.
 
 | Name        | Description                                                                                                                     |
 |-------------|---------------------------------------------------------------------------------------------------------------------------------|

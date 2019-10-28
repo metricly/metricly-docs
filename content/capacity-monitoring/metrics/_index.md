@@ -7,7 +7,7 @@ tags: ["#getting started", "#metrics",]
 author: Lawrence Lane
 ---
 
-A metric is a quantifiable measurement whose values are monitored by Metricly and used to assess the performance of an element. Metrics are always associated with one or more [elements][1].
+A metric is a quantifiable measurement whose values are monitored by CloudWisdom and used to assess the performance of an element. Metrics are always associated with one or more [elements][1].
 
 **Examples of metrics:**
 
@@ -16,7 +16,7 @@ A metric is a quantifiable measurement whose values are monitored by Metricly an
  - Response Time
 
 ## Collected Metrics
-Metricly has collected metrics for every element in the application. [Policies][2] can be created using collected metrics to determine if data is missing through [alerts][3], and further configured to fire [notifications][4]. After 15 minutes of missing data, the element suspends and the alert stops. At this point, an external event is posted to the event timeline noting that Metricly has not received data.
+CloudWisdom has collected metrics for every element in the application. [Policies][2] can be created using collected metrics to determine if data is missing through [alerts][3], and further configured to fire [notifications][4]. After 15 minutes of missing data, the element suspends and the alert stops. At this point, an external event is posted to the event timeline noting that CloudWisdom has not received data.
 
 **Example**
 
@@ -25,7 +25,7 @@ Metricly has collected metrics for every element in the application. [Policies][
 | netuitive.metrics.collected.percent | % of metrics that collected data in the last interval.Computation:((# of collected metrics) / (total # of metrics) * 100) | Percent | yes  | no   | no   |
 
 ## Computed Metrics
-Computed metrics are metrics that Metricly calculates using the data from multiple metrics collected on a integration. Computed metrics are used to compile utilization reports of your environment and to specify metric behavior in default policies. A metric can be identified as a computed metric if its name begins with “netuitive.”  
+Computed metrics are metrics that CloudWisdom calculates using the data from multiple metrics collected on a integration. Computed metrics are used to compile utilization reports of your environment and to specify metric behavior in default policies. A metric can be identified as a computed metric if its name begins with “netuitive.”  
 
 **Example**
 

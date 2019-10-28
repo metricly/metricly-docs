@@ -10,7 +10,7 @@ alwaysopen: false
  Duration is the consecutive length of time for which all the conditions in a policy must be met before an event or other optional [notification][1] is created. The default setting for metric condition duration is 5 minutes; the default (and only) setting for external event condition duration is real-time. Because Metricly aggregates data on five-minute cycles, the duration for metric conditions must be at least 5 minutes.
 
  {{% notice note %}}
- By setting the duration of `ExamplePolicy X` to 10 minutes, an event **will not be created** in Metricly until all the conditions in `ExamplePolicy X` have been met for the same period of 10 consecutive minutes.
+ By setting the duration of `ExamplePolicy X` to 10 minutes, an event **will not be created** in CloudWisdomuntil all the conditions in `ExamplePolicy X` have been met for the same period of 10 consecutive minutes.
  {{% /notice %}}
 
 ## Set a Duration

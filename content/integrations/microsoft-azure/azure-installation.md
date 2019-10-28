@@ -60,7 +60,7 @@ If you don’t see Subscriptions in your side menu, click **More services** and 
 6. Select Reader for the role.
 7. Search for the application you created in Step 1, and select it. Click **Select** at the bottom of the window.
 
-After permissions have been set, return to Metricly to include or exclude as many Azure element types as you want. **Azure VM and Azure Application Gateway are enabled by default**.
+After permissions have been set, return to CloudWisdom to include or exclude as many Azure element types as you want. **Azure VM and Azure Application Gateway are enabled by default**.
 
 Optionally, filter elements.
 

@@ -6,7 +6,7 @@ tags: ["#ruby", "#integrations", "#agents" ]
 author: Lawrence Lane
 ---
 
-_IF_ **sendErrorEvents** is `enabled` in the netuitive_rails_agent config/agent.yaml file _AND_ **actionErrorsEnabled** and/or **sidekiqEnabled**  = `true`, exceptions are sent to Metricly as external events.
+_IF_ **sendErrorEvents** is `enabled` in the netuitive_rails_agent config/agent.yaml file _AND_ **actionErrorsEnabled** and/or **sidekiqEnabled**  = `true`, exceptions are sent to CloudWisdom as external events.
 
 An Exception External event has the following tags to help you dissect the exception:
 

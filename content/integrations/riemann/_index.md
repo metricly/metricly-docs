@@ -5,7 +5,7 @@ draft: false
 tags: ["#riemann", "#integrations" ]
 author: Lawrence Lane
 ---
-Riemann is a powerful network monitoring tool that aggregates events from your servers and applications using streams to process them in a format that makes them easy to manipulate or summarize. You can forward your events collected by Riemann streams to Metricly. The Riemann integration is very different from most of the other integrations: the integration is configured in Riemann to send data to Metricly using our API.
+Riemann is a powerful network monitoring tool that aggregates events from your servers and applications using streams to process them in a format that makes them easy to manipulate or summarize. You can forward your events collected by Riemann streams to Metricly. The Riemann integration is very different from most of the other integrations: the integration is configured in Riemann to send data to CloudWisdom using our API.
 
 
 ## Configure

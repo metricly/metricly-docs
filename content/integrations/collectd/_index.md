@@ -20,7 +20,7 @@ Collectd’s Write HTTP plugin can be used to configure collectd to send data to
 Installation steps for collectd may vary widely between systems, so you’ll want to install collectd based on recommended steps for your distro and the version of collectd you downloaded. You can download the latest version of collectd [here](https://collectd.org/download.shtml).
 
 1. After installing collectd, open your `collectd.conf` file. It can usually be found in `/etc/collectd.conf`.
-2. Set the **Interval** to `60`. Setting the Interval to 60 will allow metrics to be collected and sent to Metricly every 60 seconds.
+2. Set the **Interval** to `60`. Setting the Interval to 60 will allow metrics to be collected and sent to CloudWisdom every 60 seconds.
 3. **Enable** the following plugins by uncommenting them:
 
 ```

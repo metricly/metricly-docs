@@ -69,7 +69,7 @@ To write logs for Lambda to CloudWatch Logs, you must create a custom IAM Role w
 8\. Name the policy `CloudWatchLogs` and click **Create Policy**.  
 9. In your previous tab with the new Lamba role, look up the newly created policy  `CloudWatchLogs` and select it.  
 10. Click **Next: Review**.  
-11. Provide a `name`, such as `CloudWatchMetricly`, and a `description` for the role.  
+11. Provide a `name`, such as `CloudWatchCloudWisdom`, and a `description` for the role.  
 12. Click **Create Role**.
 
 ### 3. Create Log Group Filter

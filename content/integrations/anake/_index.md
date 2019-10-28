@@ -17,7 +17,7 @@ Ananke is a Java library that allows Java applications to communicate with and s
 ```
 StatsDClient client = new NetuitiveStatsDClient("localhost", "8000");
 ```
-4\. Utilize code instrumentation to send metrics, events, service checks, and more into Metricly (basic examples included below each type). Metricly supports the following metric types:
+4\. Utilize code instrumentation to send metrics, events, service checks, and more into CloudWisdom (basic examples included below each type). Metricly supports the following metric types:
  - **Decrement (Counter – Down)**: Decrease the count of how many times something happened per second.
 
  ```

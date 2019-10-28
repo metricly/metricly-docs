@@ -17,7 +17,7 @@ You can change the display name of certain elements to help distinguish between 
 ![expand-adv-tab](/images/inventory-element-display-name/expand-adv-tab.png)
 3. Select the **Element Name** field to edit it.
 4. Type the desired name into the field.
-  - ``${meta.originalName}`` resolves to the name included with the original element payload _before_ being replaced with the optional element name template. The Element Preview in the UI resolves this field to `[original name]` as a placeholder because Metricly only knows what the current name is, not what the incoming name might be.
+  - ``${meta.originalName}`` resolves to the name included with the original element payload _before_ being replaced with the optional element name template. The Element Preview in the UI resolves this field to `[original name]` as a placeholder because CloudWisdom only knows what the current name is, not what the incoming name might be.
   - ``(${tags.Name})`` returns something like `MyServer (ip-10.101.3.99)`
   - ``${tags.Name} (${attributes.availabilityZone)`` returns something like `ServerX (eu-west-1c)`
 5. Select an element to use as a preview for your new element name using the Element To Preview drop-down menu.

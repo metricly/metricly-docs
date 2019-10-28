@@ -27,7 +27,7 @@ The active support notifications are a pub-sub model that trigger active support
 ## Injected Instrumentation
 
 - **requestWrapperEnabled**: Set to `true` to enable the queue time metric, which is the time (in ms) taken after a request enters your system and before it reaches your application. Metricly takes either the `X-Queue-Start` or `X-Request-Start` headers to calculate the queue time, but time unit types won’t be automatically converted.
-- **actionErrorsEnabled**: Set to `true` to inject code into the action controller which will silently track exceptions. Exceptions will be sent to Metricly as an external event. An errors metric will also be available on the Metrics page under the action_controller branch for the element that tracks the number of exceptions seen.
+- **actionErrorsEnabled**: Set to `true` to inject code into the action controller which will silently track exceptions. Exceptions will be sent to CloudWisdom as an external event. An errors metric will also be available on the Metrics page under the action_controller branch for the element that tracks the number of exceptions seen.
 
 ## Interpreter Metrics
 
@@ -38,12 +38,12 @@ The active support notifications are a pub-sub model that trigger active support
 
 - **sidekiqEnabled**: Set to `true` to enable sidekiq metric and error collection.
   - Sidekiq metrics include number of jobs per queue, number of jobs ran per queue, and number of jobs ran per job.
-  - Errors will be sent to Metricly as an external event. An errors metric will also be available on the Metrics page under the sidekiq branch for the element that tracks the number of exceptions seen.
+  - Errors will be sent to CloudWisdom as an external event. An errors metric will also be available on the Metrics page under the sidekiq branch for the element that tracks the number of exceptions seen.
 
 ## Error Tracking Features
 
 **sendErrorEvents**: Set to `true` to send exceptions from `sidekiq` and `action_controller` as events to Metricly.
-  - If this setting is set to `false`, but actionErrorsEnabled and sidekiqEnabled are set to `true`, errors will not be sent to Metricly as events but all metrics will still be collected.
+  - If this setting is set to `false`, but actionErrorsEnabled and sidekiqEnabled are set to `true`, errors will not be sent to CloudWisdom as events but all metrics will still be collected.
 
 ## Feature Configs
 - **queueTimeUnits**: The divisor required to convert the queue time metric into seconds (e.g., seconds = 1, milliseconds = 1000, microseconds = 1000000).
