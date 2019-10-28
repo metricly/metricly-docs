@@ -45,7 +45,7 @@ The following graph depicts a policy with a sudden change deviation condition on
 - **Red Dot**: 25th data point’s actual observed value
 
 {{% notice note %}}
-This graph is for functionality demonstration and not found in the product. In Metricly, a red dot appears on the Metric Explorer graph where the sudden change event occurred.
+This graph is for functionality demonstration and not found in the product. In CloudWisdom, a red dot appears on the Metric Explorer graph where the sudden change event occurred.
 {{% /notice %}}
 
 ## How a Percent Drop is Measured

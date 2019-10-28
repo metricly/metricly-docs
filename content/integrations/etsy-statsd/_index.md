@@ -37,7 +37,7 @@ Etsy StatsD is one of the most popular StatsD libraries available. Metricly offe
   ],
   metricly: {
     apiKey: "YOUR_API_KEY",
-    apiHost: "api.app.metricly.com",
+    apiHost: "api.us.cloudwisdom.virtana.com",
     apiPort: 443,
   }
 }

@@ -38,7 +38,7 @@ LoadPlugin write_http
 ```
 <Plugin "write_http">
   <Node "example">
-    URL "https://api.app.metricly.com/ingest/collectd/API_KEY";
+    URL "https://api.us.cloudwisdom.virtana.com/ingest/collectd/API_KEY";
     User "collectd"
     Password "weCh3ik0"
     Format JSON

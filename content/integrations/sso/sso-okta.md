@@ -27,7 +27,7 @@ Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [
 4. Select **Web** in the _Platform_ dropdown and then choose **SAML 2.0**;  click **Create**.
 5. Type an `App name` and upload a logo (if desired). Leave the App visibility options as they are.
 6. Click **Next**.
-7. For the **Single Sign On URL**, use `https://app.metricly.com/saml/SSO` and leave **Use this for Recipient URL and Destination URL** checkmarked.
+7. For the **Single Sign On URL**, use `https://us.cloudwisdom.virtana.com/saml/SSO` and leave **Use this for Recipient URL and Destination URL** checkmarked.
 8. For the **Audience URI (SP Entity ID)**, use `netuitive-api`.
 9. For **Name ID format**, select **EmailAddress**. Leave Application username as the default, and click **Show Advanced Settings**.
 10. Under the Advanced Settings:
@@ -66,5 +66,5 @@ Add your tenant name to the **Default Relay State** field if you do not want to 
 
 ## Login URLs
 
-- **login URL:** `https://app.metricly.com/#/login?sso=true`
-- **login URL (tenant name pre populated):** `https://app.metricly.com/#/login?sso=true&tenantName=Your+Tenant+Name`
+- **login URL:** `https://us.cloudwisdom.virtana.com/#/login?sso=true`
+- **login URL (tenant name pre populated):** `https://us.cloudwisdom.virtana.com/#/login?sso=true&tenantName=Your+Tenant+Name`

@@ -22,7 +22,7 @@ The solution to this problem is to view **Amortized** costs. When the **Amortize
 
 To view the amortized costs:
 
-1. Navigate to **Cost Management** > [**Bill Analysis**](https://app.metricly.com/#/reports/awscostall/latest).
+1. Navigate to **Cost Management** > [**Bill Analysis**](https://us.cloudwisdom.virtana.com/#/reports/awscostall/latest).
 2. Select **CONFIGURE**. A configuration modal appears.
 3. Under _Show Costs As_ choose **Amortized**.
 4. Select **Apply**.

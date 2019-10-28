@@ -22,14 +22,14 @@ This page has additional filters to display all Open and Closed policies.
 
 ### How to Close an Open Alert
 
-1. Navigate to the Alerts page in Metricly.
+1. Navigate to the Alerts page in CloudWisdom.
 2. On the **Open** tab, select the policy that is firing.
 ![select-policy](/images/alerts-page/select-policy.png)
 3. The Policy Details modal appears. Under Impacted Elements, select any (or all) elements affected.
 4. Select **Close**.
 ![close-alerts](/images/alerts-page/close-alerts.png)
 
-You have now successfully closed the alert. 
+You have now successfully closed the alert.
 
 ## Search Policies
 
@@ -45,7 +45,7 @@ You can search for a particular policy or filter the policy by using the policy 
 ## Available Views
 
 ### Table View
-The table view will display all the policies configured in your tenant account. These are both the Metricly best practices and your user defined policies. In the table you will also see the details (status, state, enabled, notifications) about each policy. To see what is firing right now click on **Open**. By clicking **Closed** you will see all the policies that fired over the selected time range.
+The table view will display all the policies configured in your tenant account. These are both the CloudWisdom best practices and your user defined policies. In the table you will also see the details (status, state, enabled, notifications) about each policy. To see what is firing right now click on **Open**. By clicking **Closed** you will see all the policies that fired over the selected time range.
 
 ![Alert Page Table View](/images/alerts-page/alert-page-table-view.png)
 

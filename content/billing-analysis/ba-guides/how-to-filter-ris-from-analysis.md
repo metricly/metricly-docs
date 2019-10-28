@@ -21,7 +21,7 @@ Read the guide on [creating budget alerts](/billing-analysis/ba-guides/how-to-cr
 
 Removing Reserved Instances from your AWS Cost analysis is easy thanks to the Purchase Type attribute. With this attribute, you can select the ones you want displayed.
 
-1. Open the [Bill Analysis](https://app.metricly.com/#/reports/awscostall/latest) tool.
+1. Open the [Bill Analysis](https://us.cloudwisdom.virtana.com/#/reports/awscostall/latest) tool.
 2. Choose a **Quick Range** (for example, 6 months).
 ![select-quick-range](/images/how-to-filter-ris-from-analysis/select-quick-range.png)
 3. Select **CONFIGURE**. A configuration modal appears.

@@ -21,7 +21,7 @@ The following instructions were created using the Azure portal not the classic p
 3. Click **Add** at the top. A _Create_ window will open.
 4. Type the name of the application. We recommend Azure / Metricly Integration, or something similar.
 4. Ensure the Application Type is **Web app / API**.
-5. Input `https://app.metricly.com` for the **Sign-on URL**.
+5. Input `https://us.cloudwisdom.virtana.com` for the **Sign-on URL**.
 6. Click **Create** at the bottom of the window.
 
 ## 3. Get the Application ID, Application Key, & Tenant ID

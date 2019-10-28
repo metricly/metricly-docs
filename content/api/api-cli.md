@@ -7,7 +7,7 @@ author: Lawrence Lane
 alwaysopen: false
 pre: ""
 ---
-Metricly strongly encourages you to use the CLI when interacting with our API. The CLI has built-in commands and help information, offering a guided experience when interacting with endpoints. You can create, delete, list, or get several of the features inside Metricly through the CLI without having to worry about structuring the JSON payload exactly right.
+Virtana strongly encourages you to use the CLI when interacting with our API. The CLI has built-in commands and help information, offering a guided experience when interacting with endpoints. You can create, delete, list, or get several of the features inside CloudWisdom through the CLI without having to worry about structuring the JSON payload exactly right.
 
 ## Installation
 

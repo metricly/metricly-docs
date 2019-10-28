@@ -64,7 +64,7 @@ spec:
         command:
         - /heapster
         - --source=kubernetes:https://kubernetes.default
-        - --sink=metricly:https://api.app.metricly.com/ingest/kubernetes?apiKey={apiKey}
+        - --sink=metricly:https://api.us.cloudwisdom.virtana.com/ingest/kubernetes?apiKey={apiKey}
 ---
 apiVersion: v1
 kind: Service

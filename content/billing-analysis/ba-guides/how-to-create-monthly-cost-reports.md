@@ -8,7 +8,7 @@ author: Lawrence Lane
 weight: 1
 ---
 
-To use the Bill Analysis tool, login to Metricly and navigate to **Cost Management** > **Bill Analysis**.
+To use the Bill Analysis tool, login to CloudWisdom and navigate to **Cost Management** > **Bill Analysis**.
 
 
 ## Create and Save a Monthly Total Cost Report

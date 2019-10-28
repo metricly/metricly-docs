@@ -23,7 +23,7 @@ You can **view**, **edit**, and **create** policies in this menu; you can also *
 ![create new policy](/images/_index/create-new-policy.png)
 
 ## Events
-Events are violations that have met all of a policy’s conditions for a set duration. They indicate that Metricly has detected anomalous behavior in your environment. You can **view**, **categorize**, and **analyze** events. Organized most-to-least recent, finding the right event is easy.
+Events are violations that have met all of a policy’s conditions for a set duration. They indicate that CloudWisdom has detected anomalous behavior in your environment. You can **view**, **categorize**, and **analyze** events. Organized most-to-least recent, finding the right event is easy.
 
 You can zoom in on a series of events by clicking and dragging across the timeline.
 

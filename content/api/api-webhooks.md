@@ -7,7 +7,7 @@ author: Lawrence Lane
 alwaysopen: false
 pre: ""
 ---
-The Webhooks API allows you to use webhooks to send events to Metricly. Sending events via the Webhook API can be used to generate external events in Metricly’s Event Explorer, meaning you could create policies based on the content of those messages. See external event policy conditions for more information.
+The Webhooks API allows you to use webhooks to send events to CloudWisdom. Sending events via the Webhook API can be used to generate external events in CloudWisdom’s Event Explorer, meaning you could create policies based on the content of those messages. See external event policy conditions for more information.
 
 **Request Headers**
 
@@ -30,5 +30,5 @@ The Webhooks API allows you to use webhooks to send events to Metricly. Sending 
 No strict format.
 
 {{% notice warning %}}
-The Webhook endpoint will take any text you place in the body and use it as the event message in Metricly, so it’s not necessary to include proper JSON formatting (unless you want your message to include brackets and attribute-value pairs).
+The Webhook endpoint will take any text you place in the body and use it as the event message in CloudWisdom, so it’s not necessary to include proper JSON formatting (unless you want your message to include brackets and attribute-value pairs).
 {{% /notice %}}

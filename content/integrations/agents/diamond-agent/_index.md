@@ -21,7 +21,7 @@ Diamond’s default HTTP Post Handler can be used to send Diamond data to Metric
 ```
 [[HttpPostHandler]]
 ### Url to post the metrics
-url = http://api.app.metricly.com/diamond/API_KEY
+url = http://api.us.cloudwisdom.virtana.com/diamond/API_KEY
 ```
 Substitute _API_KEY_ for your unique API key.
 4\. Adjust the batch size to 256 for monitoring general server metrics.

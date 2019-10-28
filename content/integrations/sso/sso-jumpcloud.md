@@ -33,7 +33,7 @@ Keep this tab open and open a new tab; you must now login to JumpCloud and uploa
   - **DISPLAY LABEL**: `Your SSO Label` ("A name of your choosing to identify this configuration.)
   - **IDP ENTITY ID**: `jumpcloud-metricly`
   - **SP ENTITY ID**: `netuitive-api`
-  - **ACS URL**: `https://app.metricly.com/saml/SSO`
+  - **ACS URL**: `https://us.cloudwisdom.virtana.com/saml/SSO`
   - **SP CERTIFICATE**:  Upload the .`cert` file from section 1.
   - **SAMLSUBJECT NAMEID**: `email`
   - **SAMLSUBJECT NAMEID FORMAT**: `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress`
@@ -74,5 +74,5 @@ You are now ready to import your JumpCloud certificate and metadata to Metricly.
 
 ## Login URLs
 
-- **login URL:** `https://app.metricly.com/#/login?sso=true`
-- **login URL (tenant name pre populated):** `https://app.metricly.com/#/login?sso=true&tenantName=Your+Tenant+Name`
+- **login URL:** `https://us.cloudwisdom.virtana.com/#/login?sso=true`
+- **login URL (tenant name pre populated):** `https://us.cloudwisdom.virtana.com/#/login?sso=true&tenantName=Your+Tenant+Name`

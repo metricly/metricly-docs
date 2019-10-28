@@ -44,7 +44,7 @@ sudo N_APIKEY=your-apikey N_HOSTNAME_METHOD=hostname-method bash -c "$(curl -Ls 
 ```
 [[NetuitiveHandler]]
     ### MetriclyCloud URL to post the metrics
-    url = https://api.app.metricly.com/ingest/infrastructure
+    url = https://api.us.cloudwisdom.virtana.com/ingest/infrastructure
 
     ## Metricly Datasource api key
     api_key = <datasource api key>

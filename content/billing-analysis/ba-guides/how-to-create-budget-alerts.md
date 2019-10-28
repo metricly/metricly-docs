@@ -23,7 +23,7 @@ Read the guide on [creating budget alerts](/billing-analysis/ba-guides/how-to-cr
 
 Create a daily Budget Alert of cost deltas above $5 for _EC2 - Other Usage Types_.
 
-1. Navigate to **Cost Management** > [**Bill Analysis**](https://app.metricly.com/#/reports/awscostall/latest).
+1. Navigate to **Cost Management** > [**Bill Analysis**](https://us.cloudwisdom.virtana.com/#/reports/awscostall/latest).
 2. Select **Quick ranges** > **Latest day**.
 3. Select **CONFIGURE**.
 4. Select the **EC2 - Other** service.

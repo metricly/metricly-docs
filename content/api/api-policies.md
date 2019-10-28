@@ -30,7 +30,7 @@ Creates a policy under your tenant.
 
 | Attribute | Required/Optional | Description |
 |---------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| policyWrapper | Required | The policyWrapper attribute provides Metricly with the data necessary to create a policy. It contains several attributes: actions (optional) The desired actions for the policy. conditions (optional) The desired conditions for the policy. See Conditions for help with formatting. event conditions (optional) The desired event conditions for the policy. See Conditions for help with formatting. creatorEmail (optional) The email of the person who created the policy. deleted (optional) Whether the policy has been deleted or not. description (optional) Arbitrary description text for the policy. duration (optional) The duration of this policy. enabled (optional) Whether this policy is enabled or not. id (optional) The unique ID for the policy. lastUpdated (optional) The last time the policy was updated. name (optional) The name of the policy. originPolicyId (optional) The Policy ID from which this policy originates. originTenantId (optional) The Tenant ID from which this policy originates. scope (optional) Consists of several additional attributes: elementName (optional), which provides the name of the element. elementNameExclude (optional), which provides a string of characters to not match element names. elementTags (optional), which provides any tags on the element in the format of [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)]. elementType (optional), which provides the type of element. fqnExcludes (optional), which provides a string of characters to not match FQNs. fqnIncludes (optional), which provides a string of characters to match FQNs. |
+| policyWrapper | Required | The policyWrapper attribute provides CloudWisdom with the data necessary to create a policy. It contains several attributes: actions (optional) The desired actions for the policy. conditions (optional) The desired conditions for the policy. See Conditions for help with formatting. event conditions (optional) The desired event conditions for the policy. See Conditions for help with formatting. creatorEmail (optional) The email of the person who created the policy. deleted (optional) Whether the policy has been deleted or not. description (optional) Arbitrary description text for the policy. duration (optional) The duration of this policy. enabled (optional) Whether this policy is enabled or not. id (optional) The unique ID for the policy. lastUpdated (optional) The last time the policy was updated. name (optional) The name of the policy. originPolicyId (optional) The Policy ID from which this policy originates. originTenantId (optional) The Tenant ID from which this policy originates. scope (optional) Consists of several additional attributes: elementName (optional), which provides the name of the element. elementNameExclude (optional), which provides a string of characters to not match element names. elementTags (optional), which provides any tags on the element in the format of [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)]. elementType (optional), which provides the type of element. fqnExcludes (optional), which provides a string of characters to not match FQNs. fqnIncludes (optional), which provides a string of characters to match FQNs. |
 
 ```
 {
@@ -278,7 +278,7 @@ Returns the number of elements associated with a policy ID.
 
 | Parameters | Required/Optional | Description |
 |------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| duration | Optional | Query parameter. Gives Metricly an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. The duration parameter will take precedence over startTime and endTime if all attributes are included in your request. |
+| duration | Optional | Query parameter. Gives CloudWisdom an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. The duration parameter will take precedence over startTime and endTime if all attributes are included in your request. |
 | startTime | Optional | Query parameter. The start of the window of time from which policies will be returned. The startTime must be in ISO 8601 format. The default startTime is 12:00 AM in the authenticating user’s specified time zone. |
 | endTime | Optional | Query parameter. The end of the window of time from which policies will be returned. The endTime must be in ISO 8601 format. The default endTime is the current time. |
 
@@ -289,7 +289,7 @@ Returns the number of events occurred for a policy.
 
 | Parameters | Required/Optional | Description |
 |------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| duration | Optional | Query parameter. Gives Metricly an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. The duration parameter will take precedence over startTime and endTime if all attributes are included in your request. |
+| duration | Optional | Query parameter. Gives CloudWisdom an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. The duration parameter will take precedence over startTime and endTime if all attributes are included in your request. |
 | startTime | Optional | Query parameter. The start of the window of time from which policies will be returned. The startTime must be in ISO 8601 format. The default startTime is 12:00 AM in the authenticating user’s specified time zone. |
 | endTime | Optional | Query parameter. The end of the window of time from which policies will be returned. The endTime must be in ISO 8601 format. The default endTime is the current time. |
 
@@ -300,7 +300,7 @@ Returns a list of events generated by the specified policy.
 
 | Parameters | Required/Optional | Description |
 |------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| duration | Optional | Query parameter. Gives Metricly an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. The duration parameter will take precedence over startTime and endTime if all attributes are included in your request. |
+| duration | Optional | Query parameter. Gives CloudWisdom an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. The duration parameter will take precedence over startTime and endTime if all attributes are included in your request. |
 | startTime | Optional | Query parameter. The start of the window of time from which policies will be returned. The startTime must be in ISO 8601 format. The default startTime is 12:00 AM in the authenticating user’s specified time zone. |
 | endTime | Optional | Query parameter. The end of the window of time from which policies will be returned. The endTime must be in ISO 8601 format. The default endTime is the current time. |
 
@@ -319,7 +319,7 @@ Updates a given policy. Replace `{policyId}` in the above URL with a policy ID f
 
 | Attribute | Required/Optional | Description |
 |---------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| policyWrapper | Required | The policyWrapper attribute provides Metricly with the data necessary to create a policy. It contains several attributes: actions (optional) The desired actions for the policy. conditions (optional) The desired conditions for the policy. See Conditions for help with formatting. event conditions (optional) The desired event conditions for the policy. See Conditions for help with formatting. creatorEmail (optional) The email of the person who created the policy. deleted (optional) Whether the policy has been deleted or not. description (optional) Arbitrary description text for the policy. duration (optional) The duration of this policy. enabled (optional) Whether this policy is enabled or not. id (optional) The unique ID for the policy. lastUpdated (optional) The last time the policy was updated. name (optional) The name of the policy. originPolicyId (optional) The Policy ID from which this policy originates. originTenantId (optional) The Tenant ID from which this policy originates. scope (optional) Consists of several additional attributes: elementName (optional), which provides the name of the element. elementNameExclude (optional), which provides a string of characters to not match element names. elementTags (optional), which provides any tags on the element in the format of [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)]. elementType (optional), which provides the type of element. fqnExcludes (optional), which provides a string of characters to not match FQNs. fqnIncludes (optional), which provides a string of characters to match FQNs. |
+| policyWrapper | Required | The policyWrapper attribute provides CloudWisdom with the data necessary to create a policy. It contains several attributes: actions (optional) The desired actions for the policy. conditions (optional) The desired conditions for the policy. See Conditions for help with formatting. event conditions (optional) The desired event conditions for the policy. See Conditions for help with formatting. creatorEmail (optional) The email of the person who created the policy. deleted (optional) Whether the policy has been deleted or not. description (optional) Arbitrary description text for the policy. duration (optional) The duration of this policy. enabled (optional) Whether this policy is enabled or not. id (optional) The unique ID for the policy. lastUpdated (optional) The last time the policy was updated. name (optional) The name of the policy. originPolicyId (optional) The Policy ID from which this policy originates. originTenantId (optional) The Tenant ID from which this policy originates. scope (optional) Consists of several additional attributes: elementName (optional), which provides the name of the element. elementNameExclude (optional), which provides a string of characters to not match element names. elementTags (optional), which provides any tags on the element in the format of [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)]. elementType (optional), which provides the type of element. fqnExcludes (optional), which provides a string of characters to not match FQNs. fqnIncludes (optional), which provides a string of characters to match FQNs. |
 
 ## DELETE
 ### DELETE from /policies/{policyId}
@@ -331,13 +331,13 @@ Replace `{policyId}` in the above URL with a policy ID from any of your policies
 
 ## Other Actions
 
-You can use the [Metricly CLI][1] or interact directly with the Metricly API to manipulate policies. A common need from some of our users is to temporarily disable their policies while building, testing, or modifying them. This short guide walks you through how to do that via the Policy API directly.
+You can use the [Metricly CLI][1] or interact directly with the CloudWisdom API to manipulate policies. A common need from some of our users is to temporarily disable their policies while building, testing, or modifying them. This short guide walks you through how to do that via the Policy API directly.
 
 ### Disable a Policy
 
 **Get Policy ID**
 
-1. In Metricly, navigate to the policy you want to edit.
+1. In CloudWisdom, navigate to the policy you want to edit.
 2. Copy the policy’s ID from the url.
 ![policy-id](/images/api-policies/policy-id.png)
 
@@ -430,7 +430,7 @@ You can repeat section 2 to re-enable your policy.
 
 **Get Policy ID**
 
-1. In Metricly, navigate to the policy you want to mute.
+1. In CloudWisdom, navigate to the policy you want to mute.
 2. Copy the policy’s ID from the url.
 ![policy-id](/images/api-policies/policy-id.png)
 
@@ -439,7 +439,7 @@ You can repeat section 2 to re-enable your policy.
 1. Use this cURL template:
 
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: */*' --header 'Authorization: Basic {YOUR_BASE64_ENCODED_CREDS}' 'https://app.metricly.com/policies/{policyId}/mute/{muteMs}'
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: */*' --header 'Authorization: Basic {YOUR_BASE64_ENCODED_CREDS}' 'https://us.cloudwisdom.virtana.com/policies/{policyId}/mute/{muteMs}'
 ```
 2. Insert the **policy ID** into the template at `####policy-ID-here####`
 3. POST to `/policies/{policyId}/mute/{muteMs}`
@@ -455,7 +455,7 @@ The Request URL is the same policy URL from the cURL sample.
 DELETE from `/policies/{policyId}/mute` with the following cURL:
 
 ```
-curl -X DELETE --header 'Accept: */*' 'https://app.metricly.com/policies/####policy-ID-here####/mute'
+curl -X DELETE --header 'Accept: */*' 'https://us.cloudwisdom.virtana.com/policies/####policy-ID-here####/mute'
 ```
 
 

@@ -40,13 +40,13 @@ User-Defined cost allocation tags, once created, appear in **Billing** > **Cost 
 ![tag-editor-manage-tags](/images/how-to-find-uncategorized-costs/tag-editor-manage-tags.png)
 3. Create your `Key-Value` tags and assign them to your resources.
 
-Now you are ready to use Cost Allocation Tags to analyze your bill in Metricly.
+Now you are ready to use Cost Allocation Tags to analyze your bill in CloudWisdom.
 
 ## Two ways to find resources that are missing tags
 
 ### 1. Group costs by tag
 
-1. Log in to Metricly and navigate to **Cost Management** > **Bill Analysis**.
+1. Log in to CloudWisdom and navigate to **Cost Management** > **Bill Analysis**.
 2. Select the time frame you wish to analyze.
   - A larger time frame may help you discover the most significant resources missing tags.
 3. Select **Configure**. A modal appears.
@@ -66,7 +66,7 @@ Use this information to triangulate resources you are paying for that may have g
 
 You can search for resources where no value for a given tag has been specified. This can be particularly useful for tags that clearly divide your resources by applications, departments, and projects.
 
-1. Log in to Metricly and navigate to **Cost Management** > **Bill Analysis**.
+1. Log in to CloudWisdom and navigate to **Cost Management** > **Bill Analysis**.
 2. Select the time frame you wish to analyze.
   - A larger time frame may help you discover the most significant resources missing tags.
 3. Select **Configure**. A modal appears.

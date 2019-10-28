@@ -64,7 +64,7 @@ Select **Custom** from the Payload drop-down menu. A text field will open after 
   "event_type": "trigger",
   "description": "${category}: ${elementFqn} : ${policyName}",
   "client": "Metricly Cloud Service",
-  "client_url": "https://app.Metricly.com",
+  "client_url": "https://us.cloudwisdom.virtana.com",
   "details": {
     "category": "${category}",
     "elementFqn":"${elementFqn}",
@@ -72,7 +72,7 @@ Select **Custom** from the Payload drop-down menu. A text field will open after 
   },
   "contexts": [{
     "type": "link",
-    "href": "https://app.Metricly.com/#/element/${elementId}/events"
+    "href": "https://us.cloudwisdom.virtana.com/#/element/${elementId}/events"
   }]
 }
 ```
@@ -86,7 +86,7 @@ Select **Custom** from the Payload drop-down menu. A text field will open after 
   "event_type": "trigger",
   "description": "${category}: ${elementFqn} : ${policyName}",
   "client": "Metricly Cloud Service",
-  "client_url": "https://app.Metricly.com",
+  "client_url": "https://us.cloudwisdom.virtana.com",
   "details": {
     "category": "${category}",
     "elementFqn":"${elementFqn}",
@@ -94,7 +94,7 @@ Select **Custom** from the Payload drop-down menu. A text field will open after 
   },
   "contexts": [{
     "type": "link",
-    "href": "https://app.Metricly.com/#/element/${elementId}/events"
+    "href": "https://us.cloudwisdom.virtana.com/#/element/${elementId}/events"
   }]
 }
 ```

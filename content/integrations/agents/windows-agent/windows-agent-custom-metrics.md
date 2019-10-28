@@ -159,7 +159,7 @@ This plugin is already configured to send all data gathered by the read plugins 
 Example with API Key
 ```
 <WriteNetuitive
- Url="https://api.app.metricly.com/ingest/windows/de2b497468d863accb9c402dfff22689"/>
+ Url="https://api.us.cloudwisdom.virtana.com/ingest/windows/de2b497468d863accb9c402dfff22689"/>
 ```
 
 3\. **Save** the file.

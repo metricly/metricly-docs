@@ -36,9 +36,9 @@ Jenkins is  an open source automation server which enables developers around the
 ![jenkins-configure-system](/images/_index/jenkins-configure-system.png)
 3. Scroll to **Metricly Plugin**.
 4. Add the following configuration:
- - **Custom API Key**:  Input your Metricly CUSTOM integration API key [Found here](https://app.metricly.com/#/profile/integrations).
+ - **Custom API Key**:  Input your Metricly CUSTOM integration API key [Found here](https://us.cloudwisdom.virtana.com/#/profile/integrations).
  - **Hostname**: Element name for all metrics from this Jenkins installation (default: `Jenkins`).
- - **API Location**: Metricly API location (default: `https://api.app.metricly.com/`).
+ - **API Location**: Metricly API location (default: `https://api.us.cloudwisdom.virtana.com/`).
 5. **Save**.
 
 ### Advanced Global Settings
