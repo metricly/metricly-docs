@@ -6,7 +6,7 @@ categories: ["integration", "admin guide", "getting started", "metrics"]
 tags: ["#aws", "#metrics", "#knesis"]
 author: Lawrence Lane
 ---
-Currently, Metricly only supports Kinesis Streams, but additional support for Kinesis Firehose may come in the future.
+Currently, CloudWisdom only supports Kinesis Streams, but additional support for Kinesis Firehose may come in the future.
 
 ## Collected
 | Fully Qualified Name (FQN)                     | AWS Metric                         | Statistic | Units | Sparse Data Strategy (SDS) | BASE | CORR |

@@ -8,7 +8,7 @@ author: Lawrence Lane
 #pre: "<i class='fa fa-download'></i> &nbsp;"
 weight: 1
 ---
-This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as Metricly receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
+This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as CloudWisdom receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
 
 ## 1. Copy Install Command From Linux Integration Setup Page
 
@@ -43,10 +43,10 @@ sudo N_APIKEY=your-apikey N_HOSTNAME_METHOD=hostname-method bash -c "$(curl -Ls 
 2. Ensure the API key provided in step 1 is input in the `netuitive-agent.conf` file. The section below is only a portion of the config file. [Go here to view the full config file][1].
 ```
 [[NetuitiveHandler]]
-    ### MetriclyCloud URL to post the metrics
+    ### CloudWisdom Cloud URL to post the metrics
     url = https://api.us.cloudwisdom.virtana.com/ingest/infrastructure
 
-    ## Metricly Datasource api key
+    ## CloudWisdom Datasource api key
     api_key = <datasource api key>
 
     ### Uncomment to add tags (optional)
@@ -55,7 +55,7 @@ sudo N_APIKEY=your-apikey N_HOSTNAME_METHOD=hostname-method bash -c "$(curl -Ls 
     ### Uncomment to add relations
     # relations = element1, element2
 
-    # How many samples to store before sending to Metricly
+    # How many samples to store before sending to CloudWisdom
     batch = 100
 
     # how many batches to store before trimming
@@ -69,7 +69,7 @@ sudo N_APIKEY=your-apikey N_HOSTNAME_METHOD=hostname-method bash -c "$(curl -Ls 
     enabled = False
 ```
 3. **Save** the configuration file.
-4. **Restart** the Linux Agent service to begin monitoring your data with Metricly.
+4. **Restart** the Linux Agent service to begin monitoring your data with CloudWisdom.
 
 ### Config Options
 - **Option 1**:  Substitute tags value with desired tags and uncomment the line to pass in tags for your element.

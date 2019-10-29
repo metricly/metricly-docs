@@ -15,7 +15,7 @@ author: Lawrence Lane
 
 ## Active Support Notifications
 
-The active support notifications are a pub-sub model that trigger active support notifications when certain actions are performed within your rails application(s). Each flag is toggling a certain set of active support notifications for a subset of metrics in Metricly.
+The active support notifications are a pub-sub model that trigger active support notifications when certain actions are performed within your rails application(s). Each flag is toggling a certain set of active support notifications for a subset of metrics in CloudWisdom.
 
 - **actionControllerEnabled**: Set to `true` to enable `action_conroller` metric collection.
 - **activeRecordEnabled**: Set to `true` to enable `active_record` metric collection.
@@ -26,7 +26,7 @@ The active support notifications are a pub-sub model that trigger active support
 
 ## Injected Instrumentation
 
-- **requestWrapperEnabled**: Set to `true` to enable the queue time metric, which is the time (in ms) taken after a request enters your system and before it reaches your application. Metricly takes either the `X-Queue-Start` or `X-Request-Start` headers to calculate the queue time, but time unit types won’t be automatically converted.
+- **requestWrapperEnabled**: Set to `true` to enable the queue time metric, which is the time (in ms) taken after a request enters your system and before it reaches your application. CloudWisdom takes either the `X-Queue-Start` or `X-Request-Start` headers to calculate the queue time, but time unit types won’t be automatically converted.
 - **actionErrorsEnabled**: Set to `true` to inject code into the action controller which will silently track exceptions. Exceptions will be sent to CloudWisdom as an external event. An errors metric will also be available on the Metrics page under the action_controller branch for the element that tracks the number of exceptions seen.
 
 ## Interpreter Metrics
@@ -42,7 +42,7 @@ The active support notifications are a pub-sub model that trigger active support
 
 ## Error Tracking Features
 
-**sendErrorEvents**: Set to `true` to send exceptions from `sidekiq` and `action_controller` as events to Metricly.
+**sendErrorEvents**: Set to `true` to send exceptions from `sidekiq` and `action_controller` as events to CloudWisdom.
   - If this setting is set to `false`, but actionErrorsEnabled and sidekiqEnabled are set to `true`, errors will not be sent to CloudWisdom as events but all metrics will still be collected.
 
 ## Feature Configs

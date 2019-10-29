@@ -5,7 +5,7 @@ draft: false
 tags: ["#java", "#integrations","#agents"]
 author: Lawrence Lane
 ---
-Metricly’s Java agent is a java monitoring agent with a programmable bytecode instrumentation engine that’s enabled by adding a JVM integration in Metricly. The Metricly Java integration allows Metricly to collect JVM runtime system metrics like CPU, Memory, GC, Threads and Classes Count, and application components method performance statistics, such as number of calls and execution time.
+CloudWisdom’s Java agent is a java monitoring agent with a programmable bytecode instrumentation engine that’s enabled by adding a JVM integration in CloudWisdom. The CloudWisdom Java integration allows CloudWisdom to collect JVM runtime system metrics like CPU, Memory, GC, Threads and Classes Count, and application components method performance statistics, such as number of calls and execution time.
 
 ## Prerequisites
 Must have Java 6 Or greater.
@@ -40,7 +40,7 @@ You can also use the following command to obtain the most recent version of the 
   - If you want to specify the element type of the clusters, uncomment **zorka.clusters.type** and change the setting to the desired element type. If the type is not specified, the default is `CLUSTER`.
     - `zorka.clusters.type = CLUSTER`
 7. Change the `netuitive.api.key` value to the unique API key generated for your account that you copied in step 1.
-8. Ensure the **netuitive.api** value is set to yes to enable data push to Metricly.
+8. Ensure the **netuitive.api** value is set to yes to enable data push to CloudWisdom.
 9. Modify the **netuitive.api.interval** value to the desired data push interval (in seconds). The agent will collect data at the desired interval but aggregate the values each minute and send a single set of values to the API. Data is sent as statistics (_min_, _max_, _sum_, _avg_, and _count_) instead of raw values. Data in the Metrics pagefor your JVM metrics is displayed using gauges instead of a counter to capture any delta between data points.
 10. **Restart** your app server with the following argument passed to the JVM (where the default path to the Netuitive Java agent unzipped directory is `/opt/netuitive-zorka/`):
 
@@ -48,7 +48,7 @@ You can also use the following command to obtain the most recent version of the 
  -javaagent:[path-to-netuitive-zorka-unzipped-dir]/netuitive.jar=[path-to-netuitive-zorka-unzipped-dir]
 ```
 
-This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as Metricly receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
+This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as CloudWisdom receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
 
 ## Examples
 

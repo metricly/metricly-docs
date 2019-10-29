@@ -29,4 +29,4 @@ It’s important you upgrade to the latest version of the Linux Agent whenever p
  - `initctl start netuitive-agent`
  - `systemctl start netuitive-agent`
 
-{{% alert theme="info" %}} You can delete the element in Metricly, and it will reappear after the next processing cycle. Your element will not lose any data. {{% /alert %}}
+{{% alert theme="info" %}} You can delete the element in CloudWisdom, and it will reappear after the next processing cycle. Your element will not lose any data. {{% /alert %}}

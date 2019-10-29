@@ -6,13 +6,13 @@ tags: ["#windows", "#integrations", "#agents"]
 author: Lawrence Lane
 ---
 
-The Metricly Windows Agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes. Microsoft SQL Server, IIS, and .NET metrics are native to our Windows Agent. Only one Windows integration in your account is necessary to receive all Windows-related metrics.
+The CloudWisdom Windows Agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes. Microsoft SQL Server, IIS, and .NET metrics are native to our Windows Agent. Only one Windows integration in your account is necessary to receive all Windows-related metrics.
 
 ## Configure
-Installation is as easy as [executing an MSI installer](https://repos.app.netuitive.com/windows-agent/index.html) and configuring the service. The agent is pre-configured to send the most important performance metrics, windows events, and system attributes to Metricly. It can also be configured to send additional or different data if required
+Installation is as easy as [executing an MSI installer](https://repos.app.netuitive.com/windows-agent/index.html) and configuring the service. The agent is pre-configured to send the most important performance metrics, windows events, and system attributes to CloudWisdom. It can also be configured to send additional or different data if required
 
 ### 1. Copy the API key
-1. In Metricly, click **Integrations** on the top-nav bar.
+1. In CloudWisdom, click **Integrations** on the top-nav bar.
 2. Search for and click the **Windows Server** card. The name should be already populated, and Data Collection should be enabled. A unique API key for your account has already been generated.
 3. Copy the **API key**.
 

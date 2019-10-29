@@ -17,7 +17,7 @@ weight: 6
 
  Where the base or individual collectors include more data (which may be less useful or actionable), this SimpleCollector guarantees a cleaner streamlined experience. The SimpleCollector can be activated by updating the ``/opt/netuitive-agent/conf/netuitive-agent.conf`` file.
 
- Please use this collector **and no other collectors** when using the Metricly Cost Optimization product.
+ Please use this collector **and no other collectors** when using the CloudWisdom Cost Optimization product.
 
 ![Linux Simple Collector](/images/LINUX-collectors/linux-simple-collector.png)
 

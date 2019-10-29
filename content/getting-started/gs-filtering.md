@@ -1,7 +1,7 @@
 ---
 title: "In-App Filtering"
 #date: 2018-12-3
-description: How to filter metrics and elements in the Metricly UI.
+description: How to filter metrics and elements in the CloudWisdom UI.
 draft: false
 categories:
 tags: ["#getting started", "#filtering", "#widgets", "#reports", "#policies", "#metrics", "#alerts"]
@@ -13,7 +13,7 @@ Learning the basics of in-app filtering enables you to easily create/edit **widg
 
 ## Filter Types
 
-There are several types of filters used in Metricly. Each one provides a unique perspective into your environment.
+There are several types of filters used in CloudWisdom. Each one provides a unique perspective into your environment.
 
 ### Inclusion Filters  
 
@@ -44,7 +44,7 @@ Exclusion filters limit the scope of your search results to everything _except_ 
 
 ### All vs Any Filters
 
-All vs Any Filters are available on a subset of filters in Metricly. These filters allow you to select multiple tags or attributes and determine whether the search results return items that include _all_ tags/attributes included (AND operator), or just _any one_ of them (boolean OR operator).
+All vs Any Filters are available on a subset of filters in CloudWisdom. These filters allow you to select multiple tags or attributes and determine whether the search results return items that include _all_ tags/attributes included (AND operator), or just _any one_ of them (boolean OR operator).
 
 #### All vs Any Examples
 - **Attribute**: A dropdown multi-select of all attributes; includes a search field and all/any option.

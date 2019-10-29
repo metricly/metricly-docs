@@ -5,11 +5,11 @@ draft: false
 tags: ["#diamond", "#integrations", "#agents" ]
 author: Lawrence Lane
 ---
-Diamond’s default HTTP Post Handler can be used to send Diamond data to Metricly.
+Diamond’s default HTTP Post Handler can be used to send Diamond data to CloudWisdom.
 
 ## Configuration
 ### 1. Copy the unique API key from the Diamond integration in your account
-1. In Metricly, navigate to **Integrations**.
+1. In CloudWisdom, navigate to **Integrations**.
 2. Click the **Diamond** card. Data collection should already be enabled, and a unique API key for your account has already been generated.
 3. **Copy** the API key.
 
@@ -32,4 +32,4 @@ batch = 256
 ```
 5\. **Save** the `diamond.conf` file and **restart** Diamond.
 
-This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as Metricly receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
+This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as CloudWisdom receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.

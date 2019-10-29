@@ -18,7 +18,7 @@ weight: 4
 4. Expand **Detailed Billing Reports [Legacy]** and check **Turn on the legacy Detailed Billing...**.
 ![enable-detail-billing-legacy](/images/AWS-Detailed-Billing/expand legacy.gif)
 5. Select **Configure**. A modal appears.
-6. Create an S3 bucket with a name, such as `metricly-detailed-billing`.
+6. Create an S3 bucket with a name, such as `cloudwisdom-detailed-billing`.
 ![create s3](/images/AWS-Detailed-Billing/create-s3.png)
 7. Select **Next**. A default policy is generated.
 8. Confirm the policy is correct.
@@ -29,9 +29,9 @@ weight: 4
 12. Select **Save Preferences**.
 
 
-## 2. Update your AWS integration in Metricly
+## 2. Update your AWS integration in CloudWisdom
 
-If you have just created your IAM role, **wait 2-5 minutes** for AWS to finalize its creation before proceeding to these steps. This ensures the new role has the correct s3 access permissions when added to Metricly.
+If you have just created your IAM role, **wait 2-5 minutes** for AWS to finalize its creation before proceeding to these steps. This ensures the new role has the correct s3 access permissions when added to CloudWisdom.
 
 1. From the top navigation menu, select **Integrations**.
 2. Select the **Amazon Web Services** card.
@@ -60,9 +60,9 @@ Don't write billing files from more than one AWS account into the same S3 bucket
 You may not have access to your billing preferences if you have purchased AWS services through a reseller. You must contact your reseller and request to be set up with an S3 bucket to store your detailed billing data.
 
 {{% notice tip %}}
-Extracts or summaries of your billing data must have the exact same file name format and file structure of AWS detailed billing files to be ingested by Metricly.
+Extracts or summaries of your billing data must have the exact same file name format and file structure of AWS detailed billing files to be ingested by CloudWisdom.
 {{% /notice %}}
 
 **Reseller concerned about sharing an S3 bucket?**
 
-Metricly only reads the costs for accounts that we monitor; we discard all data for any unrelated accounts. You can also have them reach out to our support team with any questions they may have.
+Virtana only reads the costs for accounts that we monitor; we discard all data for any unrelated accounts. You can also have them reach out to our support team with any questions they may have.
