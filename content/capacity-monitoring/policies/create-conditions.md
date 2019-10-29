@@ -30,7 +30,7 @@ Use the **Match Conditions** feature to toggle between enforcing all conditions 
 ## Metric Condition Deviation Types
 
 ### Baseline Deviation
-A [Baseline][1] Deviation test triggers an event and other optional notifications when the current value of a metric is above and/or below 4 standard deviations from its normal operating range. A Baseline Deviation test can also be used to trigger an event when the value of a metric is or is not deviating from its normal operating range. Metricly determines the normal operating range of a metric based on the history of the actual values for that metric. The different Baseline Deviation tests are described below:
+A [Baseline][1] Deviation test triggers an event and other optional notifications when the current value of a metric is above and/or below 4 standard deviations from its normal operating range. A Baseline Deviation test can also be used to trigger an event when the value of a metric is or is not deviating from its normal operating range. CloudWisdom determines the normal operating range of a metric based on the history of the actual values for that metric. The different Baseline Deviation tests are described below:
 
 - **Upper (Baseline) Deviation**: The current value of a metric is greater than or equal to 4 standard deviations above its normal operating range.
 - **Lower (Baseline) Deviation**: The current value of a metric is greater than or equal to 4 standard deviations below its normal operating range.
@@ -38,7 +38,7 @@ A [Baseline][1] Deviation test triggers an event and other optional notification
 - **Is Not Deviating**: The current value of a metric is not deviating.
 
 ### Contextual Deviation
-A [Contextual][2] Deviation test can be used to indicate when the value of a metric is above and/or below 4 standard deviations from its expected value. A Contextual Deviation test can also be used to indicate when a metric is deviating when it should not be, or is not deviating when it should be. Metricly determines the expected value for a metric based on the actual values of other correlated metrics in the learned model. The different Contextual Deviation tests are described below:
+A [Contextual][2] Deviation test can be used to indicate when the value of a metric is above and/or below 4 standard deviations from its expected value. A Contextual Deviation test can also be used to indicate when a metric is deviating when it should not be, or is not deviating when it should be. CloudWisdom determines the expected value for a metric based on the actual values of other correlated metrics in the learned model. The different Contextual Deviation tests are described below:
 
 - **Upper (Contextual) Deviation**: The current value of a metric is greater than or equal to 4 standard deviations above its expected value.
 - **Lower (Contextual) Deviation**: The current value of a metric is greater than or equal to 4 standard deviations below its expected value.

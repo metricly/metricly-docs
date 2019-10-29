@@ -18,16 +18,16 @@ author: Lawrence Lane
 4. Type a `name` for the service and select your incident settings.
 5. For _Integration Type_, click the **Select a Tool** dropdown > **Netuitive**.
 6. Finish all other settings and click **Add Service**.
-7. Copy the Integration Key provided. This is needed to set up a new PagerDuty notification in Metricly.
+7. Copy the Integration Key provided. This is needed to set up a new PagerDuty notification in CloudWisdom.
 ![Integration Key](/images/notifications-pageryduty/integration-key.png)
 
 
-### 2. Link the service with Metricly
+### 2. Link the service with CloudWisdom
 1. Navigate to a Policy and click **Notifications**.
 2. Click **Add Notification** and select **PagerDuty**.
 3. Type a `name` for the PagerDuty integration and ensure the **Enabled checkbox** is selected.
 ![Test and Save](/images/notifications-pageryduty/test-and-save.png)
-4. Add the **service key** from the Metricly service you created in PagerDuty.
+4. Add the **service key** from the CloudWisdom service you created in PagerDuty.
 5. Click **Test and Save**.
 
 {{% notice tip %}}

@@ -24,4 +24,4 @@ you could use a negative lookahead ``(?! )`` to specify a group that cannot matc
 
 ### Remove  via Agentless Collector
 
-Tweak your filtering in Metricly; if that does not work, you may be experiencing ingestion issues.
+Tweak your filtering in CloudWisdom; if that does not work, you may be experiencing ingestion issues.

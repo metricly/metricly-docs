@@ -13,7 +13,7 @@ author: Lawrence Lane
 1. Login to your Microsoft Teams account.
 2. Navigate to **Store** and search for `Incoming Webhook`.
 ![Incoming Webhook](/images/notifications-microsoft-teams/incoming-webhook.png)
-3. Choose a Microsoft Team that will receive Metricly notifications.
+3. Choose a Microsoft Team that will receive CloudWisdom notifications.
 4. Click **Install**.
 5. Select a channel from your Microsoft team and click **Set up**.
 ![Set up Webhook](/images/notifications-microsoft-teams/set-up-webhook.png)
@@ -23,8 +23,8 @@ author: Lawrence Lane
 ![Copy Webhook URL](/images/notifications-microsoft-teams/copy-webhook-url.png)
 9. Click **Done**. The next steps are in CloudWisdomand require the copied Webhook URL.
 
-### 2. Create a Webhook Notification in Metricly
-1. In Metricly, navigate to the **Policy Editor**.
+### 2. Create a Webhook Notification in CloudWisdom
+1. In CloudWisdom, navigate to the **Policy Editor**.
 2. Click tab **3. Notifications**.
 3. Click **Add Notification** and select **Webhook** as the Notification Type.
 4. Provide a `name` for the webhook notification.

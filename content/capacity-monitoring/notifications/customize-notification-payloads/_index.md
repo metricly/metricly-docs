@@ -10,7 +10,7 @@ weight:
 ---
  Custom JSON payloads in CloudWisdomsupport [FreeMarker writeup](https://freemarker.apache.org/). This page contains a list of examples for you to reference when creating your own notification payloads for emails, SNS, and webhooks.
 
-## JSON Variables Available in Metricly
+## JSON Variables Available in CloudWisdom
 
 
 | Variable              | Description                                              |
