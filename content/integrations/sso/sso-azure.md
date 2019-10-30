@@ -8,7 +8,7 @@ weight: 1
 ---
 
 {{% alert success %}}
-Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [Sales Representative](mailto:sales@metricly.com).
+Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [Sales Representative](mailto:cloudwisdom.sales@virtana.com).
 {{% /alert %}}
 
 ## 1. Generate a Certificate in CloudWisdom

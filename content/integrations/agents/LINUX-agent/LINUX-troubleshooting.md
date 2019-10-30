@@ -40,7 +40,7 @@ Thank you
 
 ### 2. Send Zip to Support
 
- Open a support ticket by emailing `support@CloudWisdom.com` with the file attached and a subject / message body describing the issue(s) you experienced.
+ Open a support ticket by emailing `cloudwisdom.support@virtana.com` with the file attached and a subject / message body describing the issue(s) you experienced.
 
 
 # Docker Container Agent

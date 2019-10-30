@@ -19,7 +19,7 @@ There’s no faster way to get acquainted with the UI than by watching the [demo
 You’re excited to right-size your environments and lower their costs. You’ve done all your research, and you’re ready to try CloudWisdom’s **21-day free trial**. Select Sign Up at the top-right of the page and, after filling out a quick form, you’ll begin to set up CloudWisdom.
 
 ### Whitelist CloudWisdom Emails
-Make sure you’re able to receive all of your emailed reports and notifications by whitelisting ``@metricly.com`` and ``@metriclyinc.com``  This prevents your reports from getting caught in spam filters.
+Make sure you’re able to receive all of your emailed reports and notifications by whitelisting ``@virtana.com``.  This prevents your reports from getting caught in spam filters.
 
 ## 3. Set Up The AWS Integration
 ![getting-started-setup-aws](/images/_index/getting-started-setup-aws.png)
