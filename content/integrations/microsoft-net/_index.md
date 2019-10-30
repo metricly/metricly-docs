@@ -5,7 +5,7 @@ draft: false
 tags: ["#microsoft net", "#integrations" ]
 author: Lawrence Lane
 ---
-Microsoft .NET Framework metrics come packaged with the Metricly [Windows Agent][1]. Our Windows agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes.
+Microsoft .NET Framework metrics come packaged with the CloudWisdom [Windows Agent][1]. Our Windows agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes.
 
 ## Configure
 
@@ -51,7 +51,7 @@ Not all categories have instances available. In the above example, the instances
 3. Use your best judgment to match a type in `types.db` to the category you selected in step 3.1. Input the type (case sensitive) you wish to use into the **CollectdType** field.  
 4. Create a metric category for the **CollectdPlugin** field. This category displays in the Metrics tree and search field.
 ![metric search field](/images/_index/metric-search-field.png)
-5. Create a metric name using the **CollectdTypeInstance** field. This field is used as the metric’s name in Metricly, but be sure to make it entirely unique.  
+5. Create a metric name using the **CollectdTypeInstance** field. This field is used as the metric’s name in CloudWisdom, but be sure to make it entirely unique.  
 6. **Save** the` ReadWindowsPerfCounters` file.
 
 #### Example Counters

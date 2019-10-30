@@ -65,7 +65,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
          "metrics" : "[{\"fqn\":\"netuitive.aws.ec2.disktotalops\",\"useRegex\":false,\"aggFns\":[]}]" \
        } \
      } \
- }' 'https://app.metricly.com/widgets'
+ }' 'https://us.cloudwisdom.virtana.com/widgets'
 ```
 
 ### Multi-Metric Table
@@ -170,7 +170,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
        "metricAgg" : "avg" \
      } \
    } \
- }' 'https://app.metricly.com/widgets'
+ }' 'https://us.cloudwisdom.virtana.com/widgets'
 ```
 
 ### Single-Metric
@@ -248,10 +248,10 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
            "elementScopeExcludedTags": "[]" \
      } \
    } \
- }' 'https://app.metricly.com/widgets'
+ }' 'https://us.cloudwisdom.virtana.com/widgets'
 ```
 
-### Metricly Alerts
+### CloudWisdom Alerts
 
 ```
 {
@@ -322,7 +322,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
            "elementScopeExcludedTags": "[]" \
      } \
    } \
- }' 'https://app.metricly.com/widgets'
+ }' 'https://us.cloudwisdom.virtana.com/widgets'
 ```
 
 ### Metric-Range
@@ -382,7 +382,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
          "metrics" : "[]" \
      } \
    } \
- }' 'https://app.metricly.com/widgets'
+ }' 'https://us.cloudwisdom.virtana.com/widgets'
 ```
 ---
 
@@ -441,11 +441,11 @@ widget	Required	Body parameter; see below.
 |-------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | created | Optional | The time the widget was created. This must be in ISO 8601 format. |
 | dashboardId | Optional | The ID of the dashboard you’re trying to put the widget in. |
-| id | Optional | The ID for the widget. If you leave this field blank, Metricly will create an ID for you. |
+| id | Optional | The ID for the widget. If you leave this field blank, CloudWisdom will create an ID for you. |
 | name | Optional | The name of the widget. |
 | properties | Optional | The properties for the widget; this object will vary depending on the type of widget. You can read more about the widget types and their properties here. |
 | updated | Optional | The time the widget was last updated. This must be in ISO 8601 format. |
-| userId | Optional | The ID of the user who created the widget. If you leave this field blank, Metricly will use your user ID. |
+| userId | Optional | The ID of the user who created the widget. If you leave this field blank, CloudWisdom will use your user ID. |
 | widgetType | Optional | See the Widget Types section for a full list. |
 
 ## PUT
@@ -467,9 +467,9 @@ This method will update a given widget.
 |-------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | created | Optional | The time the widget was created. This must be in ISO 8601 format. |
 | dashboardId | Optional | The ID of the dashboard you’re trying to put the widget in. |
-| id | Optional | The ID for the widget. If you leave this field blank, Metricly will create an ID for you. |
+| id | Optional | The ID for the widget. If you leave this field blank, CloudWisdom will create an ID for you. |
 | name | Optional | The name of the widget. |
 | properties | Optional | The properties for the widget; this object will vary depending on the type of widget. You can read more about the widget types and their properties here. |
 | updated | Optional | The time the widget was last updated. This must be in ISO 8601 format. |
-| userId | Optional | The ID of the user who created the widget. If you leave this field blank, Metricly will use your user ID. |
+| userId | Optional | The ID of the user who created the widget. If you leave this field blank, CloudWisdom will use your user ID. |
 | widgetType | Optional | See the Widget Types section for a full list. |

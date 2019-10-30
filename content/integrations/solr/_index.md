@@ -5,7 +5,7 @@ draft: false
 tags: ["#solr", "#integrations"]
 author: Lawrence Lane
 ---
-Solr is an open source search platform, allowing for full-text search, hit highlighting, faceted search, and much more. Metricly can be used to monitor the performance of your Solr server.
+Solr is an open source search platform, allowing for full-text search, hit highlighting, faceted search, and much more. CloudWisdom can be used to monitor the performance of your Solr server.
 
 ## Prerequisites
 - [Linux Agent][1]

@@ -7,12 +7,12 @@ tags: ["#tools", "#asg"]
 author: Lawrence Lane
 ---
 
-The Auto Scaling Group (ASG) Recommendations report provides a summary of the EC2 instance hours managed by all of your Auto Scaling Groups over the past few weeks. The data is summarized by hour and day for the preceding one-to-four weeks depending on how long Metricly has been monitoring the ASG.
+The Auto Scaling Group (ASG) Recommendations report provides a summary of the EC2 instance hours managed by all of your Auto Scaling Groups over the past few weeks. The data is summarized by hour and day for the preceding one-to-four weeks depending on how long CloudWisdom has been monitoring the ASG.
 ![asg report breakdown](/images/reports-asg-recommendations/asg-report-breakdown.png)
 
 1. **Total Instance Count graph**: This graph depicts the average total number of instances managed by all of your ASG(s) by hour and day. It also shows the maximum and minimum total instance counts observed by hour and day.
 2. **Auto Scaling Groups table**: This table summarizes the observed EC2 instance counts managed by your ASGs, including Estimated Cost, Minimum Instances Seen, Minimum Instances Allowed, Maximum Instances Seen, Maximum Instances Allowed, Instance Hours, whether the Recommended Instance Count Metric is enabled, Instance Type, Region, whether the ASG is using Spot Instances, the Platform on each ASG, and the type of Tenancy. Use the filters at the top of the page to filter the elements displayed in the table/graph.
-3. **Element Usage Summary**: The number on the left is the number of ASGs monitored by Metricly for which there is sufficient data to produce the report. Some ASGs that are monitored by Metricly may be missing from the report if there is less than a week of data available for them. The number on the right is the total average EC2-instance hours across all of your ASGs.
+3. **Element Usage Summary**: The number on the left is the number of ASGs monitored by CloudWisdom for which there is sufficient data to produce the report. Some ASGs that are monitored by CloudWisdom may be missing from the report if there is less than a week of data available for them. The number on the right is the total average EC2-instance hours across all of your ASGs.
 
 {{% notice tip %}}
 The maximum number of instance hours in a week for a single EC2 instance is 168. So an ASG with 2 instances active for an entire week will contribute 336 instance-hours to the total.
@@ -75,14 +75,14 @@ You can disable the metric by clicking **Deactivate Settings**.
 ### Creating a Recommended Instance-related policy
 You can use the Recommended Instance Count in a policy to adjust an ASG instance to the desired value.
 
-1. Enable the Recommended Instance Count metric (if it’s not enabled already). It may take a few minutes to appear, but the Recommended Instance Count metric (metricly.aws.autoscaling.recommendedinstances) is now available on the selected element.
+1. Enable the Recommended Instance Count metric (if it’s not enabled already). It may take a few minutes to appear, but the Recommended Instance Count metric (netuitive.aws.autoscaling.recommendedinstances) is now available on the selected element.
 2. Navigate to the Policies page, and click **New Policy**.
 3. Set the scope of the policy to the desired ASG instance(s).
-4. Click the **Conditions** tab. For the condition, set the Metric field to `metricly.aws.autoscaling.grouptotalinstances`.
+4. Click the **Conditions** tab. For the condition, set the Metric field to `netuitive.aws.autoscaling.grouptotalinstances`.
 ![step 4](/images/reports-asg-recommendations/step-4.png)
-5. Select the Metric Threshold checkbox under Deviation(s), set the drop-down to Not Equal To, and set the metric field to metricly.aws.autoscaling.recommendedinstances.
+5. Select the Metric Threshold checkbox under Deviation(s), set the drop-down to Not Equal To, and set the metric field to netuitive.aws.autoscaling.recommendedinstances.
 ![step 5](/images/reports-asg-recommendations/step-5.png)
-6. Click the **Actions** tab. Select a category and add a desired notification so you’ll be notified whenever the metric `metricly.aws.autoscaling.grouptotalinstances` has a different value than `metricly.aws.autoscaling.recommendedinstances`.
+6. Click the **Actions** tab. Select a category and add a desired notification so you’ll be notified whenever the metric `netuitive.aws.autoscaling.grouptotalinstances` has a different value than `netuitive.aws.autoscaling.recommendedinstances`.
 
 You can now use this notification in a script to adjust your instance count as performance needs fluctuate.
 

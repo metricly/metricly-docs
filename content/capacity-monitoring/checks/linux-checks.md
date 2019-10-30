@@ -9,10 +9,10 @@ alwaysopen: false
 ---
 
 ## Enable Linux Checks
-Currently, Metricly comes with three pre-built checks; Heartbeat, Processes, and Ports. These are turnkey checks that do not require any scripting or coding, just simple configuration setting in the respective configuration files.
+Currently, CloudWisdom comes with three pre-built checks; Heartbeat, Processes, and Ports. These are turnkey checks that do not require any scripting or coding, just simple configuration setting in the respective configuration files.
 
 1. Make sure the Linux agent is installed.
-2. Metricly checks can be enabled via the configuration files included with the agent.
+2. CloudWisdom checks can be enabled via the configuration files included with the agent.
 3. All checks configuration files for the Linux agent can be found in ``/opt/netuitive-agent/conf/collectors``
 4. Some of the checks are enabled by default, while you would need to enable other checks.
 

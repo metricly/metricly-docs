@@ -33,11 +33,11 @@ If you’ve already installed the Incoming Webhooks app, you can skip to step 2.
 ![Manage Apps](/images/notifications-slack/manage-apps.png)
 4. Navigate to **Custom Integrations**.
 5. Click **Incoming WebHooks**.
-6. In the Customize Name section, type your desired name. We recommend naming it Metricly Event.
+6. In the Customize Name section, type your desired name. We recommend naming it CloudWisdom Event.
 7. Click **Copy URL** in the Webhook URL section.
 8. Click **Save Settings** at the bottom of the page.
 
-### 3. Create a Slack Notification in Metricly
+### 3. Create a Slack Notification in CloudWisdom
 
 {{% notice tip %}}
 If you want to display a custom message for your Slack notification, you’ll have to add and configure a Webhook notification instead, using the URL in 2.11 as your Webhook notification’s URL.
@@ -47,13 +47,13 @@ If you want to display a custom message for your Slack notification, you’ll ha
 ![New Notification Details](/images/notifications-slack/new-notification-details.png)
 2. Ensure the **Enabled checkbox** is selected.
 3. For **Webhook URL**, paste the URL you obtained from creating the Slack integration.
-4. Input a bot username that will be used when Metricly posts to your Slack channel.
+4. Input a bot username that will be used when CloudWisdom posts to your Slack channel.
 5. Click **Test and Save** to test the Slack notification. The test must return an `HTTP code 200` to pass the validation. If the test succeeds, the notification will automatically save.
 
 ## Optional Configuration
 
 ### Icons & Emojis
-You can customize the icon from slack by returning to the custom Webhook integration you’ve created and editing it. To distinguish your Metricly events in the chat, we recommend saving our logo to your computer and uploading it. You can also add an emoji or icon via Metricly when editing your notification.
+You can customize the icon from slack by returning to the custom Webhook integration you’ve created and editing it. To distinguish your CloudWisdom events in the chat, we recommend saving our logo to your computer and uploading it. You can also add an emoji or icon via CloudWisdom when editing your notification.
 
 ### Channel Override
 Input a channel override. This can be a different channel (`#other-channel`), another user (`@otheruser`), or multiple users.

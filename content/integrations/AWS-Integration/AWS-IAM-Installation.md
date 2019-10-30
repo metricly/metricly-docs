@@ -12,19 +12,19 @@ weight: 2
 
 Setting up an AWS integration via IAM Role is a four step process:
 
-1. Create a new AWS integration in Metricly.
- - Optionally, define data filters for AWS elements to be included/excluded in Metricly using tags (key-value pair).
+1. Create a new AWS integration in CloudWisdom.
+ - Optionally, define data filters for AWS elements to be included/excluded in CloudWisdom using tags (key-value pair).
 2. Create a custom in-line policy for Cost Explorer API access.
 3. Create an IAM role in your AWS Console.
-4. Add your IAM Role's ARN to your AWS integration in Metricly.
+4. Add your IAM Role's ARN to your AWS integration in CloudWisdom.
 
 
 {{% notice tip %}}
-If you already have an existing IAM role for Metricly but it does not include a policy for Cost Explorer, skip to the last section.
+If you already have an existing IAM role for CloudWisdom but it does not include a policy for Cost Explorer, skip to the last section.
 {{% /notice %}}
 
-### 1: Create a new AWS integration in Metricly
-1. Login to Metricly and select the **Integrations** icon.
+### 1: Create a new AWS integration in CloudWisdom
+1. Login to CloudWisdom and select the **Integrations** icon.
 ![integrations-icon](/images/AWS-IAM-Installation/integrations-icon.png)
 2. Select the **Amazon Web Services** card.
 3. Select **Add Integration** to create a new integration. (If updating an existing integration, select **View Current Integrations**).
@@ -69,7 +69,7 @@ If you already have an existing IAM role for Metricly but it does not include a 
 4. Select **Create role**.
 5. Select **Another AWS Account**
 ![another-aws-accnt](/images/AWS-IAM-Installation/another-aws-accnt.png)
-6. Provide the **Account ID** from your Metricly AWS integration. _Leave Require MFA unchecked_.
+6. Provide the **Account ID** from your CloudWisdom AWS integration. _Leave Require MFA unchecked_.
 7. Select **Next: Permissions**.
 8. For Attach permission policies, add all of the following:
  - CostExplorerAPIAccess (**Filter policies** > **Customer Managed**)
@@ -78,7 +78,7 @@ If you already have an existing IAM role for Metricly but it does not include a 
  ![customer-managed](/images/AWS-IAM-Installation/customer-managed.png)
 9. Select **Next Step: Tags** and add any needed tags; **this is an optional step and you may skip it.**
 10. Select **Next: Review**.
-11. Add **Role Name**: `Metricly`.
+11. Add **Role Name**: `CloudWisdom`.
 12. Select **Create Role**.  You are returned to IAM Roles in your AWS console.
 13. Select the new role you have created.
 14. Copy the **Role ARN**.
@@ -148,9 +148,9 @@ If you want to use a limited read only access policy, you’ll need to create a 
 9. Review the permissions summary and select **Create Policy**.
 10. Follow **Part 3** of this guide, replacing **step 8** with your custom minimal permissions policy.
 
-### 4: Update AWS Integration in Metricly with the Role ARN
+### 4: Update AWS Integration in CloudWisdom with the Role ARN
 
-1. Return to the open Metricly tab from **Step 1**.
+1. Return to the open CloudWisdom tab from **Step 1**.
 2. Add the Role ARN from the IAM role found in your AWS Console.
 ![arn-role](/images/AWS-IAM-Installation/arn-role.png)
 3. **Save**.

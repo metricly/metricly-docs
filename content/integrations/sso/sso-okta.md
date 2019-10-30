@@ -8,10 +8,10 @@ weight: 3
 ---
 
 {{% alert success %}}
-Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [Sales Representative](mailto:sales@metricly.com).
+Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [Sales Representative](mailto:cloudwisdom.sales@virtana.com).
 {{% /alert %}}
 
-## 1. Generate a Certificate in Metricly
+## 1. Generate a Certificate in CloudWisdom
 
 1. Navigate to **Account Profile** > **SSO**.
 2. Click **Generate**.
@@ -27,7 +27,7 @@ Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [
 4. Select **Web** in the _Platform_ dropdown and then choose **SAML 2.0**;  click **Create**.
 5. Type an `App name` and upload a logo (if desired). Leave the App visibility options as they are.
 6. Click **Next**.
-7. For the **Single Sign On URL**, use `https://app.metricly.com/saml/SSO` and leave **Use this for Recipient URL and Destination URL** checkmarked.
+7. For the **Single Sign On URL**, use `https://us.cloudwisdom.virtana.com/saml/SSO` and leave **Use this for Recipient URL and Destination URL** checkmarked.
 8. For the **Audience URI (SP Entity ID)**, use `netuitive-api`.
 9. For **Name ID format**, select **EmailAddress**. Leave Application username as the default, and click **Show Advanced Settings**.
 10. Under the Advanced Settings:
@@ -42,7 +42,7 @@ Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [
   - In the first default blank attribute, type `email` in the **Name field** and `user.email` into the **Value field**.
   - Click **Add Another**.
   - In the first default blank attribute, type `role` in the **Name field** and `user.role` into the **Value field**  `user.role` must be entered manually and does not appear in the dropdown.
-    - Metricly requires administrator access for creating and editing data. To grant administrator privileges enter `user.isMemberOfGroupName("OurAdminGroup") ? 'Administrator' : null` as your role value and replace _OurAdminGroup_ with your group for Metricly Administrators.
+    - CloudWisdom requires administrator access for creating and editing data. To grant administrator privileges enter `user.isMemberOfGroupName("OurAdminGroup") ? 'Administrator' : null` as your role value and replace _OurAdminGroup_ with your group for CloudWisdom Administrators.
     ![add-attributes](/images/_index/add-attributes.png)
 12. Click **Next**.
 13. Click **Finish**.
@@ -52,11 +52,11 @@ Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [
 ![optional-metadata](/images/_index/optional-metadata.png)
 
 {{% notice tip %}}
-Add your tenant name to the **Default Relay State** field if you do not want to enter it when logging into Metricly from Okta. Your tenant name is the company name you used when you signed up for a Metricly account. Contact support if you do not know your tenant name.
+Add your tenant name to the **Default Relay State** field if you do not want to enter it when logging into CloudWisdom from Okta. Your tenant name is the company name you used when you signed up for a CloudWisdom account. Contact support if you do not know your tenant name.
 ![default-relay-state](/images/_index/default-relay-state.png)
 {{% /notice %}}
 
-## 3. Finish SSO Set-up in Metricly
+## 3. Finish SSO Set-up in CloudWisdom
 
 1. Upload the certificate (public key) from Okta.
 2. Upload the `metadata.xml` file from Okta.
@@ -66,5 +66,5 @@ Add your tenant name to the **Default Relay State** field if you do not want to 
 
 ## Login URLs
 
-- **login URL:** `https://app.metricly.com/#/login?sso=true`
-- **login URL (tenant name pre populated):** `https://app.metricly.com/#/login?sso=true&tenantName=Your+Tenant+Name`
+- **login URL:** `https://us.cloudwisdom.virtana.com/#/login?sso=true`
+- **login URL (tenant name pre populated):** `https://us.cloudwisdom.virtana.com/#/login?sso=true&tenantName=Your+Tenant+Name`

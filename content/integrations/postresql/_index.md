@@ -5,7 +5,7 @@ draft: false
 tags: ["#postresql", "#integrations" ]
 author: Lawrence Lane
 ---
-PostgreSQL is an open-source database management system. Metricly can be used to monitor your PostgreSQL database(s).
+PostgreSQL is an open-source database management system. CloudWisdom can be used to monitor your PostgreSQL database(s).
 
 ## Prerequisites
 - [Linux Agent][1]

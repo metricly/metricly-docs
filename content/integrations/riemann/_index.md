@@ -5,7 +5,7 @@ draft: false
 tags: ["#riemann", "#integrations" ]
 author: Lawrence Lane
 ---
-Riemann is a powerful network monitoring tool that aggregates events from your servers and applications using streams to process them in a format that makes them easy to manipulate or summarize. You can forward your events collected by Riemann streams to Metricly. The Riemann integration is very different from most of the other integrations: the integration is configured in Riemann to send data to Metricly using our API.
+Riemann is a powerful network monitoring tool that aggregates events from your servers and applications using streams to process them in a format that makes them easy to manipulate or summarize. You can forward your events collected by Riemann streams to CloudWisdom. The Riemann integration is very different from most of the other integrations: the integration is configured in Riemann to send data to CloudWisdom using our API.
 
 
 ## Configure
@@ -31,13 +31,13 @@ Riemann is a powerful network monitoring tool that aggregates events from your s
 -api-key" :type "Riemann"}))))
 ```
 
-5\. Update the `:type` setting as necessary. This setting controls the element display name in Metricly.
+5\. Update the `:type` setting as necessary. This setting controls the element display name in CloudWisdom.
 
 {{% notice tip %}}
 The `:type` setting will help provide a useful descriptor to your metrics. For example, if you’re using Riemann to pull in a group of metrics from your Elasticsearch instance, you could set the `:type` to `myElasticsearchInstance`.
 {{% /notice %}}
 
-6\. Replace the sample API key (`netuitive-api-key`) with the API key from the Custom integration in your Metricly account.  
+6\. Replace the sample API key (`netuitive-api-key`) with the API key from the Custom integration in your CloudWisdom account.  
 
 7\. Below the new **netuitive-forwarder** code, add:
 
@@ -61,7 +61,7 @@ In a new or existing stream, add the following to print all events to `STDOUT` a
 ```
 
 ### Filtering Events
-You can add additional qualifiers to the beginning of a stream to filter the events that are getting sent to Metricly.
+You can add additional qualifiers to the beginning of a stream to filter the events that are getting sent to CloudWisdom.
 
 Below is an example of filtering events that contain any of the listed tags for the service “web server”:
 

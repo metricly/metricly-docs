@@ -5,7 +5,7 @@ draft: false
 tags: ["#elasticsearch", "#integrations" ]
 author: Lawrence Lane
 ---
-Elasticsearch is a distributed, scalable search server that enables you to search through all kinds of documents. Metricly can be used to monitor the performance of your Elasticsearch server. Additional configuration options are available below the instructions.
+Elasticsearch is a distributed, scalable search server that enables you to search through all kinds of documents. CloudWisdom can be used to monitor the performance of your Elasticsearch server. Additional configuration options are available below the instructions.
 
 ## Configuration
 The [Linux Agent][1] must be installed before proceeding. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.

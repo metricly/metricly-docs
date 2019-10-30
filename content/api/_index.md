@@ -6,19 +6,19 @@ categories:
 tags: ["#api",]
 author: Lawrence Lane
 alwaysopen: false
-pre: 
+pre:
 weight: 15
 ---
-Metricly’s RESTful API allows you read and write data programmatically. This means that you can perform a wide variety of tasks, including adding a new integration, returning a filtered list of Events, removing elements from your account, and more.
+CloudWisdom’s RESTful API allows you read and write data programmatically. This means that you can perform a wide variety of tasks, including adding a new integration, returning a filtered list of Events, removing elements from your account, and more.
 
-To view and try out the available API endpoints, visit the [Metricly Swagger UI](https://app.metricly.com/swagger-ui.html). This web based user interface allows users to view all the APIs, see additional documentation, and test the calls from your browser.
+To view and try out the available API endpoints, visit the [CloudWisdom Swagger UI](https://us.cloudwisdom.virtana.com/swagger-ui.html). This web based user interface allows users to view all the APIs, see additional documentation, and test the calls from your browser.
 
 ## Did you know we have a Metricly CLI?
 
-Metricly strongly encourages you to use the Metricly CLI when interacting with our API. The CLI has built-in commands and help information, offering a guided experience when interacting with endpoints. You can create, delete, list, or get several of the features inside Metricly through the CLI without having to worry about structuring the JSON payload exactly right. You can install the CLI from GitHub.
+Virtana strongly encourages you to use the Metricly CLI when interacting with our API. The CLI has built-in commands and help information, offering a guided experience when interacting with endpoints. You can create, delete, list, or get several of the features inside CloudWisdom through the CLI without having to worry about structuring the JSON payload exactly right. You can install the CLI from GitHub.
 
 ## Authentication
-Metricly requires users to authenticate their requests with HTTP basic auth. Basic authentication uses a standard HTTP header that includes encoded versions of your username and password. Basic authentication is required for all endpoints except ingest and ingest events, which require API keys.
+CloudWisdom requires users to authenticate their requests with HTTP basic auth. Basic authentication uses a standard HTTP header that includes encoded versions of your username and password. Basic authentication is required for all endpoints except ingest and ingest events, which require API keys.
 
 ## Data Formats
 Dates and Times – All request parameters associated with date and time (duration, startTime, endTime) must be written in ISO 8601 format, see examples below.
@@ -39,8 +39,8 @@ All request parameters associated with conditions (used in the Policy API) must 
 
 | Attribute | Description and Examples   |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| metric    | The name of the metric(s) being used in the condition. Any full metric FQN. This attribute is left blank (e.g., “”) if using the wildcard method to define multiple metrics. Example(s) system.threads, emailgenerator.generateemail.calls, aws.elb.requestcount, metricly.metrics.collected.percent     |
-| wildcard  | The wildcard-friendly metric name being used in the condition. Any metric-wildcard hybrid FQNs. Example(s) metricly.*.backend, aws.elb.httpcode*, aws.rds.*utilization  |
+| metric    | The name of the metric(s) being used in the condition. Any full metric FQN. This attribute is left blank (e.g., “”) if using the wildcard method to define multiple metrics. Example(s) system.threads, emailgenerator.generateemail.calls, aws.elb.requestcount, netuitive.metrics.collected.percent     |
+| wildcard  | The wildcard-friendly metric name being used in the condition. Any metric-wildcard hybrid FQNs. Example(s) netuitive.*.backend, aws.elb.httpcode*, aws.rds.*utilization  |
 | analytic  | What type of analytic is being used in the condition. baselineDeviation, contextualDeviation, or actual (static threshold).  |
 | operator  | "The operator to help define the analytic used in the condition. If baselineDeviation or contextualDeviation is the listed analytic: < (Lower Deviation) > (Upper Deviation) defined (Is Deviating) undefined (Is Not Deviating)If actual is the listed analytic: > (More Than) >= (More Than or Equal To) < (Less Than) <= (Less Than or Equal To) == (Equal To) != (Not Equal To) >= and <= (Between)  To use the Between operator for a Static Threshold analytic, you’ll have to create two “separate” conditions: one for the lower value and one for the upper value. | | "         |    |
 | level     | The value to measure against for the Static Threshold analytic. Any rational number (integer, whole, or decimal number). Example(s) 123, -50, 111.476  |

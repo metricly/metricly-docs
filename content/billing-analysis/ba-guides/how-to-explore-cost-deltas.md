@@ -17,7 +17,7 @@ In the [previous guide][1], we created a Bill Analysis report that displays _EC2
 
 Let’s open that saved report you created.
 
-1. Navigate to **Cost Management** > [**Bill Analysis**](https://app.metricly.com/#/reports/awscostall/latest).
+1. Navigate to **Cost Management** > [**Bill Analysis**](https://us.cloudwisdom.virtana.com/#/reports/awscostall/latest).
 2. Select the **Report** dropdown and choose your saved report.
 
 ![explore-cost-deltas-img1](/images/how-to-explore-cost-deltas/explore-cost-deltas-img1.png)

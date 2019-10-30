@@ -8,10 +8,10 @@ weight: 1
 ---
 
 {{% alert success %}}
-Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [Sales Representative](mailto:sales@metricly.com).
+Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [Sales Representative](mailto:cloudwisdom.sales@virtana.com).
 {{% /alert %}}
 
-## 1. Generate a Certificate in Metricly
+## 1. Generate a Certificate in CloudWisdom
 
 1. Navigate to **Account Profile** > **SSO**.
 2. Select **Generate**.
@@ -39,11 +39,11 @@ Keep this tab open and open a new tab; you must now login to Azure and upload th
 
 You are now ready to define your new SSO application's SAML and user settings. If you need to return to these settings in the future, follow this path: **Azure Active Directory** > **Enterprise applications** > `Your Application Name` > **Single sign-on** > **SAML-based Sign-on**.
 
-### Upload Certificate From Metricly To Azure SAML SSO Application
+### Upload Certificate From CloudWisdom To Azure SAML SSO Application
 
 1. Select **Upload metadata file**.
 ![azure-upload-cert](/images/sso-azure/azure-upload-cert.png)
-2. Upload the `.cert` file created in Metricly from the first step.
+2. Upload the `.cert` file created in CloudWisdom from the first step.
 
 ### Define Azure SAML SSO Configuration
 
@@ -51,12 +51,12 @@ You are now ready to define your new SSO application's SAML and user settings. I
 ![azure-edit-basic-saml](/images/sso-azure/azure-edit-basic-saml.png)
 2. Input the following values:
   - **Identifier (Entity ID)**: `netuitive-api`
-  - **Reply URL (Assertion Consumer Service URL)**: `https://app.metricly.com/saml/SSO`
-  - **Sign on URL**: `https://app.metricly.com/saml/SSO`
+  - **Reply URL (Assertion Consumer Service URL)**: `https://us.cloudwisdom.virtana.com/saml/SSO`
+  - **Sign on URL**: `https://us.cloudwisdom.virtana.com/saml/SSO`
   - **Relay State**: `Your Tenant Name` (optional)
 
   {{% notice tip %}}
-  Add your tenant name to the **Relay State** field if you do not want to enter it when logging into Metricly from Azure. Your tenant name is the company name you used when you signed up for a Metricly account. Contact support if you do not know your tenant name.
+  Add your tenant name to the **Relay State** field if you do not want to enter it when logging into CloudWisdom from Azure. Your tenant name is the company name you used when you signed up for a CloudWisdom account. Contact support if you do not know your tenant name.
   {{% /notice %}}
 
 ### Define User Attributes & Claims
@@ -83,9 +83,9 @@ You are now ready to define your new SSO application's SAML and user settings. I
 4. Download the **Federation Metadata XML**.
 ![azure-download-cert](/images/sso-azure/azure-download-cert.png)
 
-These files must be uploaded to Metricly.
+These files must be uploaded to CloudWisdom.
 
-## 3. Finish SSO Set-up in Metricly
+## 3. Finish SSO Set-up in CloudWisdom
 
 1. Navigate to **Account Profile** > **SSO**.
 2. Upload the **Certificate (Base64)** file from Azure.
@@ -96,5 +96,5 @@ These files must be uploaded to Metricly.
 
 ## Login URLs
 
-- **login URL:** `https://app.metricly.com/#/login?sso=true`
-- **login URL (tenant name pre populated):** `https://app.metricly.com/#/login?sso=true&tenantName=Your+Tenant+Name`
+- **login URL:** `https://us.cloudwisdom.virtana.com/#/login?sso=true`
+- **login URL (tenant name pre populated):** `https://us.cloudwisdom.virtana.com/#/login?sso=true&tenantName=Your+Tenant+Name`

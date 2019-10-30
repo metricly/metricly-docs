@@ -13,13 +13,13 @@ author: Lawrence Lane
 2. Navigate to **Alert Behavior** > **Integrations**.
 ![Alert Behavior Integrations](/images/notifications-victorops/alert-behavior-integrations.png)
 3. Search for `Metricly` and select the card.
-![Search Metricly](/images/notifications-victorops/search-metricly.png)
+![Search CloudWisdom](/images/notifications-victorops/search-metricly.png)
 4. Click **Enable Integration**.
 5. Copy the **Service API Endpoint**. This is required for the next step.
 ![API Key](/images/notifications-victorops/api-key.png)
 
-### 2. Create a Webhook notification in Metricly
-1. In Metricly, navigate to the **Policy Editor**.
+### 2. Create a Webhook notification in CloudWisdom
+1. In CloudWisdom, navigate to the **Policy Editor**.
 2. Click tab 3, **Notifications**.
 3. Click **Add Notification** and select **Webhook** as the _Notification Type_.
 4. Provide a `name` for the webhook notification.

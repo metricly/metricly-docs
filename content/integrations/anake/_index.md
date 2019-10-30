@@ -6,7 +6,7 @@ tags: ["#anake", "#integrations", "#custom metrics", "#java"]
 author: Lawrence Lane
 ---
 
-Ananke is a Java library that allows Java applications to communicate with and send information to a StatsD listener. You can use Ananke to send metrics from your Java applications to a StatsD server, which will then send the metrics to Metricly.
+Ananke is a Java library that allows Java applications to communicate with and send information to a StatsD listener. You can use Ananke to send metrics from your Java applications to a StatsD server, which will then send the metrics to CloudWisdom.
 
 
 ## Configuration
@@ -17,7 +17,7 @@ Ananke is a Java library that allows Java applications to communicate with and s
 ```
 StatsDClient client = new NetuitiveStatsDClient("localhost", "8000");
 ```
-4\. Utilize code instrumentation to send metrics, events, service checks, and more into Metricly (basic examples included below each type). Metricly supports the following metric types:
+4\. Utilize code instrumentation to send metrics, events, service checks, and more into CloudWisdom (basic examples included below each type). CloudWisdom supports the following metric types:
  - **Decrement (Counter – Down)**: Decrease the count of how many times something happened per second.
 
  ```
@@ -87,6 +87,6 @@ We have several different options for monitoring Java applications. Each method 
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ananke     | Java library you can use to push metrics to the StatsD listener embedded in our Linux agent. This approach requires that you integrate the StatsDReporter into your applications. |
 | Dropwizard | Integrate the dropwizard-metrics library into your Dropwizard application and configure it to send metrics to the StatsD listener embedded in our Linux agent.                    |
-| Iris       | Java library you can use to push metrics directly to Metricly’s REST API.                                                                                                         |
+| Iris       | Java library you can use to push metrics directly to CloudWisdom’s REST API.                                                                                                         |
 | Java Agent | Open-source and open-license Java agent the does the byte-code instrumentation for you. No changes to source code required.                                                       |
 | JMX        | Integration that relies on our Linux agent to collect JVM metrics (e.g., heap size, garbage collection, etc.) without code-level instrumentation.                                 |

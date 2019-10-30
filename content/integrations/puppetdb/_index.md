@@ -11,11 +11,11 @@ author: Lawrence Lane
 
 ## Configure
 
-You cannot activate the PuppetDB integration until Metricly begins receiving data. Once data arrives, the package ([Dashboards][2] and [Policies][3]) is automatically provisioned. To remove those Dashboards and Policies, click the toggle on the PuppetDB integration card.
+You cannot activate the PuppetDB integration until CloudWisdom begins receiving data. Once data arrives, the package ([Dashboards][2] and [Policies][3]) is automatically provisioned. To remove those Dashboards and Policies, click the toggle on the PuppetDB integration card.
 
 ### 1. Get API Key
 
-1. In Metricly, Navigate to **Integrations** > **PuppetDB**.
+1. In CloudWisdom, Navigate to **Integrations** > **PuppetDB**.
 2. Copy the **API Key**.
 3. Add this key to your Linux Agent.
 
@@ -33,7 +33,7 @@ port = 8080
 4\. View your data.
 
 {{% notice info %}}
-Metricly starts displaying data **in approximately 5 minutes**.You can adjust the default settings as necessary depending on your environment.
+CloudWisdom starts displaying data **in approximately 5 minutes**.You can adjust the default settings as necessary depending on your environment.
 {{% /notice %}}
 
 ## Collector Options

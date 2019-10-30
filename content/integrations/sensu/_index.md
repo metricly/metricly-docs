@@ -5,7 +5,7 @@ draft: false
 tags: ["#sensu", "#integrations" ]
 author: Lawrence Lane
 ---
-Sensu is a monitoring tool that can create events to alert users about server failures, application health, and more. Sensu can be configured to send external events to Metricly. This feature is only compatible with Linux machines.
+Sensu is a monitoring tool that can create events to alert users about server failures, application health, and more. Sensu can be configured to send external events to CloudWisdom. This feature is only compatible with Linux machines.
 
 ## How to Send Events From Sensu
 
@@ -16,7 +16,7 @@ Sensu is a monitoring tool that can create events to alert users about server fa
 
 ```
 sudo curl
-http://repos.app.metricly.com/cli
+http://repos.us.cloudwisdom.virtana.com/cli
 -agent/metricly-event-handler-linux -o
 "/bin/metricly-event-handler"
 ```
@@ -24,7 +24,7 @@ http://repos.app.metricly.com/cli
 6. Create and configure the **/etc/metricly/metricly-event-handler.yaml** file using the API key you copied in step 2 and the URL to the events ingest API.
 
 ```
-url: "https://api.app.metricly.com/ingest/events"
+url: "https://api.us.cloudwisdom.virtana.com/ingest/events"
 ```
 7\. [Create a handler in Sensu](https://sensuapp.org/docs/latest/handlers).  
 8. Create a file named **metricly_handler.json** in `etc/sensu/conf.d`
@@ -46,7 +46,7 @@ url: "https://api.app.metricly.com/ingest/events"
 ```
 9\. [Create at least one check in Sensu](https://sensuapp.org/docs/latest/getting-started-with-checks).  
 10. **Restart** the Sensu services to pick up the new check and handler.  
-11. Check Metricly for your new Sensu events.  
+11. Check CloudWisdom for your new Sensu events.  
 
 
 ## Example

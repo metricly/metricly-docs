@@ -9,5 +9,5 @@ author: Lawrence Lane
 ## Computed
 | Fully Qualified Name(FQN)             | Description                                                               | Units | Min | Max  | BASE | CORR | UTIL |
 |---------------------------------------|---------------------------------------------------------------------------|-------|-----|------|------|------|------|
-| metriclyicly.linux.iostat.totalreads  | Total reads across all disks. **Computation**: data.sum(‘iostat\\..*\\.reads)   |       | 0   | none | yes  | no   | no   |
-| metriclyicly.linux.iostat.totalwrites | Total writes across all disks. **Computation**: data.sum(‘iostat\\..*\\.writes) |       | 0   | none | yes  | no   | no   |
+| netuitive.linux.iostat.totalreads  | Total reads across all disks. **Computation**: data.sum(‘iostat\\..*\\.reads)   |       | 0   | none | yes  | no   | no   |
+| netuitive.linux.iostat.totalwrites | Total writes across all disks. **Computation**: data.sum(‘iostat\\..*\\.writes) |       | 0   | none | yes  | no   | no   |

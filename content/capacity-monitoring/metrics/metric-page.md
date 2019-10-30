@@ -13,7 +13,7 @@ author: Lawrence Lane
 - **Name Contains**: Specific search based on name  
 -  **Search Metrics**: Broad filter based on metric type, provided in tree and list form
 - **Element, Type, More**:  Additional expandable filter options  
-- **Grouped By**: Contains a menu of all quick groups, tags, and attributes available to Metricly. After you’ve rendered some metric charts, choose one of the groupings and Metricly will automatically group the metric charts based on your selection.
+- **Grouped By**: Contains a menu of all quick groups, tags, and attributes available to CloudWisdom. After you’ve rendered some metric charts, choose one of the groupings and CloudWisdom will automatically group the metric charts based on your selection.
 
 {{% notice note %}}
 If you chose to display all EC2 metrics and then grouped by instance ID, each instance’s set of metrics would be grouped in a section together under the instance’s ID.
@@ -43,6 +43,6 @@ Select the type of data displayed on the metric charts.
 
 | Option                                                                         | Description                                                                                                                     |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Raw                                                                            | Shows data that has not been aggregated by Metricly. Computed metrics do not have raw data because they are calculated by Metricly.                                |
-| 5 Min                                                                          | Displays aggregate data that Metricly generates by averaging the data collected from a given integration at 5 minute intervals. |
-| 1 Hour                                                                         | Displays aggregate data that Metricly generates by averaging the data collected from a given integration at 1 hour intervals.   |
+| Raw                                                                            | Shows data that has not been aggregated by CloudWisdom. Computed metrics do not have raw data because they are calculated by CloudWisdom.                                |
+| 5 Min                                                                          | Displays aggregate data that CloudWisdom generates by averaging the data collected from a given integration at 5 minute intervals. |
+| 1 Hour                                                                         | Displays aggregate data that CloudWisdom generates by averaging the data collected from a given integration at 1 hour intervals.   |

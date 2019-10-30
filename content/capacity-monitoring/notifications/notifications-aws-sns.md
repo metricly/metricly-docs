@@ -7,7 +7,7 @@ tags: ["#alerts", "#notifications", "#sns"]
 author: Lawrence Lane
 ---
 
-You can leverage AWS’s Simple Notification Service as one of your notification methods in Metricly. There are two ways to accomplish this: through an **IAM Role** or **Access Key**. It is recommended that you have first set up the AWS Integration and are familiar with terms such as **ARN (Amazon Resource Names)**, which are needed to complete setup.
+You can leverage AWS’s Simple Notification Service as one of your notification methods in CloudWisdom. There are two ways to accomplish this: through an **IAM Role** or **Access Key**. It is recommended that you have first set up the AWS Integration and are familiar with terms such as **ARN (Amazon Resource Names)**, which are needed to complete setup.
 
 
 **Inbound & Outbound**
@@ -20,10 +20,10 @@ This guide tackles outbound SNS setup, however you can also ingest inbound SNS n
 #### 1. Add SNS Permissions to your AWS IAM Role
 You must add SNS permissions to your AWS IAM Role in order to complete setup. Completing this section provides you with the required **IAM Role ARN** for section 4. Haven’t created an IAM Role? Complete our [AWS setup documentation][2].
 
-1. In a separate tab from Metricly, log in to your AWS Identity & Access Management (IAM) Console.
+1. In a separate tab from CloudWisdom, log in to your AWS Identity & Access Management (IAM) Console.
 2. Once in the IAM dashboard, navigate to the **Roles** section.
-3. Search for your AWS Metricly IAM Role.
-4. Select your AWS Metricly IAM role.
+3. Search for your AWS CloudWisdom IAM Role.
+4. Select your AWS CloudWisdom IAM role.
 5. Click **Attach Policy**.
 6. For Attach Policy, search `sns`, then select **AmazonSNSFullAccess**.
 ![Attach Policy](/images/notifications-aws-sns/attach-policy.png)
@@ -31,15 +31,15 @@ You must add SNS permissions to your AWS IAM Role in order to complete setup. Co
 8. Return to step 2.5 in the previous section and input the IAM Role ARN.
 
 #### 2. Obtain Topic ARN
-You must have a **Topic ARN** set up in AWS to use SNS with Metricly. Completing this section provides you with that number.
+You must have a **Topic ARN** set up in AWS to use SNS with CloudWisdom. Completing this section provides you with that number.
 
 1. Navigate to the SNS console.
 2. Click **Topics** on the left-hand menu.
-3. Copy the ARN from the ARN column next to the desired topic. Paste the value into the **Topic ARN** field in the SNS Notification window in Metricly.
+3. Copy the ARN from the ARN column next to the desired topic. Paste the value into the **Topic ARN** field in the SNS Notification window in CloudWisdom.
 4. Back in the SNS console, select the same topic, and then click **Edit topic policy** in the Actions menu.
-5. Under the _Allow these users to publish messages to this topic_ section, select Only these AWS users and add the `Account ID` from Metricly to the field.
+5. Under the _Allow these users to publish messages to this topic_ section, select Only these AWS users and add the `Account ID` from CloudWisdom to the field.
 6. Click **Update Policy**.
-7. Return to Metricly and optionally select **Custom** from the Payload drop-down menu. A text field will open after selecting Custom. Create a custom JSON payload in the textbox. You can use the following variables to make your notification more dynamic.
+7. Return to CloudWisdom and optionally select **Custom** from the Payload drop-down menu. A text field will open after selecting Custom. Create a custom JSON payload in the textbox. You can use the following variables to make your notification more dynamic.
 8. Click **Save**.
 
 | Variable              | Description                                              |
@@ -94,7 +94,7 @@ Below is the default payload used in the SNS integration, but it’s a good star
 ### Access Key Setup Method
 
 #### 1. Create a User and **Add SNS Permissions**.
-You must have a user with SNS permissions to complete the setup of an SNS with Metricly. Completing this section provides you with the required Access key ID and Secret access key.
+You must have a user with SNS permissions to complete the setup of an SNS with CloudWisdom. Completing this section provides you with the required Access key ID and Secret access key.
 1. In the AWS Console, navigate to **Users**.
 2. Click **Add a User**.
 3. Prove a `Name` and check **Programmatic Access**.
@@ -107,15 +107,15 @@ You must have a user with SNS permissions to complete the setup of an SNS with M
 8. Copy the **Access key ID** and **Secret access key**.
 
 #### 2. Obtain Topic ARN
-You must have a **Topic ARN** set up in AWS to use SNS with Metricly. Completing this section provides you with that number.
+You must have a **Topic ARN** set up in AWS to use SNS with CloudWisdom. Completing this section provides you with that number.
 
 1. Navigate to the SNS console.
 2. Click **Topics** on the left-hand menu.
-3. Copy the **ARN** from the ARN column next to the desired topic. Paste the value into the Topic ARN field in the SNS Notification window in Metricly.
+3. Copy the **ARN** from the ARN column next to the desired topic. Paste the value into the Topic ARN field in the SNS Notification window in CloudWisdom.
 4. Back in the SNS console, select the same topic, and then click **Edit topic policy** in the Actions menu.
-5. Under the _Allow these users to publish messages to this topic section_, select **Only these AWS users** and add the `Account ID` from Metricly to the field.
+5. Under the _Allow these users to publish messages to this topic section_, select **Only these AWS users** and add the `Account ID` from CloudWisdom to the field.
 6. Click **Update Policy**.
-7. Return to Metricly and optionally select Custom from the Payload drop-down menu. A text field will open after selecting Custom. Create a custom JSON payload in the textbox. You can use the following variables to make your notification more dynamic.
+7. Return to CloudWisdom and optionally select Custom from the Payload drop-down menu. A text field will open after selecting Custom. Create a custom JSON payload in the textbox. You can use the following variables to make your notification more dynamic.
 8. Click **Save**.
 
 | Variable              | Description                                              |
@@ -151,7 +151,7 @@ Below is the default payload used in the SNS integration, but it’s a good star
 }
 ```
 
-#### 3. Navigate to Integrations in Metricly
+#### 3. Navigate to Integrations in CloudWisdom
 1. Click your **Username** > **Notifications**.
 2. Click **SNS**.
 3. Click **Add SNS**.

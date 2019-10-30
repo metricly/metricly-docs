@@ -6,11 +6,11 @@ tags: ["#collectd", "#integrations", "#collectors" ]
 author: Lawrence Lane
 ---
 
-Collectd’s Write HTTP plugin can be used to configure collectd to send data to Metricly. If you need additional information about setting up Collectd, view [their wiki](https://collectd.org/wiki/index.php/First_steps).
+Collectd’s Write HTTP plugin can be used to configure collectd to send data to CloudWisdom. If you need additional information about setting up Collectd, view [their wiki](https://collectd.org/wiki/index.php/First_steps).
 
 ## Configuration
 
-### 1. Copy API Key in Metricly
+### 1. Copy API Key in CloudWisdom
 
 1. From the top navigation menu, click **Integrations**.
 2. Click the **collectd** card. Data collection should already be enabled, and a `unique API key` for your account has already been generated.
@@ -20,7 +20,7 @@ Collectd’s Write HTTP plugin can be used to configure collectd to send data to
 Installation steps for collectd may vary widely between systems, so you’ll want to install collectd based on recommended steps for your distro and the version of collectd you downloaded. You can download the latest version of collectd [here](https://collectd.org/download.shtml).
 
 1. After installing collectd, open your `collectd.conf` file. It can usually be found in `/etc/collectd.conf`.
-2. Set the **Interval** to `60`. Setting the Interval to 60 will allow metrics to be collected and sent to Metricly every 60 seconds.
+2. Set the **Interval** to `60`. Setting the Interval to 60 will allow metrics to be collected and sent to CloudWisdom every 60 seconds.
 3. **Enable** the following plugins by uncommenting them:
 
 ```
@@ -38,7 +38,7 @@ LoadPlugin write_http
 ```
 <Plugin "write_http">
   <Node "example">
-    URL "https://api.app.metricly.com/ingest/collectd/API_KEY";
+    URL "https://api.us.cloudwisdom.virtana.com/ingest/collectd/API_KEY";
     User "collectd"
     Password "weCh3ik0"
     Format JSON
@@ -54,6 +54,6 @@ LoadPlugin write_http
 Hostname "unique_fqn_of_your_host"
 ```
 
-This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as Metricly receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
+This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as CloudWisdom receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
 
 [1]: /capacity-monitoring/inventory

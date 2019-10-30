@@ -5,7 +5,7 @@ draft: false
 tags: ["#flume", "#integrations", "#collectors" ]
 author: Lawrence Lane
 ---
-Flume collects and aggregates all of your log files distributed across your environment. Metricly can be used to monitor the performance of your Flume service.
+Flume collects and aggregates all of your log files distributed across your environment. CloudWisdom can be used to monitor the performance of your Flume service.
 
 ## Configuration
 1. Navigate to the **collectors** folder, `/opt/netuitive-agent/conf/collectors`.
