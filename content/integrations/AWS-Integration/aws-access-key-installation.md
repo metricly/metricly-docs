@@ -12,8 +12,8 @@ weight: 3
 
 Setting up an AWS integration is a two step process:  
 
-1. Create a new AWS integration in CloudWisdomand share the **Access Key ID** and **Secret Access Key** of the desired IAM read-only user.  
-2. Optionally, filter your AWS elements for inclusion in CloudWisdomby creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.  
+1. Create a new AWS integration in CloudWisdom and share the **Access Key ID** and **Secret Access Key** of the desired IAM read-only user.  
+2. Optionally, filter your AWS elements for inclusion in CloudWisdom by creating or choosing an existing tag (key-value pair), then assigning that tag to the desired elements in AWS.  
 
 ### Step 1: Create a new AWS integration
 1. From the top navigation menu, select Integrations.  

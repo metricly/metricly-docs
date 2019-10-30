@@ -43,7 +43,7 @@ You are now ready to define your new SSO application's SAML and user settings. I
 
 1. Select **Upload metadata file**.
 ![azure-upload-cert](/images/sso-azure/azure-upload-cert.png)
-2. Upload the `.cert` file created in CloudWisdomfrom the first step.
+2. Upload the `.cert` file created in CloudWisdom from the first step.
 
 ### Define Azure SAML SSO Configuration
 

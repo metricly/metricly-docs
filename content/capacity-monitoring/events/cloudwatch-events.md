@@ -8,7 +8,7 @@ author: Lawrence Lane
 ---
 
 
-Through a combination of SNS Notifications,CloudWisdom’s Webhook integration, and an external event conditions policy filter, you can push event logs from your AWS services to CloudWisdom and act on them in the UI. This works across several AWS services. Once set up, these logs can be divided further on the policy level (through matching value strings in the log message and categorized by severity).  Policies for your event logs can also be set up with various notifications through email, slack, and others. The below instructions use Lambda as an example.
+Through a combination of SNS Notifications, CloudWisdom’s Webhook integration, and an external event conditions policy filter, you can push event logs from your AWS services to CloudWisdom and act on them in the UI. This works across several AWS services. Once set up, these logs can be divided further on the policy level (through matching value strings in the log message and categorized by severity).  Policies for your event logs can also be set up with various notifications through email, slack, and others. The below instructions use Lambda as an example.
 
 ## Configuration
 

@@ -14,7 +14,7 @@ Dropwizard is part Java framework and part Java library that assists in operatin
 
 ```
 <dependency>
-  <groupId>com.metricly</groupId>
+  <groupId>com.netuitive</groupId>
   <artifactId>dropwizard-metrics</artifactId>
   <version>1.0.0</version>
   <type>pom</type>

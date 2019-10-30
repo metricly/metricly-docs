@@ -11,7 +11,7 @@ author: Lawrence Lane
 
 ### 1. Create a CloudWisdom integration within OpsGenie
 1. Log in to your OpsGenie account.
-2. Under Integrations, select **CloudWisdom**.
+2. Under Integrations, select **Metricly**.
 3. Copy the **API key** provided on this page to your clipboard. You will use this to set up a new OpsGenie notification in CloudWisdom.
 4. Leave the Teams and Recipients fields as ``{{teams}}`` and ``{{recipients}}``, respectively.
 {{% notice tip %}}

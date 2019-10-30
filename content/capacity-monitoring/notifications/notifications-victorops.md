@@ -12,7 +12,7 @@ author: Lawrence Lane
 1. Login to your VictorOps account.
 2. Navigate to **Alert Behavior** > **Integrations**.
 ![Alert Behavior Integrations](/images/notifications-victorops/alert-behavior-integrations.png)
-3. Search for `CloudWisdom` and select the card.
+3. Search for `Metricly` and select the card.
 ![Search CloudWisdom](/images/notifications-victorops/search-metricly.png)
 4. Click **Enable Integration**.
 5. Copy the **Service API Endpoint**. This is required for the next step.

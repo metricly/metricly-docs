@@ -7,7 +7,7 @@ author: Lawrence Lane
 ---
 
 ## Manually Install the Windows Agent
-1. Download the latest [Windows Agent](https://repos.us.cloudwisdom.virtana.com/windows-agent/index.html). Ensure you download the correct version for your environment.
+1. Download the latest [Windows Agent](https://repos.app.metricly.com/windows-agent/index.html). Ensure you download the correct version for your environment.
 2. Run the setup wizard and follow the instructions to install it.
 3. Navigate to the** WriteNetuitive.config** file (`C:\Program Files\CollectdWin\config` or `C:\Program Files (x86)\CollectdWin\config` depending on your environment.
 4. Open the file and locate the line `<WriteNetuitiveURL="https://api.us.cloudwisdom.virtana.com/ingest/windows/{apikey}" />`.

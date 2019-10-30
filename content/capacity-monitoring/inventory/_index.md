@@ -33,7 +33,7 @@ For example, with attribute information, you can see the number and type of CPU 
 
 Each element has a type that determines how it is processed and represented by CloudWisdom. Element type is also used as a filter in list pages in the UI. The types of elements in your environment will vary based on the integration that you use<superscript>1</superscript>.
 
-| Integration      | Element Type in CloudWisdom          |
+| Integration      | Element Type in CloudWisdom       |
 |------------------|-----------------------------------|
 | AWS              | ASG (Auto Scaling Group)          |
 | AWS              | Custom Cloudwatch Metrics         |

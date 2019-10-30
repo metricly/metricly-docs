@@ -21,7 +21,7 @@ author: Lawrence Lane
 7. Click **Create**.
 8. Copy the `Webhook URL` that is generated.
 ![Copy Webhook URL](/images/notifications-microsoft-teams/copy-webhook-url.png)
-9. Click **Done**. The next steps are in CloudWisdomand require the copied Webhook URL.
+9. Click **Done**. The next steps are in CloudWisdom and require the copied Webhook URL.
 
 ### 2. Create a Webhook Notification in CloudWisdom
 1. In CloudWisdom, navigate to the **Policy Editor**.

@@ -6,7 +6,7 @@ categories: ["integration", "admin guide", "getting started"]
 tags: ["#microsoft", "#azure", "#integrations", "#optional config"]
 author: Lawrence Lane
 ---
-You can filter what Azure elements are included in CloudWisdomy’s monitoring by using regex to match key-value pairs. CloudWisdom offers opt-in (include) or opt-out (exclude) element filtering.
+You can filter what Azure elements are included in CloudWisdom’s monitoring by using regex to match key-value pairs. CloudWisdom offers opt-in (include) or opt-out (exclude) element filtering.
 
 ## Using opt-in filtering
 1. In your Azure portal, create or choose an existing tag (key-value pair). Then, assign the tag to the Azure elements you do not want CloudWisdom to monitor.
