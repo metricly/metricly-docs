@@ -5,7 +5,7 @@ draft: false
 tags: ["#rabbitmq", "#integrations" ]
 author: Lawrence Lane
 ---
-Rabbit MQ is a message broker that manages queues between message producers and consumers. Metricly can be used to monitor your RabbitMQ server’s queuing performance.
+Rabbit MQ is a message broker that manages queues between message producers and consumers. CloudWisdom can be used to monitor your RabbitMQ server’s queuing performance.
 
 ## Prerequisites
 - [Linux Agent][1]
@@ -40,7 +40,7 @@ rabbitmq-plugins enable rabbitmq_management
 | host                   | 127.0.0.1:15672    | Hostname and port to collect from.                                                                                                                                                                                                      |
 | user                   | guest              | User name authentication for RabbitMQ.                                                                                                                                                                                                  |
 | password               | guest              | Password authentication for RabbitMQ.                                                                                                                                                                                                   |
-| replace_dot            | ‘_’                | A value to replace the “.” in queue names and vhosts names. This option helps Metricly’s metadata usage if you use dots in your queue naming convention.                                                                                |
+| replace_dot            | ‘_’                | A value to replace the “.” in queue names and vhosts names. This option helps CloudWisdom’s metadata usage if you use dots in your queue naming convention.                                                                                |
 | cluster                | TRUE               | If this node is part of a cluster, the collector will collect metrics on the cluster health.                                                                                                                                            |
 | metrics_blacklist      | “(.-test__[abc]-.) | (rabbitmq.queues..*)”                                                                                                                                                                                                                   |
 | byte_unit              |                    | Default numeric output(s).                                                                                                                                                                                                              |

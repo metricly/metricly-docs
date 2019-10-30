@@ -5,7 +5,7 @@ draft: false
 tags: ["#redis", "#integrations" ]
 author: Lawrence Lane
 ---
-Redis is an adaptable, open source, in-memory data structure store that can be used as a database, cache, and message broker. Metricly can be used to monitor the performance of your Redis server.
+Redis is an adaptable, open source, in-memory data structure store that can be used as a database, cache, and message broker. CloudWisdom can be used to monitor the performance of your Redis server.
 
 ## Prerequisites
 - [Linux Agent][1]
@@ -29,7 +29,7 @@ Redis is an adaptable, open source, in-memory data structure store that can be u
 | host                   | 127.0.0.1:15672                              | Hostname and port to collect from.                                                                                                                       |
 | user                   | guest                                        | User name authentication for RabbitMQ.                                                                                                                   |
 | password               | guest                                        | Password authentication for RabbitMQ.                                                                                                                    |
-| replace_dot            | ‘_’                                          | A value to replace the “.” in queue names and vhosts names. This option helps Metricly’s metadata usage if you use dots in your queue naming convention. |
+| replace_dot            | ‘_’                                          | A value to replace the “.” in queue names and vhosts names. This option helps CloudWisdom’s metadata usage if you use dots in your queue naming convention. |
 | cluster                | TRUE                                         | If this node is part of a cluster, the collector will collect metrics on the cluster health.                                                             |
 | metrics_blacklist      | “(.*-test__[abc]-.*)|(rabbitmq\.queues\..*)” | Regex list to match metrics to block. Mutually exclusive with metrics_whitelist option.                                                                  |
 | byte_unit              |                                              | Default numeric output(s).                                                                                                                               |

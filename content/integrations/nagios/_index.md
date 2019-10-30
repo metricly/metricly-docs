@@ -5,9 +5,9 @@ draft: false
 tags: ["#nagios", "#integrations" ]
 author: Lawrence Lane
 ---
-Nagios is a comprehensive enterprise-class open source monitoring service. You can use our [Metricly Event Handler](https://github.com/netuitive/netuitive-event-handler) to send your Nagios events to Metricly.
+Nagios is a comprehensive enterprise-class open source monitoring service. You can use our [Metricly Event Handler](https://github.com/netuitive/netuitive-event-handler) to send your Nagios events to CloudWisdom.
 
-## Sending Nagios Events to Metricly
+## Sending Nagios Events to CloudWisdom
 
 1. Hover on your account name in the top right-hand corner and click **API Keys** from the drop-down menu.
 2. Copy the **API Key** from the _Custom_ integration in the table.
@@ -71,4 +71,4 @@ $SERVICEOUTPUT$"
 notify-service-by-netuitive-event
 ```
 18\. In the **event_hander_enabled** field, input a `1` to enable the event handler.  
-19\. Check **Metricly** for your new Nagios events.
+19\. Check **CloudWisdom** for your new Nagios events.

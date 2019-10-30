@@ -5,7 +5,7 @@ draft: false
 tags: ["#mongoDB", "#integrations" ]
 author: Lawrence Lane
 ---
- MongoDB is a document-oriented NoSQL database. Metricly can be used to monitor your MongoDB’s performance.
+ MongoDB is a document-oriented NoSQL database. CloudWisdom can be used to monitor your MongoDB’s performance.
 
 ## Prerequisites
 

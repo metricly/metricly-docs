@@ -5,7 +5,7 @@ draft: false
 tags: ["#netuitive", "#integrations", "#netuitive statsd", "#statsd", "#custom metrics" ]
 author: Lawrence Lane
 ---
-The Netuitive StatsD integration interprets, aggregates, and forwards custom metrics generated from your application. Using the values instrumented from your application’s key actions and data (method calls, database queries, etc.), Metricly aggregates the values, associates them with corresponding metrics, and analyzes them in our analytics cycles.
+The Netuitive StatsD integration interprets, aggregates, and forwards custom metrics generated from your application. Using the values instrumented from your application’s key actions and data (method calls, database queries, etc.), CloudWisdom aggregates the values, associates them with corresponding metrics, and analyzes them in our analytics cycles.
 
 The Netuitive StatsD server comes pre-installed as part of the Linux Agent. We recommend setting up a Netuitive StatsD integration if you do not have a StatsD server already.
 
@@ -27,7 +27,7 @@ tag3:value3
 4. **Restart** the Linux Agent.
 
 ## Instrumentation
-Netuitive StatsD will collect and organize your data as your application calls functions and methods. This data is flushed to the Metricly StatsD server every 60 seconds by default, and then aggregated in Metricly’s five-minute batch analytics cycle. After Metricly analyzes your data, it’s then graphed for you to see. The Metricly StatsD server will place all of your metrics under the StatsD namespace in the Metrics page. Metrics about the Netuitive StatsD server itself are organized under the netuitive-statsd namespace in the Metrics page.
+Netuitive StatsD will collect and organize your data as your application calls functions and methods. This data is flushed to the Metricly StatsD server every 60 seconds by default, and then aggregated in CloudWisdom’s five-minute batch analytics cycle. After Metricly analyzes your data, it’s then graphed for you to see. The Metricly StatsD server will place all of your metrics under the StatsD namespace in the Metrics page. Metrics about the Netuitive StatsD server itself are organized under the netuitive-statsd namespace in the Metrics page.
 
 Before you begin instrumenting custom metrics, you’ll need to find a language library to “talk” to the Netuitive StatsD server using certain metric types. Netuitive StatsD supports the following metric types:
 
@@ -184,8 +184,8 @@ Netuitive StatsD already uses a few tags, so be mindful when passing in tags wit
 | interval     | 60        | The interval (in seconds) at which to collect metrics.                                                             |
 | listen_port  | 8125      | User Datagram Protocol (UDP) port to listen on.                                                                    |
 | listen_ip    | 127.0.0.1 | IP address to listen on.                                                                                           |
-| element_type | SERVER    | Element type applied to your netuitive-statsd server instance in Metricly.                                         |
-| prefix       | statsd    | Prefix applied to your netuitive-statsd metrics in Metricly. Setting an empty prefix causes no prefix to be added. |
+| element_type | SERVER    | Element type applied to your netuitive-statsd server instance in CloudWisdom.                                         |
+| prefix       | statsd    | Prefix applied to your netuitive-statsd metrics in CloudWisdom. Setting an empty prefix causes no prefix to be added. |
 | forward_ip   | 127.0.0.1 | IP address to forward StatsD messages to.                                                                          |
 | forward_port | 9125      | UDP port to forward StatsD messages to.                                                                            |
 | forward      | FALSE     | Enable StatsD forwarding.                                                                                          |

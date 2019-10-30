@@ -5,7 +5,7 @@ draft: false
 tags: ["#sensu", "#integrations" ]
 author: Lawrence Lane
 ---
-Sensu is a monitoring tool that can create events to alert users about server failures, application health, and more. Sensu can be configured to send external events to Metricly. This feature is only compatible with Linux machines.
+Sensu is a monitoring tool that can create events to alert users about server failures, application health, and more. Sensu can be configured to send external events to CloudWisdom. This feature is only compatible with Linux machines.
 
 ## How to Send Events From Sensu
 
@@ -46,7 +46,7 @@ url: "https://api.us.cloudwisdom.virtana.com/ingest/events"
 ```
 9\. [Create at least one check in Sensu](https://sensuapp.org/docs/latest/getting-started-with-checks).  
 10. **Restart** the Sensu services to pick up the new check and handler.  
-11. Check Metricly for your new Sensu events.  
+11. Check CloudWisdom for your new Sensu events.  
 
 
 ## Example

@@ -30,7 +30,7 @@ The [Linux Agent][1] is required before proceeding with the setup of HTTPD. If y
 | enabled                | FALSE     | Enable collecting Jolokia metrics.                                                                                          |
 | host                   | localhost | Hostname to collect from.                                                                                                   |
 | port                   | 8778      | Port to collect from.                                                                                                       |
-| path                   | jmx       | The metric prefix, e.g., how you want the metrics to show up in Metricly.                                                   |
+| path                   | jmx       | The metric prefix, e.g., how you want the metrics to show up in CloudWisdom.                                                   |
 | jolokia_path           | jolokia   | Part of the URL path that points to where your application serves metrics. Typically jmx or jolokia.                        |
 | mbeans                 | java.*    | Pipe ( | ) delimited list of MBeans for which to collect stats. If no list is provided, all MBeans stats will be collected. |
 | regex                  | TRUE      | Enables the mbeans option to match with regex.                                                                              |

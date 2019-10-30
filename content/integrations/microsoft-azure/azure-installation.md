@@ -19,21 +19,21 @@ The following instructions were created using the Azure portal not the classic p
 1. Once in the Azure portal, click **Azure Active Directory** from the left side menu.
 2. Click the **App registrations** widget.
 3. Click **Add** at the top. A _Create_ window will open.
-4. Type the name of the application. We recommend Azure / Metricly Integration, or something similar.
+4. Type the name of the application. We recommend Azure / CloudWisdom Integration, or something similar.
 4. Ensure the Application Type is **Web app / API**.
 5. Input `https://us.cloudwisdom.virtana.com` for the **Sign-on URL**.
 6. Click **Create** at the bottom of the window.
 
 ## 3. Get the Application ID, Application Key, & Tenant ID
 1. Select your new application from the _App registrations_ list. The application’s Essentials and Settings windows open.
-2. Copy the **Application ID** (also known as the **Client ID**) and return to the tab with Metricly open. Paste it into the _Client ID_ field. Once it’s pasted, return to the Azure tab.
+2. Copy the **Application ID** (also known as the **Client ID**) and return to the tab with CloudWisdom open. Paste it into the _Client ID_ field. Once it’s pasted, return to the Azure tab.
 3. From the _Settings_ window, click **Keys**.
 4. In the _Keys_ window, add a `description` for the key.
 5. Select a duration for the key.
 6. Click **Save** at the top of the Keys window.
-7. Copy the Key’s Value and return to the tab with Metricly open. Paste it into the **Access Key** field. Once it’s pasted, return to the Azure tab.
+7. Copy the Key’s Value and return to the tab with CloudWisdom open. Paste it into the **Access Key** field. Once it’s pasted, return to the Azure tab.
 8. Return to the App registrations window and click **Endpoints**.
-9. From the list of endpoints, you’ll notice your `Tenant ID` in each of the URLs. Copy the `Tenant ID` from one of the endpoints and return to the tab with Metricly open. Paste it into the **Tenant ID** field. Once it’s pasted, return to the Azure tab.
+9. From the list of endpoints, you’ll notice your `Tenant ID` in each of the URLs. Copy the `Tenant ID` from one of the endpoints and return to the tab with CloudWisdom open. Paste it into the **Tenant ID** field. Once it’s pasted, return to the Azure tab.
 
 ## 4. Set Delegated Permissions
 1. Open the application’s settings window and click **Required permissions**.
@@ -53,7 +53,7 @@ To assign a role to the application, you’ll need the Owner or User Access Admi
 {{% notice tip %}}
 If you don’t see Subscriptions in your side menu, click **More services** and search for `Subscriptions` using the filter.
 {{% /notice %}}
-2. Copy the **Subscription ID** and return to the tab with Metricly open. Paste it into the appropriate field. Once it’s pasted, return to the Azure tab.
+2. Copy the **Subscription ID** and return to the tab with CloudWisdom open. Paste it into the appropriate field. Once it’s pasted, return to the Azure tab.
 3. Click the appropriate subscription.
 4. Click **Access Control (IAM)**.
 5. Click **Add**.

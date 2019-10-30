@@ -5,7 +5,7 @@ draft: false
 tags: ["#statsd", "#integrations" ]
 author: Lawrence Lane
 ---
-Etsy StatsD is one of the most popular StatsD libraries available. Metricly offers a backend plugin for the Etsy StatsD library that allows you to send your StatsD metric data to Metricly. We recommend using our Etsy StatsD integration if you currently have an Etsy StatsD server running and want to send your instrumented data to Metricly. For more information about Etsy StatsD, see the following documentation.
+Etsy StatsD is one of the most popular StatsD libraries available. CloudWisdom offers a backend plugin for the Etsy StatsD library that allows you to send your StatsD metric data to CloudWisdom. We recommend using our Etsy StatsD integration if you currently have an Etsy StatsD server running and want to send your instrumented data to CloudWisdom. For more information about Etsy StatsD, see the following documentation.
 
 ## Configuration
 ### 1. Copy API key
@@ -42,10 +42,10 @@ Etsy StatsD is one of the most popular StatsD libraries available. Metricly offe
   }
 }
 ```
-4\. In order to associate StatsD metrics with an element in Metricly, ensure that there is at least one mapping for Metricly defined in the **mappings** section of your StatsD configuration file.
+4\. In order to associate StatsD metrics with an element in CloudWisdom, ensure that there is at least one mapping for CloudWisdom defined in the **mappings** section of your StatsD configuration file.
 
 {{% notice tip %}}
-Each mapping uses a pattern with a regular expression (`regex`) that corresponds with a set of keys in StatsD. The regex value can convert these keys to metrics that belong to an element in Metricly. If the element or metric name is in the StatsD key, it can be represented by` $(regex-captured-group-number)`, demonstrated in the code below.
+Each mapping uses a pattern with a regular expression (`regex`) that corresponds with a set of keys in StatsD. The regex value can convert these keys to metrics that belong to an element in CloudWisdom. If the element or metric name is in the StatsD key, it can be represented by` $(regex-captured-group-number)`, demonstrated in the code below.
 {{% /notice %}}
 
 ```
@@ -104,4 +104,4 @@ Each mapping uses a pattern with a regular expression (`regex`) that corresponds
 }
 ```
 5\. We recommend that you set the `flushInterval` in your StatsD configuration file to **60000 milliseconds**. This will ensure that your StatsD data is collected by CloudWisdomevery 1 minute.
-6. Sa**v**e the configuration file and **restart** StatsD. 
+6. Sa**v**e the configuration file and **restart** StatsD.
