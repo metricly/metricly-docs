@@ -5,7 +5,7 @@ draft: false
 tags: ["#user scripts", "#integrations" ]
 author: Lawrence Lane
 ---
-The User Scripts Collector runs external scripts and collects their output for you to view in Metricly.
+The User Scripts Collector runs external scripts and collects their output for you to view in CloudWisdom.
 
 ## Prerequisites
 - [Linux Agent][1]

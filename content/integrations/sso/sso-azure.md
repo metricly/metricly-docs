@@ -11,7 +11,7 @@ weight: 1
 Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [Sales Representative](mailto:sales@metricly.com).
 {{% /alert %}}
 
-## 1. Generate a Certificate in Metricly
+## 1. Generate a Certificate in CloudWisdom
 
 1. Navigate to **Account Profile** > **SSO**.
 2. Select **Generate**.
@@ -39,7 +39,7 @@ Keep this tab open and open a new tab; you must now login to Azure and upload th
 
 You are now ready to define your new SSO application's SAML and user settings. If you need to return to these settings in the future, follow this path: **Azure Active Directory** > **Enterprise applications** > `Your Application Name` > **Single sign-on** > **SAML-based Sign-on**.
 
-### Upload Certificate From Metricly To Azure SAML SSO Application
+### Upload Certificate From CloudWisdom To Azure SAML SSO Application
 
 1. Select **Upload metadata file**.
 ![azure-upload-cert](/images/sso-azure/azure-upload-cert.png)
@@ -56,7 +56,7 @@ You are now ready to define your new SSO application's SAML and user settings. I
   - **Relay State**: `Your Tenant Name` (optional)
 
   {{% notice tip %}}
-  Add your tenant name to the **Relay State** field if you do not want to enter it when logging into CloudWisdom from Azure. Your tenant name is the company name you used when you signed up for a Metricly account. Contact support if you do not know your tenant name.
+  Add your tenant name to the **Relay State** field if you do not want to enter it when logging into CloudWisdom from Azure. Your tenant name is the company name you used when you signed up for a CloudWisdom account. Contact support if you do not know your tenant name.
   {{% /notice %}}
 
 ### Define User Attributes & Claims
@@ -83,9 +83,9 @@ You are now ready to define your new SSO application's SAML and user settings. I
 4. Download the **Federation Metadata XML**.
 ![azure-download-cert](/images/sso-azure/azure-download-cert.png)
 
-These files must be uploaded to Metricly.
+These files must be uploaded to CloudWisdom.
 
-## 3. Finish SSO Set-up in Metricly
+## 3. Finish SSO Set-up in CloudWisdom
 
 1. Navigate to **Account Profile** > **SSO**.
 2. Upload the **Certificate (Base64)** file from Azure.

@@ -15,4 +15,4 @@ pre:
 
 ## About Right Sizing
 
-Right Sizing is the practice of finding the perfect balance between cost efficiency and stability for each of your resources. Metricly provides several tools that help you understand the current performance of your workloads and their true needs—both now and in the future.
+Right Sizing is the practice of finding the perfect balance between cost efficiency and stability for each of your resources. CloudWisdom provides several tools that help you understand the current performance of your workloads and their true needs—both now and in the future.

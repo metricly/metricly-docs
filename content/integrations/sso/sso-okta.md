@@ -11,7 +11,7 @@ weight: 3
 Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [Sales Representative](mailto:sales@metricly.com).
 {{% /alert %}}
 
-## 1. Generate a Certificate in Metricly
+## 1. Generate a Certificate in CloudWisdom
 
 1. Navigate to **Account Profile** > **SSO**.
 2. Click **Generate**.
@@ -42,7 +42,7 @@ Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [
   - In the first default blank attribute, type `email` in the **Name field** and `user.email` into the **Value field**.
   - Click **Add Another**.
   - In the first default blank attribute, type `role` in the **Name field** and `user.role` into the **Value field**  `user.role` must be entered manually and does not appear in the dropdown.
-    - Metricly requires administrator access for creating and editing data. To grant administrator privileges enter `user.isMemberOfGroupName("OurAdminGroup") ? 'Administrator' : null` as your role value and replace _OurAdminGroup_ with your group for Metricly Administrators.
+    - CloudWisdom requires administrator access for creating and editing data. To grant administrator privileges enter `user.isMemberOfGroupName("OurAdminGroup") ? 'Administrator' : null` as your role value and replace _OurAdminGroup_ with your group for CloudWisdom Administrators.
     ![add-attributes](/images/_index/add-attributes.png)
 12. Click **Next**.
 13. Click **Finish**.
@@ -52,11 +52,11 @@ Single Sign-On (SSO) is a **paid-only feature**. Wish to upgrade? Contact your [
 ![optional-metadata](/images/_index/optional-metadata.png)
 
 {{% notice tip %}}
-Add your tenant name to the **Default Relay State** field if you do not want to enter it when logging into CloudWisdom from Okta. Your tenant name is the company name you used when you signed up for a Metricly account. Contact support if you do not know your tenant name.
+Add your tenant name to the **Default Relay State** field if you do not want to enter it when logging into CloudWisdom from Okta. Your tenant name is the company name you used when you signed up for a CloudWisdom account. Contact support if you do not know your tenant name.
 ![default-relay-state](/images/_index/default-relay-state.png)
 {{% /notice %}}
 
-## 3. Finish SSO Set-up in Metricly
+## 3. Finish SSO Set-up in CloudWisdom
 
 1. Upload the certificate (public key) from Okta.
 2. Upload the `metadata.xml` file from Okta.

@@ -13,12 +13,12 @@ Cost Reports are generated once per week. It may take up to 7 days before your f
 
 ## Report Versions
 ### Estimated Cost (AWS CloudWatch Only)
-If you just have an AWS integration in Metricly, the Estimated Cost report is available. Instance costs are estimated based on current list prices and simple assumptions to fill in missing information. For a more accurate view including reservations, data transfer costs, iops guarantees and other account specific charges, you can configure Detailed Billing on your AWS integration which then allows Metricly to use your actual billing files from AWS.
+If you just have an AWS integration in CloudWisdom, the Estimated Cost report is available. Instance costs are estimated based on current list prices and simple assumptions to fill in missing information. For a more accurate view including reservations, data transfer costs, iops guarantees and other account specific charges, you can configure Detailed Billing on your AWS integration which then allows CloudWisdom to use your actual billing files from AWS.
 
-Estimated Cost reports use 7 days of metric results and the current list prices to estimate element instance costs for all instances monitored by Metricly. Estimated Reports do not include data transfer costs and assumes all instances are on-demand.
+Estimated Cost reports use 7 days of metric results and the current list prices to estimate element instance costs for all instances monitored by CloudWisdom. Estimated Reports do not include data transfer costs and assumes all instances are on-demand.
 
 ### Full Cost (AWS CloudWatch and Detailed Billing)
-If you have both an AWS integration set up with Detailed Billing configured, the Full Cost report is available and based on your billing files. The Full Cost report reads 7 days of billing data associated with the instances monitored by Metricly.
+If you have both an AWS integration set up with Detailed Billing configured, the Full Cost report is available and based on your billing files. The Full Cost report reads 7 days of billing data associated with the instances monitored by CloudWisdom.
 
 Costs are aggregated, simplified, and reduced to the following categories element:
 
@@ -39,7 +39,7 @@ Costs are aggregated, simplified, and reduced to the following categories elemen
 | Data Transfer Costs* | Other                             | Other data transfer costs (e.g., Direct Connect)                                                                  |
 
 {{% notice tip %}}
-5-7 days of analysis is required before you can view your initial report. A splash screen greets you in place of the report until Metricly is done generating it.
+5-7 days of analysis is required before you can view your initial report. A splash screen greets you in place of the report until CloudWisdom is done generating it.
 {{% /notice %}}
 ## Report Views
 This section outlines all of the available report views.
@@ -62,7 +62,7 @@ This graph breaks down how much each instance size is costing by instance type. 
 ### Cost vs. Utilization Scatter
 This graph displays a scatter plot of the cost versus utilization for your instances. Hover over a point on the graph to view the instance name, utilization, instance type, tag, and cost. You can zoom into an area of the chart by clicking and dragging the mouse.
 
-This view lets you compare the relative cost and utilization of your instances amongst their peers: elements to the bottom-right have relatively high utilization and lower cost compared with elements in the top-left corner which have lower utilization and higher costs. Elements are given different markers based on their tag. To use this view you need to have tags on your instance elements; these can be source tags (set in AWS) or tags you have created in Metricly.
+This view lets you compare the relative cost and utilization of your instances amongst their peers: elements to the bottom-right have relatively high utilization and lower cost compared with elements in the top-left corner which have lower utilization and higher costs. Elements are given different markers based on their tag. To use this view you need to have tags on your instance elements; these can be source tags (set in AWS) or tags you have created in CloudWisdom.
 
 {{% notice tip %}}
 If combinations of your instances represent different applications, you could create a tag called “application” in each instance and set the value accordingly. In this view, you could select the “application” tag to mark the elements according to the grouping you have specified. This is useful for identifying outliers where you expect elements of the same tag to have similar cost/utilization positions on the chart.
@@ -71,7 +71,7 @@ If combinations of your instances represent different applications, you could cr
 ![cost vs utilization scatter](/images/reports-cost/cost-vs-utilization-scatter.png)
 
 ### Cost by Tag
-This graph lets you group the costs by any custom tag. To use this view you need to have tags on your instance elements. These can be source tags (set in AWS) or tags you have created in Metricly. For example, if combinations of your instances represent different applications you could create a tag called “application” in each instances and set the value accordingly. In this view, you could select the “application” tag to aggregate the costs according to the grouping you have specified. Other examples could include grouping by department or by environment. This chart only shows the cost categories that you have actually incurred.
+This graph lets you group the costs by any custom tag. To use this view you need to have tags on your instance elements. These can be source tags (set in AWS) or tags you have created in CloudWisdom. For example, if combinations of your instances represent different applications you could create a tag called “application” in each instances and set the value accordingly. In this view, you could select the “application” tag to aggregate the costs according to the grouping you have specified. Other examples could include grouping by department or by environment. This chart only shows the cost categories that you have actually incurred.
 
 {{% notice tip %}}
 You can zoom into the chart by clicking and dragging your mouse across a set of elements. If you hover the mouse over a bar, you will see a tooltip showing the instance type, total cost, and the cost breakdown.

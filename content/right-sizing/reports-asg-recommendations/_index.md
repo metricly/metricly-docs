@@ -7,7 +7,7 @@ tags: ["#tools", "#asg"]
 author: Lawrence Lane
 ---
 
-The Auto Scaling Group (ASG) Recommendations report provides a summary of the EC2 instance hours managed by all of your Auto Scaling Groups over the past few weeks. The data is summarized by hour and day for the preceding one-to-four weeks depending on how long Metricly has been monitoring the ASG.
+The Auto Scaling Group (ASG) Recommendations report provides a summary of the EC2 instance hours managed by all of your Auto Scaling Groups over the past few weeks. The data is summarized by hour and day for the preceding one-to-four weeks depending on how long CloudWisdom has been monitoring the ASG.
 ![asg report breakdown](/images/reports-asg-recommendations/asg-report-breakdown.png)
 
 1. **Total Instance Count graph**: This graph depicts the average total number of instances managed by all of your ASG(s) by hour and day. It also shows the maximum and minimum total instance counts observed by hour and day.
