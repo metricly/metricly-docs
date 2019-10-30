@@ -52,7 +52,7 @@ This method returns a list of elements filtered by any parameters you pass into 
 | tags | Optional | Query parameter. The name of the tag. |
 | startTime | Optional | Query parameter. The start of the window of time from which elements will be returned. The startTime must be in ISO 8601 format. The default startTime is 12:00 AM in the authenticating user’s specified time zone. |
 | endTime | Optional | Query parameter. The end of the window of time from which elements will be returned. The endTime must be in ISO 8601 format. The default endTime is the current time. |
-| state | Optional | Query parameter. The state of the element reflected by the metricly.metrics.collected.percent metric. False means no metrics are being collected; True means any number of metrics are being collected. |
+| state | Optional | Query parameter. The state of the element reflected by the netuitive.metrics.collected.percent metric. False means no metrics are being collected; True means any number of metrics are being collected. |
 
 
 ### GET Metric Metadata from /elements/{elementid}/metrics

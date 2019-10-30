@@ -93,11 +93,11 @@ Cost Reports across instances have largely the same experience, but this section
 
 ##### Additional Considerations:
 
-- EC2 elements without a Metricly agent / Windows agent display only two utilization measures: Active Hours and CPU Utilization %.
-- EC2 elements with a Metricly agent installed have the following additional utilization metrics available: Memory Utilization %, Disk I/O %, and Disk Space Used %.
+- EC2 elements without a Agent / Windows agent display only two utilization measures: Active Hours and CPU Utilization %.
+- EC2 elements with a Agent installed have the following additional utilization metrics available: Memory Utilization %, Disk I/O %, and Disk Space Used %.
 - EC2 elements with a Windows agent installed have the Network I/O % metric available.
 
-If you have a mix of elements with and without a Metricly agent, you will see gaps in the utilization figures where values are not available.
+If you have a mix of elements with and without a Agent, you will see gaps in the utilization figures where values are not available.
 
 #### RDS
 

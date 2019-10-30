@@ -27,7 +27,7 @@ tag3:value3
 4. **Restart** the Linux Agent.
 
 ## Instrumentation
-Netuitive StatsD will collect and organize your data as your application calls functions and methods. This data is flushed to the Metricly StatsD server every 60 seconds by default, and then aggregated in CloudWisdom’s five-minute batch analytics cycle. After Metricly analyzes your data, it’s then graphed for you to see. The Metricly StatsD server will place all of your metrics under the StatsD namespace in the Metrics page. Metrics about the Netuitive StatsD server itself are organized under the netuitive-statsd namespace in the Metrics page.
+Netuitive StatsD will collect and organize your data as your application calls functions and methods. This data is flushed to the Metricly StatsD server every 60 seconds by default, and then aggregated in CloudWisdom’s five-minute batch analytics cycle. After CloudWisdom analyzes your data, it’s then graphed for you to see. The Metricly StatsD server will place all of your metrics under the StatsD namespace in the Metrics page. Metrics about the Netuitive StatsD server itself are organized under the netuitive-statsd namespace in the Metrics page.
 
 Before you begin instrumenting custom metrics, you’ll need to find a language library to “talk” to the Netuitive StatsD server using certain metric types. Netuitive StatsD supports the following metric types:
 

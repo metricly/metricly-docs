@@ -31,7 +31,7 @@ Keep this tab open and open a new tab; you must now login to JumpCloud and uploa
 3. Search for `SAML` and select **Custom SAML App** > **Configure**.
 4. Input the following values:
   - **DISPLAY LABEL**: `Your SSO Label` ("A name of your choosing to identify this configuration.)
-  - **IDP ENTITY ID**: `jumpcloud-metricly`
+  - **IDP ENTITY ID**: `jumpcloud-cloudwisdom`
   - **SP ENTITY ID**: `netuitive-api`
   - **ACS URL**: `https://us.cloudwisdom.virtana.com/saml/SSO`
   - **SP CERTIFICATE**:  Upload the .`cert` file from section 1.
