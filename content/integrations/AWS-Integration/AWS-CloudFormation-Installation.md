@@ -35,7 +35,7 @@ After you make a new AWS integration in CloudWisdom, the script populates a read
 2. Find the role created in the previous section using the search bar.  
 ![Create Role](/images/AWS-CloudFormation-Installation/create-role.png)
 3. Expand **Outputs** and copy the **Role ARN**.  
- - Do **not** copy the _Stack ID_. The Role ARN looks like: `arn:aws:iam::<account-number>:role/CloudWisdom-Role-Name>`
+ - Do **not** copy the _Stack ID_. The Role ARN looks like: `arn:aws:iam::<account-number>:role/Metricly-Role-Name>`
 4. Return to the CloudWisdom.   
 5. Input the Role ARN into **IAM Role ARN**.  
 ![IAM Role ARN](/images/AWS-CloudFormation-Installation/iam-role-arn.png)
