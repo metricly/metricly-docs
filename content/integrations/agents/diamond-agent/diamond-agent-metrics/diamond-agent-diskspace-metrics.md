@@ -13,4 +13,4 @@ author: Lawrence Lane
 ## Computed
 | Fully Qualified Name(FQN)                       | Description                                                                    | Units   | Min | Max | BASE | CORR | UTIL |
 |-------------------------------------------------|--------------------------------------------------------------------------------|---------|-----|-----|------|------|------|
-| metricly.linux.diskspace.*.byte_percentused | Percentage of disk space used. Computation: 100 – diskspace.*.byte_percentfree | percent | 0   | 100 | no   | no   | yes  |
+| netuitive.linux.diskspace.*.byte_percentused | Percentage of disk space used. Computation: 100 – diskspace.*.byte_percentfree | percent | 0   | 100 | no   | no   | yes  |
