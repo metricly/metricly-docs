@@ -25,8 +25,8 @@ weight: 3
 
 1. In the AWS SSM Console, navigate to **Actions** > **Run Command**.
 2. Search for `Owner: Equal: Self`. Select the document you created, `install-metricly-agents`.
-3. Scroll to **Command Parameters**. You must input your **Linux** and **Windows API Keys** from your Metricly integrations.
-  - Open a **separate browser tab** and log into Metricly.
+3. Scroll to **Command Parameters**. You must input your **Linux** and **Windows API Keys** from your CloudWise integrations.
+  - Open a **separate browser tab** and log into CloudWise.
   - Navigate to your **Linux integration**.
   - Copy API Key
   - Paste in corresponding field on AWS SSM page.

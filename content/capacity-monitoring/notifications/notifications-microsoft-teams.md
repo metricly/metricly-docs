@@ -47,12 +47,12 @@ The endpoint URL must return an HTTP code 200 to pass the validation.
 {
     "@context": "http://schema.org/extensions",
     "@type": "MessageCard",
-    "summary": "**Metricly Policy Violation <#if payloadType == "event_cleared">CLEARED<#else>${eventCategory.name}</#if>:**",
+    "summary": "**Cloudwise Policy Violation <#if payloadType == "event_cleared">CLEARED<#else>${eventCategory.name}</#if>:**",
     "themeColor": "${color}",
-    "title": "<#if payloadType == "event_cleared">CLEARED<#else>${eventCategory.name}</#if> Metricly Event:",
+    "title": "<#if payloadType == "event_cleared">CLEARED<#else>${eventCategory.name}</#if> CloudWise Event:",
     "sections": [
         {
-            "activityTitle": "**Metricly Policy Violation:**",
+            "activityTitle": "**CloudWise Policy Violation:**",
             "activitySubtitle": "${timestamp?datetime?string.iso} UTC",
             "activityImage": "https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-slack/metricly_teams_icon.png",
             "facts": [

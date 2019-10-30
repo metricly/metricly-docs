@@ -63,7 +63,7 @@ Select **Custom** from the Payload drop-down menu. A text field will open after 
   "incident_key": "${policyName} ",
   "event_type": "trigger",
   "description": "${category}: ${elementFqn} : ${policyName}",
-  "client": "Metricly Cloud Service",
+  "client": "CloudWise Cloud Service",
   "client_url": "https://us.cloudwisdom.virtana.com",
   "details": {
     "category": "${category}",
@@ -85,7 +85,7 @@ Select **Custom** from the Payload drop-down menu. A text field will open after 
   "incident_key": "${policyName} ",
   "event_type": "trigger",
   "description": "${category}: ${elementFqn} : ${policyName}",
-  "client": "Metricly Cloud Service",
+  "client": "CloudWise Cloud Service",
   "client_url": "https://us.cloudwisdom.virtana.com",
   "details": {
     "category": "${category}",
