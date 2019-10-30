@@ -26,7 +26,7 @@ This method can be used to create one or many integrations and **should only be 
 ```
 {
   "dataSource": {
-    "name": "cloudwisdom AWS",
+    "name": "CloudWisdom AWS",
     "type": "AWS",
     "properties": {
       "awsAuthentication": "role",
@@ -43,7 +43,7 @@ This method can be used to create one or many integrations and **should only be 
 curl -X POST -k -H 'Authorization: Basic dGVzdDp0ZXN0' -i 'https://api.us.cloudwisdom.virtana.com/datasources' --data '[
 {
   "dataSource": {
-    "name": "cloudwisdom AWS",
+    "name": "CloudWisdom AWS",
     "type": "AWS",
     "properties": {
       "awsAuthentication": "role",

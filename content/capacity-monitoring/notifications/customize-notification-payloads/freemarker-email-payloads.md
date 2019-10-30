@@ -30,7 +30,7 @@ Alternatively, you can create your new custom email payload in the policy editor
 This example provides the policy name related to the event in the subject of the email and then provides the event category name of the event firing in the body. When the event clears, it sends another email with `CLEAR` as the body text.
 
 ```
-cloudwisdom Event [${policyName}]
+CloudWisdom Event [${policyName}]
 ```
 
 ```
