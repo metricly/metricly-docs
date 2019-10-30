@@ -145,4 +145,4 @@ weight: 9
 |------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------|-----|------|------|------|------|--------------------------|
 | netuitive.linux.network.*.errors | The total number of errors, both transmit and receive.Computation:network.*.rx_errors + network.*.tx_errors | errors | 0 | none | yes | no | no |  |
 | netuitive.linux.network.*.packets | The total number of packets, both transmitted and received.Computation:network.*.rx_packets + network.*.tx_packets | packets | 0 | none | yes | yes | no |  |
-| netuitive.linux.network.*.errors.percent | The percentage of errors, both transmit and receive.Computation:(metricly.diamond.network.*.errors /metricly.diamond.network.*.packets) * 100 | percent | 0 | 100 | yes | no | no |  |
+| netuitive.linux.network.*.errors.percent | The percentage of errors, both transmit and receive.Computation:(netuitive.diamond.network.*.errors /netuitive.diamond.network.*.packets) * 100 | percent | 0 | 100 | yes | no | no |  |

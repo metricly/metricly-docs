@@ -20,10 +20,10 @@ We recommend testing any regular expressions that you create at https://regexr.c
 ### Match String
 Match the start and end of the string contained between ``^`` and ``$``.
 
-- **Tag Key**: ``^Metricly$``
+- **Tag Key**: ``^CloudWisdom$``
 - **Tag Value**: ``^true$``
 
-Matches the key-value pair Metricly = true
+Matches the key-value pair CloudWisdom = true
 
 ### Match Multiple Variables
 Match multiple values separated by ``|`` between ``( )``.
@@ -62,20 +62,20 @@ For a list of special regex characters you may have to escape, consult this page
 Match an entire website’s directory using ``.*``
 
 ```
-Qhttps://www.metricly.comE.*
+Qhttps://www.virtana.comE.*
 ```
-- Matches anything that comes after `www.metricly.com`
+- Matches anything that comes after `www.virtana.com`
 - The **Q** and **E**  force the URL to be matched literally
 
 ### Match Part of Directory
 Make the URL more specific to match everything from a particular part of the directory.
 
 ```
-Qhttps://help.metricly.com/Content/Reports/E.*
+Qhttps://help.virtana.com/Content/Reports/E.*
 ```
-Matches anything in the  `https://help.metricly.com/Content/Reports/directory`
-- **Match**: `https://help.metricly.com/Content/Reports/Cost/report_pic.png`
-- **Not a Match**: `https://help.metricly.com/Content/home.htm`
+Matches anything in the  `https://help.virtana.com/Content/Reports/directory`
+- **Match**: `https://help.virtana.com/Content/Reports/Cost/report_pic.png`
+- **Not a Match**: `https://help.virtana.com/Content/home.htm`
 
 ### Match Multiple Containers
 Match multiple containers between ``( )`` and separated by ``|``. The following would match any of the following container IDs and exclude them from collection: `abcdef123456`, `123456abcdef`, `ghijkl789012`.
