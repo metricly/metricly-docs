@@ -7,7 +7,7 @@ author: Lawrence Lane
 ---
 
 {{% alert success %}}
-Single Sign-On (SSO) is a **paid-only feature**. Contact your [Sales Representative](mailto:dl-sales-metricly@virtualinstruments.com) for pricing options.
+Single Sign-On (SSO) is a feature available only to users with a CloudWisdom subscription. Contact your [Sales Representative](mailto:dl-sales-metricly@virtualinstruments.com) for pricing options
 {{% /alert %}}
 
 ## Supported SSO integrations
