@@ -8,7 +8,7 @@ weight: 1
 ---
 
 {{% alert success %}}
-Single Sign-On (SSO) is a feature available only to users with a CloudWisdom subscription. Contact your [Sales Representative](mailto:dl-sales-metricly@virtualinstruments.com) for pricing options
+Single Sign-On (SSO) is a feature available only to users with a CloudWisdom subscription. Contact your [Sales Representative](mailto:dl-sales-metricly@virtualinstruments.com) for pricing options.
 {{% /alert %}}
 
 ## 1. Generate a Certificate in CloudWisdom
