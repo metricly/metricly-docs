@@ -69,7 +69,7 @@ You are now ready to import your JumpCloud certificate and metadata to CloudWisd
 2. Upload the **Metadata.xml** file from JumpCloud.
 ![upload-metadata-xml](/images/_index/upload-metadata-xml.png)
 2. When finished, it should look like this:
-![metricly-sso-complete](/images/sso-azure/metricly-sso-complete.png)
+![cloudwisdom-sso-complete](/images/sso-jumpcloud/cloudwisdom-sso-complete.png)
 
 
 ## Login URLs
