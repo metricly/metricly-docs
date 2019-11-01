@@ -18,14 +18,14 @@ How to Switch Between Views
 2. Choose a visualization.
 3. Click **Apply**.
 
-![switch-between-views](/images/reports-aws-services-cost/switch-between-views.png)
+![switch-between-views](/images/visualization-options/switch-between-views.png)
 
 ### Period Comparison
 Uses the current determined date interval (e.g. Latest 30 Days) and compares it to the previous interval (in this case, 30 days). See the Time Intervals section for more information on changing the periods compared.
 
-![period-comparison](/images/reports-aws-services-cost/period-comparison.png)
+![period-comparison](/images/visualization-options/period-comparison.png)
 
 ### Stacked View
 Shows all of your services individually; each service can be shown or hidden via toggling on the menu below the graph.
 
-![stacked-view](/images/reports-aws-services-cost/stacked-view.png)
+![stacked-view](/images/visualization-options/stacked-view.png)
