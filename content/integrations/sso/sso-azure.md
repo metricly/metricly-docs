@@ -92,7 +92,7 @@ These files must be uploaded to CloudWisdom.
 2. Upload the **Federation Metadata XML** file from Azure.
 ![upload-metadata-xml](/images/_index/upload-metadata-xml.png)
 2. When finished, it should look like this:
-![metricly-sso-complete](/images/sso-azure/metricly-sso-complete.png)
+![cloudwisdom-sso-complete](/images/sso-azure/cloudwisdom-sso-complete.png)
 
 ## Login URLs
 
