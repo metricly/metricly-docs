@@ -23,7 +23,7 @@ There are two kinds of Cost Allocation tags:
 - AWS-Generated Cost Allocation Tags
 - User-Defined Cost Allocation Tags
 
-#### 1. Activate AWS-Generated Tags
+#### 1. Activate AWS-Generated Tags 
 This creates a `resource created by` tag automatically on all resources.
 
 1. Log in to your **AWS Console**.
