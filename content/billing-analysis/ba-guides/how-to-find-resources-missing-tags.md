@@ -53,9 +53,9 @@ Now you are ready to use Cost Allocation Tags to analyze your bill in CloudWisdo
 4. Choose the **Stacked View** visualization.
 5. Choose a `tag value` from **Options** > **Group By**. In this example, we are grouping by the `app` tag.
 6. Notice the bar missing a label. This bar represents all of your spend missing this tag.
-![spend-without-app-tag](/images/how-to-find-uncategorized-costs/spend-without-app-tag.png)
+![spend-without-app-tag](/images/how-to-find-resources-missing-tags/spend-without-app-tag.png)
 7. Add a **Stacked By** value, such as `service`, to gain more insight into your untagged resource spend.
-![untagged-costs-stacked-by-service](/images/how-to-find-uncategorized-costs/untagged-costs-stacked-by-service.png)
+![untagged-costs-stacked-by-service](/images/how-to-find-resources-missing-tags/untagged-costs-stacked-by-service.png)
 8. Notice now the untagged spend is divided by each service. You can use these insights to further explore your costs.
  - Change the **Stacked By** value to `Region` to get an idea of where your missing resources are located
  - Change the **Stacked By** value to `Usage Type` for a specific, granular list of costs such as EBS volume usage.
