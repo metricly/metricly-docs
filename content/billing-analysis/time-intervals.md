@@ -19,4 +19,4 @@ When using the Period Comparison view, you can choose between several Time Inter
 - Latest 12 Months
 - Year to Date
 
-![time-intervals](/images/reports-aws-services-cost/time-intervals.png)
+![time-intervals](/images/time-intervals/time-intervals.png)
