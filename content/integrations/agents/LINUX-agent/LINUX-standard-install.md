@@ -12,7 +12,7 @@ This integration’s package (computed metrics, dashboards, and policies) is aut
 
 ## Cost Optimization Quick Setup
 
-Customers using **only Cost Optimization features**, such as Bill Analysis, can install the Linux Agent with just one quick command! This method enables the Linux Agent's [SimpleCollector mode][2].
+Customers using **only Cost Optimization features**, such as Bill Analysis, can install the Linux Agent with just one quick command! This method enables the Linux Agent's [SimpleCollector][2].
 
 {{% notice tip %}}
 
