@@ -10,9 +10,9 @@ weight: 1
 ---
 This integration’s package (computed metrics, dashboards, and policies) is automatically enabled and provisioned to your account as soon as CloudWisdom receives data.
 
-## Cost-Only Quick Setup
+## Cost Optimization Quick Setup
 
-Customers using **only Cost features**, such as Bill Analysis, can install the Linux Agent with just one quick command! This method enables the Linux Agent's simple mode.
+Customers using **only Cost Optimization features**, such as Bill Analysis, can install the Linux Agent with just one quick command! This method enables the Linux Agent's [SimpleCollector mode][2].
 
 {{% notice tip %}}
 
@@ -30,7 +30,7 @@ Remember to update your Linux Agent config file if you start using CloudWisdom's
 ----
 ## Standard Install
 
-For users taking advantage of our Capacity Monitoring features, use the following standard install method.
+For users taking advantage of our Capacity Monitoring (or all) features, follow the steps below.
 
 ### 1. Copy Install Command From Linux Integration Setup Page
 
@@ -105,3 +105,5 @@ The PACKAGES toggle on the Linux Integration page becomes active once data is re
 
 
 [1]:https://raw.githubusercontent.com/netuitive/omnibus-netuitive-agent/master/netuitive/conf/netuitive-agent.conf
+
+[2]:/integrations/agents/linux-agent/linux-collectors/#using-the-simple-collector
