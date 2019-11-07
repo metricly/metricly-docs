@@ -46,9 +46,6 @@ This guide includes a list of all **widget types** available, their **options**,
 2. Click **Delete Widget**.
 3. Confirm by clicking **Yes, Delete**.
 
-### Notify
-Receive daily or weekly emails that snapshot widget data (limited to the table widget).
-
 
 [1]:/capacity-monitoring/inventory/
 [2]:/capacity-monitoring/metrics/
