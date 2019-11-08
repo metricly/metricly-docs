@@ -10,27 +10,9 @@ weight: 1
 ---
 This integration’s package (computed metrics, dashboards, and policies) is automatically enabled and provisioned to your account as soon as CloudWisdom receives data.
 
-## Cost Optimization Quick Setup
-
-Customers using **only Cost Optimization features**, such as Bill Analysis, can install the Linux Agent with just one quick command! This method enables the Linux Agent's [Simple Collector][2].
-
-{{% notice tip %}}
-
-Remember to update your Linux Agent config file if you start using CloudWisdom's Capacity Monitoring tools.
-
-{{% /notice %}}
-
-1. Navigate to your Linux Agent integration in Metricly.
-2. Copy the **API Key**.
-![copy-api-key](/images/LINUX-standard-install/copy-api-key.png)
-2. Open your command prompt.
-2. Run the following script, with your API key added: ```  sudo N_APIKEY=your-api-key  N_USE_SIMPLE_COLLECTOR=true bash -c "$(curl -Ls http://repos.app.netuitive.com/linux.sh)" ```.
-3. Done!
-
-----
 ## Standard Install
 
-For users taking advantage of our Capacity Monitoring (or all) features, follow the steps below.
+For users taking advantage of our Capacity Monitoring (or all) features, follow the steps below. For users using Cost Optimization features only, skip to [this section][3].
 
 ### 1. Copy Install Command From Linux Integration Setup Page
 
@@ -98,12 +80,31 @@ sudo N_APIKEY=your-apikey N_HOSTNAME_METHOD=hostname-method bash -c "$(curl -Ls 
 - **Option 2**:  Substitute relations value with desired element relationships; must include the fully qualified name of the elements. Uncomment the line to pass in relationships for your element.
 - **Option 3**: Adjust  default collectors (CPU, DiskSpace, DiskUsage, Heartbeat, LoadAverage, Memory, VMStat, Network) using the configuration options found here.  
 
+## Cost Optimization Quick Setup
+
+Customers using **only Cost Optimization features**, such as the Right Sizing reports, can install the Linux Agent with just one quick command! This method enables the Linux Agent's [Simple Collector][2].
+
+{{% notice tip %}}
+
+Remember to update your Linux Agent config file if you start using CloudWisdom's Capacity Monitoring tools.
+
+{{% /notice %}}
+
+1. Navigate to your Linux Agent integration in Metricly.
+2. Copy the **Installation Script**.
+![copy-script](/images/LINUX-standard-install/copy-script.png)
+2. Open your command prompt.
+2. Run the script. It should look like this: ``` sudo N_APIKEY=your-api-key  N_USE_SIMPLE_COLLECTOR=true bash -c "$(curl -Ls http://repos.app.netuitive.com/linux.sh)" ```.
+3. Done!
+
+
 ## Enable/Disable
 
 The PACKAGES toggle on the Linux Integration page becomes active once data is received. You are able to disable and re-enable the package at will. **Disabling the packages deletes respective dashboard, policies, as well as discontinues computed metric computation.**
 
 
-
 [1]:https://raw.githubusercontent.com/netuitive/omnibus-netuitive-agent/master/netuitive/conf/netuitive-agent.conf
 
 [2]:/integrations/agents/linux-agent/linux-collectors/#using-the-simple-collector
+
+[3]:/integrations/agents/linux-agent/linux-standard-install/#cost-optimization-quick-setup
