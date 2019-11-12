@@ -51,8 +51,8 @@ You are now ready to define your new SSO application's SAML and user settings. I
 ![azure-edit-basic-saml](/images/sso-azure/azure-edit-basic-saml.png)
 2. Input the following values:
   - **Identifier (Entity ID)**: `netuitive-api`
-  - **Reply URL (Assertion Consumer Service URL)**: `https://us.cloudwisdom.virtana.com/saml/SSO`
-  - **Sign on URL**: `https://us.cloudwisdom.virtana.com/saml/SSO`
+  - **Reply URL (Assertion Consumer Service URL)**: `https://app.metricly.com/saml/SSO`
+  - **Sign on URL**: `https://app.metricly.com/saml/SSO`
   - **Relay State**: `Your Tenant Name` (optional)
 
   {{% notice tip %}}
