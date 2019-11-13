@@ -6,7 +6,7 @@ Metricly joined the [Virtana](https://www.virtana.com/) (formerly Virtual Instru
 
 **Welcome to CloudWisdom by Virtana!**
 
-![metricly-docs-home](/images/_index/metricly-docs-home.png)
+![cloudwisdom-docs-home](/images/_index/cloudwisdom-docs-home.png)
 
 `docs.metricly.com` is home to [CloudWisdom's](https://www.metricly.com) documentation for end users, API developers, and DevOps admins.
 
