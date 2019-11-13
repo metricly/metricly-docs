@@ -6,7 +6,7 @@ weight: 10
 pre:
 ---
 
-![integrations](/images/_index/integreations.png)
+![integrations](/images/_index/integrations.png)
 
 An integration is a system from which CloudWisdom collects data. CloudWisdom offers integrations with *collectors*, *agents*, and *automation software*.
 
