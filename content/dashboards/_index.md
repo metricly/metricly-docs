@@ -12,4 +12,4 @@ pre:
 
 ## About Dashboards
 
-Dashboards give you and your team a quick view into the state of your savings projects and monitored resources. 
+Dashboards give you and your team a quick view into the state of your savings projects and monitored resources.
