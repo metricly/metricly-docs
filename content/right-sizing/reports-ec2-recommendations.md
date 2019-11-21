@@ -8,12 +8,6 @@ author: Lawrence Lane
 ---
 This report compares your EC2s and utilization data to the most currently available SKU library in AWS to determine what combination would best suit your existing workload needs. You can also add optional constraints (such as CPU utilization not exceeding a particular level) to filter down recommendation results and highlight different savings opportunities. By default, this report shows your top 10 recommendations.
 
-## Access (Currently in Beta)
-To use the updated EC2 Recommendation report, navigate to the Beta page.
-
-1. Hover over your username and select **Beta**.
-2. Find the EC2 Recommendation Report and click **Try It**.
-
 ## Visualization Options
 
 ### How to Switch Between Views
