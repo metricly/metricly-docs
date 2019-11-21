@@ -6,8 +6,8 @@ categories: ["integration", "admin guide", "getting started"]
 tags: ["#microsoft", "#azure", "#integrations", "#installation"]
 author: Lawrence Lane
 ---
-## 1. Create a Microsoft Azure Integration Card in Metricly
-1. Login to Metricly.
+## 1. Create a Microsoft Azure Integration Card in CloudWisdom
+1. Log in to CloudWisdom.
 2. Select **Integrations**.
 2. Select the **Microsoft Azure** card.
 ![microsoft-azure](/images/azure-installation/microsoft-azure.png)
@@ -20,18 +20,18 @@ author: Lawrence Lane
 ![app-registrations](/images/azure-installation/app-registrations.png)
 3. Select **+ New Registration** at the top.
 ![new-registration](/images/azure-installation/new-registration.png)
-4. Provide a name for the application (e.g., `Azure-Metricly-Integration`).
+4. Provide a name for the application (e.g., `Azure-CloudWisdom-Integration`).
 4. Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts** for Supported Account Types.
-5. Find the **Redirect URI (optional)** section. Select **Web** and input `https://app.metricly.com`.
+5. Find the **Redirect URI (optional)** section. Select **Web** and input `https://us.cloudwisdom.virtana.com`.
 ![redirect-uri-url](/images/azure-installation/redirect-uri-url.png)
 6. Select **Register** at the bottom of the window.
 
 ## 3. Get the Application ID, Application Key, & Tenant ID from Azure
 
-Once you have completed part 2, you are redirected to the `Azure-Metricly-Integration`'s overview page.
+Once you have completed part 2, you are redirected to the `Azure-CloudWisdom-Integration`'s overview page.
 
 1. Copy the **Application (client) ID**.
-2. Return to the tab with Metricly open. Paste the ID into the _Client ID_ field. Once it’s pasted, return to the Azure tab.
+2. Return to the tab with CloudWisdom open. Paste the ID into the _Client ID_ field. Once it’s pasted, return to the Azure tab.
 ![azure-app-id](/images/azure-installation/azure-app-id.png)
 3. Select **Certificates & secrets**.
 ![certs-secrets](/images/azure-installation/certs-secrets.png)
@@ -39,16 +39,16 @@ Once you have completed part 2, you are redirected to the `Azure-Metricly-Integr
 5. Provide a **description** and select an **Expiration** for the key.
 ![add-desc-expiration](/images/azure-installation/add-desc-expiration.png)
 6. Select **Add**. The Secret is now listed in the **Client secrets** section.
-7. Copy the secret's Value and return to the tab with Metricly open. Paste it into the **Access Key** field. Once it’s pasted, return to the Azure tab.
+7. Copy the secret's Value and return to the tab with CloudWisdom open. Paste it into the **Access Key** field. Once it’s pasted, return to the Azure tab.
 ![copy-secret-value](/images/azure-installation/copy-secret-value.png)
 8. Return to Azure and select **Overview**.
-9. Copy the **Directory (tenant) ID**. Open your Metricly tab and paste the ID into the **Tenant ID** field.
+9. Copy the **Directory (tenant) ID**. Open your CloudWisdom tab and paste the ID into the **Tenant ID** field.
 ![tentant-id](/images/azure-installation/tentant-id.png)
 
-Return to the Azure tab once you have added the Directory (Tenant) ID to your Metricly integration.
+Return to the Azure tab once you have added the Directory (Tenant) ID to your CloudWisdom integration.
 
 ## 4. Set Delegated Permissions in Azure
-1. In Azure, navigate to the **API Permissions** section of your `Azure-Metricly-Integration`.
+1. In Azure, navigate to the **API Permissions** section of your `Azure-CloudWisdom-Integration`.
 ![api-permissions](/images/azure-installation/api-permissions.png)
 2. Select **+ Add a permission**. A side panel appears.
 3. Select the **Azure Service Management** card.
@@ -64,7 +64,7 @@ To assign a role to the application, you’ll need the **Owner** or **User Acces
 
 1. Navigate to **Home** > **Subscriptions** in Azure.
 2. Select the **Subscription Name** your new app belongs to.
-3. Copy the **Subscription ID** and return to the tab with Metricly open. Paste it into the appropriate field. Once it’s pasted, return to the Azure tab.
+3. Copy the **Subscription ID** and return to the tab with CloudWisdom open. Paste it into the appropriate field. Once it’s pasted, return to the Azure tab.
 ![copy-subscription-id](/images/azure-installation/copy-subscription-id.png)
 4. Navigate to this subscription's **Access Control (IAM)** tab.
 ![access-control-tab](/images/azure-installation/access-control-tab.png)
@@ -74,10 +74,10 @@ To assign a role to the application, you’ll need the **Owner** or **User Acces
  - **Role**: Reader
  - **Assign access to**: App service
  - **Subscription**: Select the same Subscription Name from step 2
- - **Select**: the Metricly app you created
+ - **Select**: the CloudWisdom app you created
 7. Select **Add**.
 
-After permissions have been set, return to Metricly to include or exclude as many Azure element types as you want. **Azure VM and Azure Application Gateway are enabled by default**.
+After permissions have been set, return to CloudWisdom to include or exclude as many Azure element types as you want. **Azure VM and Azure Application Gateway are enabled by default**.
 
 Optionally, filter elements.
 
