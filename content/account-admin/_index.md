@@ -37,23 +37,22 @@ A list of all active [integrations][1] in your account.
 Home to all of your [notifications][2], divided into the following categories: Email, OpsGenie, PagerDuty, SNS, Slack, and Webhook.
 
 ### Users
-Create & assume sub-accounts from the users panel. There are four types of users:
+Create & assume users from the users panel. There are four types of users:
 
-- **Account Owners**:
-  - Can create and assume all user types
-  - Can view the CloudWisdom Bill page
-- **Admins**:
+- **Administrator**:
+  - Can create, update, delete everything but objects created by another user. All alerts can be deleted.
   - Can create and assume Admin, Power, and Read-only users
   - Can create and assume sub-accounts
-  - Cannot view the CloudWisdom Bill page
-- **Power Users**:
+  - Cannot view the CloudWisdom Billing page
+- **Power User**:
+  - Can create, update, delete everything but objects created by another user. All alerts can be deleted.
   - Cannot create and assume users
   - Cannot create and assume sub-accounts
-  - Cannot view the CloudWisdom Bill page
-- **Read-only Users**:
+  - Cannot view the CloudWisdom Billing page
+- **Read Only User**:
   - Cannot create and assume users
   - Cannot create and assume and sub-accounts
-  - Cannot view the CloudWisdom Bill Page
+  - Cannot view the CloudWisdom Billing Page
   - Cannot create, edit, or delete content in CloudWisdom
 
 ![create-user](/images/account-profile/create-user.png)
