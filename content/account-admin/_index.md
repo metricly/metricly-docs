@@ -37,7 +37,7 @@ A list of all active [integrations][1] in your account.
 Home to all of your [notifications][2], divided into the following categories: Email, OpsGenie, PagerDuty, SNS, Slack, and Webhook.
 
 ### Users
-Create & assume users from the users panel. There are four types of users:
+Create & assume users from the users panel. There are three types of users:
 
 - **Administrator**:
   - Can create, update, delete everything but objects created by another user. All alerts can be deleted.
