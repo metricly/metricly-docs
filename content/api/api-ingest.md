@@ -89,6 +89,38 @@ Custom elements can have metrics, tags, attributes, and relationships.
 ]
 
 ```
+### Request Body
+
+| Attribute | Required/Optional | Description |
+|--------------------------------------------------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| relations | Optional | Defines a relationship between two elements. It contains one attribute: fqn (optional) The FQN of the element you want to create a relationship with. |
+| id | Required | The FQN of the element. The valid character regex for this field is[a-zA-Z0-9\\._-]. Spaces are replaced with _ and all other invalid characters are removed. |
+| metrics | Required | Tells CloudWisdom which metric you are passing data to. See the Metric Attributes section for more details. |
+| samples | Required | Tells CloudWisdom what data to pass to the metric you defined in the metrics attribute.  Only one of the six sample inputsare required.  Min/max/avg/cnt/sum are sent if aggregation is happening on the client side prior to sending the data to CloudWisdom. Val represents a raw observation of some type. To enable analytics, either send in val by itself or min, max, sum, avg, and cnt. You will not get any bands if you send in min, max, sum, avg, or cnt by itself. See the Sample Attributes section for more details. |  |  |
+| attributes | Optional | The attributes attribute provides CloudWisdom with metadata about the element. You can pass in attributes the same way you would pass in tags: [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)] |
+| type | Required | The type of element (e.g., server, database, etc.) used for filtering and applying policies in CloudWisdom. |
+| location | Optional | The location of the element is used for filtering and display purposes in CloudWisdom. The location can reflect either the element’s physical location or business needs. |
+| tags | Optional | Used for filtering in CloudWisdom. In the format of [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)]. |
+| name | Optional | The text displayed as the name for the element in CloudWisdom. |
+
+#### Metric Attributes
+- **id** (required): The unique FQN of the metric (e.g., aws.ec2.cpucreditbalance, cpu.cpu1.guest_nice, diskspace.root.bytefree). The valid character regex for this field is[a-zA-Z0-9\.-]. Spaces are replaced with _ and all other invalid characters are removed.
+- **unit** (optional: Arbitrary value used in the CloudWisdom UI for the metric’s unit of measure.
+- **sparseDataStrategy** (optional): Defines the strategy for replacing missing data. See the sparseDataStrategy Explained section at the bottom of this guide for more information.
+- **type** (optional): Currently only accepts the value “COUNTER” if the metric is a counter type.
+- **tags** (optional): Used for filtering in CloudWisdom. In the format of [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)]. name (optional) The text displayed as the name for the element in CloudWisdom.
+
+#### Sample Attributes
+
+- **metricId** (required): Mapping to the ID field of the metric for this sample.
+- **timestamp** (required): A number indicating the point in time at which the sample was collected. The timestamp must be either ISO 8601 formatted, or written as an epoch in milliseconds. Ensure that ISO 8601 formatted dates are quoted.
+- **max** (optional):  Maximum value of this metric sample.
+- **avg** (optional):  Average value of this metric sample.
+- **cnt** (optional):  Count of values of this metric sample.
+- **min** (optional):  Minimum value of this metric sample.
+- **sum** (optional):  Sum of values of this metric sample.
+- **val** (optional): The value of the metric; should NOT be sent with other sample inputs.
+
 
 ### Custom External Event Messages
 **POST request**: `https://api.us.cloudwisdom.virtana.com/ingest/events/{apiId}`
