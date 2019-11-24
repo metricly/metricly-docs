@@ -1,5 +1,5 @@
 ---
-title: "Salt Installation"
+title: "Salt"
 #date: 2018-12-11
 draft: false
 tags: ["#salt", "#integrations", "#configuration management", "linux agent"]
