@@ -21,6 +21,7 @@ The metrics API allows you access to your element’s metrics.
 Returns a list of metrics that match given parameters.
 
 **Parameters**
+
 | Parameters | Required/Optional | Description |
 |------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | startTime | Required | Query parameter. The start of the window of time from which metrics will be returned. The startTime must be in ISO 8601 format. The default startTime is 12:00 AM in the authenticating user’s specified time zone. |
@@ -85,6 +86,7 @@ returns aggregate statistics for a metric.
 Returns descriptive statistics for a metric.
 
 **Parameters**
+
 | Parameters | Required/Optional | Description |
 |---------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | fqn | Required | Query parameter. The FQN of the metric. |
@@ -110,81 +112,7 @@ Returns descriptive statistics for a metric.
 | types | Optional | The type of the element. Read more about element types here. |
 
 ## Creating Metric Data
-The ingest API allows you to send raw data to CloudWisdom. At least one integration must be set up in your CloudWisdom account to use the ingest endpoint. We recommend using the unique API key (found on the API keys page under the Account Profile drop-down menu) for the Custom integration automatically created for your account as your go-to for anything related to using our API.
 
-To properly use the ingest endpoint, you should first understand the following concepts:
+See the [Ingest API][1] forr details on how to send raw data to CloudWisdom.
 
-- **Elements**: Elements are the physical or logical components that CloudWisdom monitors. An element can be a physical entity, such as a server or network element, a virtual entity, such as a transaction, or a business entity, such as a company traded on the stock market. Elements are the base component that CloudWisdom uses to analyze metrics and determine the status of your environment. For more information about elements and the properties of elements, see Elements.
-- **Metrics**: Metrics are quantifiable measurements whose values are monitored by CloudWisdom and used to assess the performance of an element. Metrics are always associated with one or more elements. Examples of metrics include CPU utilization, Network Bytes Per Second, and Response Time.
-- **Attributes**: Attributes are pieces of metadata associated with elements and/or metrics. Attributes are usually received from an integration. For example, Amazon EBS elements have a variety of attributes, including size, region, createTime (the time stamp when the volume was created), and state.
-- **Samples**: A sample is a raw data value that is delivered from an ingestion service (integration) to CloudWisdom.
-- **Tags**: A tag is a key-value pair that is applied to an entity in CloudWisdom.
-- **Relationships**: A uni- or bi-directional relationship between two elements.
-## POST
-### POST to /ingest/{apiId}
-Creates a data sample for a given element.
-
-Replace `{apiId}` in the above URL with the API key from your Custom integration. To access this key, click **Integrations** in the user account drop-down menu in the top right-hand corner of CloudWisdom, then find the CUSTOM integration and copy the API key from the API Key column.
-
-| Parameters | Required/Optional | Description |
-|------------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ingestElements | Required | Body Parameter; see below |
-| apiId | Required | URL (path) parameter; your API key. |
-| X-Metricly-Api-Options | Optional | Header parameter. Two values you can include: The value SEND_RESPONSE_BODY if you desire a detailed “Success Response” body. The value INJECT_TIMESTAMP if you want the custom ingest service to inject the current server timestamp into the element sample’s “timestamp” property. |
-
-**Request Body**
-
-| Attribute | Required/Optional | Description |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| relations | Optional | Defines a relationship between two elements. It contains one attribute: fqn (optional) The FQN of the element you want to create a relationship with. |
-| id | Required | The FQN of the element. The valid character regex for this field is[a-zA-Z0-9\\._-]. Spaces are replaced with _ and all other invalid characters are removed. |
-| metrics | Required | The metrics attribute tells CloudWisdom which metric you’re passing data to. It contains several attributes: unit (optional) Arbitrary value used in the CloudWisdom UI for the metric’s unit of measure. sparseDataStrategy (optional) Defines the strategy for replacing missing data. See the sparseDataStrategy Explained section at the bottom of this guide for more information. id (required) The unique FQN of the metric (e.g., aws.ec2.cpucreditbalance, cpu.cpu1.guest_nice, diskspace.root.byte_free). The valid character regex for this field is[a-zA-Z0-9\\._-]. Spaces are replaced with _ and all other invalid characters are removed.type (optional) Currently only accepts the value “COUNTER” if the metric is a counter type. tags (optional) Used for filtering in CloudWisdom. In the format of [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)]. name (optional) The text displayed as the name for the element in CloudWisdom. |
-| samples | Required | "The samples attribute tells CloudWisdom what data to pass to the metric you defined in the metrics attribute. It contains three attributes that must be present. |
-| Only one of the six sample inputs (min, max, avg, cnt, sum, val) are required, but val should not be sent with any of the others. Min/max/avg/cnt/sum are sent if aggregation is happening on the client side prior to sending the data to CloudWisdom. Val represents a raw observation of some type. To enable analytics, either send in val by itself or min, max, sum, avg (optional), and cnt. You will not get any bands if you send in min, max, sum, avg, or cnt by itself. max (see note) Maximum value of this metric sample. avg (see note) Average value of this metric sample. cnt (see note) Count of values of this metric sample. min (see note) Minimum value of this metric sample. sum (see note) Sum of values of this metric sample. metricId (required) Mapping to the ID field of the metric for this sample. timestamp (required) A number indicating the point in time at which the sample was collected. The timestamp must be either ISO 8601 formatted, or written as an epoch in milliseconds. Ensure that ISO 8601 formatted dates are quoted (see example). val (see note) The value of the metric." |  |  |
-| attributes | Optional | The attributes attribute provides CloudWisdom with metadata about the element. You can pass in attributes the same way you would pass in tags: [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)] |
-| type | Required | The type of element (e.g., server, database, etc.) used for filtering and applying policies in CloudWisdom. |
-| location | Optional | The location of the element is used for filtering and display purposes in CloudWisdom. The location can reflect either the element’s physical location or business needs. |
-| tags | Optional | Used for filtering in CloudWisdom. In the format of [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)]. |
-| name | Optional | The text displayed as the name for the element in CloudWisdom. |
-
-## sparseDataStrategy Explained
-Metrics marked as Sparse (with any strategy other than None) that do not receive any samples during the current cycle will get actual and sparseValue data injected for that cycle.
-
-There are 5 sparse strategies:
-
-- **None**: does as you would expect, nothing.  This is the default setting.
-- **ReplaceWithZero**: will inject a value of 0.
-- **ReplaceWithHistoricalMax**: injects the maximum Actual value recorded for the life of this metric.
-- **ReplaceWithHistoricalMin**: injects the minimum Actual value recorded for the life of this metric.
-- **ReplaceWithLast**: injects the last Actual value recorded for this metric.
-
-There are two ways to set the Sparse Data Strategy for a metric.  The first is to send the strategy via the ingest process as Metric Metadata.  The second is using packages.
-
-```
-[{
-  "match": "metric0",
-  "properties": {
-    "sparseDataStrategy": "None"
-  }
-},{
-  "match": "metric1",
-  "properties": {
-    "sparseDataStrategy": "ReplaceWithHistoricalMax"
-  }
-}, {
-  "match": "metric2",
-  "properties": {
-    "sparseDataStrategy": "ReplaceWithHistoricalMin"
-  }
-}, {
-  "match": "metric3",
-  "properties": {
-    "sparseDataStrategy": "ReplaceWithLast"
-  }
-}, {
-  "match": "metric4",
-  "properties": {
-    "sparseDataStrategy": "ReplaceWithZero"
-  }
-}]
-```
+[1]: /api/api-ingest/
