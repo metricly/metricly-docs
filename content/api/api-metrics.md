@@ -113,6 +113,6 @@ Returns descriptive statistics for a metric.
 
 ## Creating Metric Data
 
-See the [Ingest API][1] forr details on how to send raw data to CloudWisdom.
+See the [Ingest API][1] for details on how to send raw data to CloudWisdom.
 
 [1]: /api/api-ingest/
