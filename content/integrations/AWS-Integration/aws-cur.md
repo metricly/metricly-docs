@@ -17,13 +17,13 @@ Cost and Usage Reports (CUR) have replaced Detailed Billing in AWS. CloudWisdom 
 3. Select **Create report**.
 ![create-report](/images/aws-cur/create-report.png)
 4. Name the report `HourlyCSVWithResourceIDs`.
-5. Enable the **Include Resource IDs** checkbox.
+5. Enable the **Include resource IDs** checkbox.
 ![enable-resource-ids](/images/aws-cur/enable-resource-ids.png)
 6. Select **Next**.
 7. Select **Configure** to choose (or create) a S3 bucket that will store your files.
 ![save-s3-bucket](/images/aws-cur/save-s3-bucket.png)
-8. Provide a **Report path prefix**, such as `CostAndUsageReports`. Do not include any leaning or trailing forward slashes.
-9. Select **Hourly** under Time granularity. 
+8. Provide a **Report path prefix**, such as `CostAndUsageReports`. Do not include any leaning or trailing forward slashes; doing so may distort the file hierarchy output by AWS.
+9. Select **Hourly** under Time granularity.
 10. Select your preferred Report versioning method. Overwriting the existing report may save on your storage costs in the future.
 11. Leave all data integration options unchecked.
 12. Select **GZIP** for Compression type.
@@ -63,10 +63,6 @@ Don't write billing files from more than one AWS account into the same S3 bucket
 ### 2. Request CUR Setup for Resold Resources
 
 You may not have access to your billing preferences if you have purchased AWS services through a reseller. You must contact your reseller and request to be set up with an S3 bucket to store your CUR data.
-
-{{% notice tip %}}
-Extracts or summaries of your billing data must have the exact same file name format and file structure of AWS CUR files to be ingested by CloudWisdom.
-{{% /notice %}}
 
 **Reseller concerned about sharing an S3 bucket?**
 
