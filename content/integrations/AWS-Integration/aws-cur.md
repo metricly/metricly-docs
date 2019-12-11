@@ -30,7 +30,9 @@ Cost and Usage Reports (CUR) have replaced Detailed Billing in AWS. CloudWisdom 
 13. Select **Next**.
 ![final-steps](/images/aws-cur/final-steps.png)
 14. Review your configurations.
-15. Select **Review and Complete** to create the Cost and Usage Report (CUR).
+15. Copy the full **Report path prefix** found under Delivery Options. You need this for part 2.
+![full-path](/images/aws-cur/full-path.png)
+16. Select **Review and Complete** to create the Cost and Usage Report (CUR).
 
 It can take up to a few hours for data to populate in the S3 bucket.
 
@@ -44,7 +46,7 @@ If you have just created your IAM role, **wait 2-5 minutes** for AWS to finalize
 ![detailed-billing-source](/images/aws-cur/detailed-billing-source.png)
 4. Scroll to the **Detailed Billing Settings** section and complete the following fields:
    - **S3 Bucket Name**: the case sensitive name of bucket chosen in section 1, step 7.
-   - **Report Path Prefix**: the path designated in section 1, step 8. `/CostAndUsageReports`.
+   - **Report Path Prefix**: the path designated in section 1, step 8. `CostAndUsageReports/HourlyCSVWithResourceIDs`.
 5. Select **Save**.  
 
 ---
@@ -53,14 +55,7 @@ If you have just created your IAM role, **wait 2-5 minutes** for AWS to finalize
 
 The following best practices ensure optimal Cost & Usage report setup.
 
-### 1. Use Dedicated S3 Buckets
-
-Keep your files in a dedicated S3 bucket. Having a large number of other files in the same S3 bucket requires more API calls to locate your files.
-
-Don't write billing files from more than one AWS account into the same S3 bucket, as the filenames can be confused.
-
-
-### 2. Request CUR Setup for Resold Resources
+### Request CUR Setup for Resold Resources
 
 You may not have access to your billing preferences if you have purchased AWS services through a reseller. You must contact your reseller and request to be set up with an S3 bucket to store your CUR data.
 
