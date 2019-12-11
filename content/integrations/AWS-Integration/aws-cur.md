@@ -30,7 +30,7 @@ Cost and Usage Reports (CUR) have replaced Detailed Billing in AWS. CloudWisdom 
 13. Select **Next**.
 ![final-steps](/images/aws-cur/final-steps.png)
 14. Review your configurations.
-15. Copy the full **Report path prefix** found under Delivery Options. You need this for part 2.
+15. Copy the **Report path prefix** found under Delivery Options (without /date-range/). You need this for part 2.
 ![full-path](/images/aws-cur/full-path.png)
 16. Select **Review and Complete** to create the Cost and Usage Report (CUR).
 
