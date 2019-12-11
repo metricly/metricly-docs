@@ -1,5 +1,5 @@
 ---
-title: "Detailed Billing"
+title: "Detailed Billing (Legacy)"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
@@ -7,6 +7,7 @@ tags: ["#aws", "#detailed billing", "#s3 bucket",]
 author: Lawrence Lane
 weight: 4
 ---
+This is a legacy method for obtaining detailed reports. See [Cost And Usage Reports][1] for Amazon's new reports. CloudWisdom recommends switching all AWS integrations to the CUR data collection method.
 
 ## 1. Enable Detailed Billing Reports in AWS
 
@@ -33,10 +34,10 @@ weight: 4
 
 If you have just created your IAM role, **wait 2-5 minutes** for AWS to finalize its creation before proceeding to these steps. This ensures the new role has the correct s3 access permissions when added to CloudWisdom.
 
-1. From the top navigation menu, select **Integrations**.
+1. From the side navigation menu, select **Integrations**.
 2. Select the **Amazon Web Services** card.
-3. Toggle **Detailed Billing** and scroll to the final section.
-![Enable Detailed billing](/images/AWS-Detailed-Billing/enable-detailed-billing.png)
+3. Select **Detailed Billing File (legacy)** from the Detailed Billing Source Dropdown and scroll to the final section.
+![detailed-billing-legacy](/images/AWS-Detailed-Billing/detailed-billing-legacy.png)
 4. Type the `S3 bucket name` into the corresponding field.
 The bucket name is case sensitive and must exactly match the bucket created in Step 1.  
 5. Select **Save**.  
@@ -66,3 +67,5 @@ Extracts or summaries of your billing data must have the exact same file name fo
 **Reseller concerned about sharing an S3 bucket?**
 
 Virtana only reads the costs for accounts that we monitor; we discard all data for any unrelated accounts. You can also have them reach out to our support team with any questions they may have.
+
+[1]: /integrations/AWS-integrations/aws-cur
