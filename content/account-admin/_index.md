@@ -49,7 +49,7 @@ Create & assume users from the users panel. There are three types of users:
   - Cannot create and assume users
   - Cannot create and assume sub-accounts
   - Cannot view the CloudWisdom Billing page
-- **Read Only User**:
+- **Read Only**:
   - Cannot create and assume users
   - Cannot create and assume and sub-accounts
   - Cannot view the CloudWisdom Billing Page
