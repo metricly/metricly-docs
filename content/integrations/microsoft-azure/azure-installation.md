@@ -21,7 +21,7 @@ author: Lawrence Lane
 3. Select **+ New Registration** at the top.
 ![new-registration](/images/azure-installation/new-registration.png)
 4. Provide a name for the application (e.g., `CloudWisdom-Integration`).
-5. Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts** for Supported Account Types.
+5. Select **Accounts in this organizational directory only (Default Directory only - Single tenant)** for Supported Account Types.
 6. Find the **Redirect URI (optional)** section. Select **Web** and input `https://us.cloudwisdom.virtana.com`.
 ![redirect-uri-url](/images/azure-installation/redirect-uri-url.png)
 7. Select **Register** at the bottom of the window.
@@ -70,10 +70,14 @@ To assign a role to the application, you’ll need the **Owner** or **User Acces
 5. Select **Add** > **Add role assignment**. A side panel appears.
 ![add-role-assignment](/images/azure-installation/add-role-assignment.png)
 6. Complete the following fields:
- - **Role**: leave blank
+ - **Role**: Reader
  - **Assign access to**: Azure AD user, group, or service principal
- - **Select**: Search for and select the CloudWisdom app you created
+ - **Select**: Enter the name of the app you created in section 2 and select the app.
 7. Select **Save**.
+
+{{% notice tip %}}
+You can verify the permissions by selecting Role Assignments and searching for the CloudWisdom application.
+{{% /notice %}}
 
 After permissions have been set, return to CloudWisdom to include or exclude as many Azure element types as you want. **Azure VM and Azure Application Gateway are enabled by default**.
 
