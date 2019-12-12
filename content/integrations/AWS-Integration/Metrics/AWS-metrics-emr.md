@@ -7,7 +7,7 @@ tags: ["#aws", "#metrics", "#nlb"]
 author: Lawrence Lane
 ---
 
-AWS groups EMR metrics into different categories (cluster status, node status, IO, etc.), but this has no impact on how Metricly monitors EMR.
+AWS groups EMR metrics into different categories (cluster status, node status, IO, etc.), but this has no impact on how CloudWisdom monitors EMR.
 
 ## Collected
 | Friendly Name  | Fully Qualified Name (FQN)                         | AWS Metric                    | Statistic | Units     | Max  | BASE | CORR | UTIL |

@@ -7,7 +7,7 @@ tags: ["#tools", "#email", "#getting started" ]
 author: Lawrence Lane
 ---
 
-Email Reports are generated and sent after business hours (EST) and can be enabled from your user account profile. Email Reports provide a quick look into your environment from the last 24 hours. Clicking any of the links within the email opens Metricly to the appropriate section.
+Email Reports are generated and sent after business hours (EST) and can be enabled from your user account profile. Email Reports provide a quick look into your environment from the last 24 hours. Clicking any of the links within the email opens CloudWisdom to the appropriate section.
 
 ## Available Reports
 There are three main email reports available: the Weekly Recommendation Report, the Daily Top Violator Report, and the Daily AWS Cost Report.

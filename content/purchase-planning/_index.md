@@ -13,4 +13,4 @@ pre:
 
 ## About Purchase Planning
 
-Master your resource portfolio with Metricly's Purchase Planning tools. These tools help you know when to purchase reservations and what kind to buy. 
+Master your resource portfolio with CloudWisdom's Purchase Planning tools. These tools help you know when to purchase reservations and what kind to buy. 

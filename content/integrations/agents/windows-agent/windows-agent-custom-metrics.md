@@ -13,7 +13,7 @@ Custom Metrics are enabled by Windows plugins. There are two types of Windows pl
 - ReadWindowsEvents
 - WriteNetuitive
 
-This configuration is recommended for monitoring a Windows server with Metricly. Other Read/Write plugins are available as documented below (note that the Write Console plugin has no configuration settings).
+This configuration is recommended for monitoring a Windows server with CloudWisdom. Other Read/Write plugins are available as documented below (note that the Write Console plugin has no configuration settings).
 
 ## Enable/Disable  
 To change which plugins are enabled, edit the **CollectdWin.config** file.
@@ -71,8 +71,8 @@ This plugin uses the Windows Performance Count component to collect configured m
 2\. Navigate to the **types.db** file (`C:\Program Files\CollectdWin`) and open it.  
 3. Use your best judgment to match a type in types.db to the category you selected in step 3.1. Input the type (case sensitive) you wish to use into the **CollectdType** field.
 4. Create a metric category for the **CollectdPlugin** field. This category displays in the Metrics tree and search field (squared in green).
-![Metricly Search Screenshot](/images/windows-agent-custom-metrics/metricly-search-screenshot.png)
-5. Create a metric name using the** CollectdTypeInstance** field. This field is used as the metric’s name in Metricly, but be sure to make it entirely unique.
+![CloudWisdom Search Screenshot](/images/windows-agent-custom-metrics/metricly-search-screenshot.png)
+5. Create a metric name using the** CollectdTypeInstance** field. This field is used as the metric’s name in CloudWisdom, but be sure to make it entirely unique.
 6. Save the **ReadWindowsPerfCounters** file.
 
 
@@ -96,7 +96,7 @@ This plugin reads from the Windows event logs on the server the agent is install
 
 | Value      | Required/Optional | Description                                                                                                                                                 |
 |------------|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Title      | Required          | A descriptive title for the events captured by this configuration entry. This is shown as the event title in Metricly.                                      |
+| Title      | Required          | A descriptive title for the events captured by this configuration entry. This is shown as the event title in CloudWisdom.                                      |
 | Log        | Required          | The windows log (e.g., Application, System, Security).                                                                                                      |
 | Source     | Required          | The source of the event (this is the source field in the event viewer). This value can be left blank for any source.                                        |
 | MinLevel   | Optional          | The minimum log level to collect. Defaults to 1. Possible values (in order): 1 = critical, 2 = error, 3 = warning (warn), 4 = information, and 5 = verbose. |
@@ -125,7 +125,7 @@ This plugin reads non-numeric attributes of the server. The WriteNetuitive plugi
 | cpus      | The number of CPUs.           |
 | ram bytes | Total system RAM.             |
 
-If the server is hosted on an AWS EC2 and the **ReadEC2InstanceMetadata** attribute on the _ReadWindowsAttributes_ element is set to `true`, the plugin will read metadata from the host EC2 instance as attributes (e.g., `instanceId`, `instanceType`, etc.) and also record the relationship between the two elements in Metricly.
+If the server is hosted on an AWS EC2 and the **ReadEC2InstanceMetadata** attribute on the _ReadWindowsAttributes_ element is set to `true`, the plugin will read metadata from the host EC2 instance as attributes (e.g., `instanceId`, `instanceType`, etc.) and also record the relationship between the two elements in CloudWisdom.
 
 Any environment variable can be read as an attribute by adding it to the configuration section:
 
@@ -142,14 +142,14 @@ Value="PROCESSOR_ARCHITECTURE"/>
 
 
 ## Write Netuitive plugin
-This plugin is already configured to send all data gathered by the read plugins to Metricly via its REST API in step 2 of the installation instructions. The following are additional, advanced settings that should only be changed in discussion with Metricly support.
+This plugin is already configured to send all data gathered by the read plugins to CloudWisdom via its REST API in step 2 of the installation instructions. The following are additional, advanced settings that should only be changed in discussion with Virtana support.
 
 | Name        | Description                                                                                                                     |
 |-------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Url         | Metricly ingest API URL.                                                                                                        |
+| Url         | CloudWisdom ingest API URL.                                                                                                        |
 | PayloadSize | (Optional) The number of metrics that are batched into a single POST. Set to -1 to send all metrics at once; the default is 25. |
 | Location    | (Optional) Sets element location attribute.                                                                                     |
-| Type        | (Optional) Overrides the element type in Metricly; the default is WINSRV.                                                       |
+| Type        | (Optional) Overrides the element type in CloudWisdom; the default is WINSRV.                                                       |
 
 ### Configure
 
@@ -159,7 +159,7 @@ This plugin is already configured to send all data gathered by the read plugins 
 Example with API Key
 ```
 <WriteNetuitive
- Url="https://api.app.metricly.com/ingest/windows/de2b497468d863accb9c402dfff22689"/>
+ Url="https://api.us.cloudwisdom.virtana.com/ingest/windows/de2b497468d863accb9c402dfff22689"/>
 ```
 
 3\. **Save** the file.

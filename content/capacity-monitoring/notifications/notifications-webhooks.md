@@ -7,19 +7,19 @@ tags: ["#alerts", "#notifications", "#webhooks"]
 author: Lawrence Lane
 ---
 
-There are two main uses for webhooks: pushing data into metricly (_inbound_) and pulling data like notifications out (_outbound_).
+There are two main uses for webhooks: pushing data into CloudWisdom (_inbound_) and pulling data like notifications out (_outbound_).
 
 - **Inbound**: Achieved via POST URL that can be found on the Webhook integration card.
 - **Outbound**: Used by several of our notification integrations and accessible through the Webhook GET API endpoint.
 
-For a great example of an inbound webhook usecase, see how we pushed [CloudWatch Logs into Metricly][1].
+For a great example of an inbound webhook usecase, see how we pushed [CloudWatch Logs into CloudWisdom][1].
 
 When using the outbound method, you can customize the JSON payload using the [freemarker markup language](https://freemarker.apache.org/docs/xgui_imperative_formal.html) from **Account** > **Notifications** > **Webhook**.
 
 ## Configuration
 
 ###  Add a Webhook Notification
-2. In Metricly, navigate to the **Policy Editor**.
+2. In CloudWisdom, navigate to the **Policy Editor**.
 3. Click tab 3, **Notifications**.
 4. Click **Add Notification** and select **Webhook** as the _Notification Type_.
 5. Provide a `name` for the webhook notification.
@@ -63,8 +63,8 @@ Select **Custom** from the Payload drop-down menu. A text field will open after 
   "incident_key": "${policyName} ",
   "event_type": "trigger",
   "description": "${category}: ${elementFqn} : ${policyName}",
-  "client": "Metricly Cloud Service",
-  "client_url": "https://app.Metricly.com",
+  "client": "CloudWisdom Cloud Service",
+  "client_url": "https://us.cloudwisdom.virtana.com",
   "details": {
     "category": "${category}",
     "elementFqn":"${elementFqn}",
@@ -72,7 +72,7 @@ Select **Custom** from the Payload drop-down menu. A text field will open after 
   },
   "contexts": [{
     "type": "link",
-    "href": "https://app.Metricly.com/#/element/${elementId}/events"
+    "href": "https://us.cloudwisdom.virtana.com/#/element/${elementId}/events"
   }]
 }
 ```
@@ -85,8 +85,8 @@ Select **Custom** from the Payload drop-down menu. A text field will open after 
   "incident_key": "${policyName} ",
   "event_type": "trigger",
   "description": "${category}: ${elementFqn} : ${policyName}",
-  "client": "Metricly Cloud Service",
-  "client_url": "https://app.Metricly.com",
+  "client": "CloudWisdom Cloud Service",
+  "client_url": "https://us.cloudwisdom.virtana.com",
   "details": {
     "category": "${category}",
     "elementFqn":"${elementFqn}",
@@ -94,7 +94,7 @@ Select **Custom** from the Payload drop-down menu. A text field will open after 
   },
   "contexts": [{
     "type": "link",
-    "href": "https://app.Metricly.com/#/element/${elementId}/events"
+    "href": "https://us.cloudwisdom.virtana.com/#/element/${elementId}/events"
   }]
 }
 ```

@@ -25,7 +25,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  "dashboard": { \
  "name": "API Test Board" \
  } \
- }' 'https://app.metricly.com/dashboards'
+ }' 'https://us.cloudwisdom.virtana.com/dashboards'
  ```
 
 ### 2. POST to /widgets
@@ -74,7 +74,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
          "topNLimit": "5" \
        } \
      } \
- }' 'https://app.metricly.com/widgets'
+ }' 'https://us.cloudwisdom.virtana.com/widgets'
  ```
 
 ### 3. PUT to /dashboards/{Id}
@@ -110,7 +110,7 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: */*' -d 
        "gridstackContents": "[{\"id\":\"ac627f78-4d28-4d53-90a7-a74c3e95895a\",\"width\":4,\"height\":7,\"x\":0,\"y\":0}]" \
      } \
    } \
- }' 'https://app.metricly.com/dashboards/42f718e4-b447-49c2-90e2-80844265b776'
+ }' 'https://us.cloudwisdom.virtana.com/dashboards/42f718e4-b447-49c2-90e2-80844265b776'
  ```
 
 #### gridstackContents Breakdown

@@ -19,7 +19,7 @@ This guide covers how to add the puppet module to your puppet master. The puppet
 
 1. Navigate to `puppet_metricly_agents/manifests/init.pp`.
 2. Find the **`puppet_metricly_agents`** class.
-3. Add your Linux and Windows integration API keys found in the Metricly app to the class, replacing `undef`:
+3. Add your Linux and Windows integration API keys found in the CloudWisdom app to the class, replacing `undef`:
 ![api-key](/images/_index/api-key.png)
 
   ```

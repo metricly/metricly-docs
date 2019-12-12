@@ -10,10 +10,10 @@ weight: 1
 ---
 This installation method leverages a CloudFormation script which can be viewed [here](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-www/assets/cloudformation/metricly-read-only-role.template). You can also [view a list of permissions](/images/AWS-CloudFormation-Installation/cloudformation-permissions.png) granted by the IAM role.
 
-After you make a new AWS integration in Metricly, the script populates a read-only IAM role in your AWS account and links it using the integration’s Account ID and External ID. Once created, it may take a few minutes for the status to be updated.
+After you make a new AWS integration in CloudWisdom, the script populates a read-only IAM role in your AWS account and links it using the integration’s Account ID and External ID. Once created, it may take a few minutes for the status to be updated.
 
-## Create an AWS Integration in Metricly  
-1. Open Metricly and navigate to Integrations > AWS.  
+## Create an AWS Integration in CloudWisdom
+1. Open CloudWisdom and navigate to Integrations > AWS.  
 2. Create a new AWS integration. Ensure that the below tabled properties are set according to your needs.
 
 | AWS Toggle   | Description |
@@ -35,8 +35,8 @@ After you make a new AWS integration in Metricly, the script populates a read-on
 2. Find the role created in the previous section using the search bar.  
 ![Create Role](/images/AWS-CloudFormation-Installation/create-role.png)
 3. Expand **Outputs** and copy the **Role ARN**.  
- - Do **not** copy the _Stack ID_. The Role ARN looks like: `arn:aws:iam::<account-number>:role/<Metricly-Role-Name>`
-4. Return to the Metricly.   
+ - Do **not** copy the _Stack ID_. The Role ARN looks like: `arn:aws:iam::<account-number>:role/Metricly-Role-Name>`
+4. Return to the CloudWisdom.   
 5. Input the Role ARN into **IAM Role ARN**.  
 ![IAM Role ARN](/images/AWS-CloudFormation-Installation/iam-role-arn.png)
 6. Click **Save**.  

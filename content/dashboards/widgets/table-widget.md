@@ -33,11 +33,6 @@ Set the scope of your Table widget by inserting an element name or by selecting 
 
 ![set-attributes](/images/table-widget/set-attributes.png)
 
-## Email
-Provide an email address to receive regular daily or weekly updates. You can also turn this off using the **Frequency** setting.
-
-![set-email](/images/table-widget/set-email.png)
-
 ## Widget Name
 Provide a widget name and then **Save**.
 

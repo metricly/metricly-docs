@@ -1,9 +1,14 @@
-# Metricly Docs
+# CloudWisdom Docs
 
-![metricly-docs-home](/images/_index/metricly-docs-home.png)
+Looking for Metricly? You're in the right place!
 
+Metricly joined the [Virtana](https://www.virtana.com/) (formerly Virtual Instruments) family in [August 2019](https://www.virtualinstruments.com/virtualwisdom/virtual-instruments-metricly/). To celebrate, we're getting a new name: [CloudWisdom](https://www.metricly.com/metricly-cloudwisdom/).
 
-`docs.metricly.com` is home to [Metricly's](https://www.metricly.com) documentation for end users, API developers, and DevOps admins.
+**Welcome to CloudWisdom by Virtana!**
+
+![cloudwisdom-docs-home](/images/_index/cloudwisdom-docs-home.png)
+
+`docs.metricly.com` is home to [CloudWisdom's](https://www.metricly.com) documentation for end users, API developers, and DevOps admins.
 
 ### {{< icon name="fa-compass" >}} Navigation
 

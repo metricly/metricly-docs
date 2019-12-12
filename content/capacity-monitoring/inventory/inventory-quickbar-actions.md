@@ -5,6 +5,7 @@ draft: false
 categories:
 tags: ["#getting started", "#metrics", "#elements", "#bulk actions", "#inventory page" ]
 author: Lawrence Lane
+weight: 3
 ---
 The inventory page allows you to quickly navigate through all of your [elements][1], sort, and perform bulk actions. The Inventory Explorer displays all the elements in your environment that were processed in the last hour. Elements are removed from the elements table roughly seven hours after an associated datasource is disabled.
 
@@ -21,7 +22,7 @@ Then, select one of the following actions:
 - Delete Elements
 
 ## Delete Elements
-Once you delete an element the metadata will be permanently removed. This cannot be undone. Historic time series data for that element will still be kept. If an element with the exact same metadata appears in Metricly, the available data for the element will be associated with it.
+Once you delete an element the metadata will be permanently removed. This cannot be undone. Historic time series data for that element will still be kept. If an element with the exact same metadata appears in CloudWisdom, the available data for the element will be associated with it.
 
 1. Open the Inventory Explorer.
 2. Select the check box next to as many elements as desired.

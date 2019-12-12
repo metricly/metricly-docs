@@ -33,7 +33,7 @@ subjects:
 1. [Download this file](https://raw.githubusercontent.com/metricly/heapster/master/deploy/kube-config/metricly/heapster.yaml).
 2. Open terminal and locate your YAML file.
 3. Name the file `config.yaml`.
-4. Replace the `{apiKey}` value in the YAML file with the one found in Metricly under **Integrations** > **Kubernetes**.
+4. Replace the `{apiKey}` value in the YAML file with the one found in CloudWisdom under **Integrations** > **Kubernetes**.
 ![kube api key](/images/_index/kube-api-key.png)
 
 ```
@@ -64,7 +64,7 @@ spec:
         command:
         - /heapster
         - --source=kubernetes:https://kubernetes.default
-        - --sink=metricly:https://api.app.metricly.com/ingest/kubernetes?apiKey={apiKey}
+        - --sink=metricly:https://api.us.cloudwisdom.virtana.com/ingest/kubernetes?apiKey={apiKey}
 ---
 apiVersion: v1
 kind: Service

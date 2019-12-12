@@ -18,5 +18,5 @@ author: Lawrence Lane
 
 | Fully Qualified Name(FQN)           | Description                                                                        | Statistic | Units   | Min | Max  | BASE | CORR | UTIL |
 |-------------------------------------|------------------------------------------------------------------------------------|-----------|---------|-----|------|------|------|------|
-| `metricly.collectd.df-*.total-space`  | **Computation**: df-*.df_complex-free + df-*.df_complex-reserved + df-*.df_complex-used | average   | bytes   | 0   | none | no   | no   | no   |
-| `metricly.collectd.df-*.used-percent` | **Computation**: (df-*.df_complex-used / metricly.collectd.df-*.total-space) * 100      | average   | percent | 0   | 100  | no   | no   | yes  |
+| `netuitive.collectd.df-*.total-space`  | **Computation**: df-*.df_complex-free + df-*.df_complex-reserved + df-*.df_complex-used | average   | bytes   | 0   | none | no   | no   | no   |
+| `netuitive.collectd.df-*.used-percent` | **Computation**: (df-*.df_complex-used / netuitive.collectd.df-*.total-space) * 100      | average   | percent | 0   | 100  | no   | no   | yes  |

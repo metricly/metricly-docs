@@ -10,7 +10,7 @@ weight: 3
 
 You already have a tagging strategy in place and you've mastered exploring your costs by services, attributes, and tags. So what's next?
 
-Another great way to discover savings opportunities (or simply gain more context for your bill) is to examine what _hasn't_ been given a particular value for a tag. The easiest way to find resources that are missing tags is to use the Billing Analysis tool.
+Another great way to discover savings opportunities (or simply gain more context for your bill) is to examine what _hasn't_ been given a particular value for a tag. The easiest way to find resources that are missing tags is to use the Bill Analysis tool.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ There are two kinds of Cost Allocation tags:
 - AWS-Generated Cost Allocation Tags
 - User-Defined Cost Allocation Tags
 
-#### 1. Activate AWS-Generated Tags
+#### 1. Activate AWS-Generated Tags 
 This creates a `resource created by` tag automatically on all resources.
 
 1. Log in to your **AWS Console**.
@@ -40,22 +40,22 @@ User-Defined cost allocation tags, once created, appear in **Billing** > **Cost 
 ![tag-editor-manage-tags](/images/how-to-find-uncategorized-costs/tag-editor-manage-tags.png)
 3. Create your `Key-Value` tags and assign them to your resources.
 
-Now you are ready to use Cost Allocation Tags to analyze your bill in Metricly.
+Now you are ready to use Cost Allocation Tags to analyze your bill in CloudWisdom.
 
 ## Two ways to find resources that are missing tags
 
 ### 1. Group costs by tag
 
-1. Log in to Metricly and navigate to **Cost Management** > **Billing Analysis**.
+1. Log in to CloudWisdom and navigate to **Cost Management** > **Bill Analysis**.
 2. Select the time frame you wish to analyze.
   - A larger time frame may help you discover the most significant resources missing tags.
 3. Select **Configure**. A modal appears.
 4. Choose the **Stacked View** visualization.
 5. Choose a `tag value` from **Options** > **Group By**. In this example, we are grouping by the `app` tag.
 6. Notice the bar missing a label. This bar represents all of your spend missing this tag.
-![spend-without-app-tag](/images/how-to-find-uncategorized-costs/spend-without-app-tag.png)
+![spend-without-app-tag](/images/how-to-find-resources-missing-tags/spend-without-app-tag.png)
 7. Add a **Stacked By** value, such as `service`, to gain more insight into your untagged resource spend.
-![untagged-costs-stacked-by-service](/images/how-to-find-uncategorized-costs/untagged-costs-stacked-by-service.png)
+![untagged-costs-stacked-by-service](/images/how-to-find-resources-missing-tags/untagged-costs-stacked-by-service.png)
 8. Notice now the untagged spend is divided by each service. You can use these insights to further explore your costs.
  - Change the **Stacked By** value to `Region` to get an idea of where your missing resources are located
  - Change the **Stacked By** value to `Usage Type` for a specific, granular list of costs such as EBS volume usage.
@@ -66,7 +66,7 @@ Use this information to triangulate resources you are paying for that may have g
 
 You can search for resources where no value for a given tag has been specified. This can be particularly useful for tags that clearly divide your resources by applications, departments, and projects.
 
-1. Log in to Metricly and navigate to **Cost Management** > **Billing Analysis**.
+1. Log in to CloudWisdom and navigate to **Cost Management** > **Bill Analysis**.
 2. Select the time frame you wish to analyze.
   - A larger time frame may help you discover the most significant resources missing tags.
 3. Select **Configure**. A modal appears.

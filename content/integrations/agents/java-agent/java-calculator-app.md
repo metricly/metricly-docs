@@ -53,7 +53,7 @@ return first / second;
 
 ## Example
 
-Below is an example file called `calculator.bsh` that instruments metrics based on basic calculator operation method calls. When a user inputs an operator, the application will fetch the argument, calculate the result, and log the action into the Zorka Log file. Once the actions are submitted to the agent on the Java server, Metricly will create a metric for each input into the ${operator} parameter (e.g., a metric for `+`, `-`, `*`, and `/`).
+Below is an example file called `calculator.bsh` that instruments metrics based on basic calculator operation method calls. When a user inputs an operator, the application will fetch the argument, calculate the result, and log the action into the Zorka Log file. Once the actions are submitted to the agent on the Java server, CloudWisdom will create a metric for each input into the ${operator} parameter (e.g., a metric for `+`, `-`, `*`, and `/`).
 
 ```
 // Call zorka.require(...) to load additional scripts that this one depends on.

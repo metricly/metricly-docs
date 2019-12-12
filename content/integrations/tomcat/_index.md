@@ -6,7 +6,7 @@ tags: ["#tomcat", "#integrations",]
 author: Lawrence Lane
 ---
 
-Tomcat (also known as Apache Tomcat or Tomcat Server) is an open source Java Servlet Container. You can use Metricly’s Java agent to collect information on your Tomcat Server.
+Tomcat (also known as Apache Tomcat or Tomcat Server) is an open source Java Servlet Container. You can use CloudWisdom’s Java agent to collect information on your Tomcat Server.
 
 ## Prerequisites
 - [Java Agent][1]
@@ -29,7 +29,7 @@ scripts = jvm.bsh, zabbix.bsh, apache/tomcat.bsh, apps/cas.bsh
 ```
 
 5\.Configure Tomcat to load the Java agent. This is often configured via the **setenv.sh** or **tomcat.conf** files.  
-6. **Restart** your app server. 
+6. **Restart** your app server.
 
 
 [1]: /integrations/agents/java-agent

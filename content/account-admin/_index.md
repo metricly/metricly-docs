@@ -14,7 +14,7 @@ pre:
 
 ## About Account Admin
 
-Control features and functionality found in Metricly through your Account Profile menu.
+Control features and functionality found in CloudWisdom through your Account Profile menu.
 
 ## Features
 
@@ -43,13 +43,13 @@ Create & assume sub-accounts from the users panel. There are three types of user
 - **Admins**: Can create & assume admin + read-only users.
 - **Read-only Users**: Cannot create or assume other users.
 
-Account Owners are the only user group that can view billing details for Metricly.
+Account Owners are the only user group that can view billing details for CloudWisdom.
 
 ![create-user](/images/account-profile/create-user.png)
 
 
 ### Billing
-A monthly breakdown of your Metricly bill.
+A monthly breakdown of your CloudWisdom bill.
 
 ### SSO
 Where you can set up your SSO. [Read our full SSO guide here][3].

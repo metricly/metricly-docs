@@ -40,9 +40,9 @@ Thank you
 
 ### 2. Send Zip to Support
 
- Open a support ticket by emailing `support@metricly.com` with the file attached and a subject / message body describing the issue(s) you experienced.
- 
- 
+ Open a support ticket by emailing `cloudwisdom.support@virtana.com` with the file attached and a subject / message body describing the issue(s) you experienced.
+
+
 # Docker Container Agent
 ### Agent Logging
 Agent logs will not be available from the netuitive-agent container directly, as they're redirected to stdout via /proc for viewing from the docker CLI. See https://docs.docker.com/config/containers/logging/

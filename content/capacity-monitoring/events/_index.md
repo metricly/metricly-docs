@@ -7,7 +7,7 @@ tags: ["#alerts", "#notifications", "#events",]
 author: Lawrence Lane
 ---
 
-Events indicate that a policy has been violated, meaning all of the [policy conditions][1] have been met for the set duration. In other words, events indicate that Metricly has detected anomalous behavior in one or more of the elements in your environment.
+Events indicate that a policy has been violated, meaning all of the [policy conditions][1] have been met for the set duration. In other words, events indicate that CloudWisdom has detected anomalous behavior in one or more of the elements in your environment.
 
 {{% notice info %}}
 For example, if you create a policy for all EC2 elements with the **condition** `CPU Utilization greater than 90%` and a **duration** of `10 minutes`, an event will be generated when an EC2 element’s CPU Utilization metric exceeds 90% for 10 consecutive minutes.  

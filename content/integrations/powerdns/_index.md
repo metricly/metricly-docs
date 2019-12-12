@@ -11,11 +11,11 @@ author: Lawrence Lane
 
 ## Configure
 
-You cannot activate the PowerDNS integration until Metricly begins receiving data. Once data arrives, the package ([Dashboards][2] and [Policies][3]) is automatically provisioned. To remove those Dashboards and Policies, click the toggle on the PowerDNS integration card.
+You cannot activate the PowerDNS integration until CloudWisdom begins receiving data. Once data arrives, the package ([Dashboards][2] and [Policies][3]) is automatically provisioned. To remove those Dashboards and Policies, click the toggle on the PowerDNS integration card.
 
 ### 1. Get API Key
 
-1. In Metricly, Navigate to **Integrations** > **PowerDNS**.
+1. In CloudWisdom, Navigate to **Integrations** > **PowerDNS**.
 2. Copy the **API Key**.
 3. Add this key to your Linux Agent.
 

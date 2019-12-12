@@ -48,11 +48,11 @@ This method returns a list of elements filtered by any parameters you pass into 
 | id | Optional | Query parameter. The FQN of the element(s). |
 | name | Optional | Query parameter. The name of the element. |
 | type | Optional | Query parameter. The type of element. |
-| location | Optional | Query parameter. The location of the element is used for filtering and display purposes in Metricly. The location can reflect either the element’s physical location or business needs. |
+| location | Optional | Query parameter. The location of the element is used for filtering and display purposes in CloudWisdom. The location can reflect either the element’s physical location or business needs. |
 | tags | Optional | Query parameter. The name of the tag. |
 | startTime | Optional | Query parameter. The start of the window of time from which elements will be returned. The startTime must be in ISO 8601 format. The default startTime is 12:00 AM in the authenticating user’s specified time zone. |
 | endTime | Optional | Query parameter. The end of the window of time from which elements will be returned. The endTime must be in ISO 8601 format. The default endTime is the current time. |
-| state | Optional | Query parameter. The state of the element reflected by the metricly.metrics.collected.percent metric. False means no metrics are being collected; True means any number of metrics are being collected. |
+| state | Optional | Query parameter. The state of the element reflected by the netuitive.metrics.collected.percent metric. False means no metrics are being collected; True means any number of metrics are being collected. |
 
 
 ### GET Metric Metadata from /elements/{elementid}/metrics
@@ -76,7 +76,7 @@ This method returns a list of metadata for a metric.
 | metricId | Required | URL (path) parameter. The ID of the metric associated with the element. |
 | endTime | Optional | Query parameter. The end of the window of time from which metric results will be returned. The endTime must be in ISO 8601 format. The default endTime is the current time. |
 | elementId | Required | URL (path) parameter. The ID of the element. |
-| duration | Optional | Query parameter. Gives metricly an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. The duration parameter will take precedence over startTime and endTime if all attributes are included in your request. |
+| duration | Optional | Query parameter. Gives CloudWisdom an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. The duration parameter will take precedence over startTime and endTime if all attributes are included in your request. |
 
 ### GET Element's Metric Tags from /elements/{elementId}/metrics/{metricId}/tags
 This method returns a list of tags for a given metric associated with a given element.
@@ -157,7 +157,7 @@ This method deletes a specified element.
 
 | Attribute | Required/Optional | Description |
 |------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| tagWrapper | Optional | Tags used for filtering in metricly. In the format of [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)]. |
+| tagWrapper | Optional | Tags used for filtering in CloudWisdom. In the format of [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)]. |
 
 
 ### POST Element Name Preview to /elements/name/preview
@@ -189,7 +189,7 @@ This method creates a tag for a given element.
 
 | Attribute | Required/Optional | Description |
 |------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| tagWrapper | Required | Tags used for filtering in Metricly. In the format of [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)]. |
+| tagWrapper | Required | Tags used for filtering in CloudWisdom. In the format of [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)]. |
 
 ## PUT
 

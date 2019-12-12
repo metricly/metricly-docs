@@ -1,6 +1,6 @@
 baseURL = "https://docs.metricly.com/"
 languageCode = "en-us"
-title = "Metricly Docs"
+title = "CloudWisdom Docs"
 theme = "docdock"
 
 [params]
@@ -13,7 +13,7 @@ disableHomeIcon = true
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
-name = " <i class='fa fa-compass fa-lg'></i> Metricly"
-identifier = "metricly"
-url = "https://www.metricly.com"
+name = " <i class='fa fa-compass fa-lg'></i> Virtana"
+identifier = "virtana"
+url = "https://www.virtana.com/"
 weight = 1

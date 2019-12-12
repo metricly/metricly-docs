@@ -8,7 +8,7 @@ alwaysopen: false
 pre: ""
 ---
 
-A package is an archive of assets compatible with Metricly, which automatically provision to your account when you install a compatible integration to get ideal configurations for your environment. Packages typically include dashboards, default policies, and analytics configurations.
+A package is an archive of assets compatible with CloudWisdom, which automatically provision to your account when you install a compatible integration to get ideal configurations for your environment. Packages typically include dashboards, default policies, and analytics configurations.
 
 Packages are composed of at least three files: a package.json file, README.md, and at least one policy, analytics configuration, or dashboard. All available packages are available on our [community Github](https://github.com/netuitive-community-packages).
 
@@ -18,12 +18,12 @@ Packages are composed of at least three files: a package.json file, README.md, a
 Get a list of installed packages
 
 ```
-curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/packages?packageId=netuitive.packages.kafka'
+curl -X GET --header 'Accept: application/json' 'https://us.cloudwisdom.virtana.com/packages?packageId=netuitive.packages.kafka'
 ```
 
 **Response**
 
-This is just an example of the JSON format. When you make the call, you will see a list of all packages installed (custom and default). **Packages are automatically provisioned to your account when a datasource is turned on.** This means that if you connect an Elasticsearch datasource to Metricly, the app automatically installs our Elasticsearch package.
+This is just an example of the JSON format. When you make the call, you will see a list of all packages installed (custom and default). **Packages are automatically provisioned to your account when a datasource is turned on.** This means that if you connect an Elasticsearch datasource to CloudWisdom, the app automatically installs our Elasticsearch package.
 
 ```
 {
@@ -193,7 +193,7 @@ This is just an example of the JSON format. When you make the call, you will see
 Install packages via zip file (Content-Type: multipart/form-data).
 
 ```
-curl -X POST -u username:password https://api.app.metricly.com/packages/install -H 'content-type: multipart/form-data' -F file=@package.zip
+curl -X POST -u username:password https://api.us.cloudwisdom.virtana.com/packages/install -H 'content-type: multipart/form-data' -F file=@package.zip
 ```
 
 ## DELETE
@@ -202,5 +202,5 @@ curl -X POST -u username:password https://api.app.metricly.com/packages/install 
 Deletes specified package.
 
 ```
-curl -X DELETE --header 'Accept: */*' 'https://app.metricly.com/packages/123packageid123'
+curl -X DELETE --header 'Accept: */*' 'https://us.cloudwisdom.virtana.com/packages/123packageid123'
 ```

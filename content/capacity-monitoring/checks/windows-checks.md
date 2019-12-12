@@ -11,12 +11,12 @@ alwaysopen: false
 ## Enable Windows Checks
 
 1. Make sure the Windows agent is installed.
-2. Metricly checks can be enabled via the configuration files included with the agent.
+2. CloudWisdom checks can be enabled via the configuration files included with the agent.
 3. All checks configuration files for the Windows agent can be found in `C:/Program Files (x86)/CollectdWin/conf/` or `C:/Program Files/CollectdWin/conf/` (depending on the version of windows).
 4. Simply change the `enable` setting for the `ReadSystemChecks` from `false` to `true` in the `CollectdWin.config` file to enable the system checks.
 5. To configure the checks, edit the `ReadSystemChecks.conf` file.
 
-Currently, Metricly comes with three pre-built checks: Heartbeat, Processes, and Ports. These are turnkey checks that do not require any scripting or coding, just simple configuration setting in the respective configuration files.
+Currently, CloudWisdom comes with three pre-built checks: Heartbeat, Processes, and Ports. These are turnkey checks that do not require any scripting or coding, just simple configuration setting in the respective configuration files.
 
 ### Heartbeat Checks
 This check **is enabled** by default. The Heartbeat check is to monitor the state of the agent. This check is enabled by default so no additional configuration is required once the Windows Checks have been enabled.
@@ -29,7 +29,7 @@ Note that each check has a TTL (time to live) timer which is expressed as a mult
 <readsystemchecks enableagentheartbeat="true" heartbeatttlmultiplier="2.0"> </readsystemchecks>
 ```
 ### HTTP Checks
-Configure HTTP checks to send an `HTTP GET` request to a URL. If a successful response is returned a check is sent to Metricly. By default, no HTTP checks are configured.
+Configure HTTP checks to send an `HTTP GET` request to a URL. If a successful response is returned a check is sent to CloudWisdom. By default, no HTTP checks are configured.
 
 **Add something like:**
 ```
@@ -47,15 +47,15 @@ Configure HTTP checks to send an `HTTP GET` request to a URL. If a successful re
 </ReadSystemChecks>
 ```
 
-- **Name**: This is used as the name of the check in Metricly if Alias is not set.
+- **Name**: This is used as the name of the check in CloudWisdom if Alias is not set.
 - **URL**: This is the URL to test. A check is sent if an `HTTP GET` request sent to the given URL returns a successful response. Redirects are automatically followed.
 - **StatusMatches**: (optional) A regular expression to evaluate a successful response code. The default expression is ``^2`` which matches any `2xx` code.
 Other examples:
    - ``^(?!4|5)`` : any code except `4xx` or `5xx`
    - ``^(2|3)`` : any `2xx` or `3xx` code
 - **AuthHeader**:  (optional) An authorization header to send with the request. e.g., `Basic dXNlcm5hbWU6cGFzc3dvcmQ`
-- **Alias**: (optional) An alias to use for the check name in Metricly.
-- **TTLMultiplier**: (optional) Sets the time-to-live of the check as a multiple of the agent execution interval. For example, if the agent is configured to collect data every 60 seconds (the default) and the check is configured with a TTLMultiplier of 2.5 (the default) then the next check must be received by Metricly within 150 seconds in order to pass.
+- **Alias**: (optional) An alias to use for the check name in CloudWisdom.
+- **TTLMultiplier**: (optional) Sets the time-to-live of the check as a multiple of the agent execution interval. For example, if the agent is configured to collect data every 60 seconds (the default) and the check is configured with a TTLMultiplier of 2.5 (the default) then the next check must be received by CloudWisdom within 150 seconds in order to pass.
 
 ### Process and Service Checks
 
@@ -72,9 +72,9 @@ By default, no process or service checks are enabled.
     - **Service Check**: the `Name` setting is the service name. This can be found by opening the service in the Service Control Manager (note that it is the Service Name, not the Display Name).
     - **Process Check**: the `Name` setting is is the process name as it appears in the performance monitor process list (this is typically the same as it appears in Task Manager but without the file extension).
 3. (Optional) set the `TTLMultiplier` to configure the check time-to-live as a multiple of the agent collection interval.
-    - For example, if the agent is configured to collect data every 60 seconds (the default) and the check is configured with a TTLMultiplier of 2.5 (the default) then the next check must be received by Metricly within 150 seconds in order to pass.
+    - For example, if the agent is configured to collect data every 60 seconds (the default) and the check is configured with a TTLMultiplier of 2.5 (the default) then the next check must be received by CloudWisdom within 150 seconds in order to pass.
     - The minimum allowed value is 1.0, but we recommended that it is set slightly higher to allow for processing time and network latency etc.
-4. (Optional) You can add `Alias=”my check alias”` setting to provide an alias for the check received by Metricly. If it is not supplied then the process name is used.
+4. (Optional) You can add `Alias=”my check alias”` setting to provide an alias for the check received by CloudWisdom. If it is not supplied then the process name is used.
 5. (Advanced) To capture multiple processes with a single check you can add `UseRegex=”true”` to the check configuration. With this set to true the `Name` field is used as a regular expression instead of an exact match and may match several processes.
 
 ```

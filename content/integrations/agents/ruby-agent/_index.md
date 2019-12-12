@@ -7,11 +7,11 @@ author: Lawrence Lane
 ---
 The Ruby Agent comprises three Ruby gems--[netuitived](https://rubygems.org/gems/netuitived), [netuitive_ruby_api](https://rubygems.org/gems/netuitive_ruby_api), and [netuitive_rails_agent](https://rubygems.org/gems/netuitive_rails_agent)--that work in tandem to monitor the performance of your Ruby applications.
 
-- **netuitived**: allows metrics to be exported to the Metricly API.
+- **netuitived**: allows metrics to be exported to the CloudWisdom API.
 - **netuitive_ruby_api**: allows for easy integration with `netuitived`.
 - **netuitive_rails_agent**: provides default Ruby on Rails metrics and sends them to  `netuitived` using `netuitive_ruby_api`.
 
-The Ruby Agent can also be tuned to help application performance and used to read garbage collection metrics. The flow-chart below details the flow of data from your application to Metricly.
+The Ruby Agent can also be tuned to help application performance and used to read garbage collection metrics. The flow-chart below details the flow of data from your application to CloudWisdom.
 
 ![old diagram](/images/_index/old-diagram.png)
 
@@ -50,4 +50,4 @@ gem 'netuitive_rails_agent'
 bundle install
 ```
 
-7\. **Restart** your rails application and begin monitoring your data with Metricly.
+7\. **Restart** your rails application and begin monitoring your data with CloudWisdom.

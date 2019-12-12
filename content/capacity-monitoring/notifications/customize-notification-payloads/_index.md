@@ -8,9 +8,9 @@ author: Lawrence Lane
 alwaysopen: false
 weight:
 ---
- Custom JSON payloads in Metricly support [FreeMarker writeup](https://freemarker.apache.org/). This page contains a list of examples for you to reference when creating your own notification payloads for emails, SNS, and webhooks.
+ Custom JSON payloads in CloudWisdom support [FreeMarker writeup](https://freemarker.apache.org/). This page contains a list of examples for you to reference when creating your own notification payloads for emails, SNS, and webhooks.
 
-## JSON Variables Available in Metricly
+## JSON Variables Available in CloudWisdom
 
 
 | Variable              | Description                                              |
@@ -36,7 +36,7 @@ Use the official FreeMarker documentation on escaping for an in-depth look on va
 ```
 {
   "icon": "https://www.metricly.com/wp-content/uploads/2017/06/METRICLY_LOGO_M_only.png",
-  "activity": "Metricly Alerts",
+  "activity": "CloudWisdom Alerts",
   "title": "${policyName}",
   "body": "Category: ${eventCategory.name}\nElement: ${elementName}\nDescription: ${policyDescription?json_string}\nEventData: <#if event.data??><#if event.data.results??><#assign results = event.data.results?eval><#if results.conditions??><#list results.conditions as condition><#if condition?counter <= 5>${condition.expression}</#if></#list></#if></#if></#if>"
 }

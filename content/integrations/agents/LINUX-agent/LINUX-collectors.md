@@ -17,7 +17,7 @@ weight: 6
 
  Where the base or individual collectors include more data (which may be less useful or actionable), this SimpleCollector guarantees a cleaner streamlined experience. The SimpleCollector can be activated by updating the ``/opt/netuitive-agent/conf/netuitive-agent.conf`` file.
 
- Please use this collector **and no other collectors** when using the Metricly Cost Optimization product.
+ Please use this collector **and no other collectors** when using the CloudWisdom Cost Optimization product.
 
 ![Linux Simple Collector](/images/LINUX-collectors/linux-simple-collector.png)
 
@@ -127,7 +127,7 @@ Some of the individual collectors have their own simple mode. This can be activa
 | Load Avg.  | measure_collector_time | FALSE                                                                                                                                           | Measure the collectorâ€™s run time in milliseconds.                                                                       |
 | Load Avg.  | enabled                | TRUE                                                                                                                                            | Enable collecting Load Average metrics.                                                                                   |
 | Load Avg.  | byte_unit              | byte                                                                                                                                            | Default numeric output(s).                                                                                                |
-| Heartbeat  | path                   | metricly                                                                                                                                        | Path to the Metricly agent.                                                                                               |
+| Heartbeat  | path                   | metricly                                                                                                                                        | Path to the Agent.                                                                                               |
 | Heartbeat  | enabled                | TRUE                                                                                                                                            | Enable collected the Heartbeat metric.                                                                                    |
 | Disk Usage | send_zero              | FALSE                                                                                                                                           | Tells the collector to send IO data even when there is no IO.                                                             |
 | Disk Usage | sector_size            | 512                                                                                                                                             | The size used to calculate sector usage.                                                                                  |

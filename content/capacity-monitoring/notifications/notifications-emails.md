@@ -7,7 +7,7 @@ tags: ["#alerts", "#notifications", "#email"]
 author: Lawrence Lane
 ---
 
-You can create email templates with custom messaging that are re-usable across multiple policies, or simply choose Metricly’s default email notifications. Read below for configuration steps.
+You can create email templates with custom messaging that are re-usable across multiple policies, or simply choose CloudWisdom’s default email notifications. Read below for configuration steps.
 
 ## Configuration
 1. Click your **Username** > **Notifications**.
@@ -21,7 +21,7 @@ You can create email templates with custom messaging that are re-usable across m
 7. Provide a `Name` for the template. A list of these show up in the **Email** dropdown.
 8. Provide an `Email Address` to send this notification to.
 9. Choose a **Default** or **Custom Template**.
-   - **Default**: Sends a Metricly pre-formatted message.
+   - **Default**: Sends a CloudWisdom pre-formatted message.
    - **Custom**: Allows you to customize the Subject and Body of the email.
 10. Click **Test and Save**.
 11. Select your template from the **Email** dropdown.

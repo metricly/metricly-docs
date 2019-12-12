@@ -6,7 +6,7 @@ tags: ["#snmp", "#integrations", "#collectors" ]
 author: Lawrence Lane
 ---
 
-The SNMP Collector is used to allow Metricly to monitor the performance of SNMP-enabled devices using a set of specified OIDs. The collector can gather data from as many devices as necessary by adding additional configuration sections under the [devices] header.
+The SNMP Collector is used to allow CloudWisdom to monitor the performance of SNMP-enabled devices using a set of specified OIDs. The collector can gather data from as many devices as necessary by adding additional configuration sections under the [devices] header.
 
 ## Prerequisites
 You should have SNMP set-up and your community string ready prior to activating the SNMP collector.
@@ -19,7 +19,7 @@ You should have SNMP set-up and your community string ready prior to activating 
 2. Open the **SNMPCollector.conf** file.
 3. Change the **enabled** setting to `True`.
 4. Change the **my-identification-for-this-host** header to the name of the host you want to monitor.
-5. Under the **[[[oids]]]** section, add additional `OID-metric pairs` list as necessary for the metrics you want Metricly to collect.
+5. Under the **[[[oids]]]** section, add additional `OID-metric pairs` list as necessary for the metrics you want CloudWisdom to collect.
 6. **Save** the configuration file and **restart** the Linux Agent.
 
 ## Collector Options
