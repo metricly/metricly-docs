@@ -41,7 +41,7 @@ Create & assume users from the users panel. There are three types of users:
 
 - **Administrator**:
   - Can create, update, delete everything but objects created by another user. All alerts can be deleted.
-  - Can create and assume Admin, Power, and Read-only users
+  - Can create and assume Administrator, Power User, and Read Only users.
   - Can create and assume sub-accounts
   - Cannot view the CloudWisdom Billing page
 - **Power User**:
