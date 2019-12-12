@@ -6,59 +6,79 @@ categories: ["integration", "admin guide", "getting started"]
 tags: ["#microsoft", "#azure", "#integrations", "#installation"]
 author: Lawrence Lane
 ---
-## 1. Create a Microsoft Azure Integration Card
-1. From the top navigation menu, select **Integrations**.
-2. Click the **Microsoft Azure** card.
+## 1. Create a Microsoft Azure Integration Card in CloudWisdom
+1. Log in to CloudWisdom.
+2. Select **Integrations**.
+2. Select the **Microsoft Azure** card.
+![microsoft-azure](/images/azure-installation/microsoft-azure.png)
 3. In a separate, new tab, open the [Azure portal](https://portal.azure.com/).
 
-{{% notice info %}}
-The following instructions were created using the Azure portal not the classic portal. Instructions vary depending on which portal you’re using.
-{{% /notice %}}
-
 ## 2. Create an Active Directory Application in Azure
-1. Once in the Azure portal, click **Azure Active Directory** from the left side menu.
-2. Click the **App registrations** widget.
-3. Click **Add** at the top. A _Create_ window will open.
-4. Type the name of the application. We recommend Azure / CloudWisdom Integration, or something similar.
-4. Ensure the Application Type is **Web app / API**.
-5. Input `https://us.cloudwisdom.virtana.com` for the **Sign-on URL**.
-6. Click **Create** at the bottom of the window.
 
-## 3. Get the Application ID, Application Key, & Tenant ID
-1. Select your new application from the _App registrations_ list. The application’s Essentials and Settings windows open.
-2. Copy the **Application ID** (also known as the **Client ID**) and return to the tab with CloudWisdom open. Paste it into the _Client ID_ field. Once it’s pasted, return to the Azure tab.
-3. From the _Settings_ window, click **Keys**.
-4. In the _Keys_ window, add a `description` for the key.
-5. Select a duration for the key.
-6. Click **Save** at the top of the Keys window.
-7. Copy the Key’s Value and return to the tab with CloudWisdom open. Paste it into the **Access Key** field. Once it’s pasted, return to the Azure tab.
-8. Return to the App registrations window and click **Endpoints**.
-9. From the list of endpoints, you’ll notice your `Tenant ID` in each of the URLs. Copy the `Tenant ID` from one of the endpoints and return to the tab with CloudWisdom open. Paste it into the **Tenant ID** field. Once it’s pasted, return to the Azure tab.
+1. Once in the Azure portal, select **Azure Active Directory** from the left side-menu.
+![azure-active-directory](/images/azure-installation/azure-active-directory.png)
+2. Select **App registrations** from the Manage options.
+![app-registrations](/images/azure-installation/app-registrations.png)
+3. Select **+ New Registration** at the top.
+![new-registration](/images/azure-installation/new-registration.png)
+4. Provide a name for the application (e.g., `CloudWisdom-Integration`).
+5. Select **Accounts in this organizational directory only (Default Directory only - Single tenant)** for Supported Account Types.
+6. Find the **Redirect URI (optional)** section. Select **Web** and input `https://us.cloudwisdom.virtana.com`.
+![redirect-uri-url](/images/azure-installation/redirect-uri-url.png)
+7. Select **Register** at the bottom of the window.
 
-## 4. Set Delegated Permissions
-1. Open the application’s settings window and click **Required permissions**.
-2. Click **Add** at the top of the _Required permissions_ window.
-3. In the _Add API access_ window, click **step 1. Click Windows Azure Service Management API**, then click **Select** at the bottom of the _Select an API_ window.
-4. Click step **2** and select the **Delegated Permissions** checkbox, then click **Select** at the bottom of the _Enable Access_ window.
-{{% notice tip %}}
-After selecting the Delegated Permissionscheckbox, you may have to clear and then select the Access Azure Service Management as organization users (preview) checkbox again to activate the Select button.
-{{% /notice %}}
-5. Click **Done** in the _Add API access_ window.
+## 3. Get the Application ID, Application Key, & Tenant ID from Azure
+
+Once you have completed part 2, you are redirected to the `CloudWisdom-Integration`'s overview page.
+
+1. Copy the **Application (client) ID** and paste the ID into the _Client ID_ field in CloudWisdom. Then Copy the **Directory (tenant) ID** and paste it into the **Tenant ID** field.
+![ids](/images/azure-installation/ids.png)
+3. Select **Certificates & secrets**.
+![certs-secrets](/images/azure-installation/certs-secrets.png)
+4. Select **+ New client secret**
+5. Provide a **description** and select an **Expiration** for the key.
+![add-desc-expiration](/images/azure-installation/add-desc-expiration.png)
+6. Select **Add**. The Secret is now listed in the **Client secrets** section.
+7. Copy the secret's Value and return to the tab with CloudWisdom open. Paste it into the **Access Key** field. Once it’s pasted, return to the Azure tab.
+   - **Note**: the access key is only shown in the Azure portal for a few minutes.
+![copy-secret-value](/images/azure-installation/copy-secret-value.png)
+8. Return to Azure and select **Overview**.
+
+Return to the Azure tab once you have added the Directory (Tenant) ID to your CloudWisdom integration.
+
+## 4. Set Delegated Permissions in Azure
+1. In Azure, navigate to the **API Permissions** section of your `CloudWisdom-Integration`.
+![api-permissions](/images/azure-installation/api-permissions.png)
+2. Select **+ Add a permission**. A side panel appears.
+3. Select the **Azure Service Management** card.
+![azure-service-management](/images/azure-installation/azure-service-management.png)
+4. Select **Delegated Permissions**.
+ - **Note**: Granting delegated permissions authorizes the registered application (CloudWisdom) to make requests to the Azure API only. Details of what data can be read is configured in the next step.
+5. Enable the **user_impersonation** permission.
+![user-impersonation](/images/azure-installation/user-impersonation.png)
+6. Select **Add permissions**.
 
 ## 5. Collect Subscription ID and Set Role
 
-To assign a role to the application, you’ll need the Owner or User Access Administrator role in Azure (the Contributor role will not work) or a custom role that grans write access for Microsoft.Authorization. You can check your permissions for the subscription by opening the user account menu (top right-hand corner), clicking My permissions, and then selecting the relevant subscription from the drop-down menu. If you don’t have the correct permissions, contact your subscription administrator.
+To assign a role to the application, you’ll need the **Owner** or **User Access Administrator** role in Azure (the Contributor role will not work) or a custom role that grants write access for `Microsoft.Authorization`.
 
-1. Navigate to **Subscriptions** in Azure.
+1. Navigate to **Home** > **Subscriptions** in Azure.
+2. Select the **Subscription Name** your new app belongs to.
+3. Copy the **Subscription ID** and return to the tab with CloudWisdom open. Paste it into the appropriate field. Once it’s pasted, return to the Azure tab.
+![copy-subscription-id](/images/azure-installation/copy-subscription-id.png)
+4. Navigate to this subscription's **Access Control (IAM)** tab.
+![access-control-tab](/images/azure-installation/access-control-tab.png)
+5. Select **Add** > **Add role assignment**. A side panel appears.
+![add-role-assignment](/images/azure-installation/add-role-assignment.png)
+6. Complete the following fields:
+ - **Role**: Reader
+ - **Assign access to**: Azure AD user, group, or service principal
+ - **Select**: Enter the name of the app you created in section 2 and select the app.
+7. Select **Save**.
+
 {{% notice tip %}}
-If you don’t see Subscriptions in your side menu, click **More services** and search for `Subscriptions` using the filter.
+You can verify the permissions by selecting Role Assignments and searching for the CloudWisdom application.
 {{% /notice %}}
-2. Copy the **Subscription ID** and return to the tab with CloudWisdom open. Paste it into the appropriate field. Once it’s pasted, return to the Azure tab.
-3. Click the appropriate subscription.
-4. Click **Access Control (IAM)**.
-5. Click **Add**.
-6. Select Reader for the role.
-7. Search for the application you created in Step 1, and select it. Click **Select** at the bottom of the window.
 
 After permissions have been set, return to CloudWisdom to include or exclude as many Azure element types as you want. **Azure VM and Azure Application Gateway are enabled by default**.
 
