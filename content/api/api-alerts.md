@@ -14,7 +14,12 @@ pre: ""
 - Close an alert via ID
 - Get an alert via ID
 
-## Parameters
+## GET an Alerts List from /incidents
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/alerts/searchUsingGET" >}} GET {{< /button >}} Use alert parameter values to filter results and get a list of exactly what you need.
+
+{{% expand "View method details."%}}
+
+### Parameters
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -26,17 +31,14 @@ pre: ""
 | isClosed | Query | Boolean | When the alert was closed by a user; YYYY-MM-DDTHH:MM:SSZ |
 | limit | Query | Integer | Query object return limit. Increase to return more results. |
 | offset | Query | Integer | Number of objects skipped in the query. |
-| incidentId | Path | String | Used to DELETE or close alerts; found in response body of alert queries. |
 
-## GET an Alerts List from /incidents
+### Request URL
 
-Use alert parameter values to filter results and get a list of exactly what you need.
+ `https://app.metricly.com/incidents`
 
-**Request URL:** `https://app.metricly.com/incidents`
+### CURL
 
-**CURL:**
-
-The following example uses the **policyID** and **limit** parameters:
+The following example uses the **policyId** and **limit** parameters:
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incidents?policyId=fe1bd11b-111f-111e-9982-d898aebda30f&limit=10'
@@ -48,7 +50,7 @@ The following example adds the **elementName** and **isClosed** parameters to th
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incidents?policyId=fe1bd11b-111f-111e-9982-d898aebda30f&elementName=stash&isClosed=true&limit=10'
 ```
 
-**Response Body:**
+### Response Body
 
 ```
 {
@@ -61,8 +63,6 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
       "elementName": "vpn11-usw1a (11.11.11.1)",
       "tsFirstFired": "2019-12-12T20:10:00Z",
       "tsLastFired": "2019-12-12T22:45:00Z",
-      "tsStarted": null,
-      "tsAcked": null,
       "tsClosed": "2019-12-12T22:56:01Z",
       "eventIds": [
         "1fada100-a11d-111a-bfda-11111aff111c",
@@ -85,29 +85,56 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
   ]
 }
 ```
+{{% /expand %}}
+
 ---
 
-## DELETE an Alert from /incidents/{id}
+## PUT an Alert from /incidents/{id}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/alerts/closeUsingDELETE" theme="info" >}} PUT {{< /button >}} You can close out an alert using the **incidentId** found in the response body of an alert query.
 
-You can close out an alert using the **incidentId** found in the response body of an alert query.
+{{% expand "View method details."%}}
 
-**Request URL:** `https://app.metricly.com/incidents/{id-value-here}`
+### Parameters
 
-**CURL:**
+| Parameter | Parameter Type | Data Type | Description |
+|-------------|----------------|-----------|--------------------------------|
+| incidentId | Path | String | Used to DELETE or close alerts; found in response body of alert queries. |
+
+
+### Request URL
+
+`https://app.metricly.com/incidents/{id-value-here}`
+
+### CURL
 
 ```
 curl -X DELETE --header 'Accept: */*' 'https://app.metricly.com/incidents/11a1d1117-1e01-1fe1-b1e0-1fe1db111111'
 
 ```
+
+### Response Body
+No Content; 204 success code.
+
+{{% /expand %}}
+
 ---
 
 ## Get an Alert from /incidents/{id}
 
-You can use an **incidentId** to pull all information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps. The incidentId can be found by querying for a list of alerts.
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/alerts/getUsingGET" >}} GET {{< /button >}} You can use an **incidentId** to pull all information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps. The incidentId can be found by querying for a list of alerts.
 
-**Request URL:** `https://app.metricly.com/incidents/{id-value-here}`
+{{% expand "View method details."%}}
 
-**CURL:**
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|-------------|----------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| incidentId | Path | String | Used to DELETE or close alerts; found in response body of alert queries. |
+
+### Request URL
+ `https://app.metricly.com/incidents/{id-value-here}`
+
+### CURL
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incidents/11a1d111-1e01-1fe1-b1e0-1fe1db111111'
@@ -125,8 +152,6 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
     "elementName": "vpn11-usw1a (11.11.11.1)",
     "tsFirstFired": "2019-12-12T20:10:00Z",
     "tsLastFired": "2019-12-12T22:45:00Z",
-    "tsStarted": null,
-    "tsAcked": null,
     "tsClosed": "2019-12-13T01:20:26Z",
     "eventIds": [
       "1aff7da1-c11c-111a-1a1f11f3111111c6d",
@@ -149,6 +174,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
   }
 }
 ```
+{{% /expand %}}
 
 ---
 
@@ -156,7 +182,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 
 The following is an example of how to use this API endpoint to find and close incidents.
 
-1\. Query a list of alerts using the **elementName** (or elementId), **startDate**, and **isClosed** parameters using the `https://app.metricly.com/incidents` request URL. This filters your results down to only open alerts which match a given period of time for a given element.
+1\. Query a list of alerts using the **elementName** (or **elementId**), **startDate**, and **isClosed** parameters using the `https://app.metricly.com/incidents` request URL. This filters your results down to only open alerts which match a given period of time for a given element.
 
  - **elementName**: ExampleName
  - **startDate**: 2019-12-08
