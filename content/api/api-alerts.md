@@ -101,7 +101,7 @@ curl -X DELETE --header 'Accept: */*' 'https://app.metricly.com/incidents/11a1d1
 ```
 ---
 
-## Get an Alert from /incidents/{id}
+## GET an Alert from /incidents/{id}
 
 You can use an **incidentId** to pull all information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps. The incidentId can be found by querying for a list of alerts.
 
