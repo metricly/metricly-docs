@@ -150,5 +150,30 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 }
 ```
 
+---
+
+## How to Find and Close an incident
+
+The following is an example of how to use this API endpoint to find and close incidents.
+
+1\. Query a list of alerts using the **elementName** (or elementId), **startDate**, and **isClosed** parameters using the `https://app.metricly.com/incidents` request URL. This filters your results down to only open alerts which match a given period of time for a given element.
+ - **elementName**: ExampleName
+ - **startDate**: 2019-12-08
+ - **isClosed**: False
+
+
+ ```
+ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incidents?elementName=ExampleName&startDate=2019-12-08&isClosed=true'
+ ```
+2\. Grab all relevant **incidentIds** from the JSON response for alerts you wish to close.
+
+3\. Delete the alerts using the `https://app.metricly.com/incidents/{incidentId-value-here}` request URL, using the **incidentIds** obtained from your initial query.
+
+
+```
+curl -X DELETE --header 'Accept: */*' 'https://app.metricly.com/incidents/11a1d11-1e01-1fe1-b1e1-1fe1db111111'
+```
+
+You can also use the policyId obtained from the same initial query if you do not know specifically which elements have been affected.
 
 [1]: /capacity-monitoring/alerts-page
