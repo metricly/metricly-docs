@@ -18,8 +18,8 @@ You can change the display name of certain elements to help distinguish between 
 3. Select the **Element Name** field to edit it.
 4. Type the desired name into the field.
   - ``${meta.originalName}`` resolves to the name included with the original element payload _before_ being replaced with the optional element name template. The Element Preview in the UI resolves this field to `[original name]` as a placeholder because CloudWisdom only knows what the current name is, not what the incoming name might be.
-  - ``(${tags.Name})`` returns something like `MyServer (ip-10.101.3.99)`
-  - ``${tags.Name} (${attributes.availabilityZone)`` returns something like `ServerX (eu-west-1c)`
+  - ``${tags.Name} (${attributes.privateIp})`` returns something like `MyServer (ip-10.101.3.99)`
+  - ``${tags.Name} (${attributes.availabilityZone})`` returns something like `ServerX (eu-west-1c)`
 5. Select an element to use as a preview for your new element name using the Element To Preview drop-down menu.
 6. Next to the Element Name field, select **Preview** to view your new template using the selected element.
 7. If you’re satisfied with the name, press **Enter** on your keyboard while in the Element Name field to lock in the name. Exit the integration setup page and wait until the next analytics cycle (5 minutes) to see your changes.
