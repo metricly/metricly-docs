@@ -119,7 +119,7 @@ No Content; 204 success code.
 
 ---
 
-## Get an Alert from /incidents/{id}
+## GET an Alert from /incidents/{id}
 
 {{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/alerts/getUsingGET" >}} GET {{< /button >}} You can use an **incidentId** to pull all information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps. The incidentId can be found by querying for a list of alerts.
 
