@@ -19,13 +19,13 @@ pre: ""
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | policyId | Query | String | Each alert is tied to a policy. The policyID can be found in the URL, such as https://app.metricly.com/#/alerts/fda75bec-b25a-4e7f-b714-64ceb0976f2c?tab=all |
-| elementId | Query | String | An alert's scope can be one or many elements; use the elementID to filter results. |
+| elementId | Query | String | An alert's scope can be one or many elements; use the elementId to filter results. |
 | elementName | Query | String | An alert's scope can be one or many elements; use the elementName to filter results. |
 | startDate | Query | Date-Time | The first moment the policy conditions were met; YYYY-MM-DDTHH:MM:SSZ |
 | endDate | Query | Date-Time | The last moment the policy conditions were met; YYYY-MM-DDTHH:MM:SSZ |
 | isClosed | Query | Boolean | When the alert was closed by a user; YYYY-MM-DDTHH:MM:SSZ |
-| limit | Query | Integer | Query return limit. |
-| offset | Query | Integer | Number of alerts skipped in the query. |
+| limit | Query | Integer | Query object return limit. Increase to return more results. |
+| offset | Query | Integer | Number of objects skipped in the query. |
 | incidentId | Path | String | Used to DELETE or close alerts; found in response body of alert queries. |
 
 ## GET an Alerts List from /incidents
