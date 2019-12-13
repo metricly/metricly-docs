@@ -8,11 +8,13 @@ alwaysopen: false
 pre: ""
 ---
 
-[Alerts][1] group anomalous behavior and are informed by multi-conditional policies you select or build in CloudWisdom. Through the Alerts API, you can:
+[Alerts][1] group anomalous behavior and are informed by multi-conditional policies you select or build in CloudWisdom. Through the [Alerts API](https://app.metricly.com/swagger-ui.html#!/alerts), you can:
 
 - Get a list of alerts, filterable by properties
 - Close an alert via ID
 - Get an alert via ID
+
+
 
 ## GET an Alerts List from /incidents
 {{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/alerts/searchUsingGET" >}} GET {{< /button >}} Use alert parameter values to filter results and get a list of exactly what you need.
@@ -98,7 +100,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|--------------------------------|
-| incidentId | Path | String | Used to DELETE or close alerts; found in response body of alert queries. |
+| incidentId | Path | String | Used to close alerts; found in response body of alert queries. |
 
 
 ### Request URL
@@ -108,7 +110,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 ### CURL
 
 ```
-curl -X DELETE --header 'Accept: */*' 'https://app.metricly.com/incidents/11a1d1117-1e01-1fe1-b1e0-1fe1db111111'
+curl -X PUT --header 'Accept: */*' 'https://app.metricly.com/incidents/11a1d1117-1e01-1fe1-b1e0-1fe1db111111'
 
 ```
 
@@ -129,7 +131,7 @@ No Content; 204 success code.
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| incidentId | Path | String | Used to DELETE or close alerts; found in response body of alert queries. |
+| incidentId | Path | String | Used to find or close alerts; found in response body of alert queries. |
 
 ### Request URL
  `https://app.metricly.com/incidents/{id-value-here}`
@@ -194,11 +196,11 @@ The following is an example of how to use this API endpoint to find and close in
  ```
 2\. Grab all relevant **incidentIds** from the JSON response for alerts you wish to close.
 
-3\. Delete the alerts using the `https://app.metricly.com/incidents/{incidentId-value-here}` request URL, using the **incidentIds** obtained from your initial query.
+3\. Close the alerts using the `https://app.metricly.com/incidents/{incidentId-value-here}` request URL, using the **incidentIds** obtained from your initial query.
 
 
 ```
-curl -X DELETE --header 'Accept: */*' 'https://app.metricly.com/incidents/11a1d11-1e01-1fe1-b1e1-1fe1db111111'
+curl -X PUT --header 'Accept: */*' 'https://app.metricly.com/incidents/11a1d11-1e01-1fe1-b1e1-1fe1db111111'
 ```
 
 You can also use the policyId obtained from the same initial query if you do not know specifically which elements have been affected.
