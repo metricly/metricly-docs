@@ -30,7 +30,7 @@ pre: ""
 
 ## GET an Alerts List from /incidents
 
-Use Alert parameter values to filter results and get a list of exactly what you need.
+Use alert parameter values to filter results and get a list of exactly what you need.
 
 **Request URL:** `https://app.metricly.com/incidents`
 
@@ -103,7 +103,7 @@ curl -X DELETE --header 'Accept: */*' 'https://app.metricly.com/incidents/11a1d1
 
 ## Get an Alert from /incidents/{id}
 
-You can use an **incidentId** to pull all information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps. The incidentId can be found by through querying for a list of alerts.
+You can use an **incidentId** to pull all information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps. The incidentId can be found by querying for a list of alerts.
 
 **Request URL:** `https://app.metricly.com/incidents/{id-value-here}`
 
