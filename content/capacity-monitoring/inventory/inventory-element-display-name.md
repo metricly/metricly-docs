@@ -26,11 +26,11 @@ You can change the display name of certain elements to help distinguish between 
 
 ### Metadata Variable Templates
 
-- **Element FQN**: `meta.fqn` | e.g., _720523155433:ec2:us-east-1:i-20c9ae302d2e7b45e_
-- **Element Location**: `meta.location` | e.g., _us-east-1_
-- **Element Type**: `meta.type` | e.g., _EC2_
-- **Tenant ID**: `meta.tenantId` | e.g., _38907e4c-392a-9f9a-b682-7h938e43dt73_
-- **Element ID** `meta.id`| e.g., _1f71ab78-80a9-3f9b-941f-07cbe8fe4703_
+- **Element FQN**: `${meta.fqn}` | e.g., _720523155433:ec2:us-east-1:i-20c9ae302d2e7b45e_
+- **Element Location**: `${meta.location}` | e.g., _us-east-1_
+- **Element Type**: `${meta.type}` | e.g., _EC2_
+- **Tenant ID**: `${meta.tenantId}` | e.g., _38907e4c-392a-9f9a-b682-7h938e43dt73_
+- **Element ID** `${meta.id}`| e.g., _1f71ab78-80a9-3f9b-941f-07cbe8fe4703_
 
 {{% notice tip %}}
 
