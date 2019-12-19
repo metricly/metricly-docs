@@ -15,6 +15,19 @@ pre: ""
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|------------|----------------|---------------|-------------|
+| ids | Query | Array[string] | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+| name | Query | Array[string] | Element Name. |
+| type | Query | Array[string] | Type of element. |
+| location | Query | Array[string] | Type of resource. |
+| tags | Query | String | Tags passed into CloudWisdom. |
+| fields | Query | Array[string] | Filter results by adding only the fields you want to see in the response. |
+| startTime | Query | Date-Time | Start time for the query. |
+| endTime | Query | Date-Time | End time for the query. |
+| state | Query | Boolean | ?? |
+| eventCount | Query | Boolean | ?? |
+
 ### Request URL
 
 ### CURL
@@ -32,6 +45,11 @@ pre: ""
 {{% expand "View Method Details." %}}
 
 ### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|-----------|----------------------------------------------|
+| term | path | string | The the element field you want to aggregate. |
+| elasticsearchQuery | body | json | A json query. |
 
 ### Request URL
 
@@ -51,6 +69,10 @@ pre: ""
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|-----------|----------------------------------------------|
+| term | path | string | The the element field you want to aggregate. |
+
 ### Request URL
 
 ### CURL
@@ -68,6 +90,12 @@ pre: ""
 {{% expand "View Method Details." %}}
 
 ### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------------|----------------|-----------|---------------------------|
+| startTime | Query | Date-Time | Start time for the query. |
+| endTime | Query | Date-Time | End time for the query. |
+| queriesTemporalInventory | Query | Boolean |  |
 
 ### Request URL
 
@@ -87,6 +115,10 @@ pre: ""
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|-----------------|----------------|-----------|-------------|
+| elementTemplate | Body | json | ?? |
+
 ### Request URL
 
 ### CURL
@@ -99,11 +131,24 @@ pre: ""
 
 ## GET from /elements/search
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/getElementsSearchGetUsingGET" theme="success" >}} GET {{< /button >}}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/getElementsSearchGetUsingGET" theme="success" >}} GET {{< /button >}} This is a deprecated method. Use **/elements/elasticsearch/elementQuery** instead.
 
 {{% expand "View Method Details." %}}
 
 ### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|------------|----------------|---------------|-------------|
+| ids | Query | Array[string] | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+| name | Query | Array[string] | Element Name. |
+| type | Query | Array[string] | Type of element. |
+| location | Query | Array[string] | Type of resource. |
+| tags | Query | String | Tags passed into CloudWisdom. |
+| fields | Query | Array[string] | Filter results by adding only the fields you want to see in the response. |
+| startTime | Query | Date-Time | Start time for the query. |
+| endTime | Query | Date-Time | End time for the query. |
+| state | Query | Boolean | ?? |
+| eventCount | Query | Boolean | ?? |
 
 ### Request URL
 
@@ -117,11 +162,15 @@ pre: ""
 
 ## POST to /elements/search
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/getElementsPOSTUsingPOST" theme="warning" >}} POST {{< /button >}}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/getElementsPOSTUsingPOST" theme="warning" >}} POST {{< /button >}} This is a deprecated method. Use **/elements/elasticsearch/elementQuery** instead.
 
 {{% expand "View Method Details." %}}
 
 ### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|----------------------|----------------|-----------|---------------|
+| elementSearchWrapper | Body | json | a json query; add field parameters you want returned in the response body and use ids to search for specific elements. |
 
 ### Request URL
 
@@ -140,6 +189,13 @@ pre: ""
 {{% expand "View Method Details." %}}
 
 ### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|-----------|----------------|-----------|----------------------------------|
+| elementId | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+| duration | query | string | ?? |
+| startTime | query | date-time | Start time for the query. |
+| endTime | query | date-time | End time for the query. |
 
 ### Request URL
 
