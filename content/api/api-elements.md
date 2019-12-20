@@ -210,7 +210,7 @@ This example contains only one event, but many events can be returned.
 
 ## GET from /elements/{elementId}/metrics
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricMetadataUsingGET" >}} GET {{< /button >}}
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricMetadataUsingGET" >}} GET {{< /button >}} Use this endpoint to obtain one or many metric details associated to an element. 
 
 {{% expand "View Method Details." %}}
 
@@ -244,7 +244,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ### Response Body
 
-The following response returns one metric, but many metrics can be returned. 
+The following response returns one metric, but many metrics can be returned.
 
 ```
 {
