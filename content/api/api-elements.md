@@ -8,35 +8,6 @@ alwaysopen: false
 pre: ""
 ---
 
-## GET from /elements
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementsUsingGET" >}} GET {{< /button >}} This is a deprecated method. Use **/elements/elasticsearch/elementQuery** instead.
-
-{{% expand "View Method Details." %}}
-
-### Parameters
-
-| Parameter | Parameter Type | Data Type | Description |
-|------------|----------------|---------------|-------------|
-| ids | Query | Array[string] | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
-| name | Query | Array[string] | Element Name. |
-| type | Query | Array[string] | Type of element. |
-| location | Query | Array[string] | Type of resource. |
-| tags | Query | String | Tags passed into CloudWisdom. |
-| fields | Query | Array[string] | Filter results by adding only the fields you want to see in the response. |
-| startTime | Query | Date-Time | Start time for the query. |
-| endTime | Query | Date-Time | End time for the query. |
-| state | Query | Boolean | ?? |
-| eventCount | Query | Boolean | ?? |
-
-### Request URL
-
-### CURL
-
-### Response Body
-
-{{% /expand %}}
-
----
 
 ## POST to /elements/elasticsearch/elementAgg/{term}
 
@@ -83,30 +54,6 @@ pre: ""
 
 ---
 
-## GET from /element/ids
-
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementIdsUsingGET" >}} GET {{< /button >}} This is a deprecated method. Use **/elements/elasticsearch/elementQuery** instead.
-
-{{% expand "View Method Details." %}}
-
-### Parameters
-
-| Parameter | Parameter Type | Data Type | Description |
-|--------------------------|----------------|-----------|---------------------------|
-| startTime | Query | Date-Time | Start time for the query. |
-| endTime | Query | Date-Time | End time for the query. |
-| queriesTemporalInventory | Query | Boolean |  |
-
-### Request URL
-
-### CURL
-
-### Response Body
-
-{{% /expand %}}
-
----
-
 ## POST to /elements/name/preview
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/elements/namePreviewUsingPOST" theme="warning" >}} POST {{< /button >}}
@@ -118,37 +65,6 @@ pre: ""
 | Parameter | Parameter Type | Data Type | Description |
 |-----------------|----------------|-----------|-------------|
 | elementTemplate | Body | json | ?? |
-
-### Request URL
-
-### CURL
-
-### Response Body
-
-{{% /expand %}}
-
----
-
-## GET from /elements/search
-
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/getElementsSearchGetUsingGET" theme="success" >}} GET {{< /button >}} This is a deprecated method. Use **/elements/elasticsearch/elementQuery** instead.
-
-{{% expand "View Method Details." %}}
-
-### Parameters
-
-| Parameter | Parameter Type | Data Type | Description |
-|------------|----------------|---------------|-------------|
-| ids | Query | Array[string] | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
-| name | Query | Array[string] | Element Name. |
-| type | Query | Array[string] | Type of element. |
-| location | Query | Array[string] | Type of resource. |
-| tags | Query | String | Tags passed into CloudWisdom. |
-| fields | Query | Array[string] | Filter results by adding only the fields you want to see in the response. |
-| startTime | Query | Date-Time | Start time for the query. |
-| endTime | Query | Date-Time | End time for the query. |
-| state | Query | Boolean | ?? |
-| eventCount | Query | Boolean | ?? |
 
 ### Request URL
 
@@ -192,7 +108,7 @@ pre: ""
 
 | Parameter | Parameter Type | Data Type | Description |
 |-----------|----------------|-----------|----------------------------------|
-| elementId | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+| elementId | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL (/#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
 | duration | query | string | ?? |
 | startTime | query | date-time | Start time for the query. |
 | endTime | query | date-time | End time for the query. |
@@ -215,6 +131,11 @@ pre: ""
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|-----------|----------------|-----------|--------------------|
+| elementId | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL (/#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46). |
+| metricFQN | query | string | The metricFQN can be found by viewing metrics in CloudWisdom. |
+
 ### Request URL
 
 ### CURL
@@ -232,6 +153,15 @@ pre: ""
 {{% expand "View Method Details." %}}
 
 ### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|-----------|----------------|---------------|----------------|
+| elementId | Path | String | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL (/#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+| metricId | Path | String | Metric Ids can be found by viewing metrics in CloudWisdom. |
+| duration | Path | String |  |
+| startTime | Path | Date-Time | Start time for the query. |
+| endTime | Path | Date-Time | End time for the query. |
+| rollup | Path | Array[string] | Determines frequency of metric sampling. Options are: ZERO, PT5M, PT1H, PT24H. |
 
 ### Request URL
 
@@ -251,6 +181,11 @@ pre: ""
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|-----------|----------------|-----------|--------------------------|
+| elementId | Path | String | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL (/#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+| metricId | Path | String | Metric Ids can be found by viewing metrics in CloudWisdom. |
+
 ### Request URL
 
 ### CURL
@@ -268,6 +203,13 @@ pre: ""
 {{% expand "View Method Details." %}}
 
 ### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|------------|----------------|-----------|------------|
+| User-Agent | Header | String | Default value: none. |
+| elementId | Path | String | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+| metricId | Path | String | Metric Ids can be found by viewing metrics in CloudWisdom. |
+| tagWrapper | Body | JSON | Inject a new tag using JSON: "tag-name":"tag-value". |
 
 ### Request URL
 
@@ -287,6 +229,14 @@ pre: ""
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|------------|----------------|-----------|------------------------|
+| User-Agent | header | string | Default value: none. |
+| elementId | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+| metricId | path | string | Metric Ids can be found by viewing metrics in CloudWisdom. |
+| tagName | path | string | Use this value to update the existing tag. |
+| tagWrapper | body | JSON | Inject a new tag using JSON: "tag-name":"tag-value". |
+
 ### Request URL
 
 ### CURL
@@ -304,6 +254,13 @@ pre: ""
 {{% expand "View Method Details." %}}
 
 ### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|------------|----------------|-----------|---------------|
+| User-Agent | header | string | Default value: none. |
+| elementId | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46). |
+| metricId | path | string | Metric Ids can be found by viewing metrics in CloudWisdom. |
+| tag | path | string | Used to specify which tag to delete. |
 
 ### Request URL
 
@@ -323,6 +280,10 @@ pre: ""
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|-----------|----------------|-----------|------------------|
+| elementId | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46). |
+
 ### Request URL
 
 ### CURL
@@ -340,6 +301,10 @@ pre: ""
 {{% expand "View Method Details." %}}
 
 ### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|-----------|----------------|-----------|------------------|
+| elementId | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46). |
 
 ### Request URL
 
@@ -359,6 +324,12 @@ pre: ""
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|------------|----------------|-----------|-----------------------------|
+| User-Agent | header | string | Default value: none. |
+| elementId | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+| tagWrapper | body | JSON | Inject a new tag using JSON. |
+
 ### Request URL
 
 ### CURL
@@ -376,6 +347,13 @@ pre: ""
 {{% expand "View Method Details." %}}
 
 ### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|------------|----------------|-----------|-----------------|
+| User-Agent | header | string | Default value: none. |
+| elementId | path | string | Element Ids can be found in by selecting an element in CloudWisdom and viewing the URL (/#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+| tagName | path | string | Use this value to update the existing tag. |
+| tagWrapper | body | JSON | Inject a new tag using JSON. |
 
 ### Request URL
 
@@ -395,6 +373,12 @@ pre: ""
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|------------|----------------|-----------|----------------------------------|
+| User-Agent | header | string | Default value: none. |
+| elementId | path | string | Element Ids can be found in by selecting an element in CloudWisdom and viewing the URL (/#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+| tag | path | string | Used to specify which tag to delete. |
+
 ### Request URL
 
 ### CURL
@@ -412,6 +396,11 @@ pre: ""
 {{% expand "View Method Details." %}}
 
 ### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|------------|----------------|-----------|----------------------------------|
+| User-Agent | header | string | Default value: none. |
+| Id | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
 
 ### Request URL
 
@@ -431,6 +420,10 @@ pre: ""
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|-----------|----------------|-----------|-------------------------------------------------|
+| Id | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+
 ### Request URL
 
 ### CURL
@@ -448,6 +441,13 @@ pre: ""
 {{% expand "View Method Details." %}}
 
 ### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|-----------|----------------|-----------|-------------------------|
+| id | Path | String | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
+| levels | Query | Integer | Depth of relationships. |
+| startTime | Query | Date-Time | Start time for the query. |
+| endTime | Query | Date-Time | End time for the query. |
 
 ### Request URL
 
