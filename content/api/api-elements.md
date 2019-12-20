@@ -290,7 +290,7 @@ The following response returns one metric, but many metrics can be returned.
 
 ## GET from /elements/{elementId}/metrics/{metricId}/samples
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricResultsUsingGET" >}} GET {{< /button >}}
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricResultsUsingGET" >}} GET {{< /button >}} Use this endpoint to grab metric samples in a given rollup frequency for a specific period of time.
 
 {{% expand "View Method Details." %}}
 
@@ -307,9 +307,114 @@ The following response returns one metric, but many metrics can be returned.
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/24661111-1111-1111-adbe-71c85255bd40/metrics/bb1111ed-1111-3c76-b1b6-a4111a4eda2f/samples?
+```
+
 ### CURL
 
+The following example includes a **Duration** of `PT30M` and **Rollup** value of `PT5M`.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/24661111-1111-1111-adbe-71c85255bd40/metrics/bb1111ed-1111-3c76-b1b6-a4111a4eda2f/samples?duration=PT30m&rollup=PT5M'
+
+```
+
 ### Response Body
+
+The following example contains 5 metric samples for the **metricId** `bb1111ed-1111-3c76-b1b6-a1111a4eda2f`. 
+
+```
+{
+  "samples": [
+    {
+      "metricId": "bb1111ed-1111-3c76-b1b6-a1111a4eda2f",
+      "timestamp": "2019-12-20T16:25:00Z",
+      "rollup": "PT5M",
+      "data": {
+        "actual": 10.2,
+        "avg": 10.2,
+        "min": 9,
+        "max": 13,
+        "baselineMean": 53.129704892436585,
+        "cnt": 5,
+        "sum": 51,
+        "baselineStddev": 145.18387878356057,
+        "baselineUpper": 633.8652200266789,
+        "baselineLower": 0
+      }
+    },
+    {
+      "metricId": "bb1111ed-1111-3c76-b1b6-a1111a4eda2f",
+      "timestamp": "2019-12-20T16:30:00Z",
+      "rollup": "PT5M",
+      "data": {
+        "actual": 11.6,
+        "avg": 11.6,
+        "min": 10,
+        "max": 13,
+        "baselineMean": 52.819651418304396,
+        "cnt": 5,
+        "sum": 58,
+        "baselineStddev": 143.5165646715427,
+        "baselineUpper": 626.8859101044752,
+        "baselineLower": 0
+      }
+    },
+    {
+      "metricId": "bb1111ed-1111-3c76-b1b6-a1111a4eda2f",
+      "timestamp": "2019-12-20T16:35:00Z",
+      "rollup": "PT5M",
+      "data": {
+        "actual": 10.8,
+        "avg": 10.8,
+        "min": 10,
+        "max": 12,
+        "baselineMean": 52.45982914038505,
+        "cnt": 5,
+        "sum": 54,
+        "baselineStddev": 141.77574214465326,
+        "baselineUpper": 619.5627977189981,
+        "baselineLower": 0
+      }
+    },
+    {
+      "metricId": "bb1111ed-1111-3c76-b1b6-a1111a4eda2f",
+      "timestamp": "2019-12-20T16:40:00Z",
+      "rollup": "PT5M",
+      "data": {
+        "actual": 9.8,
+        "avg": 9.8,
+        "min": 9,
+        "max": 11,
+        "baselineMean": 53.09643273302771,
+        "cnt": 5,
+        "sum": 49,
+        "baselineStddev": 141.27593059022965,
+        "baselineUpper": 618.2001550939463,
+        "baselineLower": 0
+      }
+    },
+    {
+      "metricId": "bb1111ed-1111-3c76-b1b6-a1111a4eda2f",
+      "timestamp": "2019-12-20T16:45:00Z",
+      "rollup": "PT5M",
+      "data": {
+        "actual": 10.4,
+        "avg": 10.4,
+        "min": 9,
+        "max": 12,
+        "baselineMean": 53.57279368703339,
+        "cnt": 5,
+        "sum": 52,
+        "baselineStddev": 146.9486822676629,
+        "baselineUpper": 641.3675227576849,
+        "baselineLower": 0
+      }
+    }
+  ]
+}
+```
 
 {{% /expand %}}
 
