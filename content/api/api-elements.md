@@ -20,7 +20,7 @@ pre: ""
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
 | term | path | string | The element field you want to aggregate. |
-| elasticsearchQuery | body | json | A json query. |
+| elasticsearchQuery | body | JSON | A JSON query. |
 
 ### Request URL
 
@@ -64,7 +64,7 @@ pre: ""
 
 | Parameter | Parameter Type | Data Type | Description |
 |-----------------|----------------|-----------|-------------|
-| elementTemplate | Body | json | ?? |
+| elementTemplate | Body | JSON | ?? |
 
 ### Request URL
 
@@ -86,7 +86,7 @@ pre: ""
 
 | Parameter | Parameter Type | Data Type | Description |
 |----------------------|----------------|-----------|---------------|
-| elementSearchWrapper | Body | json | a json query; add field parameters you want returned in the response body and use ids to search for specific elements. |
+| elementSearchWrapper | Body | JSON | A JSON query; add field parameters you want returned in the response body and use ids to search for specific elements. |
 
 ### Request URL
 
@@ -109,7 +109,7 @@ pre: ""
 | Parameter | Parameter Type | Data Type | Description |
 |-----------|----------------|-----------|----------------------------------|
 | elementId | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL (/#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
-| duration | query | string | ?? |
+| duration | query | string | Follows ISO8601 duration format. Example options include: PT1h, PT1m, PT10s, P3D |
 | startTime | query | date-time | Start time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
 | endTime | query | date-time | End time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
 
@@ -210,7 +210,7 @@ This example contains only one event, but many events can be returned.
 
 ## GET from /elements/{elementId}/metrics
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricMetadataUsingGET" >}} GET {{< /button >}} Use this endpoint to obtain one or many metric details associated to an element. 
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricMetadataUsingGET" >}} GET {{< /button >}} Use this endpoint to obtain one or many metric details associated to an element.
 
 {{% expand "View Method Details." %}}
 
@@ -300,7 +300,7 @@ The following response returns one metric, but many metrics can be returned.
 |-----------|----------------|---------------|----------------|
 | elementId | Path | String | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL (/#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
 | metricId | Path | String | Metric Ids can be found by viewing metrics in CloudWisdom. |
-| duration | Path | String |  |
+| duration | Path | String | Follows ISO8601 duration format. Example options include: PT1h, PT1m, PT10s, P3D. |
 | startTime | Path | Date-Time | Start time for the query. YYYY-MM-DDT00:001Z format (must include time zone).|
 | endTime | Path | Date-Time | End time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
 | rollup | Path | Array[string] | Determines frequency of metric sampling. Options are: ZERO, PT5M, PT1H, PT24H. |
