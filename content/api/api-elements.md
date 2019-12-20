@@ -100,7 +100,7 @@ pre: ""
 
 ## GET from /elements/{elementId}/events
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getEventsUsingGET" >}} GET {{< /button >}} Use this endpoint to discover events within certain time frames (days, hours, minutes). 
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getEventsUsingGET" >}} GET {{< /button >}} Use this endpoint to discover events within certain time frames (days, hours, minutes).
 
 {{% expand "View Method Details." %}}
 
@@ -110,8 +110,8 @@ pre: ""
 |-----------|----------------|-----------|----------------------------------|
 | elementId | path | string | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL (/#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
 | duration | query | string | ?? |
-| startTime | query | date-time | Start time for the query. |
-| endTime | query | date-time | End time for the query. |
+| startTime | query | date-time | Start time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
+| endTime | query | date-time | End time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
 
 ### Request URL
 
@@ -129,7 +129,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ```
 
-The following example uses YYYY-MM-DDT00:001Z format (must include timezone). This is better for looking at a specific, narrow time frames.
+The following example uses YYYY-MM-DDT00:001Z format (must include time zone). This is better for looking at a specific, narrow time frames.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/11160111-0111-392f-adbe-71c85111bd40/events?startTime=2019-12-01T03%3A30Z&endTime=2019-12-01T07%3A30Z'
@@ -243,8 +243,8 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 | elementId | Path | String | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL (/#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
 | metricId | Path | String | Metric Ids can be found by viewing metrics in CloudWisdom. |
 | duration | Path | String |  |
-| startTime | Path | Date-Time | Start time for the query. |
-| endTime | Path | Date-Time | End time for the query. |
+| startTime | Path | Date-Time | Start time for the query. YYYY-MM-DDT00:001Z format (must include time zone).|
+| endTime | Path | Date-Time | End time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
 | rollup | Path | Array[string] | Determines frequency of metric sampling. Options are: ZERO, PT5M, PT1H, PT24H. |
 
 ### Request URL
@@ -530,8 +530,8 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 |-----------|----------------|-----------|-------------------------|
 | id | Path | String | Element Ids can be found in by selecting an element in  CloudWisdom and viewing the URL ( /#/inventory/6bdf4fd1-1111-1111-1c11-17eb5f628e46) |
 | levels | Query | Integer | Depth of relationships. |
-| startTime | Query | Date-Time | Start time for the query. |
-| endTime | Query | Date-Time | End time for the query. |
+| startTime | Query | Date-Time | Start time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
+| endTime | Query | Date-Time | End time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
 
 ### Request URL
 
