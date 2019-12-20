@@ -19,7 +19,7 @@ pre: ""
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| term | path | string | The the element field you want to aggregate. |
+| term | path | string | The element field you want to aggregate. |
 | elasticsearchQuery | body | json | A json query. |
 
 ### Request URL
@@ -100,7 +100,7 @@ pre: ""
 
 ## GET from /elements/{elementId}/events
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getEventsUsingGET" >}} GET {{< /button >}}
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getEventsUsingGET" >}} GET {{< /button >}} Use this endpoint to discover events within certain time frames (days, hours, minutes). 
 
 {{% expand "View Method Details." %}}
 
@@ -115,9 +115,93 @@ pre: ""
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/11160111-0111-392f-adbe-71c85111bd40/events
+
+```
+
 ### CURL
 
+The following example uses a YYYYMMDD startTime and endTime value.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/11160111-0111-392f-adbe-71c85111bd40/events?startTime=20191201&endTime=20191202'
+
+```
+
+The following example uses YYYY-MM-DDT00:001Z format (must include timezone). This is better for looking at a specific, narrow time frames.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/11160111-0111-392f-adbe-71c85111bd40/events?startTime=2019-12-01T03%3A30Z&endTime=2019-12-01T07%3A30Z'
+```
+
 ### Response Body
+
+
+```
+{
+  "events": [
+    {
+      "id": "f0b4c111-9402-1111-a3be-111d6971f4dc",
+      "timestamp": "2019-12-01T06:50:00Z",
+      "category": {
+        "id": "1",
+        "name": "INFO",
+        "color": "#0000FF"
+      },
+      "data": {
+        "metricIds": [
+          {
+            "fqn": "aws.ec2.cpuutilization",
+            "id": "1b111b41-e6a6-3a41-8b0a-b1111111fce7"
+          }
+        ],
+        "policyName": "Test-DY-PolicyCreationTime",
+        "metrics": [
+          "aws.ec2.cpuutilization"
+        ],
+        "results": "{\"violating\":true,\"conditions\":[{\"id\":\"0\",\"violating\":true,\"expression\":\"The current value of aws.ec2.cpuutilization is 99.27; this is above the static threshold of 99.\"}],\"metrics\":[\"aws.ec2.cpuutilization\"]}"
+      },
+      "elementId": "11111156-0111-392f-adbe-71c11155bd40",
+      "elementFqn": "502111101106:EC2:us-west-2:i-1b1d3a41",
+      "elementType": "EC2",
+      "elementName": "vpn01-usw2a (10.12.11.6)",
+      "elementLocation": "us-west-2a",
+      "elementTags": {
+        "app": "vpn",
+        "n.analysis.status": "",
+        "Tenant": "internal",
+        "n.collectors": "EC2",
+        "n.backfill.status": "false",
+        "Netuitive": "True",
+        "Name": "vpn01-usw2a"
+      },
+      "policy": {
+        "id": "fe8bd11b-586f-401e-1111-d891aebda10f",
+        "name": "Test-DY-PolicyCreationTime",
+        "description": null,
+        "scope": null,
+        "duration": null,
+        "anyCondition": false,
+        "conditions": [],
+        "eventConditions": [],
+        "checkCondition": null,
+        "actions": [],
+        "enabled": true,
+        "deleted": false
+      },
+      "source": null,
+      "title": null,
+      "tags": [],
+      "type": null,
+      "isExternal": false,
+      "processedTime": null,
+      "eventTags": {}
+    }
+    ]
+}
+```
+
 
 {{% /expand %}}
 
