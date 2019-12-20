@@ -122,14 +122,14 @@ https://app.metricly.com/elements/11160111-0111-392f-adbe-71c85111bd40/events
 
 ### CURL
 
-The following example uses a YYYYMMDD startTime and endTime value.
+The following example uses a YYYYMMDD **startTime** and **endTime** value.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/11160111-0111-392f-adbe-71c85111bd40/events?startTime=20191201&endTime=20191202'
 
 ```
 
-The following example uses YYYY-MM-DDT00:001Z format (must include time zone). This is better for looking at a specific, narrow time frames.
+The following example uses the suggested YYYY-MM-DDT00:001Z format instead (must include time zone). This is better for looking at a specific, narrow time frames.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/11160111-0111-392f-adbe-71c85111bd40/events?startTime=2019-12-01T03%3A30Z&endTime=2019-12-01T07%3A30Z'
@@ -137,6 +137,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ### Response Body
 
+This example contains only one event, but many events can be returned.
 
 ```
 {
@@ -222,9 +223,66 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/11110956-1111-392f-adbe-71c11115bd40/metrics
+```
+
 ### CURL
 
+The following example returns a list of all metrics associated to the **elementId**.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/11110956-1111-392f-adbe-71c11115bd40/metrics'
+```
+
+The following example returns the `aws.ec2.networkpacketsout` metric associated to the **elementId**.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/11110956-1111-392f-adbe-71c11115bd40/metrics?metricFQN=aws.ec2.networkpacketsout'
+
+```
+
 ### Response Body
+
+The following response returns one metric, but many metrics can be returned. 
+
+```
+{
+  "id": "21110956-1111-392f-adbe-71c81115bd40",
+  "metricMeta": [
+    {
+      "id": "bb2116ed-2868-3c76-b1b6-a4111a4eda2f",
+      "fqn": "aws.ec2.networkpacketsout",
+      "state": {
+        "baselined": true,
+        "created": "2017-10-02T13:57:06Z",
+        "lastResults": {
+          "actual": 5.6,
+          "avg": 5.6,
+          "min": 4,
+          "max": 7,
+          "baselineMean": 31.103688690165836,
+          "cnt": 5,
+          "sum": 28,
+          "baselineStddev": 115.32111156038707,
+          "baselineUpper": 492.3881349317141,
+          "baselineLower": 0
+        },
+        "historicalMin": 0.8,
+        "lastActual": 669.4,
+        "updated": "2019-12-20T03:10:00Z",
+        "correlated": false,
+        "historicalMax": 288606
+      },
+      "configuration": {
+        "validmax": null,
+        "sparsedatastrategy": "None",
+        "validmin": 0
+      }
+    }
+  ]
+}
+```
 
 {{% /expand %}}
 
