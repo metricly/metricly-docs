@@ -137,7 +137,7 @@ weight: 9
 
 | Fully Qualified Name (FQN) | Description | Units | Min | Max | BASE | CORR | UTIL | Related Default Policies |
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-----|-----|------|------|------|-----------------------------------------------------------------------------|
-| netuitive.linux.memory.utilizationpercent | Under Linux, memory buffered and cached are part of memory which can beconsidered available. See the following explanation.Computation:100 – (memory.Buffers + memory.Cached + memory.MemFree) /memory.MemTotal * 100 | percent | 0 | 100 | yes | yes | yes | Linux – Memory Utilization Threshold Exceeded, Linux – Elevated MemoryUsage |
+| netuitive.linux.memory.utilizationpercent | Under Linux, memory buffered and cached are part of memory which can beconsidered available. See the following explanation.Computation:100 - 100 * (${memory.MemAvailable}.actual / ${memory.MemTotal}.actual), 100 – (memory.Buffers + memory.Cached + memory.MemFree) /memory.MemTotal * 100 | percent | 0 | 100 | yes | yes | yes | Linux – Memory Utilization Threshold Exceeded, Linux – Elevated MemoryUsage |
 
 ### Network
 
