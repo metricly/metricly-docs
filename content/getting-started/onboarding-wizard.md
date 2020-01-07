@@ -81,8 +81,11 @@ CloudWisdom collects performance data to power analyses. The elements enabled by
    - **S3 Bucket Name**: Select the s3 bucket you created in [section 1, part 2](/getting-started/onboarding-wizardv2/#2-enable-cost-usage-reports-in-aws).
    - **Report Path Prefix**: Use the path created in section 1, part 2. `CostAndUsageReports/HourlyCSVWithResourceIDs`
 3. Select **Next: Summary**.
-4. Provide a name for your AWS datasource.
-5. Select **Confirm & Finish**.
+
+### 4. Name & Finalize New Datasource
+
+1. Provide a name for your AWS datasource.
+2. Select **Confirm & Finish**.
 
 You can create more datasources using the guides in our [Integrations][3] section.
 
