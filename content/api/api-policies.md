@@ -441,7 +441,7 @@ You can repeat section 2 to re-enable your policy.
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: */*' --header 'Authorization: Basic {YOUR_BASE64_ENCODED_CREDS}' 'https://us.cloudwisdom.virtana.com/policies/{policyId}/mute/{muteMs}'
 ```
-2. Insert the **policy ID** into the template at `####policy-ID-here####`
+2. Insert the **policy ID** into the template at *{policyId}*.
 3. POST to `/policies/{policyId}/mute/{muteMs}`
 
 The policy stays muted for the millisecond duration given.
@@ -455,7 +455,7 @@ The Request URL is the same policy URL from the cURL sample.
 DELETE from `/policies/{policyId}/mute` with the following cURL:
 
 ```
-curl -X DELETE --header 'Accept: */*' 'https://us.cloudwisdom.virtana.com/policies/####policy-ID-here####/mute'
+curl -X DELETE --header 'Accept: */*' 'https://us.cloudwisdom.virtana.com/policies/{policyId}/mute'
 ```
 
 
