@@ -339,7 +339,7 @@ You can use the [Metricly CLI][1] or interact directly with the CloudWisdom API 
 
 1. In CloudWisdom, navigate to the policy you want to edit.
 2. Copy the policy’s ID from the url.
-![policy-id](/images/api-policies/policy-id.png)
+![policy-id](/images/api-policies/policy_id.png)
 
 **Get & Put the Policy Document via Swagger**
 
@@ -432,7 +432,7 @@ You can repeat section 2 to re-enable your policy.
 
 1. In CloudWisdom, navigate to the policy you want to mute.
 2. Copy the policy’s ID from the url.
-![policy-id](/images/api-policies/policy-id.png)
+![policy-id](/images/api-policies/policy_id.png)
 
 **POST the Mute Order to the API**
 
