@@ -26,6 +26,12 @@ Cost Explorer must be enabled from the master billing account---even if already 
 
 Cost and Usage Reports (CUR) have replaced Detailed Billing in AWS. CloudWisdom recommends switching to (or starting with) a CUR setup instead of using AWS Detailed Billing.
 
+{{% notice tip %}}
+
+Already have an existing Cost and Usage Report set up? Great! You can skip this section. You'll need to provide your CUR's Report Path Prefix at a later stage in this setup.
+
+{{% /notice %}}
+
 1. Log in to your AWS Console.
 2. Navigate to **Billing** > **Cost & Usage Reports**.
 3. Select **Create report**.
@@ -79,7 +85,7 @@ CloudWisdom collects performance data to power analyses. The elements enabled by
 2. Complete the following fields:
    - **Detailed Billing Source**: select **Cost and Usage Report (recommended)** for your Detailed Billing Source. Detailed Billing Files are a legacy feature of AWS and may not be supported in the future.
    - **S3 Bucket Name**: Select the s3 bucket you created in [section 1, part 2](/getting-started/onboarding-wizardv2/#2-enable-cost-usage-reports-in-aws).
-   - **Report Path Prefix**: Use the path created in section 1, part 2. `CostAndUsageReports/HourlyCSVWithResourceIDs`
+   - **Report Path Prefix**: Input the path prefix of an existing CUR or the new one created in section 1, part 2. `CostAndUsageReports/HourlyCSVWithResourceIDs`
 3. Select **Next: Summary**.
 
 ### 4. Name & Finalize New Datasource
