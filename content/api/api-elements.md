@@ -322,7 +322,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ### Response Body
 
-The following example contains 5 metric samples for the **metricId** `bb1111ed-1111-3c76-b1b6-a1111a4eda2f`. 
+The following example contains 5 metric samples for the **metricId** `bb1111ed-1111-3c76-b1b6-a1111a4eda2f`.
 
 ```
 {
@@ -435,9 +435,36 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ### Request URL
 
+```
+https://app.metricly.com/swagger-ui.html#!/elements/getMetricTagsUsingGET
+```
+
 ### CURL
 
+The following example includes the required **elementId** and **metricId**.
+
+- You can find an elementId while viewing a metric in CloudWisdom by selecting the _Card Title_ > Element Detail.
+- You can find metricIds for an element in your inventory by selecting the _Card Title_ > View all Metrics for this Element.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags'
+```
+
 ### Response Body
+
+Notice how the response lists tags added from CloudWisdom (`netuitiveTags`) and from the metric (`sourceTags`).
+
+```
+{
+  "netuitiveTags": {
+    "n.statistic": "AVG"
+  },
+  "sourceTags": {
+    "awsDimensions": "{\"LoadBalancer\":\"app/bamboo/5f973fddb1e0c653\"}",
+    "awsNamespace": "AWS/ApplicationELB"
+  }
+}
+```
 
 {{% /expand %}}
 
@@ -445,7 +472,7 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ## POST to /elements/{elementId}/metrics/{metricId}/tags
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/createMetricTagUsingPOST" theme="warning" >}} POST {{< /button >}}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/createMetricTagUsingPOST" theme="warning" >}} POST {{< /button >}} Use this endpoint to post new tags (key-value pairs) to a specified metric.
 
 {{% expand "View Method Details." %}}
 
@@ -460,9 +487,31 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags
+
+```
+
 ### CURL
 
+The following example creates the key `Color` and tag value `Blue`, associated to the metric specified in the Request URL.
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "netuitiveTag":  \
+ { "Color":"Blue"} \
+ }' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags'
+```
+
 ### Response Body
+
+```
+{
+  "netuitiveTag": {
+    "Color": "Blue"
+  }
+}
+```
 
 {{% /expand %}}
 
@@ -470,7 +519,7 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ## PUT to /elements/{elementId}/metrics/{metricId}/tags/{tagName}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/updateMetricTagUsingPUT" theme="info" >}} PUT {{< /button >}}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/updateMetricTagUsingPUT" theme="info" >}} PUT {{< /button >}} Use this endpoint to update the value of a tag for a specified metric.
 
 {{% expand "View Method Details." %}}
 
@@ -486,9 +535,27 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags/Color
+
+```
+
 ### CURL
 
+This example changes the previously created `Color` tag's value to `Red`. Notice that you must specify the tagName (key) at the end of the Request URL.
+
+```
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: */*' --header 'User-Agent: none' -d '{ \
+   "netuitiveTag":  \
+ { "Color":"Red"} \
+ }' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags/Color'
+```
+
 ### Response Body
+
+```
+No Content
+```
 
 {{% /expand %}}
 
@@ -496,7 +563,7 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ## DELETE from to /elements/{elementId}/metrics/{metricId}/tags/{tag}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteMetricTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteMetricTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete a tag (key) from a specified metric.
 
 {{% expand "View Method Details." %}}
 
@@ -511,9 +578,24 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags/Color
+```
+
 ### CURL
 
+The following example deletes the `Color` tag used in the previous examples. Note that `tag` here is similar to `tagName`; use the Key string (in this case, _Color_.)
+
+```
+curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags/Color'
+
+```
+
 ### Response Body
+
+```
+No Content
+```
 
 {{% /expand %}}
 
@@ -521,7 +603,7 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ## GET from /elements/{elementId}/policies
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getPoliciesUsingGET" >}} GET {{< /button >}}
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getPoliciesUsingGET" >}} GET {{< /button >}} Use this endpoint to get a list of policies associated to an element.
 
 {{% expand "View Method Details." %}}
 
@@ -533,9 +615,109 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/policies
+```
+
 ### CURL
 
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/policies'
+```
+
 ### Response Body
+
+This example contains only one policy for the sake of simplicity; results will provide a full list of all policies associated to an element. 
+
+```
+{
+  "policies": [
+    {
+      "id": "02f5b11e-0e11-3bb1-9c1a-fc82a4175111",
+      "name": "AWS ALB - Elevated Load Balancer Error Rate",
+      "description": "This is an error rate policy looking at errors from the Load Balancer itself.  In this case, we look for both high traffic volumes (> 1000) as well as error rates that are not just higher than normal, but are above a 2% threshold. In those cases, a Critical event will be generated. You may wish to tune either the 1,000 request count threshold, the 2% error threshold, or both, to better suit your environment.",
+      "scope": {
+        "elementName": null,
+        "elementNameRegex": false,
+        "elementNameExclude": null,
+        "elementNameExcludeRegex": false,
+        "fqnIncludes": [],
+        "fqnExcludes": [],
+        "elementType": null,
+        "elementTypes": [
+          "ALB"
+        ],
+        "elementTags": [],
+        "elementTagsAll": true,
+        "excludedElementTags": [],
+        "elementAttributes": [],
+        "elementAttributesAll": true,
+        "excludedElementAttributes": []
+      },
+      "duration": 900,
+      "anyCondition": false,
+      "conditions": [
+        {
+          "metric": "netuitive.aws.alb.httpcodeelberrorpercent",
+          "wildcard": null,
+          "metricScopeTags": {},
+          "analytic": "baselineDeviation",
+          "operator": ">",
+          "level": null,
+          "level2": null,
+          "metricThresholdLevel": null,
+          "metricThresholdAnalytic": null
+        },
+        {
+          "metric": "netuitive.aws.alb.httpcodeelberrorpercent",
+          "wildcard": null,
+          "metricScopeTags": {},
+          "analytic": "contextualDeviation",
+          "operator": ">",
+          "level": null,
+          "level2": null,
+          "metricThresholdLevel": null,
+          "metricThresholdAnalytic": null
+        },
+        {
+          "metric": "netuitive.aws.alb.httpcodeelberrorpercent",
+          "wildcard": null,
+          "metricScopeTags": {},
+          "analytic": "actual",
+          "operator": ">=",
+          "level": 2,
+          "level2": null,
+          "metricThresholdLevel": null,
+          "metricThresholdAnalytic": null
+        },
+        {
+          "metric": "aws.applicationelb.requestcount",
+          "wildcard": null,
+          "metricScopeTags": {},
+          "analytic": "actual",
+          "operator": ">=",
+          "level": 1000,
+          "level2": null,
+          "metricThresholdLevel": null,
+          "metricThresholdAnalytic": null
+        }
+      ],
+      "eventConditions": [],
+      "checkCondition": null,
+      "actions": [
+        {
+          "type": "event",
+          "category": 3
+        }
+      ],
+      "enabled": true,
+      "deleted": false,
+      "creatorEmail": "techwriter@cloudwisdom.com",
+      "lastUpdated": "2018-08-02T22:07:31Z"
+    }, <!!! list of more Ids !!!>
+  ]
+}
+```
 
 {{% /expand %}}
 
@@ -543,7 +725,7 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ## GET from /elements/{elementId}/tags
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementTagsUsingGET" >}} GET {{< /button >}}
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementTagsUsingGET" >}} GET {{< /button >}} Use this endpoint to get a list of CloudWisdom and Source tags for a particular element.
 
 {{% expand "View Method Details." %}}
 
@@ -555,9 +737,32 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags
+```
+
 ### CURL
 
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags'
+```
+
 ### Response Body
+
+Notice how the response lists tags added from CloudWisdom (`netuitiveTags`) and from the element (`sourceTags`). In this example you can see a tag I created in the CloudWisdom UI for _Cheese_ with the value _Brie_.
+
+```
+{
+  "netuitiveTags": {
+    "Cheese": "Brie ",
+    "TstMetriclyTag": "Yes",
+    "n.analysis.status": null
+  },
+  "sourceTags": {
+    "n.collectors": "ALB"
+  }
+}
+```
 
 {{% /expand %}}
 
@@ -579,9 +784,31 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags
+```
+
 ### CURL
 
+This CURL example posts a new key-value pair of `"Weekday":"Saturday"` to the element specified in the request URL. Notice it must be wrapped with `netuitiveTag`.
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "netuitiveTag": { "Weekday":"Saturday"} \
+ } \
+  \
+ \' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags'
+ ```
+
 ### Response Body
+
+```
+{
+  "netuitiveTag": {
+    "Weekday": "Saturday"
+  }
+}
+```
 
 {{% /expand %}}
 
