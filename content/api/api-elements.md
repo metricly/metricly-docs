@@ -422,7 +422,7 @@ The following example contains 5 metric samples for the **metricId** `bb1111ed-1
 
 ## GET from /elements/{elementId}/metrics/{metricId}/tags
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricTagsUsingGET" >}} GET {{< /button >}}
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricTagsUsingGET" >}} GET {{< /button >}} Use this endpoint to get a list of tags associated to a specified metric for a given element.
 
 {{% expand "View Method Details." %}}
 
@@ -874,7 +874,7 @@ https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags/Week
 
 ### CURL
 
-This example deletes the `Weekday` tag used in our previous examples. 
+This example deletes the `Weekday` tag used in our previous examples.
 
 ```
 curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags/Weekday'
@@ -892,7 +892,7 @@ No Content
 
 ## DELETE from /elements/{id}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementUsingDELETE" theme="danger" >}} DELETE {{< /button >}}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete specified elements.
 
 {{% expand "View Method Details." %}}
 
@@ -915,7 +915,7 @@ No Content
 
 ## GET from /elements/{id}
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementUsingGET" >}} GET {{< /button >}}
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementUsingGET" >}} GET {{< /button >}} Use this endpoint to get details of a specified element.
 
 {{% expand "View Method Details." %}}
 
@@ -927,9 +927,73 @@ No Content
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46
+```
+
 ### CURL
 
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46'
+```
+
 ### Response Body
+
+```
+{
+  "element": {
+    "netuitiveTags": {
+      "Cheese": "Cheddar",
+      "TstMetriclyTag": "Yes",
+      "n.analysis.status": null
+    },
+    "sourceTags": {
+      "n.collectors": "ALB"
+    },
+    "metrics": [
+      {
+        "netuitiveTags": {
+          "n.statistic": "AVG"
+        },
+        "sourceTags": {
+          "awsDimensions": "{\"LoadBalancer\":\"app/bamboo/5f973fddb1e0c653\"}",
+          "awsNamespace": "AWS/ApplicationELB"
+        },
+        "processingFlags": {
+          "RAW_AGG": true
+        },
+        "unit": "Count",
+        "dataSourceId": 31845,
+        "fqn": "aws.applicationelb.clienttlsnegotiationerrorcount",
+        "name": "ClientTLSNegotiationErrorCount",
+        "id": "5be97f00-82df-3b63-8751-13a09b1a2269"
+      } <!!! more metrics usually listed here !!!>
+    ],
+    "fqn": "111119301106:ALB:us-east-1:app/bamboo/5f973fddb1e0c111",
+    "name": " bamboo - us-east-1",
+    "location": "us-east-1",
+    "id": "6bdf4fd1-71111-3959-9c36-17eb5f611e11",
+    "type": "ALB",
+    "attributes": [
+      {
+        "id": "2e076c28-295d-3827-9638-ef8ecce767a7",
+        "dataSourceId": 31845,
+        "name": "ipAddressType",
+        "value": "ipv4",
+        "attributeType": null
+      },
+      {
+        "id": "9124e608-197f-39eb-a35b-15155adc6c9d",
+        "dataSourceId": 31845,
+        "name": "scheme",
+        "value": "internet-facing",
+        "attributeType": null
+      } <!!! more attributes usually listed here !!!>
+      }
+    ]
+  }
+}
+```
 
 {{% /expand %}}
 
