@@ -627,7 +627,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ### Response Body
 
-This example contains only one policy for the sake of simplicity; results will provide a full list of all policies associated to an element. 
+This example contains only one policy for the sake of simplicity; results will provide a full list of all policies associated to an element.
 
 ```
 {
@@ -770,7 +770,7 @@ Notice how the response lists tags added from CloudWisdom (`netuitiveTags`) and 
 
 ## POST to /elements/{elementId}/tags
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/createElementTagUsingPOST" theme="warning" >}} POST {{< /button >}}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/createElementTagUsingPOST" theme="warning" >}} POST {{< /button >}} Use this endpoint to create a new tag (key-value pair) for the specified element.
 
 {{% expand "View Method Details." %}}
 
@@ -816,7 +816,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ## PUT to /elements/{elementId}/tags/{tagName}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/updateElementTagUsingPUT" theme="info" >}} PUT {{< /button >}}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/updateElementTagUsingPUT" theme="info" >}} PUT {{< /button >}} Use this endpoint to update tag values for the specified element's tag.
 
 {{% expand "View Method Details." %}}
 
@@ -831,7 +831,20 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags/Weekday
+```
+
 ### CURL
+
+This example updates an example tag, `Weekday`, with the value `Sunday`.
+
+```
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: */*' --header 'User-Agent: none' -d '{ \
+   "netuitiveTag": { "Weekday":"Sunday"} \
+ } \
+ ' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags/Weekday'
+```
 
 ### Response Body
 
@@ -841,7 +854,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ## DELETE from /elements/{elementId}/tags/{tag}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}} This endpoint deletes the specified tag for a given element.
 
 {{% expand "View Method Details." %}}
 
@@ -855,9 +868,23 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags/Weekday
+```
+
 ### CURL
 
+This example deletes the `Weekday` tag used in our previous examples. 
+
+```
+curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags/Weekday'
+```
+
 ### Response Body
+
+```
+No Content
+```
 
 {{% /expand %}}
 
