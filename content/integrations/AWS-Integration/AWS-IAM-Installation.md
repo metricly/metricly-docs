@@ -57,7 +57,7 @@ If you already have an existing IAM role for CloudWisdom but it does not include
 }
 ```
 7. Select **Review Policy**.
-8. Provide a **Name**, such as `CostExplorerAPIAccess`. You must add this customer managed policy to your IAM role in **Part 3**.
+8. Provide a **Name**, such as `CostExplorerAPIReadOnly`. You must add this customer managed policy to your IAM role in **Part 3**.
 9. Review the permissions summary and select **Create Policy**.
 
 ### 3: Create Read Only Role (with standard permissions)
@@ -72,7 +72,7 @@ If you already have an existing IAM role for CloudWisdom but it does not include
 6. Provide the **Account ID** from your CloudWisdom AWS integration. _Leave Require MFA unchecked_.
 7. Select **Next: Permissions**.
 8. For Attach permission policies, add all of the following:
- - CostExplorerAPIAccess (**Filter policies** > **Customer Managed**)
+ - CostExplorerAPIReadOnly (**Filter policies** > **Customer Managed**)
  - AmazonMQReadOnlyAccess
  - ReadOnlyAccess
  ![customer-managed](/images/AWS-IAM-Installation/customer-managed.png)
