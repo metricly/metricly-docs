@@ -192,8 +192,8 @@ The following is an example of how to use this API endpoint to find and close in
 
 
  ```
- curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incidents?elementName=ExampleName&startDate=2019-12-08&isClosed=false'
- ``
+ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incidents?elementName=ExampleName&startDate=2019-12-08&isClosed=true'
+ ```
 2\. Grab all relevant **incidentIds** from the JSON response for alerts you wish to close.
 
 3\. Close the alerts using the `https://app.metricly.com/incidents/{incidentId-value-here}` request URL, using the **incidentIds** obtained from your initial query.
