@@ -28,7 +28,7 @@ Cost and Usage Reports (CUR) have replaced Detailed Billing in AWS. CloudWisdom 
 
 {{% notice tip %}}
 
-Already have an existing Cost and Usage Report set up? Great! You can skip this section. You'll need to provide your CUR's Report Path Prefix at a later stage in this setup.
+Already have an existing Cost and Usage Report with GZIP or ZIP compression set up? Great! You can skip this section. You'll need to provide your CUR's Report Path Prefix at a later stage in this setup.
 
 {{% /notice %}}
 
