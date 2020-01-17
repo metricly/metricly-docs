@@ -10,6 +10,12 @@ weight: 4
 
 Cost and Usage Reports (CUR) have replaced Detailed Billing in AWS. CloudWisdom recommends switching to (or starting with) a CUR setup instead of using AWS Detailed Billing.
 
+{{% notice tip %}}
+
+Already have an existing Cost and Usage Report with GZIP or ZIP compression set up? Great! Simply copy the Report Path Prefix of your existing CUR and skip to part 2 of this guide.
+
+{{% /notice %}}
+
 ## 1. Enable Cost & Usage Reports in AWS
 
 1. Log in to your AWS Console.
@@ -46,7 +52,7 @@ If you have just created your IAM role, **wait 2-5 minutes** for AWS to finalize
 ![detailed-billing-source](/images/aws-cur/detailed-billing-source.png)
 4. Scroll to the **Detailed Billing Settings** section and complete the following fields:
    - **S3 Bucket Name**: the case sensitive name of bucket chosen in section 1, step 7.
-   - **Report Path Prefix**: the path designated in section 1, step 8. `CostAndUsageReports/HourlyCSVWithResourceIDs`.
+   - **Report Path Prefix**: Input the path prefix of an existing CUR or the new one created in section 1, step 8: `CostAndUsageReports/HourlyCSVWithResourceIDs` 
 5. Select **Save**.  
 
 ---
