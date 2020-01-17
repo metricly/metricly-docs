@@ -25,7 +25,7 @@ If you already have an existing IAM role for CloudWisdom but it does not include
 {{% /notice %}}
 
 ### 1: Create a new AWS integration in CloudWisdom
-1. Login to CloudWisdom and select the **Integrations** icon.
+1. Log in to CloudWisdom and select the **Integrations** icon.
 ![integrations-icon](/images/AWS-IAM-Installation/integrations-icon.png)
 2. Select the **Amazon Web Services** card.
 3. Select **Add Integration** to create a new integration. (If updating an existing integration, select **View Current Integrations**).
