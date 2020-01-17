@@ -17,6 +17,7 @@ After you make a new AWS integration in CloudWisdom, the script populates a read
 2. Select **+ Add Integration**.
 3. Enable the **Cost Explorer API**.
 4. Select the following Detailed Billing Source: **Cost And Usage Report (Recommended)**.
+ - Once you have finished all setup on this page, see the [Cost and Usage Report steps](/integrations/aws-integration/aws-cur).
 ![cost-explorer-CUR](/images/AWS-CloudFormation-Installation/cost-explorer-cur.png)
 5. Select the **CloudFormation script** link under Configure AWS Permissions. This opens a new tab in AWS.  
 6. Check **I acknowledge that AWS CloudFormation might create IAM resources**.  
@@ -28,6 +29,6 @@ After you make a new AWS integration in CloudWisdom, the script populates a read
 3. Copy the **Role ARN Value**.
 ![role-arn-value](/images/onboarding-wizard/role-arn-value.png)
 4. Return to CloudWisdom.   
-5. Input the Role ARN into **IAM Role ARN**.  
+5. Input the Role ARN into **IAM Role ARN**. Make sure there are no extra spaces once you have pasted the value into the field.
 ![iam-role-arn](/images/AWS-CloudFormation-Installation/iam-role-arn.png)
 6. **Save**.  
