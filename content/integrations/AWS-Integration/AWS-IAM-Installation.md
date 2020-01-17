@@ -32,7 +32,7 @@ If you already have an existing IAM role for CloudWisdom but it does not include
 ![add-integration](/images/AWS-IAM-Installation/add-integration.png)
 4. Provide a name for the new AWS integration.
 5. Enable **Detailed Billing** and **Explorer API**.
-   - Once you have finished all setup on this page, see the [Detailed Billing steps](/integrations/aws-integration/aws-detailed-billing).
+   - Once you have finished all setup on this page, see the [Cost and Usage Report steps](/integrations/aws-integration/aws-cur).
 6. For Authentication, select **IAM Role**.
 7. In a separate, new tab, open your AWS console.
 
