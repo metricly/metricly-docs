@@ -10,17 +10,18 @@ weight: 2
 ---
 ## IAM Role Method
 
-Setting up an AWS integration via IAM Role is a four step process:
+Setting up an AWS integration via IAM Role is a five step process:
 
 1. Create a new AWS integration in CloudWisdom.
  - Optionally, define data filters for AWS elements to be included/excluded in CloudWisdom using tags (key-value pair).
 2. Create a custom in-line policy for Cost Explorer API access.
-3. Create an IAM role in your AWS Console.
-4. Add your IAM Role's ARN to your AWS integration in CloudWisdom.
+3. Create a custom in-line policy for Cost and Usage Reports read access.
+4. Create an IAM role in your AWS Console.
+5. Add your IAM Role's ARN to your AWS integration in CloudWisdom.
 
 
 {{% notice tip %}}
-If you already have an existing IAM role for CloudWisdom but it does not include a policy for Cost Explorer, skip to the last section.
+If you already have an existing IAM role for CloudWisdom but it does not include a in-line policies for Cost Explorer or Cost and Usage Reports, start with sections 2 and 3.
 {{% /notice %}}
 
 ### 1: Create a new AWS integration in CloudWisdom
