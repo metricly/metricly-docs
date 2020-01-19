@@ -46,8 +46,6 @@ You can create multiple AWS integrations if you wish. If you haven’t created a
 ### Create Additional AWS Integrations
 If you’ve already created an AWS integration but want to create another one, navigate to the Integrations page (top navigation menu) and click the **Amazon Web Services** card. Your most recently created integration’s information will be available in the fields. Click **Add Integration**; a blank AWS integration setup page will appear.
 
-Elastic Map Reduce (EMR) clusters work a little differently than other AWS element types in that terminated clusters remain in your AWS console for two months. To avoid any confusion with your inventory and metric collection, CloudWisdom does not show terminated clusters in the UI.
-
 ### Edit Most Recently Added AWS Integration
 If you’ve already created an AWS integration and want to edit the configuration information, navigate to the Integrations page (top navigation menu) and click the **Amazon Web Services** card. Your most recently created integration’s information will be available in the fields; edit as necessary.
 

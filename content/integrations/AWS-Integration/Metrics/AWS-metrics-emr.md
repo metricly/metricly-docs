@@ -7,7 +7,11 @@ tags: ["#aws", "#metrics", "#nlb"]
 author: Lawrence Lane
 ---
 
-AWS groups EMR metrics into different categories (cluster status, node status, IO, etc.), but this has no impact on how CloudWisdom monitors EMR.
+AWS groups Elastic Map Reduce (EMR) metrics into different categories (cluster status, node status, IO, etc.), but this has no impact on how CloudWisdom monitors EMR.
+
+{{% notice tip %}}
+EMR clusters work a little differently than other AWS element types in that terminated clusters remain in your AWS console for two months. To avoid any confusion with your inventory and metric collection, CloudWisdom does not show terminated clusters in the UI.
+{{% /notice %}}
 
 ## Collected
 | Friendly Name  | Fully Qualified Name (FQN)                         | AWS Metric                    | Statistic | Units     | Max  | BASE | CORR | UTIL |
