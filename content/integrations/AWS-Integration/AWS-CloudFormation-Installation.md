@@ -14,7 +14,8 @@ After you make a new AWS integration in CloudWisdom, the script populates a read
 
 ## 1. Create an AWS Integration in CloudWisdom
 1. Open CloudWisdom and navigate to **Integrations** > **Amazon Web Services**.  
-2. Select **+ Add Integration**.
+   - If this is not your first AWS integration, select **+ Add Integration**.
+   ![add-integration](/images/AWS-CloudFormation-Installation/add-integration.png)
 3. Enable the **Cost Explorer API**.
 4. Select the following Detailed Billing Source: **Cost And Usage Report (Recommended)**.
  - Once you have finished all setup on this page, see the [Cost and Usage Report steps](/integrations/aws-integration/aws-cur).
