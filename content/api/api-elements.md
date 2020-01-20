@@ -8,6 +8,11 @@ alwaysopen: false
 pre: ""
 ---
 
+## About the Elements API
+
+CloudWisdom's Elements API can be used create, edit, delete and review elements. Users can also update tags and policies associated to these elements. You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/elements).
+
+
 
 ## POST to /elements/elasticsearch/elementAgg/{term}
 
@@ -1001,7 +1006,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ## GET from /elements/{id}/relationships
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementRelationshipsUsingGET" >}} GET {{< /button >}}
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementRelationshipsUsingGET" >}} GET {{< /button >}}  Use this endpoint to view an element's relationships.
 
 {{% expand "View Method Details." %}}
 
@@ -1016,9 +1021,85 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/6bdf4fd1-1111-1111-9c36-17eb5f628e46/relationships?levels=2
+```
+
 ### CURL
 
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/6bdf4fd1-1111-1111-9c36-17eb5f628e46/relationships?levels=2'
+```
+
 ### Response Body
+
+```
+{
+  "relationships": {
+    "type": null,
+    "label": null,
+    "directed": true,
+    "nodes": [
+      {
+        "id": "6bdf4fd1-1111-1111-9c36-17eb5f628e46",
+        "label": "ECS-ASG-Spot-GREEN",
+        "type": "ASG",
+        "metadata": {
+          "fqn": "501234301106:ASG:us-west-2:ECS-ASG-Spot-GREEN"
+        }
+      },
+      {
+        "id": "0f78c417-4fb1-38e9-9b84-0289fc65c9c0",
+        "label": "GREEN-JSLAVE (10.12.52.132)",
+        "type": "EC2",
+        "metadata": {
+          "fqn": "501234301106:EC2:us-west-2:i-04dcebc729b34a9dc"
+        }
+      },
+      {
+        "id": "a37b3749-8584-39d4-bcd0-46cfd49eb2fa",
+        "label": "vol-0fcbb26fd00e33818",
+        "type": "EBS",
+        "metadata": {
+          "fqn": "501234301106:EBS:us-west-2:vol-0fcbb26fd00e33818"
+        }
+      },
+      {
+        "id": "ae12b2f7-1111-11c7-836b-73ed9272ebdd",
+        "label": "vol-0e0ec86d83b5bbfa8",
+        "type": "EBS",
+        "metadata": {
+          "fqn": "501111301106:EBS:us-west-2:vol-0e0ec00d83b5bbfa8"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "0f11c417-4fb1-38e9-9b84-0111fc65c9c0",
+        "relation": "member of",
+        "target": "241464d6-f5df-3111-8aeb-30352c0d1108",
+        "directed": true,
+        "metadata": {}
+      },
+      {
+        "source": "a37b3749-2222-39d4-bcd2-46cfd49eb2fa",
+        "relation": "member of",
+        "target": "0f78c227-4fb1-38e9-9b22-0111fc65c9c0",
+        "directed": true,
+        "metadata": {}
+      },
+      {
+        "source": "ae12b2f7-1234-30c7-836b-73ed1172ebdd",
+        "relation": "member of",
+        "target": "0f11c417-4fb1-38e9-9b84-1111fc65c9c0",
+        "directed": true,
+        "metadata": {}
+      }
+    ],
+    "metadata": {}
+  }
+}
+```
 
 {{% /expand %}}
 
