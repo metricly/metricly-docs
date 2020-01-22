@@ -10,28 +10,29 @@ weight: 2
 ---
 ## IAM Role Method
 
-Setting up an AWS integration via IAM Role is a four step process:
+Setting up an AWS integration via IAM Role is a five step process:
 
 1. Create a new AWS integration in CloudWisdom.
  - Optionally, define data filters for AWS elements to be included/excluded in CloudWisdom using tags (key-value pair).
 2. Create a custom in-line policy for Cost Explorer API access.
-3. Create an IAM role in your AWS Console.
-4. Add your IAM Role's ARN to your AWS integration in CloudWisdom.
+3. Create a custom in-line policy for Cost and Usage Reports read access.
+4. Create an IAM role in your AWS Console.
+5. Add your IAM Role's ARN to your AWS integration in CloudWisdom.
 
 
 {{% notice tip %}}
-If you already have an existing IAM role for CloudWisdom but it does not include a policy for Cost Explorer, skip to the last section.
+If you already have an existing IAM role for CloudWisdom but it does not include in-line policies for Cost Explorer or Cost and Usage Reports, start with sections 2 and 3.
 {{% /notice %}}
 
 ### 1: Create a new AWS integration in CloudWisdom
-1. Login to CloudWisdom and select the **Integrations** icon.
+1. Log in to CloudWisdom and select the **Integrations** icon.
 ![integrations-icon](/images/AWS-IAM-Installation/integrations-icon.png)
 2. Select the **Amazon Web Services** card.
 3. Select **Add Integration** to create a new integration. (If updating an existing integration, select **View Current Integrations**).
 ![add-integration](/images/AWS-IAM-Installation/add-integration.png)
 4. Provide a name for the new AWS integration.
-5. Enable **Detailed Billing** and **Explorer API**.
-   - Once you have finished all setup on this page, see the [Detailed Billing steps](/integrations/aws-integration/aws-detailed-billing).
+5. Enable the **Explorer API** and select Detailed Billing Source: **Cost And Usage Report (Recommended)**.
+   - Once you have finished all setup on this page, see the [Cost and Usage Report steps](/integrations/aws-integration/aws-cur).
 6. For Authentication, select **IAM Role**.
 7. In a separate, new tab, open your AWS console.
 
@@ -43,7 +44,7 @@ If you already have an existing IAM role for CloudWisdom but it does not include
 3. Select **Policies**.
 4. Select **Create Policy**.
 5. Switch to the **JSON** tab.
-6. Copy and paste the following code into the Policy Document section.
+6. Copy and paste the following code into the Policy Document section:
 ```
 {
 "Version": "2012-10-17",
@@ -57,10 +58,34 @@ If you already have an existing IAM role for CloudWisdom but it does not include
 }
 ```
 7. Select **Review Policy**.
-8. Provide a **Name**, such as `CostExplorerAPIReadOnly`. You must add this customer managed policy to your IAM role in **Part 3**.
+8. Provide a **Name**, such as `CostExplorerAPIReadOnly`. You must add this customer managed policy to your IAM role in **Part 4**.
 9. Review the permissions summary and select **Create Policy**.
 
-### 3: Create Read Only Role (with standard permissions)
+### 3: Create a Custom In-line Policy for Cost and Usage Report Read Access
+
+1. Return to **IAM** > **Policies**.
+2. Select **Create Policy**.
+3. Switch to the **JSON** tab.
+4. Copy and paste the following code into the Policy Document section:
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "cur:DescribeReportDefinitions",
+            "Resource": "*"
+        }
+    ]
+}
+```
+5. Select **Review Policy**.
+6. Provide a **Name**, such as `ReadCostAndUsageReportDefinitions`. You must add this customer managed policy to your IAM role in **Part 4**.
+7. Review the permissions summary and select **Create Policy**.
+
+
+### 4: Create Read Only Role (with standard permissions)
 
 1. Log in to your **AWS Console**.
 2. In **Find Services**, search for `IAM` and select the result.
@@ -73,6 +98,7 @@ If you already have an existing IAM role for CloudWisdom but it does not include
 7. Select **Next: Permissions**.
 8. For Attach permission policies, add all of the following:
  - CostExplorerAPIReadOnly (**Filter policies** > **Customer Managed**)
+ - ReadCostAndUsageReportDefinitions (**Filter policies** > **Customer Managed**)
  - AmazonMQReadOnlyAccess
  - ReadOnlyAccess
  ![customer-managed](/images/AWS-IAM-Installation/customer-managed.png)
@@ -148,7 +174,7 @@ If you want to use a limited read only access policy, you’ll need to create a 
 9. Review the permissions summary and select **Create Policy**.
 10. Follow **Part 3** of this guide, replacing **step 8** with your custom minimal permissions policy.
 
-### 4: Update AWS Integration in CloudWisdom with the Role ARN
+### 5: Update AWS Integration in CloudWisdom with the Role ARN
 
 1. Return to the open CloudWisdom tab from **Step 1**.
 2. Add the Role ARN from the IAM role found in your AWS Console.
