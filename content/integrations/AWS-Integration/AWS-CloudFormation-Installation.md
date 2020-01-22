@@ -18,7 +18,7 @@ After you make a new AWS integration in CloudWisdom, the script populates a read
    ![add-integration](/images/AWS-CloudFormation-Installation/add-integration.png)
 3. Enable the **Cost Explorer API**.
 4. Select the following Detailed Billing Source: **Cost And Usage Report (Recommended)**.
- - Once you have finished all setup on this page, see the [Cost and Usage Report steps](/integrations/aws-integration/aws-cur).
+ - See the [Cost and Usage Report steps](/integrations/aws-integration/aws-cur).
 ![cost-explorer-CUR](/images/AWS-CloudFormation-Installation/cost-explorer-cur.png)
 5. Select the **CloudFormation script** link under Configure AWS Permissions. This opens a new tab in AWS.  
 6. Check **I acknowledge that AWS CloudFormation might create IAM resources**.  
