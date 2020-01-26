@@ -58,7 +58,7 @@ https://app.metricly.com/elements/elasticsearch/elementQuery
 The following CURL example submits a query for **elementTypes** matching EC2. This example filters **metrics** and **attributes** from the response body.
 
 {{% notice tip %}}
-The `items` key here is contextual to its parent object. In this example, an item is the value of an elementType key (EC2). You can search for elementFQNs, elementIds, elementNames ---but the _items_ value changes for each. If the Response Body returns `"totalElements": 0,` verify that you are submitting an item value matching its parent object. 
+The `items` key here is contextual to its parent object. In this example, an item is the value of an elementType key (EC2). You can search for elementFQNs, elementIds, elementNames ---but the _items_ value changes for each. If the Response Body returns `"totalElements": 0,` verify that you are submitting an item value matching its parent object.
 {{% /notice %}}
 
 ```
@@ -1244,6 +1244,8 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 You can automate element removal from CloudWisdom using two Element endpoints: **/elasticsearchElementQueryUsingPOST** and **/elements/{id}**. This is useful for keeping a clean inventory and it helps avoid false-positive alerts when routinely shutting down instances that are using the Metricly agent.
 
+{{% expand "View Walkthrough." %}}
+
 1. Build a query using CURL that searches your inventory for an element matching **elementNames** you provide. This query returns information on the element, such as the elementId.  In this example we are searching for `element-name-abc1`. Since we're only really interested in obtaining the **elementId**, let's exclude metrics _and_ attributes using **sourceFilter**:
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{  "sort": { \
@@ -1317,3 +1319,103 @@ curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.m
 ```
 
 The element is now removed from your inventory, along with its historical data. If you wish to keep the historical data, consider putting the element in maintenance mode instead. This disables alerts during known outages without discarding historical data.
+
+{{% /expand %}}
+
+## Fetch Raw and 5 Min Samples for a Single Element
+
+You can fetch metric samples for a single element using the **/elements/getMetricResultsUsingGET** endpoint. First you must obtain some element details from the **/elasticsearchElementQueryUsingPOST** endpoint.
+
+{{% expand "View Walkthrough." %}}
+
+1. Build a query using CURL that searches your inventory for an element matching **elementNames** you provide. In this example we are searching for `element-name-abc1`. Since we're only really interested in obtaining the **elementId** and **metricNames**, let's exclude attributes using **sourceFilter**:
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{  "sort": { \
+     "field": "name", \
+     "order": "asc", \
+     "missing": "_last" \
+   }, \
+   "page": 0, \
+   "pageSize": 35, \
+   "startDate": "2020-01-26T11:29:56-05:00", \
+   "endDate": "2020-01-26T12:29:56-05:00", \
+   "elementNames": { \
+     "and": false, \
+     "items": [ \
+       { \
+         "literal": true, \
+         "contains": true, \
+         "item": " bamboo - us-east-1" \
+       } \
+     ] \
+   }, \
+   "sourceFilter": { \
+     "excludes": [ \
+       "attributes" \
+     ] \
+   } \
+ }' 'https://app.metricly.com/elements/elasticsearch/elementQuery'
+```
+
+2. Review the Response Body and obtain the **elementId**. Also select the **metricId** corresponding to the metric you want to fetch. For this example, we'll take the ID for **RequestCount**: `4a902433-1111-371c-9a14-d9112c465aa9`.  
+```
+{
+  "page": {
+    "content": [
+      {
+        "netuitiveTags": {
+          "TstMetriclyTag": "Yes",
+          "n.analysis.status": null
+        },
+        "sourceTags": {
+          "n.collectors": "ALB"
+        },
+        "state": {
+          "netuitive.metrics.collected.percent": 100
+        },
+        "eventCount": {
+          "total": 0,
+          "topCategory": null
+        },
+        "lastProcessed": "2020-01-26T21:35:00Z",
+        "metrics": [
+          {
+            "netuitiveTags": {
+              "n.statistic": "AVG"
+            },
+            "sourceTags": {
+              "awsDimensions": "{\"LoadBalancer\":\"app/bamboo/5f973fddb1e0c111\"}",
+              "awsNamespace": "AWS/ApplicationELB"
+            },
+            "processingFlags": {
+              "RAW_AGG": true
+            },
+            "unit": "Count",
+            "fqn": "aws.applicationelb.requestcount",
+            "dataSourceId": 31845,
+            "name": "RequestCount",
+            "id": "4a902433-1111-371c-9a14-d9112c465aa9"
+          }
+        ],
+        "fqn": "501119301106:ALB:us-east-1:app/bamboo/5f113fddb1e0c653",
+        "name": "element-name-abc",
+        "location": "us-east-1",
+        "id": "6bdf4fd1-1111-2222-9c36-17eb5f628e46",
+        "type": "ALB"
+      }
+    ],
+    "last": true,
+    "totalElements": 1,
+    "totalPages": 1,
+    "sort": null,
+    "first": true,
+    "numberOfElements": 1,
+    "size": 35,
+    "number": 0
+  }
+}
+```
+3. Build a CURL command for the **/elements/getMetricResultsUsingGET**. Include the **elementId** and **metricId** found in the Response Body. 
+
+
+{{% /expand %}}
