@@ -1235,3 +1235,81 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 {{% /expand %}}
 
 ---
+
+## How to Find an Element ID and Delete it via the API
+
+You can automate element removal from CloudWisdom using two Element endpoints: **/elasticsearchElementQueryUsingPOST** and **/elements/{id}**. This is useful for keeping a clean inventory and it helps avoid false-positive alerts when routinely shutting down instances that are using the Metricly agent.
+
+1. Build a query using CURL that searches your inventory for an element matching **elementNames** you provide. This query returns information on the element, such as the elementId.  In this example we are searching for `element-name-abc1`. Since we're only really interested in obtaining the **elementId**, let's exclude metrics _and_ attributes using **sourceFilter**:
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{  "sort": { \
+     "field": "name", \
+     "order": "asc", \
+     "missing": "_last" \
+   }, \
+   "page": 0, \
+   "pageSize": 35, \
+   "startDate": "2020-01-26T11:29:56-05:00", \
+   "endDate": "2020-01-26T12:29:56-05:00", \
+   "elementNames": { \
+     "and": false, \
+     "items": [ \
+       { \
+         "literal": true, \
+         "contains": true, \
+         "item": "element-name-abc1" \
+       } \
+     ] \
+   }, \
+   "sourceFilter": { \
+     "excludes": [ \
+       "metrics", \
+       "attributes" \
+     ] \
+   } \
+ }' 'https://app.metricly.com/elements/elasticsearch/elementQuery'
+```
+
+2.  Review the request body and obtain the **elementId**.
+```
+{
+  "page": {
+    "content": [
+      {
+        "sourceTags": {
+          "Name": "element-name-abc1",
+          "n.collectors": "EBS"
+        },
+        "state": {
+          "netuitive.metrics.collected.percent": null
+        },
+        "eventCount": {
+          "total": 0,
+          "topCategory": null
+        },
+        "fqn": "501119301106:EBS:us-east-1:vol-08ab171bfa2c63111",
+        "name": "element-name-abc1",
+        "location": "us-east-1c",
+        "id": "115a11a0-2b5c-3eb9-b11b-48f81de11038",
+        "type": "EBS"
+      }
+    ],
+    "last": true,
+    "totalElements": 1,
+    "totalPages": 1,
+    "sort": null,
+    "first": true,
+    "numberOfElements": 1,
+    "size": 35,
+    "number": 0
+  }
+}
+```
+3. Submit a Delete request to **/elements/{id}**.
+
+```
+curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.metricly.com/elements/115a11a0-2b5c-3eb9-b11b-48f81de11038'
+
+```
+
+The element is now removed from your inventory, along with its historical data. If you wish to keep the historical data, consider putting the element in maintenance mode instead. This disables alerts during known outages without discarding historical data.
