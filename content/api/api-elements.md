@@ -37,9 +37,9 @@ CloudWisdom's Elements API can be used create, edit, delete and review elements.
 
 ## POST to /elements/elasticsearch/elementQuery
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/elasticsearchElementQueryUsingPOST" theme="warning" >}} POST {{< /button >}}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/elasticsearchElementQueryUsingPOST" theme="warning" >}} POST {{< /button >}}  Use this endpoint to query elements by datasource, type, and more. Supports filtering.
 
-{{% expand "View Method Details." %}}
+{{% expand "View Method Details." %}}  
 
 ### Parameters
 
@@ -49,9 +49,122 @@ CloudWisdom's Elements API can be used create, edit, delete and review elements.
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/elasticsearch/elementQuery
+```
+
 ### CURL
 
+The following CURL example submits a query that lists all of the EC2 elements active between the **startDate** and **endDate**. This example filters **metrics** and **attributes** from the response body.
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{  "sort": { \
+     "field": "name", \
+     "order": "asc", \
+     "missing": "_last" \
+   }, \
+   "page": 0, \
+   "pageSize": 35, \
+   "startDate": "2020-01-24T01:00:00-05:00", \
+   "endDate": "2020-01-24T02:00:00-05:00", \
+   "elementTypes": { \
+     "and": false, \
+     "items": [ \
+       { \
+         "literal": true, \
+         "contains": true, \
+         "item": "EC2" \
+       } \
+     ] \
+   }, \
+   "sourceFilter": { \
+     "excludes": [ \
+       "metrics", \
+       "attributes" \
+     ] \
+   } \
+ }' 'https://app.metricly.com/elements/elasticsearch/elementQuery'
+```
+
 ### Response Body
+
+```
+{
+  "page": {
+    "content": [
+      {
+        "netuitiveTags": {
+          "n.analysis.status": null
+        },
+        "sourceTags": {
+          "Name": "Brian-Conn-Testing",
+          "n.collectors": "EC2"
+        },
+        "state": {
+          "netuitive.metrics.collected.percent": null
+        },
+        "eventCount": {
+          "total": 0,
+          "topCategory": null
+        },
+        "relations": [
+          {
+            "id": 11a031a5-011a-3976-84be-d0d1cbe281fe",
+            "dataSourceId": 31845,
+            "fqn": "501119301101:EBS:us-east-1:vol-01ab111bfa2c63111"
+          }
+        ],
+        "fqn": "11179301106:EC2:us-east-1:i-011adb1a4a45ab111",
+        "name": "Testing (10.13.10.83)",
+        "location": "us-east-1c",
+        "id": "91bb19b6-012c-1111-aede-dda4e12c111a",
+        "type": "EC2"
+      },
+      {
+        "netuitiveTags": {
+          "n.analysis.status": null,
+          "n.backfill.status": "false",
+          "n.state.maintenance": "false",
+          "n.state.maintenance_end": "-1"
+        },
+        "sourceTags": {
+          "Name": "Netuitive-colo: Domain Controller",
+          "app": "hq",
+          "n.collectors": "EC2"
+        },
+        "state": {
+          "netuitive.metrics.collected.percent": 100
+        },
+        "eventCount": {
+          "total": 0,
+          "topCategory": null
+        },
+        "relations": [
+          {
+            "id": "c6ccd4ac-ea3f-11be-ac98-11112aecf04c",
+            "dataSourceId": 31845,
+            "fqn": "502111101106:EBS:us-east-1:vol-9eba111e"
+          }
+        ],
+        "fqn": "112111101106:EC2:us-east-1:i-b4e87f28",
+        "lastProcessed": "2020-01-26T16:50:00Z",
+        "name": "Domain Controller (10.14.11.30)",
+        "location": "us-east-1a",
+        "id": "c48df6c2-111c-3542-11be-17b0472a7d12",
+        "type": "EC2"
+      },     
+    ],
+    "last": true,
+    "totalElements": 2,
+    "totalPages": 1,
+    "sort": null,
+    "first": true,
+    "numberOfElements": 2,
+    "size": 35,
+    "number": 0
+  }
+}
+```
 
 {{% /expand %}}
 
@@ -59,7 +172,7 @@ CloudWisdom's Elements API can be used create, edit, delete and review elements.
 
 ## POST to /elements/name/preview
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/namePreviewUsingPOST" theme="warning" >}} POST {{< /button >}}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/namePreviewUsingPOST" theme="warning" >}} POST {{< /button >}} Use this endpoint to customize the display names of elements within the CloudWisdom UI.
 
 {{% expand "View Method Details." %}}
 
@@ -71,9 +184,28 @@ CloudWisdom's Elements API can be used create, edit, delete and review elements.
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/name/preview
+```
+
 ### CURL
 
+The following example displays the element's name, location, and type. Supports `if` and `elseif` statements.
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
+   "elementId": "095a50a0-2b5c-3eb9-b25b-48f81de11038", \
+   "template": "${tags.Name} ${meta.location} ${meta.type}" \
+ }' 'https://app.metricly.com/elements/name/preview'
+```
+
 ### Response Body
+
+```
+{
+  "preview": "Element-Name us-east-1c EBS"
+}
+```
 
 {{% /expand %}}
 
@@ -82,22 +214,6 @@ CloudWisdom's Elements API can be used create, edit, delete and review elements.
 ## POST to /elements/search
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/elements/getElementsPOSTUsingPOST" theme="warning" >}} POST {{< /button >}} This is a deprecated method. Use **/elements/elasticsearch/elementQuery** instead.
-
-{{% expand "View Method Details." %}}
-
-### Parameters
-
-| Parameter | Parameter Type | Data Type | Description |
-|----------------------|----------------|-----------|---------------|
-| elementSearchWrapper | Body | JSON | A JSON query; add field parameters you want returned in the response body and use ids to search for specific elements. |
-
-### Request URL
-
-### CURL
-
-### Response Body
-
-{{% /expand %}}
 
 ---
 
@@ -852,7 +968,7 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: */*' --h
 ### Response Body
 
 ```
-no content 
+no content
 ```
 
 {{% /expand %}}
