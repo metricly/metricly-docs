@@ -55,7 +55,11 @@ https://app.metricly.com/elements/elasticsearch/elementQuery
 
 ### CURL
 
-The following CURL example submits a query that lists all of the EC2 elements active between the **startDate** and **endDate**. This example filters **metrics** and **attributes** from the response body.
+The following CURL example submits a query for **elementTypes** matching EC2. This example filters **metrics** and **attributes** from the response body.
+
+{{% notice tip %}}
+The `items` key here is contextual to its parent object. In this example, an item is the value of an elementType key (EC2). You can search for elementFQNs, elementIds, elementNames ---but the _items_ value changes for each. If the Response Body returns `"totalElements": 0,` verify that you are submitting an item value matching its parent object. 
+{{% /notice %}}
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{  "sort": { \
