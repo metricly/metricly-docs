@@ -16,7 +16,7 @@ When you are creating conditions, the Policy Editor counts the number of metrics
   - To edit an existing policy, Navigate to **Alerts** > **Show All Policies** > **Click `Policy Name`** > **Edit Policy** > **Conditions** > **Add Metric Conditions**.
 2. Select either the Single Metric or Regex radio button.
   - **Single Metric**: Choose a metric from the Metric drop-down menu. This is the metric to which the condition will apply.
-  - **Regex**: Begin typing into the field. Stop typing when you’ve found the desired matching metrics. Each matching metric used by the policy is joined by an OR, meaning that only a single metric has to trigger the policy, not all of the matching metrics.
+  - **Regex**: Begin typing into the field. Stop typing when you’ve found the desired matching metrics. Each matching metric used by the policy is joined by an OR, meaning that only a single metric has to trigger the policy, not all of the matching metrics. Note that regular expressions are evaluated as case-insensitive, meaning uppercase and lowercase letters are treated the same. Keep this in mind if you have metrics with the same name but different casing.
 3. Use the **Metric Tags** field to filter your condition (optional).
 4. Select the deviations you want to track.
 5. Click **Save**.
