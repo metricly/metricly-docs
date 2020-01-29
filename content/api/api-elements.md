@@ -1324,11 +1324,11 @@ The element is now removed from your inventory, along with its historical data. 
 
 ## Fetch Raw and 5 Min Samples for a Single Element
 
-You can fetch metric samples for a single element using the **/elements/getMetricResultsUsingGET** endpoint. First you must obtain some element details from the **/elasticsearchElementQueryUsingPOST** endpoint.
+You can fetch metric samples for a single element using the **/elements/{elementId}/metrics/{metricId}/samples** endpoint. First you must obtain some element details from the **/elements/elasticsearch/elementQuery** endpoint.
 
 {{% expand "View Walkthrough." %}}
 
-1. Build a query using CURL that searches your inventory for an element matching **elementNames** you provide. In this example we are searching for `element-name-abc1`. Since we're only really interested in obtaining the **elementId** and **metricNames**, let's exclude attributes using **sourceFilter**:
+1. Build a POST query using CURL that searches your inventory for an element matching **elementNames** you provide. In this example we are searching for `element-name-abc1`. Since we're only really interested in obtaining the **elementId** and **metricNames**, let's exclude attributes using **sourceFilter**:
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{  "sort": { \
      "field": "name", \
@@ -1415,7 +1415,78 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
   }
 }
 ```
-3. Build a CURL command for the **/elements/getMetricResultsUsingGET**. Include the **elementId** and **metricId** found in the Response Body. 
+
+3. Build a GET CURL command for the **/elements/{elementId}/metrics/{metricId}/samples**. Include the **elementId** and **metricId** found in the Response Body. This example adds **startTime** and **endTime** parameters to limit the Response Body and defines the **rollup** value as `ZERO`.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/6bdf4fd1-1111-2222-9c36-17eb5f628e46/metrics/4a902433-1111-371c-9a14-d9112c465aa9/samples?startTime=2020-01-26T11%3A29%3A56-05%3A00&endTime=2020-01-26T11%3A30%3A56-05%3A00&rollup=ZERO'
+
+```
+4\. Review the Response Body for this 1 minute window. This is one metric sample using raw data.
+
+```
+{
+  "samples": [
+    {
+      "metricId": "4a902433-1111-371c-9a14-d9112c465aa9",
+      "timestamp": "2020-01-26T16:30:00Z",
+      "rollup": "ZERO",
+      "data": {
+        "min": 0,
+        "avg": 0.15,
+        "max": 1,
+        "cnt": 20,
+        "sum": 3
+      }
+    }
+  ]
+}
+```
+5\. Compare with the Response Body of a 10 minute window where the **rollup** value is `PT5M`. This is two metric samples that provide [baseline bands](/capacity-monitoring/analytics/baseline-bands/).
+
+```
+{
+  "samples": [
+    {
+      "metricId": "4a902433-1111-371c-9a14-d9112c465aa9",
+      "timestamp": "2020-01-26T16:25:00Z",
+      "rollup": "PT5M",
+      "data": {
+        "actual": 0.1,
+        "avg": 0.1,
+        "min": 0,
+        "max": 1,
+        "baselineMean": 0.1714443172258489,
+        "cnt": 20,
+        "sum": 2,
+        "baselineStddev": 0.8864747374758107,
+        "baselineUpper": 3.717343267129092,
+        "baselineLower": 0
+      }
+    },
+    {
+      "metricId": "4a902433-1111-371c-9a14-d9112c465aa9",
+      "timestamp": "2020-01-26T16:30:00Z",
+      "rollup": "PT5M",
+      "data": {
+        "actual": 0.19047619047619047,
+        "avg": 0.19047619047619047,
+        "min": 0,
+        "max": 1,
+        "baselineMean": 0.17387482703660617,
+        "cnt": 21,
+        "sum": 4,
+        "baselineStddev": 0.9182086113131865,
+        "baselineUpper": 3.8467092722893526,
+        "baselineLower": 0
+      }
+    }
+  ]
+}
+
+```
+
+Now you can fetch metric data using two Element endpoints.
 
 
 {{% /expand %}}
