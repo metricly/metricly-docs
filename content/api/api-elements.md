@@ -101,7 +101,7 @@ https://app.metricly.com/elements/elasticsearch/elementQuery
 
 ### CURL
 
-The following CURL example submits a query for **elementTypes** matching EC2. This example filters **metrics** and **attributes** from the response body.
+The following CURL example submits a query to find elements of the EC2 type. This example filters **metrics** and **attributes** out from the response body.
 
 {{% notice tip %}}
 The `items` key here is contextual to its parent object. In this example, an item is the value of an elementType key (EC2). You can search for elementFQNs, elementIds, elementNames ---but the _items_ value changes for each. If the response body returns `"totalElements": 0,` verify that you are submitting an item value matching its parent object.
