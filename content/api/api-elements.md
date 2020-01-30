@@ -91,7 +91,7 @@ The following response body found 6 total elements with names that contain `west
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| term | path | string | The the element field you want to aggregate. |
+| elasticsearchQuery | body | JSON | A JSON query. |
 
 ### Request URL
 
