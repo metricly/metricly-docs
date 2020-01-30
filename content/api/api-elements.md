@@ -244,6 +244,10 @@ https://app.metricly.com/elements/name/preview
 
 The following CURL example displays the element's name, location, and type. See [Element Display Name page] (https://docs.metricly.com/capacity-monitoring/inventory/inventory-element-display-name/) for more  display options.
 
+{{% notice tip %}}
+This endpoint requires an **elementId**. You can obtain an elementId using the **/elements/elasticsearch/elementQuery** endpoint. See [this walkthrough](/api/api-elements/#how-to-find-an-element-id-and-delete-it-via-the-api) for more information on obtaining an elementId.
+{{% /notice %}}
+
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
    "elementId": "095a50a0-2b5c-3eb9-b25b-48f81de11038", \
