@@ -34,7 +34,7 @@ https://app.metricly.com/elements/elasticsearch/elementAgg/{term}
 
 ### CURL
 
-In the following CURL example the **term** is defined in the request URL as **elementType**. This means the response body returns a list of element types with aggregated totals for each type which match the search criteria. In this example, we are searching for **elementNames** that match `west`.  
+In the following CURL example the **term** is defined in the request URL as **elementType**. This means the response body returns a list of element types with totals for each type which match the search criteria. In this example, we are searching for element types that contain `west` in the element name.  
 
 {{% notice tip %}}
 The term is the field we are looking to find aggregate counts for. Options are ``elementType`` for element types, ``attributes`` for element attributes ,``tags`` for element tags, and ``collectors.name`` for element collectors.
