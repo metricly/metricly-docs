@@ -224,7 +224,7 @@ The following response body found 2 elements with the **elementType** `EC2`.  Yo
 
 ## POST to /elements/name/preview
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/namePreviewUsingPOST" theme="warning" >}} POST {{< /button >}} Use this endpoint to customize the display names of elements within the CloudWisdom UI.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/namePreviewUsingPOST" theme="warning" >}} POST {{< /button >}} Use this endpoint to preview custom display names for elements within the CloudWisdom UI.
 
 {{% expand "View Method Details." %}}
 
