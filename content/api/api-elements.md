@@ -14,7 +14,7 @@ CloudWisdom's Elements API can be used create, edit, delete and review elements.
 
 ## POST to /elements/elasticsearch/elementAgg/{term}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="warning" >}} POST {{< /button >}} Use this endpoint to find a count of objects based on the fields chosen for aggregation.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to find a count of objects based on the fields chosen for aggregation.
 
 {{% expand "View Method Details." %}}
 
@@ -83,7 +83,7 @@ The following response body found 6 total elements with names that contain `west
 
 ## POST to /elements/elasticsearch/elementQuery
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/elasticsearchElementQueryUsingPOST" theme="warning" >}} POST {{< /button >}}  Use this endpoint to query elements by datasource, type, and more. Supports filtering.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/elasticsearchElementQueryUsingPOST" theme="success" >}} POST {{< /button >}}  Use this endpoint to query elements by datasource, type, and more. Supports filtering.
 
 {{% expand "View Method Details." %}}  
 
@@ -224,7 +224,7 @@ The following response body found 2 elements with the **elementType** `EC2`.  Yo
 
 ## POST to /elements/name/preview
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/namePreviewUsingPOST" theme="warning" >}} POST {{< /button >}} Use this endpoint to preview custom display names for elements within the CloudWisdom UI.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/namePreviewUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to preview custom display names for elements within the CloudWisdom UI.
 
 {{% expand "View Method Details." %}}
 
@@ -267,13 +267,13 @@ The following response body prints a preview of the element name created by merg
 
 ## POST to /elements/search
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/getElementsPOSTUsingPOST" theme="warning" >}} POST {{< /button >}} This is a deprecated method. Use **/elements/elasticsearch/elementQuery** instead.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/getElementsPOSTUsingPOST" theme="success" >}} POST {{< /button >}} This is a deprecated method. Use **/elements/elasticsearch/elementQuery** instead.
 
 ---
 
 ## GET from /elements/{elementId}/events
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getEventsUsingGET" >}} GET {{< /button >}} Use this endpoint to discover events within certain time frames (days, hours, minutes).
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getEventsUsingGET" >}} GET {{< /button >}} Use this endpoint to discover events within certain time frames (days, hours, minutes).
 
 {{% expand "View Method Details." %}}
 
@@ -383,7 +383,7 @@ The following response body contains only one event, but many events can be retu
 
 ## GET from /elements/{elementId}/metrics
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricMetadataUsingGET" >}} GET {{< /button >}} Use this endpoint to obtain one or many metric details associated to an element.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricMetadataUsingGET" >}} GET {{< /button >}} Use this endpoint to obtain one or many metric details associated to an element.
 
 {{% expand "View Method Details." %}}
 
@@ -463,7 +463,7 @@ The following response body returns one metric, but many metrics can be returned
 
 ## GET from /elements/{elementId}/metrics/{metricId}/samples
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricResultsUsingGET" >}} GET {{< /button >}} Use this endpoint to grab metric samples in a given rollup frequency for a specific period of time.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricResultsUsingGET" >}} GET {{< /button >}} Use this endpoint to grab metric samples in a given rollup frequency for a specific period of time.
 
 {{% expand "View Method Details." %}}
 
@@ -595,7 +595,7 @@ The following response body contains 5 metric samples for the **metricId** `bb11
 
 ## GET from /elements/{elementId}/metrics/{metricId}/tags
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricTagsUsingGET" >}} GET {{< /button >}} Use this endpoint to get a list of tags associated to a specified metric for a given element.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getMetricTagsUsingGET" >}} GET {{< /button >}} Use this endpoint to get a list of tags associated to a specified metric for a given element.
 
 {{% expand "View Method Details." %}}
 
@@ -645,7 +645,7 @@ The following response body returns a list of tags for the specified **metricId*
 
 ## POST to /elements/{elementId}/metrics/{metricId}/tags
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/createMetricTagUsingPOST" theme="warning" >}} POST {{< /button >}} Use this endpoint to post new tags (key-value pairs) to a specified metric.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/createMetricTagUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to post new tags (key-value pairs) to a specified metric.
 
 {{% expand "View Method Details." %}}
 
@@ -694,7 +694,7 @@ The following response body returns confirmation that the key:value pair has bee
 
 ## PUT to /elements/{elementId}/metrics/{metricId}/tags/{tagName}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/updateMetricTagUsingPUT" theme="info" >}} PUT {{< /button >}} Use this endpoint to update the value of a tag for a specified metric.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/updateMetricTagUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to update the value of a tag for a specified metric.
 
 {{% expand "View Method Details." %}}
 
@@ -782,7 +782,7 @@ No Content
 
 ## GET from /elements/{elementId}/policies
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getPoliciesUsingGET" >}} GET {{< /button >}} Use this endpoint to get a list of policies associated to an element.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getPoliciesUsingGET" >}} GET {{< /button >}} Use this endpoint to get a list of policies associated to an element.
 
 {{% expand "View Method Details." %}}
 
@@ -906,7 +906,7 @@ The following response body contains only one policy for the sake of simplicity;
 
 ## GET from /elements/{elementId}/tags
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementTagsUsingGET" >}} GET {{< /button >}} Use this endpoint to get a list of CloudWisdom and Source tags for a particular element.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementTagsUsingGET" >}} GET {{< /button >}} Use this endpoint to get a list of CloudWisdom and Source tags for a particular element.
 
 {{% expand "View Method Details." %}}
 
@@ -953,7 +953,7 @@ The following response body contains a brief list of tags. Notice how the respon
 
 ## POST to /elements/{elementId}/tags
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/createElementTagUsingPOST" theme="warning" >}} POST {{< /button >}} Use this endpoint to create a new tag (key-value pair) for the specified element.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/createElementTagUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to create a new tag (key-value pair) for the specified element.
 
 {{% expand "View Method Details." %}}
 
@@ -1001,7 +1001,7 @@ The following response body prints confirmation of the tag key:value update.
 
 ## PUT to /elements/{elementId}/tags/{tagName}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/updateElementTagUsingPUT" theme="info" >}} PUT {{< /button >}} Use this endpoint to update tag values for the specified element's tag.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/updateElementTagUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to update tag values for the specified element's tag.
 
 {{% expand "View Method Details." %}}
 
@@ -1126,7 +1126,7 @@ no content
 
 ## GET from /elements/{id}
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementUsingGET" >}} GET {{< /button >}} Use this endpoint to get details of a specified element.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementUsingGET" >}} GET {{< /button >}} Use this endpoint to get details of a specified element.
 
 {{% expand "View Method Details." %}}
 
@@ -1216,7 +1216,7 @@ The following response body is a shortened example; typical responses are much l
 
 ## GET from /elements/{id}/relationships
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementRelationshipsUsingGET" >}} GET {{< /button >}}  Use this endpoint to view an element's relationships.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementRelationshipsUsingGET" >}} GET {{< /button >}}  Use this endpoint to view an element's relationships.
 
 {{% expand "View Method Details." %}}
 
