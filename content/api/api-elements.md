@@ -59,6 +59,29 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  }' 'https://app.metricly.com/elements/elasticsearch/elementAgg/elementType'
 ```
 
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+{
+   "page": 0,
+   "pageSize": 100,
+   "startDate": "2020-01-27T12:33:28-05:00",
+   "endDate": "2020-01-27T13:33:28-05:00",
+   "elementNames": {
+     "and": false,
+     "items": [
+       {
+         "literal": false,
+         "contains": true,
+         "item": "west"
+       }
+     ]
+   }
+ }
+```
+
 ### Response Body
 
 The following response body found 6 total elements with names that contain `west` in their **elementName**: 5 S3 buckets and 1 RDS element.
@@ -134,6 +157,39 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
      ] \
    } \
  }' 'https://app.metricly.com/elements/elasticsearch/elementQuery'
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+{  "sort": {
+     "field": "name",
+     "order": "asc",
+     "missing": "_last"
+   },
+   "page": 0,
+   "pageSize": 35,
+   "startDate": "2020-01-24T01:00:00-05:00",
+   "endDate": "2020-01-24T02:00:00-05:00",
+   "elementTypes": {
+     "and": false,
+     "items": [
+       {
+         "literal": true,
+         "contains": true,
+         "item": "EC2"
+       }
+     ]
+   },
+   "sourceFilter": {
+     "excludes": [
+       "metrics",
+       "attributes"
+     ]
+   }
+ }
 ```
 
 ### Response Body
@@ -253,6 +309,17 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
    "elementId": "095a50a0-2b5c-3eb9-b25b-48f81de11038", \
    "template": "${tags.Name} ${meta.location} ${meta.type}" \
  }' 'https://app.metricly.com/elements/name/preview'
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+{
+   "elementId": "095a50a0-2b5c-3eb9-b25b-48f81de11038",
+   "template": "${tags.Name} ${meta.location} ${meta.type}"
+ }
 ```
 
 ### Response Body
@@ -680,6 +747,18 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  }' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags'
 ```
 
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+{
+   "netuitiveTag":{
+     "Color":"Blue"
+   }
+ }
+```
+
 ### Response Body
 
 The following response body returns confirmation that the key:value pair has been created and assigned.
@@ -730,6 +809,18 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: */*' --h
  }' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags/Color'
 ```
 
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+{
+   "netuitiveTag":{
+    "Color":"Red"
+  }
+ }
+```
+
 ### Response Body
 
 The following response body has no content; this is typical for a successful call.
@@ -774,7 +865,7 @@ curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.m
 
 ### Response Body
 
-The following response body has no content; this is typical for a successful call. The **HTTPS Status Code** is `204`. 
+The following response body has no content; this is typical for a successful call. The **HTTPS Status Code** is `204`.
 
 ```
 No Content
@@ -987,6 +1078,20 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  \' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags'
  ```
 
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+ ```
+ {
+    "netuitiveTag": {
+      "Weekday":"Saturday"
+    }
+  }
+ ```
+
+
 ### Response Body
 
 The following response body prints confirmation of the tag key:value update.
@@ -1034,6 +1139,18 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: */*' --h
  } \
  ' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags/Weekday'
 ```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+ ```
+ {
+    "netuitiveTag": {
+      "Weekday":"Sunday"
+    }
+  }
+ ```
 
 ### Response Body
 
