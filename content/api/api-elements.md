@@ -253,6 +253,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ### Response Body
 
+The following response body prints a preview of the element name created by merging `${tags.Name}`, `${meta.location}`, and `${meta.type}`.
+
 ```
 {
   "preview": "Element-Name us-east-1c EBS"
@@ -308,7 +310,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ### Response Body
 
-This example contains only one event, but many events can be returned.
+The following response body contains only one event, but many events can be returned.
 
 ```
 {
@@ -415,7 +417,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ### Response Body
 
-The following response returns one metric, but many metrics can be returned.
+The following response body returns one metric, but many metrics can be returned.
 
 ```
 {
@@ -623,7 +625,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ### Response Body
 
-Notice how the response lists tags added from CloudWisdom (`netuitiveTags`) and from the metric (`sourceTags`).
+The following response body returns a list of tags for the specified **metricId**. Notice how the response lists tags added from CloudWisdom (`netuitiveTags`) and from the metric (`sourceTags`).
 
 ```
 {
@@ -676,6 +678,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ### Response Body
 
+The following response body returns confirmation that the key:value pair has been created and assigned.
+
 ```
 {
   "netuitiveTag": {
@@ -713,7 +717,7 @@ https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3
 
 ### CURL
 
-This example changes the previously created `Color` tag's value to `Red`. Notice that you must specify the tagName (key) at the end of the Request URL.
+The following CURL example changes the previously created `Color` tag's value to `Red`. Notice that you must specify the tagName (key) at the end of the Request URL.
 
 ```
 curl -X PUT --header 'Content-Type: application/json' --header 'Accept: */*' --header 'User-Agent: none' -d '{ \
@@ -723,6 +727,8 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: */*' --h
 ```
 
 ### Response Body
+
+The following response body has no content; this is typical for a successful call.
 
 ```
 No Content
@@ -764,6 +770,8 @@ curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.m
 
 ### Response Body
 
+The following response body has no content; this is typical for a successful call.
+
 ```
 No Content
 ```
@@ -792,13 +800,15 @@ https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/policies
 
 ### CURL
 
+The following CURL example queries for a list of policies related to the elementId `6bdf4fd1-7134-3959-9c36-17eb5f628e46`.
+
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/policies'
 ```
 
 ### Response Body
 
-This example contains only one policy for the sake of simplicity; results will provide a full list of all policies associated to an element.
+The following response body contains only one policy for the sake of simplicity; typical results provide a full list of all policies associated to an element.
 
 ```
 {
@@ -914,13 +924,15 @@ https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags
 
 ### CURL
 
+The following CURL example queries for a list of tags for an element with the **elementId** `6bdf4fd1-7134-3959-9c36-17eb5f628e46`.
+
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags'
 ```
 
 ### Response Body
 
-Notice how the response lists tags added from CloudWisdom (`netuitiveTags`) and from the element (`sourceTags`). In this example you can see a tag I created in the CloudWisdom UI for _Cheese_ with the value _Brie_.
+The following response body contains a brief list of tags. Notice how the response lists tags added from CloudWisdom (`netuitiveTags`) and from the element (`sourceTags`).
 
 ```
 {
@@ -961,7 +973,7 @@ https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags
 
 ### CURL
 
-This CURL example posts a new key-value pair of `"Weekday":"Saturday"` to the element specified in the request URL. Notice it must be wrapped with `netuitiveTag`.
+The following CURL example posts a new key-value pair of `"Weekday":"Saturday"` to the element specified in the request URL. Notice it must be wrapped with `netuitiveTag`.
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
@@ -972,6 +984,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  ```
 
 ### Response Body
+
+The following response body prints confirmation of the tag key:value update.
 
 ```
 {
@@ -1008,7 +1022,7 @@ https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags/Week
 
 ### CURL
 
-This example updates an example tag, `Weekday`, with the value `Sunday`.
+The following CURL example updates the tag key `Weekday` with a new value,`Sunday`.
 
 ```
 curl -X PUT --header 'Content-Type: application/json' --header 'Accept: */*' --header 'User-Agent: none' -d '{ \
@@ -1018,6 +1032,8 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: */*' --h
 ```
 
 ### Response Body
+
+The following response body has no content; this is typical for a successful call.
 
 ```
 no content
@@ -1049,13 +1065,15 @@ https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags/Week
 
 ### CURL
 
-This example deletes the `Weekday` tag used in our previous examples.
+The following CURL example deletes the `Weekday` tag used in our previous examples.
 
 ```
 curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags/Weekday'
 ```
 
 ### Response Body
+
+The following response body has no content; this is typical for a successful call.
 
 ```
 No Content
@@ -1086,12 +1104,17 @@ https://app.metricly.com/elements/111a50a0-2b5c-3eb9-b25b-11f81de11038
 
 ### CURL
 
+The following CURL example deletes an element with the **elementId** `111a50a0-2b5c-3eb9-b25b-11f81de11038`.
+
 ```
 curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.metricly.com/elements/111a50a0-2b5c-3eb9-b25b-11f81de11038'
 
 ```
 
 ### Response Body
+
+The following response body has no content; this is typical for a successful call.
+
 
 ```
 no content
@@ -1121,11 +1144,15 @@ https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46
 
 ### CURL
 
+The following CURL example uses the **elementId** `/6bdf4fd1-7134-3959-9c36-17eb5f628e46` to get a list of element details.
+
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46'
 ```
 
 ### Response Body
+
+The following response body is a shortened example; typical responses are much longer with several metrics and attributes.
 
 ```
 {
@@ -1209,6 +1236,8 @@ https://app.metricly.com/elements/6bdf4fd1-1111-1111-9c36-17eb5f628e46/relations
 ```
 
 ### CURL
+
+The following CURL example gets a list of relationships for an element with the **elementId** `6bdf4fd1-1111-1111-9c36-17eb5f628e46` and a **level** of `2`.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/6bdf4fd1-1111-1111-9c36-17eb5f628e46/relationships?levels=2'
