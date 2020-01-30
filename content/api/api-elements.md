@@ -10,7 +10,7 @@ pre: ""
 
 ## About the Elements API
 
-CloudWisdom's Elements API can be used create, edit, delete and review elements. Users can also update tags and policies associated to these elements. You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/elements).
+CloudWisdom's Elements API can be used to create, edit, delete and review elements. Users can also update tags and policies associated with these elements. You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/elements) and by clicking the interactive buttons below.
 
 ## POST to /elements/elasticsearch/elementAgg/{term}
 
