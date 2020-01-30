@@ -14,7 +14,7 @@ CloudWisdom's Elements API can be used create, edit, delete and review elements.
 
 ## POST to /elements/elasticsearch/elementAgg/{term}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="warning" >}} POST {{< /button >}} Use this endpoint to aggregate totals determined by the term defined.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="warning" >}} POST {{< /button >}} Use this endpoint to find a count of objects based on the fields chosen for aggregation.
 
 {{% expand "View Method Details." %}}
 
