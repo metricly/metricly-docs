@@ -774,7 +774,7 @@ curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.m
 
 ### Response Body
 
-The following response body has no content; this is typical for a successful call.
+The following response body has no content; this is typical for a successful call. The **HTTPS Status Code** is `204`. 
 
 ```
 No Content
