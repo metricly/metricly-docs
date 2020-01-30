@@ -242,7 +242,7 @@ https://app.metricly.com/elements/name/preview
 
 ### CURL
 
-The following CURL example displays the element's name, location, and type. Supports `if` and `elseif` statements.
+The following CURL example displays the element's name, location, and type. See [Element Display Name page] (https://docs.metricly.com/capacity-monitoring/inventory/inventory-element-display-name/) for more  display options.
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
