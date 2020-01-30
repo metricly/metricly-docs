@@ -14,7 +14,7 @@ CloudWisdom's Elements API can be used create, edit, delete and review elements.
 
 ## POST to /elements/elasticsearch/elementAgg/{term}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="warning" >}} POST {{< /button >}}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="warning" >}} POST {{< /button >}} Use this endpoint to aggregate totals determined by the term defined.
 
 {{% expand "View Method Details." %}}
 
@@ -27,9 +27,55 @@ CloudWisdom's Elements API can be used create, edit, delete and review elements.
 
 ### Request URL
 
+```
+https://app.metricly.com/elements/elasticsearch/elementAgg/{term}
+
+```
+
 ### CURL
 
+In the following CURL example the **term** is defined in the request URL as **elementType**. This means the response body returns a list of element types with aggregated totals for each type which match the search criteria. In this example, we are searching for **elementNames** that match `west`.  
+
+{{% notice tip %}}
+A term can be any element field.
+{{% /notice %}}
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
+   "page": 0, \
+   "pageSize": 100, \
+   "startDate": "2020-01-27T12:33:28-05:00", \
+   "endDate": "2020-01-27T13:33:28-05:00", \
+   "elementNames": { \
+     "and": false, \
+     "items": [ \
+       { \
+         "literal": false, \
+         "contains": true, \
+         "item": "west" \
+       } \
+     ] \
+   } \
+ }' 'https://app.metricly.com/elements/elasticsearch/elementAgg/elementType'
+```
+
 ### Response Body
+
+The following response body found 6 total elements with names that contain `west` in their **elementName**: 5 S3 buckets and 1 RDS element.
+```
+{
+  "aggregations": [
+    {
+      "fieldValue": "S3 Bucket",
+      "count": 5
+    },
+    {
+      "fieldValue": "RDS",
+      "count": 1
+    }
+  ]
+}
+```
 
 {{% /expand %}}
 
@@ -58,7 +104,7 @@ https://app.metricly.com/elements/elasticsearch/elementQuery
 The following CURL example submits a query for **elementTypes** matching EC2. This example filters **metrics** and **attributes** from the response body.
 
 {{% notice tip %}}
-The `items` key here is contextual to its parent object. In this example, an item is the value of an elementType key (EC2). You can search for elementFQNs, elementIds, elementNames ---but the _items_ value changes for each. If the Response Body returns `"totalElements": 0,` verify that you are submitting an item value matching its parent object.
+The `items` key here is contextual to its parent object. In this example, an item is the value of an elementType key (EC2). You can search for elementFQNs, elementIds, elementNames ---but the _items_ value changes for each. If the response body returns `"totalElements": 0,` verify that you are submitting an item value matching its parent object.
 {{% /notice %}}
 
 ```
@@ -92,6 +138,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ### Response Body
 
+The following response body found 2 elements with the **elementType** `EC2`.  You can easily find an element's **Id** and **FQN** by looking for `"type": "EC2"`.
+
 ```
 {
   "page": {
@@ -101,7 +149,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
           "n.analysis.status": null
         },
         "sourceTags": {
-          "Name": "Brian-Conn-Testing",
+          "Name": "test-element-abc1",
           "n.collectors": "EC2"
         },
         "state": {
@@ -194,7 +242,7 @@ https://app.metricly.com/elements/name/preview
 
 ### CURL
 
-The following example displays the element's name, location, and type. Supports `if` and `elseif` statements.
+The following CURL example displays the element's name, location, and type. Supports `if` and `elseif` statements.
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
@@ -245,14 +293,14 @@ https://app.metricly.com/elements/11160111-0111-392f-adbe-71c85111bd40/events
 
 ### CURL
 
-The following example uses a YYYYMMDD **startTime** and **endTime** value.
+The following CURL example uses a YYYYMMDD **startTime** and **endTime** value.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/11160111-0111-392f-adbe-71c85111bd40/events?startTime=20191201&endTime=20191202'
 
 ```
 
-The following example uses the suggested YYYY-MM-DDT00:001Z format instead (must include time zone). This is better for looking at a specific, narrow time frames.
+The following CURL example uses the suggested YYYY-MM-DDT00:001Z format instead (must include time zone). This is better for looking at a specific, narrow time frames.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/11160111-0111-392f-adbe-71c85111bd40/events?startTime=2019-12-01T03%3A30Z&endTime=2019-12-01T07%3A30Z'
@@ -352,13 +400,13 @@ https://app.metricly.com/elements/11110956-1111-392f-adbe-71c11115bd40/metrics
 
 ### CURL
 
-The following example returns a list of all metrics associated to the **elementId**.
+The following CURL example returns a list of all metrics associated to the **elementId**.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/11110956-1111-392f-adbe-71c11115bd40/metrics'
 ```
 
-The following example returns the `aws.ec2.networkpacketsout` metric associated to the **elementId**.
+The following CURL example returns the `aws.ec2.networkpacketsout` metric associated to the **elementId**.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/11110956-1111-392f-adbe-71c11115bd40/metrics?metricFQN=aws.ec2.networkpacketsout'
@@ -436,7 +484,7 @@ https://app.metricly.com/elements/24661111-1111-1111-adbe-71c85255bd40/metrics/b
 
 ### CURL
 
-The following example includes a **Duration** of `PT30M` and **Rollup** value of `PT5M`.
+The following CURL example includes a **Duration** of `PT30M` and **Rollup** value of `PT5M`.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/24661111-1111-1111-adbe-71c85255bd40/metrics/bb1111ed-1111-3c76-b1b6-a4111a4eda2f/samples?duration=PT30m&rollup=PT5M'
@@ -445,7 +493,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ### Response Body
 
-The following example contains 5 metric samples for the **metricId** `bb1111ed-1111-3c76-b1b6-a1111a4eda2f`.
+The following response body contains 5 metric samples for the **metricId** `bb1111ed-1111-3c76-b1b6-a1111a4eda2f`.
 
 ```
 {
@@ -564,7 +612,7 @@ https://app.metricly.com/swagger-ui.html#!/elements/getMetricTagsUsingGET
 
 ### CURL
 
-The following example includes the required **elementId** and **metricId**.
+The following CURL example includes the required **elementId** and **metricId**.
 
 - You can find an elementId while viewing a metric in CloudWisdom by selecting the _Card Title_ > Element Detail.
 - You can find metricIds for an element in your inventory by selecting the _Card Title_ > View all Metrics for this Element.
@@ -617,7 +665,7 @@ https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3
 
 ### CURL
 
-The following example creates the key `Color` and tag value `Blue`, associated to the metric specified in the Request URL.
+The following CURL example creates the key `Color` and tag value `Blue`, associated to the metric specified in the Request URL.
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
@@ -707,7 +755,7 @@ https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3
 
 ### CURL
 
-The following example deletes the `Color` tag used in the previous examples. Note that `tag` here is similar to `tagName`; use the Key string (in this case, _Color_.)
+The following CURL example deletes the `Color` tag used in the previous examples. Note that `tag` here is similar to `tagName`; use the Key string (in this case, _Color_.)
 
 ```
 curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags/Color'
@@ -1357,7 +1405,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  }' 'https://app.metricly.com/elements/elasticsearch/elementQuery'
 ```
 
-2. Review the Response Body and obtain the **elementId**. Also select the **metricId** corresponding to the metric you want to fetch. For this example, we'll take the ID for **RequestCount**: `4a902433-1111-371c-9a14-d9112c465aa9`.  
+2. Review the response body and obtain the **elementId**. Also select the **metricId** corresponding to the metric you want to fetch. For this example, we'll take the ID for **RequestCount**: `4a902433-1111-371c-9a14-d9112c465aa9`.  
 ```
 {
   "page": {
@@ -1416,13 +1464,13 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 }
 ```
 
-3. Build a GET CURL command for the **/elements/{elementId}/metrics/{metricId}/samples**. Include the **elementId** and **metricId** found in the Response Body. This example adds **startTime** and **endTime** parameters to limit the Response Body and defines the **rollup** value as `ZERO`.
+3. Build a GET CURL command for the **/elements/{elementId}/metrics/{metricId}/samples**. Include the **elementId** and **metricId** found in the response body. This example adds **startTime** and **endTime** parameters to limit the response body and defines the **rollup** value as `ZERO`.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elements/6bdf4fd1-1111-2222-9c36-17eb5f628e46/metrics/4a902433-1111-371c-9a14-d9112c465aa9/samples?startTime=2020-01-26T11%3A29%3A56-05%3A00&endTime=2020-01-26T11%3A30%3A56-05%3A00&rollup=ZERO'
 
 ```
-4\. Review the Response Body for this 1 minute window. This is one metric sample using raw data.
+4\. Review the response body for this 1 minute window. This is one metric sample using raw data.
 
 ```
 {
@@ -1442,7 +1490,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
   ]
 }
 ```
-5\. Compare with the Response Body of a 10 minute window where the **rollup** value is `PT5M`. This is two metric samples that provide [baseline bands](/capacity-monitoring/analytics/baseline-bands/).
+5\. Compare with the response body of a 10 minute window where the **rollup** value is `PT5M`. This is two metric samples that provide [baseline bands](/capacity-monitoring/analytics/baseline-bands/).
 
 ```
 {
