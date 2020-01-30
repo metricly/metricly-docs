@@ -625,7 +625,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/elemen
 
 ### Response Body
 
-The following response body returns a list of tags for the specified **metricId**. Notice how the response lists tags added from CloudWisdom (`netuitiveTags`) and from the metric (`sourceTags`).
+The following response body returns a list of tags for the specified **metricId**. Notice how the response lists tags added from CloudWisdom (`netuitiveTags`) and from AWS (`sourceTags`).
 
 ```
 {
