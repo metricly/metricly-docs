@@ -13,7 +13,7 @@ pre: ""
 CloudWisdom's Alerts API can be used to get a list of alerts, get information about a specific alert, and close an open alert. You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/alerts) and by clicking the interactive buttons below.
 
 ## GET an Alerts List from /incidents
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/alerts/searchUsingGET" >}} GET {{< /button >}} Use alert parameter values to filter results and get a list of exactly what you need.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/alerts/searchUsingGET" >}} GET {{< /button >}} Use alert parameter values to filter results and get a list of exactly what you need.
 
 {{% expand "View method details."%}}
 
@@ -88,7 +88,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 ---
 
 ## PUT Alert's status to closed from /incidents/{id}
-{{< button href="https://app.metricly.com/swagger-ui.html#!/alerts/closeUsingPUT" theme="info" >}} PUT {{< /button >}} You can close out an alert using the **incidentId** found in the response body of an alert query.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/alerts/closeUsingPUT" theme="warning" >}} PUT {{< /button >}} You can close out an alert using the **incidentId** found in the response body of an alert query.
 
 {{% expand "View method details."%}}
 
@@ -119,7 +119,7 @@ No Content; 204 success code.
 
 ## GET an Alert from /incidents/{id}
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/alerts/getUsingGET" >}} GET {{< /button >}} You can use an **incidentId** to pull all information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps. The incidentId can be found by querying for a list of alerts.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/alerts/getUsingGET" >}} GET {{< /button >}} You can use an **incidentId** to pull all information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps. The incidentId can be found by querying for a list of alerts.
 
 {{% expand "View method details."%}}
 
