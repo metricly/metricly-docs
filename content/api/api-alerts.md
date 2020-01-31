@@ -8,16 +8,12 @@ alwaysopen: false
 pre: ""
 ---
 
-[Alerts][1] group anomalous behavior and are informed by multi-conditional policies you select or build in CloudWisdom. Through the [Alerts API](https://app.metricly.com/swagger-ui.html#!/alerts), you can:
+## About the Alerts API
 
-- Get a list of alerts, filterable by properties
-- Close an alert via ID
-- Get an alert via ID
-
-
+CloudWisdom's Alerts API can be used to get a list of alerts, get information about a specific alert, and close an open alert. You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/alerts) and by clicking the interactive buttons below.
 
 ## GET an Alerts List from /incidents
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/alerts/searchUsingGET" >}} GET {{< /button >}} Use alert parameter values to filter results and get a list of exactly what you need.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/alerts/searchUsingGET" >}} GET {{< /button >}} Use alert parameter values to filter results and get a list of exactly what you need.
 
 {{% expand "View method details."%}}
 
@@ -93,7 +89,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 
 ## GET an Alert from /incidents/{id}
 
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/alerts/getUsingGET" >}} GET {{< /button >}} You can use an **incidentId** to pull all information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps. The incidentId can be found by querying for a list of alerts.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/alerts/getUsingGET" >}} GET {{< /button >}} You can use an **incidentId** to pull all information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps. The incidentId can be found by querying for a list of alerts.
 
 {{% expand "View method details."%}}
 
