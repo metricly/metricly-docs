@@ -680,7 +680,7 @@ The following response body contains 5 metric samples for the **metricId** `bb11
 ### Request URL
 
 ```
-https://app.metricly.com/swagger-ui.html#!/elements/getMetricTagsUsingGET
+https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags
 ```
 
 ### CURL
