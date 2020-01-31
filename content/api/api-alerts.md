@@ -147,7 +147,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 ---
 
 ## PUT Alert's status to closed from /incidents/{id}
-{{< button href="https://app.metricly.com/swagger-ui.html#!/alerts/closeUsingPUT" theme="info" >}} PUT {{< /button >}} You can close out an alert using the **incidentId** found in the response body of an alert query.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/alerts/closeUsingPUT" theme="warning" >}} PUT {{< /button >}} You can close out an alert using the **incidentId** found in the response body of an alert query.
 
 {{% expand "View method details."%}}
 
