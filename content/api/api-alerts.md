@@ -91,36 +91,6 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 
 ---
 
-## PUT Alert's status to closed from /incidents/{id}
-{{< button href="https://app.metricly.com/swagger-ui.html#!/alerts/closeUsingPUT" theme="info" >}} PUT {{< /button >}} You can close out an alert using the **incidentId** found in the response body of an alert query.
-
-{{% expand "View method details."%}}
-
-### Parameters
-
-| Parameter | Parameter Type | Data Type | Description |
-|-------------|----------------|-----------|--------------------------------|
-| incidentId | Path | String | Used to close alerts; found in response body of alert queries. |
-
-
-### Request URL
-
-`https://app.metricly.com/incidents/{id-value-here}`
-
-### CURL
-
-```
-curl -X PUT --header 'Accept: */*' 'https://app.metricly.com/incidents/11a1d1117-1e01-1fe1-b1e0-1fe1db111111'
-
-```
-
-### Response Body
-No Content; 204 success code.
-
-{{% /expand %}}
-
----
-
 ## GET an Alert from /incidents/{id}
 
 {{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/alerts/getUsingGET" >}} GET {{< /button >}} You can use an **incidentId** to pull all information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps. The incidentId can be found by querying for a list of alerts.
@@ -176,6 +146,36 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
   }
 }
 ```
+{{% /expand %}}
+
+---
+
+## PUT Alert's status to closed from /incidents/{id}
+{{< button href="https://app.metricly.com/swagger-ui.html#!/alerts/closeUsingPUT" theme="info" >}} PUT {{< /button >}} You can close out an alert using the **incidentId** found in the response body of an alert query.
+
+{{% expand "View method details."%}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|-------------|----------------|-----------|--------------------------------|
+| incidentId | Path | String | Used to close alerts; found in response body of alert queries. |
+
+
+### Request URL
+
+`https://app.metricly.com/incidents/{id-value-here}`
+
+### CURL
+
+```
+curl -X PUT --header 'Accept: */*' 'https://app.metricly.com/incidents/11a1d1117-1e01-1fe1-b1e0-1fe1db111111'
+
+```
+
+### Response Body
+No Content; 204 success code.
+
 {{% /expand %}}
 
 ---
