@@ -7,112 +7,307 @@ author: Lawrence Lane
 alwaysopen: false
 pre: ""
 ---
-The metrics API allows you access to your element’s metrics.
 
-**Request Header**
 
-| Header Name | Header Value |
-|----------------------|---------------------------------------|
-| Content-Type | application/json |
-| Authorization: Basic | (Base64 encoded authentication value) |
 
-## GET
-### GET from /metrics
-Returns a list of metrics that match given parameters.
+## About the Metrics API
 
-**Parameters**
+CloudWisdom's Metrics API can be used to create, edit, delete and review metrics.  You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/metrics) and by clicking the interactive buttons below.
 
-| Parameters | Required/Optional | Description |
-|------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| startTime | Required | Query parameter. The start of the window of time from which metrics will be returned. The startTime must be in ISO 8601 format. The default startTime is 12:00 AM in the authenticating user’s specified time zone. |
-| endTime | Required | Query parameter. The end of the window of time from which metrics will be returned. The endTime must be in ISO 8601 format. The default endTime is the current time. |
+## POST to /metrics/crosselementagg
 
-### GET from /metrics/fqns
-Returns a list of fully qualified names (FQNS) for metrics matching given parameters.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getCrossElementMetricAggregationUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to  
+{{% expand "View Method Details." %}}
 
-| Parameters | Required/Optional | Description |
-|------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------|
-| elementId | Optional | Query Parameter. The ID of the element. |
-| elementFqn | Optional | Query Parameter. The fully qualified name (FQN) of the element. |
-| elementName | Optional | Query Parameter. The friendly name of the element. |
-| elementType | Optional | Query parameter. The type of the element (e.g. SERVER, EC2, etc.) |
-| elementAttribute | Optional | Query parameter. An attribute associated with the element. elementAttribute={"foo":["one","two"], "bar":["three","four"]} |
-| elementTag | Optional | Query parameter. The name of the tag on the element. elementTag={"foo":["one","two"], "bar":["three","four"]} |
-| metricFqn | Optional | Query parameter. The fully qualified name (FQN) of the metric. |
-| metricTag | Optional | Query parameter. The tag-value pair associated with the metric. metricTag={"foo":["one","two"], "bar":["three","four"]} |
+### Parameters
 
-### GET from /metrics/statistics
-Returns metric data based on the parameters given.
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|---------------|------------------------------------------------------------------------------------|
+| elasticsearchQuery | body | json | A JSON query. |
+| aggregation | query | string | Define aggregation method for query. Options are: avg, sum, cnt, min, max, stddev. |
+| statistic | query | string | Define statistic. Options include: val, min, avg, max, cnt, sum, actual. |
+| rollup | query | Array[string] | Determines frequency of metric sampling. Options are: ZERO, PT5M, PT1H, PT24H. |
 
-| Parameters | Required/Optional | Description |
-|------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| fqn | Required | Query parameter. The unique FQN of the metric. |
-| duration | Optional | Query parameter. Gives CloudWisdom an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. The duration parameter will take precedence over startTime and endTime if all attributes are included in your request. |
-| startTime | Optional | Query parameter. The start of the window of time from which metric stats will be returned. The startTime must be in ISO 8601 format. The default startTime is 12:00 AM in the authenticating user’s specified time zone. |
-| endTime | Optional | Query parameter. The end of the window of time from which metric stats will be returned. The endTime must be in ISO 8601 format. The default endTime is the current time. |
-| rollup | Optional | Query parameter. Select the data aggregation roll-up you wish to receive: ZERO (none), PT5M (past 5 minutes), PT1H (past 1 hour), or PT24H (past 24 hours). |
-| showValues | Optional | Query parameter. Provides the values for the metric statistics (if set to true) or only displays zeroes for the statistics (if set to false). |
 
-### GET from /metrics/statistics/aggregate
-returns aggregate statistics for a metric.
+### Request URL
 
-**Parameters**
+```
 
-| Parameters | Required/Optional | Description |
-|---------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| fqn | Required | Query parameter. The FQN of the metric. |
-| duration | Optional | Query parameter. Gives CloudWisdom an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. |
-| rollupInput | Optional | Query parameter. Select the data aggregation roll-up to specify: ZERO (none), PT5M (past 5 minutes), PT1H (past 1 hour), or PT24H (past 24 hours). |
-| elementScopeWrapper | Required | Body parameter; see below. |
+```
 
-**Body Attributes**
+### CURL
 
-| Attribute | Required/Optional | Description |
-|--------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| attributes | Optional | The attributes associated with an element. Attributes contains several options: attributeType (optional) The type of attribute. Valid inputs are TEXT, BOOLEAN, BIGINT, DOUBLE, or TIMESTAMP. dataSourceId (optional) The ID of the integration that is associated with the attribute. id (optional) The ID for the attribute. name (optional) The name of the attribute. value (optional) The value of the attribute. |
-| dataSourceId | Optional | The ID of the integration that associated with the given FQN. |
-| endTime | Optional | The end of the window of time from which metric stats will be returned. The endTime must be in ISO 8601 format. The default endTime is the current time. |
-| fqnExcludes | Optional | The string of characters you’d like to exclude from element FQN matching. |
-| fqnIncludes | Optional | The string of characters you’d like to include in element FQN matching. |
-| ids | Optional | The ID(s) of the elements associated with the given metric FQN. |
-| nameContains | Optional | The string of characters you’d like to exclude from element name matching. |
-| nameExcludes | Optional | The string of characters you’d like to include in element name matching. |
-| startTime | Optional | The start of the window of time from which metric stats will be returned. The startTime must be in ISO 8601 format. The default startTime is 12:00 AM in the authenticating user’s specified time zone. |
-| tags | Optional | The collectors associated with a particular integration. Collectors contains several attributes: attributeType (optional) The datasource ID for the datasource the collector is associated with. dataSourceId (optional) A comma-delimited list of element IDs that are associated with this collector. id (optional) The ID for the collector. name (optional) The name for the collector. value (optional) The name for the collector. |
-| tenantId | Optional | The ID of the tenant the element is associated with. |
-| types | Optional | The type of the element. Read more about element types here. |
+In the following CURL example  
 
-### GET from /metrics/statistics
-Returns descriptive statistics for a metric.
+```
 
-**Parameters**
+```
 
-| Parameters | Required/Optional | Description |
-|---------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| fqn | Required | Query parameter. The FQN of the metric. |
-| duration | Optional | Query parameter. Gives CloudWisdom an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. |
-| rollupInput | Optional | Query parameter. Select the data aggregation roll-up to specify: ZERO (none), PT5M (past 5 minutes), PT1H (past 1 hour), or PT24H (past 24 hours). |
-| elementScopeWrapper | Required | Body parameter; see below. |
+### Swagger Payload
 
-**Body Attributes**
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
 
-| Attribute | Required/Optional | Description |
-|--------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| attributes | Optional | The attributes associated with an element. Attributes contains several options: attributeType (optional) The type of attribute. Valid inputs are TEXT, BOOLEAN, BIGINT, DOUBLE, or TIMESTAMP. dataSourceId (optional) The ID of the integration that is associated with the attribute. id (optional) The ID for the attribute. name (optional) The name of the attribute. value (optional) The value of the attribute. |
-| dataSourceId | Optional | The ID of the integration that associated with the given FQN. |
-| endTime | Optional | The end of the window of time from which metric stats will be returned. The endTime must be in ISO 8601 format. The default endTime is the current time. |
-| fqnExcludes | Optional | The string of characters you’d like to exclude from element FQN matching. |
-| fqnIncludes | Optional | The string of characters you’d like to include in element FQN matching. |
-| ids | Optional | The ID(s) of the elements associated with the given metric FQN. |
-| nameContains | Optional | The string of characters you’d like to exclude from element name matching. |
-| nameExcludes | Optional | The string of characters you’d like to include in element name matching. |
-| startTime | Optional | The start of the window of time from which metric stats will be returned. The startTime must be in ISO 8601 format. The default startTime is 12:00 AM in the authenticating user’s specified time zone. |
-| tags | Optional | The collectors associated with a particular integration. Collectors contains several attributes: attributeType (optional) The datasource ID for the datasource the collector is associated with. dataSourceId (optional) A comma-delimited list of element IDs that are associated with this collector. id (optional) The ID for the collector. name (optional) The name for the collector. value (optional) The name for the collector. |
-| tenantId | Optional | The ID of the tenant the element is associated with. |
-| types | Optional | The type of the element. Read more about element types here. |
+```
 
-## Creating Metric Data
+```
 
-See the [Ingest API][1] for details on how to send raw data to CloudWisdom.
+### Response Body
 
-[1]: /api/api-ingest/
+The following response body
+```
+
+```
+
+{{% /expand %}}
+
+---
+
+## POST to /metrics/elasticsearch/metricAgg/{term}
+
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/aggregateMetricsUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to  
+
+{{% expand "View Method Details." %}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|---------------|------------------------------------------------------------------------------------|
+| elasticsearchQuery | body | json | A JSON query. |
+| term | path | string | The element field you want to aggregate. |
+
+
+### Request URL
+
+```
+
+```
+
+### CURL
+
+In the following CURL example  
+
+```
+
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+
+```
+
+### Response Body
+
+The following response body
+```
+
+```
+
+{{% /expand %}}
+
+---
+
+## POST to /metrics/elasticsearch/metricQuery
+
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/elasticsearchMetricQueryUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to  
+
+{{% expand "View Method Details." %}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|---------------|------------------------------------------------------------------------------------|
+| elasticsearchQuery | body | json | A JSON query. |
+
+
+### Request URL
+
+```
+
+```
+
+### CURL
+
+In the following CURL example  
+
+```
+
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+
+```
+
+### Response Body
+
+The following response body
+```
+
+```
+
+{{% /expand %}}
+
+---
+
+## GET from /metrics/fqns
+
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricFqnsUsingGET" theme="info" >}} GET {{< /button >}} This endpoint is deprecated.   
+
+{{% expand "View Method Details." %}}
+
+### Parameters
+
+| Parameters | Parameter Type | Data Type | Description |
+|------------------|----------------|----------------|------------------------------------------------------------------------------------------------------------|
+| elementId | query | Array [string] | The ID of the element. |
+| elementFqn | query | Array [string] | The fully qualified name (FQN) of the element. |
+| elementName | query | Array [string] | The human-readable name of the element. |
+| elementType | query | Array [string] | The type of the element (e.g. SERVER, EC2, etc.) |
+| elementAttribute | query | string | An attribute associated with the element. elementAttribute={“foo”:[“one”,“two”], “bar”:[“three”,“four”]} |
+| elementTag | query | string | The name of the tag on the element. elementTag={“foo”:[“one”,“two”], “bar”:[“three”,“four”]} |
+| metricFqn | query | Array [string] | The fully qualified name (FQN) of the metric. |
+| metricTag | query | Array [string] | The tag key-value pair associated with the metric. metricTag={“foo”:[“one”,“two”], “bar”:[“three”,“four”]} |
+
+
+### Request URL
+
+```
+
+```
+
+### CURL
+
+In the following CURL example  
+
+```
+
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+
+```
+
+### Response Body
+
+The following response body
+```
+
+```
+
+{{% /expand %}}
+
+---
+
+
+## GET from /metrics/statistics
+
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricStatisticsUsingGET" theme="info" >}} GET {{< /button >}} This endpoint is deprecated.   
+
+{{% expand "View Method Details." %}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|------------|----------------|---------------|-----------------------------------------------------------------------------------------|
+| fqn | query | string | The fully qualified name for a metric. |
+| duration | query | string | Gives CloudWisdom an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. The duration parameter will take precedence over startTime and endTime if all attributes are included in your request. |
+| startTime | query | date-time | Start time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
+| endTime | query | date-time | End time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
+| rollup | query | Array[string] | Determines frequency of metric sampling. Options are: ZERO, PT5M, PT1H, PT24H. |
+| showValues | query | boolean | Provides the values for the metric statistics (if set to true) or only displays zeroes for the statistics (if set to false). |
+
+
+### Request URL
+
+```
+
+```
+
+### CURL
+
+In the following CURL example  
+
+```
+
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+
+```
+
+### Response Body
+
+The following response body
+```
+
+```
+
+{{% /expand %}}
+
+---
+
+## POST to /metrics/statistics
+
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricStatisticsPageUsingPOST" theme="success" >}} POST {{< /button >}} This endpoint is deprecated.   
+
+{{% expand "View Method Details." %}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|------------|----------------|---------------|-----------------------------------------------------------------------------------------|
+| fqn | query | string | The fully qualified name for a metric. |
+| duration | query | string | Gives CloudWisdom an ISO 8601-formatted duration time frame to retrieve data. The duration ends at the current time and begins anytime in the past two weeks. The duration parameter will take precedence over startTime and endTime if all attributes are included in your request. |
+| startTime | query | date-time | Start time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
+| endTime | query | date-time | End time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
+| rollup | query | Array[string] | Determines frequency of metric sampling. Options are: ZERO, PT5M, PT1H, PT24H. |
+| showValues | query | boolean | Provides the values for the metric statistics (if set to true) or only displays zeroes for the statistics (if set to false). |
+|elementIds   | body   | Array[string]  | List of elementIds. |
+
+
+### Request URL
+
+```
+
+```
+
+### CURL
+
+In the following CURL example  
+
+```
+
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+
+```
+
+### Response Body
+
+The following response body
+```
+
+```
+
+{{% /expand %}}
+
+---
