@@ -16,7 +16,7 @@ For users taking advantage of our Capacity Monitoring (or all) features, follow 
 
 ### 1. Copy Install Command From Linux Integration Setup Page
 
-1. From the top navigation menu, select **Integrations**.
+1. From the left navigation menu, select **Integrations**.
 2. Select the **Linux** card. The name should be already populated, and Data Collection should be enabled.
 3. Highlight the one-line install command from the instructions and copy them. A unique API key for your account has already been generated and included in the command line.
 ![Linux Install Command](/images/LINUX-standard-install/linux-install-command.png)
