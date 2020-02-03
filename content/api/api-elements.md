@@ -27,10 +27,7 @@ CloudWisdom's Elements API can be used to create, edit, delete and review elemen
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/elasticsearch/elementAgg/{term}
-
-```
+`https://app.metricly.com/elements/elasticsearch/elementAgg/{term}`
 
 ### CURL
 
@@ -118,9 +115,7 @@ The following response body found 6 total elements with names that contain `west
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/elasticsearch/elementQuery
-```
+`https://app.metricly.com/elements/elasticsearch/elementQuery`
 
 ### CURL
 
@@ -292,9 +287,7 @@ The following response body found 2 elements with the **elementType** `EC2`.  Yo
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/name/preview
-```
+`https://app.metricly.com/elements/name/preview`
 
 ### CURL
 
@@ -359,10 +352,7 @@ The following response body prints a preview of the element name created by merg
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/11160111-0111-392f-adbe-71c85111bd40/events
-
-```
+`https://app.metricly.com/elements/{elementId}/events`
 
 ### CURL
 
@@ -467,9 +457,7 @@ The following response body contains only one event, but many events can be retu
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/11110956-1111-392f-adbe-71c11115bd40/metrics
-```
+`https://app.metricly.com/elements/{elementId}/metrics`
 
 ### CURL
 
@@ -551,9 +539,7 @@ The following response body returns one metric, but many metrics can be returned
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/24661111-1111-1111-adbe-71c85255bd40/metrics/bb1111ed-1111-3c76-b1b6-a4111a4eda2f/samples?
-```
+`https://app.metricly.com/elements/{elementId}/metrics/{metricId}/samples?`
 
 ### CURL
 
@@ -679,9 +665,7 @@ The following response body contains 5 metric samples for the **metricId** `bb11
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags
-```
+`https://app.metricly.com/elements/{elementId}/metrics/{metricId}/tags`
 
 ### CURL
 
@@ -731,10 +715,7 @@ The following response body returns a list of tags for the specified **metricId*
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags
-
-```
+`https://app.metricly.com/elements/{elementId}/metrics/{metricId}/tags`
 
 ### CURL
 
@@ -793,10 +774,7 @@ The following response body returns confirmation that the key:value pair has bee
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags/Color
-
-```
+`https://app.metricly.com/elements/{elementId}/metrics/{metricId}/tags/{tagName}`
 
 ### CURL
 
@@ -833,7 +811,7 @@ No Content
 
 ---
 
-## DELETE from to /elements/{elementId}/metrics/{metricId}/tags/{tag}
+## DELETE to /elements/{elementId}/metrics/{metricId}/tags/{tag}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteMetricTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete a tag (key) from a specified metric.
 
@@ -850,9 +828,7 @@ No Content
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/metrics/3a1a2fb7-b274-3120-84bd-d7781401894f/tags/Color
-```
+`https://app.metricly.com/elements/{elementId}/metrics/{metricId}/tags/{tagName}`
 
 ### CURL
 
@@ -889,9 +865,7 @@ No Content
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/policies
-```
+`https://app.metricly.com/elements/{elementId}/policies`
 
 ### CURL
 
@@ -1013,9 +987,7 @@ The following response body contains only one policy for the sake of simplicity;
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags
-```
+`https://app.metricly.com/elements/{elementId}/tags`
 
 ### CURL
 
@@ -1062,9 +1034,7 @@ The following response body contains a brief list of tags. Notice how the respon
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags
-```
+`https://app.metricly.com/elements/{elementId}/tags`
 
 ### CURL
 
@@ -1125,9 +1095,7 @@ The following response body prints confirmation of the tag key:value update.
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags/Weekday
-```
+`https://app.metricly.com/elements/{elementId}/tags/{tagName}`
 
 ### CURL
 
@@ -1164,9 +1132,9 @@ no content
 
 ---
 
-## DELETE from /elements/{elementId}/tags/{tag}
+## DELETE to /elements/{elementId}/tags/{tag}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}} This endpoint deletes the specified tag for a given element.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete a tag for a given element.
 
 {{% expand "View Method Details." %}}
 
@@ -1180,9 +1148,7 @@ no content
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46/tags/Weekday
-```
+`https://app.metricly.com/elements/{elementId}/tags/{tagName}`
 
 ### CURL
 
@@ -1204,7 +1170,7 @@ No Content
 
 ---
 
-## DELETE from /elements/{id}
+## DELETE to /elements/{elementId}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete specified elements.
 
@@ -1219,9 +1185,7 @@ No Content
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/111a50a0-2b5c-3eb9-b25b-11f81de11038
-```
+`https://app.metricly.com/elements/{elementId}`
 
 ### CURL
 
@@ -1245,7 +1209,7 @@ no content
 
 ---
 
-## GET from /elements/{id}
+## GET from /elements/{elementId}
 
 {{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementUsingGET" >}} GET {{< /button >}} Use this endpoint to get details of a specified element.
 
@@ -1259,9 +1223,7 @@ no content
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/6bdf4fd1-7134-3959-9c36-17eb5f628e46
-```
+`https://app.metricly.com/elements/{elementId}`
 
 ### CURL
 
@@ -1335,7 +1297,7 @@ The following response body is a shortened example; typical responses are much l
 
 ---
 
-## GET from /elements/{id}/relationships
+## GET from /elements/{elementId}/relationships
 
 {{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementRelationshipsUsingGET" >}} GET {{< /button >}}  Use this endpoint to view an element's relationships.
 
@@ -1352,9 +1314,7 @@ The following response body is a shortened example; typical responses are much l
 
 ### Request URL
 
-```
-https://app.metricly.com/elements/6bdf4fd1-1111-1111-9c36-17eb5f628e46/relationships?levels=2
-```
+`https://app.metricly.com/elements/{elementId}/relationships?levels={levelNumber}`
 
 ### CURL
 
