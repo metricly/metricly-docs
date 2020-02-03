@@ -1134,7 +1134,7 @@ no content
 
 ## Delete to /elements/{elementId}/tags/{tag}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}} This endpoint deletes the specified tag for a given element.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete a tag for a given element.
 
 {{% expand "View Method Details." %}}
 
