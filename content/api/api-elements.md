@@ -811,7 +811,7 @@ No Content
 
 ---
 
-## Delete to /elements/{elementId}/metrics/{metricId}/tags/{tag}
+## DELETE to /elements/{elementId}/metrics/{metricId}/tags/{tag}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteMetricTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete a tag (key) from a specified metric.
 
@@ -1132,7 +1132,7 @@ no content
 
 ---
 
-## Delete to /elements/{elementId}/tags/{tag}
+## DELETE to /elements/{elementId}/tags/{tag}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete a tag for a given element.
 
@@ -1170,7 +1170,7 @@ No Content
 
 ---
 
-## Delete to /elements/{id}
+## DELETE to /elements/{elementId}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete specified elements.
 
@@ -1209,7 +1209,7 @@ no content
 
 ---
 
-## GET from /elements/{id}
+## GET from /elements/{elementId}
 
 {{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementUsingGET" >}} GET {{< /button >}} Use this endpoint to get details of a specified element.
 
@@ -1297,7 +1297,7 @@ The following response body is a shortened example; typical responses are much l
 
 ---
 
-## GET from /elements/{id}/relationships
+## GET from /elements/{elementId}/relationships
 
 {{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getElementRelationshipsUsingGET" >}} GET {{< /button >}}  Use this endpoint to view an element's relationships.
 

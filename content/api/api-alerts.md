@@ -87,7 +87,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 
 ---
 
-## GET from /incidents/{id}
+## GET from /incidents/{incidentId}
 
 {{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/alerts/getUsingGET" >}} GET {{< /button >}} Use this endpoint to get information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps.
 
@@ -100,7 +100,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 | incidentId | Path | String | Used to find or close alerts; found in response body of alert queries. |
 
 ### Request URL
- `https://app.metricly.com/incidents/{id-value-here}`
+ `https://app.metricly.com/incidents/{incidentId}`
 
 ### CURL
 
@@ -146,7 +146,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 
 ---
 
-## PUT to /incidents/{id}
+## PUT to /incidents/{incidentId}
 {{< button href="https://app.metricly.com/swagger-ui.html#!/alerts/closeUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to close an open alert.
 
 {{% expand "View method details."%}}
@@ -160,7 +160,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 
 ### Request URL
 
-`https://app.metricly.com/incidents/{id-value-here}`
+`https://app.metricly.com/incidents/{incidentId}`
 
 ### CURL
 
