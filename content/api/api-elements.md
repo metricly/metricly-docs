@@ -833,7 +833,7 @@ No Content
 
 ---
 
-## DELETE from to /elements/{elementId}/metrics/{metricId}/tags/{tag}
+## Delete to /elements/{elementId}/metrics/{metricId}/tags/{tag}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteMetricTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete a tag (key) from a specified metric.
 
@@ -1164,7 +1164,7 @@ no content
 
 ---
 
-## DELETE from /elements/{elementId}/tags/{tag}
+## Delete to /elements/{elementId}/tags/{tag}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementTagUsingDELETE" theme="danger" >}} DELETE {{< /button >}} This endpoint deletes the specified tag for a given element.
 
@@ -1204,7 +1204,7 @@ No Content
 
 ---
 
-## DELETE from /elements/{id}
+## Delete to /elements/{id}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/elements/deleteElementUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete specified elements.
 
