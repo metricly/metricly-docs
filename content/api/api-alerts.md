@@ -13,7 +13,7 @@ pre: ""
 CloudWisdom's Alerts API can be used to get a list of alerts, get information about a specific alert, and close an open alert. You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/alerts) and by clicking the interactive buttons below.
 
 ## GET from /incidents
-{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/alerts/searchUsingGET" >}} GET {{< /button >}} Use this endpoint to get a list of incidents and their IDs.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/alerts/searchUsingGET" >}} GET {{< /button >}} Use this endpoint to get a list of alerts and their IDs.
 
 {{% expand "View method details."%}}
 
