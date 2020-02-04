@@ -9,7 +9,7 @@ Nagios is a comprehensive enterprise-class open source monitoring service. You c
 
 ## Sending Nagios Events to CloudWisdom
 
-1. Hover on your account name in the top right-hand corner and click **API Keys** from the drop-down menu.
+1. Hover on your account name in the bottom left-hand corner and click **API Keys** from the drop-down menu.
 2. Copy the **API Key** from the _Custom_ integration in the table.
 3. Install the Metricly Event Handler.
 4. Download the [Netuitive Event Handler](https://github.com/netuitive/netuitive-event-handler) to the `/bindirectory`.

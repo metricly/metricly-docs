@@ -42,7 +42,7 @@ Creates an external event within CloudWisdom.
 ```
 This method utilizes the Ingest API endpoint.
 
-Replace {apiId} in the above URL with the API key from your Custom integration. To access this key, click Integrations in the user account drop-down menu in the top right-hand corner of CloudWisdom, then find the CUSTOM integration and copy the API key from the API Key column.
+Replace {apiId} in the above URL with the API key from your Custom integration. To access this key, click Integrations in the user account drop-down menu in the bottom left-hand corner of CloudWisdom, then find the CUSTOM integration and copy the API key from the API Key column.
 
 **Parameters**
 

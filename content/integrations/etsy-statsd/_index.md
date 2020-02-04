@@ -9,7 +9,7 @@ Etsy StatsD is one of the most popular StatsD libraries available. CloudWisdom o
 
 ## Configuration
 ### 1. Copy API key
-1. From the top navigation menu, click **Integrations**.
+1. From the left navigation menu, click **Integrations**.
 2. Click the **Etsy | StatsD** card. Data collection should already be enabled, and a unique API key for your account has already been generated.
 3. Copy the **API key**
 

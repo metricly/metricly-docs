@@ -9,7 +9,7 @@ Webhooks are an HTTP/HTTPS callback request sent to a desired URL in response to
 
 ## Configure
 
-1. From the top navigation menu, select **Integrations**.
+1. From the left navigation menu, select **Integrations**.
 2. Select the **Webhook** card. The name should be already populated, and Data Collection should be enabled.
 3. Copy the **API key**.  
 4. Select an element from your inventory to associate the Webhook events with.
