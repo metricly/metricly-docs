@@ -568,6 +568,11 @@ There are two ways to set the Sparse Data Strategy for a metric.  The first is t
   }
 }]
 
+<<<<<<< HEAD
+=======
+### Are there any rate limits on the Ingest API endpoint?
+There are no hard limits, but excessive amounts of data can cause your API key to get throttled and some payloads to get discarded. We recommend a volume of no more than 10 payloads per element per minute.
+>>>>>>> 2d2fd411fed55b3d153644a0f28101a4e6cba79b
 ```
 ### Are there any rate limits on the Ingest API endpoint?
 There are no hard limits, but excessive amounts of data can cause your API key to get throttled and some payloads to get discarded. We recommend a volume of no more than 10 payloads per element per minute.
