@@ -12,7 +12,7 @@ The CloudWisdom Windows Agent is a Microsoft Windows service that collects, aggr
 Installation is as easy as [executing an MSI installer](https://repos.app.netuitive.com/windows-agent/index.html) and configuring the service. The agent is pre-configured to send the most important performance metrics, windows events, and system attributes to CloudWisdom. It can also be configured to send additional or different data if required
 
 ### 1. Copy the API key
-1. In CloudWisdom, click **Integrations** on the top-nav bar.
+1. In CloudWisdom, click **Integrations** on the left-nav bar.
 2. Search for and click the **Windows Server** card. The name should be already populated, and Data Collection should be enabled. A unique API key for your account has already been generated.
 3. Copy the **API key**.
 

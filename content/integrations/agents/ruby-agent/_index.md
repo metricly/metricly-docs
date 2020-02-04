@@ -18,7 +18,7 @@ The Ruby Agent can also be tuned to help application performance and used to rea
 ## Configure
 
 ### 1. Copy API Key From Ruby Integration
-1. From the top navigation menu, select **Integrations**.
+1. From the left navigation menu, select **Integrations**.
 2. Select the **Ruby** card. The name should be already populated, and Data Collection should be enabled. A unique API key for your account has already been generated.
 3. Copy the **API Key**.
 

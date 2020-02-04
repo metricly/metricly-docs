@@ -13,7 +13,7 @@ Must have Java 6 Or greater.
 ## Configuration
 
 ### 1. Copy API key
-1. From the top navigation menu, select Integrations.
+1. From the left navigation menu, select Integrations.
 2. Select the **Java** card. The name should be already populated, and Data Collection should be enabled. A unique API key for your account has already been generated.
 3. Copy the **API key**.
 

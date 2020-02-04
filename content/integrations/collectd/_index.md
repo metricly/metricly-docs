@@ -12,7 +12,7 @@ Collectd’s Write HTTP plugin can be used to configure collectd to send data to
 
 ### 1. Copy API Key in CloudWisdom
 
-1. From the top navigation menu, click **Integrations**.
+1. From the left navigation menu, click **Integrations**.
 2. Click the **collectd** card. Data collection should already be enabled, and a `unique API key` for your account has already been generated.
 3. **Copy** the API key.
 

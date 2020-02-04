@@ -9,7 +9,7 @@ author: Lawrence Lane
 weight: 2
 ---
 ## 1. Copy API Key From Docker Integration
-1. From the CloudWisdom top navigation menu, select Integrations.  
+1. From the CloudWisdom left navigation menu, select Integrations.  
 2. Click the Docker card.  
 3. Ensure Data Collection is enabled. A unique API key for your account has already been generated.  
 4. Highlight the one-line install command from the instructions and copy them. A unique API key for your account has already been generated and included in the command line.  
