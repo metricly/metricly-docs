@@ -568,6 +568,6 @@ There are two ways to set the Sparse Data Strategy for a metric.  The first is t
   }
 }]
 
-### What are the rate limits on Ingest API?
+### Are there any rate limits on the Ingest API endpoint?
 There are no strict limitations, however we recommend using 10 payloads per element per minute at maximum.
 ```
