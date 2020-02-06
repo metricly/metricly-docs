@@ -9,14 +9,13 @@ pre: ""
 ---
 
 
-
 ## About the Metrics API
 
 CloudWisdom's Metrics API can be used to create, edit, delete and review metrics.  You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/metrics) and by clicking the interactive buttons below.
 
 ## POST to /metrics/crosselementagg
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getCrossElementMetricAggregationUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to  
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getCrossElementMetricAggregationUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to   query for elements with given metric FQNs and aggregate the found metrics across the elements to get one value per period.
 {{% expand "View Method Details." %}}
 
 ### Parameters
@@ -32,14 +31,41 @@ CloudWisdom's Metrics API can be used to create, edit, delete and review metrics
 ### Request URL
 
 ```
+https://app.metricly.com/metrics/crosselementagg?aggregation=avg&statistic=actual&rollup=ZERO
 
 ```
 
 ### CURL
 
-In the following CURL example  
+In the following CURL example, **metricFqns** matching `cpu.percent` are aggregated across all `server` **elementTypes**. This query uses a **rollup** of `ZERO` and the `avg` **statistic**.
 
 ```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
+     "startDate":"2020-01-30T02:00:00-04:00", \
+     "endDate":"2020-01-30T03:00:00-04:00", \
+     "elementTypes":{ \
+        "and":false, \
+        "items":[ \
+           { \
+              "literal":true, \
+              "contains":true, \
+              "item":"SERVER" \
+           } \
+        ] \
+     }, \
+     "metricFqns":{ \
+        "and":false, \
+        "items":[ \
+           { \
+              "literal":true, \
+              "contains":true, \
+              "item":"cpu.percent", \
+              "queryType":"EXACT" \
+           } \
+        ] \
+     } \
+  } \
+ ' 'https://app.metricly.com/metrics/crosselementagg?aggregation=avg&statistic=actual&rollup=ZERO'
 
 ```
 
@@ -48,13 +74,55 @@ In the following CURL example
 You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
 
 ```
+{
+    "startDate":"2020-01-30T02:00:00-04:00",
+    "endDate":"2020-01-30T03:00:00-04:00",
+    "elementTypes":{
+       "and":false,
+       "items":[
+          {
+             "literal":true,
+             "contains":true,
+             "item":"SERVER"
+          }
+       ]
+    },
+    "metricFqns":{
+       "and":false,
+       "items":[
+          {
+             "literal":true,
+             "contains":true,
+             "item":"cpu.percent",
+             "queryType":"EXACT"
+          }
+       ]
+    }
+ }
 
 ```
 
 ### Response Body
 
-The following response body
+The following response body found 3 metrics that matched the `cpu.percent` **metricFqn** across all `SERVER` **elementTypes**.
+
 ```
+{
+  "metricFqn": "cpu.percent",
+  "rollup": "ZERO",
+  "aggregation": "avg",
+  "statistic": "actual",
+  "data": {
+    "jobId": "3797f68e-b9b1-4280-9cdb-d4047ce3b587",
+    "result": {
+      "status": "SUCCESS",
+      "message": "Job Completed in 0.548s",
+      "data": []
+    }
+  },
+  "foundMetrics": 3,
+  "aggregatedMetrics": 3
+}
 
 ```
 
@@ -79,14 +147,38 @@ The following response body
 ### Request URL
 
 ```
+https://app.metricly.com/metrics/elasticsearch/metricAgg/fqn
+
 
 ```
 
 ### CURL
 
-In the following CURL example  
+In the following CURL example, all **metricFQNs** (**term**: `fqn`) are being aggregated for `ALB` **elementTypes**.  
 
 ```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
+   "sort": { \
+     "field": "name", \
+     "order": "asc", \
+     "missing": "_last" \
+   }, \
+   "page": 0, \
+   "pageSize": 10000, \
+   "startDate": "2020-02-05T14:52:07+02:00", \
+   "endDate": "2020-02-05T15:52:07+02:00", \
+   "elementTypes": { \
+     "and": false, \
+     "items": [ \
+       { \
+         "literal": true, \
+         "contains": true, \
+         "item": "ALB" \
+       } \
+     ] \
+   } \
+ } \
+ ' 'https://app.metricly.com/metrics/elasticsearch/metricAgg/fqn'
 
 ```
 
@@ -95,13 +187,66 @@ In the following CURL example
 You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
 
 ```
+{
+  "sort": {
+    "field": "name",
+    "order": "asc",
+    "missing": "_last"
+  },
+  "page": 0,
+  "pageSize": 10000,
+  "startDate": "2020-02-05T14:52:07+02:00",
+  "endDate": "2020-02-05T15:52:07+02:00",
+  "elementTypes": {
+    "and": false,
+    "items": [
+      {
+        "literal": true,
+        "contains": true,
+        "item": "ALB"
+      }
+    ]
+  }
+}
 
 ```
 
 ### Response Body
 
-The following response body
+The following response body returns aggregations of all metrics matching the given criteria. From the data in this example, you can assume CloudWisdom is ingesting metrics for two ALB elements; one of them is not sending data for `aws.applicationelb.httpcode_elb_4xx_count`.
 ```
+{
+  "aggregations": [
+    {
+      "fieldValue": "aws.applicationelb.activeconnectioncount",
+      "count": 2
+    },
+    {
+      "fieldValue": "aws.applicationelb.clienttlsnegotiationerrorcount",
+      "count": 2
+    },
+    {
+      "fieldValue": "aws.applicationelb.consumedlcus",
+      "count": 2
+    },
+    {
+      "fieldValue": "aws.applicationelb.forwardedinvalidheaderrequestcount",
+      "count": 2
+    },
+    {
+      "fieldValue": "aws.applicationelb.http_redirect_count",
+      "count": 2
+    },
+    {
+      "fieldValue": "aws.applicationelb.httpcode_elb_3xx_count",
+      "count": 2
+    },
+    {
+      "fieldValue": "aws.applicationelb.httpcode_elb_4xx_count",
+      "count": 1
+    }
+  ]
+}
 
 ```
 
@@ -111,7 +256,7 @@ The following response body
 
 ## POST to /metrics/elasticsearch/metricQuery
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/elasticsearchMetricQueryUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to  
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/elasticsearchMetricQueryUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to query for metric documents which match all of the given criteria.
 
 {{% expand "View Method Details." %}}
 
@@ -125,15 +270,39 @@ The following response body
 ### Request URL
 
 ```
+https://app.metricly.com/metrics/elasticsearch/metricQuery
 
 ```
 
 ### CURL
 
-In the following CURL example  
+In the following CURL example, an **elementType** of `ALB` is specified in combination with the **metricFQN** `aws.applicationelb.targetresponsetime`.
 
 ```
-
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
+     "elementTypes":{ \
+        "and":false, \
+        "items":[ \
+           { \
+              "literal":true, \
+              "contains":true, \
+              "item":"ALB" \
+           } \
+        ] \
+     }, \
+     "metricFqns":{ \
+        "and":false, \
+        "items":[ \
+           { \
+              "literal":true, \
+              "contains":true, \
+              "item":"aws.applicationelb.targetresponsetime", \
+              "queryType":"EXACT" \
+           } \
+        ] \
+     } \
+  } \
+ ' 'https://app.metricly.com/metrics/elasticsearch/metricQuery'
 ```
 
 ### Swagger Payload
@@ -141,13 +310,89 @@ In the following CURL example
 You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
 
 ```
+{
+    "elementTypes":{
+       "and":false,
+       "items":[
+          {
+             "literal":true,
+             "contains":true,
+             "item":"ALB"
+          }
+       ]
+    },
+    "metricFqns":{
+       "and":false,
+       "items":[
+          {
+             "literal":true,
+             "contains":true,
+             "item":"aws.applicationelb.targetresponsetime",
+             "queryType":"EXACT"
+          }
+       ]
+    }
+ }
 
 ```
 
 ### Response Body
 
-The following response body
+The following response body returns matches for 2 elements that contain the specified metric FQN.
+
 ```
+{
+  "page": {
+    "content": [
+      {
+        "netuitiveTags": {
+          "n.statistic": "AVG",
+          "unit": "s"
+        },
+        "sourceTags": {
+          "awsDimensions": "{\"LoadBalancer\":\"app/bamboo/5f111fddb1e0c653\"}",
+          "awsNamespace": "AWS/ApplicationELB"
+        },
+        "processingFlags": {
+          "RAW_AGG": true
+        },
+        "fqn": "aws.applicationelb.targetresponsetime",
+        "unit": "Seconds",
+        "dataSourceId": 12345,
+        "elementId": "6bdf4fd1-7134-2222-9c36-22eb5f628e46",
+        "name": "TargetResponseTime",
+        "id": "c5fd666d-4444-3333-b4cd-8a2b28dc1fed"
+      },
+      {
+        "netuitiveTags": {
+          "n.statistic": "AVG",
+          "unit": "s"
+        },
+        "sourceTags": {
+          "awsDimensions": "{\"LoadBalancer\":\"app/ria-deploys/a8e1b18ecda823b7\"}",
+          "awsNamespace": "AWS/ApplicationELB"
+        },
+        "processingFlags": {
+          "RAW_AGG": true
+        },
+        "fqn": "aws.applicationelb.targetresponsetime",
+        "unit": "Seconds",
+        "dataSourceId": 12345,
+        "elementId": "864444fd-a348-3f05-92e1-a681d7d3d9e4",
+        "name": "TargetResponseTime",
+        "id": "cf0efe4a-e36d-1111-a5e4-0b3cc0f7d4c2"
+      }
+    ],
+    "last": true,
+    "totalElements": 2,
+    "totalPages": 1,
+    "sort": null,
+    "first": true,
+    "numberOfElements": 2,
+    "size": 10,
+    "number": 0
+  }
+}
 
 ```
 
