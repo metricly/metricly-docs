@@ -590,7 +590,7 @@ The following response body
 
 ## POST to /metrics/statistics
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricStatisticsPageUsingPOST" theme="success" >}} POST {{< /button >}} This endpoint is deprecated.   
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricStatisticsPageUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to get metric statistics for given set of elements. Note this is a deprecated method and could be removed at a later date.  
 
 {{% expand "View Method Details." %}}
 
