@@ -132,7 +132,7 @@ The following response body found 3 metrics that matched the `cpu.percent` **met
 
 ## POST to /metrics/elasticsearch/metricAgg/{term}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/aggregateMetricsUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to  
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/aggregateMetricsUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to  query for aggregation lists from metric documents which match all of the given criteria.
 
 {{% expand "View Method Details." %}}
 
