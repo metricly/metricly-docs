@@ -31,7 +31,7 @@ CloudWisdom's Metrics API can be used to review metrics.  You can test these end
 ### Request URL
 
 ```
-https://app.metricly.com/metrics/crosselementagg?aggregation=avg&statistic=actual&rollup=ZERO
+https://app.metricly.com/metrics/crosselementagg?aggregation={aggregation}&statistic={statistic}&rollup={rollup}
 
 ```
 
@@ -147,8 +147,7 @@ The following response body found 3 metrics that matched the `cpu.percent` **met
 ### Request URL
 
 ```
-https://app.metricly.com/metrics/elasticsearch/metricAgg/fqn
-
+https://app.metricly.com/metrics/elasticsearch/metricAgg/{term}
 
 ```
 
@@ -507,12 +506,12 @@ The following response body returns a list of all metricFQNs associated to the v
 ### Request URL
 
 ```
-https://app.metricly.com/metrics/statistics?fqn=aws.applicationelb.httpcode_elb_4xx_count&startTime=2020-01-30T01%3A00%3A00-05%3A00&endTime=2020-01-31T01%3A00%3A00-05%3A00&rollup=PT5M&showValues=false
+https://app.metricly.com/metrics/statistics?fqn={fqn}&startTime={startTime}&endTime={endTime}&rollup={rollup}&showValues={showValues}
 ```
 
 ### CURL
 
-In the following CURL example  
+In the following CURL example, statistics are returned for the **FQN** `aws.applicationelb.httpcode_elb_4xx_count`. The **rollup** is `PT5M`.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/metrics/statistics?fqn=aws.applicationelb.httpcode_elb_4xx_count&startTime=2020-01-30T01%3A00%3A00-05%3A00&endTime=2020-01-31T01%3A00%3A00-05%3A00&rollup=PT5M&showValues=false'
@@ -610,7 +609,7 @@ The following response body
 ### Request URL
 
 ```
-https://app.metricly.com/metrics/statistics?fqn=aws.applicationelb.requestcountpertarget&startTime=2020-02-04T00%3A25%3A46.872Z&endTime=2020-02-05T00%3A25%3A46.872Z&rollup=PT5M&showValues=false
+ https://app.metricly.com/metrics/statistics?fqn={fqn}&startTime={startTime}&endTime={endTime}&rollup={rollup}&showValues={showValues}
 
 ```
 ### CURL
