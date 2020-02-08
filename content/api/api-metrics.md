@@ -488,7 +488,7 @@ The following response body returns a list of all metricFQNs associated to the v
 
 ## GET from /metrics/statistics
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricStatisticsUsingGET" theme="info" >}} GET {{< /button >}} This endpoint is deprecated.   
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricStatisticsUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to get metric statistics for all elements with given metric FQN.
 
 {{% expand "View Method Details." %}}
 
