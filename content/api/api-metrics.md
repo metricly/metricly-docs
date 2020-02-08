@@ -688,3 +688,269 @@ The following response body shows data on the specified metric FQN for both elem
 {{% /expand %}}
 
 ---
+
+
+## Get Multiple Element IDs and Metric IDs at once
+
+You can quickly get a list of **elementIds** and **metricIds** using the POST method for the **/Metrics/Elasticsearch/MetricQuery** endpoint. This is useful when you know the **elementType** and/or **metricFQN** but need specific IDs.
+
+{{% expand "View Walkthrough." %}}
+
+1. Build a query using CURL that searches your inventory based on **elementType** and **metricFQN**. In this example, we are searching for EC2 elements that have the MetricFqn `aws.ec2.cpuutilization`. Let's also cut down the response body by using an exclusion filter for **DataSourceId**, **unit**, **name**, and **fqn**. All we really want are **elementIds** and **metricIds**.
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
+     "elementTypes":{ \
+        "and":false, \
+        "items":[ \
+           { \
+              "literal":true, \
+              "contains":true, \
+              "item":"EC2" \
+           } \
+        ] \
+     }, \
+     "metricFqns":{ \
+        "and":false, \
+        "items":[ \
+           { \
+              "literal":true, \
+              "contains":true, \
+              "item":"aws.ec2.cpuutilization", \
+              "queryType":"EXACT" \
+           } \
+        ] \
+     }, \
+    "sourceFilter": { \
+      "excludes": [ \
+        "dataSourceId", \
+        "unit", \
+        "name", \
+        "fqn" \
+      ] \
+    } \
+  }' 'https://app.metricly.com/metrics/elasticsearch/metricQuery'
+```
+
+2\. Review the response body.
+
+```
+{
+  "page": {
+    "content": [
+      {
+        "netuitiveTags": {
+          "n.statistic": "AVG",
+          "unit": "percent",
+          "utilization": "true"
+        },
+        "sourceTags": {
+          "awsDimensions": "{\"InstanceId\":\"i-7e00b2cf\"}",
+          "awsNamespace": "AWS/EC2"
+        },
+        "processingFlags": {
+          "RAW_AGG": true
+        },
+        "elementId": "900eb136-4444-3da7-7777-eeb36bf03b9c",
+        "id": "a6ebb2b3-9999-8888-8f35-192d5ff863ff"
+      },
+      {
+        "netuitiveTags": {
+          "n.statistic": "AVG",
+          "unit": "percent",
+          "utilization": "true"
+        },
+        "sourceTags": {
+          "awsDimensions": "{\"InstanceId\":\"i-b4e87f28\"}",
+          "awsNamespace": "AWS/EC2"
+        },
+        "processingFlags": {
+          "RAW_AGG": true
+        },
+        "elementId": "c48df6c2-1111-4444-97be-17b0472a7d12",
+        "id": "3c9c8f3d-413c-3d10-8bd6-fdb7178634b8"
+      },
+      {
+        "netuitiveTags": {
+          "n.statistic": "AVG",
+          "unit": "percent",
+          "utilization": "true"
+        },
+        "sourceTags": {
+          "awsDimensions": "{\"InstanceId\":\"i-8fdf0c1c\"}",
+          "awsNamespace": "AWS/EC2"
+        },
+        "processingFlags": {
+          "RAW_AGG": true
+        },
+        "elementId": "cc1202b5-9900-35c6-1234-5890f2c07f7d",
+        "id": "c18d53b9-ae7b-3fca-a3ee-56e9703ab88a"
+      },
+      {
+        "netuitiveTags": {
+          "n.statistic": "AVG",
+          "unit": "percent",
+          "utilization": "true"
+        },
+        "sourceTags": {
+          "awsDimensions": "{\"InstanceId\":\"i-cad14a43\"}",
+          "awsNamespace": "AWS/EC2"
+        },
+        "processingFlags": {
+          "RAW_AGG": true
+        },
+        "elementId": "fd1952ee-1234-5432-a6e5-469dce782976",
+        "id": "873177c6-6fc3-1122-2211-daed5429c84f"
+      },
+      {
+        "netuitiveTags": {
+          "n.statistic": "AVG",
+          "unit": "percent",
+          "utilization": "true"
+        },
+        "sourceTags": {
+          "awsDimensions": "{\"InstanceId\":\"i-0e979e39c64e22b1e\"}",
+          "awsNamespace": "AWS/EC2"
+        },
+        "processingFlags": {
+          "RAW_AGG": true
+        },
+        "elementId": "787401a0-1928-33f4-0987-470851557694",
+        "id": "946c0c97-3344-3c67-0011-69c21a1839c3"
+      }
+    ],
+    "last": false,
+    "totalElements": 5,
+    "totalPages": 1,
+    "sort": null,
+    "first": true,
+    "numberOfElements": 10,
+    "size": 10,
+    "number": 0
+  }
+}
+```
+
+3\. You can now use the **elementIds** and **metricIds** listed to take other actions, such as obtain metric statistics from the **/metrics/statistics** endpoint or interact with the [Element API endpoints](/api/api-elements). Let's view the metric statistics.
+
+4\. Grab the **elementIds** and **metricFQN** and build a CURL request like this:
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '["900eb136-4444-3da7-7777-eeb36bf03b9c", \
+ "c48df6c2-1111-4444-97be-17b0472a7d12", \
+ "cc1202b5-9900-35c6-1234-5890f2c07f7d", \
+ "fd1952ee-1234-5432-a6e5-469dce782976", \
+ "787401a0-1928-33f4-0987-470851557694"]' 'https://app.metricly.com/metrics/statistics?fqn=aws.ec2.cpuutilization&startTime=2020-02-07T20%3A28%3A08.441Z&endTime=2020-02-08T20%3A28%3A08.441Z&rollup=PT5M&showValues=false'
+```
+
+5\.  Submit to the **/metrics/satistics/** endpoint and review the response body.
+
+```
+{
+  "metricFqn": "aws.ec2.cpuutilization",
+  "timeSpan": {
+    "startTime": "2020-02-07T20:28:08Z",
+    "endTime": "2020-02-08T20:28:08Z",
+    "duration": {
+      "seconds": 86400,
+      "nano": 0,
+      "zero": false,
+      "negative": false,
+      "units": [
+        "SECONDS",
+        "NANOS"
+      ]
+    }
+  },
+  "metrics": [
+    {
+      "elementId": "900eb136-4444-3da7-7777-eeb36bf03b9c",
+      "metricId": "a6ebb2b3-9999-8888-8f35-192d5ff863ff",
+      "statistics": {
+        "avg": 0.296191972049853,
+        "min": 0.266138742241768,
+        "median": 0.29999999999805976,
+        "max": 0.3817217745650538,
+        "percentile75": 0.30005788644855513,
+        "percentile95": 0.3098193942759116,
+        "count": 288,
+        "sum": 85.30328795035766,
+        "stddev": 0.010466436268679397,
+        "percentile5": 0.282513661204118,
+        "percentile25": 0.28418079095994414
+      }
+    },
+    {
+      "elementId": "c48df6c2-1111-4444-97be-17b0472a7d12",
+      "metricId": "3c9c8f3d-413c-3d10-8bd6-fdb7178634b8",
+      "statistics": {
+        "avg": 0.2527214510460781,
+        "min": 0.23225896082133599,
+        "median": 0.25002778549597,
+        "max": 0.46398999722444445,
+        "percentile75": 0.26560155598867985,
+        "percentile95": 0.26782439566637944,
+        "count": 288,
+        "sum": 72.78377790127054,
+        "stddev": 0.021541944391382722,
+        "percentile5": 0.2328239325728899,
+        "percentile25": 0.24918032786880503
+      }
+    },
+    {
+      "elementId": "cc1202b5-9900-35c6-1234-5890f2c07f7d",
+      "metricId": "946c0c97-bb12-3c67-8611-69c21a1839c3",
+      "statistics": {
+        "avg": 0.03879795675956283,
+        "min": 0,
+        "median": 0.0333333333328482,
+        "max": 2.1951886276651327,
+        "percentile75": 0.033333333334061,
+        "percentile95": 0.05188336159835552,
+        "count": 288,
+        "sum": 11.173811546754091,
+        "stddev": 0.13896824157383195,
+        "percentile5": 0,
+        "percentile25": 0.0080645161289149
+      }
+    },
+    {
+      "elementId": "fd1952ee-1234-5432-a6e5-469dce782976",
+      "metricId": "873177c6-6fc3-3a3d-b13d-daed5429c84f",
+      "statistics": {
+        "avg": 1.7315944243770274,
+        "min": 1.4878531073293721,
+        "median": 1.7007548392993268,
+        "max": 2.185815504321736,
+        "percentile75": 1.783333333286766,
+        "percentile95": 2.0762700287132483,
+        "count": 288,
+        "sum": 498.69919422058393,
+        "stddev": 0.12842823812903692,
+        "percentile5": 1.5666666667287519,
+        "percentile25": 1.649999999984476
+      }
+    },
+    {
+      "elementId": "787401a0-1928-33f4-0987-470851557694",
+      "metricId": "c18d53b9-ae7b-3fca-a3ee-56e9703ab88a",
+      "statistics": {
+        "avg": 1.739921401540746,
+        "min": 1.4745762711844688,
+        "median": 1.7329721218895568,
+        "max": 3.7674076132220167,
+        "percentile75": 1.7812138676488627,
+        "percentile95": 1.91902426600034,
+        "count": 288,
+        "sum": 501.0973636437353,
+        "stddev": 0.15510405334664015,
+        "percentile5": 1.5602834419341518,
+        "percentile25": 1.6723027155093602
+      }
+    }
+  ]
+}
+```
+
+
+{{% /expand %}}
