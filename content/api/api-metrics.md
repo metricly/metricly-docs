@@ -37,7 +37,7 @@ https://app.metricly.com/metrics/crosselementagg?aggregation=avg&statistic=actua
 
 ### CURL
 
-In the following CURL example, **metricFqns** matching `cpu.percent` are aggregated across all `server` **elementTypes**. This query uses a **rollup** of `ZERO` and the `avg` **statistic**.
+In the following CURL example, **metricFqns** matching `cpu.percent` are aggregated across all `SERVER` **elementTypes**. This query uses a **rollup** of `ZERO` and the `avg` **statistic**.
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
