@@ -11,7 +11,7 @@ pre: ""
 
 ## About the Metrics API
 
-CloudWisdom's Metrics API can be used to create, edit, delete and review metrics.  You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/metrics) and by clicking the interactive buttons below.
+CloudWisdom's Metrics API can be used to review metrics.  You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/metrics) and by clicking the interactive buttons below.
 
 ## POST to /metrics/crosselementagg
 
