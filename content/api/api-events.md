@@ -13,7 +13,7 @@ pre: ""
 
 ## GET from /events
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="info" >}} GET {{< /button >}} Use this endpoint to get details on events and their associated policies/elements.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/events/getEventsUsingGET_1" theme="info" >}} GET {{< /button >}} Use this endpoint to get details on events and their associated policies/elements.
 
 {{% expand "View Method Details." %}}
 
@@ -43,7 +43,7 @@ https://app.metricly.com/events?startTime={startTime}&endTime={endTime}&elementI
 
 ### CURL
 
-In the following CURL example an **elementId** is provided along with a startTime and endTime that examines 10 minutes in total.
+In the following CURL example an **elementId** is provided along with a **startTime** and **endTime** that examines 10 minutes in total.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/events?startTime=2020-02-08T02%3A05%3A00Z&endTime=2020-02-08T02%3A10%3A00Z&elementId=24660956-1111-392f-adbe-71c85255bd40'
@@ -179,7 +179,7 @@ The following response body found 2 events with the **category** `INFO`. Both ev
 
 ## DELETE from /events/delete/policy/{policyId}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete events for a specific policy.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/events/deleteEventsByPolicyUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete events for a specific policy.
 
 {{% expand "View Method Details." %}}
 
@@ -207,7 +207,7 @@ curl -X DELETE --header 'Accept: */*' 'https://app.metricly.com/events/delete/po
 
 ### Response Body
 
-The following response body has no content.  The successful response code is 204.
+The following response body has no content. The successful response code is 204.
 
 ```
 No Content
@@ -219,7 +219,7 @@ No Content
 
 ## GET from /events/{eventId}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="info" >}} GET {{< /button >}} Use this endpoint to obtain details about an event and its associated policy/elements.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/events/getEventUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to obtain details about an event and its associated policy/elements.
 
 {{% expand "View Method Details." %}}
 
