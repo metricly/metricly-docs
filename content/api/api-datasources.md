@@ -13,7 +13,7 @@ pre: ""
 
 ## GET from /datasources
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="info" >}} GET {{< /button >}} Use this endpoint to  
+{{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/listUsingGET_1" theme="info" >}} GET {{< /button >}} Use this endpoint to  
 
 {{% expand "View Method Details." %}}
 
@@ -59,7 +59,7 @@ The following response body
 
 ## POST from /datasources
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to  
+{{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/createUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to  
 
 {{% expand "View Method Details." %}}
 
@@ -105,7 +105,7 @@ The following response body
 
 ## DELETE from /datasources/{Id}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to  
+{{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/deleteUsingDELETE_1" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to  
 
 {{% expand "View Method Details." %}}
 
@@ -151,7 +151,7 @@ The following response body
 
 ## GET from /datasources/{Id}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="info" >}} GET {{< /button >}} Use this endpoint to  
+{{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/getSingleUsingGET_1" theme="info" >}} GET {{< /button >}} Use this endpoint to  
 
 {{% expand "View Method Details." %}}
 
@@ -197,7 +197,7 @@ The following response body
 
 ## PUT from /datasources/{Id}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/aggregateElementsUsingPOST" theme="warning" >}} PUT {{< /button >}} Use this endpoint to  
+{{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/replaceDataSourceUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to  
 
 {{% expand "View Method Details." %}}
 
