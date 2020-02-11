@@ -249,7 +249,7 @@ No Content
 
 ## GET from /datasources/{Id}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/getSingleUsingGET_1" theme="info" >}} GET {{< /button >}} Use this endpoint to  
+{{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/getSingleUsingGET_1" theme="info" >}} GET {{< /button >}} Use this endpoint to get information about one datasource.
 
 {{% expand "View Method Details." %}}
 
@@ -263,29 +263,91 @@ No Content
 ### Request URL
 
 ```
+https://app.metricly.com/datasources/{dataSourceId}
 
 ```
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, the a datasource with the **id** `12345` is retrieved.
 
 ```
-
-```
-
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/datasources/12345'
 
 ```
 
 ### Response Body
 
-The following response body  
+The following response body  returns all **properties** and **collectors** associated to the dataSource.
+
 ```
+{
+  "dataSource": {
+    "id": 12345,
+    "name": "NETUITIVE",
+    "type": "AZURE",
+    "properties": {
+      "asgFilterTagValue": "",
+      "mqFilteringEnabled": "false",
+      "ebsFilterTagValue": "",
+      "sqsFilteringEnabled": "false",
+      "sqsEnabled": "true",
+      "albFilterTagName": "",
+      "efsCollectionFrequency": "5",
+      "ebsFilterTagName": "",
+      "avmFilterTagType": "include",
+      "rdsFilterTagValue": "",
+      "ctmEnabled": "false",
+      "nlbFilteringEnabled": "false",
+      "azureSecretKey": "******",
+      "elbCollectionFrequency": "5",
+      "ec2FilteringEnabled": "false",
+      "lamFilterTagType": "include",
+      "albFilterTagValue": "",
+      "tagFilterTagName": "",
+      "tagCollectionFrequency": "5",
+      "elbFilterTagType": "include",
+      "dynFilterTagName": "",
+      "costExplorerEnabled": "true",
+      "knsCollectionFrequency": "5",
+      "sqsFilterTagType": "include",
+      "avmFilteringEnabled": "false",
+      "ctmCollectionFrequency": "5",
+      "mqEnabled": "false",
+      "azureSubscriptionId": "f9e8197a-1111-9999-3333-f571f5251411",
+      "ctmFilterTagName": "",
+      "s3FilteringEnabled": "false",
+      "agwFilteringEnabled": "false",
+      "tagFilterTagType": "include",
+      "dynFilterTagType": "include",
+      "r53FilterTagValue": "",
+      "ec2Enabled": "true"
+    },
+    "enabled": false,
+    "deleted": false,
+    "apiId": null,
+    "collectors": [
+      {
+        "id": 4321,
+        "name": "Virtual Machine",
+        "packageEnabled": false,
+        "lastSeen": null,
+        "properties": {},
+        "datasource": 45243,
+        "package": null,
+        "elements": []
+      },
+      {
+        "id": 7654,
+        "name": "Virtual Machine (Classic)",
+        "packageEnabled": false,
+        "lastSeen": null,
+        "properties": {},
+        "datasource": 12345,
+        "package": null,
+        "elements": []
+      }
+    ]
 
 ```
 
