@@ -167,9 +167,15 @@ The following response body returns datasources without elements. This example h
 
 ## POST from /datasources
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/createUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/createUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to create a new datasource.
 
 {{% expand "View Method Details." %}}
+
+{{% notice tip %}}
+
+This method can be used to create one or many integrations and should only be used by an experienced power user. Properties associated to datasources are mapped as strings and cannot be validated, meaning typos are not caught and returned as errors. Virtana recommends creating your datasources through the UI; updating an existing datasource via PUT is less complex than POSTing a new datasource.
+
+{{% /notice %}}
 
 ### Parameters
 
@@ -181,22 +187,35 @@ The following response body returns datasources without elements. This example h
 ### Request URL
 
 ```
+https://app.metricly.com/datasources
 ```
 
 ### CURL
 
-In the following CURL example,
+In the following CURL example, a new datasource is created with the **name** `CloudWisdom AWS`.
 
 ```
+curl -X POST -k -H 'Authorization: Basic dGVzdDp0ZXN0' -i 'https://api.us.cloudwisdom.virtana.com/datasources' --data '[
+{
+  "dataSource": {
+    "name": "CloudWisdom AWS",
+    "type": "AWS",
+    "properties": {
+      "awsAuthentication": "role",
+      "iamRole": "arn:aws:iam::121155782212:role/Metricly-Read-Only-Role-1432167890",
+      "ec2Enabled": true
+    }
+  }
+}
 
 ```
 
 ### Response Body
 
-The following response body  
+The following response body  has no content; a successful code is 201.
 
 ```
-
+No Content
 
 ```
 
@@ -371,14 +390,31 @@ The following response body  returns all **properties** and **collectors** assoc
 ### Request URL
 
 ```
+https://app.metricly.com/datasources/{id}
 
 ```
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, the datasource with the **id** `12345` is disabled by hanging **enabled** to `false`.
 
 ```
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "dataSource": { \
+     "id": 12345, \
+     "name": "ruby", \
+     "type": "RUBY", \
+     "properties": { \
+       "filterTagTypeOld": "include", \
+       "awsAuthentication": "role" \
+     }, \
+     "enabled": false, \
+     "deleted": false, \
+     "apiId": "cb7515557d71a9b9f9d9ed77b119c84b", \
+     "collectors": [ \
+     ] \
+   } \
+ }' 'https://app.metricly.com/datasources/25186'
 
 ```
 
@@ -387,14 +423,54 @@ In the following CURL example
 You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
 
 ```
-
+{
+  "dataSource": {
+    "id": 12345,
+    "name": "Ruby",
+    "type": "RUBY",
+    "properties": {
+      "filterTagTypeOld": "include",
+      "awsAuthentication": "role"
+    },
+    "enabled": false,
+    "deleted": false,
+    "apiId": "cb7515557d71a9b9f9d9ed77b119c84b",
+    "collectors": [
+    ]
+  }
+}
 ```
 
 ### Response Body
 
-The following response body  
+The following response body returns more details about the datasource and allows the user to verity the values have been updated.
 ```
-
+{
+  "dataSource": {
+    "id": 12345,
+    "name": "Ruby",
+    "type": "RUBY",
+    "properties": {
+      "filterTagTypeOld": "include",
+      "awsAuthentication": "role"
+    },
+    "enabled": false,
+    "deleted": false,
+    "apiId": "cb7515557d71a9b9f9d9ed77b119c84b",
+    "collectors": [
+      {
+        "id": 3888,
+        "name": "RUBY",
+        "packageEnabled": false,
+        "lastSeen": null,
+        "properties": {},
+        "datasource": 25186,
+        "package": null,
+        "elements": []
+      }
+    ]
+  }
+}
 ```
 
 {{% /expand %}}
