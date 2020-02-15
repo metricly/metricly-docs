@@ -190,12 +190,14 @@ This method can be used to create one or many integrations and should only be us
 
 ### CURL
 
-In the following CURL example, a new datasource is created with the **name** `CloudWisdom AWS`. Datasource requirements may vary per datasource type. For example, it is recommended you at least include the following properties to set up an AWS datasource:
+In the following CURL example, a new datasource is created. Datasource requirements may vary per datasource type. For example, it is recommended you at least include the following properties to set up an AWS datasource:
 
 - awsAuthentication
 - awsAccountNumber
 - iamRole
 - bucketName
+
+An existing IAM role and S3 bucket is required to submit these properties.
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
@@ -214,7 +216,9 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ```
 
-## Swagger Sample
+### Swagger Payload
+
+Use the following base template to create a minimal AWS datasource from swagger.
 
 ```
 {
@@ -223,10 +227,10 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
     "type": "AWS",
     "properties": {
       "awsAuthentication": "role",
-      "awsAccountNumber": "602205202783",
-      "iamRole": "arn:aws:iam::602205202783:role/Netuitive",
+      "awsAccountNumber": "600000000083",
+      "iamRole": "arn:aws:iam::600000000083:role/Netuitive",
       "ec2Enabled": true,
-      "bucketName": "rcg-netuitive-support-aws-cost"
+      "bucketName": "support-aws-cost"
     }
   }
 }
