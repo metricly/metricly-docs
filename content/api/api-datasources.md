@@ -190,30 +190,76 @@ This method can be used to create one or many integrations and should only be us
 
 ### CURL
 
-In the following CURL example, a new datasource is created with the **name** `CloudWisdom AWS`.
+In the following CURL example, a new datasource is created with the **name** `CloudWisdom AWS`. Datasource requirements may vary per datasource type. For example, it is recommended you at least include the following properties to set up an AWS datasource:
+
+- awsAuthentication
+- awsAccountNumber
+- iamRole
+- bucketName
 
 ```
-curl -X POST -k -H 'Authorization: Basic dGVzdDp0ZXN0' -i 'https://api.us.cloudwisdom.virtana.com/datasources' --data '[
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "dataSource": { \
+     "name": "CloudWisdom AWS", \
+     "type": "AWS", \
+     "properties": { \
+       "awsAuthentication": "role", \
+       "awsAccountNumber": "600000000083", \
+       "iamRole": "arn:aws:iam::600000000083:role/Netuitive", \
+       "ec2Enabled": true, \
+       "bucketName": "support-aws-cost" \
+     } \
+   } \
+ }' 'https://app.metricly.com/datasources'
+
+```
+
+## Swagger Sample
+
+```
 {
   "dataSource": {
     "name": "CloudWisdom AWS",
     "type": "AWS",
     "properties": {
       "awsAuthentication": "role",
-      "iamRole": "arn:aws:iam::121155782212:role/Metricly-Read-Only-Role-1432167890",
-      "ec2Enabled": true
+      "awsAccountNumber": "602205202783",
+      "iamRole": "arn:aws:iam::602205202783:role/Netuitive",
+      "ec2Enabled": true,
+      "bucketName": "rcg-netuitive-support-aws-cost"
     }
   }
 }
-
 ```
 
 ### Response Body
 
-The following response body  has no content; a successful code is 201.
+The following response body returns a basic AWS datasource with minimal properties. You can add more via the UI or the PUT method.
 
 ```
-No Content
+{
+  "dataSource": {
+    "id": 25796,
+    "name": "CloudWisdom AWS",
+    "type": "AWS",
+    "properties": {
+      "awsAuthentication": "role",
+      "awsAccountNumber": "600000000083",
+      "iamRole": "arn:aws:iam::600000000083:role/Netuitive",
+      "ec2Enabled": "true",
+      "bucketName": "support-aws-cost",
+      "regions": "us-east-1,us-east-2,us-west-1,us-west-2,ca-central-1,ap-south-1,ap-northeast-2,ap-southeast-1,ap-southeast-2,ap-northeast-1,eu-central-1,eu-west-1,eu-west-2,sa-east-1",
+      "collectionGranularity": "5",
+      "collectionOffset": "5",
+      "collectionPeriod": "5",
+      "threadPoolSize": "10"
+    },
+    "enabled": true,
+    "deleted": false,
+    "apiId": null,
+    "collectors": []
+  }
+}
 
 ```
 
