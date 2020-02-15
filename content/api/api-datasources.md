@@ -10,6 +10,8 @@ pre: ""
 
 ## About the Datasources API
 
+CloudWisdom's Datasources API can be used to get a list of datasources, create new ones, edit their settings, and remove them from CloudWisdom. You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/datasources) and by clicking the interactive buttons below.
+
 
 ## GET from /datasources
 
@@ -26,10 +28,7 @@ pre: ""
 
 ### Request URL
 
-```
-https://app.metricly.com/datasources?includeElements={boolean}
-
-```
+`https://app.metricly.com/datasources?includeElements={boolean}`
 
 ### CURL
 
@@ -186,9 +185,8 @@ This method can be used to create one or many integrations and should only be us
 
 ### Request URL
 
-```
-https://app.metricly.com/datasources
-```
+`https://app.metricly.com/datasources`
+
 
 ### CURL
 
@@ -238,10 +236,8 @@ No Content
 
 ### Request URL
 
-```
-https://app.metricly.com/datasources/{datasourceId}
+`https://app.metricly.com/datasources/{datasourceId}`
 
-```
 
 ### CURL
 
@@ -281,10 +277,8 @@ No Content
 
 ### Request URL
 
-```
-https://app.metricly.com/datasources/{dataSourceId}
+`https://app.metricly.com/datasources/{dataSourceId}`
 
-```
 
 ### CURL
 
@@ -389,10 +383,8 @@ The following response body  returns all **properties** and **collectors** assoc
 
 ### Request URL
 
-```
-https://app.metricly.com/datasources/{id}
+`https://app.metricly.com/datasources/{id}`
 
-```
 
 ### CURL
 
