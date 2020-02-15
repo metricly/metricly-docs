@@ -31,15 +31,13 @@ pre: ""
 | elementTags | query | string | Tags associated to an element. The format for tags is [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)] |
 | eventTags | query | string | You can tag events to enable filtering in CloudWisdom by passing in keys and values. The format for tags is [{“name”:”key1″, “value”:”value1″}, {“name”:”key2″, “value”:”value2″}, (etc.)] |
 | policy | query | Array[string] | Policy Id. |
-| isExternal | query | boolean |  |
+| isExternal | query | boolean | Defines whether or not the event is external.  |
 | title | query | Array[string] | Title of the event |
 | type | query | Array[string] | Defines type of event; valid inputs are INFO, WARNING, or CRITICAL. |
 
 ### Request URL
 
-```
-https://app.metricly.com/events?startTime={startTime}&endTime={endTime}&elementId={elementId}
-```
+`https://app.metricly.com/events?startTime={startTime}&endTime={endTime}&elementId={elementId}`
 
 ### CURL
 
@@ -192,9 +190,7 @@ The following response body found 2 events with the **category** `INFO`. Both ev
 
 ### Request URL
 
-```
-https://app.metricly.com/events/delete/policy/{policyId}
-```
+`https://app.metricly.com/events/delete/policy/{policyId}`
 
 ### CURL
 
@@ -232,10 +228,7 @@ No Content
 
 ### Request URL
 
-```
-https://app.metricly.com/events/{eventId}
-
-```
+`https://app.metricly.com/events/{eventId}`
 
 ### CURL
 
