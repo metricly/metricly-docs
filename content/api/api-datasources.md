@@ -468,3 +468,111 @@ The following response body returns more details about the datasource and allows
 {{% /expand %}}
 
 ---
+
+
+## How to Update Data Collection for a Datasource
+
+Every datasource has **properties** that can be updated to enable or disable collection for different types of data. In this example we are going to disable collection for a particular AWS region.
+
+{{% expand "View More." %}}
+
+1. Build a CURL query to GET from **/datasources**. This allows us to see a full list of datasources and find the right **id**.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/datasources?includeElements=false'
+```
+
+2\. Select a datasource form the response body. Copy its **id** and build another GET query for **/datasources/{id}**
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/datasources/12345'
+```
+
+3\. Review the response body. In particular, we are interested in the **properties** options. The properties in this example have been greatly reduced. Find the **regions** key.
+
+```
+{
+  "dataSource": {
+    "id": 12345,
+    "name": "AWS1-new",
+    "type": "AWS",
+    "properties": {
+      "bucketName": "rcg-netuitive-support-aws-cost",
+      "regions": "us-east-1,us-east-2,us-west-1,us-west-2,ca-central-1,ap-south-1,ap-northeast-2,ap-southeast-1,ap-southeast-2,ap-northeast-1,eu-central-1,eu-west-1,eu-west-2,sa-east-1",
+      "lamFilterTagName": "",
+      "sqsFilterTagName": "",
+      "lamCollectionFrequency": "5",
+      "collectionGranularity": "5",
+      "efsFilteringEnabled": "false",
+      "asgFilterTagType": "include",
+      "rdsFilteringEnabled": "false",
+      "rdsFilterTagName": "",
+      "ec2CollectionFrequency": "5",
+      "ebsFilterTagType": "exclude",
+      "vmcEnabled": "true",
+      "elbFilterTagName": "",
+      "vmcFilterTagValue": "",
+      "tagEnabled": "false",
+      "nlbFilterTagName": "",
+      "knsFilterTagValue": "",
+      "ebsEnabled": "true",
+      "iamRole": "arn:aws:iam::600000000003:role/Netuitive",
+      "tagFilterTagValue": "",
+      "elbEnabled": "false",
+      "mqFilterTagValue": "",
+      "echFilterTagValue": "",
+      "asgEnabled": "true",
+      "awsAuthentication": "role",
+      "ec2FilterTagValue": "",
+      "redEnabled": "false",
+      "agwCollectionFrequency": "5",
+      "r53FilterTagType": "include",
+      "efsFilterTagType": "include",
+      "knsFilterTagType": "exclude",
+      "asgCollectionFrequency": "5",
+      "redCollectionFrequency": "5",
+      "dynFilteringEnabled": "false",
+      "ecsFilterTagValue": "",
+      "ecsFilterTagName": "",
+      "emrCollectionFrequency": "5",
+      "emrEnabled": "false",
+      "avmFilterTagValue": "",
+      "s3FilterTagValue": "",
+      "ctmFilteringEnabled": "false",
+      "elbFilterTagValue": "",
+      "tagFilteringEnabled": "false",
+      "avmEnabled": "true",
+      "filterTagTypeOld": "exclude",
+      "urls": "[{\"type\":\"URL\",\"url\":\"\",\"elementName\":\"\",\"generateElementName\":false,\"enableErrorTracking\":true}]",
+      "nlbEnabled": "false",
+      "r53FilterTagName": "",
+      "avmCollectionFrequency": "5",
+      "nlbCollectionFrequency": "5",
+      "s3Enabled": "false",
+      "collectionPeriod": "5",
+      "awsAccountNumber": "600005000003"
+    },
+    "enabled": false,
+    "deleted": false,
+    "apiId": null,
+    "collectors": [
+    ]
+  }
+}
+```
+
+4\. Build a CURL query for the PUT method for the endpoint **/datasources/{id}**. You'll need to use the datasources's **id** as a parameter. Remove the region `us-east-1` from the list.
+
+```
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "dataSource": { \
+     "name": "AWS1-new", \
+     "properties": { \
+       "regions": "us-east-2,us-west-1,us-west-2,ca-central-1,ap-south-1,ap-northeast-2,ap-southeast-1,ap-southeast-2,ap-northeast-1,eu-central-1,eu-west-1,eu-west-2,sa-east-1} \
+ } \
+ }' 'https://app.metricly.com/datasources/12345
+```
+
+5\. The response body returns the whole datasource definition. Verify that the **regions** have updated.
+
+{{% /expand %}}
