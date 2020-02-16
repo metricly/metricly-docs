@@ -923,3 +923,144 @@ The sample below reflects the screenshot included, ordered from left to right. T
 ![grid-stack-example](/images/dashboards/grid-stack-example.png)
 
 {{% /expand %}}
+
+
+## Create a New Dashboard Based on an Existing Dashboard
+
+There are two ways you can quickly create a dashboard: clone (POST) and update (PUT), or GET and POST.
+
+{{% expand "View More." %}}
+
+1. Perform a GET query to /dashboards for a list of all existing dashboards. Find an existing dashboard to use as a template and grab its **id**.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashboards'
+```
+
+2. Build a CURL query to **GET /dashboards/{id}**, using the chosen **id**.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashboards/5d8355a2-1111-2222-bc6a-59f7689e0cf6'
+```
+
+3. Review the response body and update to change the name, layout (gridstackContents), widget types, and metrics.
+
+```
+{
+  "dashboard": {
+    "id": "5d8355a2-1111-2222-bc6a-59f7689e0cf6",
+    "userId": null,
+    "name": "AWS ASG Summary",
+    "description": null,
+    "layout": null,
+    "creatorEmail": "research@netuitive.com",
+    "created": "2018-09-20T21:47:39Z",
+    "updated": "2019-03-13T20:15:48Z",
+    "widgets": [
+      {
+        "id": "b485aa21-515a-3522-9193-1e5c7e95f9bd",
+        "dashboardId": "5d8355a2-1111-2222-bc6a-59f7689e0cf6",
+        "userId": 0,
+        "name": "Highest CPU Utilization",
+        "description": null,
+        "widgetType": "metric-range",
+        "created": "2019-03-13T20:15:48Z",
+        "updated": "2019-03-13T20:15:48Z",
+        "properties": {
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "visualization": "bar",
+          "showElementTotal": "true",
+          "useAllElementScopeTags": "true",
+          "elementScopeTypes": "[\"ASG\"]",
+          "metricLimit": "5",
+          "useAllMetricScopeTags": "true",
+          "metricUnit": "percent",
+          "showHighest": "true",
+          "metric_fqn": "aws.ec2.cpuutilization",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg"
+        },
+        "generated": false
+      },
+      {
+        "id": "f33caacd-6db5-3378-84c9-cd9f63551237",
+        "dashboardId": "5d8355a2-1111-2222-bc6a-59f7689e0cf6",
+        "userId": 0,
+        "name": "ASG Network In",
+        "description": null,
+        "widgetType": "high-low-metric",
+        "created": "2019-03-13T20:15:48Z",
+        "updated": "2019-03-13T20:15:48Z",
+        "properties": {
+          "showHighest": "true",
+          "metric_fqn": "aws.ec2.networkin",
+          "showElementTotal": "true",
+          "useElementNameContains": "true",
+          "width": "auto",
+          "elementScopeTypes": "[\"ASG\"]",
+          "metricLimit": "5",
+          "selectedTab": "graph"
+        },
+        "generated": false
+      },
+      {
+        "id": "496494d8-acd8-34ce-b6b3-bcf185805969",
+        "dashboardId": "5d8355a2-946f-3508-bc6a-59f7689e0cf6",
+        "userId": 0,
+        "name": "ASG Network Out",
+        "description": null,
+        "widgetType": "high-low-metric",
+        "created": "2019-03-13T20:15:48Z",
+        "updated": "2019-03-13T20:15:48Z",
+        "properties": {
+          "showHighest": "true",
+          "metric_fqn": "aws.ec2.networkout",
+          "showElementTotal": "true",
+          "useElementNameContains": "true",
+          "width": "auto",
+          "elementScopeTypes": "[\"ASG\"]",
+          "metricLimit": "5",
+          "selectedTab": "graph"
+        },
+        "generated": false
+      },
+      {
+        "id": "ea0a21a9-5638-3c36-be5b-f8f23b8c0438",
+        "dashboardId": "5d8355a2-946f-3508-bc6a-59f7689e0cf6",
+        "userId": 0,
+        "name": "ASG Events",
+        "description": null,
+        "widgetType": "events",
+        "created": "2019-03-13T20:15:48Z",
+        "updated": "2019-03-13T20:15:48Z",
+        "properties": {
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "visualization": "summary heat map",
+          "showHighest": "true",
+          "showElementTotal": "true",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "elementScopeTypes": "[\"ASG\"]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":null,\"useRegex\":false,\"aggFns\":[]}]",
+          "useAllMetricScopeTags": "true"
+        },
+        "generated": false
+      }
+    ],
+    "properties": {
+      "refreshIntervalSeconds": "300",
+      "timeRangeDuration": "3600",
+      "wrap": "true",
+      "gridstackContents": "[ {\n  \"id\" : \"f33caacd-6db5-3378-84c9-cd9f63551237\",\n  \"x\" : 0,\n  \"y\" : 9,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"b485aa21-515a-3522-9193-1e5c7e95f9bd\",\n  \"x\" : 0,\n  \"y\" : 0,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"496494d8-acd8-34ce-b6b3-bcf185805969\",\n  \"x\" : 6,\n  \"y\" : 9,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"ea0a21a9-5638-3c36-be5b-f8f23b8c0438\",\n  \"x\" : 6,\n  \"y\" : 0,\n  \"width\" : 6,\n  \"height\" : 9\n} ]"
+    },
+    "type": "DEFAULT",
+    "private": false
+  }
+}
+```
+
+4.
+
+{{% /expand %}}
