@@ -77,27 +77,320 @@ The following response body returns all dashboards. This example has been shorte
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| includeElements | query | boolean | Includes or excludes elements in the response body. |
+| dashboard | body | JSON | JSON payload that contains all dashboard instructions. |
 
 
 ### Request URL
 
-`https://app.metricly.com/datasources?includeElements={boolean}`
+`https://app.metricly.com/dashboards`
 
 ### CURL
 
-In the following CURL example,
+In the following CURL example, a dashboard with the **name** `API created dashboard` is created. It includes two CPU widgets and defined **gridstackContents**.
 
 ```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "dashboard": { \
+     "name": "API created dashboard", \
+     "description": null, \
+     "layout": null, \
+     "widgets": [ \
+       { \
+         "name": "Windows EC2 CPU", \
+         "description": null, \
+         "widgetType": "multi-metric", \
+         "properties": { \
+           "visualization": "line", \
+           "showElementTotal": "true", \
+           "elementScopeTags": "[]", \
+           "policies": "[]", \
+           "useAllElementScopeTags": "true", \
+           "metricLimit": "10", \
+           "showBands": "true", \
+           "elementScopeAttributes": "[{\"value\":\"windows\",\"key\":\"platform\"}]", \
+           "elementScopeExcludedAttributes": "[]", \
+           "elementNameContains": "", \
+           "showHighest": "true", \
+           "categories": "[]", \
+           "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]", \
+           "period": "latest1", \
+           "colorByMetric": "false", \
+           "elementScopeTypes": "[\"EC2\"]", \
+           "excludedElementScopeFqns": "[]", \
+           "grouping": "attribute=SERVICE", \
+           "useAllMetricScopeTags": "true", \
+           "metricAggs": "[]", \
+           "elementScopeIds": "[]", \
+           "metricScopeTags": "[]", \
+           "groupByPolicy": "false", \
+           "useAllElementScopeAttributes": "true", \
+           "metricAgg": "avg", \
+           "metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]", \
+           "topNLimit": "5", \
+           "elementScopeExcludedTags": "[]" \
+         }, \
+         "generated": false \
+       }, \
+       { \
+         "name": "Linux EC2 CPU", \
+         "description": null, \
+         "widgetType": "multi-metric", \
+         "properties": { \
+           "visualization": "line", \
+           "showElementTotal": "true", \
+           "elementScopeTags": "[]", \
+           "policies": "[]", \
+           "useAllElementScopeTags": "true", \
+           "metricLimit": "10", \
+           "showBands": "true", \
+           "elementScopeAttributes": "[]", \
+           "elementScopeExcludedAttributes": "[{\"value\":\"windows\",\"key\":\"platform\"}]", \
+           "elementNameContains": "", \
+           "showHighest": "true", \
+           "categories": "[]", \
+           "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]", \
+           "period": "latest1", \
+           "colorByMetric": "false", \
+           "elementScopeTypes": "[\"EC2\"]", \
+           "excludedElementScopeFqns": "[]", \
+           "grouping": "attribute=SERVICE", \
+           "useAllMetricScopeTags": "true", \
+           "metricAggs": "[]", \
+           "elementScopeIds": "[]", \
+           "metricScopeTags": "[]", \
+           "groupByPolicy": "false", \
+           "useAllElementScopeAttributes": "true", \
+           "metricAgg": "avg", \
+           "metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]", \
+           "topNLimit": "5", \
+           "elementScopeExcludedTags": "[]" \
+         }, \
+         "generated": false \
+       } \
+     ], \
+     "properties": { \
+       "timeRangeDuration": "3600", \
+       "costOnly": "false", \
+       "gridstackContents": "[{\"id\":\"5f85e632-5d09-4a9b-b9fc-ae4730cff055\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"80ff3684-3b7d-4667-b81e-836dcf9ee1e7\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]", \
+       "refreshIntervalSeconds": "300", \
+       "globalFilter": "false", \
+       "wrap": "true" \
+     }, \
+     "type": "DEFAULT", \
+     "private": true \
+   } \
+ }' 'https://app.metricly.com/dashboards'
+```
 
+### Swagger Payload
+
+Use the following payload to test this POST method on Swagger.
+
+```
+{
+  "dashboard": {
+    "name": "API created dashboard 2",
+    "description": null,
+    "layout": null,
+    "widgets": [
+      {
+        "name": "Windows EC2 CPU",
+        "description": null,
+        "widgetType": "multi-metric",
+        "properties": {
+          "visualization": "line",
+          "showElementTotal": "true",
+          "elementScopeTags": "[]",
+          "policies": "[]",
+          "useAllElementScopeTags": "true",
+          "metricLimit": "10",
+          "showBands": "true",
+          "elementScopeAttributes": "[{\"value\":\"windows\",\"key\":\"platform\"}]",
+          "elementScopeExcludedAttributes": "[]",
+          "elementNameContains": "",
+          "showHighest": "true",
+          "categories": "[]",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "period": "latest1",
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"EC2\"]",
+          "excludedElementScopeFqns": "[]",
+          "grouping": "attribute=SERVICE",
+          "useAllMetricScopeTags": "true",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "metricScopeTags": "[]",
+          "groupByPolicy": "false",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg",
+          "metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "topNLimit": "5",
+          "elementScopeExcludedTags": "[]"
+        },
+        "generated": false
+      },
+      {
+        "name": "Linux EC2 CPU",
+        "description": null,
+        "widgetType": "multi-metric",
+        "properties": {
+          "visualization": "line",
+          "showElementTotal": "true",
+          "elementScopeTags": "[]",
+          "policies": "[]",
+          "useAllElementScopeTags": "true",
+          "metricLimit": "10",
+          "showBands": "true",
+          "elementScopeAttributes": "[]",
+          "elementScopeExcludedAttributes": "[{\"value\":\"windows\",\"key\":\"platform\"}]",
+          "elementNameContains": "",
+          "showHighest": "true",
+          "categories": "[]",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "period": "latest1",
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"EC2\"]",
+          "excludedElementScopeFqns": "[]",
+          "grouping": "attribute=SERVICE",
+          "useAllMetricScopeTags": "true",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "metricScopeTags": "[]",
+          "groupByPolicy": "false",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg",
+          "metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "topNLimit": "5",
+          "elementScopeExcludedTags": "[]"
+        },
+        "generated": false
+      }
+    ],
+    "properties": {
+      "timeRangeDuration": "3600",
+      "costOnly": "false",
+      "gridstackContents": "[{\"id\":\"5f85e632-5d09-4a9b-b9fc-ae4730cff055\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"80ff3684-3b7d-4667-b81e-836dcf9ee1e7\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]",
+      "refreshIntervalSeconds": "300",
+      "globalFilter": "false",
+      "wrap": "true"
+    },
+    "type": "DEFAULT",
+    "private": true
+  }
+}
 ```
 
 ### Response Body
 
-The following response body returns
+The following response body returns the created dashboard, complete with a unique **ids** for the dashboard and its widgets.
 
 ```
-
+{
+  "dashboard": {
+    "id": "466a6920-9595-48e4-b791-53a20e1f8ceb",
+    "userId": 76502,
+    "name": "API created dashboard 2",
+    "description": null,
+    "layout": null,
+    "creatorEmail": "mrlawrencelane+supportaccount@gmail.com",
+    "created": "2020-02-16T01:54:20Z",
+    "updated": "2020-02-16T01:54:20Z",
+    "widgets": [
+      {
+        "id": "9dde7129-0e08-415f-bf5c-d0b67f7e3dd0",
+        "dashboardId": "466a6920-9595-48e4-b791-53a20e1f8ceb",
+        "userId": null,
+        "name": "Windows EC2 CPU",
+        "description": null,
+        "widgetType": "multi-metric",
+        "created": "2020-02-16T01:54:20Z",
+        "updated": "2020-02-16T01:54:20Z",
+        "properties": {
+          "visualization": "line",
+          "showElementTotal": "true",
+          "elementScopeTags": "[]",
+          "policies": "[]",
+          "useAllElementScopeTags": "true",
+          "metricLimit": "10",
+          "showBands": "true",
+          "elementScopeAttributes": "[{\"value\":\"windows\",\"key\":\"platform\"}]",
+          "elementScopeExcludedAttributes": "[]",
+          "elementNameContains": "",
+          "showHighest": "true",
+          "categories": "[]",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "period": "latest1",
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"EC2\"]",
+          "excludedElementScopeFqns": "[]",
+          "grouping": "attribute=SERVICE",
+          "useAllMetricScopeTags": "true",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "metricScopeTags": "[]",
+          "groupByPolicy": "false",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg",
+          "metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "topNLimit": "5",
+          "elementScopeExcludedTags": "[]"
+        },
+        "generated": false
+      },
+      {
+        "id": "844b8bec-80db-4133-83ad-b546cb978285",
+        "dashboardId": "466a6920-9595-48e4-b791-53a20e1f8ceb",
+        "userId": null,
+        "name": "Linux EC2 CPU",
+        "description": null,
+        "widgetType": "multi-metric",
+        "created": "2020-02-16T01:54:20Z",
+        "updated": "2020-02-16T01:54:20Z",
+        "properties": {
+          "visualization": "line",
+          "showElementTotal": "true",
+          "elementScopeTags": "[]",
+          "policies": "[]",
+          "useAllElementScopeTags": "true",
+          "metricLimit": "10",
+          "showBands": "true",
+          "elementScopeAttributes": "[]",
+          "elementScopeExcludedAttributes": "[{\"value\":\"windows\",\"key\":\"platform\"}]",
+          "elementNameContains": "",
+          "showHighest": "true",
+          "categories": "[]",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "period": "latest1",
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"EC2\"]",
+          "excludedElementScopeFqns": "[]",
+          "grouping": "attribute=SERVICE",
+          "useAllMetricScopeTags": "true",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "metricScopeTags": "[]",
+          "groupByPolicy": "false",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg",
+          "metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "topNLimit": "5",
+          "elementScopeExcludedTags": "[]"
+        },
+        "generated": false
+      }
+    ],
+    "properties": {
+      "timeRangeDuration": "3600",
+      "costOnly": "false",
+      "gridstackContents": "[{\"id\":\"5f85e632-5d09-4a9b-b9fc-ae4730cff055\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"80ff3684-3b7d-4667-b81e-836dcf9ee1e7\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]",
+      "refreshIntervalSeconds": "300",
+      "globalFilter": "false",
+      "wrap": "true"
+    },
+    "type": "DEFAULT",
+    "private": true
+  }
+}
 ```
 
 {{% /expand %}}
