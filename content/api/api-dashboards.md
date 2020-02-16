@@ -408,7 +408,7 @@ The following response body returns basic details and properties of the dashboar
 
 ### Request URL
 
-`https://app.metricly.com/datasources?includeElements={boolean}`
+`https://app.metricly.com/dashboards/{id}`
 
 ### CURL
 
@@ -607,6 +607,9 @@ The following response body returns all details of the copied dashboard.
 
 ## Understanding gridstackContents
 
+**gridstackContents** is a dashboard property that defines the layout of its widgets. It requires widget IDs as well as definitions for width and height.
+
+{{% expand "View More." %}}
 
 The sample below reflects the screenshot included, ordered from left to right. The first section is the top row and the second section is the bottom row. **Minimum Width**: 2; **Minimum Height**: 6.
 
@@ -625,3 +628,5 @@ The sample below reflects the screenshot included, ordered from left to right. T
 {\"id\":\"{id}\",\"x\":7,\"y\":6,\"width\":5,\"height\":10}]"
 ```
 ![grid-stack-example](/images/dashboards/grid-stack-example.png)
+
+{{% /expand %}}
