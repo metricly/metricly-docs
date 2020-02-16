@@ -943,7 +943,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashbo
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashboards/5d8355a2-1111-2222-bc6a-59f7689e0cf6'
 ```
 
-3. Review the response body and update to change the name, layout (gridstackContents), widget types, and metrics.
+3. Review the response body and update **name**, layout (**gridstackContents**), **widgets**, **widgetTypes**, and **metric_fqns**.
 
 ```
 {
@@ -1005,7 +1005,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashbo
       },
       {
         "id": "496494d8-acd8-34ce-b6b3-bcf185805969",
-        "dashboardId": "5d8355a2-946f-3508-bc6a-59f7689e0cf6",
+        "dashboardId": "5d8355a2-1111-2222-bc6a-59f7689e0cf6",
         "userId": 0,
         "name": "ASG Network Out",
         "description": null,
@@ -1026,7 +1026,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashbo
       },
       {
         "id": "ea0a21a9-5638-3c36-be5b-f8f23b8c0438",
-        "dashboardId": "5d8355a2-946f-3508-bc6a-59f7689e0cf6",
+        "dashboardId": "5d8355a2-1111-2222-bc6a-59f7689e0cf6",
         "userId": 0,
         "name": "ASG Events",
         "description": null,
@@ -1061,6 +1061,76 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashbo
 }
 ```
 
-4.
+4. In this example, the dashboard is rebuilt to be a simple AWS EC2 dashboard.
+
+```
+{
+	"dashboard": {
+		"name": "AWS EC2 pretend",
+		"description": null,
+		"layout": null,
+		"widgets": [{
+				"name": "Top 10 Lowest CPU Credit Balance",
+				"description": null,
+				"widgetType": "metric-range",
+				"properties": {
+					"period": "latest1",
+					"tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+					"visualization": "bar",
+					"colorByMetric": "false",
+					"showElementTotal": "true",
+					"useAllElementScopeTags": "true",
+					"elementScopeTypes": "[\"EC2\"]",
+					"metricLimit": "10",
+					"grouping": "attribute=SERVICE",
+					"showBands": "true",
+					"useAllMetricScopeTags": "true",
+					"showHighest": "false",
+					"metric_fqn": "aws.ec2.cpucreditbalance",
+					"groupByPolicy": "false",
+					"notificationPeriod": "off",
+					"useAllElementScopeAttributes": "true",
+					"metricAgg": "avg",
+					"topNLimit": "5"
+				},
+				"generated": false
+			},
+			{
+				"name": "CPU Utilization",
+				"description": null,
+				"widgetType": "multi-metric",
+				"properties": {
+					"period": "latest1",
+					"tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+					"visualization": "line",
+					"colorByMetric": "false",
+					"showElementTotal": "true",
+					"useAllElementScopeTags": "true",
+					"elementScopeTypes": "[\"EC2\"]",
+					"metricLimit": "10",
+					"grouping": "attribute=SERVICE",
+					"showBands": "true",
+					"useAllMetricScopeTags": "true",
+					"showHighest": "true",
+					"groupByPolicy": "false",
+					"notificationPeriod": "off",
+					"useAllElementScopeAttributes": "true",
+					"metricAgg": "avg",
+					"metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+					"topNLimit": "5"
+				},
+				"generated": false
+			}
+		],
+		"properties": {
+			"refreshIntervalSeconds": "300",
+			"timeRangeDuration": "3600",
+			"wrap": "true"
+		},
+		"type": "DEFAULT",
+		"private": false
+	}
+}
+```
 
 {{% /expand %}}
