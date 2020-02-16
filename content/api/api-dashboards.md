@@ -321,7 +321,7 @@ curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.m
 
 ### Response Body
 
-The following response body returns no content with a 204 success code. 
+The following response body returns no content with a 204 success code.
 
 ```
 no content
@@ -341,26 +341,51 @@ no content
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| includeElements | query | boolean | Includes or excludes elements in the response body. |
+| id | path | string | Unique ID for the dashboard. |
 
 
 ### Request URL
 
-`https://app.metricly.com/datasources?includeElements={boolean}`
+`https://app.metricly.com/dashboards/{id}`
 
 ### CURL
 
-In the following CURL example,
+In the following CURL example, only the dashboard's **id** is needed.
 
 ```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashboards/23d3a5e6-8366-4242-9438-d5abe01ff59c'
 
 ```
 
 ### Response Body
 
-The following response body returns
+The following response body returns basic details and properties of the dashboard.
 
 ```
+{
+  "dashboard": {
+    "id": "23d3a5e6-0000-1111-9999-d5abe01ff59c",
+    "userId": 87654,
+    "name": "Example Name",
+    "description": null,
+    "layout": null,
+    "creatorEmail": "support-testing@netuitive.com",
+    "created": "2016-06-29T16:18:47Z",
+    "updated": "2019-04-08T20:15:43Z",
+    "widgets": [],
+    "properties": {
+      "integrationType": null,
+      "timeRangeDuration": "28800",
+      "costOnly": "false",
+      "gridstackContents": "[]",
+      "refreshIntervalSeconds": "300",
+      "globalFilter": "false",
+      "wrap": "true"
+    },
+    "type": "DEFAULT",
+    "private": false
+  }
+}
 
 ```
 
@@ -377,7 +402,8 @@ The following response body returns
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| includeElements | query | boolean | Includes or excludes elements in the response body. |
+| id | path | string | Unique ID for the dashboard. |
+|dashboard   | body  | JSON  | JSON template for the dashboard.  |
 
 
 ### Request URL
@@ -386,18 +412,87 @@ The following response body returns
 
 ### CURL
 
-In the following CURL example,
+In the following CURL example, the **name** of the dashboard is updated.
+
+{{% notice tip %}}
+Use the GET method from /dashboards/{id} to obtain the full dashboard and resubmit an updated version to this endpoint.
+{{% /notice %}}
 
 ```
-
+{
+  "dashboard": {
+    "id": "6240d033-1111-2222-4444-a301d3b33aba",
+    "userId": 76502,
+    "name": "renamed-dashboard",
+    "description": null,
+    "layout": null,
+    "creatorEmail": "supportaccount@gmail.com",
+    "created": "2020-02-15T23:01:56Z",
+    "updated": "2020-02-15T23:03:42Z",
+    "widgets": [
+      {
+        "id": "c63f2aad-7167-45fd-97cf-149ffe29ba6a",
+        "dashboardId": "6240d033-c887-4b70-8264-a301d3b33aba",
+        "userId": 76502,
+        "name": "satur",
+        "description": null,
+        "widgetType": "single-metric",
+        "created": "2020-02-15T23:02:44Z",
+        "updated": "2020-02-15T23:02:44Z",
+        "properties": {
+          "visualization": "chart",
+          "showElementTotal": "true",
+          "elementScopeTags": "[]",
+          "policies": "[]",
+          "useAllElementScopeTags": "true",
+          "metricLimit": "10",
+          "showBands": "true",
+          "elementScopeAttributes": "[]",
+          "elementScopeExcludedAttributes": "[]",
+          "showHighest": "true",
+          "metric_fqn": "netuitive.aws.ebs.iopsutilization",
+          "categories": "[]",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "period": "latest1",
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"EBS\"]",
+          "excludedElementScopeFqns": "[]",
+          "grouping": "attribute=SERVICE",
+          "useAllMetricScopeTags": "true",
+          "element_fqn": "502379301106:EBS:us-east-1:vol-b994f056",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "metricScopeTags": "[]",
+          "groupByPolicy": "false",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg",
+          "metrics": "[]",
+          "topNLimit": "5",
+          "elementScopeExcludedTags": "[]"
+        },
+        "generated": false
+      }
+    ],
+    "properties": {
+      "timeRangeDuration": "3600",
+      "costOnly": "false",
+      "gridstackContents": "[{\"id\":\"c63f2aad-7167-45fd-97cf-149ffe29ba6a\",\"width\":4,\"height\":7,\"x\":0,\"y\":0}]",
+      "refreshIntervalSeconds": "300",
+      "globalFilter": "false",
+      "wrap": "true"
+    },
+    "type": "DEFAULT",
+    "private": false
+  }
+}
 ```
 
 ### Response Body
 
-The following response body returns
+The following response body returns no content and a 204 success code.
 
 ```
-
+no content
 ```
 
 {{% /expand %}}
@@ -414,26 +509,95 @@ The following response body returns
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| includeElements | query | boolean | Includes or excludes elements in the response body. |
+| id | path | string | Unique ID of the dashboard. |
+| request body   | body  | JSON  |  Used to provide a new name for the dashboard. |
 
 
 ### Request URL
 
-`https://app.metricly.com/datasources?includeElements={boolean}`
+`https://app.metricly.com/dashboards/{id}/copy`
 
 ### CURL
 
-In the following CURL example,
+In the following CURL example, the a dashboard with the **id** `6240d033-c887-4b70-8264-a301d3b33aba` is copied and renamed "Cloned Dashboard."
 
 ```
-
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "name": "Cloned Dashboard" \
+ }' 'https://app.metricly.com/dashboards/6240d033-c887-4b70-8264-a301d3b33aba/copy'
 ```
 
 ### Response Body
 
-The following response body returns
+The following response body returns all details of the copied dashboard.
 
 ```
+{
+  "dashboard": {
+    "id": "cff676f5-1111-7777-0000-155698b864ac",
+    "userId": 76502,
+    "name": "Cloned Dashboard",
+    "description": null,
+    "layout": null,
+    "creatorEmail": "supportaccount@gmail.com",
+    "created": "2020-02-16T01:26:12Z",
+    "updated": "2020-02-16T01:26:12Z",
+    "widgets": [
+      {
+        "id": "ad3d1448-6666-3333-7777-7ce38cbbd38d",
+        "dashboardId": ""cff676f5-1111-7777-0000-155698b864ac",
+        "userId": 76502,
+        "name": "satur",
+        "description": null,
+        "widgetType": "single-metric",
+        "created": "2020-02-16T01:26:12Z",
+        "updated": "2020-02-16T01:26:12Z",
+        "properties": {
+          "visualization": "chart",
+          "showElementTotal": "true",
+          "elementScopeTags": "[]",
+          "policies": "[]",
+          "useAllElementScopeTags": "true",
+          "metricLimit": "10",
+          "showBands": "true",
+          "elementScopeAttributes": "[]",
+          "elementScopeExcludedAttributes": "[]",
+          "showHighest": "true",
+          "metric_fqn": "netuitive.aws.ebs.iopsutilization",
+          "categories": "[]",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "period": "latest1",
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"EBS\"]",
+          "excludedElementScopeFqns": "[]",
+          "grouping": "attribute=SERVICE",
+          "useAllMetricScopeTags": "true",
+          "element_fqn": "502319302200:EBS:us-east-1:vol-b994f056",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "metricScopeTags": "[]",
+          "groupByPolicy": "false",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg",
+          "metrics": "[]",
+          "topNLimit": "5",
+          "elementScopeExcludedTags": "[]"
+        },
+        "generated": false
+      }
+    ],
+    "properties": {
+      "refreshIntervalSeconds": "300",
+      "globalFilter": "false",
+      "timeRangeDuration": "3600",
+      "costOnly": "false",
+      "wrap": "true",
+      "gridstackContents": "[{\"id\":\"ad3d1448-84e0-45b0-af5f-7ce38cbbd38d\",\"x\":0,\"y\":0,\"width\":4,\"height\":7}]"
+    },
+    "type": null,
+    "private": false
+  }
+}
 
 ```
 
