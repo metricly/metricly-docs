@@ -39,7 +39,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/widget
 
 ### Response Body
 
-The following response body returns 4 widgets that belong to the chosen dashboard. This does not include gridStackContents found by querying the Dashboards API.
+The following response body returns 4 widgets that belong to the chosen dashboard. This does not include **gridstackContents** found by interacting with the Dashboards API directly.
 
 ```
 {
@@ -185,7 +185,7 @@ The following response body returns 4 widgets that belong to the chosen dashboar
 {{% expand "View method details."%}}
 
 {{% notice tip %}}
-Creating a widget on a dashboard is a multi-step process. This endpoint is the first step. For the widget to _appear_ on the dashboard, it must also be assigned a gridStackContents value from the Dashboards API (PUT method).
+Creating a widget on a dashboard is a multi-step process. This endpoint is the first step. For the widget to _appear_ on the dashboard, it must also be assigned a gridstackContents value from the Dashboards API (PUT method).
 {{% /notice %}}
 
 ### Parameters
@@ -406,7 +406,7 @@ no content
 
 ### CURL
 
-The following example only requires the widget ID. 
+The following example only requires the widget ID.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/widgets/eeb3c322-7b25-4169-b4a9-eaf4ee0319ba'
@@ -457,7 +457,7 @@ The following response body returns details on the widget specified.
 ---
 
 ## PUT to /widgets/{id}
-{{< button theme="warning" href="https://app.metricly.com/swagger-ui.html#!/widgets/replaceUsingPUT_1" >}} PUT {{< /button >}} Use this endpoint to
+{{< button theme="warning" href="https://app.metricly.com/swagger-ui.html#!/widgets/replaceUsingPUT_1" >}} PUT {{< /button >}} Use this endpoint to edit widgets.
 
 {{% expand "View method details."%}}
 
@@ -465,26 +465,92 @@ The following response body returns details on the widget specified.
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-|  |  |  |  |
+| User-Agent | Header | String |  |
+|  widget | body  | JSON | Create a JSON payload that defines the widget's type, metrics, and other properties. |
+| id  | path  | string  | Unique widget ID.  |
 
 ### Request URL
 
- ``
+`https://app.metricly.com/widgets/{id}`
 
 ### CURL
 
-The following example uses the **policyId** and **limit** parameters:
+The following example 
 
 ```
-
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "widget": { \
+     "id": "e39b2b2a-e737-47ac-b5cf-364e324d077d", \
+     "dashboardId": "7031cb3f-3160-400a-b279-707b28b2c8b7", \
+     "userId": 24765, \
+     "name": "Top 5 Cost by Services", \
+     "description": null, \
+     "widgetType": "multi-metric", \
+     "created": "2018-03-08T19:26:37Z", \
+     "updated": "2018-03-08T19:27:06Z", \
+     "properties": { \
+       "visualization": "line", \
+       "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]", \
+       "colorByMetric": "false", \
+       "showElementTotal": "true", \
+       "elementScopeTags": "[]", \
+       "useAllElementScopeTags": "true", \
+       "elementScopeTypes": "[]", \
+       "metricLimit": "10", \
+       "showBands": "true", \
+       "useAllMetricScopeTags": "true", \
+       "metricAggs": "[]", \
+       "elementScopeIds": "[]", \
+       "elementScopeAttributes": "[]", \
+       "showHighest": "true", \
+       "metricScopeTags": "[]", \
+       "useAllElementScopeAttributes": "true", \
+       "metricAgg": "avg", \
+       "metrics": "[{\"fqn\":null,\"useRegex\":false,\"aggFns\":[],\"metricAgg\":null}]", \
+       "elementScopeExcludedTags": "[]" \
+     }, \
+     "generated": false \
+   } \
+ }' 'https://app.metricly.com/widgets/e39b2b2a-e737-47ac-b5cf-364e324d077d'
 ```
-
-
 
 ### Response Body
 
 ```
-
+{
+  "widget": {
+    "id": "e39b2b2a-e737-47ac-b5cf-364e324d077d",
+    "dashboardId": "7031cb3f-3160-400a-b279-707b28b2c8b7",
+    "userId": 76502,
+    "name": "Top 5 Cost by Services",
+    "description": null,
+    "widgetType": "multi-metric",
+    "created": "2018-03-08T19:26:37Z",
+    "updated": "2020-02-17T02:35:24Z",
+    "properties": {
+      "visualization": "line",
+      "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+      "colorByMetric": "false",
+      "showElementTotal": "true",
+      "elementScopeTags": "[]",
+      "useAllElementScopeTags": "true",
+      "elementScopeTypes": "[]",
+      "metricLimit": "10",
+      "showBands": "true",
+      "useAllMetricScopeTags": "true",
+      "metricAggs": "[]",
+      "elementScopeIds": "[]",
+      "elementScopeAttributes": "[]",
+      "showHighest": "true",
+      "metricScopeTags": "[]",
+      "useAllElementScopeAttributes": "true",
+      "metricAgg": "avg",
+      "metrics": "[{\"fqn\":null,\"useRegex\":false,\"aggFns\":[],\"metricAgg\":null}]",
+      "elementScopeExcludedTags": "[]"
+    },
+    "generated": false
+  }
+}
 ```
 {{% /expand %}}
 
