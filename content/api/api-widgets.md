@@ -8,468 +8,445 @@ alwaysopen: false
 pre: ""
 ---
 
-## Widget Types
 
-### Multi-Metric
+## About the Widgets API
 
-```
-{
- "widget" : {
-     "dashboardId" : "1d11111b-a111-11d1-adda-1aa1111cc1b1",
-     "name" : "Total Disk Ops",
-     "widgetType" : "multi-metric",
-     "properties" : {
-       "visualization" : "line",
-       "tableColumns" : "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"}]",
-       "showElementTotal" : "true",
-       "elementScopeTags" : "[]",
-       "useAllElementScopeTags" : "true",
-       "elementScopeTypes" : "[\"EC2\"]",
-       "metricLimit" : "10",
-       "useAllMetricScopeTags" : "true",
-       "metricAggs" : "[]",
-       "elementScopeIds" : "[]",
-       "elementScopeAttributes" : "[]",
-       "showHighest" : "true",
-       "metricScopeTags" : "[]",
-       "useAllElementScopeAttributes" : "true",
-       "metricAgg" : "avg",
-       "metrics" : "[{\"fqn\":\"netuitive.aws.ec2.disktotalops\",\"useRegex\":false,\"aggFns\":[]}]"
-     }
-   }
-}
-```
+CloudWisdom's Widgets API can be used to... You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/widgets) and by clicking the interactive buttons below.
+
+## GET from /widgets
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/widgets/listWidgetsUsingGET" >}} GET {{< /button >}} Use this endpoint to view all widgets associated to a given dashboard.
+
+{{% expand "View method details."%}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|-------------|----------------|-----------|----------------------|
+| dashboardId | query | string | Unique ID of the dashboard this widget is associated to. |
+
+### Request URL
+
+ `https://app.metricly.com/widgets?dashboardId={id}`
+
+### CURL
+
+The following example only requires the dashboard's **id** to return the widgets.
 
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
-   "widget" : { \
-       "dashboardId" : "bf6e47b9-883e-4634-8bdf-f64c144fd7b2", \
-       "name" : "Total Disk Ops", \
-       "widgetType" : "multi-metric", \
-       "properties" : { \
-         "visualization" : "line", \
-         "tableColumns" : "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"}]",  \
-         "showElementTotal" : "true", \
-         "elementScopeTags" : "[]", \
-         "useAllElementScopeTags" : "true", \
-         "elementScopeTypes" : "[\"EC2\"]", \
-         "metricLimit" : "10", \
-         "useAllMetricScopeTags" : "true", \
-         "metricAggs" : "[]", \
-         "elementScopeIds" : "[]", \
-         "elementScopeAttributes" : "[]", \
-         "showHighest" : "true", \
-         "metricScopeTags" : "[]", \
-         "useAllElementScopeAttributes" : "true", \
-         "metricAgg" : "avg", \
-         "metrics" : "[{\"fqn\":\"netuitive.aws.ec2.disktotalops\",\"useRegex\":false,\"aggFns\":[]}]" \
-       } \
-     } \
- }' 'https://us.cloudwisdom.virtana.com/widgets'
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/widgets?dashboardId=7031cb3f-3160-400a-b279-707b28b2c8b7'
+
 ```
 
-### Multi-Metric Table
+### Response Body
+
+The following response body returns 4 widgets that belong to the chosen dashboard. This does not include gridStackContents found by querying the Dashboards API.
 
 ```
 {
-  "widget" : {
-        "dashboardId" : "1d11111b-a111-11d1-adda-1aa1111cc1b1",
-        "name": "RDS Summary Data",
-        "widgetType": "multi-metric-table",
-        "properties": {
-          "showElementTotal": "true",
-          "selectedAttributes": "[{\"name\":\"region\"},{\"name\":\"dbName\"}]",
-          "elementScopeTags": "[]",
-          "useElementNameContains": "true",
-          "elementScopeTypes": "[\"RDS\"]",
-          "metricLimit": "10",
-          "metricAggs": "[]",
-          "elementScopeIds": "[]",
-          "elementScopeAttributes": "[]",
-          "showHighest": "true",
-          "width": "auto",
-          "metrics": "[{\"fqn\":\"netuitive.aws.rds.diskspacepercentused\",\"aggFn\":\"avg\",\"displayName\":\"Disk % Used\"},{\"fqn\":\"aws.rds.cpuutilization\",\"aggFn\":\"avg\",\"displayName\":\"CPU %\"},{\"fqn\":\"netuitive.aws.rds.iopsutilization\",\"aggFn\":\"avg\",\"displayName\":\"IOPS %\"},{\"fqn\":\"netuitive.aws.rds.totalthroughput\",\"aggFns\":[],\"aggFn\":\"avg\",\"displayName\":\"Throughput\"}]",
-          "selectedTab": "table"
-        }
-      }
+  "widgets": [
+    {
+      "id": "7b4690b2-fdcd-4bea-9741-15b57149667d",
+      "dashboardId": "a1175567-f3e6-0000-1111-0b2a8d3aa504",
+      "userId": 24765,
+      "name": "Cost Period Comparison",
+      "description": null,
+      "widgetType": "multi-metric",
+      "created": "2018-03-08T19:25:20Z",
+      "updated": "2018-03-08T19:25:20Z",
+      "properties": {
+        "visualization": "line",
+        "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+        "colorByMetric": "false",
+        "showElementTotal": "true",
+        "elementScopeTags": "[]",
+        "useAllElementScopeTags": "true",
+        "elementScopeTypes": "[]",
+        "metricLimit": "10",
+        "showBands": "true",
+        "useAllMetricScopeTags": "true",
+        "metricAggs": "[]",
+        "elementScopeIds": "[]",
+        "elementScopeAttributes": "[]",
+        "showHighest": "true",
+        "metricScopeTags": "[]",
+        "useAllElementScopeAttributes": "true",
+        "metricAgg": "avg",
+        "metrics": "[{\"fqn\":null,\"useRegex\":false,\"aggFns\":[],\"metricAgg\":null}]",
+        "elementScopeExcludedTags": "[]"
+      },
+      "generated": false
+    },
+    {
+      "id": "eeb3c322-7b25-4169-b4a9-eaf4ee0319ba",
+      "dashboardId": "a1175567-f3e6-0000-1111-0b2a8d3aa504",
+      "userId": 24765,
+      "name": "Top 5 Cost by Services",
+      "description": null,
+      "widgetType": "multi-metric",
+      "created": "2018-03-08T19:26:37Z",
+      "updated": "2018-03-08T19:27:06Z",
+      "properties": {
+        "visualization": "line",
+        "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+        "colorByMetric": "false",
+        "showElementTotal": "true",
+        "elementScopeTags": "[]",
+        "useAllElementScopeTags": "true",
+        "elementScopeTypes": "[]",
+        "metricLimit": "10",
+        "showBands": "true",
+        "useAllMetricScopeTags": "true",
+        "metricAggs": "[]",
+        "elementScopeIds": "[]",
+        "elementScopeAttributes": "[]",
+        "showHighest": "true",
+        "metricScopeTags": "[]",
+        "useAllElementScopeAttributes": "true",
+        "metricAgg": "avg",
+        "metrics": "[{\"fqn\":null,\"useRegex\":false,\"aggFns\":[],\"metricAgg\":null}]",
+        "elementScopeExcludedTags": "[]"
+      },
+      "generated": false
+    },
+    {
+      "id": "9ab10f03-2010-4f21-96dd-973ed33b5fb0",
+      "dashboardId": "a1175567-f3e6-0000-1111-0b2a8d3aa504",
+      "userId": 24765,
+      "name": "Cost by Availability Zone",
+      "description": null,
+      "widgetType": "multi-metric",
+      "created": "2018-03-09T17:47:02Z",
+      "updated": "2018-03-09T17:47:02Z",
+      "properties": {
+        "visualization": "line",
+        "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+        "colorByMetric": "false",
+        "showElementTotal": "true",
+        "elementScopeTags": "[]",
+        "useAllElementScopeTags": "true",
+        "elementScopeTypes": "[]",
+        "metricLimit": "10",
+        "showBands": "true",
+        "useAllMetricScopeTags": "true",
+        "metricAggs": "[]",
+        "elementScopeIds": "[]",
+        "elementScopeAttributes": "[]",
+        "showHighest": "true",
+        "metricScopeTags": "[]",
+        "useAllElementScopeAttributes": "true",
+        "metricAgg": "avg",
+        "metrics": "[{\"fqn\":null,\"useRegex\":false,\"aggFns\":[],\"metricAgg\":null}]",
+        "elementScopeExcludedTags": "[]"
+      },
+      "generated": false
+    },
+    {
+      "id": "5027eeda-9c80-4c0a-b434-e2e4f27b499f",
+      "dashboardId": "a1175567-f3e6-0000-1111-0b2a8d3aa504",
+      "userId": 24765,
+      "name": "Total Cost by Service",
+      "description": null,
+      "widgetType": "multi-metric",
+      "created": "2018-03-08T19:26:04Z",
+      "updated": "2018-03-08T19:26:04Z",
+      "properties": {
+        "visualization": "line",
+        "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+        "colorByMetric": "false",
+        "showElementTotal": "true",
+        "elementScopeTags": "[]",
+        "useAllElementScopeTags": "true",
+        "elementScopeTypes": "[]",
+        "metricLimit": "10",
+        "showBands": "true",
+        "useAllMetricScopeTags": "true",
+        "metricAggs": "[]",
+        "elementScopeIds": "[]",
+        "elementScopeAttributes": "[]",
+        "showHighest": "true",
+        "metricScopeTags": "[]",
+        "useAllElementScopeAttributes": "true",
+        "metricAgg": "avg",
+        "metrics": "[{\"fqn\":null,\"useRegex\":false,\"aggFns\":[],\"metricAgg\":null}]",
+        "elementScopeExcludedTags": "[]"
+      },
+      "generated": false
     }
-```
-
-```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
-   "widget" : { \
-         "dashboardId" : "bf6e47b9-883e-4634-8bdf-f64c144fd7b2", \
-         "name": "RDS Summary Data", \
-         "widgetType": "multi-metric-table", \
-         "properties": { \
-           "showElementTotal": "true", \
-           "selectedAttributes": "[{\"name\":\"region\"},{\"name\":\"dbName\"}]", \
-           "elementScopeTags": "[]", \
-           "useElementNameContains": "true", \
-           "elementScopeTypes": "[\"RDS\"]", \
-           "metricLimit": "10", \
-           "metricAggs": "[]", \
-           "elementScopeIds": "[]", \
-           "elementScopeAttributes": "[]", \
-           "showHighest": "true", \
-           "width": "auto", \
-           "metrics": "[{\"fqn\":\"netuitive.aws.rds.diskspacepercentused\",\"aggFn\":\"avg\",\"displayName\":\"Disk % Used\"},{\"fqn\":\"aws.rds.cpuutilization\",\"aggFn\":\"avg\",\"displayName\":\"CPU %\"},{\"fqn\":\"netuitive.aws.rds.iopsutilization\",\"aggFn\":\"avg\",\"displayName\":\"IOPS %\"},{\"fqn\":\"netuitive.aws.rds.totalthroughput\",\"aggFns\":[],\"aggFn\":\"avg\",\"displayName\":\"Throughput\"}]", \
-           "selectedTab": "table" \
-```
-
-### Events
-
-```
-{
- "widget" : {
-   "dashboardId" : "1d11111b-a111-11d1-adda-1aa1111cc1b1",
-   "name" : "EC2 Events",
-   "widgetType" : "events",
-   "properties" : {
-     "visualization" : "summary heat map",
-     "tableColumns" : "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"}]",
-     "showElementTotal" : "true",
-     "elementScopeTags" : "[]",
-     "useAllElementScopeTags" : "true",
-     "elementScopeTypes" : "[\"EC2\"]",
-     "metricLimit" : "10",
-     "useAllMetricScopeTags" : "true",
-     "metricAggs" : "[]",
-     "elementScopeIds" : "[]",
-     "elementScopeAttributes" : "[]",
-     "showHighest" : "true",
-     "metricScopeTags" : "[]",
-     "useAllElementScopeAttributes" : "true",
-     "metricAgg" : "avg"
-   }
- }
+  ]
 }
 ```
+{{% /expand %}}
 
-```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
-   "widget" : { \
-     "dashboardId" : "bf6e47b9-883e-4634-8bdf-f64c144fd7b2", \
-     "name" : "EC2 Events", \
-     "widgetType" : "events", \
-     "properties" : { \
-       "visualization" : "summary heat map", \
-       "tableColumns" : "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"}]", \
-       "showElementTotal" : "true", \
-       "elementScopeTags" : "[]", \
-       "useAllElementScopeTags" : "true", \
-       "elementScopeTypes" : "[\"EC2\"]", \
-       "metricLimit" : "10", \
-       "useAllMetricScopeTags" : "true", \
-       "metricAggs" : "[]", \
-       "elementScopeIds" : "[]", \
-       "elementScopeAttributes" : "[]", \
-       "showHighest" : "true", \
-       "metricScopeTags" : "[]", \
-       "useAllElementScopeAttributes" : "true", \
-       "metricAgg" : "avg" \
-     } \
-   } \
- }' 'https://us.cloudwisdom.virtana.com/widgets'
-```
-
-### Single-Metric
-
-```
-{
-  "widget" : {
-    "dashboardId" : "1d11111b-a111-11d1-adda-1aa1111cc1b1",
-        "name": "My Single Metric",
-        "widgetType": "single-metric",
-        "properties": {
-          "visualization": "time series",
-          "showElementTotal": "true",
-          "elementScopeTags": "[]",
-          "policies": "[]",
-          "useAllElementScopeTags": "true",
-          "metricLimit": "10",
-          "showBands": "true",
-          "elementScopeAttributes": "[]",
-          "showHighest": "true",
-          "metric_fqn": "cpu.percent",
-          "categories": "[]",
-          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"}]",
-          "colorByMetric": "false",
-          "elementScopeTypes": "[]",
-          "grouping": "attribute=SERVICE",
-          "useAllMetricScopeTags": "true",
-          "element_fqn": "clagettcentos",
-          "metricAggs": "[]",
-          "elementScopeIds": "[]",
-          "metricScopeTags": "[]",
-          "groupByPolicy": "false",
-          "useAllElementScopeAttributes": "true",
-          "metricAgg": "avg",
-          "metrics": "[]",
-          "topNLimit": "5",
-          "elementScopeExcludedTags": "[]"
-    }
-  }
-}
-```
-
-```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
-   "widget" : { \
-     "dashboardId" : "bf6e47b9-883e-4634-8bdf-f64c144fd7b2", \
-         "name": "My Single Metric", \
-         "widgetType": "single-metric", \
-         "properties": { \
-           "visualization": "time series", \
-           "showElementTotal": "true", \
-           "elementScopeTags": "[]", \
-           "policies": "[]", \
-           "useAllElementScopeTags": "true", \
-           "metricLimit": "10", \
-           "showBands": "true", \
-           "elementScopeAttributes": "[]", \
-           "showHighest": "true", \
-           "metric_fqn": "cpu.percent", \
-           "categories": "[]", \
-           "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"}]", \
-           "colorByMetric": "false", \
-           "elementScopeTypes": "[]", \
-           "grouping": "attribute=SERVICE", \
-           "useAllMetricScopeTags": "true", \
-           "element_fqn": "clagettcentos", \
-           "metricAggs": "[]", \
-           "elementScopeIds": "[]", \
-           "metricScopeTags": "[]", \
-           "groupByPolicy": "false", \
-           "useAllElementScopeAttributes": "true", \
-           "metricAgg": "avg", \
-           "metrics": "[]", \
-           "topNLimit": "5", \
-           "elementScopeExcludedTags": "[]" \
-     } \
-   } \
- }' 'https://us.cloudwisdom.virtana.com/widgets'
-```
-
-### CloudWisdom Alerts
-
-```
-{
- "widget" : {
-   "dashboardId" : "1d11111b-a111-11d1-adda-1aa1111cc1b1",
-       "name": "My Alert Map",
-       "widgetType": "metricly-alerts",
-       "properties": {
-         "visualization": "map",
-         "showElementTotal": "true",
-         "elementScopeTags": "[]",
-         "policies": "[]",
-         "useAllElementScopeTags": "true",
-         "metricLimit": "10",
-         "showBands": "true",
-         "elementScopeAttributes": "[]",
-         "showHighest": "true",
-         "categories": "[]",
-         "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"}]",
-         "colorByMetric": "false",
-         "elementScopeTypes": "[]",
-         "grouping": "attribute=SERVICE",
-         "useAllMetricScopeTags": "true",
-         "metricAggs": "[]",
-         "elementScopeIds": "[]",
-         "metricScopeTags": "[]",
-         "groupByPolicy": "false",
-         "useAllElementScopeAttributes": "true",
-         "metricAgg": "avg",
-         "metrics": "[]",
-         "topNLimit": "5",
-         "elementScopeExcludedTags": "[]"
-   }
- }
-}
-```
-
-```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d ' { \
-   "widget" : { \
-     "dashboardId" : "bf6e47b9-883e-4634-8bdf-f64c144fd7b2", \
-         "name": "My Alert Map", \
-         "widgetType": "metricly-alerts", \
-         "properties": { \
-           "visualization": "map", \
-           "showElementTotal": "true", \
-           "elementScopeTags": "[]", \
-           "policies": "[]", \
-           "useAllElementScopeTags": "true", \
-           "metricLimit": "10", \
-           "showBands": "true", \
-           "elementScopeAttributes": "[]", \
-           "showHighest": "true", \
-           "categories": "[]", \
-           "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"}]", \
-           "colorByMetric": "false", \
-           "elementScopeTypes": "[]", \
-           "grouping": "attribute=SERVICE", \
-           "useAllMetricScopeTags": "true", \
-           "metricAggs": "[]", \
-           "elementScopeIds": "[]", \
-           "metricScopeTags": "[]", \
-           "groupByPolicy": "false", \
-           "useAllElementScopeAttributes": "true", \
-           "metricAgg": "avg", \
-           "metrics": "[]", \
-           "topNLimit": "5", \
-           "elementScopeExcludedTags": "[]" \
-     } \
-   } \
- }' 'https://us.cloudwisdom.virtana.com/widgets'
-```
-
-### Metric-Range
-
-```
-{
-    "widget" : {
-      "dashboardId" : "1d11111b-a111-11d1-adda-1aa1111cc1b1",
-      "name" : "Highest CPU Utilization",
-      "widgetType" : "metric-range",
-      "properties" : {
-        "visualization" : "bar",
-        "tableColumns" : "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"}]",
-        "showElementTotal" : "true",
-        "elementScopeTags" : "[]",
-        "useAllElementScopeTags" : "true",
-        "elementScopeTypes" : "[\"EC2\"]",
-        "metricLimit" : "5",
-        "useAllMetricScopeTags" : "true",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metric_fqn" : "aws.ec2.cpuutilization",
-        "metricScopeTags" : "[]",
-        "useAllElementScopeAttributes" : "true",
-        "metricAgg" : "avg",
-        "metrics" : "[]"
-    }
-  }
-}
-```
-
-```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
-     "widget" : { \
-       "dashboardId" : "bf6e47b9-883e-4634-8bdf-f64c144fd7b2", \
-       "name" : "Highest CPU Utilization", \
-       "widgetType" : "metric-range", \
-       "properties" : { \
-         "visualization" : "bar", \
-         "tableColumns" : "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"}]", \
-         "showElementTotal" : "true", \
-         "elementScopeTags" : "[]", \
-         "useAllElementScopeTags" : "true", \
-         "elementScopeTypes" : "[\"EC2\"]", \
-         "metricLimit" : "5", \
-         "useAllMetricScopeTags" : "true", \
-         "metricAggs" : "[]", \
-         "elementScopeIds" : "[]", \
-         "elementScopeAttributes" : "[]", \
-         "showHighest" : "true", \
-         "metric_fqn" : "aws.ec2.cpuutilization", \
-         "metricScopeTags" : "[]", \
-         "useAllElementScopeAttributes" : "true", \
-         "metricAgg" : "avg", \
-         "metrics" : "[]" \
-     } \
-   } \
- }' 'https://us.cloudwisdom.virtana.com/widgets'
-```
 ---
 
-**Request Headers**
+## POST to /widgets
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/widgets/createWidgetUsingPOST" >}} POST {{< /button >}} Use this endpoint to create a widget on a dashboard.
 
-| Header Name | Header Value |
-|----------------------|---------------------------------------|
-| Content-Type | application/json |
-| Authorization: Basic | (Base64 encoded authentication value) |
+{{% expand "View method details."%}}
 
-## GET
+{{% notice tip %}}
+Creating a widget on a dashboard is a multi-step process. This endpoint is the first step. For the widget to _appear_ on the dashboard, it must also be assigned a gridStackContents value from the Dashboards API (PUT method).
+{{% /notice %}}
 
-### GET list from /widgets
-Returns a list of widgets associated with a dashboard.
+### Parameters
 
-**Parameters**
+| Parameter | Parameter Type | Data Type | Description |
+|-------------|----------------|-----------|----------------------|
+| User-Agent | Header | String |  |
+|  widget | body  | JSON | Create a JSON payload that defines the widget's type, metrics, and other properties. |
 
-| Parameters | Required/Optional | Description |
-|-------------|-------------------|--------------------------------------------------------------------------------|
-| dashboardId | Required | Query parameter. The ID of the dashboard you’re trying to get the widgets for. |
+### Request URL
 
-### GET from /widgets/{id}
-Returns a widget for the given ID.
+`https://app.metricly.com/widgets`
 
-**Parameters**
+### CURL
 
-| Parameters | Required/Optional | Description |
-|------------|-------------------|----------------------------------------------------------------------------------|
-| id | Required | URL (path) parameter. The ID for the widget.Input JSON Format for Request Header |
+The following example uses the **policyId** and **limit** parameters:
 
-## DELETE
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "widget": { \
+     "created": "2020-02-11T18:06:49.886Z", \
+     "dashboardId": "7031cb3f-3160-400a-b279-707b28b2c8b7", \
+     "description": null, \
+     "generated": true, \
+     "id": null, \
+     "name": "Windows EC2 Network Out", \
+     "properties": { \
+       "visualization": "line", \
+       "showElementTotal": "true", \
+       "elementScopeTags": "[]", \
+       "policies": "[]", \
+       "useAllElementScopeTags": "true", \
+       "metricLimit": "10", \
+       "showBands": "true", \
+       "elementScopeAttributes": "[{\"value\":\"windows\",\"key\":\"platform\"}]", \
+       "elementScopeExcludedAttributes": "[]", \
+       "elementNameContains": "", \
+       "showHighest": "true", \
+       "categories": "[]", \
+       "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]", \
+       "period": "latest1", \
+       "colorByMetric": "false", \
+       "elementScopeTypes": "[\"EC2\"]", \
+       "excludedElementScopeFqns": "[]", \
+       "grouping": "attribute=SERVICE", \
+       "useAllMetricScopeTags": "true", \
+       "metricAggs": "[]", \
+       "elementScopeIds": "[]", \
+       "metricScopeTags": "[]", \
+       "groupByPolicy": "false", \
+       "useAllElementScopeAttributes": "true", \
+       "metricAgg": "avg", \
+       "metrics": "[{\"fqn\":\"aws.ec2.networkout\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]", \
+       "topNLimit": "5", \
+       "elementScopeExcludedTags": "[]" \
+     }, \
+     "updated": "2020-02-11T18:06:49.886Z", \
+     "userId": null, \
+     "widgetType": "multi-metric" \
+   } \
+ }' 'https://app.metricly.com/widgets'
 
-### DELETE from /widgets/{id}
-This method deletes a given widget.
-Replace {id} in the above URL with the ID from any of your integrations.
+```
 
-**Parameters**
+## Swagger payload
 
-| Parameters | Required/Optional | Description |
-|------------|-------------------|---------------------------------------------|
-| id | Required | URL (path) parameter. The ID of the widget. |
+```
+{
+  "widget": {
+    "created": "2020-02-11T18:06:49.886Z",
+    "dashboardId": "7031cb3f-3160-400a-b279-707b28b2c8b7",
+    "description": null,
+    "generated": true,
+    "id": null,
+    "name": "Windows EC2 Network Out",
+    "properties": {
+      "visualization": "line",
+      "showElementTotal": "true",
+      "elementScopeTags": "[]",
+      "policies": "[]",
+      "useAllElementScopeTags": "true",
+      "metricLimit": "10",
+      "showBands": "true",
+      "elementScopeAttributes": "[{\"value\":\"windows\",\"key\":\"platform\"}]",
+      "elementScopeExcludedAttributes": "[]",
+      "elementNameContains": "",
+      "showHighest": "true",
+      "categories": "[]",
+      "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+      "period": "latest1",
+      "colorByMetric": "false",
+      "elementScopeTypes": "[\"EC2\"]",
+      "excludedElementScopeFqns": "[]",
+      "grouping": "attribute=SERVICE",
+      "useAllMetricScopeTags": "true",
+      "metricAggs": "[]",
+      "elementScopeIds": "[]",
+      "metricScopeTags": "[]",
+      "groupByPolicy": "false",
+      "useAllElementScopeAttributes": "true",
+      "metricAgg": "avg",
+      "metrics": "[{\"fqn\":\"aws.ec2.networkout\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+      "topNLimit": "5",
+      "elementScopeExcludedTags": "[]"
+    },
+    "updated": "2020-02-11T18:06:49.886Z",
+    "userId": null,
+    "widgetType": "multi-metric"
+  }
+}
+```
 
-## POST
+### Response Body
 
-### POST to /widgets
-This method creates a widget. A **dashboardId** is required to create a widget. Obtain an Id from an existing dashboard or create a new dashboard for your widget.
+```
+{
+  "widget": {
+    "id": "38250616-a1a7-4d2b-ab48-50ac2333ca95",
+    "dashboardId": "7031cb3f-3160-400a-b279-707b28b2c8b7",
+    "userId": 76502,
+    "name": "Windows EC2 Network Out",
+    "description": null,
+    "widgetType": "multi-metric",
+    "created": "2020-02-17T01:36:39Z",
+    "updated": "2020-02-17T01:36:39Z",
+    "properties": {
+      "visualization": "line",
+      "showElementTotal": "true",
+      "elementScopeTags": "[]",
+      "policies": "[]",
+      "useAllElementScopeTags": "true",
+      "metricLimit": "10",
+      "showBands": "true",
+      "elementScopeAttributes": "[{\"value\":\"windows\",\"key\":\"platform\"}]",
+      "elementScopeExcludedAttributes": "[]",
+      "elementNameContains": "",
+      "showHighest": "true",
+      "categories": "[]",
+      "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+      "period": "latest1",
+      "colorByMetric": "false",
+      "elementScopeTypes": "[\"EC2\"]",
+      "excludedElementScopeFqns": "[]",
+      "grouping": "attribute=SERVICE",
+      "useAllMetricScopeTags": "true",
+      "metricAggs": "[]",
+      "elementScopeIds": "[]",
+      "metricScopeTags": "[]",
+      "groupByPolicy": "false",
+      "useAllElementScopeAttributes": "true",
+      "metricAgg": "avg",
+      "metrics": "[{\"fqn\":\"aws.ec2.networkout\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+      "topNLimit": "5",
+      "elementScopeExcludedTags": "[]"
+    },
+    "generated": false
+  }
+}
+```
+{{% /expand %}}
 
-**Parameters**
+---
 
-Parameters	Required/Optional	Description
-widget	Required	Body parameter; see below.
+## DELETE from /widgets/{id}
+{{< button theme="danger" href="https://app.metricly.com/swagger-ui.html#!/widgets/deleteUsingDELETE_5" >}} DELETE {{< /button >}} Use this endpoint to
 
-**Body Attributes**
+{{% expand "View method details."%}}
 
-| Attribute | Required/Optional | Description |
-|-------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| created | Optional | The time the widget was created. This must be in ISO 8601 format. |
-| dashboardId | Optional | The ID of the dashboard you’re trying to put the widget in. |
-| id | Optional | The ID for the widget. If you leave this field blank, CloudWisdom will create an ID for you. |
-| name | Optional | The name of the widget. |
-| properties | Optional | The properties for the widget; this object will vary depending on the type of widget. You can read more about the widget types and their properties here. |
-| updated | Optional | The time the widget was last updated. This must be in ISO 8601 format. |
-| userId | Optional | The ID of the user who created the widget. If you leave this field blank, CloudWisdom will use your user ID. |
-| widgetType | Optional | See the Widget Types section for a full list. |
+### Parameters
 
-## PUT
+| Parameter | Parameter Type | Data Type | Description |
+|-------------|----------------|-----------|----------------------|
+|  |  |  |  |
 
-### PUT to /widgets/{id}
-This method will update a given widget.
+### Request URL
 
-**Parameters**
+ ``
 
-| Parameters | Required/Optional | Description |
-|------------|-------------------|----------------------------------------------|
-| id | Required | URL (path) parameter. The ID for the widget. |
-| widget | Required | Body parameter; see below. |
+### CURL
+
+The following example uses the **policyId** and **limit** parameters:
+
+```
+
+```
 
 
-**Body Attributes**
 
-| Attribute | Required/Optional | Description |
-|-------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| created | Optional | The time the widget was created. This must be in ISO 8601 format. |
-| dashboardId | Optional | The ID of the dashboard you’re trying to put the widget in. |
-| id | Optional | The ID for the widget. If you leave this field blank, CloudWisdom will create an ID for you. |
-| name | Optional | The name of the widget. |
-| properties | Optional | The properties for the widget; this object will vary depending on the type of widget. You can read more about the widget types and their properties here. |
-| updated | Optional | The time the widget was last updated. This must be in ISO 8601 format. |
-| userId | Optional | The ID of the user who created the widget. If you leave this field blank, CloudWisdom will use your user ID. |
-| widgetType | Optional | See the Widget Types section for a full list. |
+### Response Body
+
+```
+
+```
+{{% /expand %}}
+
+---
+
+## GET from /widgets/{id}
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/widgets/getSingleUsingGET_4" >}} GET {{< /button >}} Use this endpoint to
+
+{{% expand "View method details."%}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|-------------|----------------|-----------|----------------------|
+|  |  |  |  |
+
+### Request URL
+
+ ``
+
+### CURL
+
+The following example uses the **policyId** and **limit** parameters:
+
+```
+
+```
+
+
+
+### Response Body
+
+```
+
+```
+{{% /expand %}}
+
+---
+
+## PUT to /widgets/{id}
+{{< button theme="warning" href="https://app.metricly.com/swagger-ui.html#!/widgets/replaceUsingPUT_1" >}} PUT {{< /button >}} Use this endpoint to
+
+{{% expand "View method details."%}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|-------------|----------------|-----------|----------------------|
+|  |  |  |  |
+
+### Request URL
+
+ ``
+
+### CURL
+
+The following example uses the **policyId** and **limit** parameters:
+
+```
+
+```
+
+
+
+### Response Body
+
+```
+
+```
+{{% /expand %}}
+
+---
