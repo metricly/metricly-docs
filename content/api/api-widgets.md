@@ -201,7 +201,7 @@ Creating a widget on a dashboard is a multi-step process. This endpoint is the f
 
 ### CURL
 
-The following example uses the **policyId** and **limit** parameters:
+The following example creates a widget named "Windows EC2 Network Out" and associates it with the **dashboardId** `7031cb3f-3160-400a-b279-707b28b2c8b7`.
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
@@ -252,6 +252,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ## Swagger payload
 
+Try creating this widget by swapping out the **dashboardId** and submitting it to Swagger.
+
 ```
 {
   "widget": {
@@ -299,6 +301,8 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 ```
 
 ### Response Body
+
+The following response body returns confirmation that the widget has been created with the configuration specified. Notice that the **id** value is no longer null.
 
 ```
 {
@@ -350,7 +354,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 ---
 
 ## DELETE from /widgets/{id}
-{{< button theme="danger" href="https://app.metricly.com/swagger-ui.html#!/widgets/deleteUsingDELETE_5" >}} DELETE {{< /button >}} Use this endpoint to
+{{< button theme="danger" href="https://app.metricly.com/swagger-ui.html#!/widgets/deleteUsingDELETE_5" >}} DELETE {{< /button >}} Use this endpoint to delete a widget.
 
 {{% expand "View method details."%}}
 
@@ -358,26 +362,28 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-|  |  |  |  |
+| User-Agent | Header | String |  |
+|  id | path  | string | Unique widget ID. |
 
 ### Request URL
 
- ``
+ `https://app.metricly.com/widgets/{id}`
 
 ### CURL
 
-The following example uses the **policyId** and **limit** parameters:
+The following example only requires the widget ID to perform the deletion.
 
 ```
+curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.metricly.com/widgets/38250616-a1a7-4d2b-ab48-50ac2333ca95'
 
 ```
-
-
 
 ### Response Body
 
-```
+The following response body has no content and returns a 204 success code.
 
+```
+no content
 ```
 {{% /expand %}}
 
@@ -392,26 +398,59 @@ The following example uses the **policyId** and **limit** parameters:
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-|  |  |  |  |
+| id | path  | string | Unique widget ID. |
 
 ### Request URL
 
- ``
+ `https://app.metricly.com/widgets/{id}`
 
 ### CURL
 
-The following example uses the **policyId** and **limit** parameters:
+The following example only requires the widget ID. 
 
 ```
-
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/widgets/eeb3c322-7b25-4169-b4a9-eaf4ee0319ba'
 ```
-
-
 
 ### Response Body
 
-```
+The following response body returns details on the widget specified.
 
+```
+{
+  "widget": {
+    "id": "eeb3c322-7b25-4169-b4a9-eaf4ee0319ba",
+    "dashboardId": "a1175567-f3e6-4e43-b283-0b2a8d3aa504",
+    "userId": 24765,
+    "name": "Top 5 Cost by Services",
+    "description": null,
+    "widgetType": "multi-metric",
+    "created": "2018-03-08T19:26:37Z",
+    "updated": "2018-03-08T19:27:06Z",
+    "properties": {
+      "visualization": "line",
+      "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+      "colorByMetric": "false",
+      "showElementTotal": "true",
+      "elementScopeTags": "[]",
+      "useAllElementScopeTags": "true",
+      "elementScopeTypes": "[]",
+      "metricLimit": "10",
+      "showBands": "true",
+      "useAllMetricScopeTags": "true",
+      "metricAggs": "[]",
+      "elementScopeIds": "[]",
+      "elementScopeAttributes": "[]",
+      "showHighest": "true",
+      "metricScopeTags": "[]",
+      "useAllElementScopeAttributes": "true",
+      "metricAgg": "avg",
+      "metrics": "[{\"fqn\":null,\"useRegex\":false,\"aggFns\":[],\"metricAgg\":null}]",
+      "elementScopeExcludedTags": "[]"
+    },
+    "generated": false
+  }
+}
 ```
 {{% /expand %}}
 
