@@ -182,7 +182,7 @@ The following response body found 2 events with the **category** `INFO`. Both ev
 
 ---
 
-## DELETE from /events/delete/policy/{policyId}
+## DELETE to /events/delete/policy/{policyId}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/events/deleteEventsByPolicyUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete events for a specific policy.
 
