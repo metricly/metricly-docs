@@ -230,8 +230,7 @@ No Content
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| term | path | string | The element field you want to aggregate. |
-| elasticsearchQuery | body | JSON | A JSON query. |
+| eventId | path | string | eventId |
 
 ### Request URL
 
