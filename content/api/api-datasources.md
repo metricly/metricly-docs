@@ -271,7 +271,7 @@ The following response body returns a basic AWS datasource with minimal properti
 
 ---
 
-## DELETE from /datasources/{Id}
+## DELETE to /datasources/{Id}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/deleteUsingDELETE_1" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to  delete a datasource.
 
