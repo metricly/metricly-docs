@@ -852,7 +852,7 @@ no content
 
 ### CURL
 
-In the following CURL example, the a dashboard with the **id** `6240d033-c887-4b70-8264-a301d3b33aba` is copied and renamed "Cloned Dashboard."
+In the following CURL example, a dashboard with the **id** `6240d033-c887-4b70-8264-a301d3b33aba` is copied and renamed "Cloned Dashboard."
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
