@@ -147,7 +147,7 @@ The following response body found 3 metrics that matched the `cpu.percent` **met
 
 ### CURL
 
-In the following CURL example, all **metricFQNs** (**term**: `fqn`) are being aggregated for `ALB` **elementTypes**.  
+In the following CURL example, all metric FQNs are being aggregated for the `ALB` **elementTypes** using `fqn` as the **term**.
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
