@@ -1270,6 +1270,21 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashbo
 - Widget IDs
 
 ```
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: */*' --header 'User-Agent: none' -d '{ \
+   "dashboard": { \
+     "id": "9021bbcb-d21d-4a7e-9f63-6e02d4152a6b", \
+     "userId": 76502, \
+     "name": "AWS EC2 Pretend", \
+     "properties": { \
+     "gridstackContents": "[ {\n  \"id\" : \"959c1dc0-6308-4d6d-8f13-b1d60f5013d1\",\n  \"x\" : 0,\n  \"y\" : 9,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"195d2e70-c641-4272-9e0d-c7fc9508ba51\",\n  \"x\" : 0,\n  \"y\" : 0,\n  \"width\" : 6,\n  \"height\" : 9\n}, ]" \
+     }, \
+     "type": "DEFAULT", \
+     "private": true \
+   } \
+ }' 'https://app.metricly.com/dashboards/9021bbcb-d21d-4a7e-9f63-6e02d4152a6b'
+```
+
+```
 {
   "dashboard": {
     "id": "9021bbcb-d21d-4a7e-9f63-6e02d4152a6b",
@@ -1284,6 +1299,6 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashbo
 }
 ```
 
-The dashboard and its widgets now populate in the UI. 
+The dashboard and its widgets now populate in the UI.
 
 {{% /expand %}}
