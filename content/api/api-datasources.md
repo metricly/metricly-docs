@@ -438,7 +438,7 @@ The following response body  returns all **properties** and **collectors** assoc
 
 ### CURL
 
-In the following CURL example, the datasource with the **id** `12345` is disabled by hanging **enabled** to `false`.
+In the following CURL example, the datasource with **id** `12345` is disabled by changing **enabled** to `false`.
 
 ```
 curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
