@@ -180,8 +180,8 @@ This method can be used to create one or many integrations and should only be us
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| term | path | string | The element field you want to aggregate. |
-| elasticsearchQuery | body | JSON | A JSON query. |
+|User-Agent   | header  | string  | User agent.  |
+| wrapper  | body  |  JSON |  JSON template of a datasource with updates included. |
 
 ### Request URL
 
@@ -420,7 +420,7 @@ The following response body  returns all **properties** and **collectors** assoc
 
 ## PUT to /datasources/{Id}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/replaceDataSourceUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to  
+{{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/replaceDataSourceUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to  make updates to datasources.
 
 {{% expand "View Method Details." %}}
 
@@ -428,8 +428,9 @@ The following response body  returns all **properties** and **collectors** assoc
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| term | path | string | The element field you want to aggregate. |
-| elasticsearchQuery | body | JSON | A JSON query. |
+|User-Agent   | header  | string  | User agent.  |
+| Id  | path  | long  | Unique datasource ID.  |
+| wrapper  | body  |  JSON |  JSON template of a datasource with updates included. |
 
 ### Request URL
 
