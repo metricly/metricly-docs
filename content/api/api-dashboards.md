@@ -73,6 +73,11 @@ The following response body returns all dashboards. This example has been shorte
 
 {{% expand "View Method Details." %}}
 
+{{% notice tip %}}
+
+Creating a dashboard with new widgets is a two step process. Once you have created your dashboard using this endpoint, take the new unique widget IDs found in the response body and use the PUT endpoint to update the dashboard's gridstackContents with the correct IDs.
+{{% /notice %}}
+
 ### Parameters
 
 | Parameter | Parameter Type | Data Type | Description |
@@ -87,7 +92,7 @@ The following response body returns all dashboards. This example has been shorte
 
 ### CURL
 
-In the following CURL example, a dashboard with the **name** `API created dashboard` is created. It includes two CPU widgets and defined **gridstackContents**.
+In the following CURL example, a dashboard with the **name** `API created dashboard` is created. It includes two CPU widgets and a defined **gridstackContents** layout, with placeholder `null` values standing in for widget IDs.
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
@@ -172,7 +177,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
      "properties": { \
        "timeRangeDuration": "3600", \
        "costOnly": "false", \
-       "gridstackContents": "[{\"id\":\"5f85e632-5d09-4a9b-b9fc-ae4730cff055\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"80ff3684-3b7d-4667-b81e-836dcf9ee1e7\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]", \
+       "gridstackContents": "[{\"id\":\"null\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"null\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]", \
        "refreshIntervalSeconds": "300", \
        "globalFilter": "false", \
        "wrap": "true" \
@@ -270,7 +275,7 @@ Use the following payload to test this POST method on Swagger.
     "properties": {
       "timeRangeDuration": "3600",
       "costOnly": "false",
-      "gridstackContents": "[{\"id\":\"5f85e632-5d09-4a9b-b9fc-ae4730cff055\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"80ff3684-3b7d-4667-b81e-836dcf9ee1e7\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]",
+      "gridstackContents": "[{\"id\":\"null\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"null\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]",
       "refreshIntervalSeconds": "300",
       "globalFilter": "false",
       "wrap": "true"
@@ -283,7 +288,7 @@ Use the following payload to test this POST method on Swagger.
 
 ### Response Body
 
-The following response body returns the created dashboard, complete with a unique **ids** for the dashboard and its widgets.
+The following response body returns the created dashboard, complete with unique **ids** for the dashboard and its widgets. **Now you must use the new widget IDs.** Add them to the dashboard template through the PUT endpoint, swapping out the `null` **gridstackContents** values.
 
 ```
 {
@@ -383,7 +388,7 @@ The following response body returns the created dashboard, complete with a uniqu
     "properties": {
       "timeRangeDuration": "3600",
       "costOnly": "false",
-      "gridstackContents": "[{\"id\":\"5f85e632-5d09-4a9b-b9fc-ae4730cff055\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"80ff3684-3b7d-4667-b81e-836dcf9ee1e7\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]",
+      "gridstackContents": "[{\"id\":\"null\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"null\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]",
       "refreshIntervalSeconds": "300",
       "globalFilter": "false",
       "wrap": "true"
@@ -393,6 +398,31 @@ The following response body returns the created dashboard, complete with a uniqu
   }
 }
 ```
+
+### Required Widget ID Update
+
+The following JSON updates the dashboard created to include the widget IDs inside the **gridstackContents** properties.
+
+```
+{
+  "dashboard": {
+    "id": "466a6920-9595-48e4-b791-53a20e1f8ceb",
+    "userId": 76502,
+    "name": "API created dashboard 2",
+    "properties": {
+      "timeRangeDuration": "3600",
+      "costOnly": "false",
+      "gridstackContents": "[{\"id\":\"844b8bec-80db-4133-83ad-b546cb978285\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"9dde7129-0e08-415f-bf5c-d0b67f7e3dd0\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]",
+      "refreshIntervalSeconds": "300",
+      "globalFilter": "false",
+      "wrap": "true"
+    },
+    "type": "DEFAULT",
+    "private": true
+  }
+}
+```
+
 
 {{% /expand %}}
 
