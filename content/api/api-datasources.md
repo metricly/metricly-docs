@@ -418,7 +418,7 @@ The following response body  returns all **properties** and **collectors** assoc
 
 ---
 
-## PUT from /datasources/{Id}
+## PUT to /datasources/{Id}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/replaceDataSourceUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to  
 
