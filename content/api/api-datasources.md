@@ -172,7 +172,7 @@ The following response body returns datasources without elements. This example h
 
 {{% notice tip %}}
 
-This method can be used to create one or many integrations and should only be used by an experienced power user. Properties associated to datasources are mapped as strings and cannot be validated, meaning typos are not caught and returned as errors. Virtana recommends creating your datasources through the UI; updating an existing datasource via PUT is less complex than POSTing a new datasource.
+This method can be used to create one or many integrations and should only be used by an experienced power user as Virtana generally recommends creating new datasources in the UI. Properties associated to datasources are mapped as strings and cannot be validated, meaning typos are not caught and returned as errors.
 
 {{% /notice %}}
 
