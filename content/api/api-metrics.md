@@ -392,7 +392,7 @@ The following response body returns matches for 2 elements that contain the spec
 
 ## GET from /metrics/fqns
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricFqnsUsingGET" theme="info" >}} GET {{< /button >}} This endpoint is deprecated.   
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricFqnsUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to get a list of metric FQNs for a given set of criteria. Note this is a deprecated method and could be removed at a later date.   
 
 {{% expand "View Method Details." %}}
 
