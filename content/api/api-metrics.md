@@ -149,6 +149,10 @@ The following response body found 3 metrics that matched the `cpu.percent` **met
 
 In the following CURL example, all metric FQNs are being aggregated for the `ALB` **elementTypes** using `fqn` as the **term**.
 
+{{% notice tip %}}
+The term is the field we are looking to find aggregate counts for. The only option is ``fqn`` for metric FQN.
+{{% /notice %}}
+
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
    "sort": { \
@@ -437,7 +441,7 @@ You can test this endpoint with Swagger by populating the provided parameter fie
 
 ### Response Body
 
-The following response body returns a list of all metricFQNs associated to the values submitted.
+The following response body returns a list of all metric FQNs associated to the value submitted for **elementId** in the first CURL example.
 ```
 {
   "fqns": [
@@ -465,6 +469,18 @@ The following response body returns a list of all metricFQNs associated to the v
     "netuitive.aws.alb.totaltargethttperrors",
     "netuitive.aws.alb.unhealthyhostpercent",
     "netuitive.metrics.collected.percent"
+  ]
+}
+```
+
+The following response body returns a list of all metric FQNs associated to the values submitted for **elementType** and **elementName** in the second CURL example.
+```
+{
+  "fqns": [
+    "aws.lambda.duration",
+    "aws.lambda.errors",
+    "aws.lambda.invocations",
+    "aws.lambda.throttles"
   ]
 }
 ```
