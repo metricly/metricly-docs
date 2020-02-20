@@ -281,7 +281,7 @@ The following response body returns a basic AWS datasource with minimal properti
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| User-Agent | header | string |  |
+| User-Agent | header | string | User-Agent |
 | id | path | long | id |
 
 ### Request URL
