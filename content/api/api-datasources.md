@@ -322,7 +322,7 @@ No Content
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| id | path | JSON | Long. |
+| id | path | long | id |
 
 
 ### Request URL
