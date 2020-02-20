@@ -11,7 +11,7 @@ pre: ""
 
 ## About the Widgets API
 
-CloudWisdom's Widgets API can be used to... You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/widgets) and by clicking the interactive buttons below.
+CloudWisdom's Widgets API can be used to list, create, get, delete, and update widgets. You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/widgets) and by clicking the interactive buttons below.
 
 ## GET from /widgets
 {{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/widgets/listWidgetsUsingGET" >}} GET {{< /button >}} Use this endpoint to view all widgets associated to a given dashboard.
@@ -192,7 +192,7 @@ Creating a widget on a dashboard is a multi-step process. This endpoint is the f
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| User-Agent | Header | String |  |
+| User-Agent | Header | String | User agent. |
 |  widget | body  | JSON | Create a JSON payload that defines the widget's type, metrics, and other properties. |
 
 ### Request URL
@@ -362,7 +362,7 @@ The following response body returns confirmation that the widget has been create
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| User-Agent | Header | String |  |
+| User-Agent | Header | String | User agent.  |
 |  id | path  | string | Unique widget ID. |
 
 ### Request URL
@@ -465,7 +465,7 @@ The following response body returns details on the widget specified.
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| User-Agent | Header | String |  |
+| User-Agent | Header | String | User agent. |
 |  widget | body  | JSON | Create a JSON payload that defines the widget's type, metrics, and other properties. |
 | id  | path  | string  | Unique widget ID.  |
 
@@ -475,7 +475,7 @@ The following response body returns details on the widget specified.
 
 ### CURL
 
-The following example 
+The following example
 
 ```
 curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
