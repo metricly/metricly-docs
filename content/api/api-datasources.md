@@ -180,7 +180,7 @@ This method can be used to create one or many integrations and should only be us
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-|User-Agent   | header  | string  | User agent.  |
+|User-Agent   | header  | string  | User-Agent  |
 | wrapper  | body  |  JSON |  JSON template of a datasource with updates included. |
 
 ### Request URL
