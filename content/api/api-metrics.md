@@ -30,10 +30,7 @@ CloudWisdom's Metrics API can be used to review metrics.  You can test these end
 
 ### Request URL
 
-```
-https://app.metricly.com/metrics/crosselementagg?aggregation={aggregation}&statistic={statistic}&rollup={rollup}
-
-```
+`https://app.metricly.com/metrics/crosselementagg?aggregation={aggregation}&statistic={statistic}&rollup={rollup}`
 
 ### CURL
 
@@ -146,10 +143,7 @@ The following response body found 3 metrics that matched the `cpu.percent` **met
 
 ### Request URL
 
-```
-https://app.metricly.com/metrics/elasticsearch/metricAgg/{term}
-
-```
+`https://app.metricly.com/metrics/elasticsearch/metricAgg/{term}`
 
 ### CURL
 
@@ -268,10 +262,7 @@ The following response body returns aggregations of all metrics matching the giv
 
 ### Request URL
 
-```
-https://app.metricly.com/metrics/elasticsearch/metricQuery
-
-```
+`https://app.metricly.com/metrics/elasticsearch/metricQuery`
 
 ### CURL
 
@@ -421,9 +412,7 @@ The following response body returns matches for 2 elements that contain the spec
 
 ### Request URL
 
-```
-https://app.metricly.com/metrics/fqns?{parameter}={value}
-```
+`https://app.metricly.com/metrics/fqns?{parameter}={value}`
 
 ### CURL
 
@@ -505,9 +494,7 @@ The following response body returns a list of all metricFQNs associated to the v
 
 ### Request URL
 
-```
-https://app.metricly.com/metrics/statistics?fqn={fqn}&startTime={startTime}&endTime={endTime}&rollup={rollup}&showValues={showValues}
-```
+`https://app.metricly.com/metrics/statistics?fqn={fqn}&startTime={startTime}&endTime={endTime}&rollup={rollup}&showValues={showValues}`
 
 ### CURL
 
@@ -608,10 +595,8 @@ The following response body
 
 ### Request URL
 
-```
- https://app.metricly.com/metrics/statistics?fqn={fqn}&startTime={startTime}&endTime={endTime}&rollup={rollup}&showValues={showValues}
+`https://app.metricly.com/metrics/statistics?fqn={fqn}&startTime={startTime}&endTime={endTime}&rollup={rollup}&showValues={showValues}`
 
-```
 ### CURL
 
 In the following CURL example grabs statistic on the **fqn** `aws.applicationelb.requestcountpertarget` matching two **elementIds** `["861111fd-a348-3f05-92e1-a681d7d3d9e4", "6bdf4fd1-7134-1111-9c36-17eb5f628e46"]`. The **rollup** value is PT5M.
