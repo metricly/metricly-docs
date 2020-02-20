@@ -164,7 +164,7 @@ The following response body returns datasources without elements. This example h
 
 ---
 
-## POST from /datasources
+## POST to /datasources
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/datasources/createUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to create a new datasource.
 
