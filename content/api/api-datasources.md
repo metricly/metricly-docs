@@ -428,7 +428,7 @@ The following response body  returns all **properties** and **collectors** assoc
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-|User-Agent   | header  | string  | User agent.  |
+|User-Agent   | header  | string  | User-Agent  |
 | Id  | path  | long  | Unique datasource ID.  |
 | wrapper  | body  |  JSON |  JSON template of a datasource with updates included. |
 
