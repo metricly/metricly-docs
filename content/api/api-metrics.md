@@ -599,7 +599,7 @@ The following response body
 
 ### CURL
 
-In the following CURL example grabs statistic on the **fqn** `aws.applicationelb.requestcountpertarget` matching two **elementIds** `["861111fd-a348-3f05-92e1-a681d7d3d9e4", "6bdf4fd1-7134-1111-9c36-17eb5f628e46"]`. The **rollup** value is PT5M.
+In the following CURL example, statistics are retrieved for a metric having the **fqn** `aws.applicationelb.requestcountpertarget` for two **elementIds** `["861111fd-a348-3f05-92e1-a681d7d3d9e4", "6bdf4fd1-7134-1111-9c36-17eb5f628e46"]`. The **rollup** value is PT5M.
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '["861111fd-a348-3f05-92e1-a681d7d3d9e4", "6bdf4fd1-7134-1111-9c36-17eb5f628e46"]' 'https://app.metricly.com/metrics/statistics?fqn=aws.applicationelb.requestcountpertarget&startTime=2020-02-04T00%3A25%3A46.872Z&endTime=2020-02-05T00%3A25%3A46.872Z&rollup=PT5M&showValues=false'
