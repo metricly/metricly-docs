@@ -967,23 +967,23 @@ The sample below reflects the screenshot included, ordered from left to right. T
 
 ## Create a New Dashboard Based on an Existing Dashboard
 
-There are two ways you can quickly create a dashboard: clone (POST) and update (PUT), or GET and POST.
+There are two ways you can quickly create a dashboard: clone (POST) and update (PUT), or GET and POST. This example uses the GET and POST endpoints.
 
 {{% expand "View More." %}}
 
-1. Perform a GET query to /dashboards for a list of all existing dashboards. Find an existing dashboard to use as a template and grab its **id**.
+1. Build a CURL query to **GET  /dashboards** for a list of all existing dashboards. Use this list to find an existing dashboard to use as a template and grab its **id**.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashboards'
 ```
 
-2. Build a CURL query to **GET /dashboards/{id}**, using the chosen **id**.
+2\. Build a CURL query to **GET /dashboards/{id}**, using the chosen **id**.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashboards/5d8355a2-1111-2222-bc6a-59f7689e0cf6'
 ```
 
-3. Review the response body and update **name**, layout (**gridstackContents**), **widgets**, **widgetTypes**, and **metric_fqns**.
+3\. Review the response body and update **name**, layout (**gridstackContents**), **widgets**, **widgetTypes**, and **metric_fqns**. Remember to swap out the **widgetIds** for `null`; you'll need to update those after creating the new dashboard.
 
 ```
 {
@@ -1101,7 +1101,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashbo
 }
 ```
 
-4. In this example, the dashboard is rebuilt to be a simple AWS EC2 dashboard.
+4\. In this example, the dashboard is rebuilt to be a simple AWS EC2 dashboard. The **gridstackContents** has been added to account for widget heights and widths, and  `null` values are where the **widgetIds** will go.
 
 ```
 {
@@ -1165,12 +1165,125 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashbo
 		"properties": {
 			"refreshIntervalSeconds": "300",
 			"timeRangeDuration": "3600",
-			"wrap": "true"
+			"wrap": "true",
+      "gridstackContents": "[ {\n  \"id\" : \"null\",\n  \"x\" : 0,\n  \"y\" : 9,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"null\",\n  \"x\" : 0,\n  \"y\" : 0,\n  \"width\" : 6,\n  \"height\" : 9\n}, ]"
 		},
 		"type": "DEFAULT",
 		"private": false
 	}
 }
 ```
+
+5\. Review the response body and obtain the **widgetIds**, as these are needed to make the widgets display in CloudWisdom's UI.
+
+```
+{
+  "dashboard": {
+    "id": "9021bbcb-d21d-4a7e-9f63-6e02d4152a6b",
+    "userId": 76502,
+    "name": "AWS EC2 Pretend",
+    "description": null,
+    "layout": null,
+    "creatorEmail": "mrlawrencelane+supportaccount@gmail.com",
+    "created": "2020-02-20T02:16:14Z",
+    "updated": "2020-02-20T02:16:14Z",
+    "widgets": [
+      {
+        "id": "959c1dc0-6308-4d6d-8f13-b1d60f5013d1",
+        "dashboardId": "9021bbcb-d21d-4a7e-9f63-6e02d4152a6b",
+        "userId": null,
+        "name": "Top 10 Lowest CPU Credit Balance",
+        "description": null,
+        "widgetType": "metric-range",
+        "created": "2020-02-20T02:16:14Z",
+        "updated": "2020-02-20T02:16:14Z",
+        "properties": {
+          "period": "latest1",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "visualization": "bar",
+          "colorByMetric": "false",
+          "showElementTotal": "true",
+          "useAllElementScopeTags": "true",
+          "elementScopeTypes": "[\"EC2\"]",
+          "metricLimit": "10",
+          "grouping": "attribute=SERVICE",
+          "showBands": "true",
+          "useAllMetricScopeTags": "true",
+          "showHighest": "false",
+          "metric_fqn": "aws.ec2.cpucreditbalance",
+          "groupByPolicy": "false",
+          "notificationPeriod": "off",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg",
+          "topNLimit": "5"
+        },
+        "generated": false
+      },
+      {
+        "id": "195d2e70-c641-4272-9e0d-c7fc9508ba51",
+        "dashboardId": "9021bbcb-d21d-4a7e-9f63-6e02d4152a6b",
+        "userId": null,
+        "name": "CPU Utilization",
+        "description": null,
+        "widgetType": "multi-metric",
+        "created": "2020-02-20T02:16:14Z",
+        "updated": "2020-02-20T02:16:14Z",
+        "properties": {
+          "period": "latest1",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "visualization": "line",
+          "colorByMetric": "false",
+          "showElementTotal": "true",
+          "useAllElementScopeTags": "true",
+          "elementScopeTypes": "[\"EC2\"]",
+          "metricLimit": "10",
+          "grouping": "attribute=SERVICE",
+          "showBands": "true",
+          "useAllMetricScopeTags": "true",
+          "showHighest": "true",
+          "groupByPolicy": "false",
+          "notificationPeriod": "off",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg",
+          "metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "topNLimit": "5"
+        },
+        "generated": false
+      }
+    ],
+    "properties": {
+      "refreshIntervalSeconds": "300",
+      "timeRangeDuration": "3600",
+      "wrap": "true",
+      "gridstackContents": "[ {\n  \"id\" : \"null\",\n  \"x\" : 0,\n  \"y\" : 9,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"null\",\n  \"x\" : 0,\n  \"y\" : 0,\n  \"width\" : 6,\n  \"height\" : 9\n}, ]"
+    },
+    "type": "DEFAULT",
+    "private": false
+  }
+}
+```
+
+6\. Build a CURL query to the **PUT /dashboards/{id}** endpoint that swaps the `null` values found in the **gridstackContents** with the newly generated **widgetIds**. This query must contain all of the following:
+
+- Dashboard's id
+- Dashboard's name
+- Widget IDs
+
+```
+{
+  "dashboard": {
+    "id": "9021bbcb-d21d-4a7e-9f63-6e02d4152a6b",
+    "userId": 76502,
+    "name": "AWS EC2 Pretend",
+    "properties": {
+    "gridstackContents": "[ {\n  \"id\" : \"959c1dc0-6308-4d6d-8f13-b1d60f5013d1\",\n  \"x\" : 0,\n  \"y\" : 9,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"195d2e70-c641-4272-9e0d-c7fc9508ba51\",\n  \"x\" : 0,\n  \"y\" : 0,\n  \"width\" : 6,\n  \"height\" : 9\n}, ]"
+    },
+    "type": "DEFAULT",
+    "private": true
+  }
+}
+```
+
+The dashboard and its widgets now populate in the UI. 
 
 {{% /expand %}}
