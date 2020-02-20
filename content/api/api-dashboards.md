@@ -77,6 +77,7 @@ The following response body returns all dashboards. This example has been shorte
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
+| User-Agent | header | string | User agent. |
 | dashboard | body | JSON | JSON payload that contains all dashboard instructions. |
 
 
@@ -600,6 +601,13 @@ The following response body returns the element detail dashboard for each elemen
 
 {{% expand "View Method Details." %}}
 
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|-----------|----------------------------------------------|
+| User-Agent  | header  | string  | User agent.   |
+| id | path | string | Unique ID for the dashboard. |
+
 ### Request URL
 
 `https://app.metricly.com/dashboards/{id}`
@@ -695,6 +703,7 @@ The following response body returns basic details and properties of the dashboar
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
+| User-Agent  | header  | string  | User agent.  |
 | id | path | string | Unique ID for the dashboard. |
 |dashboard   | body  | JSON  | JSON template for the dashboard.  |
 
@@ -802,6 +811,7 @@ no content
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
+| User-Agent   | header  | string   | User agent.  |
 | id | path | string | Unique ID of the dashboard. |
 | request body   | body  | JSON  |  Used to provide a new name for the dashboard. |
 
