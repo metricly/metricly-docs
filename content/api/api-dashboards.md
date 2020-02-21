@@ -707,7 +707,7 @@ The following response body returns basic details and properties of the dashboar
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| User-Agent  | header  | string  | User agent.  |
+| User-Agent  | header  | string  | User-Agent  |
 | id | path | string | Unique ID for the dashboard. |
 |dashboard   | body  | JSON  | JSON template for the dashboard.  |
 
