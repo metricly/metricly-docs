@@ -599,7 +599,7 @@ The following response body returns the element detail dashboard for each elemen
 {{% /expand %}}
 
 ---
-## DELETE from /dashboards/{id}
+## DELETE to /dashboards/{id}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/dashboards/deleteDashboardUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete a dashboard.
 
