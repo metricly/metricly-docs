@@ -941,7 +941,7 @@ The sample below reflects the screenshot included, ordered from left to right. T
 
 ## Create a New Dashboard Based on an Existing Dashboard
 
-There are two ways you can quickly create a dashboard: clone (POST) and update (PUT), or GET and POST. This example uses the GET and POST endpoints.
+There are two ways to build a dashboard: copy an existing dashboard (POST) and make an update to it (PUT), or retrieve an existing dashboard (GET) and use it as a starting point to create a new one (POST). This example uses the GET and POST endpoints.
 
 {{% expand "View More." %}}
 
