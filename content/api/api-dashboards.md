@@ -404,7 +404,7 @@ The following response body returns the created dashboard, complete with unique 
 
 ## GET from /dashboards/dashboardtype/{type}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/dashboards/getByDashboardTypeUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to get packaged dashboards specific to certain element types.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/dashboards/getByDashboardTypeUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to get dashboards specific to a certain element type.
 
 {{% expand "View Method Details." %}}
 
