@@ -77,7 +77,7 @@ The following response body returns all dashboards. This example has been shorte
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| User-Agent | header | string | User agent. |
+| User-Agent | header | string | User-Agent |
 | dashboard | body | JSON | JSON payload that contains all dashboard instructions. |
 
 
