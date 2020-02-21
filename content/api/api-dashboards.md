@@ -87,7 +87,7 @@ The following response body returns all dashboards. This example has been shorte
 
 ### CURL
 
-In the following CURL example, a dashboard with the **name** `API created dashboard` is created _from scratch_. It includes two CPU widgets and a defined **gridstackContents** layout, with placeholder values (1,2) standing in for widget IDs. Using these placeholders allows the API to link widgets with corresponding layout dimensions defined in the gridstackContents
+In the following CURL example, a dashboard with the **name** `API created dashboard` is created from scratch. It includes two CPU widgets and a defined **gridstackContents** layout, with placeholder values (1,2) standing in for widget IDs. Using these placeholders allows the API to link widgets with corresponding layout dimensions defined in the gridstackContents
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
@@ -954,120 +954,155 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashbo
 2\. Build a CURL query to **GET /dashboards/{id}**, using the chosen **id**.
 
 ```
-curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashboards/5d8355a2-1111-2222-bc6a-59f7689e0cf6'
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashboards/e7f72f9b-54c3-48e4-89d8-9e247ead3b12'
 ```
 
-3\. Review the response body and update **name**, layout (**gridstackContents**), **widgets**, **widgetTypes**, and **metric_fqns**. Remember to swap out the **widgetIds** for `null`; you'll need to update those after creating the new dashboard.
+3\. Review the response body and make changes as needed. Note that you do not have to remove or update the IDs, as they will get converted to new unque IDs for both the dashboard and its widgets. You only need to change the dashboard name and widget details such as **widgetType**, **metrics**, etc.
 
 ```
 {
   "dashboard": {
-    "id": "5d8355a2-1111-2222-bc6a-59f7689e0cf6",
-    "userId": null,
-    "name": "AWS ASG Summary",
+    "id": "e7f72f9b-54c3-48e4-89d8-9e247ead3b12",
+    "userId": 24765,
+    "name": "Page Views",
     "description": null,
     "layout": null,
-    "creatorEmail": "research@netuitive.com",
-    "created": "2018-09-20T21:47:39Z",
-    "updated": "2019-03-13T20:15:48Z",
+    "creatorEmail": "support-testing@netuitive.com",
+    "created": "2017-02-02T04:23:27Z",
+    "updated": "2017-05-25T00:46:12Z",
     "widgets": [
       {
-        "id": "b485aa21-515a-3522-9193-1e5c7e95f9bd",
-        "dashboardId": "5d8355a2-1111-2222-bc6a-59f7689e0cf6",
-        "userId": 0,
-        "name": "Highest CPU Utilization",
+        "id": "2c9afda3-3ee8-4dbd-8ffe-a23710a72520",
+        "dashboardId": "e7f72f9b-54c3-48e4-89d8-9e247ead3b12",
+        "userId": 24765,
+        "name": "All Page Views Avg",
         "description": null,
-        "widgetType": "metric-range",
-        "created": "2019-03-13T20:15:48Z",
-        "updated": "2019-03-13T20:15:48Z",
+        "widgetType": "multi-metric-time-series",
+        "created": "2017-02-02T05:10:18Z",
+        "updated": "2017-02-02T05:10:18Z",
         "properties": {
-          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-          "visualization": "bar",
           "showElementTotal": "true",
-          "useAllElementScopeTags": "true",
-          "elementScopeTypes": "[\"ASG\"]",
-          "metricLimit": "5",
-          "useAllMetricScopeTags": "true",
-          "metricUnit": "percent",
-          "showHighest": "true",
-          "metric_fqn": "aws.ec2.cpuutilization",
-          "useAllElementScopeAttributes": "true",
-          "metricAgg": "avg"
-        },
-        "generated": false
-      },
-      {
-        "id": "f33caacd-6db5-3378-84c9-cd9f63551237",
-        "dashboardId": "5d8355a2-1111-2222-bc6a-59f7689e0cf6",
-        "userId": 0,
-        "name": "ASG Network In",
-        "description": null,
-        "widgetType": "high-low-metric",
-        "created": "2019-03-13T20:15:48Z",
-        "updated": "2019-03-13T20:15:48Z",
-        "properties": {
-          "showHighest": "true",
-          "metric_fqn": "aws.ec2.networkin",
-          "showElementTotal": "true",
+          "selectedAttributes": "[]",
+          "elementScopeTags": "[]",
           "useElementNameContains": "true",
-          "width": "auto",
-          "elementScopeTypes": "[\"ASG\"]",
-          "metricLimit": "5",
-          "selectedTab": "graph"
-        },
-        "generated": false
-      },
-      {
-        "id": "496494d8-acd8-34ce-b6b3-bcf185805969",
-        "dashboardId": "5d8355a2-1111-2222-bc6a-59f7689e0cf6",
-        "userId": 0,
-        "name": "ASG Network Out",
-        "description": null,
-        "widgetType": "high-low-metric",
-        "created": "2019-03-13T20:15:48Z",
-        "updated": "2019-03-13T20:15:48Z",
-        "properties": {
-          "showHighest": "true",
-          "metric_fqn": "aws.ec2.networkout",
-          "showElementTotal": "true",
-          "useElementNameContains": "true",
-          "width": "auto",
-          "elementScopeTypes": "[\"ASG\"]",
-          "metricLimit": "5",
-          "selectedTab": "graph"
-        },
-        "generated": false
-      },
-      {
-        "id": "ea0a21a9-5638-3c36-be5b-f8f23b8c0438",
-        "dashboardId": "5d8355a2-1111-2222-bc6a-59f7689e0cf6",
-        "userId": 0,
-        "name": "ASG Events",
-        "description": null,
-        "widgetType": "events",
-        "created": "2019-03-13T20:15:48Z",
-        "updated": "2019-03-13T20:15:48Z",
-        "properties": {
-          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-          "visualization": "summary heat map",
-          "showHighest": "true",
-          "showElementTotal": "true",
-          "useAllElementScopeAttributes": "true",
           "useAllElementScopeTags": "true",
-          "elementScopeTypes": "[\"ASG\"]",
-          "metricAgg": "avg",
+          "elementScopeTypes": "[]",
           "metricLimit": "10",
-          "metrics": "[{\"fqn\":null,\"useRegex\":false,\"aggFns\":[]}]",
-          "useAllMetricScopeTags": "true"
+          "useAllMetricScopeTags": "true",
+          "showArea": "false",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "elementScopeAttributes": "[]",
+          "showHighest": "true",
+          "metricScopeTags": "[]",
+          "width": "auto",
+          "metrics": "[{\"fqn\":\"customwinmetrics.pageviews.page1.count\",\"aggFns\":[\"avg\"]},{\"fqn\":\"pageviews.page1.count\",\"aggFns\":[\"avg\"]}]",
+          "selectedTab": "table"
+        },
+        "generated": false
+      },
+      {
+        "id": "08d332f3-a036-4506-8329-1bf8c4b6180e",
+        "dashboardId": "e7f72f9b-54c3-48e4-89d8-9e247ead3b12",
+        "userId": 24765,
+        "name": "Page Views",
+        "description": null,
+        "widgetType": "metric-time-series",
+        "created": "2017-02-02T04:24:22Z",
+        "updated": "2017-02-02T05:16:58Z",
+        "properties": {
+          "showElementTotal": "true",
+          "selectedAttributes": "[]",
+          "elementScopeTags": "[]",
+          "useElementNameContains": "true",
+          "useAllElementScopeTags": "true",
+          "element_id": "f736c76f-a7ab-3d9c-b88c-55591e1decea",
+          "elementScopeTypes": "[]",
+          "metricLimit": "10",
+          "useAllMetricScopeTags": "true",
+          "element_fqn": "customwinmetrics",
+          "showArea": "false",
+          "metricAggs": "[\"sum\"]",
+          "elementScopeIds": "[]",
+          "elementScopeAttributes": "[]",
+          "showHighest": "true",
+          "metric_fqn": "customwinmetrics.pageviews.page1.count",
+          "metricScopeTags": "[]",
+          "width": "medium",
+          "metrics": "[]",
+          "selectedTab": "table"
+        },
+        "generated": false
+      },
+      {
+        "id": "711b47e7-0de7-4e8e-a755-9ff718eab486",
+        "dashboardId": "e7f72f9b-54c3-48e4-89d8-9e247ead3b12",
+        "userId": 24765,
+        "name": "Total Page Views",
+        "description": null,
+        "widgetType": "metric-agg",
+        "created": "2017-02-02T04:25:16Z",
+        "updated": "2017-02-02T05:14:20Z",
+        "properties": {
+          "showElementTotal": "true",
+          "selectedAttributes": "[]",
+          "elementScopeTags": "[]",
+          "useElementNameContains": "true",
+          "useAllElementScopeTags": "true",
+          "element_id": "f736c76f-a7ab-3d9c-b88c-55591e1decea",
+          "elementScopeTypes": "[]",
+          "metricLimit": "10",
+          "useAllMetricScopeTags": "true",
+          "element_fqn": "customwinmetrics",
+          "showArea": "false",
+          "metricAggs": "[\"sum\"]",
+          "elementScopeIds": "[]",
+          "elementScopeAttributes": "[]",
+          "showHighest": "true",
+          "metric_fqn": "customwinmetrics.pageviews.page1.count",
+          "metricScopeTags": "[]",
+          "width": "medium",
+          "metrics": "[]",
+          "selectedTab": "table"
+        },
+        "generated": false
+      },
+      {
+        "id": "78eaeefc-e487-40cd-bc71-9f1eb594beaa",
+        "dashboardId": "e7f72f9b-54c3-48e4-89d8-9e247ead3b12",
+        "userId": 24765,
+        "name": "Avg Page Views",
+        "description": null,
+        "widgetType": "stacked-area",
+        "created": "2017-02-02T05:02:20Z",
+        "updated": "2017-02-02T05:12:32Z",
+        "properties": {
+          "showElementTotal": "true",
+          "selectedAttributes": "[]",
+          "elementScopeTags": "[]",
+          "useElementNameContains": "true",
+          "useAllElementScopeTags": "true",
+          "elementScopeTypes": "[]",
+          "metricLimit": "10",
+          "useAllMetricScopeTags": "true",
+          "showArea": "false",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "elementScopeAttributes": "[]",
+          "showHighest": "true",
+          "metricScopeTags": "[]",
+          "width": "auto",
+          "metrics": "[{\"fqn\":\"customwinmetrics.pageviews.page1.count\",\"aggFns\":[]}]",
+          "selectedTab": "table"
         },
         "generated": false
       }
     ],
     "properties": {
       "refreshIntervalSeconds": "300",
-      "timeRangeDuration": "3600",
+      "timeRangeDuration": "86400",
       "wrap": "true",
-      "gridstackContents": "[ {\n  \"id\" : \"f33caacd-6db5-3378-84c9-cd9f63551237\",\n  \"x\" : 0,\n  \"y\" : 9,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"b485aa21-515a-3522-9193-1e5c7e95f9bd\",\n  \"x\" : 0,\n  \"y\" : 0,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"496494d8-acd8-34ce-b6b3-bcf185805969\",\n  \"x\" : 6,\n  \"y\" : 9,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"ea0a21a9-5638-3c36-be5b-f8f23b8c0438\",\n  \"x\" : 6,\n  \"y\" : 0,\n  \"width\" : 6,\n  \"height\" : 9\n} ]"
+      "gridstackContents": "[{\"id\":\"08d332f3-a036-4506-8329-1bf8c4b6180e\",\"width\":4,\"height\":9,\"x\":0,\"y\":0},{\"id\":\"711b47e7-0de7-4e8e-a755-9ff718eab486\",\"width\":4,\"height\":9,\"x\":4,\"y\":0},{\"id\":\"78eaeefc-e487-40cd-bc71-9f1eb594beaa\",\"width\":4,\"height\":9,\"x\":8,\"y\":0},{\"id\":\"2c9afda3-3ee8-4dbd-8ffe-a23710a72520\",\"width\":12,\"height\":9,\"x\":0,\"y\":9}]"
     },
     "type": "DEFAULT",
     "private": false
@@ -1075,200 +1110,181 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashbo
 }
 ```
 
-4\. In this example, the dashboard is rebuilt to be a simple AWS EC2 dashboard. The **gridstackContents** has been added to account for widget heights and widths, and  `null` values are where the **widgetIds** will go.
+4\. In this example, we're going to rename the dashboard and use only the first two widgets to create a simplified dashboard. Build a CURL query to submit to **POST /dashboards**.
+
+```curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "dashboard": { \
+     "id": "e7f72f9b-54c3-48e4-89d8-9e247ead3b12", \
+     "userId": 24765, \
+     "name": "Page Views Simplified", \
+     "description": null, \
+     "layout": null, \
+     "creatorEmail": "support-testing%40netuitive.com", \
+     "created": "2017-02-02T04:23:27Z", \
+     "updated": "2017-05-25T00:46:12Z", \
+     "widgets": [ \
+       { \
+         "id": "2c9afda3-3ee8-4dbd-8ffe-a23710a72520", \
+         "dashboardId": "e7f72f9b-54c3-48e4-89d8-9e247ead3b12", \
+         "userId": 24765, \
+         "name": "All Page Views Avg", \
+         "description": null, \
+         "widgetType": "multi-metric-time-series", \
+         "created": "2017-02-02T05:10:18Z", \
+         "updated": "2017-02-02T05:10:18Z", \
+         "properties": { \
+           "showElementTotal": "true", \
+           "selectedAttributes": "[]", \
+           "elementScopeTags": "[]", \
+           "useElementNameContains": "true", \
+           "useAllElementScopeTags": "true", \
+           "elementScopeTypes": "[]", \
+           "metricLimit": "10", \
+           "useAllMetricScopeTags": "true", \
+           "showArea": "false", \
+           "metricAggs": "[]", \
+           "elementScopeIds": "[]", \
+           "elementScopeAttributes": "[]", \
+           "showHighest": "true", \
+           "metricScopeTags": "[]", \
+           "width": "auto", \
+           "metrics": "[{\"fqn\":\"customwinmetrics.pageviews.page1.count\",\"aggFns\":[\"avg\"]},{\"fqn\":\"pageviews.page1.count\",\"aggFns\":[\"avg\"]}]", \
+           "selectedTab": "table" \
+         }, \
+         "generated": false \
+       }, \
+       { \
+         "id": "08d332f3-a036-4506-8329-1bf8c4b6180e", \
+         "dashboardId": "e7f72f9b-54c3-48e4-89d8-9e247ead3b12", \
+         "userId": 24765, \
+         "name": "Page Views", \
+         "description": null, \
+         "widgetType": "metric-time-series", \
+         "created": "2017-02-02T04:24:22Z", \
+         "updated": "2017-02-02T05:16:58Z", \
+         "properties": { \
+           "showElementTotal": "true", \
+           "selectedAttributes": "[]", \
+           "elementScopeTags": "[]", \
+           "useElementNameContains": "true", \
+           "useAllElementScopeTags": "true", \
+           "element_id": "f736c76f-a7ab-3d9c-b88c-55591e1decea", \
+           "elementScopeTypes": "[]", \
+           "metricLimit": "10", \
+           "useAllMetricScopeTags": "true", \
+           "element_fqn": "customwinmetrics", \
+           "showArea": "false", \
+           "metricAggs": "[\"sum\"]", \
+           "elementScopeIds": "[]", \
+           "elementScopeAttributes": "[]", \
+           "showHighest": "true", \
+           "metric_fqn": "customwinmetrics.pageviews.page1.count", \
+           "metricScopeTags": "[]", \
+           "width": "medium", \
+           "metrics": "[]", \
+           "selectedTab": "table" \
+         }, \
+         "generated": false \
+       } \
+     ], \
+     "properties": { \
+       "refreshIntervalSeconds": "300", \
+       "timeRangeDuration": "86400", \
+       "wrap": "true", \
+       "gridstackContents": "[{\"id\":\"08d332f3-a036-4506-8329-1bf8c4b6180e\",\"width\":4,\"height\":9,\"x\":0,\"y\":0},{\"id\":\"711b47e7-0de7-4e8e-a755-9ff718eab486\",\"width\":4,\"height\":9,\"x\":4,\"y\":0}]" \
+     }, \
+     "type": "DEFAULT", \
+     "private": false \
+   } \
+ }' 'https://app.metricly.com/dashboards'
 
 ```
-{
-	"dashboard": {
-		"name": "AWS EC2 pretend",
-		"description": null,
-		"layout": null,
-		"widgets": [{
-				"name": "Top 10 Lowest CPU Credit Balance",
-				"description": null,
-				"widgetType": "metric-range",
-				"properties": {
-					"period": "latest1",
-					"tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
-					"visualization": "bar",
-					"colorByMetric": "false",
-					"showElementTotal": "true",
-					"useAllElementScopeTags": "true",
-					"elementScopeTypes": "[\"EC2\"]",
-					"metricLimit": "10",
-					"grouping": "attribute=SERVICE",
-					"showBands": "true",
-					"useAllMetricScopeTags": "true",
-					"showHighest": "false",
-					"metric_fqn": "aws.ec2.cpucreditbalance",
-					"groupByPolicy": "false",
-					"notificationPeriod": "off",
-					"useAllElementScopeAttributes": "true",
-					"metricAgg": "avg",
-					"topNLimit": "5"
-				},
-				"generated": false
-			},
-			{
-				"name": "CPU Utilization",
-				"description": null,
-				"widgetType": "multi-metric",
-				"properties": {
-					"period": "latest1",
-					"tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
-					"visualization": "line",
-					"colorByMetric": "false",
-					"showElementTotal": "true",
-					"useAllElementScopeTags": "true",
-					"elementScopeTypes": "[\"EC2\"]",
-					"metricLimit": "10",
-					"grouping": "attribute=SERVICE",
-					"showBands": "true",
-					"useAllMetricScopeTags": "true",
-					"showHighest": "true",
-					"groupByPolicy": "false",
-					"notificationPeriod": "off",
-					"useAllElementScopeAttributes": "true",
-					"metricAgg": "avg",
-					"metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
-					"topNLimit": "5"
-				},
-				"generated": false
-			}
-		],
-		"properties": {
-			"refreshIntervalSeconds": "300",
-			"timeRangeDuration": "3600",
-			"wrap": "true",
-      "gridstackContents": "[ {\n  \"id\" : \"null\",\n  \"x\" : 0,\n  \"y\" : 9,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"null\",\n  \"x\" : 0,\n  \"y\" : 0,\n  \"width\" : 6,\n  \"height\" : 9\n}, ]"
-		},
-		"type": "DEFAULT",
-		"private": false
-	}
-}
-```
-
-5\. Review the response body and obtain the **widgetIds**, as these are needed to make the widgets display in CloudWisdom's UI.
+5\. Review the response body to see that your new dashboard has been created.
 
 ```
 {
   "dashboard": {
-    "id": "9021bbcb-d21d-4a7e-9f63-6e02d4152a6b",
+    "id": "5b04470b-bd8f-4235-82da-9926dbf3c50b",
     "userId": 76502,
-    "name": "AWS EC2 Pretend",
+    "name": "Page Views Simplified",
     "description": null,
     "layout": null,
     "creatorEmail": "mrlawrencelane+supportaccount@gmail.com",
-    "created": "2020-02-20T02:16:14Z",
-    "updated": "2020-02-20T02:16:14Z",
+    "created": "2020-02-21T04:01:13Z",
+    "updated": "2020-02-21T04:01:13Z",
     "widgets": [
       {
-        "id": "959c1dc0-6308-4d6d-8f13-b1d60f5013d1",
-        "dashboardId": "9021bbcb-d21d-4a7e-9f63-6e02d4152a6b",
-        "userId": null,
-        "name": "Top 10 Lowest CPU Credit Balance",
+        "id": "5577c252-9bb3-44cb-8e38-6325a115c388",
+        "dashboardId": "5b04470b-bd8f-4235-82da-9926dbf3c50b",
+        "userId": 24765,
+        "name": "All Page Views Avg",
         "description": null,
-        "widgetType": "metric-range",
-        "created": "2020-02-20T02:16:14Z",
-        "updated": "2020-02-20T02:16:14Z",
+        "widgetType": "multi-metric-time-series",
+        "created": "2020-02-21T04:01:13Z",
+        "updated": "2020-02-21T04:01:13Z",
         "properties": {
-          "period": "latest1",
-          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
-          "visualization": "bar",
-          "colorByMetric": "false",
           "showElementTotal": "true",
+          "selectedAttributes": "[]",
+          "elementScopeTags": "[]",
+          "useElementNameContains": "true",
           "useAllElementScopeTags": "true",
-          "elementScopeTypes": "[\"EC2\"]",
+          "elementScopeTypes": "[]",
           "metricLimit": "10",
-          "grouping": "attribute=SERVICE",
-          "showBands": "true",
           "useAllMetricScopeTags": "true",
-          "showHighest": "false",
-          "metric_fqn": "aws.ec2.cpucreditbalance",
-          "groupByPolicy": "false",
-          "notificationPeriod": "off",
-          "useAllElementScopeAttributes": "true",
-          "metricAgg": "avg",
-          "topNLimit": "5"
+          "showArea": "false",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "elementScopeAttributes": "[]",
+          "showHighest": "true",
+          "metricScopeTags": "[]",
+          "width": "auto",
+          "metrics": "[{\"fqn\":\"customwinmetrics.pageviews.page1.count\",\"aggFns\":[\"avg\"]},{\"fqn\":\"pageviews.page1.count\",\"aggFns\":[\"avg\"]}]",
+          "selectedTab": "table"
         },
         "generated": false
       },
       {
-        "id": "195d2e70-c641-4272-9e0d-c7fc9508ba51",
-        "dashboardId": "9021bbcb-d21d-4a7e-9f63-6e02d4152a6b",
-        "userId": null,
-        "name": "CPU Utilization",
+        "id": "19525b84-8a5f-4c90-9007-457bce6c25d3",
+        "dashboardId": "5b04470b-bd8f-4235-82da-9926dbf3c50b",
+        "userId": 24765,
+        "name": "Page Views",
         "description": null,
-        "widgetType": "multi-metric",
-        "created": "2020-02-20T02:16:14Z",
-        "updated": "2020-02-20T02:16:14Z",
+        "widgetType": "metric-time-series",
+        "created": "2020-02-21T04:01:13Z",
+        "updated": "2020-02-21T04:01:13Z",
         "properties": {
-          "period": "latest1",
-          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
-          "visualization": "line",
-          "colorByMetric": "false",
           "showElementTotal": "true",
+          "selectedAttributes": "[]",
+          "elementScopeTags": "[]",
+          "useElementNameContains": "true",
           "useAllElementScopeTags": "true",
-          "elementScopeTypes": "[\"EC2\"]",
+          "element_id": "f736c76f-a7ab-3d9c-b88c-55591e1decea",
+          "elementScopeTypes": "[]",
           "metricLimit": "10",
-          "grouping": "attribute=SERVICE",
-          "showBands": "true",
           "useAllMetricScopeTags": "true",
+          "element_fqn": "customwinmetrics",
+          "showArea": "false",
+          "metricAggs": "[\"sum\"]",
+          "elementScopeIds": "[]",
+          "elementScopeAttributes": "[]",
           "showHighest": "true",
-          "groupByPolicy": "false",
-          "notificationPeriod": "off",
-          "useAllElementScopeAttributes": "true",
-          "metricAgg": "avg",
-          "metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
-          "topNLimit": "5"
+          "metric_fqn": "customwinmetrics.pageviews.page1.count",
+          "metricScopeTags": "[]",
+          "width": "medium",
+          "metrics": "[]",
+          "selectedTab": "table"
         },
         "generated": false
       }
     ],
     "properties": {
       "refreshIntervalSeconds": "300",
-      "timeRangeDuration": "3600",
+      "timeRangeDuration": "86400",
       "wrap": "true",
-      "gridstackContents": "[ {\n  \"id\" : \"null\",\n  \"x\" : 0,\n  \"y\" : 9,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"null\",\n  \"x\" : 0,\n  \"y\" : 0,\n  \"width\" : 6,\n  \"height\" : 9\n}, ]"
+      "gridstackContents": "[ {\n  \"id\" : \"19525b84-8a5f-4c90-9007-457bce6c25d3\",\n  \"x\" : 0,\n  \"y\" : 0,\n  \"width\" : 4,\n  \"height\" : 9\n}, {\n  \"id\" : null,\n  \"x\" : 4,\n  \"y\" : 0,\n  \"width\" : 4,\n  \"height\" : 9\n} ]"
     },
     "type": "DEFAULT",
     "private": false
-  }
-}
-```
-
-6\. Build a CURL query to the **PUT /dashboards/{id}** endpoint that swaps the `null` values found in the **gridstackContents** with the newly generated **widgetIds**. This query must contain all of the following:
-
-- Dashboard's id
-- Dashboard's name
-- Widget IDs
-
-```
-curl -X PUT --header 'Content-Type: application/json' --header 'Accept: */*' --header 'User-Agent: none' -d '{ \
-   "dashboard": { \
-     "id": "9021bbcb-d21d-4a7e-9f63-6e02d4152a6b", \
-     "userId": 76502, \
-     "name": "AWS EC2 Pretend", \
-     "properties": { \
-     "gridstackContents": "[ {\n  \"id\" : \"959c1dc0-6308-4d6d-8f13-b1d60f5013d1\",\n  \"x\" : 0,\n  \"y\" : 9,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"195d2e70-c641-4272-9e0d-c7fc9508ba51\",\n  \"x\" : 0,\n  \"y\" : 0,\n  \"width\" : 6,\n  \"height\" : 9\n}, ]" \
-     }, \
-     "type": "DEFAULT", \
-     "private": true \
-   } \
- }' 'https://app.metricly.com/dashboards/9021bbcb-d21d-4a7e-9f63-6e02d4152a6b'
-```
-
-```
-{
-  "dashboard": {
-    "id": "9021bbcb-d21d-4a7e-9f63-6e02d4152a6b",
-    "userId": 76502,
-    "name": "AWS EC2 Pretend",
-    "properties": {
-    "gridstackContents": "[ {\n  \"id\" : \"959c1dc0-6308-4d6d-8f13-b1d60f5013d1\",\n  \"x\" : 0,\n  \"y\" : 9,\n  \"width\" : 6,\n  \"height\" : 9\n}, {\n  \"id\" : \"195d2e70-c641-4272-9e0d-c7fc9508ba51\",\n  \"x\" : 0,\n  \"y\" : 0,\n  \"width\" : 6,\n  \"height\" : 9\n}, ]"
-    },
-    "type": "DEFAULT",
-    "private": true
   }
 }
 ```
