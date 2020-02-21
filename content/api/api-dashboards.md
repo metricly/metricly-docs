@@ -609,7 +609,7 @@ The following response body returns the element detail dashboard for each elemen
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| User-Agent  | header  | string  | User agent.   |
+| User-Agent  | header  | string  | User-Agent  |
 | id | path | string | Unique ID for the dashboard. |
 
 ### Request URL
