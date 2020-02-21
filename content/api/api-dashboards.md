@@ -187,7 +187,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ### Swagger Payload
 
-Use the following payload to test this POST method on Swagger.
+Use the following payload to test this POST method in Swagger.
 
 ```
 {
