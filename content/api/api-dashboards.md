@@ -73,11 +73,6 @@ The following response body returns all dashboards. This example has been shorte
 
 {{% expand "View Method Details." %}}
 
-{{% notice tip %}}
-
-Creating a dashboard with new widgets is a two step process. Once you have created your dashboard using this endpoint, take the new unique widget IDs found in the response body and use the PUT endpoint to update the dashboard's gridstackContents with the correct IDs.
-{{% /notice %}}
-
 ### Parameters
 
 | Parameter | Parameter Type | Data Type | Description |
@@ -92,7 +87,7 @@ Creating a dashboard with new widgets is a two step process. Once you have creat
 
 ### CURL
 
-In the following CURL example, a dashboard with the **name** `API created dashboard` is created. It includes two CPU widgets and a defined **gridstackContents** layout, with placeholder `null` values standing in for widget IDs.
+In the following CURL example, a dashboard with the **name** `API created dashboard` is created _from scratch_. It includes two CPU widgets and a defined **gridstackContents** layout, with placeholder values (1,2) standing in for widget IDs. Using these placeholders allows the API to link widgets with corresponding layout dimensions defined in the gridstackContents
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
@@ -102,6 +97,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
      "layout": null, \
      "widgets": [ \
        { \
+         "id": "1",\
          "name": "Windows EC2 CPU", \
          "description": null, \
          "widgetType": "multi-metric", \
@@ -138,6 +134,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
          "generated": false \
        }, \
        { \
+         "id": "2",\
          "name": "Linux EC2 CPU", \
          "description": null, \
          "widgetType": "multi-metric", \
@@ -177,7 +174,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
      "properties": { \
        "timeRangeDuration": "3600", \
        "costOnly": "false", \
-       "gridstackContents": "[{\"id\":\"null\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"null\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]", \
+       "gridstackContents": "[{\"id\":\"1\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"2\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]", \
        "refreshIntervalSeconds": "300", \
        "globalFilter": "false", \
        "wrap": "true" \
@@ -195,11 +192,12 @@ Use the following payload to test this POST method on Swagger.
 ```
 {
   "dashboard": {
-    "name": "API created dashboard 2",
+    "name": "API created dashboard",
     "description": null,
     "layout": null,
     "widgets": [
       {
+        "id": "1",
         "name": "Windows EC2 CPU",
         "description": null,
         "widgetType": "multi-metric",
@@ -236,6 +234,7 @@ Use the following payload to test this POST method on Swagger.
         "generated": false
       },
       {
+        "id": "2",
         "name": "Linux EC2 CPU",
         "description": null,
         "widgetType": "multi-metric",
@@ -275,7 +274,7 @@ Use the following payload to test this POST method on Swagger.
     "properties": {
       "timeRangeDuration": "3600",
       "costOnly": "false",
-      "gridstackContents": "[{\"id\":\"null\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"null\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]",
+      "gridstackContents": "[{\"id\":\"1\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"2\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]",
       "refreshIntervalSeconds": "300",
       "globalFilter": "false",
       "wrap": "true"
@@ -288,29 +287,29 @@ Use the following payload to test this POST method on Swagger.
 
 ### Response Body
 
-The following response body returns the created dashboard, complete with unique **ids** for the dashboard and its widgets. **Now you must use the new widget IDs.** Add them to the dashboard template through the PUT endpoint, swapping out the `null` **gridstackContents** values.
+The following response body returns the created dashboard, complete with unique **ids** for the dashboard and its widgets. Notice that the placeholder values (1,2) have been replaced in the gridstackContents with the newly generated widget IDs.
 
 ```
 {
   "dashboard": {
-    "id": "466a6920-9595-48e4-b791-53a20e1f8ceb",
+    "id": "ff6d185e-3f40-4872-a13e-ae0b8bb7e599",
     "userId": 76502,
-    "name": "API created dashboard 2",
+    "name": "API created dashboard",
     "description": null,
     "layout": null,
     "creatorEmail": "mrlawrencelane+supportaccount@gmail.com",
-    "created": "2020-02-16T01:54:20Z",
-    "updated": "2020-02-16T01:54:20Z",
+    "created": "2020-02-21T03:45:51Z",
+    "updated": "2020-02-21T03:45:51Z",
     "widgets": [
       {
-        "id": "9dde7129-0e08-415f-bf5c-d0b67f7e3dd0",
-        "dashboardId": "466a6920-9595-48e4-b791-53a20e1f8ceb",
+        "id": "8c7e11c0-b88c-4393-91a6-20ca053935ec",
+        "dashboardId": "ff6d185e-3f40-4872-a13e-ae0b8bb7e599",
         "userId": null,
         "name": "Windows EC2 CPU",
         "description": null,
         "widgetType": "multi-metric",
-        "created": "2020-02-16T01:54:20Z",
-        "updated": "2020-02-16T01:54:20Z",
+        "created": "2020-02-21T03:45:51Z",
+        "updated": "2020-02-21T03:45:51Z",
         "properties": {
           "visualization": "line",
           "showElementTotal": "true",
@@ -344,14 +343,14 @@ The following response body returns the created dashboard, complete with unique 
         "generated": false
       },
       {
-        "id": "844b8bec-80db-4133-83ad-b546cb978285",
-        "dashboardId": "466a6920-9595-48e4-b791-53a20e1f8ceb",
+        "id": "eb98c261-a3dd-4961-9628-fccc191fb846",
+        "dashboardId": "ff6d185e-3f40-4872-a13e-ae0b8bb7e599",
         "userId": null,
         "name": "Linux EC2 CPU",
         "description": null,
         "widgetType": "multi-metric",
-        "created": "2020-02-16T01:54:20Z",
-        "updated": "2020-02-16T01:54:20Z",
+        "created": "2020-02-21T03:45:51Z",
+        "updated": "2020-02-21T03:45:51Z",
         "properties": {
           "visualization": "line",
           "showElementTotal": "true",
@@ -388,7 +387,7 @@ The following response body returns the created dashboard, complete with unique 
     "properties": {
       "timeRangeDuration": "3600",
       "costOnly": "false",
-      "gridstackContents": "[{\"id\":\"null\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"null\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]",
+      "gridstackContents": "[ {\n  \"id\" : \"8c7e11c0-b88c-4393-91a6-20ca053935ec\",\n  \"x\" : 0,\n  \"y\" : 0,\n  \"width\" : 12,\n  \"height\" : 9\n}, {\n  \"id\" : \"eb98c261-a3dd-4961-9628-fccc191fb846\",\n  \"x\" : 0,\n  \"y\" : 9,\n  \"width\" : 12,\n  \"height\" : 10\n} ]",
       "refreshIntervalSeconds": "300",
       "globalFilter": "false",
       "wrap": "true"
@@ -398,31 +397,6 @@ The following response body returns the created dashboard, complete with unique 
   }
 }
 ```
-
-### Required Widget ID Update
-
-The following JSON updates the dashboard created to include the widget IDs inside the **gridstackContents** properties.
-
-```
-{
-  "dashboard": {
-    "id": "466a6920-9595-48e4-b791-53a20e1f8ceb",
-    "userId": 76502,
-    "name": "API created dashboard 2",
-    "properties": {
-      "timeRangeDuration": "3600",
-      "costOnly": "false",
-      "gridstackContents": "[{\"id\":\"844b8bec-80db-4133-83ad-b546cb978285\",\"x\":0,\"y\":0,\"width\":12,\"height\":9},{\"id\":\"9dde7129-0e08-415f-bf5c-d0b67f7e3dd0\",\"x\":0,\"y\":9,\"width\":12,\"height\":10}]",
-      "refreshIntervalSeconds": "300",
-      "globalFilter": "false",
-      "wrap": "true"
-    },
-    "type": "DEFAULT",
-    "private": true
-  }
-}
-```
-
 
 {{% /expand %}}
 
