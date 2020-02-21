@@ -815,7 +815,7 @@ no content
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|-----------|----------------------------------------------|
-| User-Agent   | header  | string   | User agent.  |
+| User-Agent   | header  | string   | User-Agent |
 | id | path | string | Unique ID of the dashboard. |
 | request body   | body  | JSON  |  Used to provide a new name for the dashboard. |
 
