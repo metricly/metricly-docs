@@ -1,5 +1,5 @@
 ---
-title: "Dashboard API"
+title: "Dashboards API"
 draft: false
 categories:
 tags: ["#api",]
@@ -699,7 +699,7 @@ The following response body returns basic details and properties of the dashboar
 ---
 ## PUT to /dashboards/{id}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/dashboards/getSingleUsingGET" theme="warning" >}} PUT {{< /button >}} Use this endpoint to update a dashboard's settings.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/dashboards/updateDashboardUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to update a dashboard's settings.
 
 {{% expand "View Method Details." %}}
 
@@ -723,6 +723,79 @@ In the following CURL example, the **name** of the dashboard is updated.
 {{% notice tip %}}
 Use the GET method from /dashboards/{id} to obtain the full dashboard and resubmit an updated version to this endpoint.
 {{% /notice %}}
+
+```
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \ 
+   "dashboard": { \ 
+     "id": "6240d033-1111-2222-4444-a301d3b33aba", \ 
+     "userId": 76502, \ 
+     "name": "renamed-dashboard", \ 
+     "description": null, \ 
+     "layout": null, \ 
+     "creatorEmail": "supportaccount%40gmail.com", \ 
+     "created": "2020-02-15T23:01:56Z", \ 
+     "updated": "2020-02-15T23:03:42Z", \ 
+     "widgets": [ \ 
+       { \ 
+         "id": "c63f2aad-7167-45fd-97cf-149ffe29ba6a", \ 
+         "dashboardId": "6240d033-c887-4b70-8264-a301d3b33aba", \ 
+         "userId": 76502, \ 
+         "name": "satur", \ 
+         "description": null, \ 
+         "widgetType": "single-metric", \ 
+         "created": "2020-02-15T23:02:44Z", \ 
+         "updated": "2020-02-15T23:02:44Z", \ 
+         "properties": { \ 
+           "visualization": "chart", \ 
+           "showElementTotal": "true", \ 
+           "elementScopeTags": "[]", \ 
+           "policies": "[]", \ 
+           "useAllElementScopeTags": "true", \ 
+           "metricLimit": "10", \ 
+           "showBands": "true", \ 
+           "elementScopeAttributes": "[]", \ 
+           "elementScopeExcludedAttributes": "[]", \ 
+           "showHighest": "true", \ 
+           "metric_fqn": "netuitive.aws.ebs.iopsutilization", \ 
+           "categories": "[]", \ 
+           "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]", \ 
+           "period": "latest1", \ 
+           "colorByMetric": "false", \ 
+           "elementScopeTypes": "[\"EBS\"]", \ 
+           "excludedElementScopeFqns": "[]", \ 
+           "grouping": "attribute=SERVICE", \ 
+           "useAllMetricScopeTags": "true", \ 
+           "element_fqn": "502379301106:EBS:us-east-1:vol-b994f056", \ 
+           "metricAggs": "[]", \ 
+           "elementScopeIds": "[]", \ 
+           "metricScopeTags": "[]", \ 
+           "groupByPolicy": "false", \ 
+           "useAllElementScopeAttributes": "true", \ 
+           "metricAgg": "avg", \ 
+           "metrics": "[]", \ 
+           "topNLimit": "5", \ 
+           "elementScopeExcludedTags": "[]" \ 
+         }, \ 
+         "generated": false \ 
+       } \ 
+     ], \ 
+     "properties": { \ 
+       "timeRangeDuration": "3600", \ 
+       "costOnly": "false", \ 
+       "gridstackContents": "[{\"id\":\"c63f2aad-7167-45fd-97cf-149ffe29ba6a\",\"width\":4,\"height\":7,\"x\":0,\"y\":0}]", \ 
+       "refreshIntervalSeconds": "300", \ 
+       "globalFilter": "false", \ 
+       "wrap": "true" \ 
+     }, \ 
+     "type": "DEFAULT", \ 
+     "private": false \ 
+   } \ 
+ }' 'https://app.metricly.com/dashboards/6240d033-1111-2222-4444-a301d3b33aba'
+```
+
+### Swagger Payload
+
+Use the following payload to test this PUT method in Swagger.
 
 ```
 {
@@ -834,6 +907,15 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
  }' 'https://app.metricly.com/dashboards/6240d033-c887-4b70-8264-a301d3b33aba/copy'
 ```
 
+### Swagger Payload
+
+Use the following payload to test this POST method in Swagger.
+
+```
+{
+  "name": "Cloned Dashboard"
+}
+```
 ### Response Body
 
 The following response body returns all details of the copied dashboard.
