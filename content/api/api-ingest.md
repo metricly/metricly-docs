@@ -165,7 +165,7 @@ The table below describes the implemented options.
 | Option | Description |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SEND_RESPONSE_BODY | When present, the Ingest API sends a detailed “Success Response” body. See the sample Success Response below. When this option is not present, no response body is sent. A response body is always sent when there is an error. |
-| INJECT_TIMESTAMP | When present, the Ingest API service injects the current server timestamp into the element sample’s “timestamp” property. This will overwrite any passed-in timestamps if they exist.Ws |
+| INJECT_TIMESTAMP | When present, the Ingest API service injects the current server timestamp into the element sample’s “timestamp” property. This will overwrite any passed-in timestamps if they exist. |
 
 ## Ingest Responses
 There are two types (not including 500 errors) of responses returned from the Ingest API: 202 and 400.
