@@ -192,7 +192,7 @@ Creating a widget on a dashboard is a multi-step process. This endpoint is the f
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| User-Agent | Header | String | User agent. |
+| User-Agent | Header | String | User-Agent |
 |  widget | body  | JSON | Create a JSON payload that defines the widget's type, metrics, and other properties. |
 
 ### Request URL
