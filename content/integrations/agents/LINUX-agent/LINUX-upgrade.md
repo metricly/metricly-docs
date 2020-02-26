@@ -16,7 +16,7 @@ It’s important you upgrade to the latest version of the Linux Agent whenever p
  - `initctl stop netuitive-agent`
  - `systemctl stop netuitive-agent`
 2. Run `yum -y update netuitive-agent`.
- - or `apt-get update netuitive-agent`
+ - or `apt-get upgrade netuitive-agent`
  - or `apt-get install --only-upgrade netuitive-agent`
  {{% alert theme="info" %}}If you have not customized the Netuitive configuration file in any way (other than inputting the API key), jump to step 6. If you’ve customized the configuration file, continue on. {{% /alert %}}
 3. Get the difference between the old configuration file `netuitive-agent.conf` and the new configuration file `netuitive-agent.conf.rpmnew`
