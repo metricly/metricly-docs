@@ -353,7 +353,7 @@ The following response body returns confirmation that the widget has been create
 
 ---
 
-## DELETE from /widgets/{id}
+## DELETE to /widgets/{id}
 {{< button theme="danger" href="https://app.metricly.com/swagger-ui.html#!/widgets/deleteUsingDELETE_5" >}} DELETE {{< /button >}} Use this endpoint to delete a widget.
 
 {{% expand "View method details."%}}
