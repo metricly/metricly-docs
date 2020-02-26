@@ -371,7 +371,7 @@ The following response body returns confirmation that the widget has been create
 
 ### CURL
 
-The following example only requires the widget ID to perform the deletion.
+The following example only requires the widget **id** to perform the deletion.
 
 ```
 curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.metricly.com/widgets/38250616-a1a7-4d2b-ab48-50ac2333ca95'
