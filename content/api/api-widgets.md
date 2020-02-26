@@ -475,7 +475,7 @@ The following response body returns details on the widget specified.
 
 ### CURL
 
-The following example
+The following example updates the widget specified to use the **widgetType** `multi-metric` and **name** `Top 5 Costs By Service`.
 
 ```
 curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
@@ -483,7 +483,7 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
      "id": "e39b2b2a-e737-47ac-b5cf-364e324d077d", \
      "dashboardId": "7031cb3f-3160-400a-b279-707b28b2c8b7", \
      "userId": 24765, \
-     "name": "Top 5 Cost by Services", \
+     "name": "Top 5 Costs by Service", \
      "description": null, \
      "widgetType": "multi-metric", \
      "created": "2018-03-08T19:26:37Z", \
@@ -511,6 +511,45 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
      }, \
      "generated": false \
    } \
+ }' 'https://app.metricly.com/widgets/e39b2b2a-e737-47ac-b5cf-364e324d077d'
+```
+
+### Swagger Payload
+
+```
+{
+   "widget": {
+     "id": "e39b2b2a-e737-47ac-b5cf-364e324d077d",
+     "dashboardId": "7031cb3f-3160-400a-b279-707b28b2c8b7",
+     "userId": 24765,
+     "name": "Top 5 Cost by Services",
+     "description": null,
+     "widgetType": "multi-metric",
+     "created": "2018-03-08T19:26:37Z",
+     "updated": "2018-03-08T19:27:06Z",
+     "properties": {
+       "visualization": "line",
+       "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+       "colorByMetric": "false",
+       "showElementTotal": "true",
+       "elementScopeTags": "[]",
+       "useAllElementScopeTags": "true",
+       "elementScopeTypes": "[]",
+       "metricLimit": "10",
+       "showBands": "true",
+       "useAllMetricScopeTags": "true",
+       "metricAggs": "[]",
+       "elementScopeIds": "[]",
+       "elementScopeAttributes": "[]",
+       "showHighest": "true",
+       "metricScopeTags": "[]",
+       "useAllElementScopeAttributes": "true",
+       "metricAgg": "avg",
+       "metrics": "[{\"fqn\":null,\"useRegex\":false,\"aggFns\":[],\"metricAgg\":null}]",
+       "elementScopeExcludedTags": "[]"
+     },
+     "generated": false
+   }
  }' 'https://app.metricly.com/widgets/e39b2b2a-e737-47ac-b5cf-364e324d077d'
 ```
 
