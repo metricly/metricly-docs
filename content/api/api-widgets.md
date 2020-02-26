@@ -362,7 +362,7 @@ The following response body returns confirmation that the widget has been create
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| User-Agent | Header | String | User agent.  |
+| User-Agent | Header | String | User-Agent  |
 |  id | path  | string | Unique widget ID. |
 
 ### Request URL
