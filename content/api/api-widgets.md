@@ -511,7 +511,7 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
      }, \
      "generated": false \
    } \
- }' 'https://app.metricly.com/widgets/e39b2b2a-e737-47ac-b5cf-364e324d077d'
+ }
 ```
 
 ### Swagger Payload
