@@ -465,7 +465,7 @@ The following response body returns details on the widget specified.
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| User-Agent | Header | String | User agent. |
+| User-Agent | Header | String | User-Agent |
 |  widget | body  | JSON | Create a JSON payload that defines the widget's type, metrics, and other properties. |
 | id  | path  | string  | Unique widget ID.  |
 
