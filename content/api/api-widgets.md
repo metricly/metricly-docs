@@ -250,7 +250,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ```
 
-## Swagger payload
+### Swagger Payload
 
 Try creating this widget by swapping out the **dashboardId** and submitting it to Swagger.
 
