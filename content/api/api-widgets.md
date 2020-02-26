@@ -390,7 +390,7 @@ no content
 ---
 
 ## GET from /widgets/{id}
-{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/widgets/getSingleUsingGET_4" >}} GET {{< /button >}} Use this endpoint to
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/widgets/getSingleUsingGET_4" >}} GET {{< /button >}} Use this endpoint to get a widget.
 
 {{% expand "View method details."%}}
 
