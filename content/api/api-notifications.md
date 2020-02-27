@@ -21,7 +21,7 @@ CloudWisdom's Metrics API can be used to review metrics.  You can test these end
 
 ### Request URL
 
-` `
+`https://app.metricly.com/notifications`
 
 ### CURL
 
@@ -70,7 +70,7 @@ The following response
 
 ### Request URL
 
-` `
+`https://app.metricly.com/notifications`
 
 ### CURL
 
@@ -118,7 +118,7 @@ The following response
 
 ### Request URL
 
-` `
+`https://app.metricly.com/notifications/test`
 
 ### CURL
 
@@ -166,7 +166,7 @@ The following response
 
 ### Request URL
 
-` `
+`https://app.metricly.com/notifications/test/{notificationId}`
 
 ### CURL
 
@@ -214,7 +214,7 @@ The following response
 
 ### Request URL
 
-` `
+`https://app.metricly.com/notifications/{id}`
 
 ### CURL
 
@@ -262,7 +262,7 @@ The following response
 
 ### Request URL
 
-` `
+`https://app.metricly.com/notifications/{id}`
 
 ### CURL
 
@@ -312,7 +312,7 @@ The following response
 
 ### Request URL
 
-` `
+`https://app.metricly.com/notifications/{id}`
 
 ### CURL
 
