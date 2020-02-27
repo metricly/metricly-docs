@@ -8,9 +8,6 @@ alwaysopen: false
 pre: ""
 ---
 
-
-
-
 ## About the Packages API
 
 CloudWisdom's Packages API can be used to  -- . You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/packages) and by clicking the interactive buttons below.
@@ -24,25 +21,77 @@ CloudWisdom's Packages API can be used to  -- . You can test these endpoints by 
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| dashboardId | query | string | Unique ID of the dashboard this widget is associated to. |
+| packageId | query | string | Unique ID of the package. |
+| version  | query  |  string | Semantic version of the package.  |
 
 ### Request URL
 
- ` `
+ `https://app.metricly.com/packages?packageId={packageId}&version={version}`
 
 ### CURL
 
-The following example
+The following example does not include the optional **packageId** or version. This enables you to list all packages.
 
 ```
-
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/packages'
 ```
 
 ### Response Body
 
-The following response body
+The following response body includes a shortened example of only one package. Typical responses include all packages installed. Notice package templates include default policy templates and default dashboards. The response body will not return widget details.
 
 ```
+{
+	"packages": [{
+		"id": "d4c1a0d1-865d-38a3-8c0e-e8248e4ab0c5",
+		"tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6",
+		"packageId": "netuitive.packages.linux.nginx",
+		"version": "1.1.1",
+		"name": "Netuitive Packages Linux NGINX",
+		"description": "A set of Netuitive analytics configurations, polices, dashboards, and reports that are used to monitor performance of the elements collected from the NGINX collector in the Netuitive Agent.",
+		"authorName": "Netuitive Research",
+		"authorEmail": "research@netuitive.com",
+		"logo": "http://assets.app.netuitive.com/pkg/logo/netuitive/banner_logo.png",
+		"downloadUrl": "https://github.com/netuitive-community-packages/netuitive-packages-linux-nginx/archive/master.zip",
+		"userEmail": "null",
+		"created": "2019-04-09T21:44:27Z",
+		"updated": "2019-04-09T21:44:27Z",
+		"tags": [],
+		"policies": [],
+		"analyticConfigurations": [{
+				"type": null,
+				"id": "7b349868-2c70-38ca-a0e7-7e5f17d81b5b",
+				"name": null,
+				"scope": null,
+				"metrics": []
+			},
+			{
+				"type": null,
+				"id": "9e7814f8-bd3e-3f7a-ad92-17e3779b612e",
+				"name": null,
+				"scope": null,
+				"metrics": []
+			},
+			{
+				"type": null,
+				"id": "c63afc28-2538-32a7-8ee1-b407128416f9",
+				"name": null,
+				"scope": null,
+				"metrics": []
+			}
+		],
+		"dashboards": [{
+			"id": "2a0a9c59-a407-3f49-891e-bc791903b1a2",
+			"name": null,
+			"description": null,
+			"layout": null,
+			"properties": null,
+			"widgets": null,
+			"type": null,
+			"private": true
+		}]
+	}]
+}
 ```
 {{% /expand %}}
 
@@ -57,17 +106,18 @@ The following response body
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| dashboardId | query | string | Unique ID of the dashboard this widget is associated to. |
+| id | path | string | Unique ID of the package |
 
 ### Request URL
 
- ` `
+ `https://app.metricly.com/packages/{id}`
 
 ### CURL
 
 The following example
 
 ```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/packages/9b20b44c-aa37-39fa-b46b-9c17237337fe'
 
 ```
 
@@ -76,13 +126,45 @@ The following example
 The following response body
 
 ```
+{
+  "package": {
+    "id": "9b20b44c-aa37-39fa-b46b-9c17237337fe",
+    "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6",
+    "packageId": "netuitive.packages.aws.cost",
+    "version": "0.2.0",
+    "name": "Netuitive Packages Total Cost",
+    "description": "A set of assets to showcase total cost data captured by Metricly",
+    "authorName": "Netuitive Research",
+    "authorEmail": "research@netuitive.com",
+    "logo": "http://assets.app.netuitive.com/pkg/logo/netuitive/banner_logo.png",
+    "downloadUrl": "https://github.com/netuitive-community-packages/netuitive-packages-aws-cost/archive/master.zip",
+    "userEmail": null,
+    "created": "2018-07-27T01:26:00Z",
+    "updated": "2018-07-27T01:26:00Z",
+    "tags": [],
+    "policies": [],
+    "analyticConfigurations": [],
+    "dashboards": [
+      {
+        "id": "54fc1a1b-d762-32b7-af4b-d6cd4e2dabd5",
+        "name": null,
+        "description": null,
+        "layout": null,
+        "properties": null,
+        "widgets": null,
+        "type": null,
+        "private": true
+      }
+    ]
+  }
+}
 ```
 {{% /expand %}}
 
 ---
 
 ## POST to /packages/install
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/packages/installUsingPOST" >}} POST {{< /button >}} Use this endpoint to install packages as a multipart/form data zip file. 
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/packages/installUsingPOST" >}} POST {{< /button >}} Use this endpoint to install packages as a multipart/form data zip file.
 
 {{% expand "View method details."%}}
 
@@ -114,8 +196,8 @@ The following response body
 
 ---
 
-## GET from /widgets
-{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/widgets/listWidgetsUsingGET" >}} GET {{< /button >}} Use this endpoint to  
+## DELETE from /packages/{id}
+{{< button theme="danger" href="https://app.metricly.com/swagger-ui.html#!/packages/uninstallUsingDELETE" >}} DELETE {{< /button >}} Use this endpoint to uninstall a package.
 
 {{% expand "View method details."%}}
 
@@ -147,8 +229,8 @@ The following response body
 
 ---
 
-## GET from /widgets
-{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/widgets/listWidgetsUsingGET" >}} GET {{< /button >}} Use this endpoint to  
+## GET from /packages/{id}
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/packages/getUsingGET_2" >}} GET {{< /button >}} Use this endpoint to get an installed package.
 
 {{% expand "View method details."%}}
 
