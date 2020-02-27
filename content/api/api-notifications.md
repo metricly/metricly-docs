@@ -15,7 +15,7 @@ CloudWisdom's Metrics API can be used to review metrics.  You can test these end
 
 ## GET to /notifications
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/listUsingGET_2" theme="info" >}} GET {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/listUsingGET_2" theme="info" >}} GET {{< /button >}} Use this endpoint to get a list of all notifications (and their templates).
 {{% expand "View Method Details." %}}
 
 
@@ -25,27 +25,63 @@ CloudWisdom's Metrics API can be used to review metrics.  You can test these end
 
 ### CURL
 
-In the following CURL example
+In the following CURL example only the request URL is needed.
 
 ```
-
-
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/notifications'
 ```
 
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
-
-```
 
 ### Response Body
 
-The following response  
+The following response is a shortened list of notifications. Typical responses product the full library of notifications. Notice that the **bodyTemplate** property uses the  FreeMarker Template Language to format a notification's contents.
 
 ```
+{
+  "notifications": [
+  {
+     "id": 24870,
+     "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6",
+     "enabled": true,
+     "type": "pagerduty",
+     "properties": {
+       "payloadType": "default",
+       "postContentTemplate": "{\"description\":\"${eventCategory.name}: ${elementFqn} : ${policyName}\",\"client\":\"Netuitive Cloud Service\",\"details\":{\"elementFqn\":\"${elementFqn}\",\"category\":\"${eventCategory.name}\",\"elementType\":\"${elementType}\"},\"contexts\":[{\"type\":\"link\",\"href\":\"https://app.netuitive.com/#/element/${elementId}/events\"}],\"service_key\":\"12345678965433456789954/Z4TJFTYEq4nQ==\",\"incident_key\":\"${policyName}\",\"event_type\":\"trigger\",\"client_url\":\"https://app.netuitive.com\"}",
+       "name": "Support PagerDuty",
+       "serviceKey": "******",
+       "url": "https://events.pagerduty.com/generic/2010-04-15/create_event.json",
+       "awsAuthentication": "role"
+     }
+   },
+    {
+      "id": 25096,
+      "tenantId": "0fa5384a-1111-2222-ad68-43e7c6af54f6",
+      "enabled": true,
+      "type": "webhook",
+      "properties": {
+        "payloadType": "custom",
+        "postContentTemplate": "{\"text\": \"${eventTimestamp}: The CPU on ${elementId} has exceeded 5% for at least 5 minutes. \\n Event Category: ${eventCategory.name} \\n Fqn: ${elementFqn} \\n location: ${elementLocation}\"}",
+        "name": "Slack Webhook (#app-notifications)",
+        "url": "https://hooks.slack.com/services/8765432456765432/hgewrtyjhgsftre",
+        "webhookType": "event"
+      }
+    },
+    {
+      "id": 42119,
+      "tenantId": "0fa5384a-1111-2222-ad68-43e7c6af54f6",
+      "enabled": true,
+      "type": "email",
+      "properties": {
+        "templateType": "default",
+        "address": "example.email@gmail.com",
+        "payloadType": "default",
+        "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>",
+        "name": "example.email@gmail.com",
+        "subjectTemplate": "Metricly Event [${policyName}]",
+        "awsAuthentication": "role"
+      }
+    }
+  }
 
 ```
 
@@ -56,7 +92,7 @@ The following response
 
 ## POST to /notifications
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/createUsingPOST_1" theme="success" >}} POST {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/createUsingPOST_1" theme="success" >}} POST {{< /button >}} Use this endpoint to create notifications.
 {{% expand "View Method Details." %}}
 
 ### Parameters
@@ -74,10 +110,25 @@ The following response
 
 ### CURL
 
-In the following CURL example
+In the following CURL example a simple notification is created with the **type** `email`. The **bodyTemplate** creates a conditional body that states if the payload is an event, provide the **eventCategory.name**; if the event has  been cleared, send the string CLEAR in the body.
 
 ```
-
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "notification": { \
+     "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6", \
+     "enabled": true, \
+     "type": "email", \
+     "properties": { \
+       "templateType": "default", \
+       "address": "mr.lawrence.lane@gmail.com", \
+       "payloadType": "default", \
+       "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>", \
+       "name": "my test email", \
+       "subjectTemplate": "Test Event [${policyName}]", \
+       "awsAuthentication": "role" \
+     } \
+   } \
+ }' 'https://app.metricly.com/notifications'
 
 ```
 
@@ -86,15 +137,47 @@ In the following CURL example
 You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
 
 ```
-
+{
+  "notification": {
+    "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6",
+    "enabled": true,
+    "type": "email",
+    "properties": {
+      "templateType": "default",
+      "address": "mr.lawrence.lane@gmail.com",
+      "payloadType": "default",
+      "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>",
+      "name": "my test email",
+      "subjectTemplate": "Test Event [${policyName}]",
+      "awsAuthentication": "role"
+    }
+  }
+}
 
 ```
 
 ### Response Body
 
-The following response  
+The following response confirms the creation of the notification and includes a unique **id**.
 
 ```
+{
+  "notification": {
+    "id": 83949,
+    "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6",
+    "enabled": true,
+    "type": "email",
+    "properties": {
+      "templateType": "default",
+      "address": "mr.lawrence.lane@gmail.com",
+      "payloadType": "default",
+      "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>",
+      "name": "my test email",
+      "subjectTemplate": "Test Event [${policyName}]",
+      "awsAuthentication": "role"
+    }
+  }
+}
 
 ```
 
