@@ -315,7 +315,7 @@ The following response confirms a test notification has been sent to the defined
 
 ## Delete from /notifications/{Id}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/deleteUsingDELETE_3" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/deleteUsingDELETE_3" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete a notification.
 {{% expand "View Method Details." %}}
 
 ### Parameters
@@ -333,28 +333,19 @@ The following response confirms a test notification has been sent to the defined
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, only the **notificationId** must be included with the Request URL.
 
 ```
-
-
-```
-
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
+curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.metricly.com/notifications/84005'
 
 ```
 
 ### Response Body
 
-The following response  
+The following response returns no content and a 204 success code.
 
 ```
-
+no content
 ```
 
 {{% /expand %}}
@@ -363,7 +354,7 @@ The following response
 
 ## GET from /notifications/{id}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/getSingleUsingGET_2" theme="info" >}} GET {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/getSingleUsingGET_2" theme="info" >}} GET {{< /button >}} Use this endpoint to get details on a specific notification.
 {{% expand "View Method Details." %}}
 
 ### Parameters
@@ -373,36 +364,41 @@ The following response
 | id | path | long | Notification's unique ID.|
 
 
-
-
 ### Request URL
 
 `https://app.metricly.com/notifications/{id}`
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, only the **notificationId** must be included with the Request URL.
 
 ```
-
-
-```
-
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/notifications/42119'
 
 ```
 
 ### Response Body
 
-The following response  
+The following response returns the full notification template.
 
 ```
-
+{
+  "notification": {
+    "id": 42119,
+    "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6",
+    "enabled": true,
+    "type": "email",
+    "properties": {
+      "templateType": "default",
+      "address": "test.email@gmail.com",
+      "payloadType": "default",
+      "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>",
+      "name": "the test notification",
+      "subjectTemplate": "Metricly Event [${policyName}]",
+      "awsAuthentication": "role"
+    }
+  }
+}
 ```
 
 {{% /expand %}}
@@ -413,7 +409,7 @@ The following response
 
 ## PUT to /notifications/{id}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/replaceUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/replaceUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to update notifications.
 {{% expand "View Method Details." %}}
 
 ### Parameters
@@ -431,11 +427,25 @@ The following response
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, the generic email notification used in previous examples is swapped for a Slack Webhook notification. Note that different notification types may have different minimum requirements. In this case, a Webhook must have a **url** property.
 
 ```
-
-
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "notification": { \
+     "id": 3824451, \
+     "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6", \
+     "enabled": true, \
+     "type": "slack", \
+     "properties": { \
+       "name": "#cloudwisdom-notifications", \
+       "url": "https://hooks.slack.com/services/76543346/7654324/0876543234", \
+       "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>", \
+       "awsAuthentication": "role", \
+       "username": "", \
+       "payloadType": "default" \
+     } \
+   } \
+ }' 'https://app.metricly.com/notifications/3824451'
 ```
 
 ### Swagger Payload
@@ -443,16 +453,46 @@ In the following CURL example
 You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
 
 ```
-
+{
+  "notification": {
+    "id": 3824451,
+    "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6",
+    "enabled": true,
+    "type": "slack",
+    "properties": {
+      "name": "#cloudwisdom-notifications",
+      "url": "https://hooks.slack.com/services/76543346/7654324/0876543234",
+      "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>",
+      "awsAuthentication": "role",
+      "username": "",
+      "payloadType": "default"
+    }
+  }
+}
 
 ```
 
 ### Response Body
 
-The following response  
+The following response returns the updated notification template.
 
 ```
-
+{
+  "notification": {
+    "id": 3824451,
+    "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6",
+    "enabled": true,
+    "type": "slack",
+    "properties": {
+      "address": "mrlawrencelane+supportaccount@gmail.com",
+      "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>",
+      "payloadType": "default",
+      "name": "#cloudwisdom-notifications",
+      "url": "https://hooks.slack.com/services/76543346/7654324/0876543234",
+      "awsAuthentication": "role",
+      "username": ""
+    }
+  }
 ```
 
 {{% /expand %}}
