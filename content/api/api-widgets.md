@@ -597,56 +597,86 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
 
 ## Update A Widget's Attribute Scope
 
-Occasionally you may need to update certain widget **properties** to reflect changes in your production environment. You may also want to copy a dashboard and update the widgets to monitor the same (or similar) information with only a few attributes changed. This is accomplished using the PUT method to **/widgets/{id}**.
+Occasionally you may need to update certain widget **properties** to reflect changes in your production environment. You may also want to copy a dashboard and update the widgets to monitor the same (or similar) information with only a few attributes changed. Updating widgets can be accomplished using the PUT method to **/widgets/{id}**.
 
 {{% expand "View Walkthrough." %}}
 
 For this walkthrough we'll update a widget's **elementScopeAttributes** region from `us-east-1` to `eu-central-1`.
 
-1. Build a CURL query to **GET /Widgets.** This requires a dashboardId.
+1. Build a CURL query to **GET /Widgets.** This requires a **dashboardId**.
 
 ```
-curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/widgets?dashboardId=ded27777-8888-3333-0000-928b0391df37'
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/widgets?dashboardId=5b04470b-bd8f-4235-82da-9926dbf3c50b'
 
 ```
 
-2\. Review the widgets returned for that dashboard. Find the **elementScopeAttributes** property. The scope defined is using the **region** key with a value `us-east-1`.
+2\. Review the widgets returned for that dashboard. Find the **elementScopeAttributes** property for the first widget listed. The scope defined is using the **region** key with a value `us-east-1`.
 
 ```
 {
   "widgets": [
     {
-      "id": "9999cba7-0000-1111-2222-2bc4b2e23bc0",
-      "dashboardId": "ded27777-8888-3333-0000-928b0391df37",
-      "userId": 12345,
+      "id": "5577c252-9bb3-44cb-8e38-6325a115c388",
+      "dashboardId": "5b04470b-bd8f-4235-82da-9926dbf3c50b",
+      "userId": 76502,
       "name": "Test Widget",
       "description": null,
       "widgetType": "multi-metric",
-      "created": "2018-02-26T08:22:34Z",
-      "updated": "2018-02-26T08:22:34Z",
+      "created": "2020-02-21T04:01:13Z",
+      "updated": "2020-02-27T02:52:48Z",
       "properties": {
-      "visualization": "line",
-      "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},
-     {\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}
-      "colorByMetric": "false",
-      "showElementTotal": "true",
-      "elementScopeTags": "[]",
-      "useAllElementScopeTags": "true",
-      "elementScopeTypes": "[]",
-      "metricLimit": "10",
-      "showBands": "true",
-      "useAllMetricScopeTags": "true",
-      "metricUnit": "ms",
-      "metricAggs": "[]",
-      "elementScopeIds": "[]",
-      "elementScopeAttributes": "[{\"value\":\"us-east-1\",\"name\":\"region\"}]",
-      "showHighest": "true",
-      "metricScopeTags": "[]",
-      "useAllElementScopeAttributes": "true",
-      "metricAgg": "avg",
-      "metrics": "[{\"fqn\":\"statsd.cylance.venue.t.venueapi.device-policy.getdevicepolicyurl\",\"useRegex\":false,\"aggFns\":
-     [\"avg\"],\"metricAgg\":null}]",
-      "elementScopeExcludedTags": "[]"
+        "visualization": "line",
+        "colorByMetric": "false",
+        "showElementTotal": "true",
+        "elementScopeTags": "[]",
+        "useAllElementScopeTags": "true",
+        "elementScopeTypes": "[]",
+        "metricLimit": "10",
+        "showBands": "true",
+        "useAllMetricScopeTags": "true",
+        "metricUnit": "ms",
+        "metricAggs": "[]",
+        "elementScopeIds": "[]",
+        "elementScopeAttributes": "[{\"value\":\"us-east-1\",\"key\":\"region\"}]",
+        "showHighest": "true",
+        "metricScopeTags": "[]",
+        "useAllElementScopeAttributes": "true",
+        "metricAgg": "avg",
+        "metrics": "[{\"fqn\":\"example.metric.fqn.here\",\"useRegex\":false,\"aggFns\": [\"avg\"],\"metricAgg\":null}]",
+        "elementScopeExcludedTags": "[]"
+      },
+      "generated": false
+    },
+    {
+      "id": "19525b84-8a5f-4c90-9007-457bce6c25d3",
+      "dashboardId": "5b04470b-bd8f-4235-82da-9926dbf3c50b",
+      "userId": 24765,
+      "name": "Page Views",
+      "description": null,
+      "widgetType": "metric-time-series",
+      "created": "2020-02-21T04:01:13Z",
+      "updated": "2020-02-21T04:01:13Z",
+      "properties": {
+        "showElementTotal": "true",
+        "selectedAttributes": "[]",
+        "elementScopeTags": "[]",
+        "useElementNameContains": "true",
+        "useAllElementScopeTags": "true",
+        "element_id": "f736c76f-a7ab-3d9c-b88c-55591e1decea",
+        "elementScopeTypes": "[]",
+        "metricLimit": "10",
+        "useAllMetricScopeTags": "true",
+        "element_fqn": "customwinmetrics",
+        "showArea": "false",
+        "metricAggs": "[\"sum\"]",
+        "elementScopeIds": "[]",
+        "elementScopeAttributes": "[]",
+        "showHighest": "true",
+        "metric_fqn": "customwinmetrics.pageviews.page1.count",
+        "metricScopeTags": "[]",
+        "width": "medium",
+        "metrics": "[]",
+        "selectedTab": "table"
       },
       "generated": false
     }
@@ -654,47 +684,43 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/widget
 }
 ```
 
-3\. Build a CURL query using the JSON payload returned, swapping the **region** key's value from `us-east-1` to `eu-central-1`.
+3\. Build a CURL query using the JSON payload returned, swapping the **region** key's value from `us-east-1` to `eu-central-1`. Submit as **PUT** to **/widgets/{id}**.
 
 ```
-{ \
- "widget": { \
- "id": "9999cba7-0000-1111-2222-2bc4b2e23bc0", \
- "dashboardId": "ded27777-8888-3333-0000-928b0391df37", \
- "userId": 12345, \
- "name": "Test Widget", \
- "description": null, \
- "widgetType": "multi-metric", \
- "created": "2018-02-26T08:22:34Z", \
- "updated": "2018-02-26T08:22:34Z", \
- "properties": { \
- "visualization": "line", \
- "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},
-{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null} \
- "colorByMetric": "false", \
- "showElementTotal": "true", \
- "elementScopeTags": "[]", \
- "useAllElementScopeTags": "true", \
- "elementScopeTypes": "[]", \
- "metricLimit": "10", \
- "showBands": "true", \
- "useAllMetricScopeTags": "true", \
- "metricUnit": "ms", \
- "metricAggs": "[]", \
- "elementScopeIds": "[]", \
- "elementScopeAttributes": "[{\"value\":\"eu-central-1\",\"name\":\"region\"}]", \
- "showHighest": "true", \
- "metricScopeTags": "[]", \
- "useAllElementScopeAttributes": "true", \
- "metricAgg": "avg", \
- "metrics": "[{\"fqn\":\"statsd.cylance.venue.t.venueapi.device-policy.getdevicepolicyurl\",\"useRegex\":false,\"aggFns\":
-[\"avg\"],\"metricAgg\":null}]", \
- "elementScopeExcludedTags": "[]" \
- }, \
- "generated": false \
- } \
- }' 'https://app.metricly.com/widgets/9999cba7-0000-1111-2222-2bc4b2e23bc0'
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d ' { \
+   "id": "5577c252-9bb3-44cb-8e38-6325a115c388",
+   "dashboardId": "5b04470b-bd8f-4235-82da-9926dbf3c50b",
+  	"userId": 76502, \
+  	"name": "Test Widget", \
+  	"description": null, \
+  	"widgetType": "multi-metric", \
+  	"created": "2020-02-21T04:01:13Z", \
+  	"updated": "2020-02-27T02:52:48Z", \
+  	"properties": { \
+  		"visualization": "line", \
+  		"colorByMetric": "false", \
+  		"showElementTotal": "true", \
+  		"elementScopeTags": "[]", \
+  		"useAllElementScopeTags": "true", \
+  		"elementScopeTypes": "[]", \
+  		"metricLimit": "10", \
+  		"showBands": "true", \
+  		"useAllMetricScopeTags": "true", \
+  		"metricUnit": "ms", \
+  		"metricAggs": "[]", \
+  		"elementScopeIds": "[]", \
+  		"elementScopeAttributes": "[{\"value\":\"eu-central-1\",\"key\":\"region\"}]", \
+  		"showHighest": "true", \
+  		"metricScopeTags": "[]", \
+  		"useAllElementScopeAttributes": "true", \
+  		"metricAgg": "avg", \
+  		"metrics": "[{\"fqn\":\"example.fqn.metric.here\",\"useRegex\":false,\"aggFns\": [\"avg\"],\"metricAgg\":null}]", \
+  		"elementScopeExcludedTags": "[]" \
+  	}, \
+  	"generated": false \
+  }' 'https://app.metricly.com/widgets/5577c252-9bb3-44cb-8e38-6325a115c388'
 ```
 
+The widget's scope is now `eu-central-1` instead of `us-east-1`.
 
 {{% /expand %}}
