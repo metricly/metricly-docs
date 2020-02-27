@@ -7,68 +7,342 @@ author: Lawrence Lane
 alwaysopen: false
 pre: ""
 ---
-The notifications API allows you to access and create notifications.  
 
-**Request Header**
 
-| Header Name | Header Value |
-|----------------------|---------------------------------------|
-| Content-Type | application/json |
-| Authorization: Basic | (Base64 encoded authentication value) |
+## About the Notifications API
 
-## GET
-### GET List of Notifications from /notifications
-This method will automatically return a list of notifications created for the tenant you are authenticated for.
+CloudWisdom's Metrics API can be used to review metrics.  You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/notifications) and by clicking the interactive buttons below.
 
-### GET a Notification by ID from /notificaitons/{id}
-This method will return a notification for the given ID.
+## GET to /notifications
 
-**Parameters**
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/listUsingGET_2" theme="info" >}} GET {{< /button >}} Use this endpoint to
+{{% expand "View Method Details." %}}
 
-| Parameters | Required/Optional | Description |
-|------------|-------------------|---------------------------------------------|
-| id | Required | URL (path) parameter. Your notification ID. |
+### Parameters
 
-## POST
-### POST Notification to /notifications
-This method will create a notification.
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|---------------|------------------------------------------------------------------------------------|
+| elasticsearchQuery | body | json | A JSON query. |
 
-**Parameters**
 
-| Parameters | Required/Optional | Description |
-|--------------|-------------------|---------------------------|
-| notification | Required | Body parameter; see below |
 
-### POST a Notification /notifications/test
-This method will allow you to test a notification.
+### Request URL
 
-**Body Attributes**
+` `
 
-| Attribute | Required/Optional | Description |
-|--------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| notification | Required | id (required) The notification ID. tenantId (required) The ID for the tenant that the notification was created for. enabled (optional) True or false; if the notification is enabled. type (required) The type of notification: email, webhook, opsgenie, or pagerduty. properties (required) The fields filled out for each notification type. See above for more information. For an email notification, the properties attribute would contain templateType, address, bodyTemplate, and subjectTemplate. |
+### CURL
 
-### POST (replace) a notification from /notificaitons/{id}
-This method will allow you to replace a given notification.
+In the following CURL example
 
-**Parameters**
+```
 
-| Parameters | Required/Optional | Description |
-|--------------|-------------------|---------------------------|
-| notification | Required | Body parameter; see below |
 
-**Body Attributes**
+```
 
-| Attribute | Required/Optional | Description |
-|--------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| notification | Required | id (required) The notification ID. tenantId (required) The ID for the tenant that the notification was created for. enabled (optional) True or false; if the notification is enabled. type (required) The type of notification: email,   webhook, opsgenie, or pagerduty. properties (required) The fields filled out for each notification type. See above for more information. |
+### Swagger Payload
 
-## DELETE
-### DELETE a Notification from /notifications/{id}
-This method will delete a given notification.
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
 
-**Parameters**
+```
 
-| Parameters | Required/Optional | Description |
-|------------|-------------------|---------------------------------------------|
-| id | Required | URL (path) parameter. Your notification ID. |
+
+```
+
+### Response Body
+
+The following response  
+
+```
+
+```
+
+{{% /expand %}}
+
+---
+
+
+## POST to /notifications
+
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/createUsingPOST_1" theme="success" >}} POST {{< /button >}} Use this endpoint to
+{{% expand "View Method Details." %}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|---------------|------------------------------------------------------------------------------------|
+| elasticsearchQuery | body | json | A JSON query. |
+
+
+
+### Request URL
+
+` `
+
+### CURL
+
+In the following CURL example
+
+```
+
+
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+
+
+```
+
+### Response Body
+
+The following response  
+
+```
+
+```
+
+{{% /expand %}}
+
+---
+
+
+## POST to /notifications/test
+
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/sendTestNotificationUsingPOST_1" theme="success" >}} POST {{< /button >}} Use this endpoint to
+{{% expand "View Method Details." %}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|---------------|------------------------------------------------------------------------------------|
+| elasticsearchQuery | body | json | A JSON query. |
+
+
+
+### Request URL
+
+` `
+
+### CURL
+
+In the following CURL example
+
+```
+
+
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+
+
+```
+
+### Response Body
+
+The following response  
+
+```
+
+```
+
+{{% /expand %}}
+
+---
+
+
+## POST to /notifications/test/{notificationId}
+
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/sendTestNotificationUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to
+{{% expand "View Method Details." %}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|---------------|------------------------------------------------------------------------------------|
+| elasticsearchQuery | body | json | A JSON query. |
+
+
+
+### Request URL
+
+` `
+
+### CURL
+
+In the following CURL example
+
+```
+
+
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+
+
+```
+
+### Response Body
+
+The following response  
+
+```
+
+```
+
+{{% /expand %}}
+
+---
+
+## Delete from /notifications/{Id}
+
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/deleteUsingDELETE_3" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to
+{{% expand "View Method Details." %}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|---------------|------------------------------------------------------------------------------------|
+| elasticsearchQuery | body | json | A JSON query. |
+
+
+
+### Request URL
+
+` `
+
+### CURL
+
+In the following CURL example
+
+```
+
+
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+
+
+```
+
+### Response Body
+
+The following response  
+
+```
+
+```
+
+{{% /expand %}}
+
+---
+
+## GET from /notifications/{id}
+
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/getSingleUsingGET_2" theme="info" >}} GET {{< /button >}} Use this endpoint to
+{{% expand "View Method Details." %}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|---------------|------------------------------------------------------------------------------------|
+| elasticsearchQuery | body | json | A JSON query. |
+
+
+
+### Request URL
+
+` `
+
+### CURL
+
+In the following CURL example
+
+```
+
+
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+
+
+```
+
+### Response Body
+
+The following response  
+
+```
+
+```
+
+{{% /expand %}}
+
+---
+
+
+
+## PUT to /notifications/{id}
+
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/replaceUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to
+{{% expand "View Method Details." %}}
+
+### Parameters
+
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|---------------|------------------------------------------------------------------------------------|
+| elasticsearchQuery | body | json | A JSON query. |
+
+
+
+### Request URL
+
+` `
+
+### CURL
+
+In the following CURL example
+
+```
+
+
+```
+
+### Swagger Payload
+
+You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
+
+```
+
+
+```
+
+### Response Body
+
+The following response  
+
+```
+
+```
+
+{{% /expand %}}
+
+---
