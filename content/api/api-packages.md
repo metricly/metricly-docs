@@ -12,6 +12,8 @@ pre: ""
 
 CloudWisdom's Packages API can be used to  -- . You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/packages) and by clicking the interactive buttons below.
 
+View the [official Github](https://github.com/netuitive-community-packages) for all Virtana (formerly Netuitive) packages.
+
 ## GET from /packages
 {{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/packages/listUsingGET_3" >}} GET {{< /button >}} Use this endpoint to list installed packages.
 
@@ -106,57 +108,64 @@ The following response body includes a shortened example of only one package. Ty
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| id | path | string | Unique ID of the package |
+| User-Agent | header | string | User-Agent |
+| userEmail  | query  | string  |  User Email |
 
 ### Request URL
 
- `https://app.metricly.com/packages/{id}`
+ `https://app.metricly.com/packages`
 
 ### CURL
 
-The following example
+The following example installs a package from the URL `https://github.com/netuitive-community-packages/netuitive-packages-linux/archive/master.zip`.
 
 ```
-curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/packages/9b20b44c-aa37-39fa-b46b-9c17237337fe'
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "archives": [ \
+     "https://github.com/netuitive-community-packages/netuitive-packages-linux/archive/master.zip" \
+   ] \
+ }' 'https://app.metricly.com/packages'
+```
 
+### Swagger Payload
+
+Try installing the package for yourself in Swagger using the below template.
+
+```
+{
+  "archives": [
+    "https://github.com/netuitive-community-packages/netuitive-packages-linux/archive/master.zip"
+  ]
+}
 ```
 
 ### Response Body
 
-The following response body
+The following response body returns the package's details and confirms installation.
 
 ```
 {
-  "package": {
-    "id": "9b20b44c-aa37-39fa-b46b-9c17237337fe",
-    "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6",
-    "packageId": "netuitive.packages.aws.cost",
-    "version": "0.2.0",
-    "name": "Netuitive Packages Total Cost",
-    "description": "A set of assets to showcase total cost data captured by Metricly",
-    "authorName": "Netuitive Research",
-    "authorEmail": "research@netuitive.com",
-    "logo": "http://assets.app.netuitive.com/pkg/logo/netuitive/banner_logo.png",
-    "downloadUrl": "https://github.com/netuitive-community-packages/netuitive-packages-aws-cost/archive/master.zip",
-    "userEmail": null,
-    "created": "2018-07-27T01:26:00Z",
-    "updated": "2018-07-27T01:26:00Z",
-    "tags": [],
-    "policies": [],
-    "analyticConfigurations": [],
-    "dashboards": [
-      {
-        "id": "54fc1a1b-d762-32b7-af4b-d6cd4e2dabd5",
-        "name": null,
-        "description": null,
-        "layout": null,
-        "properties": null,
-        "widgets": null,
-        "type": null,
-        "private": true
-      }
-    ]
-  }
+  "packages": [
+    {
+      "id": "f4a226ea-510f-3f27-8ca2-4e7211128728",
+      "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6",
+      "packageId": "netuitive.packages.linux",
+      "version": "3.9.0",
+      "name": "Netuitive Packages Linux",
+      "description": "A set of Netuitive analytics configurations, polices, dashboards, and reports that are used to monitor performance of the default collectors in the Netuitive Agent (CPU, DiskSpace, DiskUsage, LoadAverage, Memory, Network, VMStat)",
+      "authorName": "Netuitive Research",
+      "authorEmail": "research@netuitive.com",
+      "logo": "http://assets.app.netuitive.com/pkg/logo/netuitive/banner_logo.png",
+      "downloadUrl": "https://github.com/netuitive-community-packages/netuitive-packages-linux/archive/master.zip",
+      "userEmail": null,
+      "created": "2020-02-27T22:37:04Z",
+      "updated": "2020-02-27T22:37:04Z",
+      "tags": [],
+      "policies": [],
+      "analyticConfigurations": [],
+      "dashboards": []
+    }
+  ]
 }
 ```
 {{% /expand %}}
@@ -172,7 +181,7 @@ The following response body
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| dashboardId | query | string | Unique ID of the dashboard this widget is associated to. |
+| id | path | string | Unique ID of the package |
 
 ### Request URL
 
@@ -191,6 +200,7 @@ The following example
 The following response body
 
 ```
+
 ```
 {{% /expand %}}
 
@@ -238,17 +248,18 @@ The following response body
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| dashboardId | query | string | Unique ID of the dashboard this widget is associated to. |
+| id | path | string | Unique ID of the package |
 
 ### Request URL
 
- ` `
+ `https://app.metricly.com/packages/{id}`
 
 ### CURL
 
-The following example
+The following example only requires the **id** (_not_ **packageId**) to be added to the Request URL.
 
 ```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/packages/9b20b44c-aa37-39fa-b46b-9c17237337fe'
 
 ```
 
@@ -257,6 +268,38 @@ The following example
 The following response body
 
 ```
+{
+  "package": {
+    "id": "9b20b44c-aa37-39fa-b46b-9c17237337fe",
+    "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6",
+    "packageId": "netuitive.packages.aws.cost",
+    "version": "0.2.0",
+    "name": "Netuitive Packages Total Cost",
+    "description": "A set of assets to showcase total cost data captured by Metricly",
+    "authorName": "Netuitive Research",
+    "authorEmail": "research@netuitive.com",
+    "logo": "http://assets.app.netuitive.com/pkg/logo/netuitive/banner_logo.png",
+    "downloadUrl": "https://github.com/netuitive-community-packages/netuitive-packages-aws-cost/archive/master.zip",
+    "userEmail": null,
+    "created": "2018-07-27T01:26:00Z",
+    "updated": "2018-07-27T01:26:00Z",
+    "tags": [],
+    "policies": [],
+    "analyticConfigurations": [],
+    "dashboards": [
+      {
+        "id": "54fc1a1b-d762-32b7-af4b-d6cd4e2dabd5",
+        "name": null,
+        "description": null,
+        "layout": null,
+        "properties": null,
+        "widgets": null,
+        "type": null,
+        "private": true
+      }
+    ]
+  }
+}
 ```
 {{% /expand %}}
 
