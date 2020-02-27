@@ -594,3 +594,107 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
 {{% /expand %}}
 
 ---
+
+## Update A Widget's Attribute Scope
+
+Occasionally you may need to update certain widget **properties** to reflect changes in your production environment. You may also want to copy a dashboard and update the widgets to monitor the same (or similar) information with only a few attributes changed. This is accomplished using the PUT method to **/widgets/{id}**.
+
+{{% expand "View Walkthrough." %}}
+
+For this walkthrough we'll update a widget's **elementScopeAttributes** region from `us-east-1` to `eu-central-1`.
+
+1. Build a CURL query to **GET /Widgets.** This requires a dashboardId.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/widgets?dashboardId=ded27777-8888-3333-0000-928b0391df37'
+
+```
+
+2\. Review the widgets returned for that dashboard. Find the **elementScopeAttributes** property. The scope defined is using the **region** key with a value `us-east-1`.
+
+```
+{
+  "widgets": [
+    {
+      "id": "9999cba7-0000-1111-2222-2bc4b2e23bc0",
+      "dashboardId": "ded27777-8888-3333-0000-928b0391df37",
+      "userId": 12345,
+      "name": "Test Widget",
+      "description": null,
+      "widgetType": "multi-metric",
+      "created": "2018-02-26T08:22:34Z",
+      "updated": "2018-02-26T08:22:34Z",
+      "properties": {
+      "visualization": "line",
+      "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},
+     {\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}
+      "colorByMetric": "false",
+      "showElementTotal": "true",
+      "elementScopeTags": "[]",
+      "useAllElementScopeTags": "true",
+      "elementScopeTypes": "[]",
+      "metricLimit": "10",
+      "showBands": "true",
+      "useAllMetricScopeTags": "true",
+      "metricUnit": "ms",
+      "metricAggs": "[]",
+      "elementScopeIds": "[]",
+      "elementScopeAttributes": "[{\"value\":\"us-east-1\",\"name\":\"region\"}]",
+      "showHighest": "true",
+      "metricScopeTags": "[]",
+      "useAllElementScopeAttributes": "true",
+      "metricAgg": "avg",
+      "metrics": "[{\"fqn\":\"statsd.cylance.venue.t.venueapi.device-policy.getdevicepolicyurl\",\"useRegex\":false,\"aggFns\":
+     [\"avg\"],\"metricAgg\":null}]",
+      "elementScopeExcludedTags": "[]"
+      },
+      "generated": false
+    }
+  ]
+}
+```
+
+3\. Build a CURL query using the JSON payload returned, swapping the **region** key's value from `us-east-1` to `eu-central-1`.
+
+```
+{ \
+ "widget": { \
+ "id": "9999cba7-0000-1111-2222-2bc4b2e23bc0", \
+ "dashboardId": "ded27777-8888-3333-0000-928b0391df37", \
+ "userId": 12345, \
+ "name": "Test Widget", \
+ "description": null, \
+ "widgetType": "multi-metric", \
+ "created": "2018-02-26T08:22:34Z", \
+ "updated": "2018-02-26T08:22:34Z", \
+ "properties": { \
+ "visualization": "line", \
+ "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},
+{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null} \
+ "colorByMetric": "false", \
+ "showElementTotal": "true", \
+ "elementScopeTags": "[]", \
+ "useAllElementScopeTags": "true", \
+ "elementScopeTypes": "[]", \
+ "metricLimit": "10", \
+ "showBands": "true", \
+ "useAllMetricScopeTags": "true", \
+ "metricUnit": "ms", \
+ "metricAggs": "[]", \
+ "elementScopeIds": "[]", \
+ "elementScopeAttributes": "[{\"value\":\"eu-central-1\",\"name\":\"region\"}]", \
+ "showHighest": "true", \
+ "metricScopeTags": "[]", \
+ "useAllElementScopeAttributes": "true", \
+ "metricAgg": "avg", \
+ "metrics": "[{\"fqn\":\"statsd.cylance.venue.t.venueapi.device-policy.getdevicepolicyurl\",\"useRegex\":false,\"aggFns\":
+[\"avg\"],\"metricAgg\":null}]", \
+ "elementScopeExcludedTags": "[]" \
+ }, \
+ "generated": false \
+ } \
+ }' 'https://app.metricly.com/widgets/9999cba7-0000-1111-2222-2bc4b2e23bc0'
+```
+
+
+{{% /expand %}}
