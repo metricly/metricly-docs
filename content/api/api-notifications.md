@@ -25,7 +25,7 @@ CloudWisdom's Metrics API can be used to review metrics.  You can test these end
 
 ### CURL
 
-In the following CURL example only the request URL is needed.
+In the following CURL example only the Request URL is needed.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/notifications'
@@ -34,7 +34,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/notifi
 
 ### Response Body
 
-The following response is a shortened list of notifications. Typical responses product the full library of notifications. Notice that the **bodyTemplate** property uses the  FreeMarker Template Language to format a notification's contents.
+The following response is a shortened list of notifications. Typical responses produce the full library of notifications. Notice that the **bodyTemplate** property uses the  [FreeMarker Template Language](https://freemarker.apache.org/) to format a notification's contents.
 
 ```
 {
@@ -120,7 +120,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
      "type": "email", \
      "properties": { \
        "templateType": "default", \
-       "address": "mr.lawrence.lane@gmail.com", \
+       "address": "example.email@gmail.com", \
        "payloadType": "default", \
        "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>", \
        "name": "my test email", \
@@ -144,7 +144,7 @@ You can use the following template to test this endpoint with Swagger. Select th
     "type": "email",
     "properties": {
       "templateType": "default",
-      "address": "mr.lawrence.lane@gmail.com",
+      "address": "example.email@gmail.com",
       "payloadType": "default",
       "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>",
       "name": "my test email",
@@ -169,7 +169,7 @@ The following response confirms the creation of the notification and includes a 
     "type": "email",
     "properties": {
       "templateType": "default",
-      "address": "mr.lawrence.lane@gmail.com",
+      "address": "example.email@gmail.com",
       "payloadType": "default",
       "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>",
       "name": "my test email",
@@ -188,7 +188,7 @@ The following response confirms the creation of the notification and includes a 
 
 ## POST to /notifications/test
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/sendTestNotificationUsingPOST_1" theme="success" >}} POST {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/sendTestNotificationUsingPOST_1" theme="success" >}} POST {{< /button >}} Use this endpoint to send a test a new notification.
 {{% expand "View Method Details." %}}
 
 ### Parameters
@@ -205,10 +205,31 @@ The following response confirms the creation of the notification and includes a 
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, a new notification is being tested. The exact same kind of payload used to create notifications can be input here first to verify it works as intended. Note that a unique name must be entered to test the notification; existing notifications cannot be tested  using this endpoint.
+
+{{% notice tip %}}
+
+Testing custom emails only verifies the address by sending a canned template. Testing other notifications, such as webhooks, sends the full custom body included in the payload.
+
+{{% /notice %}}
 
 ```
-
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
+   "notification": { \
+     "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6", \
+     "enabled": true, \
+     "type": "email", \
+     "properties": { \
+       "templateType": "default", \
+       "address": "your.email%40gmail.com", \
+       "payloadType": "default", \
+       "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>", \
+       "name": "UNIQUE NAME", \
+       "subjectTemplate": "XYZ System Status>", \
+       "awsAuthentication": "role" \
+     } \
+   } \
+ }' 'https://app.metricly.com/notifications/test'
 
 ```
 
@@ -217,16 +238,33 @@ In the following CURL example
 You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
 
 ```
-
-
+{
+  "notification": {
+    "tenantId": "0fa5384a-3b36-4766-ad68-43e7c6af54f6",
+    "enabled": true,
+    "type": "email",
+    "properties": {
+      "templateType": "default",
+      "address": "your.email@gmail.com",
+      "payloadType": "default",
+      "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>",
+      "name": "UNIQUE NAME",
+      "subjectTemplate": "XYZ System Status>",
+      "awsAuthentication": "role"
+    }
+  }
+}
 ```
 
 ### Response Body
 
-The following response  
+The following response confirms the test was processed. Check the notification's destination to verify the subject line and body match your intended layout.
 
 ```
-
+{
+  "success": true,
+  "content": "Successfully processed message"
+}
 ```
 
 {{% /expand %}}
@@ -236,7 +274,7 @@ The following response
 
 ## POST to /notifications/test/{notificationId}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/sendTestNotificationUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/sendTestNotificationUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to test an existing notification (has an id).
 {{% expand "View Method Details." %}}
 
 ### Parameters
@@ -246,34 +284,28 @@ The following response
 | notificationId | path | long | Notification's unique ID.|
 
 
-
 ### Request URL
 
 `https://app.metricly.com/notifications/test/{notificationId}`
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, only the **notificationId** needs to be added to the Request URL.
 
 ```
-
-
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' 'https://app.metricly.com/notifications/test/84005'
 ```
 
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
-
-```
 
 ### Response Body
 
-The following response  
+The following response confirms a test notification has been sent to the defined destination.
 
 ```
+{
+  "success": true,
+  "content": "Successfully processed message"
+}
 
 ```
 
