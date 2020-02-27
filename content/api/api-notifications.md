@@ -18,13 +18,6 @@ CloudWisdom's Metrics API can be used to review metrics.  You can test these end
 {{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/listUsingGET_2" theme="info" >}} GET {{< /button >}} Use this endpoint to
 {{% expand "View Method Details." %}}
 
-### Parameters
-
-| Parameter | Parameter Type | Data Type | Description |
-|--------------------|----------------|---------------|------------------------------------------------------------------------------------|
-| elasticsearchQuery | body | json | A JSON query. |
-
-
 
 ### Request URL
 
@@ -70,7 +63,8 @@ The following response
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|---------------|------------------------------------------------------------------------------------|
-| elasticsearchQuery | body | json | A JSON query. |
+| User-Agent | header | string | User-Agent |
+| notification |  body | JSON   |  JSON instructions to build a notification. |
 
 
 
@@ -118,7 +112,7 @@ The following response
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|---------------|------------------------------------------------------------------------------------|
-| elasticsearchQuery | body | json | A JSON query. |
+| notificationWrapper | body | JSON | A notification wrapper. |
 
 
 
@@ -166,7 +160,7 @@ The following response
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|---------------|------------------------------------------------------------------------------------|
-| elasticsearchQuery | body | json | A JSON query. |
+| notificationId | path | long | Notification's unique ID.|
 
 
 
@@ -213,7 +207,8 @@ The following response
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|---------------|------------------------------------------------------------------------------------|
-| elasticsearchQuery | body | json | A JSON query. |
+| User-Agent  | header  | string  | User-Agent  |
+| id | path | long | Notification's unique ID.|
 
 
 
@@ -260,7 +255,8 @@ The following response
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|---------------|------------------------------------------------------------------------------------|
-| elasticsearchQuery | body | json | A JSON query. |
+| id | path | long | Notification's unique ID.|
+
 
 
 
@@ -309,8 +305,9 @@ The following response
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|---------------|------------------------------------------------------------------------------------|
-| elasticsearchQuery | body | json | A JSON query. |
-
+| User-Agent  | header  | string  | User-Agent  |
+| id | path | long | Notification's unique ID.|
+| Notification   | body  | JSON  |  JSON instructions to edit or build notifications. |
 
 
 ### Request URL
