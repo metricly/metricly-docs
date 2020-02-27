@@ -10,7 +10,7 @@ pre: ""
 
 ## About the Packages API
 
-CloudWisdom's Packages API can be used to  -- . You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/packages) and by clicking the interactive buttons below.
+CloudWisdom's Packages API can be used to list, install, delete, and inspect packages in CloudWisdom. You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/packages) and by clicking the interactive buttons below.
 
 View the [official Github](https://github.com/netuitive-community-packages) for all Virtana (formerly Netuitive) packages.
 
@@ -173,7 +173,7 @@ The following response body returns the package's details and confirms installat
 ---
 
 ## POST to /packages/install
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/packages/installUsingPOST" >}} POST {{< /button >}} Use this endpoint to install packages as a multipart/form data zip file.
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/packages/installUsingPOST" >}} POST {{< /button >}} Use this endpoint to install custom packages as a multipart/form data zip file.
 
 {{% expand "View method details."%}}
 
@@ -181,11 +181,19 @@ The following response body returns the package's details and confirms installat
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| id | path | string | Unique ID of the package |
+| User-Agent | header | string | User-Agent|
+| userEmail  | query | string  | Email address registered in CloudWisdom account. |
+| file  | formData  | file  |  A multipart/form data zip file. |
 
 ### Request URL
 
  ` `
+
+{{% notice tip %}}
+
+CloudWisdom encourages that all custom packages be formatted, validated, and zipped using the metricly-cli: https://github.com/metricly/metricly-cli. See package commands (e.g. `metricly package validate`, `metricly package format`, `metricly package validate`,`metricly package create`.)
+
+{{% /notice %}}
 
 ### CURL
 
@@ -215,25 +223,27 @@ The following response body
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| dashboardId | query | string | Unique ID of the dashboard this widget is associated to. |
+| id | path | string | Unique ID of the package |
+| User-Agent   | header  | string  | User-Agent  |
 
 ### Request URL
 
- ` `
+ `https://app.metricly.com/packages/{id}`
 
 ### CURL
 
-The following example
+The following example uninstalls the package belonging to the **id**  `f4a226ea-1111-2222-8ca2-4e7211128728`.
 
 ```
-
+curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.metricly.com/packages/f4a226ea-1111-2222-8ca2-4e7211128728'
 ```
 
 ### Response Body
 
-The following response body
+The following response body has no content with a 204 success code.
 
 ```
+no content
 ```
 {{% /expand %}}
 
