@@ -9,7 +9,7 @@ MySQL is an open source relational database management system that uses the Stru
 
 ## Prerequisites
 
-The [Linux Agent][1] must be setup before you proceed with the MongoDB integration.
+The [Linux Agent][1] must be setup before you proceed with the MySQL integration.
 
 ## Configure
 
