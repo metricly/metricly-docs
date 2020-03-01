@@ -378,7 +378,7 @@ The following Response Body includes a new unique **id** and updates the **creat
 
 ## GET from /policies/elements
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getCrossElementMetricAggregationUsingPOST" theme="info" >}} GET {{< /button >}} Use this endpoint to retrieve element counts for all policies within time frame specified.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getCrossElementMetricAggregationUsingPOST" theme="info" >}} GET {{< /button >}} Use this endpoint to retrieve element counts for all policies within the time frame specified.
 {{% expand "View Method Details." %}}
 
 ### Parameters
@@ -428,7 +428,7 @@ The following Response Body lists all **policyIds** and a count of elements moni
 
 ## GET from /policies/events
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getPolicyEventCountsUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getPolicyEventCountsUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to retrieve event counts for all policies within the time frame specified.
 {{% expand "View Method Details." %}}
 
 ### Parameters
@@ -442,32 +442,24 @@ The following Response Body lists all **policyIds** and a count of elements moni
 
 ### Request URL
 
-` `
+`https://app.metricly.com/policies/events?startTime={startTime}&endTime={endTime}`
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, the endpoint is queried for an element count between the **startTime** `2020-02-28T15:53:00Z` and **endTime** `2020-03-01T15:54:00Z`.
 
 ```
-
-
-```
-
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
-
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies/events?startTime=2020-02-28T15%3A53%3A00Z&endTime=2020-03-01T16%3A54%3A00Z'
 ```
 
 ### Response Body
 
-The following response  
+The following response returns only one policy, with 31 events occurring within the specified time frame.
 
 ```
-
+{
+  "fe8bd66b-0000-1111-2222-d898aebda30f": 31
+}
 ```
 
 {{% /expand %}}
