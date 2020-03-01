@@ -15,7 +15,7 @@ CloudWisdom's Policies API can be used to -----.  You can test these endpoints b
 
 ## GET from /policies
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getPoliciesUsingGET_1" theme="info" >}} GET {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getPoliciesUsingGET_1" theme="info" >}} GET {{< /button >}} Use this endpoint to get a list of policies.
 {{% expand "View Method Details." %}}
 
 
@@ -25,28 +25,133 @@ CloudWisdom's Policies API can be used to -----.  You can test these endpoints b
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, only the Request URL is needed. 
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies'
 
 ```
 
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
-
-```
-
 ### Response Body
 
-The following response  
+The following response is a shortened list of policies. Normally the Response Body returns a full list of policies.
 
 ```
-
+{
+  "policies": [
+    {
+      "id": "543211234-0000-1111-0000-8492ce003668",
+      "name": "Docker Container - Elevated CPU Utilization",
+      "description": "CPU usage on the Docker container has been higher than expected for 30 minutes or longer.",
+      "scope": {
+        "elementName": null,
+        "elementNameRegex": false,
+        "elementNameExclude": null,
+        "elementNameExcludeRegex": false,
+        "fqnIncludes": [],
+        "fqnExcludes": [],
+        "elementType": null,
+        "elementTypes": [
+          "Docker Container"
+        ],
+        "elementTags": [],
+        "elementTagsAll": true,
+        "excludedElementTags": [],
+        "elementAttributes": [],
+        "elementAttributesAll": true,
+        "excludedElementAttributes": []
+      },
+      "duration": 1800,
+      "anyCondition": false,
+      "conditions": [
+        {
+          "metric": "netuitive.docker.cpu.container_cpu_percent",
+          "wildcard": null,
+          "metricScopeTags": {},
+          "analytic": "baselineDeviation",
+          "operator": ">",
+          "level": null,
+          "level2": null,
+          "metricThresholdLevel": null,
+          "metricThresholdAnalytic": null
+        },
+        {
+          "metric": "netuitive.docker.cpu.container_cpu_percent",
+          "wildcard": null,
+          "metricScopeTags": {},
+          "analytic": "contextualDeviation",
+          "operator": ">",
+          "level": null,
+          "level2": null,
+          "metricThresholdLevel": null,
+          "metricThresholdAnalytic": null
+        }
+      ],
+      "eventConditions": [],
+      "checkCondition": null,
+      "actions": [
+        {
+          "type": "event",
+          "category": 1
+        }
+      ],
+      "enabled": true,
+      "deleted": false,
+      "creatorEmail": "research@netuitive.com",
+      "lastUpdated": "2019-02-04T17:05:08Z"
+    },
+    {
+      "id": "0147c5b4-2222-3333-4444-f6de20427775",
+      "name": "Consul - Unusually Low Number of Nodes",
+      "description": "Please, check your nodes: total number of nodes is less than usual. Some nodes might be lost.",
+      "scope": {
+        "elementName": null,
+        "elementNameRegex": false,
+        "elementNameExclude": null,
+        "elementNameExcludeRegex": false,
+        "fqnIncludes": [],
+        "fqnExcludes": [],
+        "elementType": null,
+        "elementTypes": [
+          "SERVER"
+        ],
+        "elementTags": [],
+        "elementTagsAll": true,
+        "excludedElementTags": [],
+        "elementAttributes": [],
+        "elementAttributesAll": true,
+        "excludedElementAttributes": []
+      },
+      "duration": 900,
+      "anyCondition": false,
+      "conditions": [
+        {
+          "metric": "consul.catalog.total_nodes",
+          "wildcard": null,
+          "metricScopeTags": {},
+          "analytic": "baselineDeviation",
+          "operator": "<",
+          "level": null,
+          "level2": null,
+          "metricThresholdLevel": null,
+          "metricThresholdAnalytic": null
+        }
+      ],
+      "eventConditions": [],
+      "checkCondition": null,
+      "actions": [
+        {
+          "type": "event",
+          "category": 2
+        }
+      ],
+      "enabled": false,
+      "deleted": false,
+      "creatorEmail": "research@netuitive.com",
+      "lastUpdated": "2019-04-09T21:29:57Z"
+    }
+  ]
+}
 ```
 
 {{% /expand %}}
