@@ -378,7 +378,7 @@ The following Response Body includes a new unique **id** and updates the **creat
 
 ## GET from /policies/elements
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getCrossElementMetricAggregationUsingPOST" theme="info" >}} GET {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getCrossElementMetricAggregationUsingPOST" theme="info" >}} GET {{< /button >}} Use this endpoint to retrieve element counts for all policies within time frame specified.
 {{% expand "View Method Details." %}}
 
 ### Parameters
@@ -391,31 +391,34 @@ The following Response Body includes a new unique **id** and updates the **creat
 
 ### Request URL
 
-`https://app.metricly.com/policies/elements`
+`https://app.metricly.com/policies/elements?startTime{startTime}&endTime={endTime}`
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, the endpoint is queried for an element count between the **startTime** `2020-02-29T15:53:00Z` and **endTime** `2020-02-29T15:54:00Z`.
 
 ```
-curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies/elements'
-
-```
-
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
-
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies/elements?startTime=2020-02-29T15%3A53%3A00Z&endTime=2020-02-29T15%3A54%3A00Z'
 ```
 
 ### Response Body
 
-The following response  
+The following Response Body lists all **policyIds** and a count of elements monitored by them.
 
 ```
+{
+  "a16bbe53-1111-3277-0000-91fe9ebc7c2f": 3,
+  "5ae4f7be-2222-48d5-9999-c521048c5822": 0,
+  "ad6e5f73-3333-4440-8888-f94d2e531d6f": 2,
+  "02f5b89e-4444-3bb5-7777-fc82a4175706": 2,
+  "5a87596d-5555-3aa3-6666-7399c41037a1": 7,
+  "011cf660-6666-3f8f-5555-8492ce003668": 0,
+  "95b947fc-7777-3c65-4444-1aa3b1a454a4": 3,
+  "a9b64afc-8888-4b36-3333-9df46284eb25": 0,
+  "94303ae5-9999-476f-2222-8be9e33daa26": 27,
+  "b5585ce9-1010-476f-1111-d7be3a4708a7": 171,
+  "8b2ea134-1212-3fcb-0909-d251ad8043eb": 3
+}
 
 ```
 
