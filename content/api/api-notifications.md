@@ -11,7 +11,7 @@ pre: ""
 
 ## About the Notifications API
 
-CloudWisdom's Metrics API can be used to review metrics.  You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/notifications) and by clicking the interactive buttons below.
+CloudWisdom's Notifications API can be used to list, create, delete, inspect, and edit notifications.  You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/notifications) and by clicking the interactive buttons below.
 
 ## GET to /notifications
 
@@ -195,7 +195,7 @@ The following response confirms the creation of the notification and includes a 
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|---------------|------------------------------------------------------------------------------------|
-| notificationWrapper | body | JSON | A notification wrapper. |
+| notificationWrapper | body | JSON | A notification wrapper. Includes a notification template. |
 
 
 
@@ -498,3 +498,109 @@ The following response returns the updated notification template.
 {{% /expand %}}
 
 ---
+
+## How to Find Policy IDs using Notifications
+
+You can use the Notifications API to kickstart a search for policies that are firing (sending notifications). Once you have located the notification's **id**, switch over to the Policies API to inspect the alerting policy and/or update its details.
+
+{{% expand "View Walkthrough." %}}
+
+1\. Build a CURL query to get a list of notifications from **/notifications**.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/notifications'
+
+```
+
+2\. Review the Response Body and select a notification to search against. Copy the **id** for later.  Below is a single notification for reference; the Response Body returns a large list.
+
+```
+{
+    "id": 55406,
+    "tenantId": "0fa1234a-0000-1111-4444-12e7c6af54f6",
+    "enabled": true,
+    "type": "webhook",
+    "properties": {
+      "payloadType": "custom",
+      "postContentTemplate": "{\n   \"message_type\":\"<#if payloadType == \"event\">${eventCategory.name}</#if><#if payloadType == \"event_cleared\">RECOVERY</#if>\", \n   \"entity_id\":\"${elementId}\",\n   \"entity_display_name\":\"${elementName}\",\n     \"state_message\":\"<#if payloadType == \"event\"> [${elementName}] [${policyName}] [${eventTimestamp}] : ${policyDescription}</#if><#if payloadType == \"event_cleared\">The policy ${policyName} has CLEARED for ${elementName} and is no longer generating events as of ${eventTimestamp}</#if>\"\n}",
+      "basicPassword": "******",
+      "name": "VictorOps",
+      "basicUsername": "support-team@example.com",
+      "url": "https://alert.victorops.com/integrations/generic/123456/alert/4567-65432-65432-6543/$routing_key",
+      "awsAuthentication": "role",
+      "webhookType": "event"
+    }
+  }
+```
+
+3\. Build a CURL query to get a list of policies from **/policies**.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies'
+```
+
+4\. Search the Response Body for a policy with **actions** that include `"type": "notification"` and a matching **id**.
+
+```
+{
+    "id": "2ac7edc4-d1fa-446d-a9ec-36f257d403ca",
+    "name": "example policy",
+    "description": "Metric collection went below 75%",
+    "scope": {
+      "elementName": null,
+      "elementNameRegex": false,
+      "elementNameExclude": null,
+      "elementNameExcludeRegex": false,
+      "fqnIncludes": [],
+      "fqnExcludes": [],
+      "elementType": null,
+      "elementTypes": [
+        "RING"
+      ],
+      "elementTags": [],
+      "elementTagsAll": true,
+      "excludedElementTags": [],
+      "elementAttributes": [],
+      "elementAttributesAll": true,
+      "excludedElementAttributes": []
+    },
+    "duration": 1800,
+    "anyCondition": false,
+    "conditions": [
+      {
+        "metric": "netuitive.metrics.collected.percent",
+        "wildcard": null,
+        "metricScopeTags": {},
+        "analytic": "actual",
+        "operator": "<=",
+        "level": 75,
+        "level2": null,
+        "metricThresholdLevel": null,
+        "metricThresholdAnalytic": null
+      }
+    ],
+    "eventConditions": [],
+    "checkCondition": null,
+    "actions": [
+      {
+        "type": "event",
+        "category": 2
+      },
+      {
+        "type": "notification",
+        "id": 55406,
+        "enabled": true,
+        "notifyFrequencyMin": 2147483647,
+        "sendOnClear": true
+      }
+    ],
+    "enabled": true,
+    "deleted": false,
+    "creatorEmail": "example@example.com",
+    "lastUpdated": "2018-09-18T20:56:19Z"
+  },
+```
+
+5\. Once you have located the notification's **id**, you can also grab use grab the policy's **id**. This can be used to update, review, or delete the policy.
+
+{{% /expand %}}
