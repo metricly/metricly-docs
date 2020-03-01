@@ -25,7 +25,7 @@ CloudWisdom's Policies API can be used to -----.  You can test these endpoints b
 
 ### CURL
 
-In the following CURL example, only the Request URL is needed. 
+In the following CURL example, only the Request URL is needed.
 
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies'
@@ -160,7 +160,7 @@ The following response is a shortened list of policies. Normally the Response Bo
 
 ## POST to /policies
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/savePolicyUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/savePolicyUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to create policies and assign conditions, notifications.
 {{% expand "View Method Details." %}}
 
 ### Parameters
@@ -171,18 +171,73 @@ The following response is a shortened list of policies. Normally the Response Bo
 |  policyWrapper  | body   |  JSON | Policy Wrapper (includes policy template)  |
 
 
-
 ### Request URL
 
-` `
+`https://app.metricly.com/policies`
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, a WINSRV policy is created. This template references an existing notification and has one set of conditions for the **metric** `diskspace.root.byte_percentfree`.
 
 ```
-
-
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "policy": { \
+     "name": "WINSRV Example", \
+     "description": null, \
+     "scope": { \
+       "elementName": null, \
+       "elementNameRegex": false, \
+       "elementNameExclude": null, \
+       "elementNameExcludeRegex": false, \
+       "fqnIncludes": [], \
+       "fqnExcludes": [], \
+       "elementType": null, \
+       "elementTypes": [ \
+         "WINSRV" \
+       ], \
+       "elementTags": [], \
+       "elementTagsAll": true, \
+       "excludedElementTags": [], \
+       "elementAttributes": [], \
+       "elementAttributesAll": true, \
+       "excludedElementAttributes": [] \
+     }, \
+     "duration": 300, \
+     "anyCondition": false, \
+     "conditions": [ \
+       { \
+         "metric": "diskspace.root.byte_percentfree", \
+         "wildcard": null, \
+         "metricScopeTags": {}, \
+         "analytic": "actual", \
+         "operator": "<", \
+         "level": 5, \
+         "level2": null, \
+         "metricThresholdLevel": null, \
+         "metricThresholdAnalytic": null \
+       } \
+     ], \
+     "eventConditions": [], \
+     "checkCondition": null, \
+     "actions": [ \
+       { \
+         "type": "event", \
+         "category": 1 \
+       }, \
+       { \
+         "type": "notification", \
+         "id": 26649, \
+         "enabled": true, \
+         "notifyFrequencyMin": 2147483647, \
+         "sendOnClear": true \
+       } \
+     ], \
+     "enabled": true, \
+     "deleted": false, \
+     "creatorEmail": "support-testing%40netuitive.com", \
+     "lastUpdated": "2019-07-31T21:44:03Z" \
+   } \
+ }' 'https://app.metricly.com/policies'
 ```
 
 ### Swagger Payload
@@ -190,15 +245,130 @@ In the following CURL example
 You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
 
 ```
-
-
+{
+  "policy": {
+    "name": "WINSRV Example",
+    "description": null,
+    "scope": {
+      "elementName": null,
+      "elementNameRegex": false,
+      "elementNameExclude": null,
+      "elementNameExcludeRegex": false,
+      "fqnIncludes": [],
+      "fqnExcludes": [],
+      "elementType": null,
+      "elementTypes": [
+        "WINSRV"
+      ],
+      "elementTags": [],
+      "elementTagsAll": true,
+      "excludedElementTags": [],
+      "elementAttributes": [],
+      "elementAttributesAll": true,
+      "excludedElementAttributes": []
+    },
+    "duration": 300,
+    "anyCondition": false,
+    "conditions": [
+      {
+        "metric": "diskspace.root.byte_percentfree",
+        "wildcard": null,
+        "metricScopeTags": {},
+        "analytic": "actual",
+        "operator": "<",
+        "level": 5,
+        "level2": null,
+        "metricThresholdLevel": null,
+        "metricThresholdAnalytic": null
+      }
+    ],
+    "eventConditions": [],
+    "checkCondition": null,
+    "actions": [
+      {
+        "type": "event",
+        "category": 1
+      },
+      {
+        "type": "notification",
+        "id": 26649,
+        "enabled": true,
+        "notifyFrequencyMin": 2147483647,
+        "sendOnClear": true
+      }
+    ],
+    "enabled": true,
+    "deleted": false,
+    "creatorEmail": "support-testing@netuitive.com",
+    "lastUpdated": "2019-07-31T21:44:03Z"
+  }
+}
 ```
 
 ### Response Body
 
-The following response  
+The following Response Body includes a new unique **id** and updates the **creatorEmail** to your user email address.
 
 ```
+{
+  "policy": {
+    "id": "aa77637d-1870-442e-94a3-3b06a1424120",
+    "name": "WINSRV Example",
+    "description": null,
+    "scope": {
+      "elementName": null,
+      "elementNameRegex": false,
+      "elementNameExclude": null,
+      "elementNameExcludeRegex": false,
+      "fqnIncludes": [],
+      "fqnExcludes": [],
+      "elementType": null,
+      "elementTypes": [
+        "WINSRV"
+      ],
+      "elementTags": [],
+      "elementTagsAll": true,
+      "excludedElementTags": [],
+      "elementAttributes": [],
+      "elementAttributesAll": true,
+      "excludedElementAttributes": []
+    },
+    "duration": 300,
+    "anyCondition": false,
+    "conditions": [
+      {
+        "metric": "diskspace.root.byte_percentfree",
+        "wildcard": null,
+        "metricScopeTags": {},
+        "analytic": "actual",
+        "operator": "<",
+        "level": 5,
+        "level2": null,
+        "metricThresholdLevel": null,
+        "metricThresholdAnalytic": null
+      }
+    ],
+    "eventConditions": [],
+    "checkCondition": null,
+    "actions": [
+      {
+        "type": "event",
+        "category": 1
+      },
+      {
+        "type": "notification",
+        "id": 26649,
+        "enabled": true,
+        "notifyFrequencyMin": 2147483647,
+        "sendOnClear": true
+      }
+    ],
+    "enabled": true,
+    "deleted": false,
+    "creatorEmail": "mrlawrencelane+supportaccount@gmail.com",
+    "lastUpdated": "2019-07-31T21:44:03Z"
+  }
+}
 
 ```
 
