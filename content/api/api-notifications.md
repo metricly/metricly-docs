@@ -601,6 +601,6 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/polici
   },
 ```
 
-5\. Once you have located the notification's **id**, you can also grab use grab the policy's **id**. This can be used to update, review, or delete the policy.
+5\. Once you have located the notification's **id**, you can also grab the policy's **id**. This can be used to update, review, or delete the policy.
 
 {{% /expand %}}
