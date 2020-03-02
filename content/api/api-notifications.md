@@ -439,7 +439,6 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
      "properties": { \
        "name": "#cloudwisdom-notifications", \
        "url": "https://hooks.slack.com/services/76543346/7654324/0876543234", \
-       "bodyTemplate": "<#if payloadType == \"event\">\n  ${eventCategory.name}\n</#if>\n<#if payloadType == \"event_cleared\">\n  CLEAR\n</#if>", \
        "awsAuthentication": "role", \
        "username": "", \
        "payloadType": "default" \
