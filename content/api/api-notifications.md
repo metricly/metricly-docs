@@ -501,7 +501,7 @@ The following response returns the updated notification template.
 
 ## How to Find Policy IDs using Notifications
 
-You can use the Notifications API to kickstart a search for policies that are firing (sending notifications). Once you have located the notification's **id**, switch over to the Policies API to inspect the alerting policy and/or update its details.
+You can use the Notifications API to kickstart a search for policies that are generating notifications. Once you have located the notification's **id**, switch over to the Policies API to inspect the alerting policy and/or update its details.
 
 {{% expand "View Walkthrough." %}}
 
