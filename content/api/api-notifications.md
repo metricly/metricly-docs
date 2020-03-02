@@ -427,7 +427,7 @@ The following response returns the full notification template.
 
 ### CURL
 
-In the following CURL example, the generic email notification used in previous examples is swapped for a Slack Webhook notification. Note that different notification types may have different minimum requirements. In this case, a Webhook must have a **url** property.
+In the following CURL example, the Slack notification **url** property is updated with a new URL because the old URL belongs to a Slack channel and integration that no longer exist.
 
 ```
 curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
