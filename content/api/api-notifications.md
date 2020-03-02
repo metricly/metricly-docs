@@ -274,7 +274,7 @@ The following response confirms the test was processed. Check the notification's
 
 ## POST to /notifications/test/{notificationId}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/sendTestNotificationUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to test an existing notification (has an id).
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/sendTestNotificationUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to send a test for an existing notification.
 {{% expand "View Method Details." %}}
 
 ### Parameters
