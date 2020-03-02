@@ -418,7 +418,7 @@ The following response returns the full notification template.
 |--------------------|----------------|---------------|------------------------------------------------------------------------------------|
 | User-Agent  | header  | string  | User-Agent  |
 | id | path | long | Notification's unique ID.|
-| Notification   | body  | JSON  |  JSON instructions to edit or build notifications. |
+| notification   | body  | JSON  |  JSON instructions to edit or build notifications. |
 
 
 ### Request URL
