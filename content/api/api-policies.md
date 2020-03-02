@@ -468,39 +468,31 @@ The following response returns only one policy, with 31 events occurring within 
 
 ## GET from /policies/mute
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getPolicyMutesUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getPolicyMutesUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to get a list of currently muted policies.
 {{% expand "View Method Details." %}}
-
-
 
 ### Request URL
 
-` `
+`https://app.metricly.com/policies/mute`
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, only the Request URL is needed to make the API call.
 
 ```
-
-
-```
-
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
-
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies/mute'
 ```
 
 ### Response Body
 
-The following response  
+The following Response Body returns 3 muted policies and the mute duration in milliseconds.
 
 ```
-
+{
+  "f7d50ff4-1111-0000-0000-3ea1832f841b": 1583108010423,
+  "fac1361a-2222-0000-0000-f139f5655992": 1583108005374,
+  "fb1950a1-3333-0000-0000-0496180a020d": 1583108000823
+}
 ```
 
 {{% /expand %}}
@@ -509,45 +501,34 @@ The following response
 
 ## DELETE from /policies/{policyId}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/deletePolicyUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/deletePolicyUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete a policy.
 {{% expand "View Method Details." %}}
 
 ### Parameters
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|---------------|------------------------------------------------------------------------------------|
-| elasticsearchQuery | body | json | A JSON query. |
-
-
+| User-Agent | header | string | User-Agent. |
+| policyId  | path  | string  | Unique ID for a policy.  |
 
 ### Request URL
 
-` `
+`https://app.metricly.com/policies/{policyId}`
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, only the **policyId** must be added to the Request URL to delete the policy.
 
 ```
-
-
-```
-
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
-
+curl -X DELETE --header 'Accept: application/json' --header 'User-Agent: none' 'https://app.metricly.com/policies/fb1950a1-3333-0000-0000-0496180a020d'
 ```
 
 ### Response Body
 
-The following response  
+The following Response Body returns no content with a 204 success code.
 
 ```
-
+no content
 ```
 
 {{% /expand %}}
@@ -556,44 +537,94 @@ The following response
 
 ## GET from /policies/{policyId}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getPolicyUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getPolicyUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to retrieve a specific policy.
 {{% expand "View Method Details." %}}
 
 ### Parameters
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|---------------|------------------------------------------------------------------------------------|
-| elasticsearchQuery | body | json | A JSON query. |
-
-
+| User-Agent | header | string | User-Agent. |
+| policyId  | path  | string  | Unique ID for a policy.  |
+|  policyWrapper  | body   |  JSON | Policy Wrapper (includes policy template)  |
 
 ### Request URL
 
-` `
+`https://app.metricly.com/policies/{policyId}`
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, only the **policyId** must be added to the Request URL.
 
 ```
-
-
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies/2cf1fb85-bf7b-438a-9e9d-001f374b5eb7'
 ```
 
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
-
-```
 
 ### Response Body
 
-The following response  
+The following response returns the specified policy belonging to id `/2cf1fb85-bf7b-438a-9e9d-001f374b5eb7`.
 
 ```
+{
+  "policy": {
+    "id": "2cf1fb85-bf7b-438a-9e9d-001f374b5eb7",
+    "name": "WINSRV Example 2",
+    "description": null,
+    "scope": {
+      "elementName": null,
+      "elementNameRegex": false,
+      "elementNameExclude": null,
+      "elementNameExcludeRegex": false,
+      "fqnIncludes": [],
+      "fqnExcludes": [],
+      "elementType": null,
+      "elementTypes": [
+        "WINSRV"
+      ],
+      "elementTags": [],
+      "elementTagsAll": true,
+      "excludedElementTags": [],
+      "elementAttributes": [],
+      "elementAttributesAll": true,
+      "excludedElementAttributes": []
+    },
+    "duration": 300,
+    "anyCondition": false,
+    "conditions": [
+      {
+        "metric": "diskspace.root.byte_percentfree",
+        "wildcard": null,
+        "metricScopeTags": {},
+        "analytic": "actual",
+        "operator": "<",
+        "level": 5,
+        "level2": null,
+        "metricThresholdLevel": null,
+        "metricThresholdAnalytic": null
+      }
+    ],
+    "eventConditions": [],
+    "checkCondition": null,
+    "actions": [
+      {
+        "type": "event",
+        "category": 1
+      },
+      {
+        "type": "notification",
+        "id": 26649,
+        "enabled": true,
+        "notifyFrequencyMin": 2147483647,
+        "sendOnClear": true
+      }
+    ],
+    "enabled": true,
+    "deleted": false,
+    "creatorEmail": "mrlawrencelane+supportaccount@gmail.com",
+    "lastUpdated": "2020-03-01T23:27:43Z"
+  }
+}
 
 ```
 
