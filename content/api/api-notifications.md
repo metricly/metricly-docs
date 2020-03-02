@@ -188,7 +188,7 @@ The following response confirms the creation of the notification and includes a 
 
 ## POST to /notifications/test
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/sendTestNotificationUsingPOST_1" theme="success" >}} POST {{< /button >}} Use this endpoint to send a test a new notification.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/sendTestNotificationUsingPOST_1" theme="success" >}} POST {{< /button >}} Use this endpoint to send a test for a new notification.
 {{% expand "View Method Details." %}}
 
 ### Parameters
