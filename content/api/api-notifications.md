@@ -15,7 +15,7 @@ CloudWisdom's Notifications API can be used to list, create, delete, inspect, an
 
 ## GET to /notifications
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/listUsingGET_2" theme="info" >}} GET {{< /button >}} Use this endpoint to get a list of all notifications (and their templates).
+{{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/listUsingGET_2" theme="info" >}} GET {{< /button >}} Use this endpoint to get a list of all notifications and their templates.
 {{% expand "View Method Details." %}}
 
 
