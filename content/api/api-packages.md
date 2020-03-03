@@ -214,7 +214,7 @@ The following response body
 
 ---
 
-## DELETE from /packages/{id}
+## DELETE to /packages/{id}
 {{< button theme="danger" href="https://app.metricly.com/swagger-ui.html#!/packages/uninstallUsingDELETE" >}} DELETE {{< /button >}} Use this endpoint to uninstall a package.
 
 {{% expand "View method details."%}}
