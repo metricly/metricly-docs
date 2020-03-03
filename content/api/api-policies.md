@@ -895,40 +895,36 @@ no content
 
 ## POST to /policies/{policyId}/mute/{muteMs}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/mutePolicyUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/mutePolicyUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to mute a policy (and define the mute's duration).
 {{% expand "View Method Details." %}}
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|-------------|----------------|---------------|---------------------------------------------------------------|
+| policyId | path  | string  | Unique ID for a policy.  |
+| muteMs   | path | long  |  Mute duration in milliseconds. |
+
 
 ### Request URL
 
-` `
+`https://app.metricly.com/policies/{policyId}/mute/58000`
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, a policy with the **policyId** `fe8bd66b-1111-2222-3333-d898aebda30f` is muted for 58000 milliseconds. 
 
 ```
-
-
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: */*' 'https://app.metricly.com/policies/fe8bd66b-1111-2222-3333-d898aebda30f/mute/58000'
 ```
 
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
-
-```
 
 ### Response Body
 
-The following response  
+The following Response Body returns no content and a 200 success code.
 
 ```
-
+no content
 ```
 
 {{% /expand %}}
