@@ -625,7 +625,6 @@ The following response returns the specified policy belonging to id `/2cf1fb85-b
     "lastUpdated": "2020-03-01T23:27:43Z"
   }
 }
-
 ```
 
 {{% /expand %}}
@@ -634,22 +633,76 @@ The following response returns the specified policy belonging to id `/2cf1fb85-b
 
 ## PUT to /policies/{policyId}
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/updatePolicyUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/updatePolicyUsingPUT" theme="warning" >}} PUT {{< /button >}} Use this endpoint to update a policy.
 {{% expand "View Method Details." %}}
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|--------------------|----------------|---------------|------------------------------------------------------------------------------------|
+| User-Agent | header | string | User-Agent. |
+| policyId  | path  | string  | Unique ID for a policy.  |
+|  policyWrapper  | body   |  JSON | Policy Wrapper (includes policy template)  |
+
+
 ### Request URL
 
-` `
+`https://app.metricly.com/policies/{polciyId}`
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, the WINSRV policy used in previous examples is changed into an AWS EC2 policy.
 
 ```
-
-
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+   "policy": { \
+     "id": "2cf1fb85-bf7b-438a-9e9d-001f374b5eb7", \
+     "name": "AWS EC2 Example", \
+     "description": null, \
+     "scope": { \
+       "elementName": null, \
+       "elementNameRegex": false, \
+       "elementNameExclude": null, \
+       "elementNameExcludeRegex": false, \
+       "fqnIncludes": [], \
+       "fqnExcludes": [], \
+       "elementType": null, \
+       "elementTypes": [ \
+         "EC2" \
+       ], \
+       "elementTags": [], \
+       "elementTagsAll": true, \
+       "excludedElementTags": [], \
+       "elementAttributes": [], \
+       "elementAttributesAll": true, \
+       "excludedElementAttributes": [] \
+     }, \
+     "duration": 300, \
+     "anyCondition": false, \
+     "conditions": [ \
+       { \
+         "metric": "aws.ec2.cpuutilization", \
+         "wildcard": null, \
+         "metricScopeTags": {}, \
+         "analytic": "actual", \
+         "operator": "<", \
+         "level": 5, \
+         "level2": null, \
+         "metricThresholdLevel": null, \
+         "metricThresholdAnalytic": null \
+       } \
+     ], \
+     "eventConditions": [], \
+     "checkCondition": null, \
+     "actions": [ \
+  \
+     ], \
+     "enabled": true, \
+     "deleted": false, \
+     "creatorEmail": "mrlawrencelane+supportaccount%40gmail.com", \
+     "lastUpdated": "2020-03-01T23:27:43Z" \
+   } \
+ }' 'https://app.metricly.com/policies/2cf1fb85-bf7b-438a-9e9d-001f374b5eb7'
 ```
 
 ### Swagger Payload
@@ -657,16 +710,109 @@ In the following CURL example
 You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
 
 ```
+{
+  "policy": {
+    "id": "2cf1fb85-bf7b-438a-9e9d-001f374b5eb7",
+    "name": "AWS EC2 Example",
+    "description": null,
+    "scope": {
+      "elementName": null,
+      "elementNameRegex": false,
+      "elementNameExclude": null,
+      "elementNameExcludeRegex": false,
+      "fqnIncludes": [],
+      "fqnExcludes": [],
+      "elementType": null,
+      "elementTypes": [
+        "EC2"
+      ],
+      "elementTags": [],
+      "elementTagsAll": true,
+      "excludedElementTags": [],
+      "elementAttributes": [],
+      "elementAttributesAll": true,
+      "excludedElementAttributes": []
+    },
+    "duration": 300,
+    "anyCondition": false,
+    "conditions": [
+      {
+        "metric": "aws.ec2.cpuutilization",
+        "wildcard": null,
+        "metricScopeTags": {},
+        "analytic": "actual",
+        "operator": "<",
+        "level": 5,
+        "level2": null,
+        "metricThresholdLevel": null,
+        "metricThresholdAnalytic": null
+      }
+    ],
+    "eventConditions": [],
+    "checkCondition": null,
+    "actions": [
 
-
+    ],
+    "enabled": true,
+    "deleted": false,
+    "creatorEmail": "mrlawrencelane+supportaccount@gmail.com",
+    "lastUpdated": "2020-03-01T23:27:43Z"
+  }
+}
 ```
 
 ### Response Body
 
-The following response  
+The following Response Body returns the updates reflected in the policy template.
 
 ```
-
+{
+  "policy": {
+    "id": "2cf1fb85-bf7b-438a-9e9d-001f374b5eb7",
+    "name": "AWS EC2 Example",
+    "description": null,
+    "scope": {
+      "elementName": null,
+      "elementNameRegex": false,
+      "elementNameExclude": null,
+      "elementNameExcludeRegex": false,
+      "fqnIncludes": [],
+      "fqnExcludes": [],
+      "elementType": null,
+      "elementTypes": [
+        "EC2"
+      ],
+      "elementTags": [],
+      "elementTagsAll": true,
+      "excludedElementTags": [],
+      "elementAttributes": [],
+      "elementAttributesAll": true,
+      "excludedElementAttributes": []
+    },
+    "duration": 300,
+    "anyCondition": false,
+    "conditions": [
+      {
+        "metric": "aws.ec2.cpuutilization",
+        "wildcard": null,
+        "metricScopeTags": {},
+        "analytic": "actual",
+        "operator": "<",
+        "level": 5,
+        "level2": null,
+        "metricThresholdLevel": null,
+        "metricThresholdAnalytic": null
+      }
+    ],
+    "eventConditions": [],
+    "checkCondition": null,
+    "actions": [],
+    "enabled": true,
+    "deleted": false,
+    "creatorEmail": "mrlawrencelane+supportaccount@gmail.com",
+    "lastUpdated": "2020-03-01T23:27:43Z"
+  }
+}
 ```
 
 {{% /expand %}}
@@ -675,41 +821,36 @@ The following response
 
 ## GET from /policies/{policyId}/events
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getNumberOfEventsByPolicyUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getNumberOfEventsByPolicyUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to get a count of events by policy.
 {{% expand "View Method Details." %}}
 
 ### Parameters
 
-
+| Parameter | Parameter Type | Data Type | Description |
+|-------------|----------------|---------------|---------------------------------------------------------------|
+| policyId | path  | string  | Unique ID for a policy.  |
+| duration | query | string | Follows ISO8601 duration format. Example options include: PT1h, PT1m, PT10s, P3D |
+| startTime | query | date-time | Start time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
+| endTime | query | date-time | End time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
 
 ### Request URL
 
-` `
+`https://app.metricly.com/policies/{policyId}/events`
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, a policy with the **policyId** `fe8bd66b-586f-401e-9982-d898aebda30f` is checked for events occurring between **startTime** `2020-02-28T15:53:00Z` and **endTime** `2020-03-02T15:53:00Z`.
 
 ```
-
-
-```
-
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
-
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies/fe8bd66b-586f-401e-9982-d898aebda30f/events?startTime=2020-02-28T15%3A53%3A00Z&endTime=2020-03-02T15%3A53%3A00Z'
 ```
 
 ### Response Body
 
-The following response  
+The following Response Body returns a count of 31 events.
 
 ```
-
+31
 ```
 
 {{% /expand %}}
@@ -718,40 +859,34 @@ The following response
 
 ## DELETE from /policies/{policyId}/mute
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/clearMutePolicyUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to
+{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/clearMutePolicyUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to unmute a policy.
 {{% expand "View Method Details." %}}
 
 ### Parameters
 
+| Parameter | Parameter Type | Data Type | Description |
+|-------------|----------------|---------------|---------------------------------------------------------------|
+| policyId | path  | string  | Unique ID for a policy.  |
 
 ### Request URL
 
-` `
+`https://app.metricly.com/policies/{policyId}/mute`
 
 ### CURL
 
-In the following CURL example
+In the following CURL example, only the **policyId** needs to be added to the Request URL to unmute the policy.
 
 ```
-
-
-```
-
-### Swagger Payload
-
-You can use the following template to test this endpoint with Swagger. Select the method icon to open this specific endpoint.
-
-```
-
+curl -X DELETE --header 'Accept: */*' 'https://app.metricly.com/policies/fe8bd66b-586f-401e-9982-d898aebda30f/mute'
 
 ```
 
 ### Response Body
 
-The following response  
+The following Response Body returns no content and a 200 success code.
 
 ```
-
+no content
 ```
 
 {{% /expand %}}
