@@ -11,7 +11,7 @@ pre: ""
 
 ## About the Policies  API
 
-CloudWisdom's Policies API can be used to -----.  You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/policies) and by clicking the interactive buttons below.
+CloudWisdom's Policies API can be used to list, inspect, create, delete, mute, and unmute policies.  You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/policies) and by clicking the interactive buttons below.
 
 ## GET from /policies
 
@@ -544,9 +544,7 @@ no content
 
 | Parameter | Parameter Type | Data Type | Description |
 |--------------------|----------------|---------------|------------------------------------------------------------------------------------|
-| User-Agent | header | string | User-Agent. |
 | policyId  | path  | string  | Unique ID for a policy.  |
-|  policyWrapper  | body   |  JSON | Policy Wrapper (includes policy template)  |
 
 ### Request URL
 
@@ -563,12 +561,12 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/polici
 
 ### Response Body
 
-The following response returns the specified policy belonging to id `/2cf1fb85-bf7b-438a-9e9d-001f374b5eb7`.
+The following response returns the specified policy belonging to id `2cf1fb85-1111-2222-3333-001f374b5eb7`.
 
 ```
 {
   "policy": {
-    "id": "2cf1fb85-bf7b-438a-9e9d-001f374b5eb7",
+    "id": "2cf1fb85-1111-2222-3333-001f374b5eb7",
     "name": "WINSRV Example 2",
     "description": null,
     "scope": {
@@ -651,7 +649,7 @@ The following response returns the specified policy belonging to id `/2cf1fb85-b
 
 ### CURL
 
-In the following CURL example, the WINSRV policy used in previous examples is changed into an AWS EC2 policy.
+In the following CURL example, the WINSRV policy used in the previous example is updated. Now it is an AWS EC2 policy.
 
 ```
 curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
@@ -912,7 +910,7 @@ no content
 
 ### CURL
 
-In the following CURL example, a policy with the **policyId** `fe8bd66b-1111-2222-3333-d898aebda30f` is muted for 58000 milliseconds. 
+In the following CURL example, a policy with the **policyId** `fe8bd66b-1111-2222-3333-d898aebda30f` is muted for 58000 milliseconds.
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: */*' 'https://app.metricly.com/policies/fe8bd66b-1111-2222-3333-d898aebda30f/mute/58000'
