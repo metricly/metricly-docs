@@ -499,7 +499,7 @@ The following Response Body returns 3 muted policies and the mute duration in mi
 
 ---
 
-## DELETE from /policies/{policyId}
+## DELETE to /policies/{policyId}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/policies/deletePolicyUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete a policy.
 {{% expand "View Method Details." %}}
@@ -855,7 +855,7 @@ The following Response Body returns a count of 31 events.
 
 ---
 
-## DELETE from /policies/{policyId}/mute
+## DELETE to /policies/{policyId}/mute
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/policies/clearMutePolicyUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to unmute a policy.
 {{% expand "View Method Details." %}}
