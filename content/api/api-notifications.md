@@ -13,7 +13,7 @@ pre: ""
 
 CloudWisdom's Notifications API can be used to list, create, delete, inspect, and edit notifications.  You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/notifications) and by clicking the interactive buttons below.
 
-## GET to /notifications
+## GET from /notifications
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/listUsingGET_2" theme="info" >}} GET {{< /button >}} Use this endpoint to get a list of all notifications and their templates.
 {{% expand "View Method Details." %}}
@@ -313,7 +313,7 @@ The following response confirms a test notification has been sent to the defined
 
 ---
 
-## Delete from /notifications/{Id}
+## Delete to /notifications/{Id}
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/notifications/deleteUsingDELETE_3" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to delete a notification.
 {{% expand "View Method Details." %}}
