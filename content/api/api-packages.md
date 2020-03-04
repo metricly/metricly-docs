@@ -423,7 +423,7 @@ CloudWisdom has a [community GitHub for packages](https://github.com/netuitive-c
 
 7\. Enter `metricly package format` to prepare the package.
 
-9\. Enter `metricly package create` to create a pkg.zip (located in the folder).
+8\. Enter `metricly package create` to create a pkg.zip (located in the folder).
 
 10\. Install the package via a POST request to **/packages/install**. Successful package installations return a JSON template with a unique **id** for the package.
 
