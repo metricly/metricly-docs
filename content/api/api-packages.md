@@ -12,7 +12,7 @@ pre: ""
 
 CloudWisdom's Packages API can be used to list, install, delete, and inspect packages in CloudWisdom. You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/packages) and by clicking the interactive buttons below.
 
-View the [official Github](https://github.com/netuitive-community-packages) for all Virtana (formerly Netuitive) packages.
+View the [official GitHub](https://github.com/netuitive-community-packages) for all Virtana (formerly Netuitive) packages.
 
 ## GET from /packages
 {{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/packages/listUsingGET_3" >}} GET {{< /button >}} Use this endpoint to list installed packages.
@@ -339,13 +339,13 @@ The following response body
 
 ## Modify an Existing Community Package
 
-CloudWisdom has a [community Github for packages](https://github.com/netuitive-community-packages) available for download. You can install these via the API,  customize them to your liking, or even contribute with a completely new package. Let's simply modify an existing package to fit our needs.
+CloudWisdom has a [community GitHub for packages](https://github.com/netuitive-community-packages) available for download. You can install these via the API,  customize them to your liking, or even contribute with a completely new package. Let's simply modify an existing package to fit our needs.
 
 {{% expand "View method details."%}}
 
 **Prerequisite**: If you haven't already, install the [CLI](https://docs.metricly.com/api/api-cli/).
 
-1\. Go to the [community Github for packages](https://github.com/netuitive-community-packages) and download the **netuitive-packages-linux** package as a .zip file.
+1\. Go to the [community GitHub for packages](https://github.com/netuitive-community-packages) and download the **netuitive-packages-linux** package as a .zip file.
 
 2\. Unzip the contents.
 
@@ -428,7 +428,7 @@ CloudWisdom has a [community Github for packages](https://github.com/netuitive-c
 10\. Install the package via a POST request to **/packages/install**. Successful package installations return a JSON template with a unique **id** for the package.
 
 {{% notice tip %}}
-You can build complete packages from scratch or add/remove content from available packages found in the Github library. Virtana recommends starting with an existing package as a template before creating a completely custom package.
+You can build complete packages from scratch or add/remove content from available packages found in the GitHub library. Virtana recommends starting with an existing package as a template before creating a completely custom package.
 {{% /notice %}}
 
 {{% /expand %}}
