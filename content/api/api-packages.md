@@ -174,7 +174,7 @@ The following response body returns the package's details and confirms installat
 ---
 
 ## POST to /packages/install
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/packages/installUsingPOST" >}} POST {{< /button >}} Use this endpoint to install custom packages as a multipart/form data zip file.
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/packages/installUsingPOST" >}} POST {{< /button >}} Use this endpoint to install custom packages using a local zip file.
 
 {{% expand "View method details."%}}
 
