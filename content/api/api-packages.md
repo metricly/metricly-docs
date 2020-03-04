@@ -201,7 +201,7 @@ Virtana encourages that all custom packages be validated, formatted, and zipped 
 The following example requires **Content-Type: multipart/form-data** be specified.
 
 ```
-curl -X POST --header 'Content-Type: multipart/form-data' --header 'Accept: application/json' --header 'User-Agent: none' {"type":"formData"} 'https://app.metricly.com/packages/install'
+curl -X POST --header 'Content-Type: multipart/form-data' --header 'Accept: application/json' --header 'User-Agent: none' -F 'file=@./pkg.zip' {"type":"formData"} 'https://app.metricly.com/packages/install''
 ```
 
 ### Response Body
