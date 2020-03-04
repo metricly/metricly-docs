@@ -347,7 +347,6 @@ CloudWisdom has a [community GitHub for packages](https://github.com/netuitive-c
 
 1\. Go to the [community GitHub for packages](https://github.com/netuitive-community-packages) and clone the **netuitive-packages-linux** package to your local directory i.e. ``git clone https://github.com/netuitive-community-packages/netuitive-packages-linux.git``. Optionally, download the package as a zip file and unzip it.
 
-2\. Unzip the contents.
 
 3\. Navigate to the **policies** folder. Select **linux.-cpu.threshold.exceeded.json**.
 
