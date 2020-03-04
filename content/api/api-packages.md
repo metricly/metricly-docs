@@ -110,7 +110,7 @@ The following response body includes a shortened example of only one package. Ty
 |-------------|----------------|-----------|----------------------|
 | User-Agent | header | string | User-Agent |
 | userEmail  | query  | string  |  User Email |
-| request  | body  | JSON  | JSON with direct download URL of the package  |
+| request  | body  | JSON  | JSON with direct download URL of the package.  |
 
 ### Request URL
 
