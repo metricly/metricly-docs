@@ -280,7 +280,7 @@ no content
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| id | path | string | Unique ID of the package |
+| id | path | string | Unique UUID of the installed package e.g. ``30dfa898-a49e-31e4-9e7f-fa07445752fc`` |
 
 ### Request URL
 
