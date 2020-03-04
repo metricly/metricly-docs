@@ -192,7 +192,7 @@ The following response body returns the package's details and confirms installat
 
 {{% notice tip %}}
 
-CloudWisdom encourages that all custom packages be formatted, validated, and zipped using the metricly-cli: https://github.com/metricly/metricly-cli. Use these CLI commands in the following order: 1. `metricly package validate` 2. `metricly package format` 3. `metricly package create`.
+Virtana encourages that all custom packages be validated, formatted, and zipped using the metricly-cli: https://github.com/metricly/metricly-cli. Use these CLI commands in the following order: 1. `metricly package validate` 2. `metricly package format` 3. `metricly package create`.
 
 {{% /notice %}}
 
