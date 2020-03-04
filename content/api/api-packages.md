@@ -341,7 +341,7 @@ The following response body
 
 CloudWisdom has a [community GitHub for packages](https://github.com/netuitive-community-packages) available for download. You can install these via the API,  customize them to your liking, or even contribute with a completely new package. Let's simply modify an existing package to fit our needs.
 
-{{% expand "View method details."%}}
+{{% expand "View More."%}}
 
 **Prerequisite**: If you haven't already, install the [CLI](https://docs.metricly.com/api/api-cli/).
 
