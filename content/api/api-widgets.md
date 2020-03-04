@@ -594,3 +594,171 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
 {{% /expand %}}
 
 ---
+
+## Update a widget property
+
+Updating a widget is a three step process: GET the widget, make changes, then PUT the widget.
+
+{{% expand "View More."%}}
+
+1\. Build a CURL query to **GET /widgets** for a list of all existing widgets on a dashboard using the **dashboardId**. 
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/widgets?dashboardId=f8eec014-ebbd-4f82-8649-fa0f316236a5'
+```
+
+2\. Find the **id** of the widget you would like to update.
+
+3\. Build a CURL query to **GET /widgets/{id}**, using the **id** the widget.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/widgets/63386898-62fd-4f53-9582-2ff1d71ceea4'
+```
+
+4\. Review the response body and make changes as needed.
+
+```
+{
+  "widget": {
+    "id": "63386898-62fd-4f53-9582-2ff1d71ceea4",
+    "dashboardId": "f8eec014-ebbd-4f82-8649-fa0f316236a5",
+    "userId": 63164,
+    "name": "EC2 CPU",
+    "description": null,
+    "widgetType": "multi-metric",
+    "created": "2020-02-10T18:52:49Z",
+    "updated": "2020-02-27T02:20:42Z",
+    "properties": {
+      "visualization": "line",
+      "showElementTotal": "true",
+      "elementScopeTags": "[]",
+      "policies": "[]",
+      "useAllElementScopeTags": "true",
+      "metricLimit": "10",
+      "showBands": "true",
+      "elementScopeAttributes": "[{\"value\":\"us-east-1\",\"key\":\"region\"}]",
+      "elementScopeExcludedAttributes": "[]",
+      "elementNameContains": "",
+      "showHighest": "true",
+      "categories": "[]",
+      "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+      "period": "latest1",
+      "colorByMetric": "false",
+      "elementScopeTypes": "[\"EC2\"]",
+      "excludedElementScopeFqns": "[]",
+      "grouping": "attribute=SERVICE",
+      "useAllMetricScopeTags": "true",
+      "metricAggs": "[]",
+      "elementScopeIds": "[]",
+      "metricScopeTags": "[]",
+      "groupByPolicy": "false",
+      "useAllElementScopeAttributes": "true",
+      "metricAgg": "avg",
+      "metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+      "topNLimit": "5",
+      "elementScopeExcludedTags": "[]"
+    },
+    "generated": false
+  }
+}
+```
+
+4\. Build a CURL query to **PUT /widgets/{id}**, using the **id** the widget. In this example, we are updating the **elementScopeAttributes** to have **region** as us-west-2 instead of us-east-1. 
+
+```
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \ 
+   "widget": { \ 
+     "id": "63386898-62fd-4f53-9582-2ff1d71ceea4", \ 
+     "dashboardId": "f8eec014-ebbd-4f82-8649-fa0f316236a5", \ 
+     "userId": 63164, \ 
+     "name": "EC2 CPU", \ 
+     "description": null, \ 
+     "widgetType": "multi-metric", \ 
+     "created": "2020-02-10T18:52:49Z", \ 
+     "updated": "2020-02-27T02:20:42Z", \ 
+     "properties": { \ 
+       "visualization": "line", \ 
+       "showElementTotal": "true", \ 
+       "elementScopeTags": "[]", \ 
+       "policies": "[]", \ 
+       "useAllElementScopeTags": "true", \ 
+       "metricLimit": "10", \ 
+       "showBands": "true", \ 
+       "elementScopeAttributes": "[{\"value\":\"us-west-2\",\"key\":\"region\"}]", \ 
+       "elementScopeExcludedAttributes": "[]", \ 
+       "elementNameContains": "", \ 
+       "showHighest": "true", \ 
+       "categories": "[]", \ 
+       "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]", \ 
+       "period": "latest1", \ 
+       "colorByMetric": "false", \ 
+       "elementScopeTypes": "[\"EC2\"]", \ 
+       "excludedElementScopeFqns": "[]", \ 
+       "grouping": "attribute=SERVICE", \ 
+       "useAllMetricScopeTags": "true", \ 
+       "metricAggs": "[]", \ 
+       "elementScopeIds": "[]", \ 
+       "metricScopeTags": "[]", \ 
+       "groupByPolicy": "false", \ 
+       "useAllElementScopeAttributes": "true", \ 
+       "metricAgg": "avg", \ 
+       "metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]", \ 
+       "topNLimit": "5", \ 
+       "elementScopeExcludedTags": "[]" \ 
+     }, \ 
+     "generated": false \ 
+   } \ 
+ }' 'https://app.metricly.com/widgets/63386898-62fd-4f53-9582-2ff1d71ceea4'
+
+```
+5\. Review the response body to see that your widget has been updated.
+
+```
+{
+  "widget": {
+    "id": "63386898-62fd-4f53-9582-2ff1d71ceea4",
+    "dashboardId": "f8eec014-ebbd-4f82-8649-fa0f316236a5",
+    "userId": 63164,
+    "name": "EC2 CPU",
+    "description": null,
+    "widgetType": "multi-metric",
+    "created": "2020-02-10T18:52:49Z",
+    "updated": "2020-03-04T17:16:45Z",
+    "properties": {
+      "visualization": "line",
+      "showElementTotal": "true",
+      "elementScopeTags": "[]",
+      "policies": "[]",
+      "useAllElementScopeTags": "true",
+      "metricLimit": "10",
+      "showBands": "true",
+      "elementScopeAttributes": "[{\"value\":\"us-west-2\",\"key\":\"region\"}]",
+      "elementScopeExcludedAttributes": "[]",
+      "elementNameContains": "",
+      "showHighest": "true",
+      "categories": "[]",
+      "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+      "period": "latest1",
+      "colorByMetric": "false",
+      "elementScopeTypes": "[\"EC2\"]",
+      "excludedElementScopeFqns": "[]",
+      "grouping": "attribute=SERVICE",
+      "useAllMetricScopeTags": "true",
+      "metricAggs": "[]",
+      "elementScopeIds": "[]",
+      "metricScopeTags": "[]",
+      "groupByPolicy": "false",
+      "useAllElementScopeAttributes": "true",
+      "metricAgg": "avg",
+      "metrics": "[{\"fqn\":\"aws.ec2.cpuutilization\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+      "topNLimit": "5",
+      "elementScopeExcludedTags": "[]"
+    },
+    "generated": false
+  }
+}
+```
+
+The widget now shows CPU utilization for EC2s in the us-west-2 region.
+
+{{% /expand %}}
