@@ -419,7 +419,7 @@ CloudWisdom has a [community GitHub for packages](https://github.com/netuitive-c
 
 5\. Navigate to the root of the package folder.
 
-7\. Enter `metricly package validate` to ensure the package is ready for formatting.
+6\. Enter `metricly package validate` to ensure the package is ready for formatting.
 
 8\. Enter `metricly package format` to prepare the package.
 
