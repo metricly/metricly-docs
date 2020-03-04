@@ -23,7 +23,7 @@ View the [official GitHub](https://github.com/netuitive-community-packages) for 
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| packageId | query | string | Unique ID of the package. |
+| packageId | query | string | ID of the package e.g. netuitive.packages.linux. |
 | version  | query  |  string | Semantic version of the package.  |
 
 ### Request URL
