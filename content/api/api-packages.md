@@ -425,7 +425,7 @@ CloudWisdom has a [community GitHub for packages](https://github.com/netuitive-c
 
 8\. Enter `metricly package create` to create a pkg.zip (located in the folder).
 
-10\. Install the package via a POST request to **/packages/install**. Successful package installations return a JSON template with a unique **id** for the package.
+9\. Install the package via a POST request to **/packages/install**. Successful package installations return a JSON template with a unique **id** for the package.
 
 {{% notice tip %}}
 You can build complete packages from scratch or add/remove content from available packages found in the GitHub library. Virtana recommends starting with an existing package as a template before creating a completely custom package.
