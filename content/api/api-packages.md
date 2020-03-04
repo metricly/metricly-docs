@@ -380,7 +380,7 @@ CloudWisdom has a [community GitHub for packages](https://github.com/netuitive-c
   }
 }
 ```
-4\. Notice the **level** of CPU total utilization is 95%. Let's lower that to 85% and update the description.
+3\. Notice the **level** of CPU total utilization is 95%. Let's lower that to 85% and update the description.
 
 
 ```
