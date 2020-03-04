@@ -28,7 +28,7 @@ View the [official GitHub](https://github.com/netuitive-community-packages) for 
 
 ### Request URL
 
- `https://app.metricly.com/packages?packageId={packageId}&version={version}`
+ `https://app.metricly.com/packages`
 
 ### CURL
 
