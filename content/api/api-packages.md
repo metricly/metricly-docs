@@ -414,7 +414,7 @@ CloudWisdom has a [community GitHub for packages](https://github.com/netuitive-c
 }
 ```
 
-5\. Save the file & open the terminal/command prompt.
+4\. Save the file & open the terminal/command prompt.
 
 5\. Navigate to the root of the package folder.
 
