@@ -110,6 +110,7 @@ The following response body includes a shortened example of only one package. Ty
 |-------------|----------------|-----------|----------------------|
 | User-Agent | header | string | User-Agent |
 | userEmail  | query  | string  |  User Email |
+| request  | body  | JSON  | JSON with direct download URL of the package  |
 
 ### Request URL
 
@@ -187,27 +188,48 @@ The following response body returns the package's details and confirms installat
 
 ### Request URL
 
- ` `
+ `https://app.metricly.com/packages/install`
 
 {{% notice tip %}}
 
-CloudWisdom encourages that all custom packages be formatted, validated, and zipped using the metricly-cli: https://github.com/metricly/metricly-cli. See package commands (e.g. `metricly package validate`, `metricly package format`, `metricly package validate`,`metricly package create`.)
+CloudWisdom encourages that all custom packages be formatted, validated, and zipped using the metricly-cli: https://github.com/metricly/metricly-cli. Use these CLI commands in the following order: 1. `metricly package validate` 2. `metricly package format` 3. `metricly package create`.
 
 {{% /notice %}}
 
 ### CURL
 
-The following example
+The following example requires **Content-Type: multipart/form-data** be specified.
 
 ```
-
+curl -X POST --header 'Content-Type: multipart/form-data' --header 'Accept: application/json' --header 'User-Agent: none' {"type":"formData"} 'https://app.metricly.com/packages/install'
 ```
 
 ### Response Body
 
-The following response body
+The following Response Body returns confirmation that the package has been created, complete with a unique **id**.
 
 ```
+{
+  "package": {
+    "id": "f4a226ea-1111-2222-3333-4e7211128728",
+    "tenantId": "0fa5384a-1111-0000-0000-43e7c6af54f6",
+    "packageId": "netuitive.packages.linux",
+    "version": "3.9.0",
+    "name": "Netuitive Packages Linux",
+    "description": "A set of Netuitive analytics configurations, polices, dashboards, and reports that are used to monitor performance of the default collectors in the Netuitive Agent (CPU, DiskSpace, DiskUsage, LoadAverage, Memory, Network, VMStat)",
+    "authorName": "Netuitive Research",
+    "authorEmail": "research@netuitive.com",
+    "logo": "http://assets.app.netuitive.com/pkg/logo/netuitive/banner_logo.png",
+    "downloadUrl": "https://github.com/netuitive-community-packages/netuitive-packages-linux/archive/master.zip",
+    "userEmail": "null",
+    "created": "2020-03-04T00:08:46Z",
+    "updated": "2020-03-04T00:08:46Z",
+    "tags": [],
+    "policies": [],
+    "analyticConfigurations": [],
+    "dashboards": []
+  }
+}
 
 ```
 {{% /expand %}}
@@ -314,3 +336,99 @@ The following response body
 {{% /expand %}}
 
 ---
+
+## Modify an Existing Community Package
+
+CloudWisdom has a [community Github for packages](https://github.com/netuitive-community-packages) available for download. You can install these via the API,  customize them to your liking, or even contribute with a completely new package. Let's simply modify an existing package to fit our needs.
+
+{{% expand "View method details."%}}
+
+**Prerequisite**: If you haven't already, install the [CLI](https://docs.metricly.com/api/api-cli/).
+
+1\. Go to the [community Github for packages](https://github.com/netuitive-community-packages) and download the **netuitive-packages-linux** package as a .zip file.
+
+2\. Unzip the contents.
+
+3\. Navigate to the **policies** folder. Select **linux.-cpu.threshold.exceeded.json**.
+
+```
+{
+  "policy": {
+    "actions": [
+      {
+        "category": 3,
+        "type": "event"
+      }
+    ],
+    "conditions": [
+      {
+        "analytic": "actual",
+        "level": 95,
+        "metric": "netuitive.linux.cpu.total.utilization.percent",
+        "operator": ">"
+      }
+    ],
+    "deleted": false,
+    "description": "The CPU on the SERVER instance has exceeded 95% for at least 15 minutes. The metric netuitive.linux.cpu.total.utilization.percent factors in cpu steal as part of its computation. Check cpu.total.steal for the instance. If the value is high, it could mean a neighboring virtual machine is hogging the physical cpu. For instances running in AWS, stopping and starting the EC2 should resolve the issue as the virtual machine is moved to a different hypervisor.",
+    "duration": 900,
+    "enabled": true,
+    "name": "Linux - CPU Threshold Exceeded",
+    "scope": {
+      "elementTypes": [
+        "SERVER"
+      ]
+    }
+  }
+}
+```
+4\. Notice the **level** of CPU total utilization is 95%. Let's lower that to 85% and update the description.
+
+
+```
+{
+  "policy": {
+    "actions": [
+      {
+        "category": 3,
+        "type": "event"
+      }
+    ],
+    "conditions": [
+      {
+        "analytic": "actual",
+        "level": 85,
+        "metric": "netuitive.linux.cpu.total.utilization.percent",
+        "operator": ">"
+      }
+    ],
+    "deleted": false,
+    "description": "The CPU on the SERVER instance has exceeded 85% for at least 15 minutes. The metric netuitive.linux.cpu.total.utilization.percent factors in cpu steal as part of its computation. Check cpu.total.steal for the instance. If the value is high, it could mean a neighboring virtual machine is hogging the physical cpu. For instances running in AWS, stopping and starting the EC2 should resolve the issue as the virtual machine is moved to a different hypervisor.",
+    "duration": 900,
+    "enabled": true,
+    "name": "Linux - CPU Threshold Exceeded",
+    "scope": {
+      "elementTypes": [
+        "SERVER"
+      ]
+    }
+  }
+}
+```
+
+5\. Save the file & open the terminal/command prompt.
+
+6\. Navigate to the unzipped package folder.
+
+7\. Enter `metricly package validate` to ensure the package is ready for formatting.
+
+8\. Enter `metricly package format` to prepare the package.
+
+9\. Enter `metricly package create` to create a pkg.zip (located in the folder).
+
+10\. Install the package via a POST request to **/packages/install**. Successful package installations return a JSON template with a unique **id** for the package.
+
+{{% notice tip %}}
+You can build complete packages from scratch or add/remove content from available packages found in the Github library. Virtana recommends starting with an existing package as a template before creating a completely custom package.
+{{% /notice %}}
+
+{{% /expand %}}
