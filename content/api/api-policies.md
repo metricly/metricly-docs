@@ -924,7 +924,7 @@ no content
 
 ### Request URL
 
-`https://app.metricly.com/policies/{policyId}/mute/58000`
+`https://app.metricly.com/policies/{policyId}/mute/{muteMs}`
 
 ### CURL
 
