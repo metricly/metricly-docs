@@ -11,7 +11,7 @@ pre: ""
 
 ## About the Webhooks API
 
-CloudWisdom's Webhooks API can be used to ingest external events. You can also create policies (via [Policies API](/api/api-policies)) based off of the contents of these external events. This endpoint is not available in Swagger.
+CloudWisdom's Webhooks API can be used to ingest external events. You can also create policies (via [Policies API](/api/api-policies)) triggered by the contents of these external events. This endpoint is not available in Swagger.
 
 ## POST to /webhook{apiId}
 {{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/" >}} GET {{< /button >}} Use this endpoint to ingest external events.
