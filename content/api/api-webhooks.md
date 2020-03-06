@@ -11,67 +11,56 @@ pre: ""
 
 ## About the Webhooks API
 
-CloudWisdom's Webhooks API can be used to .
+CloudWisdom's Webhooks API can be used to ingest external events. You can also create policies (via [Policies API](/api/api-policies)) based off of the contents of these external events. This endpoint is not available in Swagger.
 
 ## POST to /webhook{apiId}
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/widgets/listWidgetsUsingGET" >}} GET {{< /button >}} Use this endpoint to
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/" >}} GET {{< /button >}} Use this endpoint to ingest external events.
 {{% expand "View method details."%}}
 
 ### Parameters
 
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|-----------|----------------------|
-| dashboardId | query | string | Unique ID of the dashboard this widget is associated to. |
+| apiId | query | string | Your Webhook API key. This is found in Integrations > Webhook. |
+| body | body  | JSON  | JSON template for the webhook.  |
 
 ### Request URL
 
- ` `
+ `https://api.app.netuitive.com/ingest/webhook/{apiId}`
 
 ### CURL
 
-The following example only requires the dashboard's **id** to return the widgets.
+The following example sends an external event to CloudWisdom to be ingested and accounted for.
+
+{{% notice tip %}}
+The Webhooks endpoint accepts any text you place in the body and uses that input as the event message in CloudWisdom. It is not necessary to include proper JSON formatting (unless you want your message to include brackets and attribute-value pairs).
+{{% /notice %}}
 
 ```
-
+curl -X POST 'https://api.app.netuitive.com/ingest/webhook/2e9b8ed4f12345fdca11af3a443172a4' \
+-H 'Content-Type: application/json' \
+-H 'X-Netuitive-Api-Options: INJECT_TIMESTAMP' \
+-H 'Authorization: Basic XXX' \
+-H ‘Accept: application/json’ \
+--data '
+{ "category": "WARN", "elementId": 12345, "elementType": "SERVER", "policy": "EXTERNAL SYSTEM A", "title": "XYZ" }
+'
 ```
 
 ### Response Body
 
-The following response body returns 4 widgets that belong to the chosen dashboard. This does not include **gridstackContents** found by interacting with the Dashboards API directly.
+The following response body returns the data sent to CloudWisdom.
 
 ```
+    {
+      "category": "WARN",
+      "elementId": "12345",
+      "elementType": "SERVER",
+      "policy": "EXTERNAL SYSTEM A",
+      "title": "XYZ"
+    }
 
 ```
 {{% /expand %}}
 
 ---
-
-
-
-
-
-The Webhooks API allows you to use webhooks to send events to CloudWisdom. Sending events via the Webhook API can be used to generate external events in CloudWisdom’s Event Explorer, meaning you could create policies based on the content of those messages. See external event policy conditions for more information.
-
-**Request Headers**
-
-| Header Name | Header Value |
-|--------------|------------------|
-| Content-Type | application/json |
-
-## PUT
-### PUT a New Event /webhook/{apild}
-
-**Parameters**
-
-| Parameters | Required/Optional | Description |
-|------------|-------------------|-------------------------------------------------|
-| body | Optional | Body parameter; your event message as a string. |
-| apiId | Required | URL (path) parameter; your API key. |
-
-**Body Attributes**
-
-No strict format.
-
-{{% notice warning %}}
-The Webhook endpoint will take any text you place in the body and use it as the event message in CloudWisdom, so it’s not necessary to include proper JSON formatting (unless you want your message to include brackets and attribute-value pairs).
-{{% /notice %}}
