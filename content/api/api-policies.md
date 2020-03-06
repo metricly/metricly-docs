@@ -836,6 +836,12 @@ The following Response Body returns the updates reflected in the policy template
 
 ### Parameters
 
+{{% notice tip %}}
+
+The **duration**, **startTime**, and **endTime** parameters are optional. Users can interact with the /policies/{policyId}/events endpoint without using these parameters to obtain events which have occurred within the past hour.
+
+{{% /notice %}}
+
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|---------------|---------------------------------------------------------------|
 | policyId | path  | string  | Unique ID for a policy.  |
