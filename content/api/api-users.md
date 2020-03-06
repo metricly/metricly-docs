@@ -12,7 +12,7 @@ pre: ""
 
 ## About the Users API
 
-CloudWisdom's Users API can be used to --- . You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/users) and by clicking the interactive buttons below.
+CloudWisdom's Users API can be used to list and create users. You can also update your own user password and profile through the API, as well as monitor an account's setup status. You can test these endpoints by visiting our [Swagger page](https://app.metricly.com/swagger-ui.html#/users) and by clicking the interactive buttons below.
 
 
 ## GET from /users
@@ -34,7 +34,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/users'
 
 ### Response Body
 
-The following Response Body includes only one user. Notice their **role** is set to `Administrator`.
+The following response body includes only one user. Notice their **role** is set to `Administrator`.
 
 ```
 {
@@ -115,7 +115,7 @@ The following Response Body includes only one user. Notice their **role** is set
 
 ### CURL
 
-The following example creates a new user with the **email** `example+02052020%40gmail.com` and **password** `123456789*`. Notice that you can specify default properties, such as **theme** and **landingPage**.
+The following example creates a new user with the **email** `example+02052020@gmail.com` and **password** `123456789*`. Notice that you can specify default properties, such as **theme** and **landingPage**.
 
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
@@ -157,7 +157,7 @@ Try the following template for yourself in Swagger.
    "user": {
      "active": true,
      "customElementTypeIcons": {},
-     "email": "example+02052020%40gmail.com",
+     "email": "example+02052020@gmail.com",
      "password": "123456789*",
      "properties": {
         "theme": "dark",
@@ -182,13 +182,13 @@ Try the following template for yourself in Swagger.
 
 ### Response Body
 
-The following Response Body includes confirmation the user has been created with the specified properties and a unique **id**. Note the full template shows all available properties that can be included during user creation.
+The following response body includes confirmation the user has been created with the specified properties and a unique **id**. Note the full template shows all available properties that can be included during user creation.
 
 ```
 {
   "user": {
     "id": 84990,
-    "email": "example+02052020%40gmail.com",
+    "email": "example+02052020@gmail.com",
     "realUser": null,
     "active": true,
     "properties": {
@@ -264,7 +264,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/users/
 
 ### Response Body
 
-The following Response Body includes the only active user in the example environment.
+The following response body includes the only active user in the example environment.
 
 ```
 {
@@ -349,14 +349,14 @@ The following Response Body includes the only active user in the example environ
 
 ### CURL
 
-The following example
+The following example only requires the user's unique **id** be added to the Request URL.
 ```
 curl -X DELETE --header 'Accept: */*' --header 'User-Agent: none' 'https://app.metricly.com/users/84330'
 ```
 
 ### Response Body
 
-The following Response Body returns no content along with a 204 successful response code.
+The following response body returns no content along with a 204 successful response code.
 ```
 no content
 ```
@@ -364,7 +364,7 @@ no content
 
 ---
 ## GET from /users/{id}
-{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/users/getUserUsingGET" >}} GET {{< /button >}} Use this endpoint
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/users/getUserUsingGET" >}} GET {{< /button >}} Use this endpoint to get the full template of a user.
 
 {{% expand "View method details."%}}
 
@@ -380,7 +380,8 @@ no content
 
 ### CURL
 
-The following example
+The following example only requires the user's unique **id** be added to the Request URL.
+
 ```
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/users/12345'
 
@@ -388,7 +389,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/users/
 
 ### Response Body
 
-The following Response Body includes the full user template.
+The following response body includes the full user template.
 
 ```
 {
@@ -456,7 +457,7 @@ The following Response Body includes the full user template.
 
 ---
 ## PUT to /users/{id}
-{{< button theme="warning" href="https://app.metricly.com/swagger-ui.html#!/users/updateUserUsingPUT" >}} PUT {{< /button >}} Use this endpoint to update a user.
+{{< button theme="warning" href="https://app.metricly.com/swagger-ui.html#!/users/updateUserUsingPUT" >}} PUT {{< /button >}} Use this endpoint to update **your own user only**.
 
 {{% expand "View method details."%}}
 
@@ -474,7 +475,7 @@ The following Response Body includes the full user template.
 
 ### CURL
 
-The following example, the **theme** has been updated to dark. You can also set a user to **active** `false` or downgrade permissions found at the end of the template.
+The following example, the **theme** has been updated to dark.
 
 ```
 curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
@@ -606,7 +607,7 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
 
 ### Response Body
 
-The following Response Body includes a full user template that shows the changes made.
+The following response body includes a full user template that shows the changes made.
 
 ```
 {
@@ -692,7 +693,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/users/
 
 ### Response Body
 
-The following response body shows a breakdown of actions available in CloudWisdom and taken by the user. This user has created at least one policy, dashboard, datasource, and notification. This account has been 100% configured.
+The following response body shows a breakdown of actions available in CloudWisdom that have been taken by the user. This user has created at least one policy, dashboard, datasource, and notification. This account has been 100% configured.
 ```
 {
   "featureUsage": {
@@ -729,7 +730,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 ### Response Body
 
-The following Response Body returns the user template but does not reveal the new password.
+The following response body returns the user template but does not reveal the new password.
 
 ```
 {
@@ -796,3 +797,159 @@ The following Response Body returns the user template but does not reveal the ne
 {{% /expand %}}
 
 ---
+
+## How to Preconfigure a New User
+
+Admins can create new users through the User API by sending a POST call to **/users**. In addition to basic setup, admins can use **properties** to define config such as the user's landing page, theme, and even set them up with a favorite dashboard. Follow this walkthrough to learn how to preconfigure a user.
+
+{{% expand "View Walkthrough." %}}
+
+1\. Build a basic JSON template for creating a user. This is an end user, so set the user to **ReadOnly** `True`. Do not send a basic template to create the user; you cannot edit the user once it has been created.
+
+```
+{
+  "user": {
+    "id": "",
+    "email": "email@domain.com",
+    "active": true,
+    "properties": {
+    }
+  },
+  "readOnly": true
+}
+
+```
+
+2\. Add all the properties you want to preconfigure. Below we have defined their **timeZone**, **theme**, **landingPage**, **fullName**, and created a placeholder for **favoriteDashboards**.
+
+
+```
+{
+  "user": {
+    "id": "",
+    "email": "email@domain.com",
+    "active": true,
+    "properties": {
+      "timeZone": "UTC",
+      "landingPage": "dashboards",
+      "fullName": "John Doe",
+      "theme": "dark",
+      "favoriteDashboards": "[]"
+    }
+  },
+  "readOnly": true
+}
+
+```
+
+3\. Build a CURL query to GET a list of dashboardIds from **/dashboards**.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/dashboards'
+```
+
+4\. Select one or many **ids** belonging to dashboards the user would find most useful.
+
+5\. Add the **ids** to the JSON payload you built for creating the new user.
+
+
+```
+{
+	"user": {
+		"id": "",
+		"email": "email@domain.com",
+		"active": true,
+		"properties": {
+			"timeZone": "UTC",
+			"landingPage": "dashboards",
+			"fullName": "John Doe",
+			"theme": "dark",
+			"favoriteDashboards": "[\"55f573b7-3c97-3e2e-9f3e-ba4b15d6b59d\",\"54fc1a1b-d762-32b7-af4b-d6cd4e2dabd5\"]"
+		}
+	},
+	"readOnly": true
+}
+
+```
+
+6\. Send to **/users** as a POST CURL query.
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
+ 	"user": { \
+ 		"id": "", \
+ 		"email": "emaily%40domain.com", \
+ 		"active": true, \
+ 		"properties": { \
+ 			"timeZone": "UTC", \
+ 			"landingPage": "dashboards", \
+ 			"fullName": "John Doe", \
+ 			"theme": "dark", \
+ 			"favoriteDashboards": "[\"55f573b7-3c97-3e2e-9f3e-ba4b15d6b59d\",\"54fc1a1b-d762-32b7-af4b-d6cd4e2dabd5\"]" \
+ 		} \
+ 	}, \
+ 	"readOnly": true \
+ }' 'https://app.metricly.com/users'
+```
+7\. Review the response body.
+
+```
+{
+  "user": {
+    "id": 84394,
+    "email": "email@domain.com",
+    "realUser": null,
+    "active": true,
+    "properties": {
+      "seenEventsGraphTooltip": "false",
+      "dailyReportEnabled": "false",
+      "leftNavEnabled": "true",
+      "seenIntegrationsTooltip": "false",
+      "ebsOnStoppedEc2EmailEnabled": "false",
+      "chartHeight": "tall",
+      "seenWelcomeTour": "false",
+      "seenAnnouncements": "[]",
+      "theme": "dark",
+      "favoriteDashboards": "[\"55f573b7-3c97-3e2e-9f3e-ba4b15d6b59d\",\"54fc1a1b-d762-32b7-af4b-d6cd4e2dabd5\"]",
+      "leftNavLockedOpen": "true",
+      "unattachedEbsEmailEnabled": "false",
+      "arrangeChartsSetting": "grid",
+      "seenWelcomeModal": "false",
+      "seenMetricsChartTooltip": "false",
+      "createdDashboard": "false",
+      "landingPage": "dashboards",
+      "timeZone": "UTC",
+      "fullName": "John Doe",
+      "ebscostTable": "[]",
+      "seenMetricsFilterTooltip": "false",
+      "inventoryTable": "[]",
+      "chartWidth": "xsmall",
+      "unattachedElbEmailEnabled": "false",
+      "alertBadgeEnabled": "true",
+      "metricsViewSetting": "tree"
+    },
+    "tenantProperties": {
+      "netuitiveAccountId": "9876543",
+      "tenantType": null,
+      "tenantStatus": null,
+      "productIds": [],
+      "trialExpiresAt": null,
+      "name": null,
+      "datasourceTrialCountLimit": null
+    },
+    "customElementTypeIcons": {},
+    "roles": [
+      "Read Only"
+    ],
+    "administrator": false,
+    "globalAdministrator": false,
+    "globalReadOnly": false,
+    "assumedIdentity": false,
+    "assumedReadOnlyIdentity": false,
+    "readOnly": true
+  }
+}
+```
+
+
+{{% /expand %}}
