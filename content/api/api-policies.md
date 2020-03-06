@@ -378,7 +378,7 @@ The following Response Body includes a new unique **id** and updates the **creat
 
 ## GET from /policies/elements
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getCrossElementMetricAggregationUsingPOST" theme="info" >}} GET {{< /button >}} Use this endpoint to retrieve element counts for all policies within the time frame specified.
+{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getPolicyElementCountsUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to retrieve element counts for all policies within the time frame specified.
 {{% expand "View Method Details." %}}
 
 ### Parameters
