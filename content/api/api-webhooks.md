@@ -71,16 +71,10 @@ Note that this endpoint is not available on Swagger, however you can review the 
 
 ### Response Body
 
-The following response body returns the data sent to CloudWisdom.
+The following response body returns no content and a 202 success code. 
 
 ```
-    {
-      "category": "WARN",
-      "elementId": "12345",
-      "elementType": "SERVER",
-      "policy": "EXTERNAL SYSTEM A",
-      "title": "XYZ"
-    }
+no content
 
 ```
 {{% /expand %}}
