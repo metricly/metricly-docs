@@ -457,7 +457,7 @@ The following response body includes the full user template.
 
 ---
 ## PUT to /users/{id}
-{{< button theme="warning" href="https://app.metricly.com/swagger-ui.html#!/users/updateUserUsingPUT" >}} PUT {{< /button >}} Use this endpoint to update **your own user only**.
+{{< button theme="warning" href="https://app.metricly.com/swagger-ui.html#!/users/updateUserUsingPUT" >}} PUT {{< /button >}} Use this endpoint to update your own user or to manage the **role** and **active** status of other users (must be an admin to do this).
 
 {{% expand "View method details."%}}
 
@@ -804,7 +804,12 @@ Admins can create new users through the User API by sending a POST call to **/us
 
 {{% expand "View Walkthrough." %}}
 
-1\. Build a basic JSON template for creating a user. This is an end user, so set the user to **ReadOnly** `True`. Do not send a basic template to create the user; you cannot edit the user once it has been created.
+1\. Build a basic JSON template for creating a user. This is an end user, so set the user to **ReadOnly** `True`.
+
+{{% notice tip %}}
+
+Do not send a basic template to create the user; you cannot edit the user's preference details once it has been created -- only the **active** and **role** settings. Finish setting up all properties first.
+{{% /notice %}}
 
 ```
 {
