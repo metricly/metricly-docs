@@ -47,6 +47,28 @@ curl -X POST 'https://api.app.netuitive.com/ingest/webhook/2e9b8ed4f12345fdca11a
 '
 ```
 
+### Swagger Payload
+
+Note that this endpoint is not available on Swagger, however you can review the CURL query from above as JSON.
+
+```
+{
+    "url": "https://api.app.netuitive.com/ingest/webhook/2e9b8ed4f12345fdca11af3a443172a4",
+    "method": "post",
+    "headers": {
+        "Content-Type": "application/json",
+        "X-Netuitive-Api-Options": "INJECT_TIMESTAMP",
+        "Authorization": "Basic XXX",
+        "‘Accept": ""
+    },
+    "data": {
+        "\n{ \"category\": \"WARN\", \"elementId\": 12345, \"elementType\": \"SERVER\", \"policy\": \"EXTERNAL SYSTEM A\", \"title\": \"XYZ\" }\n": ""
+    }
+}
+
+```
+
+
 ### Response Body
 
 The following response body returns the data sent to CloudWisdom.
