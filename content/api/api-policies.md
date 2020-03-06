@@ -958,7 +958,7 @@ Receiving alerts during off-hours, such as over the weekend, may not be necessar
 curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies'
 ```
 
-2\. Grab the **Id** for each policy you wish to mute. In this example two policies are muted using the IDs `fcc6aed6-0a54-3cbd-be5a-43ded16a3750` and `fac1361a-825d-35cb-8a1c-f139f5655992`.  
+2\. Find the **id** for each policy you wish to mute. In this example two policies are muted using the IDs `fcc6aed6-0a54-3cbd-be5a-43ded16a3750` and `fac1361a-825d-35cb-8a1c-f139f5655992`.  
 
 3\. Build two separate CURL queries to POST to **/policies/{policyId}/mute{ms}**. Let's mute these policies at Friday at 5pm until Monday 9am. That's `230400000` milliseconds.   
 
