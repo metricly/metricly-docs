@@ -457,7 +457,7 @@ The following response body includes the full user template.
 
 ---
 ## PUT to /users/{id}
-{{< button theme="warning" href="https://app.metricly.com/swagger-ui.html#!/users/updateUserUsingPUT" >}} PUT {{< /button >}} Use this endpoint to update your own user or to manage the **role** and **active** status of other users (must be an admin to do this).
+{{< button theme="warning" href="https://app.metricly.com/swagger-ui.html#!/users/updateUserUsingPUT" >}} PUT {{< /button >}} Use this endpoint to update your own user or to manage the **roles** and **permissions** of other users (must be an admin to do this).
 
 {{% expand "View method details."%}}
 
@@ -475,7 +475,7 @@ The following response body includes the full user template.
 
 ### CURL
 
-The following example, the **theme** has been updated to dark.
+The following example, the **theme** has been updated to dark.  
 
 ```
 curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
@@ -671,6 +671,7 @@ The following response body includes a full user template that shows the changes
   }
 }
 ```
+
 {{% /expand %}}
 
 ---
@@ -808,7 +809,7 @@ Admins can create new users through the User API by sending a POST call to **/us
 
 {{% notice tip %}}
 
-Do not send a basic template to create the user; you cannot edit the user's preference details once it has been created -- only the **active** and **role** settings. Finish setting up all properties first.
+Do not send a basic template to create the user; you cannot edit the user's preference details once it has been created -- only the  and **roles** and **permissions** (administrator, globalAdministrator, readOnly, etc) settings. Finish setting up all properties first.
 {{% /notice %}}
 
 ```
