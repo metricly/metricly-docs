@@ -383,6 +383,12 @@ The following Response Body includes a new unique **id** and updates the **creat
 
 ### Parameters
 
+{{% notice tip %}}
+
+The following parameters are all optional. Users can interact with the /policies/elements endpoint without using these parameters to obtain element counts within the past hour.
+
+{{% /notice %}}
+
 | Parameter | Parameter Type | Data Type | Description |
 |-------------|----------------|---------------|---------------------------------------------------------------|
 | duration | query | string | Follows ISO8601 duration format. Example options include: PT1h, PT1m, PT10s, P3D |
