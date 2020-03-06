@@ -928,3 +928,47 @@ no content
 {{% /expand %}}
 
 ---
+
+## How to Mute a Policy Over a Weekend
+
+Having policy fire during off-hours isn't always necessary. You can use the Policy API (**/policies/{policyId}/mute{muteMS}**) to mute certain policies until resuming regular hours of operation. Read this walkthrough to learn how to mute a Policy over the weekend.
+
+{{% expand "View Walkthrough." %}}
+
+1\. Build a CURL query to GET from **/policies**. This lists all policies so you can select the right ones to mute.
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies'
+```
+
+2\. Grab the **Id** for each policy you wish to mute. In this example two policies are muted using the IDs `fcc6aed6-0a54-3cbd-be5a-43ded16a3750` and `fac1361a-825d-35cb-8a1c-f139f5655992`.  
+
+3\. Build two separate CURL queries to POST to **/policies/{policyId}/mute{ms}**. Let's mute these policies at Friday at 5pm until Monday 9am. That's `230400000` milliseconds.   
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: */*' 'https://app.metricly.com/policies/fcc6aed6-0a54-3cbd-be5a-43ded16a3750/mute/230400000'
+
+```
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: */*' 'https://app.metricly.com/policies/fac1361a-825d-35cb-8a1c-f139f5655992/mute/230400000'
+
+```
+
+4\.  Your policies are now muted. You can confirm they have been muted by making an API GET call to **/policies/mute**.
+
+```
+curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies/mute'
+```
+
+5\. The Response Body should look similar to this:
+
+```
+{
+  "fcc6aed6-0a54-3cbd-be5a-43ded16a3750": 1583108010423,
+  "fac1361a-825d-35cb-8a1c-f139f5655992": 1583108005374,
+}
+
+```
+
+
+{{% /expand %}}
