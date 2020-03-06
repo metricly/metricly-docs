@@ -448,7 +448,7 @@ The following parameters are all optional. Users can interact with the /policies
 
 ### Request URL
 
-`https://app.metricly.com/policies/events?startTime={startTime}&endTime={endTime}`
+`https://app.metricly.com/policies/events`
 
 ### CURL
 
