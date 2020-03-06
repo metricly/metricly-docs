@@ -949,7 +949,7 @@ no content
 
 ## How to Mute a Policy Over a Weekend
 
-Having all of your policies unmuted during off-hours isn't always necessary. You can use the Policy API (**/policies/{policyId}/mute{muteMS}**) to mute specified policies until resuming regular hours of operation. This allows for you to still track events that occur while the policy is muted (versus being disabled). Read this walkthrough to learn how to mute a Policy over the weekend.
+Receiving alerts during off-hours, such as over the weekend, may not be necessary for some policies. You can use the Policies API (**/policies/{policyId}/mute{muteMS}**) to mute specified policies until resuming regular hours of operation. This allows for you to still track events that occur while the policy is muted (versus being disabled). Read this walkthrough to learn how to mute a Policy over the weekend.
 
 {{% expand "View Walkthrough." %}}
 
