@@ -394,7 +394,7 @@ no content
 
 ---
 ## GET from /users/{id}
-{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/users/getUserUsingGET" >}} GET {{< /button >}} Use this endpoint to get the full template of a user.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/users/getUserUsingGET" >}} GET {{< /button >}} Use this endpoint to get information about another user.
 
 {{% expand "View method details."%}}
 
