@@ -505,7 +505,7 @@ The following response body includes the full user template.
 
 ### CURL
 
-The following example, the **theme** has been updated to dark.  
+In the following example, the **theme** has been updated to dark.  
 
 ```
 curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
