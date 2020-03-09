@@ -118,32 +118,46 @@ The following response body includes only one user. Notice their **role** is set
 The following example creates a new user with the **email** `example+02052020@gmail.com` and **password** `123456789*`. Notice that you can specify default properties, such as **theme** and **landingPage**.
 
 ```
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \
-   "administrator": true, \
-   "readOnly": false, \
-   "user": { \
-     "active": true, \
-     "customElementTypeIcons": {}, \
-     "email": "example+02052020%40gmail.com", \
-     "password": "123456789*", \
-     "properties": {
-        "theme": "dark", \
-        "landingPage": "dashboards" \
-       }, \
-     "tenantProperties": { \
-       "datasourceTrialCountLimit": null, \
-       "name": "Louis Lane", \
-       "netuitiveAccountId": "270852171095", \
-       "productIds": [ \
-         "monitoring", \
-         "cost_aws" \
-       ], \
-       "tenantStatus": "ACTIVE", \
-       "tenantType": "CUSTOMER", \
-       "trialExpiresAt": null \
-     } \
-   } \
- }' 'https://app.metricly.com/users'
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'User-Agent: none' -d '{ \ 
+     "email": "example+02052020%40gmail.com", \ 
+     "active": false, \ 
+     "administrator": true, \ 
+     "globalAdministrator": false, \ 
+     "globalReadOnly": false, \ 
+     "assumedIdentity": false, \ 
+     "assumedReadOnlyIdentity": false, \ 
+     "readOnly": false, \ 
+     "roles": [ \ 
+       "Administrator" \ 
+     ], \ 
+     "properties": { \ 
+       "fullName": "example+02052020%40gmail.com", \ 
+       "timeZone": "UTC", \ 
+       "landingPage": "inventory", \ 
+       "theme": "light", \ 
+       "dailyReportEnabled": true, \ 
+       "alertBadgeEnabled": true, \ 
+       "leftNavLockedOpen": true, \ 
+       "unattachedEbsEmailEnabled": false, \ 
+       "unattachedElbEmailEnabled": false, \ 
+       "ebsOnStoppedEc2EmailEnabled": false, \ 
+       "metricsViewSetting": "tree", \ 
+       "arrangeChartsSetting": "grid", \ 
+       "chartWidth": "xsmall", \ 
+       "chartHeight": "tall", \ 
+       "favoriteDashboards": "[\"d34375a1-58b3-31dc-bf4b-897efd89692c\"]", \ 
+       "seenMetricsFilterTooltip": false, \ 
+       "seenMetricsChartTooltip": false, \ 
+       "seenEventsGraphTooltip": false, \ 
+       "seenIntegrationsTooltip": false, \ 
+       "seenWelcomeTour": false, \ 
+       "seenWelcomeModal": false, \ 
+       "ebscostTable": "[]", \ 
+       "inventoryTable": "[]", \ 
+       "seenAnnouncements": "[]" \ 
+     } \ 
+   } \ 
+ } \ ' 'https://app.metricly.com/users'
 ```
 
 ### Swagger Payload
@@ -152,31 +166,47 @@ Try the following template for yourself in Swagger.
 
 ```
 {
-   "administrator": true,
-   "readOnly": false,
-   "user": {
-     "active": true,
-     "customElementTypeIcons": {},
-     "email": "example+02052020@gmail.com",
-     "password": "123456789*",
-     "properties": {
-        "theme": "dark",
-        "landingPage": "dashboards"
-       },
-     "tenantProperties": {
-       "datasourceTrialCountLimit": null,
-       "name": "Louis Lane",
-       "netuitiveAccountId": "270852171095",
-       "productIds": [
-         "monitoring",
-         "cost_aws"
-       ],
-       "tenantStatus": "ACTIVE",
-       "tenantType": "CUSTOMER",
-       "trialExpiresAt": null
-     }
-   }
- }
+  "user": {
+    "email": "example+02052020@gmail.com",
+    "active": false,
+    "administrator": true,
+    "globalAdministrator": false,
+    "globalReadOnly": false,
+    "assumedIdentity": false,
+    "assumedReadOnlyIdentity": false,
+    "readOnly": false,
+    "roles": [
+      "Administrator"
+    ],
+    "properties": {
+      "fullName": "example+02052020@gmail.com",
+      "timeZone": "UTC",
+      "landingPage": "inventory",
+      "theme": "light",
+      "dailyReportEnabled": true,
+      "alertBadgeEnabled": true,
+      "leftNavLockedOpen": true,
+      "unattachedEbsEmailEnabled": false,
+      "unattachedElbEmailEnabled": false,
+      "ebsOnStoppedEc2EmailEnabled": false,
+      "metricsViewSetting": "tree",
+      "arrangeChartsSetting": "grid",
+      "chartWidth": "xsmall",
+      "chartHeight": "tall",
+      "favoriteDashboards": "[\"d34375a1-58b3-31dc-bf4b-897efd89692c\"]",
+      "seenMetricsFilterTooltip": false,
+      "seenMetricsChartTooltip": false,
+      "seenEventsGraphTooltip": false,
+      "seenIntegrationsTooltip": false,
+      "seenWelcomeTour": false,
+      "seenWelcomeModal": false,
+      "ebscostTable": "[]",
+      "inventoryTable": "[]",
+      "seenAnnouncements": "[]"
+    }
+  }
+}
+
 ```
 
 
