@@ -749,7 +749,7 @@ The following response body shows a breakdown of actions available in CloudWisdo
 
 ### Request URL
 
- `https://app.metricly.com/users/{id}/password?oldPassword={OLDPASS}&newPassword={NEWPASS}`
+ `https://app.metricly.com/users/{id}/password?oldPassword={old-password}&newPassword={new-password}`
 
 ### CURL
 
