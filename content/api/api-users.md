@@ -570,7 +570,7 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
  }' 'https://app.metricly.com/users/76502'
 ```
 
-## Swagger Payload
+### Swagger Payload
 
 ```
 {
