@@ -743,7 +743,7 @@ The following response body shows a breakdown of actions available in CloudWisdo
 
 ---
 ## POST to /users/{id}/password
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/users/updatePasswordUsingPOST" >}} POST {{< /button >}} Use this endpoint to update the password of a user.
+{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/users/updatePasswordUsingPOST" >}} POST {{< /button >}} Use this endpoint to update the password for your user.
 
 {{% expand "View method details."%}}
 
