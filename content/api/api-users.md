@@ -487,7 +487,7 @@ The following response body includes the full user template.
 
 ---
 ## PUT to /users/{id}
-{{< button theme="warning" href="https://app.metricly.com/swagger-ui.html#!/users/updateUserUsingPUT" >}} PUT {{< /button >}} Use this endpoint to update your own user or to manage the **roles** and **permissions** of other users (must be an admin to do this).
+{{< button theme="warning" href="https://app.metricly.com/swagger-ui.html#!/users/updateUserUsingPUT" >}} PUT {{< /button >}} Use this endpoint to update your own user or to manage the **roles** of other users if you are an administrator.
 
 {{% expand "View method details."%}}
 
