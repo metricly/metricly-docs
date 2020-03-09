@@ -276,7 +276,7 @@ The following response body includes confirmation the user has been created with
 
 ---
 ## GET from /users/current
-{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/users/getCurrentUserUsingGET" >}} GET {{< /button >}} Use this endpoint to get a list of currently active users.  
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/users/getCurrentUserUsingGET" >}} GET {{< /button >}} Use this endpoint to get information about the current user.  
 
 {{% expand "View method details."%}}
 
