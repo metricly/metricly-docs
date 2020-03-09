@@ -839,7 +839,7 @@ Admins can create new users through the User API by sending a POST call to **/us
 
 {{% notice tip %}}
 
-Do not send a basic template to create the user; you cannot edit the user's preference details once it has been created -- only the  and **roles** and **permissions** (administrator, globalAdministrator, readOnly, etc) settings. Finish setting up all properties first.
+Do not send a basic template to create the user; you cannot edit the user's preference details once it has been created -- only the **roles** (Administrator vs. Read Only) settings can be modified after initial creation. Finish setting up all properties first.
 {{% /notice %}}
 
 ```
