@@ -37,7 +37,7 @@ The Webhooks endpoint accepts any text you place in the body and uses that input
 {{% /notice %}}
 
 ```
-curl -X POST 'https://api.app.netuitive.com/ingest/webhook/2e9b8ed4f12345fdca11af3a443172a4' \
+curl -X POST 'https://api.app.metricly.com/ingest/webhook/2e9b8ed4f12345fdca11af3a443172a4' \
 -H 'Content-Type: application/json' \
 -H 'X-Netuitive-Api-Options: INJECT_TIMESTAMP' \
 -H 'Authorization: Basic XXX' \
