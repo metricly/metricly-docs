@@ -45,6 +45,7 @@ curl -X POST 'https://api.app.metricly.com/ingest/webhook/2e9b8ed4f12345fdca11af
 --data '
 { "category": "WARN", "elementId": 12345, "elementType": "SERVER", "policy": "EXTERNAL SYSTEM A", "title": "XYZ" }
 '
+```
 
 ### Response Body
 
