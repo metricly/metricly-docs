@@ -33,7 +33,7 @@ CloudWisdom's Webhooks API can be used to ingest external events. You can also c
 The following example sends an external event to CloudWisdom to be ingested and accounted for.
 
 {{% notice tip %}}
-The Webhooks endpoint accepts any text you place in the body and uses that input as the event message in CloudWisdom. It is not necessary to include proper JSON formatting (unless you want your message to include brackets and attribute-value pairs).
+The Webhooks endpoint accepts any text you place in the body and uses that input as the event message in CloudWisdom. It is not necessary to include proper JSON formatting unless you want your message to include brackets and attribute-value pairs.
 {{% /notice %}}
 
 ```
