@@ -53,7 +53,7 @@ Note that this endpoint is not available on Swagger, however you can review the 
 
 ```
 {
-    "url": "https://app.metricly.com/ingest/webhook/2e9b8ed4f12345fdca11af3a443172a4",
+    "url": "https://api.app.metricly.com/ingest/webhook/2e9b8ed4f12345fdca11af3a443172a4",
     "method": "post",
     "headers": {
         "Content-Type": "application/json",
