@@ -26,7 +26,7 @@ CloudWisdom's Webhooks API can be used to ingest external events. You can also c
 
 ### Request URL
 
- `https://app.metricly.com/ingest/webhook/{apiId}`
+ `https://api.app.metricly.com/ingest/webhook/{apiId}`
 
 ### CURL
 
