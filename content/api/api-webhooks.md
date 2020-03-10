@@ -40,7 +40,6 @@ The Webhooks endpoint accepts any text you place in the body and uses that input
 curl -X POST 'https://api.app.metricly.com/ingest/webhook/2e9b8ed4f12345fdca11af3a443172a4' \
 -H 'Content-Type: application/json' \
 -H 'X-Netuitive-Api-Options: INJECT_TIMESTAMP' \
--H 'Authorization: Basic XXX' \
 -H ‘Accept: application/json’ \
 --data '
 { "category": "WARN", "elementId": 12345, "elementType": "SERVER", "policy": "EXTERNAL SYSTEM A", "title": "XYZ" }
@@ -49,10 +48,10 @@ curl -X POST 'https://api.app.metricly.com/ingest/webhook/2e9b8ed4f12345fdca11af
 
 ### Response Body
 
-The following response body returns no content and a 202 success code. 
+The response body is an empty reply from the server. 
 
 ```
-no content
+Empty reply from server
 
 ```
 {{% /expand %}}
