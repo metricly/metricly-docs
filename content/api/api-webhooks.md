@@ -14,7 +14,7 @@ pre: ""
 CloudWisdom's Webhooks API can be used to ingest external events. You can also create policies (via [Policies API](/api/api-policies)) triggered by the contents of these external events. This endpoint is not available in Swagger.
 
 ## POST to /webhook{apiId}
-{{< button theme="success" href="https://app.metricly.com/swagger-ui.html#!/" >}} GET {{< /button >}} Use this endpoint to ingest external events.
+{{< button theme="success" href="https://api.app.metricly.com/ingest/webhook/" >}} POST {{< /button >}} Use this endpoint to ingest external events.
 {{% expand "View method details."%}}
 
 ### Parameters
@@ -26,7 +26,7 @@ CloudWisdom's Webhooks API can be used to ingest external events. You can also c
 
 ### Request URL
 
- `https://app.metricly.com/ingest/webhook/{apiId}`
+ `https://api.app.metricly.com/ingest/webhook/{apiId}`
 
 ### CURL
 
