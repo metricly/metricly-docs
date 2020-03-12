@@ -15,7 +15,7 @@ author: Lawrence Lane
 
 ## 2. Create an Active Directory Application in Azure
 
-1. Once in the Azure portal, select **Azure Active Directory** from the left side-menu.
+1. Once in the Azure portal, select **Azure Active Directory** from the left or top side-menu.
 ![azure-active-directory](/images/azure-installation/azure-active-directory.png)
 2. Select **App registrations** from the Manage options.
 ![app-registrations](/images/azure-installation/app-registrations.png)
@@ -42,9 +42,6 @@ Once you have completed part 2, you are redirected to the `CloudWisdom-Integrati
 7. Copy the secret's Value and return to the tab with CloudWisdom open. Paste it into the **Access Key** field. Once it’s pasted, return to the Azure tab.
    - **Note**: the access key is only shown in the Azure portal for a few minutes.
 ![copy-secret-value](/images/azure-installation/copy-secret-value.png)
-8. Return to Azure and select **Overview**.
-
-Return to the Azure tab once you have added the Directory (Tenant) ID to your CloudWisdom integration.
 
 ## 4. Set Delegated Permissions in Azure
 1. In Azure, navigate to the **API Permissions** section of your `CloudWisdom-Integration`.
@@ -83,6 +80,10 @@ You can verify the permissions by selecting Role Assignments and searching for t
 After permissions have been set, return to CloudWisdom to include or exclude as many Azure element types as you want. **Azure VM and Azure Application Gateway are enabled by default**.
 
 Optionally, filter elements.
+
+Click Save button.
+
+You will get your Azure VMs on the Inventory page in few minutes.
 
 ## Use with Agents
 
