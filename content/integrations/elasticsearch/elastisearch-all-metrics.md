@@ -123,3 +123,39 @@ For the table below, all metrics that begin with `elasticsearch.indices.*` are d
 | elasticsearch.transport.rx.size                                | max       | count   | 0   | 100  | none                      | yes  | no   | no   |
 | elasticsearch.transport.tx.count                               | max       | count   | 0   | 100  | none                      | yes  | no   | no   |
 | elasticsearch.transport.tx.size                                | max       | count   | 0   | 100  | none                      | yes  | no   | no   |
+
+## Computed
+
+| Fully Qualified Name (FQN)                                                    | Statistic | Units   | Min | Max  | Sparse Data Strategy(SDS) | BASE | CORR | UTIL |
+|-------------------------------------------------------------------------------|-----------|---------|-----|------|---------------------------|------|------|------|
+| netuitive.linux.elasticsearch.cpu.normalizedpercent                           | average   | percent | 0   | 100  | none                      | yes  | no   | yes  |
+| netuitive.linux.elasticsearch.indices.${1}.flush.avg_time_in_millis           | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.get.exists_avg_time_in_millis      | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.get.missing_avg_time_in_millis     | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.get.avg_time_in_millis             | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.indexing.delete_avg_time_in_millis | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.indexing.index_avg_time_in_millis  | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.merges.avg_time_in_millis          | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.refresh.avg_time_in_millis         | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.search.fetch_avg_time_in_millis    | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.search.query_avg_time_in_millis    | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.search.scroll_avg_time_in_millis   | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.search.suggest_avg_time_in_millis  | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.warmer.avg_time_in_millis          | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.percolate.avg_time_in_millis       | average   | ms      | 0   | none | ReplaceWithZero           | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.flush.avg_per_sec                  | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.get.exists_avg_per_sec             | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.get.missing_avg_per_sec            | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.get.avg_per_sec                    | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.indexing.delete_avg_per_sec        | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.indexing.index_avg_per_sec         | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.indexing.noop_update_avg_per_sec   | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.merges.avg_per_sec                 | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.percolate.avg_per_sec              | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.refresh.avg_per_sec                | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.search.fetch_avg_per_sec           | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.search.query_avg_per_sec           | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.search.scroll_avg_per_sec          | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.suggest.avg_per_sec                | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.indices.${1}.warmer.avg_per_sec                 | average   | none    | 0   | none | none                      | yes  | no   | no   |
+| netuitive.linux.elasticsearch.jvm.gccollectionspersecond                      | average   | none    | 0   | none | none                      | yes  | no   | no   |
