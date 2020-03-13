@@ -15,7 +15,7 @@ author: Lawrence Lane
 
 ## 2. Create an Active Directory Application in Azure
 
-1. Once in the Azure portal, select **Azure Active Directory** from the left side-menu.
+1. Once in the Azure portal, select **Azure Active Directory** from the left or top menu.
 ![azure-active-directory](/images/azure-installation/azure-active-directory.png)
 2. Select **App registrations** from the Manage options.
 ![app-registrations](/images/azure-installation/app-registrations.png)
@@ -42,9 +42,6 @@ Once you have completed part 2, you are redirected to the `CloudWisdom-Integrati
 7. Copy the secret's Value and return to the tab with CloudWisdom open. Paste it into the **Access Key** field. Once it’s pasted, return to the Azure tab.
    - **Note**: the access key is only shown in the Azure portal for a few minutes.
 ![copy-secret-value](/images/azure-installation/copy-secret-value.png)
-8. Return to Azure and select **Overview**.
-
-Return to the Azure tab once you have added the Directory (Tenant) ID to your CloudWisdom integration.
 
 ## 4. Set Delegated Permissions in Azure
 1. In Azure, navigate to the **API Permissions** section of your `CloudWisdom-Integration`.
@@ -80,12 +77,19 @@ To assign a role to the application, you’ll need the **Owner** or **User Acces
 You can verify the permissions by selecting Role Assignments and searching for the CloudWisdom application.
 {{% /notice %}}
 
-After permissions have been set, return to CloudWisdom to include or exclude as many Azure element types as you want. **Azure VM and Azure Application Gateway are enabled by default**.
+8. Return to CloudWisdom and select the element types you would like included for collection. **Azure VM and Azure Application Gateway are enabled by default**. Optionally, include or exclude elements within a particular element type using tag key/value pairs that exist on your Azure objects.
 
-Optionally, filter elements.
+9. Click the **Save** button.
+
+You will see your Azure VMs on the Inventory page after a few minutes.
+
+{{% notice info %}}
+Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VM. These metrics are required for CloudWisdom's Azure cost reports.
+{{% /notice%}}
 
 ## Use with Agents
 
 If you install our Linux agent or Windows agent on an Azure VM, the VM’s power state (attribute `hostRunning` with a value of `true` or `false`) and tags are copied over to the corresponding Linux `SERVER` element / Windows `WINSRV` element. You can then use this information to create [policies][1].
 
 [1]: /alerts-notificaitons/policies
+[2]: /integrations/microsoft-azure/azure-installation/

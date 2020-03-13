@@ -13,12 +13,18 @@ Azure Virtual Machines will share boot diagnostic metrics by default, which are 
 1. In Azure, navigate to **Virtual machines**.
 2. Select a virtual machine. Another window with options will open.
 3. Select **Diagnostic settings**.
-4. Under _Configure required settings_, select the checkbox next to **Basic metrics**. CloudWisdom will now receive the basic VM metrics.
+4. Choose one of the existing Diagnostic storage accounts or create a new one. Note: Additional charges in Azure may apply.
+5. Click the **Enable guest-level monitoring** button
+6. Under _Metrics_, ensure **Basic** is selected and all the metrics underneath are checked. 
+7. Click the **Save** button. 
+
+CloudWisdom will begin showing basic VM metrics after a few minutes.
 
 ## Enabling basic metrics on a new VM
 1. In Azure, navigate to **Virtual machines**.
 2. At the top of the _Virtual machines_ window, click **Add**.
 3. Select the type and create the instance.
-4. Complete Steps 1 and 2 filling out the information as desired.
-5. In Step 3, under _Monitoring_, enable **Guest OS diagnostics**.
-6. Finish creating the VM. The basic metrics are now available in CloudWisdom.
+4. In Step 4, under _Management_, set **OS guest diagnostics** to "On". Choose one of the existing Diagnostic storage accounts or create a new one. Note: Additional charges in Azure may apply.
+5. Finish creating the VM. 
+
+CloudWisdom will begin showing basic VM metrics after a few minutes.
