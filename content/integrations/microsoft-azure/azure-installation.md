@@ -77,15 +77,15 @@ To assign a role to the application, you’ll need the **Owner** or **User Acces
 You can verify the permissions by selecting Role Assignments and searching for the CloudWisdom application.
 {{% /notice %}}
 
-After permissions have been set, return to CloudWisdom to include or exclude as many Azure element types as you want. **Azure VM and Azure Application Gateway are enabled by default**.
+8. Return to CloudWisdom and select the element types you would like included for collection. **Azure VM and Azure Application Gateway are enabled by default**. Optionally, include or exclude elements within a particular element type using tag key/value pairs that exist on your Azure objects.
 
-Optionally, filter elements.
-
-Click Save button.
+9. Click the **Save** button.
 
 You will see your Azure VMs on the Inventory page after a few minutes.
 
-Don't forget to [enable Guest OS diagnostic (basic) metrics][2].
+{{% notice info %}}
+Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VM. These metrics are required for CloudWisdom's Azure cost reports.
+{{% /notice%}}
 
 ## Use with Agents
 
