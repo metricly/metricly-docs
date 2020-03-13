@@ -73,10 +73,6 @@ To assign a role to the application, you’ll need the **Owner** or **User Acces
  - **Select**: Enter the name of the app you created in section 2 and select the app.
 7. Select **Save**.
 
-{{% notice tip %}}
-You can verify the permissions by selecting Role Assignments and searching for the CloudWisdom application.
-{{% /notice %}}
-
 8. Return to CloudWisdom and select the element types you would like included for collection. **Azure VM and Azure Application Gateway are enabled by default**. Optionally, include or exclude elements within a particular element type using tag key/value pairs that exist on your Azure objects.
 
 9. Click the **Save** button.
