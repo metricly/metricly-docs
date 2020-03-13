@@ -85,8 +85,11 @@ Click Save button.
 
 You will get your Azure VMs on the Inventory page in few minutes.
 
+Don't forget to [enable Guest OS diagnostic (basic) metrics][2].
+
 ## Use with Agents
 
 If you install our Linux agent or Windows agent on an Azure VM, the VM’s power state (attribute `hostRunning` with a value of `true` or `false`) and tags are copied over to the corresponding Linux `SERVER` element / Windows `WINSRV` element. You can then use this information to create [policies][1].
 
 [1]: /alerts-notificaitons/policies
+[2]: /integrations/microsoft-azure/azure-installation/

@@ -19,5 +19,5 @@ Azure Virtual Machines will share boot diagnostic metrics by default, which are 
 1. In Azure, navigate to **Virtual machines**.
 2. At the top of the _Virtual machines_ window, click **Add**.
 3. Select the type and create the instance.
-4. In Step 3, under _Management_, enable **Guest OS diagnostics**.
+4. In Step 3, under _Management_, enable **Guest OS diagnostics**. Choose one of the existing Diagnostic storage accounts or create a new one. Note: additional charges may apply by Azure.
 5. Finish creating the VM. The basic metrics are now available in CloudWisdom (just give it a few minutes to appear).
