@@ -15,7 +15,7 @@ author: Lawrence Lane
 
 ## 2. Create an Active Directory Application in Azure
 
-1. Once in the Azure portal, select **Azure Active Directory** from the left or top side-menu.
+1. Once in the Azure portal, select **Azure Active Directory** from the left or top menu.
 ![azure-active-directory](/images/azure-installation/azure-active-directory.png)
 2. Select **App registrations** from the Manage options.
 ![app-registrations](/images/azure-installation/app-registrations.png)
