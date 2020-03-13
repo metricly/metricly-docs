@@ -83,7 +83,7 @@ Optionally, filter elements.
 
 Click Save button.
 
-You will get your Azure VMs on the Inventory page in few minutes.
+You will see your Azure VMs on the Inventory page after a few minutes.
 
 Don't forget to [enable Guest OS diagnostic (basic) metrics][2].
 
