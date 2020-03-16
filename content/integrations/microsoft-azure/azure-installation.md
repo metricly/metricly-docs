@@ -75,7 +75,8 @@ While here, ensure the **microsoft.insights** resource provider is registered as
  - **Assign access to**: Azure AD user, group, or service principal
  - **Select**: Enter the name of the app you created in section 2 and select the app.
 7. Select **Save**.
- Note: You can verify the permissions by selecting Role Assignments and searching for the CloudWisdom application.
+
+ - **Note**: You can verify the permissions by selecting Role Assignments and searching for the CloudWisdom application.
 
 8. Return to CloudWisdom and select the element types you would like included for collection. **Azure VM** and **Azure Application Gateway** are enabled by default. Optionally, [filter elements] (https://docs.metricly.com/integrations/microsoft-azure/azure-filter-elements/) within a particular element type using tag key/value pairs that exist on your Azure objects.
 
