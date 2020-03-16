@@ -7,6 +7,10 @@ author: Lawrence Lane
 ---
 MySQL is an open source relational database management system that uses the Structured Query Language to navigate its stores. CloudWisdom can help monitor the performance and throughput of your MySQL database.
 
+{{% notice info %}}
+MariaDB can be integrated into CloudWisdom following the same steps as described below.
+{{% /notice %}}
+
 ## Prerequisites
 
 The [Linux Agent][1] must be setup before you proceed with the MySQL integration.
@@ -72,9 +76,5 @@ GRANT SUPER ON *.* TO
 | metrics_whitelist      |                                                                                                                                                                                                                                                                                                                                                                      | Regex list to match metrics to transmit. Mutually exclusive with metrics_blacklist option.                                                         |
 | publish                |                                                                                                                                                                                                                                                                                                                                                                      | Which SHOW GLOBAL STATUS rows you would like to publish, or leave blank to publish all rows.                                                       |
 | slave                  |                                                                                                                                                                                                                                                                                                                                                                      | Enable collecting SHOW SLAVE STATUS.                                                                                                               |
-
-{{% notice info %}}
-MariaDB can be integrated into CloudWisdom following the same steps as described above.
-{{% /notice %}}
 
 [1]: /integrations/agents/linux-agent
