@@ -60,7 +60,10 @@ Once you have completed part 2, you are redirected to the `CloudWisdom-Integrati
 To assign a role to the application, you’ll need the **Owner** or **User Access Administrator** role in Azure (the Contributor role will not work) or a custom role that grants write access for `Microsoft.Authorization`.
 
 1. Navigate to **Home** > **Subscriptions** in Azure.
-2. Select the **Subscription Name** your new app belongs to.
+2. Select the **Subscription Name** your new app belongs to. {{% notice tip %}}
+While here, ensure the **microsoft.insights** resource provider is registered as it's needed to gather performance metrics for your Azure objects.
+![enable-microsoft-insights](/images/azure-installation/enable-insights.png){{% /notice %}}
+
 3. Copy the **Subscription ID** and return to the tab with CloudWisdom open. Paste it into the appropriate field. Once it’s pasted, return to the Azure tab.
 ![copy-subscription-id](/images/azure-installation/copy-subscription-id.png)
 4. Navigate to this subscription's **Access Control (IAM)** tab.
@@ -71,16 +74,18 @@ To assign a role to the application, you’ll need the **Owner** or **User Acces
  - **Role**: Reader
  - **Assign access to**: Azure AD user, group, or service principal
  - **Select**: Enter the name of the app you created in section 2 and select the app.
-7. Select **Save**. Note: You can verify the permissions by selecting Role Assignments and searching for the CloudWisdom application.
+7. Select **Save**.
 
-8. Return to CloudWisdom and select the element types you would like included for collection. **Azure VM and Azure Application Gateway are enabled by default**. Optionally, include or exclude elements within a particular element type using tag key/value pairs that exist on your Azure objects.
+ - **Note**: You can verify the permissions by selecting Role Assignments and searching for the CloudWisdom application.
+
+8. Return to CloudWisdom and select the element types you would like included for collection. **Azure VM** and **Azure Application Gateway** are enabled by default. Optionally, [filter elements] (https://docs.metricly.com/integrations/microsoft-azure/azure-filter-elements/) within a particular element type using tag key/value pairs that exist on your Azure objects.
 
 9. Click the **Save** button.
 
-You will see your Azure VMs on the Inventory page after a few minutes.
+You will see your Azure elements on the Inventory page after a few minutes.
 
 {{% notice info %}}
-Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VM. These metrics are required for CloudWisdom's Azure cost reports.
+Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VMs. These metrics are required for CloudWisdom's Azure cost reports.
 {{% /notice%}}
 
 ## Use with Agents
