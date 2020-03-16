@@ -36,8 +36,7 @@ req_url = https://www.my_server.com/, https://www.my_server.com/assets/jquery.js
 | measure_collector_time | FALSE              | Collect the collector run time in ms                                                                                                                 | bool     |
 | metrics_blacklist      | None               | Regex to match metrics to block. Mutually exclusive with metrics_whitelist                                                                           | NoneType |
 | metrics_whitelist      | None               | Regex to match metrics to transmit. Mutually exclusive with metrics_blacklist                                                                        | NoneType |
-| req_url                | http://localhost/, | An array of full URL to get. For applications running on ports other than 80 or 443, users can include the port in the URL (http://localhost:8080/).
-Note: if your URL contains a URL hash (# sign), you have to wrap the URL with double quotes (""). | list     |
+| req_url                | http://localhost/, | An array of full URL to get. For applications running on ports other than 80 or 443, users can include the port in the URL (http://localhost:8080/). Note: if your URL contains a URL hash (# sign), you have to wrap the URL with double quotes (""). | list     |
 | req_vhost              |                    | Host header variable if needed. Will be added to every request                                                                                       | str      |
 
 
