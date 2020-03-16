@@ -7,6 +7,10 @@ author: Lawrence Lane
 ---
 MySQL is an open source relational database management system that uses the Structured Query Language to navigate its stores. CloudWisdom can help monitor the performance and throughput of your MySQL database.
 
+{{% notice info %}}
+MariaDB can be integrated into CloudWisdom following the same steps as described below.
+{{% /notice %}}
+
 ## Prerequisites
 
 The [Linux Agent][1] must be setup before you proceed with the MySQL integration.
