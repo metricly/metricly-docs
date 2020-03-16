@@ -61,6 +61,14 @@ To assign a role to the application, you’ll need the **Owner** or **User Acces
 
 1. Navigate to **Home** > **Subscriptions** in Azure.
 2. Select the **Subscription Name** your new app belongs to.
+
+{{% notice tip %}}
+While here, ensure the **microsoft.insights** resource provider is registered as it's needed to gather performance metrics for your Azure objects.
+
+![enable-microsoft-insights](/images/azure-installation/enable-insights.png)
+
+{{% /notice %}}
+
 3. Copy the **Subscription ID** and return to the tab with CloudWisdom open. Paste it into the appropriate field. Once it’s pasted, return to the Azure tab.
 ![copy-subscription-id](/images/azure-installation/copy-subscription-id.png)
 4. Navigate to this subscription's **Access Control (IAM)** tab.
