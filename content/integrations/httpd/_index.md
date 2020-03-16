@@ -13,9 +13,9 @@ The [Linux Agent][1] is required before proceeding with the setup of HTTPD. If y
 
 ## Update the Configuration File
 1. Navigate to the **collectors** folder, `/opt/netuitive-agent/conf/collectors`.
-2. Open the `HttpCollector.conf` file.
+2. Open the `HttpdCollector.conf` file.
 3. Change the **enabled** setting to `True`.
-4. For each HTTP(s) you’d like to monitor, update the **`req_url`** list:
+4. For each HTTP(s) you’d like to monitor, update the **`urls`** list:
 
 ## Collector Options
 
