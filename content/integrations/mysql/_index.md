@@ -73,4 +73,8 @@ GRANT SUPER ON *.* TO
 | publish                |                                                                                                                                                                                                                                                                                                                                                                      | Which SHOW GLOBAL STATUS rows you would like to publish, or leave blank to publish all rows.                                                       |
 | slave                  |                                                                                                                                                                                                                                                                                                                                                                      | Enable collecting SHOW SLAVE STATUS.                                                                                                               |
 
+{{% notice info %}}
+MariaDB can be integrated into CloudWisdom following the same steps as described above.
+{{% /notice %}}
+
 [1]: /integrations/agents/linux-agent
