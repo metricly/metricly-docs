@@ -1,5 +1,5 @@
 ---
-title: "Boot Diagnostics"
+title: "Custom Metrics"
 #date: 2018-12-11
 draft: false
 categories: ["integration", "admin guide", "getting started"]
