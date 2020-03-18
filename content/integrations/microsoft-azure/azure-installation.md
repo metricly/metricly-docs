@@ -78,7 +78,7 @@ While here, ensure the **microsoft.insights** resource provider is registered as
 
  - **Note**: You can verify the permissions by selecting Role Assignments and searching for the CloudWisdom application.
 
-8. Return to CloudWisdom and select the element types you would like included for collection. **Azure VM** and **Azure Application Gateway** are enabled by default. Optionally, [filter elements] (https://docs.metricly.com/integrations/microsoft-azure/azure-filter-elements/) within a particular element type using tag key/value pairs that exist on your Azure objects.
+8. Return to CloudWisdom. Verify each field has been filled in and ensure the **Azure VM** element type is included for collection.  Optionally, [filter VM collection] (https://docs.metricly.com/integrations/microsoft-azure/azure-filter-elements/) using tag key-value pairs.
 
 9. Click the **Save** button.
 
