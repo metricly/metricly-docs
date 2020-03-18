@@ -7,24 +7,22 @@ tags: ["#microsoft", "#azure", "#integrations", "#optional config"]
 author: Lawrence Lane
 ---
 
-Azure Virtual Machines will share boot diagnostic metrics by default, which are a small subset of core metrics. To enable Guest OS diagnostic (basic) metrics that provide more information about your machine, you’ll need to follow these steps (depending on your situation):
+Azure Virtual Machines have a subset of core metrics by default. However, guest OS diagnostic metrics are needed for CloudWisdom's Azure cost reports. To enable guest OS diagnostic metrics, you’ll need to follow the steps below:
 
-## Enable Basic Metrics on Existing VM
+## Enable Guest OS Diagnostic Metrics on an Existing VM
 1. In Azure, navigate to **Virtual machines**.
 2. Select a virtual machine. Another window with options will open.
-3. Select **Diagnostic settings**.
+3. Select **Diagnostic settings** under *Monitoring*.
 4. Choose one of the existing Diagnostic storage accounts or create a new one. Note: Additional charges in Azure may apply.
-5. Click the **Enable guest-level monitoring** button
-6. Under _Metrics_, ensure **Basic** is selected and all the metrics underneath are checked. 
-7. Click the **Save** button. 
+5. Click the **Enable guest-level monitoring** button. Note: This operation can take a few minutes to complete. 
 
-CloudWisdom will begin showing basic VM metrics after a few minutes.
+CloudWisdom will begin showing guest OS diagnostic metrics for your existing Azure Virtual Machine elments after a few minutes.
 
-## Enabling basic metrics on a new VM
+## Enable Guest OS Diagnostic Metrics on a New VM
 1. In Azure, navigate to **Virtual machines**.
 2. At the top of the _Virtual machines_ window, click **Add**.
-3. Select the type and create the instance.
-4. In Step 4, under _Management_, set **OS guest diagnostics** to "On". Choose one of the existing Diagnostic storage accounts or create a new one. Note: Additional charges in Azure may apply.
+3. Complete steps 1-3 (*Basics*, *Disks*, *Networking*)
+4. In step 4, under _Management_, set **OS guest diagnostics** to "On". Choose one of the existing Diagnostic storage accounts or create a new one. Note: Additional charges in Azure may apply.
 5. Finish creating the VM. 
 
-CloudWisdom will begin showing basic VM metrics after a few minutes.
+CloudWisdom will begin showing your new Azure Virtual Machine elments with guest OS diagnostic metrics after a few minutes.
