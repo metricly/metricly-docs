@@ -56,7 +56,6 @@ Each element has a type that determines how it is processed and represented by C
 | Java             | CLUSTER                           |
 | Linux (Metricly) | SERVER                            |
 | Microsoft Azure  | AZURE VIRTUAL MACHINE             |
-| Microsoft Azure  | APPLICATION GATEWAY               |
 | Ruby             | RUBY                              |
 | Windows          | WINSRV                            |
 | Collectd         | SERVER                            |
