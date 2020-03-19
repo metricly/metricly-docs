@@ -6,43 +6,45 @@ categories: ["integration", "admin guide", "getting started"]
 tags: ["#microsoft", "#azure", "#integrations", "#metrics"]
 author: Lawrence Lane
 ---
-| Fully Qualified Name (FQN)                               | Type    | Units          | Statistic | Min | Max  | Sparse Data Strategy (SDS) | BASE | CORR | UTIL | Description                                                                                 |
-|----------------------------------------------------------|---------|----------------|-----------|-----|------|----------------------------|------|------|------|---------------------------------------------------------------------------------------------|
-| azure.virtualmachine.memory.availablememory              | GAUGE   | bytes          | average   | 0   | none | none                       | yes  | no   | no   | The total amount of available memory in bytes.                                              |
-| azure.virtualmachine.memory.availableswap                | GAUGE   | bytes          | average   | 0   | none | none                       | yes  | no   | no   | The total amount of swap space available in bytes.                                          |
-| azure.virtualmachine.memory.pagespersec                  | GAUGE   | pages / second | average   | 0   | none | none                       | yes  | yes  | no   | The total number of pages read and written per second.                                      |
-| azure.virtualmachine.memory.pagesreadpersec              | GAUGE   | pages / second | average   | 0   | none | none                       | yes  | no   | no   | The number of pages read per second.                                                        |
-| azure.virtualmachine.memory.pageswrittenpersec           | GAUGE   | pages / second | average   | 0   | none | none                       | yes  | no   | no   | The number of pages written per second.                                                     |
-| azure.virtualmachine.memory.percentavailablememory       | GAUGE   | percent        | average   | 0   | 100  | none                       | yes  | no   | no   | Percentage of memory available.                                                             |
-| azure.virtualmachine.memory.percentavailableswap         | GAUGE   | percent        | average   | 0   | 100  | none                       | yes  | no   | no   | Percentage of swap space available.                                                         |
-| azure.virtualmachine.memory.percentusedbycache           | GAUGE   | percent        | average   | 0   | 100  | none                       | yes  | no   | no   | Percentage of memory used by cache.                                                         |
-| azure.virtualmachine.memory.percentusedmemory            | GAUGE   | percent        | average   | 0   | 100  | none                       | yes  | yes  | yes  | Percentage of memory in use.                                                                |
-| azure.virtualmachine.memory.percentusedswap              | GAUGE   | percent        | average   | 0   | 100  | none                       | yes  | no   | no   | Percentage of swap space in use.                                                            |
-| azure.virtualmachine.memory.usedmemory                   | GAUGE   | bytes          | average   | 0   | none | none                       | yes  | no   | no   | The total amount of memory used in bytes.                                                   |
-| azure.virtualmachine.memory.usedswap                     | GAUGE   | bytes          | average   | 0   | none | none                       | yes  | no   | no   | The total amount of swap space used in bytes.                                               |
-| azure.virtualmachine.networkinterface.bytesreceived      | COUNTER | bytes          |           | 0   | none | none                       | yes  | no   | no   | Bytes received over the network.                                                            |
-| azure.virtualmachine.networkinterface.bytestotal         | COUNTER | bytes          |           | 0   | none | none                       | yes  | no   | no   | Total bytes received and transmitted over the network.                                      |
-| azure.virtualmachine.networkinterface.bytestransmitted   | COUNTER | bytes          |           | 0   | none | none                       | yes  | no   | no   | Bytes transmitted over the network.                                                         |
-| azure.virtualmachine.networkinterface.packetsreceived    | COUNTER | count          |           | 0   | none | none                       | yes  | no   | no   | Packets received over the network.                                                          |
-| azure.virtualmachine.networkinterface.packetstransmitted | COUNTER | count          |           | 0   | none | none                       | yes  | no   | no   | Packets transmitted over the network.                                                       |
-| azure.virtualmachine.networkinterface.totalcollisions    | COUNTER | count          |           | 0   | none | none                       | no   | no   | no   | Total number of packet collisions.                                                          |
-| azure.virtualmachine.networkinterface.totalrxerrors      | COUNTER | count          |           | 0   | none | none                       | no   | no   | no   | Total receive errors.                                                                       |
-| azure.virtualmachine.networkinterface.totaltxerrors      | COUNTER | count          |           | 0   | none | none                       | no   | no   | no   | Total transmit errors.                                                                      |
-| azure.virtualmachine.physicaldisk.averagediskqueuelength | GAUGE   | count          | average   | 0   | none | none                       | yes  | yes  | no   | Average length of the physical disk queue.                                                  |
-| azure.virtualmachine.physicaldisk.averagereadtime        | GAUGE   | milliseconds   | average   | 0   | none | none                       | yes  | no   | no   | Average read time in milliseconds.                                                          |
-| azure.virtualmachine.physicaldisk.averagetransfertime    | GAUGE   | milliseconds   | average   | 0   | none | none                       | yes  | no   | no   | Average transfer time (reads and writes) in milliseconds.                                   |
-| azure.virtualmachine.physicaldisk.averagewritetime       | GAUGE   | milliseconds   | average   | 0   | none | none                       | yes  | no   | no   | Average write time in milliseconds.                                                         |
-| azure.virtualmachine.physicaldisk.bytespersecond         | GAUGE   | bytes / second | average   | 0   | none | none                       | yes  | no   | no   | Average bytes per second (read and written).                                                |
-| azure.virtualmachine.physicaldisk.readbytespersecond     | GAUGE   | bytes / second | average   | 0   | none | none                       | yes  | no   | no   | Average bytes read per second.                                                              |
-| azure.virtualmachine.physicaldisk.readspersecond         | GAUGE   | iops           | average   | 0   | none | none                       | yes  | no   | no   | Average number of read operations per second.                                               |
-| azure.virtualmachine.physicaldisk.transferspersecond     | GAUGE   | iops           | average   | 0   | none | none                       | yes  | no   | no   | Average number of read and write operations per second (IOPS).                              |
-| azure.virtualmachine.physicaldisk.writebytespersecond    | GAUGE   | bytes / second | average   | 0   | none | none                       | yes  | no   | no   | Average bytes written per second.                                                           |
-| azure.virtualmachine.physicaldisk.writespersecond        | GAUGE   | iops           | average   | 0   | none | none                       | yes  | no   | no   | Average number of write operations per second.                                              |
-| azure.virtualmachine.processor.percentdpctime            | GAUGE   | percent        | average   | 0   | 100  | none                       | no   | no   | no   | Percentage of time spent on deferred procedure calls (DPCs), also known as soft interrupts. |
-| azure.virtualmachine.processor.percentidletime           | GAUGE   | percent        | average   | 0   | 100  | none                       | yes  | no   | no   | Percentage of time the CPU was idle.                                                        |
-| azure.virtualmachine.processor.percentinterrupttime      | GAUGE   | percent        | average   | 0   | 100  | none                       | no   | no   | no   | Percentage of time spent on hardware interrupts.                                            |
-| azure.virtualmachine.processor.percentiowaittime         | GAUGE   | percent        | average   | 0   | 100  | none                       | no   | no   | no   | Percentage of time spent waiting for IO to complete.                                        |
-| azure.virtualmachine.processor.percentnicetime           | GAUGE   | percent        | average   | 0   | 100  | none                       | no   | no   | no   | Percentage of time spent on low priority (“nice”) processes.                                |
-| azure.virtualmachine.processor.percentprivilegedtime     | GAUGE   | percent        | average   | 0   | 100  | none                       | yes  | no   | no   | Percentage of time spent on OS processes.                                                   |
-| azure.virtualmachine.processor.percentprocessortime      | GAUGE   | percent        | average   | 0   | 100  | none                       | yes  | no   | no   | Percentage of time the processor was not idle.                                              |
-| azure.virtualmachine.processor.percentusertime           | GAUGE   | percent        | average   | 0   | 100  | none                       | yes  | no   | no   | Percentage of time spent on user processes.                                                 |
+
+| Fully Qualified Name (FQN)                            | Type | Units | Statistic | Min | Max | Sparse Data Strategy (SDS) | BASE | CORR | UTIL | DESCRIPTION |
+|-------------------------------------------------------|------|-------|-----------|-----|-----|----------------------------|------|------|------|-------------|
+| azure.virtualmachine.cpucreditsconsumed               |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.cpucreditsremaining              |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.datadiskqueuedepth               |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.datadiskreadbytessec             |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.datadiskreadoperationssec        |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.datadiskwritebytessec            |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.datadiskwriteoperationssec       |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.diskreadbytes                    |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.diskreadoperationssec            |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.diskwritebytes                   |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.diskwriteoperationssec           |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.inboundflows                     |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.inboundflowsmaximumcreationrate  |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.networkin                        |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.networkintotal                   |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.networkout                       |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.networkouttotal                  |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.osdiskqueuedepth                 |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.osdiskreadbytessec               |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.osdiskreadoperationssec          |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.osdiskwritebytessec              |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.osdiskwriteoperationssec         |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.osperdiskqd                      |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.osperdiskreadbytessec            |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.osperdiskreadoperationssec       |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.osperdiskwritebytessec           |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.osperdiskwriteoperationssec      |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.outboundflows                    |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.outboundflowsmaximumcreationrate |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.percentagecpu                    |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.perdiskqd                        |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.perdiskreadbytessec              |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.perdiskreadoperationssec         |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.perdiskwritebytessec             |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.perdiskwriteoperationssec        |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.premiumdatadiskcachereadhit      |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.premiumdatadiskcachereadmiss     |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.premiumosdiskcachereadhit        |      |       |           |     |     |                            |      |      |      |             |
+| azure.virtualmachine.premiumosdiskcachereadmiss       |      |       |           |     |     |                            |      |      |      |             |
