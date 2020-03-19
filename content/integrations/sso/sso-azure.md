@@ -56,7 +56,7 @@ You are now ready to define your new SSO application's SAML and user settings. I
   - **Relay State**: `Your Tenant Name` (optional)
 
   {{% notice tip %}}
-  Add your tenant name to the **Relay State** field if you do not want to enter it when logging into CloudWisdom from Azure. Your tenant name is the company name you used when you signed up for a CloudWisdom account. Contact support if you do not know your tenant name.
+  Add your tenant name to the **Relay State** field if you do not want to enter it when logging into CloudWisdom from Azure. Your tenant name is the company name you used when you signed up for a CloudWisdom account. You can find it on the [SSO page] (https://us.cloudwisdom.virtana.com/#/profile/sso) in CloudWisdom.
   {{% /notice %}}
 
 ### Define User Attributes & Claims

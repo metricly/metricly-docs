@@ -52,7 +52,7 @@ Single Sign-On (SSO) is a feature available only to users with a CloudWisdom sub
 ![optional-metadata](/images/_index/optional-metadata.png)
 
 {{% notice tip %}}
-Add your tenant name to the **Default Relay State** field if you do not want to enter it when logging into CloudWisdom from Okta. Your tenant name is the company name you used when you signed up for a CloudWisdom account. Contact support if you do not know your tenant name.
+Add your tenant name to the **Default Relay State** field if you do not want to enter it when logging into CloudWisdom from Okta. Your tenant name is the company name you used when you signed up for a CloudWisdom account. You can find it on the [SSO page] (https://us.cloudwisdom.virtana.com/#/profile/sso) in CloudWisdom.
 ![default-relay-state](/images/_index/default-relay-state.png)
 {{% /notice %}}
 
