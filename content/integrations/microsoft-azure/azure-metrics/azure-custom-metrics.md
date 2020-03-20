@@ -7,7 +7,7 @@ tags: ["#microsoft", "#azure", "#integrations", "#metrics"]
 author: Lawrence Lane
 ---
 
-### Linux                       |
+### Linux
 
 | Fully Qualified Name (FQN)                                  | Type | Units | Statistic | Min | Max | Sparse Data Strategy (SDS) | BASE | CORR | UTIL | DESCRIPTION |
 |-------------------------------------------------------------|------|-------|-----------|-----|-----|----------------------------|------|------|------|-------------|

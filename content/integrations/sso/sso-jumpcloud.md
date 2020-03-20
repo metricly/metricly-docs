@@ -42,7 +42,7 @@ Keep this tab open and open a new tab; you must now login to JumpCloud and uploa
   - **firstName**: `firstname`
   - **lastName**: `lastname`
   - **role**: `Read Only`
-6. Add your tenant name to the **Default Relay State** field if you do not want to enter it when logging into CloudWisdom from JumpCloud. Your tenant name is the company name you used when you signed up for a CloudWisdom account. Contact support if you do not know your tenant name.
+6. Add your tenant name to the **Default Relay State** field if you do not want to enter it when logging into CloudWisdom from JumpCloud. Your tenant name is the company name you used when you signed up for a CloudWisdom account. You can find it on the [SSO page] (https://us.cloudwisdom.virtana.com/#/profile/sso) in CloudWisdom.
 ![jc-relay-state](/images/sso-jumpcloud/jc-relay-state.png)
 7. **Save** your new SSO application.
 
@@ -71,8 +71,16 @@ You are now ready to import your JumpCloud certificate and metadata to CloudWisd
 2. When finished, it should look like this:
 ![cloudwisdom-sso-complete](/images/sso-jumpcloud/cloudwisdom-sso-complete.png)
 
+## Log In to CloudWisdom using SSO
 
-## Login URLs
+Now that you have SSO configured, you can log in to CloudWisdom a couple different ways. 
 
-- **login URL:** `https://us.cloudwisdom.virtana.com/#/login?sso=true`
-- **login URL (tenant name pre populated):** `https://us.cloudwisdom.virtana.com/#/login?sso=true&tenantName=Your+Tenant+Name`
+The first way is to visit the main SSO login page and provide your tenant name; your tenant name can be found on the [SSO page] (https://us.cloudwisdom.virtana.com/#/profile/sso) in CloudWisdom. You can also append your tenant name to the end of the main SSO login page URL to have it pre-populated on the page. 
+
+The second way is to visit a link that automatically re-directs you to your SSO provider; if you're signed into your SSO provider, you will be logged in to CloudWisdom automatically, otherwise you will be prompted by your SSO provider to sign in before getting logged in to CloudWisdom.
+
+- **Main SSO Login Page:** `https://us.cloudwisdom.virtana.com/#/login?sso=true`
+- **Main SSO Login Page with Tenant Name Pre-Populated:** `https://us.cloudwisdom.virtana.com/#/login?sso=true&tenantName=Your+Tenant+Name`
+- **Automatic Re-Direct to Your SSO Provider:** `https://us.cloudwisdom.virtana.com/saml/login?tenantName=Your+Tenant+Name`
+
+Note: You'll need to replace `Your+Tenant+Name` with your tenant name where `+` indicates a space e.g. `Dales+Donut+Shop`.
