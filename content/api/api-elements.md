@@ -283,7 +283,7 @@ The following response body found 2 elements with the **elementType** `EC2`.  Yo
 
 | Parameter | Parameter Type | Data Type | Description |
 |-----------------|----------------|-----------|-------------|
-| elementTemplate | Body | JSON | ?? |
+| elementTemplate | Body | JSON | See [here](/capacity-monitoring/inventory/inventory-element-display-name) |
 
 ### Request URL
 
