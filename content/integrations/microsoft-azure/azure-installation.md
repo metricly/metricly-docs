@@ -78,11 +78,7 @@ While here, ensure the **microsoft.insights** resource provider is registered as
 
  - **Note**: You can verify the permissions by selecting Role Assignments and searching for the CloudWisdom application.
 
-8. Return to CloudWisdom. Verify each field has been filled in and ensure the **Azure VM** element type is included for collection.  Optionally, [filter VM collection] (https://docs.metricly.com/integrations/microsoft-azure/azure-filter-elements/) using tag key-value pairs.
-
-9. Click the **Save** button.
-
-You will see your Azure elements on the Inventory page after a few minutes.
+8. Return to CloudWisdom, verify each field has been filled in accurately, and then click the **Save** button.
 
 {{% notice info %}}
 Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VMs. These metrics are required for CloudWisdom's Azure cost reports.
