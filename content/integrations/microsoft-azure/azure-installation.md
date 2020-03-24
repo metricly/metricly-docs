@@ -6,16 +6,13 @@ categories: ["integration", "admin guide", "getting started"]
 tags: ["#microsoft", "#azure", "#integrations", "#installation"]
 author: Lawrence Lane
 ---
-## 1. Create a Microsoft Azure Integration Card in CloudWisdom
-1. Log in to CloudWisdom.
-2. Select **Integrations**.
-2. Select the **Microsoft Azure** card.
-![microsoft-azure](/images/azure-installation/microsoft-azure.png)
-3. In a separate, new tab, open the [Azure portal](https://portal.azure.com/).
+## 1. Contact the CloudWisdom Sales Team
+1. Contact [CloudWisdom Sales](mailto:dl-sales-metricly@virtualinstruments.com) to get a link for accessing the new Azure integration page.
+2. Open the link you receive in a new tab.
 
 ## 2. Create an Active Directory Application in Azure
 
-1. Once in the Azure portal, select **Azure Active Directory** from the left or top menu.
+1. In a separate tab, open the [Azure portal](https://portal.azure.com/) and select **Azure Active Directory** from the left or top menu.
 ![azure-active-directory](/images/azure-installation/azure-active-directory.png)
 2. Select **App registrations** from the Manage options.
 ![app-registrations](/images/azure-installation/app-registrations.png)
