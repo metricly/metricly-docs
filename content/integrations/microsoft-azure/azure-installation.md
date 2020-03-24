@@ -87,10 +87,3 @@ You will see your Azure elements on the Inventory page after a few minutes.
 {{% notice info %}}
 Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VMs. These metrics are required for CloudWisdom's Azure cost reports.
 {{% /notice%}}
-
-## Use with Agents
-
-If you install our Linux agent or Windows agent on an Azure VM, the VM’s power state (attribute `hostRunning` with a value of `true` or `false`) and tags are copied over to the corresponding Linux `SERVER` element / Windows `WINSRV` element. You can then use this information to create [policies][1].
-
-[1]: /alerts-notificaitons/policies
-[2]: /integrations/microsoft-azure/azure-installation/
