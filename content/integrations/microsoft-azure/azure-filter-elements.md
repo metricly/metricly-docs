@@ -4,6 +4,7 @@ title: "Filter Elements"
 draft: false
 categories: ["integration", "admin guide", "getting started"]
 tags: ["#microsoft", "#azure", "#integrations", "#optional config"]
+hidden: true
 author: Lawrence Lane
 ---
 You can filter what Azure elements are included in CloudWisdom’s monitoring by using regex to match key-value pairs. CloudWisdom offers opt-in (include) or opt-out (exclude) element filtering.
