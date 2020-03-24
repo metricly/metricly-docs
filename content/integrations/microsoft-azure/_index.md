@@ -7,7 +7,7 @@ tags: ["#microsoft", "#azure", "#integrations"]
 author: Lawrence Lane
 ---
 
-Microsoft Azure is a cloud computing platform, similar to Amazon Web Services. With Azure integration in CloudWisdom, you can monitor the performance of your entire cloud infrastructure. CloudWisdom requires Reader role permissions of your Azure environment, which can be granted using the Owner or User Access Administrator roles.
+Microsoft Azure is a cloud computing platform, similar to Amazon Web Services. With the Azure integration in CloudWisdom, you can manage and optimize the cost of your entire cloud infrastructure. CloudWisdom requires Reader role permissions of your Azure environment, which can be granted using the Owner or User Access Administrator roles.
 
 ## Related Topics
 {{% children %}}
