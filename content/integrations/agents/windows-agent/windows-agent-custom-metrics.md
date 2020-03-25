@@ -65,10 +65,9 @@ This plugin uses the Windows Performance Count component to collect configured m
 
 ### 3. Fill in Counter information
 1. Follow the diagram below to fill out the Category, Name, and Instance fields (case sensitive) in the blank counter template you added in step 2.3. The picture outlines the expanded Processor counter category.
+  ![processor screenshot](/images/windows-agent-custom-metrics/processor-screenshot.png)
 
-![processor screenshot](/images/windows-agent-custom-metrics/processor-screenshot.png)
-
-2\. Navigate to the **types.db** file (`C:\Program Files\CollectdWin`) and open it.  
+2. Navigate to the **types.db** file (`C:\Program Files\CollectdWin`) and open it.  
 3. Use your best judgment to match a type in types.db to the category you selected in step 3.1. Input the type (case sensitive) you wish to use into the **CollectdType** field.
 4. Create a metric category for the **CollectdPlugin** field. This category displays in the Metrics tree and search field (squared in green).
 ![CloudWisdom Search Screenshot](/images/windows-agent-custom-metrics/metricly-search-screenshot.png)
