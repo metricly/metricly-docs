@@ -8,7 +8,8 @@ author: Lawrence Lane
 ---
 ## 1. Contact the CloudWisdom Sales Team
 1. Contact [CloudWisdom Sales](mailto:dl-sales-metricly@virtualinstruments.com) to get a link for accessing the new Azure integration page.
-2. Open the link you receive in a new tab.
+2. Wait for an email containing the link.
+3. Once you receive the link, open it in a new tab.
 
 ## 2. Create an Active Directory Application in Azure
 
