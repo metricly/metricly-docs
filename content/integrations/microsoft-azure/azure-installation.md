@@ -6,16 +6,14 @@ categories: ["integration", "admin guide", "getting started"]
 tags: ["#microsoft", "#azure", "#integrations", "#installation"]
 author: Lawrence Lane
 ---
-## 1. Create a Microsoft Azure Integration Card in CloudWisdom
-1. Log in to CloudWisdom.
-2. Select **Integrations**.
-2. Select the **Microsoft Azure** card.
-![microsoft-azure](/images/azure-installation/microsoft-azure.png)
-3. In a separate, new tab, open the [Azure portal](https://portal.azure.com/).
+## 1. Contact the CloudWisdom Sales Team
+1. Contact [CloudWisdom Sales](mailto:dl-sales-metricly@virtualinstruments.com) to get a link for accessing the new Azure integration page.
+2. Wait for an email containing the link.
+3. Once you receive the link, open it in a new tab.
 
 ## 2. Create an Active Directory Application in Azure
 
-1. Once in the Azure portal, select **Azure Active Directory** from the left or top menu.
+1. In a separate tab, open the [Azure portal](https://portal.azure.com/) and select **Azure Active Directory** from the left or top menu.
 ![azure-active-directory](/images/azure-installation/azure-active-directory.png)
 2. Select **App registrations** from the Manage options.
 ![app-registrations](/images/azure-installation/app-registrations.png)
@@ -78,19 +76,8 @@ While here, ensure the **microsoft.insights** resource provider is registered as
 
  - **Note**: You can verify the permissions by selecting Role Assignments and searching for the CloudWisdom application.
 
-8. Return to CloudWisdom. Verify each field has been filled in and ensure the **Azure VM** element type is included for collection.  Optionally, [filter VM collection] (https://docs.metricly.com/integrations/microsoft-azure/azure-filter-elements/) using tag key-value pairs.
-
-9. Click the **Save** button.
-
-You will see your Azure elements on the Inventory page after a few minutes.
+8. Return to CloudWisdom, verify each field has been filled in accurately, and then click the **Save** button.
 
 {{% notice info %}}
 Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VMs. These metrics are required for CloudWisdom's Azure cost reports.
 {{% /notice%}}
-
-## Use with Agents
-
-If you install our Linux agent or Windows agent on an Azure VM, the VM’s power state (attribute `hostRunning` with a value of `true` or `false`) and tags are copied over to the corresponding Linux `SERVER` element / Windows `WINSRV` element. You can then use this information to create [policies][1].
-
-[1]: /alerts-notificaitons/policies
-[2]: /integrations/microsoft-azure/azure-installation/
