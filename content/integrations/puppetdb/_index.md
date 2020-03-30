@@ -11,8 +11,6 @@ author: Lawrence Lane
 
 ## Configure
 
-You cannot activate the PuppetDB integration until CloudWisdom begins receiving data. Once data arrives, the package ([Dashboards][2] and [Policies][3]) is automatically provisioned. To remove those Dashboards and Policies, click the toggle on the PuppetDB integration card.
-
 ### 1. Update the Configuration File
 
 1. Open **PuppetDBCollector.conf** in the collectors folder, `/opt/netuitive-agent/conf/collectors`.
