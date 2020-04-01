@@ -17,7 +17,7 @@ After you make a new AWS integration in CloudWisdom, the script populates a read
    - If this is not your first AWS integration, select **+ Add Integration**.
    ![add-integration](/images/AWS-CloudFormation-Installation/add-integration.png)
 3. Enable the **Cost Explorer API**.
-   - **Note**: Only one AWS datasource may have Explorer API enabled; CloudWisdom recommends enabling Cost Explorer on your master billing account.
+   - **Note**: Only one AWS datasource may have Cost Explorer API enabled; CloudWisdom recommends enabling Cost Explorer on your master billing account.
 4. Select the following Detailed Billing Source: **Cost And Usage Report (Recommended)**.
  - See the [Cost and Usage Report steps](/integrations/aws-integration/aws-cur).
 ![cost-explorer-CUR](/images/AWS-CloudFormation-Installation/cost-explorer-cur.png)
