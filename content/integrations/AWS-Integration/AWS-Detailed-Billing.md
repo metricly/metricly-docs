@@ -68,4 +68,4 @@ Extracts or summaries of your billing data must have the exact same file name fo
 
 Virtana only reads the costs for accounts that we monitor; we discard all data for any unrelated accounts. You can also have them reach out to our support team with any questions they may have.
 
-[1]: /integrations/AWS-integrations/aws-cur
+[1]: /integrations/aws-integration/aws-cur/
