@@ -52,7 +52,7 @@ Setting up an AWS integration is a two step process:
     {
       "Action": [
         "autoscaling:Describe*",
-        "ce:*",
+        "ce:Get*",
         "cloudwatch:Describe*",
         "cloudwatch:Get*",
         "cloudwatch:List*",
