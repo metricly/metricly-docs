@@ -50,7 +50,7 @@ If you already have an existing IAM role for CloudWisdom but it does not include
 "Version": "2012-10-17",
 "Statement": [
 {
-"Action": "ce:*",
+"Action": "ce:Get*",
 "Resource": "*",
 "Effect": "Allow"
 }
@@ -130,7 +130,7 @@ If you want to use a limited read only access policy, you’ll need to create a 
   {
     "Action": [
       "autoscaling:Describe*",        
-      "ce:*",
+      "ce:Get*",
       "cloudwatch:Describe*",
       "cloudwatch:Get*",
       "cloudwatch:List*",
