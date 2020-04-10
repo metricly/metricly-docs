@@ -7,6 +7,10 @@ tags: ["#aws", "#metrics", "#s3"]
 author: Lawrence Lane
 ---
 
+There are three groups of S3 metrics: Daily storage metrics for buckets, Request metrics and Replication metrics. The first group includes two metrics: Bucket Size Bytes and Number of Objects. These metrics are free of charge and given by AWS on the daily basis.
+
+The rest are billed by AWS additionally. You can opt in request metrics through the Management tab of S3 configuration in AWS console.
+
 ## Collected
 
 | Friendly Name                | Fully Qualified Name (FQN)                | AWS Metric                   | Statistic | Units       | BASE |
@@ -32,7 +36,3 @@ author: Lawrence Lane
 | Replication Latency          | aws.s3.replicationlatency                 | ReplicationLatency           | average   | seconds     | yes  |
 | Bytes Pending Replication    | aws.s3.bytespendingreplication            | BytesPendingReplication      | average   | GiB/KiB     | yes  |
 | OperationsPendingReplication | aws.s3.operationspendingreplication       | OperationsPendingReplication | average   | count       | yes  |
-
-{{% notice tip %}}
-Metrics BucketSizeBytes and NumberOfObjects are reported once per day by AWS.
-{{% /notice %}}
