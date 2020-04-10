@@ -7,7 +7,7 @@ tags: ["#aws", "#metrics", "#s3"]
 author: Lawrence Lane
 ---
 
-There are three groups of S3 metrics: Daily storage metrics for buckets, Request metrics and Replication metrics. The first group includes two metrics: Bucket Size Bytes and Number of Objects. These metrics are free of charge and given by AWS on the daily basis.
+There are three groups of S3 metrics: Daily storage metrics for buckets, Request metrics, and Replication metrics. The first group includes two metrics: Bucket Size Bytes and Number of Objects. These metrics are free of charge and reported by AWS once daily.
 
 The rest are billed by AWS additionally. You can opt in request metrics through the Management tab of S3 configuration in AWS console.
 
