@@ -505,7 +505,7 @@ The following response body returns a list of all metric FQNs associated to the 
 | startTime | query | date-time | Start time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
 | endTime | query | date-time | End time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
 | rollup | query | Array[string] | Determines frequency of metric sampling. Options are: ZERO, PT5M, PT1H, PT24H. |
-| showValues | query | boolean | Provides the values for the metric statistics (if set to true) or only displays zeroes for the statistics (if set to false). |
+| showValues | query | boolean | Shows the individual rollup values over the time period in a data array if set to true. Default is false. |
 
 
 ### Request URL
@@ -605,7 +605,7 @@ The following response body
 | startTime | query | date-time | Start time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
 | endTime | query | date-time | End time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
 | rollup | query | Array[string] | Determines frequency of metric sampling. Options are: ZERO, PT5M, PT1H, PT24H. |
-| showValues | query | boolean | Provides the values for the metric statistics (if set to true) or only displays zeroes for the statistics (if set to false). |
+| showValues | query | boolean | Shows the individual rollup values over the time period in a data array if set to true. Default is false. |
 |elementIds   | body   | Array[string]  | List of elementIds. |
 
 
