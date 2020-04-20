@@ -8,7 +8,7 @@ author: Lawrence Lane
 #pre: "<i class='fa fa-download'></i> &nbsp; "
 weight: 1
 ---
-This installation method leverages a CloudFormation script which can be viewed [here](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-www/assets/cloudformation/metricly-read-only-role.template). You can also [view a list of permissions](/images/AWS-CloudFormation-Installation/cloudformation-permissions.png) granted by the IAM role.
+This installation method leverages a CloudFormation script which can be viewed [here](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-www/assets/cloudformation/cloudwisdom-read-only-role.template). You can also [view a list of permissions](/images/AWS-CloudFormation-Installation/cloudformation-permissions.png) granted by the IAM role.
 
 After you make a new AWS integration in CloudWisdom, the script populates a read-only IAM role in your AWS account and links it using the integration’s Account ID and External ID. Once created, it may take a few minutes for the status to be updated.
 
@@ -26,7 +26,7 @@ After you make a new AWS integration in CloudWisdom, the script populates a read
 7. Select **Create Stack**. This process may take a few minutes. Wait for the stack to say **CREATE_COMPLETE** before proceeding to the next section.
 
 ## 2.  Add RoleARN to the New AWS Integration
-1. Select the stack you have created. It will start with `Metricly-Read-Only-Role-`.
+1. Select the stack you have created. It will start with `CloudWisdom`.
 2. Navigate to the **Outputs** tab.
 3. Copy the **Role ARN Value**.
 ![role-arn-value](/images/onboarding-wizard/role-arn-value.png)
