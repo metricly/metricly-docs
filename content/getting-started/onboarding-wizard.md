@@ -66,7 +66,7 @@ It can take up to a few hours for data to populate in the S3 bucket.
 3. Select **Run Cloudformation Script**. This opens a new tab and is the fastest way to set up your IAM role; you will be prompted to log in to AWS.
 4. Enable the **I acknowledge that AWS CloudFormation might create IAM resources** checkbox.
 5. Select **Create Stack**. This process may take a few minutes. Wait for the stack to say **CREATE_COMPLETE** before proceeding to the next step.
-6. Select the stack you have created. It will start with `Metricly-Read-Only-Role-`.
+6. Select the stack you have created. It will start with `CloudWisdom`.
 7. Navigate to the **Outputs** tab.
 8. Copy the **Role ARN Value**.
 ![role-arn-value](/images/onboarding-wizard/role-arn-value.png)
