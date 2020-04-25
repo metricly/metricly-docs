@@ -43,3 +43,8 @@ az ad sp create-for-rbac --role "Monitoring Reader" --name CloudWisdomReader --s
 3. Use the Azure IDs provided in the CLI to set up the integration.
 ![save-azure-integration](/images/azure-cli-installation/save-azure-integration.png)
 4. **Save**.
+
+
+{{% notice info %}}
+Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VMs. These metrics are required for CloudWisdom's Azure cost reports.
+{{% /notice%}}
