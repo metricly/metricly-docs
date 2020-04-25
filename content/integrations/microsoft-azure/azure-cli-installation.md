@@ -44,6 +44,9 @@ az ad sp create-for-rbac --role "Monitoring Reader" --name CloudWisdomReader --s
 ![save-azure-integration](/images/azure-cli-installation/save-azure-integration.png)
 4. **Save**.
 
+You can review the app from your Azure Portal by following [this link](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps) and navigating to the **All applications** tab. 
+
+![cw-app-az-portal](/images/azure-cli-installation/cw-app-az-portal.png)
 
 {{% notice info %}}
 Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VMs. These metrics are required for CloudWisdom's Azure cost reports.
