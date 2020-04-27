@@ -6,6 +6,11 @@ categories: ["integration", "admin guide", "getting started"]
 tags: ["#microsoft", "#azure", "#integrations", "#installation"]
 author: Lawrence Lane
 ---
+
+{{% notice tip %}}
+Virtana recommends using the [Azure CLI](/integrations/microsoft-azure/azure-cli-installation) for the best integration experience. 
+{{% /notice %}}
+
 ## 1. Contact the CloudWisdom Sales Team
 1. Contact [CloudWisdom Sales](mailto:dl-sales-metricly@virtualinstruments.com) to get a link for accessing the new Azure integration page.
 2. Wait for an email containing the link.

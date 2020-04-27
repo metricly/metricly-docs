@@ -26,7 +26,7 @@ Use the CLI to obtain your Azure Client ID, Password, Subscription ID, and Tenan
 4. Save the following account values:
    - **TenantId**: Used for the Tenant ID in CloudWisdom.
    - **Id**: Used for the Subscription ID in CloudWisdom.
-   ![azure-cli](/images/azure-cli-installation/azure-cli.png)
+![azure-cli](/images/azure-cli-installation/azure-cli.png)
 5.  Run the following command to create read permissions for CloudWisdom in Azure:
 ```
 az ad sp create-for-rbac --role "Monitoring Reader" --name CloudWisdomReader --scopes /subscriptions/<subcription-id>
@@ -44,7 +44,7 @@ az ad sp create-for-rbac --role "Monitoring Reader" --name CloudWisdomReader --s
 ![save-azure-integration](/images/azure-cli-installation/save-azure-integration.png)
 4. **Save**.
 
-You can review the app from your Azure Portal by following [this link](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps) and navigating to the **All applications** tab. 
+You can review the app from your Azure Portal by following [this link](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps) and navigating to the **All applications** tab.
 
 ![cw-app-az-portal](/images/azure-cli-installation/cw-app-az-portal.png)
 
