@@ -329,12 +329,6 @@ The following response body prints a preview of the element name created by merg
 
 ---
 
-## POST to /elements/search
-
-{{< button href="https://app.metricly.com/swagger-ui.html#!/elements/getElementsPOSTUsingPOST" theme="success" >}} POST {{< /button >}} This is a deprecated method. Use **/elements/elasticsearch/elementQuery** instead.
-
----
-
 ## GET from /elements/{elementId}/events
 
 {{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/elements/getEventsUsingGET" >}} GET {{< /button >}} Use this endpoint to discover events within certain time frames (days, hours, minutes).
