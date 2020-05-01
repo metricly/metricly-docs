@@ -396,7 +396,7 @@ The following response body returns matches for 2 elements that contain the spec
 
 ## GET from /metrics/fqns
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricFqnsUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to get a list of metric FQNs for a given set of criteria. Note this is a deprecated method and could be removed at a later date.   
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricFqnsUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to get a list of metric FQNs for a given set of criteria.
 
 {{% expand "View Method Details." %}}
 
@@ -592,7 +592,7 @@ The following response body
 
 ## POST to /metrics/statistics
 
-{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricStatisticsPageUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to get metric statistics for given set of elements. Note this is a deprecated method and could be removed at a later date.  
+{{< button href="https://app.metricly.com/swagger-ui.html#!/metrics/getMetricStatisticsPageUsingPOST" theme="success" >}} POST {{< /button >}} Use this endpoint to get metric statistics for given set of elements.
 
 {{% expand "View Method Details." %}}
 
