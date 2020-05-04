@@ -125,54 +125,34 @@ If you want to use a limited read only access policy, you’ll need to create a 
 
 ```json
 {
-"Version": "2012-10-17",
-"Statement": [
-  {
-    "Action": [
-      "autoscaling:Describe*",        
-      "ce:Get*",
-      "cloudwatch:Describe*",
-      "cloudwatch:Get*",
-      "cloudwatch:List*",
-      "dynamodb:Describe*",
-      "dynamodb:Get*",
-      "dynamodb:List*",
-      "ec2:Describe*",
-      "ec2:GetConsoleOutput",
-      "ecs:Describe*",
-      "ecs:List*",
-      "elasticache:Describe*",
-      "elasticache:List*",
-      "elasticloadbalancing:Describe*",
-      "elasticmapreduce:Describe*",
-      "elasticmapreduce:List*",
-      "iam:Get*",
-      "kinesis:DescribeStream",
-      "kinesis:Get*",
-      "kinesis:List*",
-      "lambda:List*",
-      "rds:Describe*",
-      "rds:ListTagsForResource",
-      "redshift:Describe*",
-      "mq:List*",
-      "mq:Describe*",
-      "s3:Describe*",
-      "s3:Get*",
-      "s3:List*",
-      "sqs:Get*",
-      "sqs:List*",
-      "tag:Get*"
-    ],
-    "Effect": "Allow",
-    "Resource": "*"
-  }
-]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::your-bucket-name"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::your-bucket-name/*"
+      ]
+    }
+  ]
 }
 ```
-7. Select **Review Policy**.
-8. Provide a **Name**.
-9. Review the permissions summary and select **Create Policy**.
-10. Follow **Part 3** of this guide, replacing **step 8** with your custom minimal permissions policy.
+7. Replace `your-bucket-name` with the name of the bucket associated with your [CUR files][1].
+8. Select **Review Policy**.
+9. Provide a **Name**.
+10. Review the permissions summary and select **Create Policy**.
+11. Follow **Part 3** of this guide, replacing **step 8** with your custom minimal permissions policy.
 
 ### 5: Update AWS Integration in CloudWisdom with the Role ARN
 
@@ -180,3 +160,5 @@ If you want to use a limited read only access policy, you’ll need to create a 
 2. Add the Role ARN from the IAM role found in your AWS Console.
 ![arn-role](/images/AWS-IAM-Installation/arn-role.png)
 3. **Save**.
+
+[1]: /integrations/aws-integration/aws-cur
