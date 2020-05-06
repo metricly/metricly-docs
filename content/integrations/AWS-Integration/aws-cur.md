@@ -66,7 +66,7 @@ The following best practices ensure optimal Cost & Usage report setup.
 
 ### Request CUR Setup for Resold Resources
 
-You may not have access to your billing preferences if you have purchased AWS services through a reseller. You must contact your reseller and request to be set up with an S3 bucket to store your CUR data. You can then use [this minimal read-only IAM role](http://localhost:1313/integrations/aws-integration/aws-iam-installation/#alternative-create-a-custom-policy-with-minimal-permissions-read-only-role) to allow CloudWisdom access.
+You may not have access to your billing preferences if you have purchased AWS services through a reseller. You must contact your reseller and request to be set up with an S3 bucket to store your CUR data. This [minimal read-only IAM role](http://localhost:1313/integrations/aws-integration/aws-iam-installation/#alternative-create-a-custom-policy-with-minimal-permissions-read-only-role) can be used to allow CloudWisdom read-only access to a single S3 bucket containing the billing files that help to power our cost reporting features.
 
 **Reseller concerned about sharing an S3 bucket?**
 
