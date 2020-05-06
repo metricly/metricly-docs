@@ -78,7 +78,7 @@ CloudWisdom collects performance data to power analyses. The elements enabled by
 ### 3. Configure Cost & Billing Settings
 
 1. Leave **Enable Cost Explorer** enabled.
-2. Select a **Report Path Prefix**. This path should be connected to the S3 bucket where Cost and Usage Report files are stored.
+2. Select a **Report Path Prefix**. The values listed are a combination of the S3 bucket name where the billing files reside followed by the full Report path prefix of the Cost & Usage report you configured.
 ![select-report-path](/images/onboarding-wizard/select-report-path.png)
 3. Select **Next: Summary**.
 
