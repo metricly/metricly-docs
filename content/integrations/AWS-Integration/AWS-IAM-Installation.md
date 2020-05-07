@@ -124,7 +124,7 @@ Continuing from **Section 4**:
 4. Add **Role Name**: `CloudWisdom`.
 5. Select **Create Role**.  You are returned to IAM Roles in your AWS console.
 6. Select the new role you have created.
-7. Copy the **Role ARN** and move on to **Section 5**.
+7. Copy the **Role ARN** and move on to **Section 6**.
 ![role-arn](/images/AWS-IAM-Installation/role-arn.png)
 
 {{% /expand %}}
@@ -203,7 +203,7 @@ Continuing From **Section 4**:
 4. Add **Role Name**: `CloudWisdom Monitoring`.
 5. Select **Create Role**.  You are returned to IAM Roles in your AWS console.
 6. Select the new role you have created.
-7. Copy the **Role ARN** and move on to **Section 5**.
+7. Copy the **Role ARN** and move on to **Section 6**.
 ![role-arn](/images/AWS-IAM-Installation/role-arn.png)
 
 {{% /expand %}}
@@ -262,12 +262,12 @@ Continuing From **Section 4**:
 4. Add **Role Name**: `CloudWisdom Billing`.
 5. Select **Create Role**.  You are returned to IAM Roles in your AWS console.
 6. Select the new role you have created.
-7. Copy the **Role ARN** and move on to **Section 5**.
+7. Copy the **Role ARN** and move on to **Section 6**.
 ![role-arn](/images/AWS-IAM-Installation/role-arn.png)
 
 {{% /expand %}}
 
-## 5: Update AWS Integration in CloudWisdom with the Role ARN
+## 6: Update AWS Integration in CloudWisdom with the Role ARN
 
 1. Return to the open CloudWisdom tab from **Section 1**.
 2. Add the Role ARN from the IAM role found in your AWS Console.
