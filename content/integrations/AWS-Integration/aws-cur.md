@@ -55,7 +55,7 @@ If you have just created your [IAM role][1], **wait 2-5 minutes** for AWS to fin
 {{% notice tip %}}
 
 If the **Report Path Prefix** lookup is not available (and is instead a freeform text input), make sure you are using the most recent IAM role available. You can create the latest IAM role using the our [CloudFormation script](/integrations/aws-integration/aws-cloudformation-installation/).
-
+You also have the option to manually enter the **S3 Bucket Name** (chosen in section 1, step 7) and **Report Path Prefix** (created in section 1, step 8).
 {{% /notice %}}
 
 ---
@@ -66,7 +66,7 @@ The following best practices ensure optimal Cost & Usage report setup.
 
 ### Request CUR Setup for Resold Resources
 
-You may not have access to your billing preferences if you have purchased AWS services through a reseller. You must contact your reseller and request to be set up with an S3 bucket to store your CUR data. This [minimal read-only IAM role](http://localhost:1313/integrations/aws-integration/aws-iam-installation/#alternative-create-a-custom-policy-with-minimal-permissions-read-only-role) can be used to allow CloudWisdom read-only access to a single S3 bucket containing the billing files that help to power our cost reporting features.
+You may not have access to your billing preferences if you have purchased AWS services through a reseller. You must contact your reseller and request to be set up with an S3 bucket to store your CUR data. This [minimal read-only IAM role](/integrations/aws-integration/aws-iam-installation/#5-define-role-permissions) can be used to allow CloudWisdom read-only access to a single S3 bucket containing the billing files that help to power our cost reporting features.
 
 **Reseller concerned about sharing an S3 bucket?**
 
