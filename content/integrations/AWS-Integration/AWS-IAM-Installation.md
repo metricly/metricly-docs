@@ -100,7 +100,12 @@ This guide includes instructions for setting up both standard and minimal read p
 
 ## 5. Define Role Permissions  
 
-There are three options: standard permissions, minimal monitoring permissions, and minimal billing permissions. Minimal permission policies must be created _before_ selecting them during the IAM Role creation. Virtana recommends opening a second browser tab to follow this section when creating minimal read-only policies.
+There are three options available for this role: standard permissions, minimal monitoring permissions, and minimal billing permissions. A Minimal permission policy must be created _before_ being assigned to an IAM Role.
+
+{{% notice tip %}}
+Virtana recommends opening a second browser tab to follow this section when creating minimal read-only policies. Once the policy is created, use the original tab to resume setup of the IAM role.
+
+{{% /notice %}}
 
 ### Standard Permissions
 
@@ -207,7 +212,7 @@ Continuing From **Section 4**:
 
 {{% expand "View Steps." %}}
 
-In a Separate Browser Tab
+In a Separate Browser Tab:
 
 1. Log in to your **AWS Console**.
 2. In **Find Services**, search for `IAM` and select the result.
