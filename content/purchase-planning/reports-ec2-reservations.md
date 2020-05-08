@@ -10,7 +10,7 @@ author: Lawrence Lane
 Avoid overbuying reserved resources with the EC2 Reservation Recommendation report. This report uses instance-hour usage data to compile multi-dimensional visualizations and provide tailor-fit purchasing recommendations to help you achieve longterm savings.
 
 {{% notice tip %}}
-An AWS integration with Detailed Billing must be enabled before using this report.
+An AWS integration with **Cost & Usage Reports** must be enabled before using this report.
 {{% /notice %}}
 
 **This report helps you:**
