@@ -46,7 +46,7 @@ If you have just created your [IAM role][1], **wait 2-5 minutes** for AWS to fin
 
 1. From the side navigation menu, select **Integrations**.
 2. Select the **Amazon Web Services** card.
-3. Ensure both **Cost Explorer API** and **Detailed Billing** are enabled.
+3. Ensure **Cost & Usage Reports** is enabled.
 4. Scroll to the **Detailed Billing Settings** section.
 5. Select a **Report Path Prefix** from the dropdown.
 ![cur-lookup](/images/aws-cur/cur-lookup.png)
