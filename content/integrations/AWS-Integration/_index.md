@@ -3,7 +3,7 @@ title: "AWS"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["#aws", "#detailed billing", "#iam role", "#cost explorer", "#getting started"]
+tags: ["#aws", "#iam role", "#cost explorer", "#getting started"]
 author: Lawrence Lane
 ---
 The Amazon Web Services (AWS) Integration allows performance data to be collected at regular intervals from AWS for analysis in CloudWisdom.

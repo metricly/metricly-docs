@@ -6,6 +6,7 @@ categories: ["integration", "admin guide", "getting started"]
 tags: ["#aws", "#detailed billing", "#s3 bucket",]
 author: Lawrence Lane
 weight: 4
+hidden: true
 ---
 This is a legacy method for obtaining detailed reports. See [Cost And Usage Reports][1] for Amazon's new reports. CloudWisdom recommends switching all AWS integrations to the CUR data collection method.
 
