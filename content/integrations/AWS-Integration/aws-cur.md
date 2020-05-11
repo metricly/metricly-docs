@@ -68,7 +68,7 @@ The following best practices ensure optimal Cost & Usage report setup.
 
 Some customers store their billing files in a shared master billing account and need to grant CloudWisdom restricted access to one specific S3 bucket. You can use the [master billing account permissions](/integrations/aws-integration/aws-iam-installation/#master-billing-account-permissions) to create a limited read-only IAM role when configuring your AWS integration with CloudWisdom.
 
-For customers using a shared S3 bucket: Virtana only reads the costs for accounts that we monitor; we discard all data for any unrelated accounts.
+For customers using a shared S3 bucket: CloudWisdom only reads the costs for accounts that we monitor; data for unrelated accounts is discarded.
 
 
 [1]: /integrations/aws-integration/aws-cloudformation-installation/
