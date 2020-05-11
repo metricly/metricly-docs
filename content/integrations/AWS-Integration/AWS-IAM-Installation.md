@@ -100,7 +100,7 @@ This guide includes instructions for setting up both standard and minimal read p
 
 ## 5. Define Role Permissions  
 
-There are three options available for this role: standard permissions, minimal monitoring permissions, and minimal billing permissions. A Minimal permission policy must be created _before_ being assigned to an IAM Role.
+There are three options available for this role: standard permissions, minimal monitoring permissions, and minimal cost permissions. A Minimal permission policy must be created _before_ being assigned to an IAM Role.
 
 {{% notice tip %}}
 Virtana recommends opening a second browser tab to follow this section when creating minimal read-only policies. Once the policy is created, use the original tab to resume setup of the IAM role.
@@ -108,6 +108,8 @@ Virtana recommends opening a second browser tab to follow this section when crea
 {{% /notice %}}
 
 ### Standard Permissions
+
+Grants blanket read-only access to collect CloudWatch **performance metrics** and **billing files** from S3.
 
 {{% expand "View Steps." %}}
 
@@ -131,6 +133,8 @@ Continuing from **Section 4**:
 
 ### Minimal Monitoring Permissions
 
+Grants read-only access to collect CloudWatch **performance metrics** for all AWS services and their integrations.
+
 {{% expand "View Steps." %}}
 
 In a Separate Browser Tab:
@@ -145,48 +149,56 @@ In a Separate Browser Tab:
 
 ```json
 {
-"Version": "2012-10-17",
-"Statement": [
-  {
-    "Action": [
-      "autoscaling:Describe*",        
-      "ce:Get*",
-      "cloudwatch:Describe*",
-      "cloudwatch:Get*",
-      "cloudwatch:List*",
-      "dynamodb:Describe*",
-      "dynamodb:Get*",
-      "dynamodb:List*",
-      "ec2:Describe*",
-      "ec2:GetConsoleOutput",
-      "ecs:Describe*",
-      "ecs:List*",
-      "elasticache:Describe*",
-      "elasticache:List*",
-      "elasticloadbalancing:Describe*",
-      "elasticmapreduce:Describe*",
-      "elasticmapreduce:List*",
-      "iam:Get*",
-      "kinesis:DescribeStream",
-      "kinesis:Get*",
-      "kinesis:List*",
-      "lambda:List*",
-      "rds:Describe*",
-      "rds:ListTagsForResource",
-      "redshift:Describe*",
-      "mq:List*",
-      "mq:Describe*",
-      "s3:Describe*",
-      "s3:Get*",
-      "s3:List*",
-      "sqs:Get*",
-      "sqs:List*",
-      "tag:Get*"
-    ],
-    "Effect": "Allow",
-    "Resource": "*"
-  }
-]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "autoscaling:Describe*",
+        "cloudwatch:Get*",
+        "cloudwatch:List*",
+        "cloudwatch:Describe*",
+        "dynamodb:Get*",
+        "dynamodb:List*",
+        "dynamodb:Describe*",
+        "ec2:Get*",
+        "ec2:Describe*",
+        "ecs:Describe*",
+        "ecs:List*",
+        "elasticache:List*",
+        "elasticache:Describe*",
+        "elasticfilesystem:List*",
+        "elasticfilesystem:Describe*",
+        "elasticloadbalancing:Describe*",
+        "elasticmapreduce:Get*",
+        "elasticmapreduce:List*",
+        "elasticmapreduce:Describe*",
+        "iam:Get*",
+        "kinesis:Get*",
+        "kinesis:List*",
+        "kinesis:Describe*",
+        "lambda:Get*",
+        "lambda:List*",
+        "mq:List*",
+        "mq:Describe*",
+        "redshift:Get*",
+        "redshift:List*",
+        "redshift:Describe*",
+        "route53:Get*",
+        "route53:List*",
+        "rds:List*",
+        "rds:Describe*",
+        "s3:Get*",
+        "s3:List*",
+        "s3:Describe*",
+        "sqs:Get*",
+        "sqs:List*",
+        "tag:Get*",
+        "tag:Describe*"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
 }
 ```
 
@@ -208,7 +220,9 @@ Continuing From **Section 4**:
 
 {{% /expand %}}
 
-### Minimal Billing Permissions
+### Minimal Cost Permissions
+
+Grants read-only access to collect CloudWatch **performance metrics** and **billing files** limited to only the AWS services that CloudWisdom provides cost reports for.
 
 {{% expand "View Steps." %}}
 
@@ -227,22 +241,25 @@ In a Separate Browser Tab:
   "Version": "2012-10-17",
   "Statement": [
     {
-      "Effect": "Allow",
       "Action": [
-        "s3:ListBucket"
+        "autoscaling:Describe*",
+        "cloudwatch:Get*",
+        "cloudwatch:List*",
+        "cloudwatch:Describe*",
+        "ec2:Get*",
+        "ec2:Describe*",
+        "elasticloadbalancing:Describe*",
+        "iam:Get*",
+        "rds:Describe*",
+        "rds:List*",
+        "s3:Get*",
+        "s3:List*",
+        "s3:Describe*",
+        "tag:Get*",
+        "tag:Describe*"
       ],
-      "Resource": [
-        "arn:aws:s3:::your-bucket-name"
-      ]
-    },
-    {
       "Effect": "Allow",
-      "Action": [
-        "s3:GetObject"
-      ],
-      "Resource": [
-        "arn:aws:s3:::your-bucket-name/*"
-      ]
+      "Resource": "*"
     }
   ]
 }
@@ -255,7 +272,7 @@ In a Separate Browser Tab:
 
 Continuing From **Section 4**:
 
-1. Add the minimal read-only billing policy to _Attach permission policies_. This policy can be found by filtering for **customer managed** policies.
+1. Add the minimal read-only cost policy to _Attach permission policies_. This policy can be found by filtering for **customer managed** policies.
  ![customer-managed](/images/AWS-IAM-Installation/customer-managed.png)
 2. Select **Next Step: Tags** and add any needed tags; **this is an optional step and you may skip it.**
 3. Select **Next: Review**.
