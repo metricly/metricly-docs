@@ -224,6 +224,10 @@ Continuing From **Section 4**:
 
 Grants read-only access to collect CloudWatch **performance metrics** and **billing files** limited to only the AWS services that CloudWisdom provides cost reports for.
 
+{{% notice tip %}} You can assign these permissions to a limited AWS integration that connects to your master billing account using a dedicated, minimal IAM role.
+{{% /notice %}}
+
+
 {{% expand "View Steps." %}}
 
 In a Separate Browser Tab:
@@ -263,6 +267,8 @@ In a Separate Browser Tab:
     }
   ]
 }
+
+
 ```
 
 7\. Replace `your-bucket-name` with the name of the bucket associated with your CUR files. <br>
