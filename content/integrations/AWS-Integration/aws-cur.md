@@ -3,7 +3,7 @@ title: "Cost & Usage Reports"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["#aws", "#detailed billing", "#s3 bucket",]
+tags: ["#aws", "#detailed billing", "#s3 bucket", "#master billing"]
 author: Lawrence Lane
 weight: 4
 ---
@@ -64,13 +64,11 @@ You also have the option to manually enter the **S3 Bucket Name** (chosen in sec
 
 The following best practices ensure optimal Cost & Usage report setup.
 
-### Request CUR Setup for Resold Resources
+### Shared Master Billing Account: How to Grant Limited Access
 
-You may not have access to your billing preferences if you have purchased AWS services through a reseller. You must contact your reseller and request to be set up with an S3 bucket to store your CUR data. This [minimal read-only IAM role](/integrations/aws-integration/aws-iam-installation/#5-define-role-permissions) can be used to allow CloudWisdom read-only access to a single S3 bucket containing the billing files that help to power our cost reporting features.
+Some customers store their billing files in a shared master billing account and need to grant CloudWisdom restricted access to one specific S3 bucket. You can use the [master billing account permissions](/integrations/aws-integration/aws-iam-installation/#master-billing-account-permissions) to create a limited read-only IAM role when configuring your AWS integration with CloudWisdom.
 
-**Reseller concerned about sharing an S3 bucket?**
-
-Virtana only reads the costs for accounts that we monitor; we discard all data for any unrelated accounts. You can also have them reach out to our support team with any questions they may have.
+For customers using a shared S3 bucket: Virtana only reads the costs for accounts that we monitor; we discard all data for any unrelated accounts.
 
 
 [1]: /integrations/aws-integration/aws-cloudformation-installation/

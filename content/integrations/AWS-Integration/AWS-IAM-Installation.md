@@ -3,7 +3,7 @@ title: "IAM"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["#aws", "#iam role"]
+tags: ["#aws", "#iam role", "#master billing"]
 author: Lawrence Lane
 #pre: "<i class='fa fa-download'></i> &nbsp; "
 weight: 2
@@ -100,7 +100,7 @@ This guide includes instructions for setting up both standard and minimal read p
 
 ## 5. Define Role Permissions  
 
-There are three options available for this role: standard permissions, minimal monitoring permissions, and minimal cost permissions. A Minimal permission policy must be created _before_ being assigned to an IAM Role.
+There are four options available for this role: standard permissions, minimal monitoring permissions, minimal cost permissions, and master billing account permissions. A Minimal permission policy must be created _before_ being assigned to an IAM Role.
 
 {{% notice tip %}}
 Virtana recommends opening a second browser tab to follow this section when creating minimal read-only policies. Once the policy is created, use the original tab to resume setup of the IAM role.
@@ -224,10 +224,6 @@ Continuing From **Section 4**:
 
 Grants read-only access to collect CloudWatch **performance metrics** and **billing files** limited to only the AWS services that CloudWisdom provides cost reports for.
 
-{{% notice tip %}} You can assign these permissions to a limited AWS integration that connects to your master billing account using a dedicated, minimal IAM role.
-{{% /notice %}}
-
-
 {{% expand "View Steps." %}}
 
 In a Separate Browser Tab:
@@ -269,6 +265,65 @@ In a Separate Browser Tab:
 }
 
 
+```
+7\. Select **Review Policy**. <br>
+8\. Provide a **Name**. <br>
+9\. Review the permissions summary and select **Create Policy**.<br>
+
+Continuing From **Section 4**:
+
+1. Add the minimal read-only cost policy to _Attach permission policies_. This policy can be found by filtering for **customer managed** policies.
+ ![customer-managed](/images/AWS-IAM-Installation/customer-managed.png)
+2. Select **Next Step: Tags** and add any needed tags; **this is an optional step and you may skip it.**
+3. Select **Next: Review**.
+4. Add **Role Name**: `CloudWisdom Billing`.
+5. Select **Create Role**.  You are returned to IAM Roles in your AWS console.
+6. Select the new role you have created.
+7. Copy the **Role ARN** and move on to **Section 6**.
+![role-arn](/images/AWS-IAM-Installation/role-arn.png)
+
+{{% /expand %}}
+
+#### Master Billing Account Permissions
+
+Grants read-only access to collect billing files from a **single s3 bucket** that can be located in a master billing account.
+
+{{% expand "View Steps." %}}
+
+In a Separate Browser Tab:
+
+1. Log in to your **AWS Console**.
+2. In **Find Services**, search for `IAM` and select the result.
+![select-IAM](/images/AWS-IAM-Installation/select-iam.png)
+3. Select **Policies**.
+4. Select **Create Policy**.
+5. Switch to the **JSON** tab.
+6. Copy and paste the following code into the Policy Document section.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::your-bucket-name"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::your-bucket-name/*"
+      ]
+    }
+  ]
+}
 ```
 
 7\. Replace `your-bucket-name` with the name of the bucket associated with your CUR files. <br>

@@ -82,6 +82,12 @@ CloudWisdom collects performance data to power analyses. The elements enabled by
 ![select-report-path](/images/onboarding-wizard/select-report-path.png)
 3. Select **Next: Summary**.
 
+
+{{% notice tip %}}
+If the **Report Path Prefix** lookup is not available (and is instead a freeform text input), make sure you are using the most recent IAM role available. You can create the latest IAM role using the our [CloudFormation script](/integrations/aws-integration/aws-cloudformation-installation/).
+You also have the option to manually enter the **S3 Bucket Name** (chosen in section 1, step 7) and **Report Path Prefix** (created in section 1, step 8).
+{{% /notice %}}
+
 ### 4. Name & Finalize New Datasource
 
 1. Provide a name for your AWS datasource.
