@@ -3,7 +3,7 @@ title: "Cost & Usage Reports"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["#aws", "#detailed billing", "#s3 bucket",]
+tags: ["#aws", "#detailed billing", "#s3 bucket", "#master billing"]
 author: Lawrence Lane
 weight: 4
 ---
@@ -12,7 +12,7 @@ Cost and Usage Reports (CUR) have replaced Detailed Billing in AWS. CloudWisdom 
 
 {{% notice tip %}}
 
-Already have an existing Cost and Usage Report with GZIP or ZIP compression set up? Great! Simply copy the Report Path Prefix of your existing CUR and skip to part 2 of this guide.
+Already have an existing Cost and Usage Report with GZIP or ZIP compression set up? Great! Skip to part 2 of this guide.
 
 {{% /notice %}}
 
@@ -36,24 +36,27 @@ Already have an existing Cost and Usage Report with GZIP or ZIP compression set 
 13. Select **Next**.
 ![final-steps](/images/aws-cur/final-steps.png)
 14. Review your configurations.
-15. Copy the **Report path prefix** found under Delivery Options (without /date-range/). You need this for part 2.
-![full-path](/images/aws-cur/full-path.png)
 16. Select **Review and Complete** to create the Cost and Usage Report (CUR).
 
 It can take up to a few hours for data to populate in the S3 bucket.
 
 ## 2. Update your AWS Integration in CloudWisdom
 
-If you have just created your IAM role, **wait 2-5 minutes** for AWS to finalize its creation before proceeding to these steps. This ensures the new role has the correct s3 access permissions when added to CloudWisdom.
+If you have just created your [IAM role][1], **wait 2-5 minutes** for AWS to finalize its creation before proceeding to these steps. This ensures the new role has the correct s3 access permissions when added to CloudWisdom.
 
 1. From the side navigation menu, select **Integrations**.
 2. Select the **Amazon Web Services** card.
-3. Select **Cost and Usage Report (recommended)** from the Detailed Billing Source dropdown.
-![detailed-billing-source](/images/aws-cur/detailed-billing-source.png)
-4. Scroll to the **Detailed Billing Settings** section and complete the following fields:
-   - **S3 Bucket Name**: the case sensitive name of bucket chosen in section 1, step 7.
-   - **Report Path Prefix**: Input the path prefix of an existing CUR or the new one created in section 1, step 8: `CostAndUsageReports/HourlyCSVWithResourceIDs` 
+3. Ensure **Cost & Usage Reports** is enabled.
+4. Scroll to the **Cost & Usage Reports settings** section.
+5. Select a **Report Path Prefix** from the dropdown.
+![cur-lookup](/images/aws-cur/cur-lookup.png)
 5. Select **Save**.  
+
+{{% notice tip %}}
+
+If the **Report Path Prefix** lookup is not available (and is instead a freeform text input), make sure you are using the most recent IAM role available. You can create the latest IAM role using the our [CloudFormation script](/integrations/aws-integration/aws-cloudformation-installation/).
+You also have the option to manually enter the **S3 Bucket Name** (chosen in section 1, step 7) and **Report Path Prefix** (created in section 1, step 8).
+{{% /notice %}}
 
 ---
 
@@ -61,10 +64,11 @@ If you have just created your IAM role, **wait 2-5 minutes** for AWS to finalize
 
 The following best practices ensure optimal Cost & Usage report setup.
 
-### Request CUR Setup for Resold Resources
+### Shared Master Billing Account: How to Grant Limited Access
 
-You may not have access to your billing preferences if you have purchased AWS services through a reseller. You must contact your reseller and request to be set up with an S3 bucket to store your CUR data.
+Some customers store their billing files in a shared master billing account and need to grant CloudWisdom restricted access to one specific S3 bucket. You can use the [master billing account permissions](/integrations/aws-integration/aws-iam-installation/#master-billing-account-permissions) to create a limited read-only IAM role when configuring your AWS integration with CloudWisdom.
 
-**Reseller concerned about sharing an S3 bucket?**
+For customers using a shared S3 bucket: CloudWisdom only reads the costs for accounts that we monitor; data for unrelated accounts is discarded.
 
-Virtana only reads the costs for accounts that we monitor; we discard all data for any unrelated accounts. You can also have them reach out to our support team with any questions they may have.
+
+[1]: /integrations/aws-integration/aws-cloudformation-installation/

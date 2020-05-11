@@ -1,6 +1,5 @@
 ---
 title: "Onboarding Wizard"
-#date: 2018-12-3
 draft: false
 categories:
 tags:
@@ -48,10 +47,7 @@ Already have an existing Cost and Usage Report with GZIP or ZIP compression set 
 11. Leave all data integration options unchecked.
 12. Select **GZIP** for Compression type.
 13. Select **Next**.
-![final-steps](/images/aws-cur/final-steps.png)
 14. Review your configurations.
-15. Save the **Report path prefix** found under Delivery Options (without /date-range/). You need this for [part 2, section 3](/getting-started/onboarding-wizardv2/#3-configure-cost-billing-settings).
-![full-path](/images/aws-cur/full-path.png)
 16. Select **Review and Complete** to create the Cost and Usage Report (CUR).
 
 It can take up to a few hours for data to populate in the S3 bucket.
@@ -61,8 +57,7 @@ It can take up to a few hours for data to populate in the S3 bucket.
 
 ### 1. Create an IAM Role
 
-1. Log in to CloudWisdom. You will be automatically directed to the Onboarding Wizard.
-2. Select **Get Started**.
+1. Log in to CloudWisdom. You are automatically directed to the Onboarding Wizard.
 3. Select **Run Cloudformation Script**. This opens a new tab and is the fastest way to set up your IAM role; you will be prompted to log in to AWS.
 4. Enable the **I acknowledge that AWS CloudFormation might create IAM resources** checkbox.
 5. Select **Create Stack**. This process may take a few minutes. Wait for the stack to say **CREATE_COMPLETE** before proceeding to the next step.
@@ -76,17 +71,22 @@ It can take up to a few hours for data to populate in the S3 bucket.
 ### 2. Configure CloudWatch Data Collection
 
 CloudWisdom collects performance data to power analyses. The elements enabled by default are recommended and can be changed at any time.
+
 1. Approve the list of enabled default collections; uncheck any you wish to disable.
 2. Select **Next: Cost and Billing**.
 
 ### 3. Configure Cost & Billing Settings
 
-1. Leave **Cost Explorer** enabled.
-2. Complete the following fields:
-   - **Detailed Billing Source**: select **Cost and Usage Report (recommended)** for your Detailed Billing Source. Detailed Billing Files are a legacy feature of AWS and may not be supported in the future.
-   - **S3 Bucket Name**: Select the s3 bucket you created in [section 1, part 2](/getting-started/onboarding-wizardv2/#2-enable-cost-usage-reports-in-aws).
-   - **Report Path Prefix**: Input the path prefix of an existing CUR or the new one created in section 1, part 2. `CostAndUsageReports/HourlyCSVWithResourceIDs`
+1. Leave **Enable Cost Explorer** enabled.
+2. Select a **Report Path Prefix**. The values listed are a combination of the S3 bucket name where the billing files reside followed by the full Report path prefix of the Cost & Usage report you configured.
+![select-report-path](/images/onboarding-wizard/select-report-path.png)
 3. Select **Next: Summary**.
+
+
+{{% notice tip %}}
+If the **Report Path Prefix** lookup is not available (and is instead a freeform text input), make sure you are using the most recent IAM role available. You can create the latest IAM role using the our [CloudFormation script](/integrations/aws-integration/aws-cloudformation-installation/).
+You also have the option to manually enter the **S3 Bucket Name** (chosen in section 1, step 7) and **Report Path Prefix** (created in section 1, step 8).
+{{% /notice %}}
 
 ### 4. Name & Finalize New Datasource
 
