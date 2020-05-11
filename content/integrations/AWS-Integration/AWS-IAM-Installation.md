@@ -133,7 +133,7 @@ Continuing from **Section 4**:
 
 ### Minimal Monitoring Permissions
 
-Grants read-only access to collect CloudWatch **performance metrics** for all AWS services and their integrations.
+Grants read-only access to collect CloudWatch **performance metrics** for the AWS services CloudWisdom provides an integration.
 
 {{% expand "View Steps." %}}
 
