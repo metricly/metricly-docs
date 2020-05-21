@@ -6,7 +6,7 @@ tags: ["#aws", "#integrations", "#agents" ]
 author: Lawrence Lane
 ---
 
-Use the CloudWatch agent to run faster EC2 Recommendation Reports at scale. This is especially useful for clients with larger environments (> # number of resources). Using the CloudWatch Agent enables CloudWisdom to directly pull EC2 utilization data, such as memory utilization, directly from AWS.
+Use the CloudWatch agent to run faster EC2 Recommendation Reports at scale. This is especially useful for clients with larger environments. Using the CloudWatch Agent enables CloudWisdom to directly pull EC2 utilization data, such as memory utilization, directly from AWS.
 
 {{% notice info %}}
 
@@ -15,7 +15,7 @@ The CloudWatch Agent adds a single memory metric to all instances it is installe
 {{% /notice %}}
 
 
-## Configure 
+## Configure
 
 Installing the CloudWatch agent can be done in a variety of ways, but each method requires the use of CloudWisdom's unique agent config file (found in Section 2).
 
