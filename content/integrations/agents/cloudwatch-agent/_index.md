@@ -33,7 +33,7 @@ CloudWisdom recommends that you follow the [Command Line installation method](ht
 
 CloudWisdom uses a minimal config file template to add a single memory metric to your instances.
 
-1. Use the following JSON to create and an agent config file:
+1. Use the following JSON to create an agent config file:
 
 ```
 {
