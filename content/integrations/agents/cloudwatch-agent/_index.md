@@ -15,7 +15,7 @@ The CloudWatch Agent adds a single memory metric to all instances it is installe
 {{% /notice %}}
 
 
-## Install Agent
+## Configure 
 
 Installing the CloudWatch agent can be done in a variety of ways, but each method requires the use of CloudWisdom's unique agent config file (found in Section 2).
 
