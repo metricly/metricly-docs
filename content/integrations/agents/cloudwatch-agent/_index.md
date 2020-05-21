@@ -10,7 +10,7 @@ Use the CloudWatch agent to run faster EC2 Recommendation Reports at scale. This
 
 {{% notice info %}}
 
-The CloudWatch Agent adds a single memory metric to all instances it is installed to. This  incurs an additional charge of **~$0.30/instance/month** on your CloudWatch bill. See [AWS Cloudwatch pricing](https://aws.amazon.com/cloudwatch/pricing/) for more information.
+The CloudWatch Agent adds a single memory metric to all instances it is installed on. This  incurs an additional charge of **~$0.30/instance/month** on your CloudWatch bill. See [AWS Cloudwatch pricing](https://aws.amazon.com/cloudwatch/pricing/) for more information.
 
 {{% /notice %}}
 
@@ -76,6 +76,6 @@ Use the `cwconf.json` file when following the steps of your preferred installati
 
 {{% notice tip %}}
 
-**AWS Systems Manager Method**: You must assign the AWS default _CloudWatchAgentAdmin IAM Role_ to an instance before using the saved `cwconf.json` file uploaded to the Systems Manager Parameter Store. 
+**AWS Systems Manager Method**: You must assign the AWS default _CloudWatchAgentAdmin IAM Role_ to an instance before using the saved `cwconf.json` file uploaded to the Systems Manager Parameter Store.
 
 {{% /notice %}}
