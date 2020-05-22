@@ -27,7 +27,7 @@ AWS offers [3 ways to install the CloudWatch Agent](https://docs.aws.amazon.com/
 - via **AWS Systems Manager**
 - via **AWS CloudFormation**
 
-CloudWisdom recommends that you follow the [Command Line installation method](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/installing-cloudwatch-agent-commandline.html).
+CloudWisdom recommends that you follow the [Command Line installation method](/integrations/agents/cloudwatch-agent/#command-line-steps).
 
 ### 2. Create a Config File
 
@@ -79,3 +79,19 @@ Use the `cwconf.json` file when following the steps of your preferred installati
 **AWS Systems Manager Method**: You must assign the AWS default _CloudWatchAgentAdmin IAM Role_ to an instance before using the saved `cwconf.json` file uploaded to the Systems Manager Parameter Store.
 
 {{% /notice %}}
+
+---
+
+### Command Line Steps
+
+1. SSH into your instance.
+2. Run `wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb` to download the agent.
+3. Run `sudo dpkg -i -E ./amazon-cloudwatch-agent.deb` to install the agent.
+4. Start the wizard using `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard`.
+5. Complete the wizard. Don't worry about answering each question correctly, as the config.json file this wizard creates will be overwitten with our custom file.
+6. Run `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:config.json -s`. You may get a parsing error.
+7. Run all of the following:
+ - `sudo mkdir /usr/share/collectd`
+ - `cd /usr/share/collectd`
+ - `sudo touch types.db`
+8. Reboot the instance.
