@@ -11,12 +11,7 @@ author: Lawrence Lane
 Virtana recommends using the [Azure CLI](/integrations/microsoft-azure/azure-cli-installation) for the best integration experience. 
 {{% /notice %}}
 
-## 1. Contact the CloudWisdom Sales Team
-1. Contact [CloudWisdom Sales](mailto:dl-sales-metricly@virtualinstruments.com) to get a link for accessing the new Azure integration page.
-2. Wait for an email containing the link.
-3. Once you receive the link, open it in a new tab.
-
-## 2. Create an Active Directory Application in Azure
+## 1. Create an Active Directory Application in Azure
 
 1. In a separate tab, open the [Azure portal](https://portal.azure.com/) and select **Azure Active Directory** from the left or top menu.
 ![azure-active-directory](/images/azure-installation/azure-active-directory.png)
@@ -30,7 +25,7 @@ Virtana recommends using the [Azure CLI](/integrations/microsoft-azure/azure-cli
 ![redirect-uri-url](/images/azure-installation/redirect-uri-url.png)
 7. Select **Register** at the bottom of the window.
 
-## 3. Get the Application ID, Application Key, & Tenant ID from Azure
+## 2. Get the Application ID, Application Key, & Tenant ID from Azure
 
 Once you have completed part 2, you are redirected to the `CloudWisdom-Integration`'s overview page.
 
@@ -46,7 +41,7 @@ Once you have completed part 2, you are redirected to the `CloudWisdom-Integrati
    - **Note**: the access key is only shown in the Azure portal for a few minutes.
 ![copy-secret-value](/images/azure-installation/copy-secret-value.png)
 
-## 4. Set Delegated Permissions in Azure
+## 3. Set Delegated Permissions in Azure
 1. In Azure, navigate to the **API Permissions** section of your `CloudWisdom-Integration`.
 ![api-permissions](/images/azure-installation/api-permissions.png)
 2. Select **+ Add a permission**. A side panel appears.
@@ -58,7 +53,7 @@ Once you have completed part 2, you are redirected to the `CloudWisdom-Integrati
 ![user-impersonation](/images/azure-installation/user-impersonation.png)
 6. Select **Add permissions**.
 
-## 5. Collect Subscription ID and Set Role
+## 4. Collect Subscription ID and Set Role
 
 To assign a role to the application, you’ll need the **Owner** or **User Access Administrator** role in Azure (the Contributor role will not work) or a custom role that grants write access for `Microsoft.Authorization`.
 
