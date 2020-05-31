@@ -15,11 +15,9 @@ The CloudWatch Agent adds a single memory metric to all instances it is installe
 {{% /notice %}}
 
 
-## Configure
+## How to Configure the CloudWatch Agent
 
-Installing the CloudWatch agent can be done in a variety of ways, but each method requires the use of CloudWisdom's unique agent config file (found in Section 2).
-
-### 1. Choose an Installation Method
+Installing the CloudWatch agent can be done in a variety of ways, but each method requires the use of CloudWisdom's unique [agent config file][1].
 
 AWS offers [3 ways to install the CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance.html):
 
@@ -27,25 +25,34 @@ AWS offers [3 ways to install the CloudWatch Agent](https://docs.aws.amazon.com/
 - via **AWS Systems Manager**
 - via **AWS CloudFormation**
 
-CloudWisdom recommends that you follow the **Command Line installation method**:
+{{% notice tip %}}
+
+Virtana recommends using the CLI method. The following steps work for **Linux (Ubuntu)** instances:
 
 1. SSH into your instance.
 2. Run `wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb` to download the agent.
 3. Run `sudo dpkg -i -E ./amazon-cloudwatch-agent.deb` to install the agent.
 4. Start the wizard using `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard`.
-5. Complete the wizard. Don't worry about answering each question correctly, as the config.json file this wizard creates will be overwitten with our custom file.
-6. Run `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:config.json -s`. You may get a parsing error.
-7. Run all of the following:
- - `sudo mkdir /usr/share/collectd`
- - `cd /usr/share/collectd`
- - `sudo touch types.db`
-8. Reboot the instance.
+5. Complete the wizard.
+6. Navigate to the /bin folder. `cd /opt/aws/amazon-cloudwatch-agent/bin`.
+7. Overwrite the config.json file with the following:
+8. Create an IAM role and attach it to the instance: `https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent-commandline.html`.
+9. Run `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:config.json -s` to start the agent. You may get a parsing error.
+   - Workaround:
+```
+sudo mkdir /usr/share/collectd
+cd /usr/share/collectd
+sudo touch types.db
+```
+10. Metrics appear in CloudWisdom within approximately 10 min of finishing setup.
 
-### 2. Create a Config File
+{{% /notice %}}
 
-CloudWisdom uses a minimal config file template to add a single memory metric to your instances.
 
-1. Use the following JSON to create an agent config file:
+
+### Agent Config File
+
+ CloudWisdom uses a minimal config file template to add a single memory metric to your instances. Save the following JSON as a config.json file:
 
 ```
 {
@@ -77,17 +84,5 @@ CloudWisdom uses a minimal config file template to add a single memory metric to
 }
 
 ```
-2\. Save the file as `cwconf.json`.
 
-### 3. Complete Installation
-
-Use the `cwconf.json` file when following the steps of your preferred installation method. For example, if using the AWS CloudFormation method, upload the config file within the AWS Console while creating your stack.
-
-![aws-cloudf-upload-configfile](/images/_index/aws-cloudf-upload-configfile.png)
-
-
-{{% notice tip %}}
-
-**AWS Systems Manager Method**: You must assign the AWS default _CloudWatchAgentAdmin IAM Role_ to an instance before using the saved `cwconf.json` file uploaded to the Systems Manager Parameter Store.
-
-{{% /notice %}}
+[1]: /integrations/agents/cloudwatch-agent/#agent-config-file
