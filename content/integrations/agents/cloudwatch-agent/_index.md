@@ -1,5 +1,5 @@
 ---
-title: "CloudWatch Linux Agent"
+title: "CloudWatch Agent"
 #date: 2018-12-11
 draft: false
 tags: ["#aws", "#integrations", "#agents" ]
@@ -15,9 +15,9 @@ The CloudWatch Agent adds a single memory metric to all instances it is installe
 {{% /notice %}}
 
 
-## How to Configure the CloudWatch Linux Agent
+## How to Configure the CloudWatch Agent
 
-Installing the CloudWatch Linux agent can be done in a variety of ways, but each method requires the use of CloudWisdom's unique [agent config file][1].
+Installing the CloudWatch agent can be done in a variety of ways, but each method requires the use of CloudWisdom's unique [agent config file][1].
 
 AWS offers [3 ways to install the CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance.html):
 
