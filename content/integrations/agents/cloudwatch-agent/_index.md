@@ -39,10 +39,7 @@ Virtana recommends using the CLI method. The following steps work for **Linux (U
 5. Complete the wizard. Don't worry about the answers as we will use the CloudWisdom agent config file.
 6. Navigate to the /bin folder: `cd /opt/aws/amazon-cloudwatch-agent/bin`.
 7. Overwrite the config.json file with the [following][2].
-8. Create an IAM role and attach it to the instance:
-```
-  https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent-commandline.html
-```
+8. [Create an IAM role and attach it to the instance](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent-commandline.html).
 9. Run the following to start the agent:
 ```
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config
