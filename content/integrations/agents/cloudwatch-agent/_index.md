@@ -26,32 +26,26 @@ AWS offers [3 ways to install the CloudWatch Agent](https://docs.aws.amazon.com/
 - via **AWS CloudFormation**
 
 
-Virtana recommends using the CLI method. The following steps work for **Linux (Ubuntu)** instances:
+Virtana recommends using the CLI method. The following steps work for **Linux** instances:
 
 1. SSH into your instance.
-2. Run the following to download the agent:
+2. Run `wget https://s3.amazonaws.com/amazoncloudwatch-agent/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm` or `wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb` depending on your distro to **download** the agent.
+3. Run `sudo rpm -i amazon-cloudwatch-agent.rpm` or `sudo dpkg -i -E ./amazon-cloudwatch-agent.deb` to **install** the agent.
+4. Navigate to the **bin** directory of the agent: `cd /opt/aws/amazon-cloudwatch-agent/bin`.
+5. Create a file `config.json` and place the [Linux Agent Config File][2] contents in it and save it.
+6. [Create an IAM role and attach it to the instance](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent-commandline.html).
+7. Run the following command to initialize the agent configuration:
 ```
-  wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb
-```
-
-3. Run `sudo dpkg -i -E ./amazon-cloudwatch-agent.deb` to install the agent.
-4. Start the wizard using `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard`.
-5. Complete the wizard. Don't worry about the answers as we will use the CloudWisdom agent config file.
-6. Navigate to the /bin folder: `cd /opt/aws/amazon-cloudwatch-agent/bin`.
-7. Overwrite the config.json file with the [following][2].
-8. [Create an IAM role and attach it to the instance](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent-commandline.html).
-9. Run the following to start the agent:
-```
-sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config
--m ec2 -c file:config.json -s
-```
-   - You may get a Parsing error. Here is the workaround:
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:config.json -s
+``` 
+   - You may get a parsing error. Here is the workaround:
      - `sudo mkdir /usr/share/collectd`
      - `cd /usr/share/collectd`
      - `sudo touch types.db`
 
-10. Metrics appear in CloudWisdom within approximately 10 min of finishing setup.
-
+8. Start the agent: `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a start`.
+9. Verify it is running: `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a status`.
+10. Complete! A new metric **cwagent.mem_used_percent** should appear in CloudWisdom on the respective EC2 element within approximately 10 minutes.
 
 ### Linux Agent Config File
 
