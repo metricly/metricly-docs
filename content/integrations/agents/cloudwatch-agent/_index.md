@@ -45,7 +45,7 @@ Virtana recommends using the CLI method. The following steps work for **Linux (U
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config
 -m ec2 -c file:config.json -s
 ```
-   - Parsing error Workaround:
+   - You may get a Parsing error. Here is the workaround:
      - `sudo mkdir /usr/share/collectd`
      - `cd /usr/share/collectd`
      - `sudo touch types.db`
