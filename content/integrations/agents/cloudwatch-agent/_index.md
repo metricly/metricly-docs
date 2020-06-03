@@ -25,33 +25,35 @@ AWS offers [3 ways to install the CloudWatch Agent](https://docs.aws.amazon.com/
 - via **AWS Systems Manager**
 - via **AWS CloudFormation**
 
-{{% notice tip %}}
 
 Virtana recommends using the CLI method. The following steps work for **Linux (Ubuntu)** instances:
 
 1. SSH into your instance.
-2. Run:
-`wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb`
-to download the agent.
+2. Run the following to download the agent:
+```
+  wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb
+```
+
 3. Run `sudo dpkg -i -E ./amazon-cloudwatch-agent.deb` to install the agent.
 4. Start the wizard using `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard`.
 5. Complete the wizard. Don't worry about the answers as we will use the CloudWisdom agent config file.
 6. Navigate to the /bin folder: `cd /opt/aws/amazon-cloudwatch-agent/bin`.
 7. Overwrite the config.json file with the [following][2].
 8. Create an IAM role and attach it to the instance:
-  `https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent-commandline.html`.
-9. Run `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config
--m ec2 -c file:config.json -s` to start the agent. You may get a parsing error.
-   - Workaround:
 ```
-sudo mkdir /usr/share/collectd
-cd /usr/share/collectd
-sudo touch types.db
+  https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent-commandline.html
 ```
+9. Run the following to start the agent:
+```
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config
+-m ec2 -c file:config.json -s
+```
+   - Parsing error Workaround:
+     - `sudo mkdir /usr/share/collectd`
+     - `cd /usr/share/collectd`
+     - `sudo touch types.db`
+
 10. Metrics appear in CloudWisdom within approximately 10 min of finishing setup.
-
-{{% /notice %}}
-
 
 
 ### Linux Agent Config File
