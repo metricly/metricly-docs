@@ -10,7 +10,7 @@ The CloudWatch Agent enables CloudWisdom to collect additional EC2 metrics, such
 
 {{% notice info %}}
 
-The CloudWatch Agent adds a single memory metric to all instances it is installed on. This  incurs an additional charge of **~$0.30/instance/month** on your CloudWatch bill. See [AWS Cloudwatch pricing](https://aws.amazon.com/cloudwatch/pricing/) for more information.
+The CloudWatch Agent configuration below adds a single memory metric to all instances it is installed on. This incurs an additional charge of **~$0.30/instance/month** to your CloudWatch bill. See [AWS Cloudwatch pricing](https://aws.amazon.com/cloudwatch/pricing/) for more information.
 
 {{% /notice %}}
 
