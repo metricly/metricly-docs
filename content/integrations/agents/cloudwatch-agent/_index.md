@@ -88,5 +88,5 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 ```
 
-[1]: /integrations/agents/cloudwatch-agent/#agent-config-file
-[2]: /integrations/agents/cloudwatch-agent/#agent-config-file
+[1]: /integrations/agents/cloudwatch-agent/#linux-agent-config-file
+[2]: /integrations/agents/cloudwatch-agent/#linux-agent-config-file
