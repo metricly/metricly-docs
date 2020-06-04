@@ -4,6 +4,7 @@ title: "Lambda Sizing Metrics"
 draft: false
 tags: ["#metrics", "#integrations", "#lambda" ]
 author: Lawrence Lane
+hidden: true
 ---
 
 ## Collected

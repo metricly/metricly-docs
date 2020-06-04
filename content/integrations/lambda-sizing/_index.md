@@ -4,6 +4,8 @@ title: "Lambda Sizing"
 draft: false
 tags: [ "#aws", "#integrations", "#lambda" ]
 author: Lawrence Lane
+
+hidden: true
 ---
 
 The Lambda Function Sizing tool parses Lambda function CloudWatch logs to pull billable duration and memory metrics. It’s primarily used to calculate a **memory utilization metric**, calculated off the max used and billable memory values. These values are then sent to CloudWisdom. The [CloudFormation template](https://console.aws.amazon.com/cloudformation/home?#/stacks/create/review?stackName=Lambda-Utilization&templateURL=https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-lambda-assets-us-west-2/lambda-utilization/lambda-utilization.template&param_BucketLocation=app-usw2) is the easiest way to start using the project.
