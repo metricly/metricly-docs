@@ -6,7 +6,7 @@ tags: ["#aws", "#integrations", "#agents" ]
 author: Lawrence Lane
 ---
 
-The CloudWatch Agent enables CloudWisdom to collect additional EC2 metrics, such as memory utilization, from AWS. Reports display cost vs. cpu utilization by default. We recommend installing the agent if you are interested in seeing cost vs. memory utilzation.
+The CloudWatch Agent enables CloudWisdom to collect additional EC2 metrics, such as memory utilization, from AWS. Reports display cost vs. CPU utilization by default. We recommend installing the agent if you are interested in seeing cost vs. memory utilzation.
 
 {{% notice info %}}
 
@@ -37,7 +37,7 @@ Virtana recommends using the CLI method. The following steps work for **Linux** 
 7. Run the following command to initialize the agent configuration:
 ```
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:config.json -s
-``` 
+```
    - You may get a parsing error. Here is the workaround:
      - `sudo mkdir /usr/share/collectd`
      - `cd /usr/share/collectd`
