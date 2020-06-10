@@ -26,7 +26,9 @@ AWS offers [3 ways to install the CloudWatch Agent](https://docs.aws.amazon.com/
 - via **AWS CloudFormation**
 
 
-Virtana recommends using the CLI method. The following steps work for **Linux** instances:
+Virtana recommends using the CLI method.
+
+### Linux
 
 1. SSH into your instance.
 2. Run `wget https://s3.amazonaws.com/amazoncloudwatch-agent/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm` or `wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb` depending on your distro to **download** the agent.
@@ -47,7 +49,7 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 9. Verify it is running: `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a status`.
 10. Complete! A new metric **cwagent.mem_used_percent** should appear in CloudWisdom on the respective EC2 element within approximately 10 minutes.
 
-The following steps work for **Windows** instances:
+### Windows
 
 1. Connect into your instance.
 2. **Download** the following file: https://s3.amazonaws.com/amazoncloudwatch-agent/windows/amd64/latest/amazon-cloudwatch-agent.msi.
