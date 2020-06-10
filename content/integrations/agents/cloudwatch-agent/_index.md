@@ -51,9 +51,9 @@ The following steps work for **Windows** instances:
 
 1. Connect into your instance.
 2. **Download** the following file: https://s3.amazonaws.com/amazoncloudwatch-agent/windows/amd64/latest/amazon-cloudwatch-agent.msi.
-3. In Command Prompt, navigate to the directory containing the downloaded file and enter the following to **install** the agent.
-    `msiexec /i amazon-cloudwatch-agent.msi`
-4. Open text editor (for example, Notepad++), create a new file. Copy-paste the [Windows Agent Config File][3] contents.
+3. In Command Prompt, navigate to the directory containing the downloaded file and enter the following to **install** the agent:
+`msiexec /i amazon-cloudwatch-agent.msi`
+4. Open text editor (for example, Notepad++) and create a new file. Copy-paste the [Windows Agent Config File][3] contents.
 5. Save the file as `amazon-cloudwatch-agent.json` here: `C:\ProgramData\Amazon\AmazonCloudWatchAgent`.
 6. [Create an IAM role and attach it to the instance](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent-commandline.html).
 7. Open Windows Power Shell. Run the following command to fetch the config and start the agent:
