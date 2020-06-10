@@ -68,8 +68,6 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 ### Linux Agent Config File
 
- CloudWisdom uses a minimal config file template to add a single memory metric to your instances. Save the following JSON as a config.json file:
-
 ```
 {
     "agent": {
@@ -102,8 +100,6 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 ```
 
 ### Windows Agent Config File
-
-Save the following JSON as a amazon-cloudwatch-agent.json file:
 
 ```
 {
