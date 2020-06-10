@@ -17,7 +17,7 @@ The CloudWatch Agent configuration below adds a single memory metric to all inst
 
 ## How to Configure the CloudWatch Agent
 
-Installing the CloudWatch agent can be done in a variety of ways, but each method requires the use of CloudWisdom's unique [agent config file][1].
+Installing the CloudWatch agent can be done in a variety of ways, but each method requires the use of CloudWisdom's unique agent config file.
 
 AWS offers [3 ways to install the CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-EC2-Instance.html):
 
@@ -46,6 +46,23 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 8. Start the agent: `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a start`.
 9. Verify it is running: `sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a status`.
 10. Complete! A new metric **cwagent.mem_used_percent** should appear in CloudWisdom on the respective EC2 element within approximately 10 minutes.
+
+The following steps work for **Windows** instances:
+
+1. Connect into your instance.
+2. **Download** the following file: https://s3.amazonaws.com/amazoncloudwatch-agent/windows/amd64/latest/amazon-cloudwatch-agent.msi.
+3. In Command Prompt, navigate to the directory containing the downloaded file and enter the following to **install** the agent.
+    `msiexec /i amazon-cloudwatch-agent.msi`
+4. Open text editor (for example, Notepad++), create a new file. Copy-paste the [Windows Agent Config File][3] contents.
+5. Save the file as `amazon-cloudwatch-agent.json` here: `C:\ProgramData\Amazon\AmazonCloudWatchAgent`.
+6. [Create an IAM role and attach it to the instance](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent-commandline.html).
+7. Open Windows Power Shell. Run the following command to fetch the config and start the agent:
+```
+  & "C:\Program Files\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1" -a fetch-config -m ec2 -c file:"C:\ProgramData\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent.json" -s
+```
+8. Verify that the agent is running: `& $Env:ProgramFiles\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1 -m ec2 -a status`.
+9. If necessary, start the agent using this command: `& $Env:ProgramFiles\Amazon\AmazonCloudWatchAgent\amazon-cloudwatch-agent-ctl.ps1 -m ec2 -a start`.
+10. Complete! A new metric **cwagent.memory % committed bytes in use** should appear in CloudWisdom on the respective EC2 element within approximately 10 minutes.
 
 ### Linux Agent Config File
 
@@ -82,5 +99,31 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 ```
 
-[1]: /integrations/agents/cloudwatch-agent/#linux-agent-config-file
+### Windows Agent Config File
+
+Save the following JSON as a amazon-cloudwatch-agent.json file:
+
+```
+{
+ "agent": {
+   "metrics_collection_interval": 60,
+   "logfile": "c:\\ProgramData\\Amazon\\AmazonCloudWatchAgent\\Logs\\amazon-cloudwatch-agent.log"
+   },
+ "metrics": {
+   "metrics_collected": {
+     "Memory": {
+       "measurement": [
+         "% Committed Bytes In Use"
+       ],
+       "metrics_collection_interval": 60
+     }
+   },
+	"append_dimensions": {
+	  "InstanceId": "${aws:InstanceId}"
+	   }
+	}
+}
+```
+
 [2]: /integrations/agents/cloudwatch-agent/#linux-agent-config-file
+[3]: /integrations/agents/cloudwatch-agent/#windows-agent-config-file
