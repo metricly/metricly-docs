@@ -26,7 +26,7 @@ AWS offers [3 ways to install the CloudWatch Agent](https://docs.aws.amazon.com/
 - via **AWS CloudFormation**
 
 
-Virtana recommends using the CLI method.
+We recommend using the CLI method.
 
 ### Linux
 
