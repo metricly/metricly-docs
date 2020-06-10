@@ -70,31 +70,31 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 ```
 {
-    "agent": {
-        "metrics_collection_interval": 60,
-        "run_as_user": "root"
+  "agent": {
+    "metrics_collection_interval": 60,
+    "run_as_user": "root"
+  },
+  "metrics": {
+    "append_dimensions": {
+      "InstanceId": "${aws:InstanceId}"
     },
-    "metrics": {
-        "append_dimensions": {
-            "InstanceId": "${aws:InstanceId}"
-        },
-        "metrics_collected": {
-            "collectd": {
-                "metrics_aggregation_interval": 60
-            },
-            "mem": {
-                "measurement": [
-                    "mem_used_percent"
-                ],
-                "metrics_collection_interval": 60
-            },
-            "statsd": {
-                "metrics_aggregation_interval": 60,
-                "metrics_collection_interval": 60,
-                "service_address": ":8125"
-            }
-        }
+    "metrics_collected": {
+      "collectd": {
+        "metrics_aggregation_interval": 60
+      },
+      "mem": {
+        "measurement": [
+          "mem_used_percent"
+        ],
+        "metrics_collection_interval": 60
+      },
+      "statsd": {
+        "metrics_aggregation_interval": 60,
+        "metrics_collection_interval": 60,
+        "service_address": ":8125"
+      }
     }
+  }
 }
 
 ```
@@ -103,23 +103,23 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 ```
 {
- "agent": {
-   "metrics_collection_interval": 60,
-   "logfile": "c:\\ProgramData\\Amazon\\AmazonCloudWatchAgent\\Logs\\amazon-cloudwatch-agent.log"
-   },
- "metrics": {
-   "metrics_collected": {
-     "Memory": {
-       "measurement": [
-         "% Committed Bytes In Use"
-       ],
-       "metrics_collection_interval": 60
-     }
-   },
-	"append_dimensions": {
-	  "InstanceId": "${aws:InstanceId}"
-	   }
-	}
+  "agent": {
+    "metrics_collection_interval": 60,
+    "logfile": "c:\\ProgramData\\Amazon\\AmazonCloudWatchAgent\\Logs\\amazon-cloudwatch-agent.log"
+  },
+  "metrics": {
+    "metrics_collected": {
+      "Memory": {
+        "measurement": [
+          "% Committed Bytes In Use"
+        ],
+        "metrics_collection_interval": 60
+      }
+    },
+    "append_dimensions": {
+      "InstanceId": "${aws:InstanceId}"
+    }
+  }
 }
 ```
 
