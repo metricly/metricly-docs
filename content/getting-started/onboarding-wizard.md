@@ -57,7 +57,8 @@ It can take up to a few hours for data to populate in the S3 bucket.
 
 ### 1. Create an IAM Role
 
-1. Log in to CloudWisdom. You are automatically directed to the Onboarding Wizard.
+1. Log in to **CloudWisdom**. You are automatically directed to the Onboarding Wizard.
+2. Select **Begin Setup** > **Setup AWS Cloud**.
 3. Select **Run Cloudformation Script**. This opens a new tab and is the fastest way to set up your IAM role; you will be prompted to log in to AWS.
 4. Enable the **I acknowledge that AWS CloudFormation might create IAM resources** checkbox.
 5. Select **Create Stack**. This process may take a few minutes. Wait for the stack to say **CREATE_COMPLETE** before proceeding to the next step.
@@ -95,6 +96,44 @@ You also have the option to manually enter the **S3 Bucket Name** (chosen in sec
 
 You can create more datasources using the guides in our [Integrations][3] section.
 
+---
+
+## Azure
+
+There are two ways to set up Azure with CloudWisdom: using the Azure CLI or through the Azure Portal. Virtana recommends using the CLI, as it's much quicker and easier.
+
+### Via Azure Cli
+
+1. Log in to **CloudWisdom**. You are automatically directed to the Onboarding Wizard.
+2. Select **Begin Setup** > **Setup Azure Cloud**.
+3. Select **Continue With Azure CLI**.
+4. Ensure you have [installed the CLI][4] before proceeding.
+5. Select **Continue**.
+6. Open a command line terminal; for Windows, this may be PowerShell.
+7. Input the following command:
+`az login`
+8. Log in to your account and return to the command line.
+9. Input the following command:
+`az account show`
+10. Locate your **tenantId** and copy it.
+11. Paste the Id into the **Tenant Id** field.
+![tenant-id](/images/onboarding-wizard/tenant-id.png)
+12. Select **Continue**.
+13. Run the following command, adding in your id for **subscription-id**:
+`az ad sp create-for-rbac --role "Monitoring Reader" --name CloudWisdomReader --scopes /subscriptions/<subscription-id>`
+14. Copy and paste the `appId` into the **Client ID** field.
+15. Copy and paste the `password` into the **Access Key** field.
+16. Select **Continue**.
+17. Optionally [Enable Guest OS Diagnostic Metrics][5].
+18. Select **Continue**.
+19. Select **Confirm & Finish**.
+
+### Via Azure Portal
+
+
+
 [1]:/integrations/aws-integration/aws-cur/
 [2]:/integrations/aws-integration/#prerequisite-enable-cost-explorer
 [3]:/integrations/
+[4]: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
+[5]: /integrations/microsoft-azure/azure-enable-guest-os-diagnostic/
