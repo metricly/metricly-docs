@@ -176,7 +176,7 @@ There are two ways to set up Azure with CloudWisdom: using the Azure CLI or thro
 30. **Azure Tab**: Select **Save**.
 31. **CloudWisdom Tab**: Select **Continue**.
 32. **CloudWisdom Tab**: [Enable guest metrics (optional)][8]. Select **Continue**.
-33. **CloudWisdom Tab**: Select **Confirm & Finish**. 
+33. **CloudWisdom Tab**: Select **Confirm & Finish**.
 
 
 [1]:/integrations/aws-integration/aws-cur/
@@ -184,6 +184,6 @@ There are two ways to set up Azure with CloudWisdom: using the Azure CLI or thro
 [3]:/integrations/
 [4]: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
 [5]: /integrations/microsoft-azure/azure-enable-guest-os-diagnostic/
-[6]: /getting-started/onbarding-wizard/#configure-aws
-[7]: /getting-started/onbarding-wizard/#configure-azure
+[6]: /getting-started/onboarding-wizard/#configure-aws
+[7]: /getting-started/onboarding-wizard/#configure-azure
 [8]: /integrations/microsoft-azure/azure-enable-guest-os-diagnostic/
