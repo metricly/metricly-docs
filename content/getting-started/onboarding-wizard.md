@@ -132,8 +132,25 @@ There are two ways to set up Azure with CloudWisdom: using the Azure CLI or thro
 
 ### Via Azure Portal
 
-
-
+1. Log in to **CloudWisdom**. You are automatically directed to the Onboarding Wizard.
+2. Select **Begin Setup** > **Setup Azure Cloud**.
+3. Select **Continue With the Azure Portal**.
+4. **Azure Tab**: Open the [Azure Portal](https://portal.azure.com/) in a separate tab and log in.
+5. **Azure Tab**: Navigate to **App Registrations** via search or **Active Directory** > **App Registrations**.
+5. **CloudWisdom Tab**: Select **Continue**.
+6. **Azure Tab**: Select **+ New registration**.
+7. **Azure Tab**: Input and select the following:
+   - **Name**: `cloudwisdom-integration`
+   - **Supported account types**: Accounts in this organizational directory only - Single tenant
+   - **Redirect URI (optional)**: `https://us.cloudwisdom.virtana.com`
+8. **Azure Tab**: Select **Register**. You are re-routed to your new apps overview page.
+![azure-setup-portal](/images/onboarding-wizard/azure-setup-portal.png)
+9. **CloudWisdom Tab**: Select **Continue**.
+10. **Azure Tab**: Copy and paste the following into the CloudWisdom's Onboarding Wizard:
+   - **Application (client) ID**: maps to Client ID
+   - **Directory (tenant) ID**:  maps to Tenant ID
+![az-port-gif](/images/onboarding-wizard/az-port-gif.gif)
+11. **CloudWisdom Tab**: Select **Continue**.
 
 
 [1]:/integrations/aws-integration/aws-cur/
