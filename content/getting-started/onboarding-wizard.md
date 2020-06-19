@@ -151,6 +151,32 @@ There are two ways to set up Azure with CloudWisdom: using the Azure CLI or thro
    - **Directory (tenant) ID**:  maps to Tenant ID
 ![az-port-gif](/images/onboarding-wizard/az-port-gif.gif)
 11. **CloudWisdom Tab**: Select **Continue**.
+12. **Azure Tab**: Select **Certificates & secrets** > **New client secret**.
+13. **Azure Tab**: Describe the secret, set an expiration, and select **Add**.
+14. **Azure Tab**: Copy the secret value from the **Client secrets** section.
+15. **CloudWistom Tab**: Select **Continue**.
+16. **CloudWistom Tab**: Paste the secret in the **Access Key** field.
+17. **Azure Tab**: Navigate to your app's **API Permissions**.
+18. **Azure Tab**: Select **Add a permission** > **Azure Service Management**.
+19. **CloudWisdom Tab**: Select **Continue**.
+20. **Azure Tab**: Select **Delegated Permissions** and enable **user_impersonation**.
+21. **Azure Tab**: Select **Add Permissions**.
+![api-perms](/images/onboarding-wizard/api-perms.png)
+22. **CloudWisdom Tab**: Select **Continue**.
+23. **Azure Tab**: Navigate to **Home** > **Subscriptions** and select the subscription your app belongs to.
+24. **Azure Tab**: Navigate to **Resource providers** and serach for `microsoft.insights`.
+25. **Azurer Tab**: Select the **microsoft.insights** row and then select **Register**. This may take a few seconds.
+26. **CloudWisdom Tab**: Select **Continue**.
+27. **Azure Tab**: Return to your subscription's **Overview** page and copy the **Subscription ID**.
+28. **CloudWisdom Tab**: Paste the ID into the **Subscription ID field**. Select **Continue**.
+29. **Azure Tab**: Navigate to **Access Control (IAM**) and select **+Add** > **Add role assignment**. Complete the following fields:
+  - **Role**: Reader
+  - **Assign access to**: Azure AD user, group, or service principal
+  - **Select**: Enter the name of your Active Directory application and select the app.
+30. **Azure Tab**: Select **Save**.
+31. **CloudWisdom Tab**: Select **Continue**.
+32. **CloudWisdom Tab**: [Enable guest metrics (optional)][8]. Select **Continue**.
+33. **CloudWisdom Tab**: Select **Confirm & Finish**. 
 
 
 [1]:/integrations/aws-integration/aws-cur/
@@ -160,3 +186,4 @@ There are two ways to set up Azure with CloudWisdom: using the Azure CLI or thro
 [5]: /integrations/microsoft-azure/azure-enable-guest-os-diagnostic/
 [6]: /getting-started/onbarding-wizard/#configure-aws
 [7]: /getting-started/onbarding-wizard/#configure-azure
+[8]: /integrations/microsoft-azure/azure-enable-guest-os-diagnostic/
