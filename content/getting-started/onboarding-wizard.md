@@ -1,16 +1,18 @@
 ---
 title: "Onboarding Wizard"
 draft: false
-categories:
-tags:
+tags: ["#getting started", "onboarding", "aws", "azure"]
 author: Lawrence Lane
+description: how to use the onboarding wizard with AWS or Azure cloud resources.
 pre:
 weight: 5
 ---
 
-The Onboarding Wizard is a guided setup tool that helps new users integrate their first datasource with CloudWisdom. Before using the Onboarding Wizard, CloudWisdom recommends completing some configuration steps in the AWS console. These steps ensure you have all of the required settings in place to integrate to CloudWisdom.
+Use the Onboarding Wizard to quickly set up your first cloud resource. This guided tool supports initial setup of both [AWS][6] and [Azure][7] datasources. If you have already set up your first datasource, and would like to use the Onboarding Wizard for additional resources, you can prompt the wizard to begin using this url: `https://app.metricly.com/#/onboarding-wizard/integration`.
 
-## 1. Configure AWS
+## Configure AWS
+
+Before using the Onboarding Wizard, CloudWisdom recommends completing some configuration steps in the AWS console. These steps ensure you have all of the required settings in place to integrate to CloudWisdom.
 
 ### 1. Enable Cost Explorer
 Cost Explorer must be enabled from the master billing account---even if already set up on a sub-account. IAM Roles set up with the master billing account allow CloudWisdom to present reports spanning all of your accounts; IAM Roles set up with a sub-account only reports cost for that one account.
@@ -53,9 +55,9 @@ Already have an existing Cost and Usage Report with GZIP or ZIP compression set 
 It can take up to a few hours for data to populate in the S3 bucket.
 
 
-## 2. Complete Onboarding Wizard in CloudWisdom
+### 2. Complete Onboarding Wizard in CloudWisdom
 
-### 1. Create an IAM Role
+#### 1. Create an IAM Role
 
 1. Log in to **CloudWisdom**. You are automatically directed to the Onboarding Wizard.
 2. Select **Begin Setup** > **Setup AWS Cloud**.
@@ -69,14 +71,14 @@ It can take up to a few hours for data to populate in the S3 bucket.
 9. Return to the CloudWisdom Onboarding Wizard and paste the Role ARN into the field.
 10. Select **Next: Cloudwatch**.
 
-### 2. Configure CloudWatch Data Collection
+#### 2. Configure CloudWatch Data Collection
 
 CloudWisdom collects performance data to power analyses. The elements enabled by default are recommended and can be changed at any time.
 
 1. Approve the list of enabled default collections; uncheck any you wish to disable.
 2. Select **Next: Cost and Billing**.
 
-### 3. Configure Cost & Billing Settings
+#### 3. Configure Cost & Billing Settings
 
 1. Leave **Enable Cost Explorer** enabled.
 2. Select a **Report Path Prefix**. The values listed are a combination of the S3 bucket name where the billing files reside followed by the full Report path prefix of the Cost & Usage report you configured.
@@ -89,7 +91,7 @@ If the **Report Path Prefix** lookup is not available (and is instead a freeform
 You also have the option to manually enter the **S3 Bucket Name** (chosen in section 1, step 7) and **Report Path Prefix** (created in section 1, step 8).
 {{% /notice %}}
 
-### 4. Name & Finalize New Datasource
+#### 4. Name & Finalize New Datasource
 
 1. Provide a name for your AWS datasource.
 2. Select **Confirm & Finish**.
@@ -98,7 +100,7 @@ You can create more datasources using the guides in our [Integrations][3] sectio
 
 ---
 
-## Azure
+## Configure Azure
 
 There are two ways to set up Azure with CloudWisdom: using the Azure CLI or through the Azure Portal. Virtana recommends using the CLI, as it's much quicker and easier.
 
@@ -132,8 +134,12 @@ There are two ways to set up Azure with CloudWisdom: using the Azure CLI or thro
 
 
 
+
+
 [1]:/integrations/aws-integration/aws-cur/
 [2]:/integrations/aws-integration/#prerequisite-enable-cost-explorer
 [3]:/integrations/
 [4]: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
 [5]: /integrations/microsoft-azure/azure-enable-guest-os-diagnostic/
+[6]: /getting-started/onbarding-wizard/#configure-aws
+[7]: /getting-started/onbarding-wizard/#configure-azure
