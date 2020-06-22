@@ -110,7 +110,7 @@ There are two ways to set up Azure with CloudWisdom: using the Azure CLI or thro
 3. Select **Continue With Azure CLI**.
 4. Ensure you have [installed the CLI][4] before proceeding.
 5. Select **Continue**.
-6. Open a command line terminal; for Windows, this may be PowerShell.
+6. Open Windows PowerShell.
 7. Input the following command:
 `az login`
 8. Log in to your account and return to the command line.
