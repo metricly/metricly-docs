@@ -52,9 +52,13 @@ Already have an existing Cost and Usage Report with GZIP or ZIP compression set 
 14. Review your configurations.
 16. Select **Review and Complete** to create the Cost and Usage Report (CUR).
 
-It can take up to a few hours for data to populate in the S3 bucket.
+{{% notice tip %}}
 
-Now we will begin the Onboarding Wizard steps in CloudWisdom.
+It can take up to a few hours for new Cost & Usage Report data to appear in the S3 bucket.
+
+{{% /notice %}}
+
+Initial configuration steps in the AWS console are complete. Now we can begin the Onboarding Wizard steps in CloudWisdom.
 
 #### 1. Create an IAM Role
 
