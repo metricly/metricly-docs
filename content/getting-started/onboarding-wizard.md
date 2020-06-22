@@ -122,7 +122,7 @@ There are two ways to set up Azure with CloudWisdom: using the Azure CLI or thro
 12. Select **Continue**.
 13. Run the following command, replacing *subscription-id* with the **id** also displayed in the output of `az account show`:
 `az ad sp create-for-rbac --role "Monitoring Reader" --name CloudWisdomReader --scopes /subscriptions/<subscription-id>`
-14. Copy and paste the `appId` into the **Client ID** field.
+14. Copy and paste the **appId** into the **Client ID** field.
 15. Copy and paste the `password` into the **Access Key** field.
 16. Select **Continue**.
 17. Optionally [Enable Guest OS Diagnostic Metrics][5].
