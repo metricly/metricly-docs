@@ -113,17 +113,16 @@ There are two ways to set up Azure with CloudWisdom: using the Azure CLI or thro
 6. Open Windows PowerShell.
 7. Input the following command:
 `az login`
-8. Log in to your account and return to the command line.
-9. Input the following command:
-`az account show`
-10. Locate your **tenantId** and copy it.
-11. Paste the copied ID into the **Tenant Id** field in CloudWisdom.
+8. Log in to your Azure account.
+9. Run the following command: `az account show`
+10. Locate **id** and **tenantId** in the output.
+11. Copy and paste the **tenantId** value into the **Tenant Id** field in CloudWisdom.
 ![tenant-id](/images/onboarding-wizard/tenant-id.png)
 12. Select **Continue**.
-13. Run the following command, replacing *subscription-id* with the **id** also displayed in the output of `az account show`:
+13. Return to PowerShell and run the following command, replacing *<subscription-id>* with the **id** value:
 `az ad sp create-for-rbac --role "Monitoring Reader" --name CloudWisdomReader --scopes /subscriptions/<subscription-id>`
-14. Copy and paste the **appId** into the **Client ID** field.
-15. Copy and paste the **password** into the **Access Key** field.
+14. Copy and paste the **appId** value into the **Client ID** field.
+15. Copy and paste the **password** value into the **Access Key** field.
 16. Select **Continue**.
 17. Optionally [Enable Guest OS Diagnostic Metrics][5].
 18. Select **Continue**.
