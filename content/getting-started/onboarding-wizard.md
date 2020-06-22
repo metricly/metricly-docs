@@ -117,7 +117,7 @@ There are two ways to set up Azure with CloudWisdom: using the Azure CLI or thro
 9. Input the following command:
 `az account show`
 10. Locate your **tenantId** and copy it.
-11. Paste the Id into the **Tenant Id** field.
+11. Paste the copied ID into the **Tenant Id** field in CloudWisdom.
 ![tenant-id](/images/onboarding-wizard/tenant-id.png)
 12. Select **Continue**.
 13. Run the following command, adding in your id for **subscription-id**:
