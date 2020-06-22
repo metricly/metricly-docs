@@ -151,7 +151,7 @@ There are two ways to set up Azure with CloudWisdom: using the Azure CLI or thro
 10. **Azure Tab**: Copy and paste the following into the CloudWisdom's Onboarding Wizard:
    - **Application (client) ID**: maps to Client ID
    - **Directory (tenant) ID**:  maps to Tenant ID
-![az-port-gif](/images/onboarding-wizard/az-port-gif.gif)
+![azure-setup-vid](/images/onboarding-wizard/AZ new gif.gif)
 11. **CloudWisdom Tab**: Select **Continue**.
 12. **Azure Tab**: Select **Certificates & secrets** > **New client secret**.
 13. **Azure Tab**: Describe the secret, set an expiration, and select **Add**.
