@@ -55,7 +55,7 @@ Already have an existing Cost and Usage Report with GZIP or ZIP compression set 
 It can take up to a few hours for data to populate in the S3 bucket.
 
 
-### 2. Complete Onboarding Wizard in CloudWisdom
+Now we will begin the Onboarding Wizard steps in CloudWisdom.
 
 #### 1. Create an IAM Role
 
