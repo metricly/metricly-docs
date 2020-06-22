@@ -25,11 +25,11 @@ Cost Explorer must be enabled from the master billing account---even if already 
 
 ### 2. Enable Cost & Usage Reports in AWS
 
-Cost and Usage Reports (CUR) have replaced Detailed Billing in AWS. CloudWisdom recommends switching to (or starting with) a CUR setup instead of using AWS Detailed Billing.
+Cost & Usage Reports (CUR) have replaced Detailed Billing in AWS. CloudWisdom requires Cost & Usage Report data and no longer supports Detailed Billing files.
 
 {{% notice tip %}}
 
-Already have an existing Cost and Usage Report with GZIP or ZIP compression set up? Great! You can skip this section. You'll need to provide your CUR's Report Path Prefix at a later stage in this setup.
+Already have an existing hourly Cost & Usage Report with GZIP or ZIP compression set up? Great! You can skip this section. You'll need to provide your CUR's Report Path Prefix at a later stage in this setup.
 
 {{% /notice %}}
 
@@ -43,7 +43,7 @@ Already have an existing Cost and Usage Report with GZIP or ZIP compression set 
 6. Select **Next**.
 7. Select **Configure** to choose (or create) a S3 bucket that will store your files.
 ![save-s3-bucket](/images/aws-cur/save-s3-bucket.png)
-8. Provide a **Report path prefix**, such as `CostAndUsageReports`. Do not include any leaning or trailing forward slashes; doing so may distort the file hierarchy output by AWS.
+8. Provide a **Report path prefix**, such as `CostAndUsageReports`. Do not include any leading or trailing forward slashes; doing so may distort the file hierarchy output by AWS.
 9. Select **Hourly** under Time granularity.
 10. Select your preferred Report versioning method. Overwriting the existing report may save on your storage costs in the future.
 11. Leave all data integration options unchecked.
