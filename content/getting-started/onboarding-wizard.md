@@ -123,7 +123,7 @@ There are two ways to set up Azure with CloudWisdom: using the Azure CLI or thro
 11. Copy and paste the **tenantId** value into the **Tenant Id** field in CloudWisdom.
 ![tenant-id](/images/onboarding-wizard/tenant-id.png)
 12. Select **Continue**.
-13. Return to PowerShell and run the following command, replacing *<subscription-id>* with the **id** value:
+13. Return to PowerShell and run the following command, replacing *\<subscription-id>* with the **id** value:
 `az ad sp create-for-rbac --role "Monitoring Reader" --name CloudWisdomReader --scopes /subscriptions/<subscription-id>`
 14. Copy and paste the **appId** value into the **Client ID** field.
 15. Copy and paste the **password** value into the **Access Key** field.
