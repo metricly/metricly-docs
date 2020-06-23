@@ -25,6 +25,8 @@ This integration’s package (computed metrics, dashboards, and policies that wi
 | Option                 | Default | Description                                                                                |
 |------------------------|---------|--------------------------------------------------------------------------------------------|
 | enabled                | False   | Enable collecting Docker metrics.                                                          |
+| minimal                | True    | Minimal mode collection. See [here][6] for metrics collected.                              |
+| simple                 |         | Simple mode collection. See [here][7] for metrics collected.                               |
 | byte_unit              |         | Default numeric output(s).                                                                 |
 | measure_collector_time |         | Measure the collector’s run time in milliseconds.                                          |
 | memory_path            |         | The path to the kernel’s CGroups memory file system.                                       |
@@ -38,3 +40,6 @@ This integration’s package (computed metrics, dashboards, and policies that wi
 [3]: /integrations/agents/linux-agent/LINUX-docker-install
 [4]: /integrations/agents/linux-agent
 [5]: /capacity-monitoring/policies/regex-guide
+[6]: /integrations/docker/docker-collectors/#minimal-mode-default
+[7]: /integrations/docker/docker-collectors/#simple-mode
+
