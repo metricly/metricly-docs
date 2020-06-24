@@ -43,5 +43,4 @@ Adding the private IP address to your element names enables your team to immedia
 
 ```
 <#if tags.Name??>${tags.Name}<#elseif tags.aws_autoscaling_groupName??>${tags.aws_autoscaling_groupName}<#else>${meta.originalName}</#if><#if attributes.privateIp??> (${attributes.privateIp})</#if>
-{noformat}
 ```
