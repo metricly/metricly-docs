@@ -8,12 +8,12 @@ author: Lawrence Lane
 This installation method is recommended by Virtana for setting up your Azure integration with CloudWisdom.
 
 ## 1. Install the Azure CLI
-1. [Download the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest). (Windows 10 users may have this already installed and available through the Windows PowerShell).
+1. [Download the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest) (Windows 10 users may have this already installed and available through the Windows PowerShell).
 2. Install the CLI.
 
 ## 2. Obtain Azure Credentials
 
-Use the CLI to obtain your Azure Client ID, Password, Subscription ID, and Tenant ID. All of these values must be provided to set up an Azure integration with CloudWisdom.
+Use the CLI to obtain your Azure Client ID, Password, Subscription ID, and Tenant ID. All of these values must be provided to set up an Azure integration within CloudWisdom.
 
 1. Open the Windows PowerShell (or any command line shell).
 2. Use the command `az login`. This prompts a browser sign-in request to Azure.
@@ -22,7 +22,7 @@ Use the CLI to obtain your Azure Client ID, Password, Subscription ID, and Tenan
    - **TenantId**: Used for the Tenant ID in CloudWisdom.
    - **Id**: Used for the Subscription ID in CloudWisdom.
 ![azure-cli](/images/azure-cli-installation/azure-cli.png)
-5.  Run the following command to create read permissions for CloudWisdom in Azure:
+5.  Run the following command to create read permissions for CloudWisdom in Azure adding in your id for **subscription-id** :
 ```
 az ad sp create-for-rbac --role "Monitoring Reader" --name CloudWisdomReader --scopes /subscriptions/<subcription-id>
 ```
