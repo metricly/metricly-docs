@@ -23,7 +23,9 @@ Exit the integration setup page and wait until the next analytics cycle (5 minut
 
 ## Collection Frequency
 
-The default collection frequency for CloudWatch metrics is every 5 minutes. If you need to reduce this frequency, return to your AWS integration card settings in **Integrations** > **AWS**.  You can also access a full list of your integrations by navigating to your User **Profile** > **Integrations** > Select an AWS Integration.
+The default collection frequency for CloudWatch metrics is every 5 minutes. Users may wish to lower this frequency in order to lower CloudWisdom induced CloudWatch costs. Please note this setting is only applicable to those who use the cost reports exclusively. Monitoring users are highly encouraged **not** to change this setting as it will negatively impact alerting capabilities.
+
+If you need to reduce this frequency:
 
 1. Navigate to your AWS integration.
 2. Select the **60 Minutes** button under _Collection Frequency_.
