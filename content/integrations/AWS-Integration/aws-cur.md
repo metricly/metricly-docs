@@ -48,7 +48,7 @@ If you have just created your [IAM role][1], **wait 2-5 minutes** for AWS to fin
 2. Select the **Amazon Web Services** card.
 3. If this is your first AWS integration, skip to step 2.6.
 4. If you have multiple AWS integrations and you are *creating a new integration*, select **Add Integration**, and then skip to step 2.6.
-5. If you have multiple AWS integrations and you are *updating an existing integration*, select **View Current Integrations** and choose the integration that is tied to your AWS account that stores your billing information. **Note:** This is typically your Master Billing Account. 
+5. If you have multiple AWS integrations and you are *updating an existing integration*, select **View Current Integrations** and choose the integration that is tied to the AWS account that stores your billing information. **Note:** This is typically your Master Billing Account. 
 6. Ensure **Cost & Usage Reports** is enabled.
 7. Scroll to the **Cost & Usage Reports settings** section.
 8. Select a **Report Path Prefix** from the dropdown.
