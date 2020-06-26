@@ -40,17 +40,20 @@ Already have an existing Cost and Usage Report with GZIP or ZIP compression set 
 
 It can take up to a few hours for data to populate in the S3 bucket.
 
-## 2. Update your AWS Integration in CloudWisdom
+## 2. Set up your AWS Integration in CloudWisdom
 
 If you have just created your [IAM role][1], **wait 2-5 minutes** for AWS to finalize its creation before proceeding to these steps. This ensures the new role has the correct s3 access permissions when added to CloudWisdom.
 
 1. From the side navigation menu, select **Integrations**.
 2. Select the **Amazon Web Services** card.
-3. Ensure **Cost & Usage Reports** is enabled.
-4. Scroll to the **Cost & Usage Reports settings** section.
-5. Select a **Report Path Prefix** from the dropdown.
+3. If this is your first AWS integration, skip to step 2.6.
+4. If you have multiple AWS integrations and you are *creating a new integration*, select **Add Integration**, and then skip to step 2.6.
+5. If you have multiple AWS integrations and you are *updating an existing integration*, select **View Current Integrations** and choose the integration that is tied to your AWS account that stores your billing information. **Note:** This is typically your Master Billing Account. 
+6. Ensure **Cost & Usage Reports** is enabled.
+7. Scroll to the **Cost & Usage Reports settings** section.
+8. Select a **Report Path Prefix** from the dropdown.
 ![cur-lookup](/images/aws-cur/cur-lookup.png)
-5. Select **Save**.  
+9. Select **Save**.  
 
 {{% notice tip %}}
 
