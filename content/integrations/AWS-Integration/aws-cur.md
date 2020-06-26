@@ -8,7 +8,7 @@ author: Lawrence Lane
 weight: 4
 ---
 
-Cost and Usage Reports (CUR) have replaced Detailed Billing in AWS. CloudWisdom recommends switching to (or starting with) a CUR setup instead of using AWS Detailed Billing.
+Cost & Usage Reports (CUR) have replaced Detailed Billing in AWS. CloudWisdom requires Cost & Usage Report data and no longer supports Detailed Billing files.
 
 {{% notice tip %}}
 
