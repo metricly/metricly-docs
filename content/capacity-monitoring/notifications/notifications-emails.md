@@ -34,7 +34,7 @@ You can use the following variables to make your notification more dynamic.
 | Variable              | Description                                              |
 |-----------------------|----------------------------------------------------------|
 | ${elementFqn}         | The Fully Qualified Name (FQN) of the element.           |
-| ${elementId}          | The type of element (e.g., SERVER, ELB, EC2, RDS, etc.). |
+| ${elementId}          | The element identification number. |
 | ${elementLocation}    | The location of the element.                             |
 | ${elementName}        | The friendly name for the element.                       |
 | ${elementType}        | The type of element (e.g, SERVER, ELB, RUBY, etc.)       |
