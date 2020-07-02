@@ -12,7 +12,7 @@ CloudWisdom's Bill Analysis tool uncomplicates the task of tracking and budgetin
 
 ### About
 
-- These guide show you how to use the Bill Analysis tool using different scenarios; for a **full list of features, see our Bill Analysis Documentation pages**.
+- These guide show you how to use the Bill Analysis tool using different scenarios; for a full list of features, see our [Bill Analysis Documentation pages](/billing-analysis).
 - The Bill Analysis tool **requires at least one AWS datasource enabled** on your account.
 
 ## Guides  
