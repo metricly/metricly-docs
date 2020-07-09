@@ -40,7 +40,7 @@ You can unsubscribe from the weekly email report by editing the saved report and
 {{% /notice %}}
 
 
-### CloudWisdom Daily Report (per Account)
+### CloudWisdom Daily Report (per user account)
 How to enable the CloudWisdom Daily Report through your account settings.
 
 1. Navigate to **User Settings** > **Profile**.
