@@ -9,31 +9,30 @@ author: Lawrence Lane
 
 As a CloudWisdom user, you can opt-in to receiving email reports through your account profile. Email Reports enable you to stay up-to-date on cost trends, high-event elements, and recommendations for your environments _without_ having to log in to CloudWisdom. Selecting any of the links within the email opens CloudWisdom to the appropriate section.
 
-## Email Schedule
-
-Email Reports are generated after business hours (EST) and then sent the following day at 10:00 AM EST.
-
 ## Available Reports
 There are five main email reports available for you to enable:
 
-- Weekly Recommendation Report
+- Weekly EC2 Recommendation Report
 - CloudWisdom Daily Report
-- Daily AWS Services Report
+- Daily AWS Services Cost Report
 - Daily Unattached EBS Report
 - Daily EBS volumes on stopped EC2s
 
-### Weekly Recommendation Report
+## Email Schedule
+_CloudWisdom Daily Reports_ are generated after business hours (EST) and then sent the following day at 10:00 AM EST. _AWS Services Cost Report_ are sent daily at around 08:30 AM EST. _Weekly EC2 Recommendation Report_ for the previous week are usually sent on Sundays or Mondays. _Daily Unattached EBS Reports_ and _Daily EBS volumes on stopped EC2s_ are sent daily at 11 PM EST.
+
+### Weekly EC2 Recommendation Report
 How to generate a recommendation report and subscribe to weekly emails:
 
 1. Navigate to **Cost Management** > **Right Sizing**.
 2. Select the **EC2 Recommendation** tab.
 3. Select **Configure** to create a new report.
 4. Complete steps 1-5 in the report creation modal.
-3. Select **Apply**. This generates an unsaved report.
-4. Select **SAVE AS...**.
-4. Input a `Name` for the report.
-5. Toggle **Send Weekly Email** to active.
-6. Confirm your email address or select one from the dropdown.
+5. Select **Apply**. This generates an unsaved report.
+6. Select **SAVE AS...**.
+7. Input a `Name` for the report.
+8. Toggle **Send Weekly Email** to active.
+9. Confirm your email address or select one from the dropdown.
 ![send-weekly-email](/images/reports-email/send-weekly-email.png)
 
 {{% notice tip %}}
@@ -48,10 +47,10 @@ How to enable the CloudWisdom Daily Report through your account settings.
 2. Toggle **Daily Report Email** to active.
 ![daily-report-email](/images/reports-email/daily-report-email.png)
 
-### Daily AWS Services Report
+### Daily AWS Services Cost Report
 
 {{% notice tip %}}
-Your Account must have the [AWS Cost Explorer API][1] enabled before being able to send an email.
+Your Account must have the [AWS Cost Explorer API][1  ] enabled before being able to send an email.
 {{% /notice %}}
 
 How to generate a AWS Services Report and subscribe to weekly emails:
