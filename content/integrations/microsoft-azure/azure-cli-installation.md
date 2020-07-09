@@ -44,5 +44,5 @@ You can review the app from your Azure Portal by following [this link](https://p
 ![cw-app-az-portal](/images/azure-cli-installation/cw-app-az-portal.png)
 
 {{% notice info %}}
-Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VMs. These metrics are required for CloudWisdom's Azure cost reports.
+Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VMs. The additional metrics provided, such as memory utilization, are required for CloudWisdom's Azure cost reports.
 {{% /notice%}}
