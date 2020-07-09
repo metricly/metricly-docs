@@ -34,7 +34,6 @@ To save a recommendation report:
 4. Input a `Name` for the report.
 5. Toggle **Send Weekly Email** to active.
 6. Confirm your email address or select one from the dropdown.
-
 ![send-weekly-email](/images/reports-email/send-weekly-email.png)
 
 {{% notice tip %}}
@@ -47,7 +46,6 @@ You can enable the CloudWisdom Daily Report through your account settings.
 
 1. Navigate to **User Settings** > **Profile**.
 2. Toggle **Daily Report Email** to active.
-
 ![daily-report-email](/images/reports-email/daily-report-email.png)
 
 ### Daily AWS Services Report
@@ -61,7 +59,24 @@ Your Account must have the [AWS Cost Explorer API][1] enabled before being able 
 6. Input a `Name` for the report.
 7. Toggle **Send Weekly Email** to active.
 8. Confirm your email address or select one from the dropdown.
-
 ![aws-services-report](/images/reports-email/aws-services-report.png)
+
+
+### Daily Unattached EBS Report
+
+1. Navigate to **Cost Management**.
+2. Scroll to the **Unattached EBS** card.
+3. Toggle **Enable Daily Email**.
+![unattached-ebs-daily-emails](/images/reports-email/unattached-ebs-daily-emails.png)
+
+
+### Daily EBS volumes on stopped EC2s
+
+1. Navigate to **Cost Management**.
+2. Scroll to the **EBS volumes on stopped EC2s** card.
+3. Toggle **Enable Daily Email**.
+![ebs-daily-emails](/images/reports-email/ebs-daily-emails.png)
+
+
 
 [1]: /integrations/aws-integration/#prerequisite-enable-cost-explorer
