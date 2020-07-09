@@ -19,7 +19,7 @@ There are five main email reports available for you to enable:
 - Daily EBS volumes on stopped EC2s
 
 ## Email Schedule
-_CloudWisdom Daily Reports_ are generated after business hours (EST) and then sent the following day at 10:00 AM EST. _AWS Services Cost Report_ are sent daily at around 08:30 AM EST. _Weekly EC2 Recommendation Report_ for the previous week are usually sent on Sundays or Mondays. _Daily Unattached EBS Reports_ and _Daily EBS volumes on stopped EC2s_ are sent daily at 11 PM EST.
+_CloudWisdom Daily Reports_ are generated after business hours (EST) and then sent the following day at 10:00 AM EST. _AWS Services Cost Report_ are sent daily at 08:30 AM EST. _Weekly EC2 Recommendation Reports_ for the previous week are typically sent on Sundays or Mondays. _Daily Unattached EBS Reports_ and _Daily EBS volumes on stopped EC2s_ are sent daily at 11:00 PM EST.
 
 ### Weekly EC2 Recommendation Report
 How to generate a recommendation report and subscribe to weekly emails:
