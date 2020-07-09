@@ -23,7 +23,7 @@ There are five main email reports available for you to enable:
 - Daily EBS volumes on stopped EC2s
 
 ### Weekly Recommendation Report
-To save a recommendation report:
+How to generate a recommendation report and subscribe to weekly emails:
 
 1. Navigate to **Cost Management** > **Right Sizing**.
 2. Select the **EC2 Recommendation** tab.
@@ -42,14 +42,19 @@ You can unsubscribe from the weekly email report by editing the saved report and
 
 
 ### CloudWisdom Daily Report (per Account)
-You can enable the CloudWisdom Daily Report through your account settings.
+How to enable the CloudWisdom Daily Report through your account settings.
 
 1. Navigate to **User Settings** > **Profile**.
 2. Toggle **Daily Report Email** to active.
 ![daily-report-email](/images/reports-email/daily-report-email.png)
 
 ### Daily AWS Services Report
+
+{{% notice tip %}}
 Your Account must have the [AWS Cost Explorer API][1] enabled before being able to send an email.
+{{% /notice %}}
+
+How to generate a AWS Services Report and subscribe to weekly emails:
 
 1. Navigate to **Cost Management** > **Bill Analysis**.
 2. Select **Configure** to create a new report.
@@ -64,6 +69,8 @@ Your Account must have the [AWS Cost Explorer API][1] enabled before being able 
 
 ### Daily Unattached EBS Report
 
+How to subscribe to daily Unattached EBS Report emails:
+
 1. Navigate to **Cost Management**.
 2. Scroll to the **Unattached EBS** card.
 3. Toggle **Enable Daily Email**.
@@ -71,6 +78,8 @@ Your Account must have the [AWS Cost Explorer API][1] enabled before being able 
 
 
 ### Daily EBS volumes on stopped EC2s
+
+How to subscribe to daily EBS volumes on stopped EC2s emails:
 
 1. Navigate to **Cost Management**.
 2. Scroll to the **EBS volumes on stopped EC2s** card.
