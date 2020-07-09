@@ -49,9 +49,7 @@ How to enable the CloudWisdom Daily Report through your account settings.
 
 ### Daily AWS Services Cost Report
 
-{{% notice tip %}}
 Your Account must have the [AWS Cost Explorer API][1  ] enabled before being able to send an email.
-{{% /notice %}}
 
 How to generate a AWS Services Report and subscribe to weekly emails:
 
