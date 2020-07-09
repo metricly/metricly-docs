@@ -47,9 +47,9 @@ How to enable the CloudWisdom Daily Report through your account settings.
 2. Toggle **Daily Report Email** to active.
 ![daily-report-email](/images/reports-email/daily-report-email.png)
 
-### Daily AWS Services Cost Report
+### Daily AWS Services CosReport
 
-Your Account must have the [AWS Cost Explorer API][1  ] enabled before being able to send an email.
+Your Account must have the [AWS Cost Explorer API][1] enabled before being able to send an email.
 
 How to generate a AWS Services Report and subscribe to weekly emails:
 
