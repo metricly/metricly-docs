@@ -7,44 +7,82 @@ tags: ["#tools", "#email", "#getting started" ]
 author: Lawrence Lane
 ---
 
-Email Reports are generated and sent after business hours (EST) and can be enabled from your user account profile. Email Reports provide a quick look into your environment from the last 24 hours. Clicking any of the links within the email opens CloudWisdom to the appropriate section.
+As a CloudWisdom user, you can opt-in to receiving email reports through your account profile. Email Reports enable you to stay up-to-date on cost trends, high-event elements, and recommendations for your environments _without_ having to log in to CloudWisdom. Selecting any of the links within the email opens CloudWisdom to the appropriate section.
 
 ## Available Reports
-There are three main email reports available: the Weekly Recommendation Report, the Daily Top Violator Report, and the Daily AWS Cost Report.
+There are five main email reports available for you to enable:
 
+- Weekly EC2 Recommendation Report
+- CloudWisdom Daily Report
+- Daily AWS Services Cost Report
+- Daily Unattached EBS Report
+- Daily EBS volumes on stopped EC2s
 
-### Weekly Recommendation Report
-To save a recommendation report:
+## Email Schedule
+_CloudWisdom Daily Reports_ are generated after business hours (EST) and then sent the following day at 10:00 AM EST. _AWS Services Cost Report_ are sent daily at 08:30 AM EST. _Weekly EC2 Recommendation Reports_ for the previous week are typically sent on Sundays or Mondays. _Daily Unattached EBS Reports_ and _Daily EBS volumes on stopped EC2s_ are sent daily at 11:00 PM EST.
 
-1. Navigate to **Reports** > under **Recommendations**, click **EC2** or **ASG**.
-2. Set up the report with your desired filters and criteria.
-3. Click **Save Report**. The Saved Reports modal appears.
-4. Input a `Name` for the report.
-5. Toggle **Email** to active.
+### Weekly EC2 Recommendation Report
+How to generate a recommendation report and subscribe to weekly emails:
 
-![enable email](/images/reports-email/enable-email.png)
+1. Navigate to **Cost Management** > **Right Sizing**.
+2. Select the **EC2 Recommendation** tab.
+3. Select **Configure** to create a new report.
+4. Complete steps 1-5 in the report creation modal.
+5. Select **Apply**. This generates an unsaved report.
+6. Select **SAVE AS...**.
+7. Input a `Name` for the report.
+8. Toggle **Send Weekly Email** to active.
+9. Confirm your email address or select one from the dropdown.
+![send-weekly-email](/images/reports-email/send-weekly-email.png)
 
 {{% notice tip %}}
-You can remove a saved report from your daily report email by following the previous steps and toggling a report to inactive.
+You can unsubscribe from the weekly email report by editing the saved report and disabling the **Send Weekly Email** toggle.
 {{% /notice %}}
 
 
-### Daily Top Violator Report (per Account)
-You can enable the Top Violator Report through your account settings.
+### CloudWisdom Daily Report (per user account)
+How to enable the CloudWisdom Daily Report through your account settings.
 
-1. Navigate to **Account Profile**.
+1. Navigate to **User Settings** > **Profile**.
 2. Toggle **Daily Report Email** to active.
+![daily-report-email](/images/reports-email/daily-report-email.png)
 
-![daily top violator report](/images/reports-email/daily-top-violator-report.png)
+### Daily AWS Services Cost Report
 
-### Daily AWS Cost Report
-Your Account must have the AWS Cost report activated before being able to send an email.
+Your Account must have the [AWS Cost Explorer API][1] enabled before being able to send an email.
 
-1. Navigate to your **Username** > **Beta** > **AWS Cost Report**.
-2. Choose your desired View and Comparison Period.
-3. Click **Save Report**. The Saved Reports modal appears.
-![daily aws cost save report](/images/reports-email/daily-aws-cost-save-report.png)
-4. Input a `Name` for the report.
-5. Toggle **Email** to active.
-![toggle email to active](/images/reports-email/toggle-email-to-active.png)
-6. Select what email receives this daily report by clicking the expansion icon on the email input box. You can also add a new email to the list at this point by typing it out and hitting enter.
+How to generate a AWS Services Report and subscribe to weekly emails:
+
+1. Navigate to **Cost Management** > **Bill Analysis**.
+2. Select **Configure** to create a new report.
+3. Complete steps 1-5 in the report creation modal.
+4. Select **Apply**. This generates an unsaved report.
+5. Select **SAVE AS...**.
+6. Input a `Name` for the report.
+7. Toggle **Send Weekly Email** to active.
+8. Confirm your email address or select one from the dropdown.
+![aws-services-report](/images/reports-email/aws-services-report.png)
+
+
+### Daily Unattached EBS Report
+
+How to subscribe to daily Unattached EBS Report emails:
+
+1. Navigate to **Cost Management**.
+2. Scroll to the **Unattached EBS** card.
+3. Toggle **Enable Daily Email**.
+![unattached-ebs-daily-emails](/images/reports-email/unattached-ebs-daily-emails.png)
+
+
+### Daily EBS volumes on stopped EC2s
+
+How to subscribe to daily EBS volumes on stopped EC2s emails:
+
+1. Navigate to **Cost Management**.
+2. Scroll to the **EBS volumes on stopped EC2s** card.
+3. Toggle **Enable Daily Email**.
+![ebs-daily-emails](/images/reports-email/ebs-daily-emails.png)
+
+
+
+[1]: /integrations/aws-integration/#prerequisite-enable-cost-explorer
