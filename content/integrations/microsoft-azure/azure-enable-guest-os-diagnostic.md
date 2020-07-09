@@ -7,7 +7,7 @@ tags: ["#microsoft", "#azure", "#integrations", "#optional config"]
 author: Lawrence Lane
 ---
 
-Azure Virtual Machines have a subset of core metrics by default. However, guest OS diagnostic metrics are needed for CloudWisdom's Azure cost reports. To enable guest OS diagnostic metrics, you’ll need to follow the steps below.
+Azure Virtual Machines have a subset of core metrics by default. However, guest OS diagnostic metrics like memory utilization are also needed for CloudWisdom's Azure cost reports. To enable guest OS diagnostic metrics, you’ll need to follow the steps below.
 
 ## Enable Guest OS Diagnostic Metrics on an Existing VM
 1. In Azure, navigate to **Virtual machines**.

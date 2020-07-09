@@ -79,5 +79,5 @@ While here, ensure the **microsoft.insights** resource provider is registered as
 8. Return to CloudWisdom, verify each field has been filled in accurately, and then click the **Save** button.
 
 {{% notice info %}}
-Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VMs. These metrics are required for CloudWisdom's Azure cost reports.
+Follow the instructions on [Guest OS Diagnostic Metrics] (https://docs.metricly.com/integrations/microsoft-azure/azure-enable-guest-os-diagnostic/) to enable guest OS diagnostic metrics on your VMs. The additional metrics provided, such as memory utilization, are required for CloudWisdom's Azure cost reports.
 {{% /notice%}}
