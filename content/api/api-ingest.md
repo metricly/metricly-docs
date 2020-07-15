@@ -128,7 +128,10 @@ Custom elements can have metrics, tags, attributes, and relationships.
 ```
 [
   {
-    "data": {},
+    "data": {
+      "elementId": "element-fqn",
+      "message": "My message"
+      },
     "source": "string",
     "tags": [
       {
@@ -142,6 +145,8 @@ Custom elements can have metrics, tags, attributes, and relationships.
   }
 ]
 ```
+
+Please note that the `elementId` is a required attribute. Payloads without `elementId` will be silently discarded. 
 
 We also support sending in custom checks to the API, but we have a separate dedicated page covering this topic.
 
