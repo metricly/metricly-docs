@@ -12,7 +12,7 @@ Cost & Usage Reports (CUR) have replaced Detailed Billing in AWS. CloudWisdom re
 
 {{% notice tip %}}
 
-Already have an existing Cost and Usage Report with GZIP or ZIP compression set up? Great! Skip to part 2 of this guide.
+Already have an existing hourly Cost & Usage Report with GZIP or ZIP compression set up? Great! Skip to part 2 of this guide.
 
 {{% /notice %}}
 
