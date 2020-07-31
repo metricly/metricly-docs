@@ -9,7 +9,7 @@ author: Lawrence Lane
 
 ## Prerequisites
 
-The [Linux Agent][1] is required before proceeding with the setup of HTTPD. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
+The [Linux Agent][1] is required. If you need to disable the Linux integration or view the unique API key assigned to your account, navigate to the Integrations page under the user account drop-down menu and click the integration designated as Infrastructure under the Integration column.
 
 ## Configuration
 
@@ -50,3 +50,5 @@ The **path** and **jolokia_path** settings should not be changed without consult
 | byte_unit              |                                                                                                                                                         | Default numeric output(s).                                                                                                                                                                                                                                                                                                                                                 |
 | measure_collector_time |                                                                                                                                                         | Measure the collector’s run time in milliseconds.                                                                                                                                                                                                                                                                                                                          |
 | metrics_whitelist      |                                                                                                                                                         | Regex list to match metrics to transmit. Mutually exclusive with metrics_blacklist option.                                                                                                                                                                                                                                                                                 |
+
+[1]: /integrations/agents/linux-agent
