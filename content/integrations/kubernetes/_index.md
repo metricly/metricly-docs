@@ -2,6 +2,7 @@
 title: "Kubernetes"
 #date: 2018-12-11
 draft: false
+hidden: true
 tags: ["#kubernetes", "#integrations" ]
 author: Lawrence Lane
 ---
