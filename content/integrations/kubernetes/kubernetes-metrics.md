@@ -2,6 +2,7 @@
 title: "Kubernetes Metrics"
 #date: 2018-12-11
 draft: false
+hidden: true
 tags: ["#metrics", "#integrations", "#kubernetes" ]
 author: Lawrence Lane
 ---
