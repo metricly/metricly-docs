@@ -41,7 +41,7 @@ While using the trial version of CloudWisdom you are limited to integrating with
 {{< icon name="fa-check-square-o" size="large" >}} Idle Resource Discovery (ELB, EBS)
 
 {{% notice tip %}}
-Remember to enable **cost explorer** and **detailed billing** before moving beyond this stage.
+Remember to enable **Cost Explorer** and **Cost & Usage Reports** before moving beyond this stage.
 {{% /notice %}}
 
 ### 4. Install Agents (Linux, Windows)

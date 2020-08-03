@@ -8,7 +8,7 @@ author: Lawrence Lane
 weight: 20
 ---
 
-CloudWisdom's Bill Analysis tool uncomplicates the task of tracking and budgeting your AWS Cloud spend. This tool reads the detailed billing data from your AWS account or consolidated billing family and breaks it down by cost allocation tags, services, and metadata.
+CloudWisdom's Bill Analysis tool uncomplicates the task of tracking and budgeting your AWS Cloud spend. This tool reads the Cost Explorer data from your AWS account and breaks it down by cost allocation tags, services, and metadata.
 
 ### About
 
