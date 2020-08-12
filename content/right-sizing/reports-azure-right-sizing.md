@@ -41,7 +41,7 @@ You can configure the default report by defining a scope, setting constraints, a
 
 ### 1. Scope of Analysis
 
-The following scope criteria can be used to both include or exclude resources.
+The following scope criteria can be used to both include or exclude resources:
 
 - **Names**: Select resources by inserting a string.
 - **Virtual Machines**: Select resources from a dropdown.
@@ -49,6 +49,8 @@ The following scope criteria can be used to both include or exclude resources.
 - **Tags**: Select resource based on tags; supports `any` and `all` statements.
 
 ### 2. CPU and Memory Constraints
+
+The following constraints can be applied to more strictly define your minimal resource requirements:
 
 - **CPU Constraint**: Define minimum requirements based on numerical or historical constraints.
 - **Memory Constraint**: Define minimum requirements based on numerical or historical constraints.
@@ -71,7 +73,7 @@ This section includes a list of all available instance types and their primary u
 ### 5. Display Options
 
 - **Limit Results**: Limit number of records returned in the report.
-- **Visualization**: See visualizations section.
+- **Visualization**: See the [Visualizations][1] section.
 - **Group by**: Group by attributes.
 - **Sorting**: Sort by instance type, savings, cost, and virtual machine.
 
@@ -86,3 +88,7 @@ You can save multiple versions of the Azure VM Right Sizing report. These report
 3. Select **Save**.
 
 ![azure-vm-save-report](/images/reports-azure-right-sizing/azure-vm-save-report.png)
+
+
+
+[1]: /right-sizing/reports-azure-right-sizing/
