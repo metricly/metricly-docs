@@ -9,6 +9,11 @@ author: Lawrence Lane
 
 Compare your current virtual machines against Azure's most recent SKUs to find the best fit for your workloads and your budget.  The Azure VM Right Sizing report enables you to leverage your historic workloads to truly right-size your resources. You can add optional constraints (such as CPU utilization limits) to further contextualize recommendations and highlight different savings opportunities across your portfolio. By default, this report shows your top 10 recommendations.
 
+{{% notice info %}}
+At least one Azure integration must be set up in order to access the Azure VM Right Sizing report. If you have just set up your Azure integration, it may take a few minutes to populate the first report.
+{{% /notice %}}
+
+
 ## Visualization Options
 
 Toggle between data visualizations by selecting the radio buttons **Cost vs CPU** or **None**.
@@ -52,12 +57,23 @@ The following scope criteria can be used to both include or exclude resources:
 
 The following constraints can be applied to more strictly define your minimal resource requirements:
 
+#### CPU
+
 - **CPU Constraint**: Define minimum requirements based on numerical or historical constraints.
+- **CPU Target Utilization:** Set a specific utilization target as a percentage of CPU resources.
+
+#### Memory
 - **Memory Constraint**: Define minimum requirements based on numerical or historical constraints.
-- **Data Aggregation Method**: Defines context for how historical utilization data is applied to recommendations.
+- **Memory Target Utilization:** Set a specific utilization target as a percentage of memory resources.
+
+#### Data Aggregation
+
+Choose a context for how historical utilization data is applied to recommendations from one of the following:
+
   - **Maximum**: Considers the behavioral maximum demonstrated in utilization data, regardless of rarity.
   - **Mean**: Considers the behavioral average demonstrated in all utilization data.
   - **95th Percentile**: Considers the behavioral norm demonstrated in utilization data (without edge cases).
+
 
 
 ### 3. Other Resource Constraints
