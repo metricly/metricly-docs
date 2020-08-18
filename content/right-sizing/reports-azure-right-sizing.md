@@ -64,6 +64,7 @@ The following constraints can be applied to more strictly define your minimal re
 
 #### Memory
 - **Memory Constraint**: Define minimum requirements based on numerical or historical constraints.
+- **Default memory utilization when diagnostic monitoring not enabled:** Specify memory utilization when it does not exist because [guest OS diagnostic metrics][2] have not been enabled. 
 - **Memory Target Utilization:** Set a specific utilization target as a percentage of memory resources.
 
 #### Data Aggregation
@@ -107,4 +108,5 @@ You can save multiple versions of the Azure VM Right Sizing report. These report
 
 
 
-[1]: /right-sizing/reports-azure-right-sizing/
+[1]: /right-sizing/reports-azure-right-sizing/ 
+[2]: /integrations/microsoft-azure/azure-enable-guest-os-diagnostic/ 
