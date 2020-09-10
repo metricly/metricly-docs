@@ -21,7 +21,7 @@ This ensures that the Teams and Recipients you include in Part 2 are passed from
 6. Click **Save Integration**.
 
 ### 2. Link the integration to CloudWisdom
-1. In CloudWisdom, navigate to **Username** > **Notifications**.
+1. In CloudWisdom, navigate to **User Settings** > **Notifications**.
 2. Click **OpsGenie** > **Add OpsGenie** and type a name for the OpsGenie notification.
 3. Ensure the **Enabled checkbox** is selected.
 4. For **API Key**, paste the API key you copied from your CloudWisdom Integration in OpsGenie in step 3 of Part 1.
