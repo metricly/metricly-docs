@@ -51,7 +51,7 @@ How to enable the CloudWisdom Daily Report through your account settings.
 
 Your Account must have the [AWS Cost Explorer API][1] enabled before being able to send an email.
 
-How to generate a AWS Services Report and subscribe to weekly emails:
+How to generate a AWS Services Cost Report and subscribe to daily emails:
 
 1. Navigate to **Cost Management** > **Bill Analysis**.
 2. Select **Configure** to create a new report.
