@@ -26,7 +26,7 @@ http://repos.us.cloudwisdom.virtana.com/cli
 ```
 url: "https://api.us.cloudwisdom.virtana.com/ingest/events"
 ```
-7\. [Create a handler in Sensu](https://sensuapp.org/docs/latest/handlers).  
+7\. [Create a handler in Sensu](https://docs.sensu.io/sensu-core/latest/reference/handlers/).  
 8. Create a file named **metricly_handler.json** in `etc/sensu/conf.d`
 
 ```
@@ -44,7 +44,7 @@ url: "https://api.us.cloudwisdom.virtana.com/ingest/events"
   }
 }
 ```
-9\. [Create at least one check in Sensu](https://sensuapp.org/docs/latest/getting-started-with-checks).  
+9\. [Create at least one check in Sensu](https://docs.sensu.io/sensu-core/latest/guides/intro-to-checks/).  
 10. **Restart** the Sensu services to pick up the new check and handler.  
 11. Check CloudWisdom for your new Sensu events.  
 
