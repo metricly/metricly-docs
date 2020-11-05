@@ -36,14 +36,15 @@ StoreRates="false" Hostname="" />
 4. If any prompt appears, click **Yes** to confirm that you want to delete the program.
 
 ## Tips
-### In case of an issue with **CollectdWin** service un-installation
+### In case of an issue with **CollectdWinService** un-installation
 
 In some cases, **CollectdWin** folder can still be present, or service can be absent under **Programs and Features**
 post un-installation. You can try the following steps:
 
 1. Run the below command as an Administrator in your **Windows Command Prompt**:
 `SC DELETE "CollectdWinService (64 bit)"`
-2. Refresh and check if service is deleted from services console and registry "HKLM/System/CurrentControlSet/Services/CollectedWinService"
-3. Delete these folders manually :
-    C:\Program Files\CollectdWin
-    C:\ProgramData\CollectdWin
+2. Refresh and check if service is deleted from services console and registry
+`"HKLM/System/CurrentControlSet/Services/CollectedWinService"`
+3. Delete these folders manually:
+    - C:\Program Files\CollectdWin
+    - C:\ProgramData\CollectdWin
