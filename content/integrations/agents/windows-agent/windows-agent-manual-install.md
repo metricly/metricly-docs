@@ -34,3 +34,16 @@ StoreRates="false" Hostname="" />
 ![collectdwinservice](/images/windows-agent-uninstall/collectdwinservice.png)
 3. Click **Uninstall**.
 4. If any prompt appears, click **Yes** to confirm that you want to delete the program.
+
+{{% notice tip %}}
+In case of an issue with Collectdwin service un-installation (like Collectdwin 
+folder still present or service is not visible under Program and features 
+post un-installation), try the following:
+1. Run the below command as an Administrator in your Windows Command Prompt:
+SC DELETE "CollectdWinService (64 bit)"
+2. Refresh and check if service is deleted from services console and registry "HKLM/System/CurrentControlSet/Services/CollectedWinService"
+3. Delete these folders manually :
+    C:\Program Files\CollectdWin
+    C:\ProgramData\CollectdWin
+{{% /notice %}}
+
