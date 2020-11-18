@@ -3,7 +3,7 @@ title: "IAM"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["#aws", "#iam role", "#master billing"]
+tags: ["#aws", "#iam role", "#management account"]
 author: Lawrence Lane
 #pre: "<i class='fa fa-download'></i> &nbsp; "
 weight: 2
@@ -100,7 +100,7 @@ This guide includes instructions for setting up both standard and minimal read p
 
 ## 5. Define Role Permissions  
 
-There are four options available for this role: standard permissions, minimal monitoring permissions, minimal cost permissions, and master billing account permissions. A Minimal permission policy must be created _before_ being assigned to an IAM Role.
+There are four options available for this role: standard permissions, minimal monitoring permissions, minimal cost permissions, and management account permissions. A Minimal permission policy must be created _before_ being assigned to an IAM Role.
 
 {{% notice tip %}}
 We recommend opening a second browser tab to follow this section when creating minimal read-only policies. Once the policy is created, use the original tab to resume setup of the IAM role.
@@ -284,9 +284,9 @@ Continuing From **Section 4**:
 
 {{% /expand %}}
 
-#### Master Billing Account Permissions
+#### Management Account Billing Permissions
 
-Grants read-only access to collect billing files from a **single s3 bucket** that can be located in a master billing account.
+Grants read-only access to collect billing files from a **single s3 bucket** that can be located in a management account.
 
 {{% expand "View Steps." %}}
 

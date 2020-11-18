@@ -25,9 +25,9 @@ Must have access to an AWS account and CloudWatch metrics.
 | Application Load Balancer | Target Group             | MQ Broker |
 
 ## Prerequisite: Enable Cost Explorer
-Regardless of the installation method used below, Cost Explorer must be enabled from the master billing account–even if set up on a sub-account. IAM Roles set up with the master billing account allow CloudWisdom to present reports spanning all of your accounts; IAM Roles set up with a sub-account only reports cost for that one account.
+Regardless of the installation method used below, Cost Explorer must be enabled from the management account–even if set up on a sub-account. IAM Roles set up with the management account allow CloudWisdom to present reports spanning all of your accounts; IAM Roles set up with a sub-account only reports cost for that one account.
 
-1. Log in to your AWS master billing account.
+1. Log in to your AWS management account.
 2. Navigate to Cost Explorer.
 3. Click **Enable Cost Explorer**.
 ![Enable Cost Explorer](/images/aws-integration/enable-cost-explorer.png)

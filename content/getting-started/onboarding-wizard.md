@@ -15,9 +15,9 @@ Use the Onboarding Wizard to quickly set up your first cloud resource. This guid
 Before using the Onboarding Wizard, CloudWisdom recommends completing some configuration steps in the AWS console. These steps ensure you have all of the required settings in place to integrate to CloudWisdom.
 
 ### 1. Enable Cost Explorer
-Cost Explorer must be enabled from the master billing account---even if already set up on a sub-account. IAM Roles set up with the master billing account allow CloudWisdom to present reports spanning all of your accounts; IAM Roles set up with a sub-account only reports cost for that one account.
+Cost Explorer must be enabled from the management account---even if already set up on a sub-account. IAM Roles set up with the management account allow CloudWisdom to present reports spanning all of your accounts; IAM Roles set up with a sub-account only reports cost for that one account.
 
-1. Log in to your AWS master billing account.
+1. Log in to your AWS management account.
 2. Navigate to Cost Explorer.
 3. Select **Enable Cost Explorer**.
 ![Enable Cost Explorer](/images/aws-integration/enable-cost-explorer.png)
