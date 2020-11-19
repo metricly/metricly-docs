@@ -66,7 +66,7 @@ You also have the option to manually enter the **S3 Bucket Name** (chosen in sec
 
 ## 3. Link AWS Accounts (Optional)
 
-You can link multiple AWS accounts to one AWS integration. These accounts can be either management accounts or member accounts; authentication information (IAM Role or Access Key) must be included for each linked account. Linking multiple accounts simplifies your setup process and grants access to the latest cost and right-sizing reports.
+You can link multiple AWS accounts to one AWS integration. These accounts can be either management accounts or member accounts; authentication information (IAM Role or Access Key) must be included for each linked account. Linking multiple accounts simplifies your setup process and grants access to the latest cost and right sizing reports.
 
 {{% notice note %}}
 Only the first account assigned to an AWS Integration (from the Data Collection tab) has the ability to send performance metrics to CloudWisdom. Additional accounts added to your integration collect only cost and right sizing data. To send performance data, create a separate AWS integration.
