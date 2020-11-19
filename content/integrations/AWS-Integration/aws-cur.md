@@ -102,7 +102,7 @@ The following best practices ensure optimal Cost & Usage report setup.
 
 ### Shared Management Account: How to Grant Limited Access
 
-Some customers store their billing files in a shared management account and need to grant CloudWisdom restricted access to one specific S3 bucket. You can use the [management account permissions](/integrations/aws-integration/aws-iam-installation/#master-billing-account-permissions) to create a limited read-only IAM role when configuring your AWS integration with CloudWisdom.
+Some customers store their billing files in a shared management account and need to grant CloudWisdom restricted access to one specific S3 bucket. You can use the [management account permissions](/integrations/aws-integration/aws-iam-installation/#management-account-billing-permissions) to create a limited read-only IAM role when configuring your AWS integration with CloudWisdom.
 
 For customers using a shared S3 bucket: CloudWisdom only reads the costs for accounts that we monitor; data for unrelated accounts is discarded.
 
