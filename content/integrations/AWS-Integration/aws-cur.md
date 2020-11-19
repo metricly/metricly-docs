@@ -10,8 +10,6 @@ weight: 4
 
 Cost & Usage Reports (CUR) have replaced Detailed Billing in AWS. These reports publish your AWS billing reports once a day in CSV format to an S3 bucket that you own. CloudWisdom uses these reports to analyze your resource costs and right sizing needs.
 
-We recommend setting up your AWS integration from the **management account** first if you are using consolidated billing. After initial setup, adding associated member accounts is quick and easy.
-
 {{% notice warning %}}
 CloudWisdom no longer supports Detailed Billing files.
 {{% /notice %}}
@@ -66,28 +64,32 @@ If the **Report Path Prefix** lookup is not available (and is instead a freeform
 You also have the option to manually enter the **S3 Bucket Name** (chosen in section 1, step 7) and **Report Path Prefix** (created in section 1, step 8).
 {{% /notice %}}
 
-## 3. Link Member Accounts (Optional)
+## 3. Link AWS Accounts (Optional)
 
-Now that you've added your Management Account, let's add all of its associated member accounts. member accounts require their own authentication information (IAM Role or Access Key) to be included in right sizing analysis.
+You can link multiple AWS accounts to one AWS integration. These accounts can be either management accounts or member accounts; authentication information (IAM Role or Access Key) must be included for each linked account. Linking multiple accounts simplifies your setup process and grants access to the latest cost and right-sizing reports.
 
-1. Scroll to the top of your AWS integration's details and select the **Member Accounts** tab.
-2. Provide a **Name** for the member account.
-3. Provide an IAM Role. If none has been created for the member account, follow [these instructions][1] to create an IAM role.
+{{% notice note %}}
+Only the first account assigned to an AWS Integration (from the Data Collection tab) has the ability to send performance metrics to CloudWisdom. Additional accounts added to your integration collect only cost and right sizing data. To send performance data, create a separate AWS integration.
+{{% /notice %}}
+
+1. Scroll to the top of your AWS integration's details and select the **Linked Accounts** tab.
+2. Provide a **Name** for the linked account.
+3. Provide an IAM Role. If none has been created for the linked account, follow [these instructions][1] to create an IAM role.
 4. Select **Add**.
 ![add-iam-role-member-accounts](/images/aws-cur/add-iam-role-member-accounts.png)
-5. Repeat for all Member Accounts associated to the Management Account you wish to analyze.
+5. Repeat for all relevant accounts.
 
 
-### How to Remove a Member Account  
+### How to Remove a Linked Account  
 
-You can remove member accounts from your AWS integration using the following steps:
+You can remove linked accounts from your AWS integration using the following steps:
 
 1. Log in to CloudWisdom.
 2. Navigate to **Integrations**.
 3. Select **Amazon Web Services**.
 4. Select **View Current Integrations**.
-5. Choose the AWS integration associated with the member account.
-6. Navigate to the **Member Accounts** Tab.
+5. Choose the AWS integration associated with the linked account.
+6. Navigate to the **Linked Accounts** Tab.
 7. Select the **Trashcan Icon** to delete.
 ![delete linked aws account](/images/aws-cur/delete-linked-aws-account.png)
 
