@@ -19,7 +19,7 @@ You can switch between views by selecting the View buttons **Cost vs CPU**, **Co
 
 ## Projected Savings
 
-You can view projected savings by expanding a row in the EC2 results table. 
+You can view projected savings by expanding a row in the EC2 results table.
 
 ![projected savings](/images/reports-ec2-right-sizing/projected-savings.png)
 
@@ -113,4 +113,4 @@ To save a report:
     - Emails are sent to your account email address by default, however, you can input any email address in the **Send Email** field.
 3. Hit **Save**.
 
-![send-email](/images/reports-ec2-recommendations/send-email.png)
+![save as](/images/reports-ec2-right-sizing/save-as.png)
