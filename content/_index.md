@@ -38,7 +38,7 @@ Metricly joined the [Virtana](https://www.virtana.com/) (formerly Virtual Instru
 - [Cost (EC2, RDS, S3)](/right-sizing/reports-cost)
 - [Idle Resources](/idle-resources)
 - [Resource Utilization](/right-sizing/resource-utilization)
-- [EC2 Recommendations](/right-sizing/ec2-recommendations) or [ASG Recommendations](/right-sizing/reports-asg-recommendations)
+- [EC2 Recommendations](/right-sizing/ec2-recommendations)
 
 ---
 
