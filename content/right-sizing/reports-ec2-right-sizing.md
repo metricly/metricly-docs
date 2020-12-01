@@ -48,7 +48,7 @@ The following constraint options are available for both CPU and Memory statement
 #### Resource Specific Constraints
 
 - **Target CPU Utilization**: Returns recommendations that closely match the target CPU utilization percentage.
-- **Default memory utilization when diagnostic monitoring not enabled**: Returns recommendations based on an assumption (as a percentage) of memory utilization.
+- **Default memory utilization when the CloudWatch agent is not installed**: Returns recommendations based on an assumption (as a percentage) of memory utilization.
 - **Target memory utilization**: Returns recommendations that closely match the target memory utilization percentage.
 
 #### Data Aggregation Method
