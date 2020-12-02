@@ -36,8 +36,7 @@ While using the trial version of CloudWisdom you are limited to integrating with
 {{< icon name="fa-check-square-o" size="large" >}} Resource Utilization   
 {{< icon name="fa-check-square-o" size="large" >}} EC2 Recommendation   
 {{< icon name="fa-check-square-o" size="large" >}} EC2 Reservation Recommendation   
-{{< icon name="fa-check-square-o" size="large" >}} AWS Services Cost   
-{{< icon name="fa-check-square-o" size="large" >}} ASG Recommendation   
+{{< icon name="fa-check-square-o" size="large" >}} AWS Services Cost      
 {{< icon name="fa-check-square-o" size="large" >}} Idle Resource Discovery (ELB, EBS)
 
 {{% notice tip %}}
