@@ -26,7 +26,6 @@ Keep your environment lean by archiving and removing resources that are sitting 
 ## Recommendation Reports
 Get per-instance recommendations that consider your workload's behavior and any added constraints you require.
 
-- [ASG Recommendations][3]
 - [EC2 Recommendations][4]
 - [EC2 Reservations Recommendations][5]
 
@@ -38,7 +37,6 @@ Track the min-max of key utilization metrics across your environment.
 
 [1]: /billing-analysis/
 [2]: /right-sizing/reports-cost
-[3]: /right-sizing/reports-asg-recommendations
 [4]: /right-sizing/reports-ec2-recommendations
 [5]: /right-sizing/reports-ec2-reservations
 [6]: /right-sizing/reports-resource-utilization
