@@ -1,7 +1,7 @@
 ---
 title: "Onboarding Wizard"
 draft: false
-tags: ["#getting started", "onboarding", "aws", "azure"]
+tags: ["getting started", "onboarding", "aws", "azure"]
 author: Lawrence Lane
 description: how to use the onboarding wizard with AWS or Azure cloud resources.
 pre:

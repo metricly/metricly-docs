@@ -4,7 +4,7 @@ title: "In-App Filtering"
 description: How to filter metrics and elements in the CloudWisdom UI.
 draft: false
 categories:
-tags: ["#getting started", "#filtering", "#widgets", "#reports", "#policies", "#metrics", "#alerts"]
+tags: ["getting started", "filtering", "widgets", "reports", "policies", "metrics", "alerts"]
 author: Lawrence Lane
 pre:
 weight: 4

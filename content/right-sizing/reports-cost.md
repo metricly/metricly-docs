@@ -3,7 +3,7 @@ title: "Cost Reports"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#tools", "#s3", "#ec2", "#rds", "#getting started" ]
+tags: ["tools", "s3", "ec2", "rds", "getting started" ]
 author: Lawrence Lane
 ---
 

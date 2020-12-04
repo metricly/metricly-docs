@@ -3,7 +3,7 @@ title: "Sub-Accounts"
 #date: 2018-12-3
 draft: false
 categories:
-tags: ["#getting started", "#account", "#setup"]
+tags: ["getting started", "account", "setup"]
 author: Lawrence Lane
 pre:
 weight:

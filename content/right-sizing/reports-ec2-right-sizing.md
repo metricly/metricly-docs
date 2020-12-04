@@ -2,7 +2,7 @@
 title: "AWS EC2 Right Sizing"
 draft: false
 categories:
-tags: ["#tools", "#ec2", "ec2 recommendations", "#getting started" ]
+tags: ["tools", "ec2", "ec2 recommendations", "getting started" ]
 author: Lawrence Lane
 ---
 Use the AWS EC2 Right Sizing report to analyze cost data found in your AWS Cost & Usage Report across all of your consolidated or linked AWS accounts. This report provides 3 important dimensions of your EC2 utilization: cost-to-memory, cost-to-CPU, and CPU-to-memory.

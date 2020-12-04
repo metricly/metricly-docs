@@ -3,7 +3,7 @@ title: "Report Table"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#tools", "#aws services", "#cost", "#getting started"]
+tags: ["tools", "aws services", "cost", "getting started"]
 author: Lawrence Lane
 ---
 

@@ -3,7 +3,7 @@ title: "Email Reports"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#tools", "#email", "#getting started" ]
+tags: ["tools", "email", "getting started" ]
 author: Lawrence Lane
 ---
 

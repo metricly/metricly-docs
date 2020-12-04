@@ -3,7 +3,7 @@ title: "Azure VM Right Sizing"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#tools", "#azure", "#right sizing", "#getting started" ]
+tags: ["tools", "azure", "right sizing", "getting started" ]
 author: Lawrence Lane
 ---
 

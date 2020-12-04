@@ -3,7 +3,7 @@ title: "Idle Resources"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#ebs", "#elb", "#archive"]
+tags: ["ebs", "elb", "archive"]
 author: Lawrence Lane
 alwaysopen: false
 pre:

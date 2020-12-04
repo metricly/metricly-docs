@@ -3,7 +3,7 @@ title: "Account Admin"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#user", "#account profile", "#billing", "#SSO", "#password", "#daily report", "#dark theme",]
+tags: ["user", "account profile", "billing", "SSO", "password", "daily report", "dark theme",]
 author: Lawrence Lane
 alwaysopen: false
 weight: 8
