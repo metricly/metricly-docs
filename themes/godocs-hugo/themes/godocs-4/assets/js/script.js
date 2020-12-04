@@ -1,4 +1,4 @@
-// Preloader js  
+// Preloader js
 function preloader() {
 	$('.preloader').delay(100).fadeOut(10);
 }
@@ -168,5 +168,11 @@ $(document).on("turbolinks:load", preloader);
 	}).on('hidden.bs.collapse', function () {
 		$(this).parent().find('.ti-minus').removeClass('ti-minus').addClass('ti-plus');
 	});
+
+
+	// tables
+
+	$("table").wrap( "<div class='table-wrapper'></div>");
+
 
 })(jQuery);

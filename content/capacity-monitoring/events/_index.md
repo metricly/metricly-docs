@@ -5,6 +5,7 @@ draft: false
 categories:
 tags: ["#alerts", "#notifications", "#events",]
 author: Lawrence Lane
+type: docs
 ---
 
 Events indicate that a policy has been violated, meaning all of the [policy conditions][1] have been met for the set duration. In other words, events indicate that CloudWisdom has detected anomalous behavior in one or more of the elements in your environment.

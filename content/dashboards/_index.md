@@ -5,7 +5,6 @@ draft: false
 categories:
 tags: ["#getting started", "#directory page", "#dashboards", "#widgets"]
 author: Lawrence Lane
-weight: 2
 pre:
 type: docs
 ---

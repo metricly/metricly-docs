@@ -21,7 +21,7 @@ author: Lawrence Lane
 
 ## Computed
 
-| Fully Qualified Name(FQN)   |  | Units   | Min | Max | BASE | CORR | UTIL |
+| Fully Qualified Name(FQN)   | Description | Units   | Min | Max | BASE | CORR | UTIL |
 |----|--------------|---------|-----|-----|------|------|------|
 | netuitive.linux.cpu.total.utilization.percent | The overall average CPU Utilization across all CPUs. This is anormalized metric. **Computation**: (data[‘cpu.total.idle’] != null && data[‘cpu.total.idle’].actual!= null) ? ((data.sum(‘cpu.total.*’) – data[‘cpu.total.idle’].actual) /data.sum(‘cpu.total.*’)) * 100 : data[‘cpu.cpu0.idle’] != null ?((data.sum(‘cpu[.].*’) – data.sum(‘cpu[.].*.idle’)) /data.sum(‘cpu[.].*’)) * 100 : null | percent | 0   | 100 | yes  | yes  | yes  |
 | netuitive.linux.cpu.total.normalized.user  | Percentage of CPU spent running user processes. This is a normalizedmetric. **Computation**: attribute[‘cpus’] == null ? null : data[‘cpu.total.user’] /attribute[‘cpus’].value | percent | 0   | 100 | yes  | yes  | no   |

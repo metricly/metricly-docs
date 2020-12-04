@@ -5,6 +5,5 @@ draft: false
 categories: ["integration", "admin guide", "getting started"]
 tags: ["#agents"]
 author: Lawrence Lane
-weight: 5
 type: docs
 ---

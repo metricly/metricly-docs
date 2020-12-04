@@ -5,7 +5,7 @@ draft: false
 categories:
 tags: ["#getting started", "#metrics", "#elements", "#inventory page"]
 author: Lawrence Lane
-
+type: docs
 ---
 
 Your inventory is the elements that make up your environment, from your java virtual machines to your Amazon EC2s. CloudWisdom’s Inventory Explorer allows you to view and search the elements in your inventory.

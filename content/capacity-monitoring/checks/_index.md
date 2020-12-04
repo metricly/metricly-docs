@@ -6,6 +6,7 @@ categories:
 tags: ["#alerts", "#notifications", "#checks"]
 author: Lawrence Lane
 alwaysopen: false
+type: docs
 ---
 
 Checks are used to determine the state or health of infrastructure resources, services, or applications.

@@ -6,6 +6,7 @@ categories:
 tags: ["#getting started", "#directory page",]
 author: Lawrence Lane
 alwaysopen: false
+type: docs
 ---
 CloudWisdom uses advanced analytics to monitor your environment and proactively notify you when problems occur. There are 3 basic data types that CloudWisdom uses to do so:  
 

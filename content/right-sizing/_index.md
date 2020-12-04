@@ -5,9 +5,7 @@ draft: false
 categories:
 tags: ["#cost management", "#ec2", "#rds", "#utilization"]
 author: Lawrence Lane
-alwaysopen: false
-weight: 5
-pre:
+type: docs
 ---
 ![new-right-sizing](/images/_index/new-right-sizing.png)
 

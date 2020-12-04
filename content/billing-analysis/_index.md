@@ -6,7 +6,6 @@ categories:
 tags: ["#alerts", "#notifications", "#events", "#policies"]
 author: Lawrence Lane
 alwaysopen: false
-weight: 4
 pre:
 type: docs
 ---

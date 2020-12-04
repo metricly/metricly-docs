@@ -455,11 +455,12 @@ textarea.form-control {
     }
   }
 
-
+ .table-wrapper {
+   overflow-x: scroll;
+ }
 
   table {
     width: 100%;
-    max-width: 100%;
     margin-bottom: 1rem;
     border: 1px solid #EEEEEE;
   }
@@ -477,6 +478,7 @@ textarea.form-control {
 
   th {
     font-weight: 500;
+    white-space: nowrap;
   }
 
   thead {
@@ -491,6 +493,8 @@ textarea.form-control {
   tbody {
     background: #fff;
     margin-bottom: 0;
+    font-size: 12px;
+    min-width: 20px;
   }
 
   .notices {
@@ -593,6 +597,10 @@ textarea.form-control {
   code {
     margin-bottom: 0 !important;
     font-size: 100%;
+    color: $code-color;
+    padding: 1px;
+    background-color: #efefef;
+    border-radius: 10%;
   }
 }
 

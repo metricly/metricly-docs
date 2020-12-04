@@ -5,6 +5,7 @@ draft: false
 categories:
 tags: ["#getting started", "#metrics",]
 author: Lawrence Lane
+type: docs
 ---
 
 A metric is a quantifiable measurement whose values are monitored by CloudWisdom and used to assess the performance of an element. Metrics are always associated with one or more [elements][1].

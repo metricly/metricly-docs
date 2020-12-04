@@ -7,7 +7,6 @@ tags: ["#tools", "#aws services", "#cost", "#getting started"]
 author: Lawrence Lane
 ---
 
-## Save & Send Reports
 To save a report:
 
 1. Click the **SAVE** button in the navigation panel; A _Save AWS Service Cost Report_ modal appears.

@@ -6,11 +6,10 @@ categories:
 tags: ["#ebs", "#elb", "#archive"]
 author: Lawrence Lane
 alwaysopen: false
-weight: 6
-pre:
+type: docs
 ---
 ![purhcase-planning-new](/images/_index/purhcase-planning-new.png)
 
 ## About Purchase Planning
 
-Master your resource portfolio with CloudWisdom's Purchase Planning tools. These tools help you know when to purchase reservations and what kind to buy. 
+Master your resource portfolio with CloudWisdom's Purchase Planning tools. These tools help you know when to purchase reservations and what kind to buy.

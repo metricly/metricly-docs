@@ -6,6 +6,7 @@ categories:
 tags: ["#alerts", "#notifications", "#events", "#policies", "#conditions", "#scope"]
 author: Lawrence Lane
 alwaysopen: false
+type: docs
 ---
 
 A policy is a set of conditional tests used to set custom rules for when CloudWisdom will generate an event or other notifications. In other words, policies allow you to define various types of abnormal element behavior, then notify you when that abnormal behavior occurs.

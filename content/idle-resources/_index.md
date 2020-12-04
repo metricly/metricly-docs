@@ -6,7 +6,6 @@ categories:
 tags: ["#ebs", "#elb", "#archive"]
 author: Lawrence Lane
 alwaysopen: false
-weight: 4
 pre:
 type: docs
 ---

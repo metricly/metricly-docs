@@ -6,6 +6,7 @@ categories:
 tags: ["#tools", "#aws services", "#cost", "#getting started", "guides"]
 author: Lawrence Lane
 weight: 20
+type: docs
 ---
 
 CloudWisdom's Bill Analysis tool uncomplicates the task of tracking and budgeting your AWS Cloud spend. This tool reads the Cost Explorer data from your AWS account and breaks it down by cost allocation tags, services, and metadata.
