@@ -8,6 +8,7 @@ author: Lawrence Lane
 alwaysopen: false
 weight: 5
 pre:
+type: docs
 ---
 ![capacity-monitoring-graphic](/images/_index/capacity-monitoring-graphic.png)
 

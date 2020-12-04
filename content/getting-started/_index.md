@@ -8,6 +8,7 @@ author: Lawrence Lane
 alwaysopen: false
 weight: 1
 pre:
+type: docs
 ---
 
 ![getting-started-header-1](/images/_index/getting-started-header-1.png)
@@ -32,13 +33,13 @@ We recommend linking your AWS account using the [CloudFormation Method][2] found
 While using the trial version of CloudWisdom you are limited to integrating with **two cloud datasources**.
 
 ### This Integration Supports
-{{< icon name="fa-check-square-o" size="large" >}} Cost Reports for EC2, RDS, and S3    
-{{< icon name="fa-check-square-o" size="large" >}} Resource Utilization   
-{{< icon name="fa-check-square-o" size="large" >}} EC2 Recommendation   
-{{< icon name="fa-check-square-o" size="large" >}} EC2 Reservation Recommendation   
-{{< icon name="fa-check-square-o" size="large" >}} AWS Services Cost   
-{{< icon name="fa-check-square-o" size="large" >}} ASG Recommendation   
-{{< icon name="fa-check-square-o" size="large" >}} Idle Resource Discovery (ELB, EBS)
+  -  Cost Reports for EC2, RDS, and S3    
+  -  Resource Utilization   
+  -  EC2 Recommendation   
+  -  EC2 Reservation Recommendation   
+  -  AWS Services Cost   
+  -  ASG Recommendation   
+  -  Idle Resource Discovery (ELB, EBS)
 
 {{% notice tip %}}
 Remember to enable **Cost Explorer** and **Cost & Usage Reports** before moving beyond this stage.

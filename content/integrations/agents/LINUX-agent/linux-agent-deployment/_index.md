@@ -9,4 +9,4 @@ author: Lawrence Lane
 
 ### You can choose between the following:
 
-{{% children %}}
+

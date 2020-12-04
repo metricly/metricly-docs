@@ -8,4 +8,4 @@ author: Lawrence Lane
 All of the metrics for the Diamond Agent can be found in this folder.
 
 ## Metrics Available
-{{% children %}}
+

@@ -7,6 +7,7 @@ tags: ["#getting started", "#directory page", "#dashboards", "#widgets"]
 author: Lawrence Lane
 weight: 2
 pre:
+type: docs
 ---
 ![new-dashboard](/images/_index/new-dashboard.png)
 

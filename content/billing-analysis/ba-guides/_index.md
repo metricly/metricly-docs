@@ -16,5 +16,3 @@ CloudWisdom's Bill Analysis tool uncomplicates the task of tracking and budgetin
 - The Bill Analysis tool **requires at least one AWS datasource enabled** on your account.
 
 ## Guides  
-
-{{% children %}}

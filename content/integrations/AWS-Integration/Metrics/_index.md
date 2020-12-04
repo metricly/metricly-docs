@@ -11,4 +11,4 @@ author: Lawrence Lane
 All of the metrics for AWS can be found in this folder.
 
 ## Metrics Available
-{{% children %}}
+

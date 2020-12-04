@@ -9,7 +9,7 @@ author: Lawrence Lane
 
 ### Edit Display Mode
 1. Navigate to **Dashboards** > **`Dashboard Name`**.
-2. Click {{< icon name="fa-cog" size="large" >}}. A modal with all display options appears.
+2. Click **Settings**. A modal with all display options appears.
 ![Dashboard Settings Menu](/images/_index/dashboard-settings-menu.png)
 3. Toggle any setting active (green) to enable.
   - **Shared**:  Makes dashboard public for each of the users under a tenant; users can edit and delete the dashboard if they wish without affecting the original dashboard.

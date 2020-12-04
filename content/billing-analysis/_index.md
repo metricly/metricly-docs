@@ -8,6 +8,7 @@ author: Lawrence Lane
 alwaysopen: false
 weight: 4
 pre:
+type: docs
 ---
 ![cost-test](/images/_index/cost-test.png)
 

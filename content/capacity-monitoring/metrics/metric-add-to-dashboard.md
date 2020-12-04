@@ -8,7 +8,7 @@ author: Lawrence Lane
 ---
 
 ## Add as Single Metric Widget
-1. Open the Metric chart sub-menu {{< icon name="option-horizontal" size="large" >}}.
+1. Open the Metric chart sub-menu.
 2. Click **Add to Dashboard**.
 3. In the **Add to Dashboard** window, click Dashboards and select a dashboard or type to search.
 4. Change the widget name if desired.
@@ -18,7 +18,7 @@ author: Lawrence Lane
 
 ## Add as Multi-Metric Widget
 1. Merge as many metrics as desired.
-2. Open the Metric Chart sub-menu {{< icon name="option-horizontal" size="large" >}}.
+2. Open the Metric Chart sub-menu.
 3. Click **Add to Dashboard**.
 4. In the **Add to Dashboard** window, click **Dashboards** and select a dashboard or type search.
 5. Change the widget name if desired.
@@ -27,7 +27,7 @@ author: Lawrence Lane
 
 
 ## View Charts of Same Type on Other Elements
-1. Open the Metric Chart sub-menu {{< icon name="option-horizontal" size="large" >}}.
+1. Open the Metric Chart sub-menu.
 2. Click Other Elements with this Metric.
 3. Select as many elements as desired.
  - Click All to select all the elements with the selected metric.

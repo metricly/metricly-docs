@@ -8,6 +8,7 @@ author: Lawrence Lane
 alwaysopen: false
 weight: 4
 pre:
+type: docs
 ---
 
 ![idle-resources-header](/images/_index/idle-resources-header.png)

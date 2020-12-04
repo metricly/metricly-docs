@@ -11,7 +11,7 @@ alwaysopen: false
 This guide includes a list of all **widget types** available, their **options**, and the **actions** you can take. To take full advantage of widgets, you should strategize how to tag, group, and visualize the data in your environment. General knowledge on [elements][1] and the behavior of your [metrics][2] is strongly encouraged before making a custom dashboard.
 
 ## Move Widgets
-1. Hover over the widget’s title to select. The header turns gray and your cursor is replaced with {{< icon name="fa-arrows" size="large" >}} when a widget is selected.
+1. Hover over the widget’s title to select.
 2. **Drag** widget to desired position.
 
 ## Resize Widgets

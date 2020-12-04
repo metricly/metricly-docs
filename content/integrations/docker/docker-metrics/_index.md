@@ -9,4 +9,4 @@ author: Lawrence Lane
 This folder contains all metrics for the **Docker** integration.
 
 ## Metrics Available
-{{% children %}}
+

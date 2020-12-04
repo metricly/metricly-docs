@@ -10,14 +10,7 @@ Metricly joined the [Virtana](https://www.virtana.com/) (formerly Virtual Instru
 
 `docs.metricly.com` is home to [CloudWisdom's](https://www.metricly.com) documentation for end users, API developers, and DevOps admins.
 
-### {{< icon name="fa-compass" >}} Navigation
 
-- Search by using **folder tree** {{< icon name="fa-folder-open" >}} or by the **search bar** {{< icon name="fa-search" >}}
-- Select **tags** {{< icon name="fa-tags" >}} to help you find key related articles
-- Tab through articles using **arrow keys** {{< icon name="fa-caret-square-o-left" >}} {{< icon name="fa-caret-square-o-right" >}}
-- Select {{< icon name="fa-home" >}} for an article's table of contents
-
----
 ## Popular Topics
 
 ### <i class='icon-alert'></i> Alerts & Notifications

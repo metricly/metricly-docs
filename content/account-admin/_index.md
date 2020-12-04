@@ -8,6 +8,7 @@ author: Lawrence Lane
 alwaysopen: false
 weight: 8
 pre:
+type: docs
 ---
 
 ![accnt-admin-header](/images/_index/accnt-admin-header.png)
