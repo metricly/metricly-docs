@@ -2,7 +2,7 @@
 title: "RabbitMQ"
 #date: 2018-12-12
 draft: false
-tags: ["#rabbitmq", "#integrations" ]
+tags: ["rabbitmq", "integrations" ]
 author: Lawrence Lane
 ---
 Rabbit MQ is a message broker that manages queues between message producers and consumers. CloudWisdom can be used to monitor your RabbitMQ server’s queuing performance.

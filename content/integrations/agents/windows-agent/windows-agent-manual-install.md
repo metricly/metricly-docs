@@ -2,7 +2,7 @@
 title: "Installation/Uninstallation"
 #date: 2018-12-11
 draft: false
-tags: ["#windows", "#integrations", "#install", "#uninstall"]
+tags: ["windows", "integrations", "install", "uninstall"]
 author: Lawrence Lane
 ---
 

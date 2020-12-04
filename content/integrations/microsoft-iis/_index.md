@@ -2,7 +2,7 @@
 title: "Microsoft IIS"
 #date: 2018-12-11
 draft: false
-tags: ["#microsoft iis", "#integrations" ]
+tags: ["microsoft iis", "integrations" ]
 author: Lawrence Lane
 ---
  CloudWisdom can monitor the performance of your IIS server(s) using our [Windows Agent][1]. Our Windows agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes.

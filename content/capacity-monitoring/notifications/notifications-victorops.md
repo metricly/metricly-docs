@@ -3,7 +3,7 @@ title: "VictorOps Notifications"
 #date: 2018-07-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#victorops"]
+tags: ["alerts", "notifications", "victorops"]
 author: Lawrence Lane
 ---
 

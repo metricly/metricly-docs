@@ -3,7 +3,7 @@ title: "Filter RIs from Cost Analysis"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#tools", "#aws services", "#cost", "#getting started", "guides"]
+tags: ["tools", "aws services", "cost", "getting started", "guides"]
 author: Dmitry Yashchenko
 weight: 3
 ---

@@ -2,7 +2,7 @@
 title: "Docker Collectors"
 #date: 2018-12-11
 draft: false
-tags: ["#docker", "#integrations", "#collectors"]
+tags: ["docker", "integrations", "collectors"]
 author: Lawrence Lane
 ---
 There are three Docker Agent collector modes: Simple Mode, Minimal Mode, and Standard mode. Minimal Mode is enabled by default. You can activate different collector modes from the `/opt/netuitive-agent/conf/netuitive-agent.conf` file.

@@ -3,7 +3,7 @@ title: "Checks"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#checks"]
+tags: ["alerts", "notifications", "checks"]
 author: Lawrence Lane
 alwaysopen: false
 type: docs

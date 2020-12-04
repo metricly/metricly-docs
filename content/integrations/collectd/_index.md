@@ -2,7 +2,7 @@
 title: "Collectd"
 #date: 2018-12-11
 draft: false
-tags: ["#collectd", "#integrations", "#collectors" ]
+tags: ["collectd", "integrations", "collectors" ]
 author: Lawrence Lane
 ---
 

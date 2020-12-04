@@ -3,7 +3,7 @@ title: "View an Event"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#events" ]
+tags: ["alerts", "notifications", "events" ]
 author: Lawrence Lane
 weight: 1
 ---

@@ -2,7 +2,7 @@
 title: "Diamond Agent"
 #date: 2018-12-11
 draft: false
-tags: ["#diamond", "#integrations", "#agents" ]
+tags: ["diamond", "integrations", "agents" ]
 author: Lawrence Lane
 ---
 Diamond’s default HTTP Post Handler can be used to send Diamond data to CloudWisdom.

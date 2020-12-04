@@ -3,7 +3,7 @@ title: "Elastic Beanstalk"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["#agents", "#linux", "#elastic beanstalk"]
+tags: ["agents", "linux", "elastic beanstalk"]
 author: Lawrence Lane
 #pre: "<i class='fa fa-download'></i> &nbsp; "
 weight: 4

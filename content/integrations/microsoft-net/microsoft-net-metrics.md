@@ -2,7 +2,7 @@
 title: "Microsoft NET Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["#metrics", "#integrations", "#microsoft net" ]
+tags: ["metrics", "integrations", "microsoft net" ]
 author: Lawrence Lane
 ---
 | Friendly Name                | FQN                         | Description                                                                                                                                                                                                                                                                                          |

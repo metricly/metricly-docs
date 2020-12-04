@@ -2,7 +2,7 @@
 title: "Okta SSO"
 #date: 2018-12-11
 draft: false
-tags: ["#sso", "#integrations", "#authentication", "#okta"]
+tags: ["sso", "integrations", "authentication", "okta"]
 author: Lawrence Lane
 weight: 3
 ---

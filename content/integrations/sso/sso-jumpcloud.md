@@ -2,7 +2,7 @@
 title: "JumpCloud SSO"
 #date: 2018-12-11
 draft: false
-tags: ["#sso", "#integrations", "#authentication", "#jumpcloud"]
+tags: ["sso", "integrations", "authentication", "jumpcloud"]
 author: Lawrence Lane
 weight: 2
 ---

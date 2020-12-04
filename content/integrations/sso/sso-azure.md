@@ -2,7 +2,7 @@
 title: "Azure SSO"
 #date: 2018-12-11
 draft: false
-tags: ["#sso", "#integrations", "#authentication", "#azure"]
+tags: ["sso", "integrations", "authentication", "azure"]
 author: Lawrence Lane
 weight: 1
 ---

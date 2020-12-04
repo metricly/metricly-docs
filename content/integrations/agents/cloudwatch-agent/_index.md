@@ -2,7 +2,7 @@
 title: "CloudWatch Agent"
 #date: 2018-12-11
 draft: false
-tags: ["#aws", "#integrations", "#agents" ]
+tags: ["aws", "integrations", "agents" ]
 author: Lawrence Lane
 ---
 

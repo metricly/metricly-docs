@@ -2,7 +2,7 @@
 title: "Upgrade Java"
 #date: 2018-12-11
 draft: false
-tags: ["#java", "#integrations", "#agents"]
+tags: ["java", "integrations", "agents"]
 author: Lawrence Lane
 ---
 ## How to Upgrade

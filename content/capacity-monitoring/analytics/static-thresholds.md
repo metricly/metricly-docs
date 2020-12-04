@@ -3,7 +3,7 @@ title: "Static Thresholds"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#getting started", "#analytics", "#metrics"]
+tags: ["getting started", "analytics", "metrics"]
 author: Lawrence Lane
 ---
 Static Thresholds are unchanging levels that are compared against a metric’s current value.

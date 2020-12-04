@@ -2,7 +2,7 @@
 title: "NGINX"
 #date: 2018-12-12
 draft: false
-tags: ["#nginx", "#integrations" ]
+tags: ["nginx", "integrations" ]
 author: Lawrence Lane
 ---
 

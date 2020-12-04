@@ -2,7 +2,7 @@
 title: "Elasticsearch Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["#elasticsearch", "#integrations", "#metrics", "#cluster", "#disk", "#threadpool", "#indices" ]
+tags: ["elasticsearch", "integrations", "metrics", "cluster", "disk", "threadpool", "indices" ]
 author: Lawrence Lane
 ---
 ## Collected

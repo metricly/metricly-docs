@@ -2,7 +2,7 @@
 title: "Collectd Uptime Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["#collectd", "#integrations", "#metrics", "#uptime", "#collectors" ]
+tags: ["collectd", "integrations", "metrics", "uptime", "collectors" ]
 author: Lawrence Lane
 ---
 

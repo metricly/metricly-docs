@@ -3,7 +3,7 @@ title: "Slack Notifications"
 #date: 2018-05-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#slack"]
+tags: ["alerts", "notifications", "slack"]
 author: Lawrence Lane
 
 ---

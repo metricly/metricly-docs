@@ -2,7 +2,7 @@
 title: "Docker"
 #date: 2018-12-11
 draft: false
-tags: ["#docker", "#integrations", ]
+tags: ["docker", "integrations", ]
 author: Lawrence Lane
 ---
 Docker is an open way of building, shipping, and running distributed applications anywhere using containers and images. CloudWisdom can be used to monitor the performance of your Docker host and containers.

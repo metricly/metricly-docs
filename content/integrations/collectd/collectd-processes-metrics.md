@@ -2,7 +2,7 @@
 title: "Collectd Processes Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["#collectd", "#integrations", "#metrics", "#processes", "#collectors" ]
+tags: ["collectd", "integrations", "metrics", "processes", "collectors" ]
 author: Lawrence Lane
 ---
 

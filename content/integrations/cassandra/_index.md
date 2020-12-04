@@ -2,7 +2,7 @@
 title: "Cassandra"
 #date: 2018-12-11
 draft: false
-tags: ["#cassandra", "#integrations", ]
+tags: ["cassandra", "integrations", ]
 author: Lawrence Lane
 ---
 

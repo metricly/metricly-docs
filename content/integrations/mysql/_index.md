@@ -2,7 +2,7 @@
 title: "MySQL"
 #date: 2018-12-12
 draft: false
-tags: ["#mysql", "#integrations" ]
+tags: ["mysql", "integrations" ]
 author: Lawrence Lane
 ---
 MySQL is an open source relational database management system that uses the Structured Query Language to navigate its stores. CloudWisdom can help monitor the performance and throughput of your MySQL database.

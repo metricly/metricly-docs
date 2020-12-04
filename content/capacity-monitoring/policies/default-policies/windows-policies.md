@@ -3,7 +3,7 @@ title: "Windows Policies"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#policies", "#default policies", "#windows"]
+tags: ["alerts", "notifications", "policies", "default policies", "windows"]
 author: Lawrence Lane
 ---
 

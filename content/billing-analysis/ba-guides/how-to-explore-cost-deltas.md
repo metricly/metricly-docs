@@ -3,7 +3,7 @@ title: "Explore Cost Deltas"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#tools", "#aws services", "#cost", "#getting started", "guides"]
+tags: ["tools", "aws services", "cost", "getting started", "guides"]
 author: Lawrence
 weight: 2
 ---

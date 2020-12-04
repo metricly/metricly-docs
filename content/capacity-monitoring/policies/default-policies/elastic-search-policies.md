@@ -3,7 +3,7 @@ title: "Elasticsearch Policies"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#policies", "#default policies", "#elasticsearch"]
+tags: ["alerts", "notifications", "policies", "default policies", "elasticsearch"]
 author: Lawrence Lane
 ---
 

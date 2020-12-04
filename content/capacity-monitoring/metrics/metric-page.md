@@ -3,7 +3,7 @@ title: "Page Features"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#getting started", "#metrics",]
+tags: ["getting started", "metrics",]
 author: Lawrence Lane
 ---
 ## Sub Navigation

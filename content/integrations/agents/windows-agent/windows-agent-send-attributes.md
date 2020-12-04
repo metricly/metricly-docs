@@ -2,7 +2,7 @@
 title: "Tags & Attributes"
 #date: 2018-12-11
 draft: false
-tags: ["#windows", "#integrations", "#install", "#tags", "#attributes", "#elements"]
+tags: ["windows", "integrations", "install", "tags", "attributes", "elements"]
 author: Lawrence Lane
 ---
 

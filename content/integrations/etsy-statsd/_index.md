@@ -2,7 +2,7 @@
 title: "Etsy StatsD"
 #date: 2018-12-11
 draft: false
-tags: ["#statsd", "#integrations" ]
+tags: ["statsd", "integrations" ]
 author: Lawrence Lane
 ---
 Etsy StatsD is one of the most popular StatsD libraries available. CloudWisdom offers a backend plugin for the Etsy StatsD library that allows you to send your StatsD metric data to CloudWisdom. We recommend using our Etsy StatsD integration if you currently have an Etsy StatsD server running and want to send your instrumented data to CloudWisdom. For more information about Etsy StatsD, see the following documentation.

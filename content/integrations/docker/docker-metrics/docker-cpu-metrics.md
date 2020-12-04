@@ -2,7 +2,7 @@
 title: "Docker CPU Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["#docker", "#integrations", "#metrics", "#cpu"]
+tags: ["docker", "integrations", "metrics", "cpu"]
 author: Lawrence Lane
 ---
 

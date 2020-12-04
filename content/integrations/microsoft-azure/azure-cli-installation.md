@@ -2,7 +2,7 @@
 title: "Azure CLI"
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["#microsoft", "#azure", "#integrations", "#installation"]
+tags: ["microsoft", "azure", "integrations", "installation"]
 author: Lawrence Lane
 ---
 This installation method is recommended by Virtana for setting up your Azure integration with CloudWisdom.

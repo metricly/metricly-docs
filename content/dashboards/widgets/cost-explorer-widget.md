@@ -3,7 +3,7 @@ title: "Cost Explorer Widget"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#getting started", "#metrics", "#widgets", "#dashboards"]
+tags: ["getting started", "metrics", "widgets", "dashboards"]
 author: Lawrence Lane
 ---
 

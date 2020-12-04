@@ -3,7 +3,7 @@ title: "Analytics"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#getting started", "#directory page",]
+tags: ["getting started", "directory page",]
 author: Lawrence Lane
 alwaysopen: false
 type: docs

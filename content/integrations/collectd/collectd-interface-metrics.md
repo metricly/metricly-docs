@@ -2,7 +2,7 @@
 title: "Collectd Interface Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["#collectd", "#integrations", "#metrics", "#interface", "#collectors" ]
+tags: ["collectd", "integrations", "metrics", "interface", "collectors" ]
 author: Lawrence Lane
 ---
 

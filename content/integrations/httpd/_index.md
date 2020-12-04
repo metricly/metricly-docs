@@ -2,7 +2,7 @@
 title: "Apache HTTPD"
 #date: 2018-12-11
 draft: false
-tags: ["#httpd", "#integrations", "#collectors"]
+tags: ["httpd", "integrations", "collectors"]
 author: Lawrence Lane
 ---
 The HTTPD Collector gathers statistics from an Apache HTTPD server.

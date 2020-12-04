@@ -2,7 +2,7 @@
 title: "NGINX Metrics"
 #date: 2018-12-12
 draft: false
-tags: ["#nginx", "#integrations", "#metrics" ]
+tags: ["nginx", "integrations", "metrics" ]
 author: Lawrence Lane
 ---
 ## Collected

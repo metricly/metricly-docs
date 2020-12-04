@@ -3,7 +3,7 @@ title: "OpsGenie Notifications"
 #date: 2018-05-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#opsgenie"]
+tags: ["alerts", "notifications", "opsgenie"]
 author: Lawrence Lane
 ---
 

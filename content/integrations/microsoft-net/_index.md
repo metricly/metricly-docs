@@ -2,7 +2,7 @@
 title: "Microsoft NET"
 #date: 2018-12-11
 draft: false
-tags: ["#microsoft net", "#integrations" ]
+tags: ["microsoft net", "integrations" ]
 author: Lawrence Lane
 ---
 Microsoft .NET Framework metrics come packaged with the CloudWisdom [Windows Agent][1]. Our Windows agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes.

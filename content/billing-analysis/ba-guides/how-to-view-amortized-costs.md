@@ -3,7 +3,7 @@ title: "View Amortized Costs"
 #date: 2019-07-29
 draft: false
 categories:
-tags: ["#tools", "#aws services", "#cost", "#getting started", "guides"]
+tags: ["tools", "aws services", "cost", "getting started", "guides"]
 author: Andrew Paine
 weight: 3
 ---

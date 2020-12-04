@@ -2,7 +2,7 @@
 title: "Redis Metrics"
 #date: 2018-12-12
 draft: false
-tags: ["#redis", "#integrations", "#metrics" ]
+tags: ["redis", "integrations", "metrics" ]
 author: Lawrence Lane
 ---
 

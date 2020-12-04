@@ -3,7 +3,7 @@ title: "Sudden Change Detection"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#getting started", "#analytics", "#metrics"]
+tags: ["getting started", "analytics", "metrics"]
 author: Lawrence Lane
 ---
 Sudden Change is a time-series metric used to analyze trends of historical data and make predictions based on past behavior.

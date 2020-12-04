@@ -3,7 +3,7 @@ title: "Kinesis Metrics"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started", "metrics"]
-tags: ["#aws", "#metrics", "#kinesis"]
+tags: ["aws", "metrics", "kinesis"]
 author: Lawrence Lane
 ---
 Currently, CloudWisdom only supports Kinesis Streams, but additional support for Kinesis Firehose may come in the future.

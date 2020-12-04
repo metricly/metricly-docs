@@ -2,7 +2,7 @@
 title: "Java Agent"
 #date: 2018-12-11
 draft: false
-tags: ["#java", "#integrations","#agents"]
+tags: ["java", "integrations","agents"]
 author: Lawrence Lane
 ---
 CloudWisdom’s Java agent is a java monitoring agent with a programmable bytecode instrumentation engine that’s enabled by adding a JVM integration in CloudWisdom. The CloudWisdom Java integration allows CloudWisdom to collect JVM runtime system metrics like CPU, Memory, GC, Threads and Classes Count, and application components method performance statistics, such as number of calls and execution time.

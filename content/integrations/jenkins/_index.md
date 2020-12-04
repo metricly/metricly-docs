@@ -2,7 +2,7 @@
 title: "Jenkins"
 #date: 2018-12-11
 draft: false
-tags: [ "#integrations",]
+tags: [ "integrations",]
 author: Lawrence Lane
 ---
 Jenkins is  an open source automation server which enables developers around the world to build, test, and deploy their software.

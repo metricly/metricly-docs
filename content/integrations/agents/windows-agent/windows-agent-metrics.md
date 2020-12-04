@@ -2,7 +2,7 @@
 title: "Windows Agent Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["#windows", "#integrations", "#metrics"]
+tags: ["windows", "integrations", "metrics"]
 author: Lawrence Lane
 ---
 ## Collected

@@ -2,7 +2,7 @@
 title: "Element Tags"
 #date: 2018-12-12
 draft: false
-tags: ["#ruby", "#integrations", "#agents", "#elements", "#tags" ]
+tags: ["ruby", "integrations", "agents", "elements", "tags" ]
 author: Lawrence Lane
 ---
 

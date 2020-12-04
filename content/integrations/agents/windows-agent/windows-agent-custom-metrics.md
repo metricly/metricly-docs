@@ -2,7 +2,7 @@
 title: "Custom Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["#windows", "#integrations", "#custom metrics", "#metrics"]
+tags: ["windows", "integrations", "custom metrics", "metrics"]
 author: Lawrence Lane
 ---
 

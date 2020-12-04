@@ -3,7 +3,7 @@ title: "Optional Config"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started"]
-tags: ["#aws", "#optional config", "#elements"]
+tags: ["aws", "optional config", "elements"]
 author: Lawrence Lane
 weight: 5
 ---

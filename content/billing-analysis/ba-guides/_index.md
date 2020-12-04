@@ -3,7 +3,7 @@ title: "Bill Analysis Guides"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#tools", "#aws services", "#cost", "#getting started", "guides"]
+tags: ["tools", "aws services", "cost", "getting started", "guides"]
 author: Lawrence Lane
 weight: 20
 type: docs

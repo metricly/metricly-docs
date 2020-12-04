@@ -2,7 +2,7 @@
 title: "Enable Proxy"
 #date: 2018-12-11
 draft: false
-tags: ["#java", "#integrations", "#agents"]
+tags: ["java", "integrations", "agents"]
 author: Lawrence Lane
 ---
 ## Enable a Proxy

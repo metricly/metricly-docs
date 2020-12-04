@@ -3,7 +3,7 @@ title: "Element Display Name"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#integrations",  "#elements", "#inventory page"]
+tags: ["integrations",  "elements", "inventory page"]
 author: Lawrence Lane
 ---
 

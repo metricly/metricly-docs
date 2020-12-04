@@ -2,7 +2,7 @@
 title: "Salt Installation"
 #date: 2018-12-11
 draft: false
-tags: ["#salt", "#integrations", "#configuration management", "linux agent"]
+tags: ["salt", "integrations", "configuration management", "linux agent"]
 author: Lawrence Lane
 ---
 

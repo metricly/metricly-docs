@@ -2,7 +2,7 @@
 title: "PostreSQL"
 #date: 2018-12-12
 draft: false
-tags: ["#postresql", "#integrations" ]
+tags: ["postresql", "integrations" ]
 author: Lawrence Lane
 ---
 PostgreSQL is an open-source database management system. CloudWisdom can be used to monitor your PostgreSQL database(s).

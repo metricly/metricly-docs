@@ -3,7 +3,7 @@ title: "Policies"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#events", "#policies", "#conditions", "#scope"]
+tags: ["alerts", "notifications", "events", "policies", "conditions", "scope"]
 author: Lawrence Lane
 alwaysopen: false
 type: docs

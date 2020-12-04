@@ -2,7 +2,7 @@
 title: "Diamond Diskspace Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["#diamond", "#integrations", "#agents", "#diskspace" ]
+tags: ["diamond", "integrations", "agents", "diskspace" ]
 author: Lawrence Lane
 ---
 ## Collected

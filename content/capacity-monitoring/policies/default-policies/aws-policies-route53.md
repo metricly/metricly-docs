@@ -3,7 +3,7 @@ title: "AWS Route 53 Policies"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#policies", "#default policies", "#route53", "#aws"]
+tags: ["alerts", "notifications", "policies", "default policies", "route53", "aws"]
 author: Lawrence Lane
 ---
 

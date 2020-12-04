@@ -2,7 +2,7 @@
 title: "Custom MBeans"
 #date: 2018-12-11
 draft: false
-tags: ["#java", "#integrations", "#agents"]
+tags: ["java", "integrations", "agents"]
 author: Lawrence Lane
 ---
 The Java agent can collect metrics from custom mbeans. We have provided a sample spring boot application that creates 2 custom mbeans with test attributes [here](https://github.com/netuitive/zorka-custom-mbean-examples/blob/master/multiple-mbeans-example/src/main/java/com/netuitive/Application.java).

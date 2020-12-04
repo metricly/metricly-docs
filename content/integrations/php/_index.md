@@ -2,7 +2,7 @@
 title: "PHP"
 #date: 2018-12-12
 draft: false
-tags: ["#php", "#integrations" ]
+tags: ["php", "integrations" ]
 author: Lawrence Lane
 ---
  You can monitor your PHP applications using our PHP client library, the Linux Agent, and the Metricly StatsD server.

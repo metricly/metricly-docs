@@ -2,7 +2,7 @@
 title: "JMX"
 #date: 2018-12-11
 draft: false
-tags: ["#jmx", "#integrations", "#collectors" ]
+tags: ["jmx", "integrations", "collectors" ]
 author: Lawrence Lane
 ---
 ## Prerequisites

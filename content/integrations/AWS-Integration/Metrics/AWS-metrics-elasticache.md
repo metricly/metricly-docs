@@ -3,7 +3,7 @@ title: "Elasticache Metrics"
 #date: 2018-11-30T16:08:13-05:00
 draft: false
 categories: ["integration", "admin guide", "getting started", "metrics"]
-tags: ["#aws", "#metrics", "#elasticache"]
+tags: ["aws", "metrics", "elasticache"]
 author: Lawrence Lane
 ---
 Elasticache instances can come in a few “flavors”, which means metrics are unique to each “flavor” of Elasticache.

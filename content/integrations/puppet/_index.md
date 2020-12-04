@@ -2,7 +2,7 @@
 title: "Puppet"
 #date: 2018-12-12
 draft: false
-tags: ["#puppet", "#integrations" ]
+tags: ["puppet", "integrations" ]
 author: Lawrence Lane
 ---
 

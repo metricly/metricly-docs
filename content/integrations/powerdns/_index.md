@@ -2,7 +2,7 @@
 title: "PowerDNS"
 #date: 2018-12-12
 draft: false
-tags: ["#powerdns", "#integrations" ]
+tags: ["powerdns", "integrations" ]
 author: Lawrence Lane
 ---
 

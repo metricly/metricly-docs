@@ -2,7 +2,7 @@
 title: "postgresql metrics"
 #date: 2018-12-12
 draft: false
-tags: ["#postresql", "#integrations", "#metrics" ]
+tags: ["postresql", "integrations", "metrics" ]
 author: Lawrence Lane
 ---
 ## Collected

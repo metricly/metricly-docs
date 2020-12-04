@@ -3,7 +3,7 @@ title: "Find Resources Missing Tags"
 #date: 2019-07-29
 draft: false
 categories:
-tags: ["#tools", "#aws services", "#cost", "#getting started", "#guides"]
+tags: ["tools", "aws services", "cost", "getting started", "guides"]
 author: Lawrence Lane
 weight: 3
 ---

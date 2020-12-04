@@ -2,7 +2,7 @@
 title: "Redis"
 #date: 2018-12-12
 draft: false
-tags: ["#redis", "#integrations" ]
+tags: ["redis", "integrations" ]
 author: Lawrence Lane
 ---
 Redis is an adaptable, open source, in-memory data structure store that can be used as a database, cache, and message broker. CloudWisdom can be used to monitor the performance of your Redis server.

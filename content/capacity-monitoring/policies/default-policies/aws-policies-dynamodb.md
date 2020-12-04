@@ -3,7 +3,7 @@ title: "AWS DynamoDB Policies"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#policies", "#default policies", "#dynamoDB", "#aws"]
+tags: ["alerts", "notifications", "policies", "default policies", "dynamoDB", "aws"]
 author: Lawrence Lane
 ---
 {{% notice info %}}

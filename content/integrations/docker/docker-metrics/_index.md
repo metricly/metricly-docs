@@ -2,7 +2,7 @@
 title: "Docker Metrics"
 #date: 2018-12-11
 draft: false
-tags: ["#docker", "#integrations", "#metrics" ]
+tags: ["docker", "integrations", "metrics" ]
 author: Lawrence Lane
 ---
 
