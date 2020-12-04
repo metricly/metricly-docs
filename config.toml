@@ -191,8 +191,8 @@ negative_placeholder = "What can we improve in this doc?"
 # call to action
 [Languages.en.call_to_action]
 enable = true
-title = "Still Didn't Find Your Answer?"
-image = "images/cta-illustration.jpg"
+title = "Need some help?"
+image = "images/cta-illustration.png"
 content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
 
   # call to action button

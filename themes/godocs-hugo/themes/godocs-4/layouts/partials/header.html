@@ -8,11 +8,7 @@
         <a class="site-logo" target="_blank" href="{{site.Params.logo.main_site_link | safeURL}}?ref=docs"><img class="icon"
             src="{{if site.Params.logo.logo_icon}}{{site.Params.logo.logo_icon | absURL}}{{else}}{{ site.Params.logo.site_logo | absURL }}{{end}}">{{if site.Params.logo.logo_icon}}<img
             class="site" src="{{site.Params.logo.site_logo | absURL}}">{{end}}</a>
-        <span class="logo-devider"></span>
         {{ end }}
-        <a class="docs-logo" href="{{ .Site.BaseURL | relLangURL }}"><img class="docs"
-            src="{{if site.Params.logo.docs_logo}}{{site.Params.logo.docs_logo | absURL}}{{else}}{{ site.Params.logo.main | absURL }}{{end}}"
-            alt="{{ site.Title }}"></a>
       </div>
 
       {{if not .IsHome }}
