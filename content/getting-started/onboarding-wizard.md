@@ -86,7 +86,9 @@ CloudWisdom collects performance data to power analyses. The elements enabled by
 1. Leave **Enable Cost Explorer** enabled.
 2. Select a **Report Path Prefix**. The values listed are a combination of the S3 bucket name where the billing files reside followed by the full Report path prefix of the Cost & Usage report you configured.
 ![select-report-path](/images/onboarding-wizard/select-report-path.png)
-3. Select **Next: Summary**.
+3. Optionally, add **Linked Accounts** if you have member or additional management AWS accounts you would like to integrate.
+![add-linked-accounts](/images/onboarding-wizard/add-linked-accounts.png)
+4. Select **Next: Summary**.
 
 
 {{% notice tip %}}
