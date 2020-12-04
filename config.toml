@@ -1,6 +1,6 @@
 baseURL = "https://docs.metricly.com/"
 title = "CloudWisdom Docs"
-theme = "/godocs-4"
+theme = "godocs-4"
 disableLanguages = ["fr"]
 
 
