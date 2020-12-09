@@ -32,7 +32,7 @@ To properly use the ingest endpoint, you should first understand the following c
 ### Custom Elements
 Custom elements can have metrics, tags, attributes, and relationships.
 
-**POST request**: `http://api.us.cloudwisdom.virtana.com/ingest/{apiId}`
+**POST request**: `https://api.us.cloudwisdom.virtana.com/ingest/{apiId}`
 
 ```
 [
@@ -146,7 +146,7 @@ Custom elements can have metrics, tags, attributes, and relationships.
 ]
 ```
 
-Please note that the `elementId` is a required attribute. Payloads without `elementId` will be silently discarded. 
+Please note that the `elementId` is a required attribute. Payloads without `elementId` will be silently discarded.
 
 We also support sending in custom checks to the API, but we have a separate dedicated page covering this topic.
 
