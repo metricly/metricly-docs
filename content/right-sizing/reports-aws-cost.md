@@ -97,6 +97,8 @@ Grouping options depend on the initial report view chosen.
 #### Utilization Metric & Metric Statistic
 
 Each Utilization metric supports Mean, Maximum, 95th Percentile, Minimum, Total, and Count statistics.
+  - **EC2**: Memory Utilization %
+  - **EC2**: Network I/O %
   - **EC2 & RDS**: Active Hours
   - **EC2 & RDS**: CPU Utilization %
   - **EC2 & RDS**: Disk Space Used %
