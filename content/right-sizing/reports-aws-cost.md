@@ -6,7 +6,7 @@ categories:
 tags: ["#tools", "#s3", "#ec2", "#rds", "#getting started" ]
 author: Lawrence Lane
 ---
-Use the AWS Cost report to analyze cost data found in your AWS Cost & Usage Report across all of your consolidated or linked AWS accounts. This report provides a breakdown of your costs for **EC2**, **RDS**, and **S3** resources. The AWS Cost report is generated once per week and may take up to 7 days after setup to display your first analysis.
+Use the AWS Cost report to analyze cost data found in your AWS Cost & Usage Report across all of your consolidated or linked AWS accounts. This report provides a breakdown of your costs for **EC2**, **RDS**, and **S3** resources. The AWS Cost report is generated daily after initial setup.
 
 This report is an ideal place to start your right sizing planning because it allows you to quickly understand your infrastructure spend on an _operational_ level, such as identifying an over-reliance on On-Demand resources used for predictable, long-term workloads (more suited for reservations and savings plans) or those that might be less critical and time sensitive (more suited for Spot instances).
 
@@ -98,22 +98,17 @@ Grouping options depend on the initial report view chosen.
 
 Each Utilization metric supports Mean, Maximum, 95th Percentile, Minimum, Total, and Count statistics.
   - **EC2**: Memory Utilization %
-  - **EC2**: Network I/O %
-  - **EC2 & RDS**: Active Hours
   - **EC2 & RDS**: CPU Utilization %
-  - **EC2 & RDS**: Disk Space Used %
-  - **EC2 & RDS**: Disk I/O %
+  - **RDS**: Disk Space Used %
+  - **RDS**: Disk I/O %
   - **S3**: Bucket Size (bytes)
   - **S3**: Number of Objects
-
+  - **S3**: Put Requests
+  - **S3**: Get Requests
 
 ##### **EC2 Considerations**
 
-- EC2 elements without a Agent / Windows agent display only two utilization measures: Active Hours and CPU Utilization %.
-- EC2 elements with a Agent installed have the following additional utilization metrics available: Memory Utilization %, Disk I/O %, and Disk Space Used %.
-- EC2 elements with a Windows agent installed have the Network I/O % metric available.
-
-If you have a mix of elements with and without a Agent, you will see gaps in the utilization figures where values are not available.
+EC2 elements without a CloudWatch Agent display only CPU Utilization %. If you have a mix of elements with and without a CloudWatch Agent, you will see gaps in the utilization figures where values are not available.
 
 #### Show
 
