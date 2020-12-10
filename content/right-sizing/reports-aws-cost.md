@@ -108,7 +108,7 @@ Each Utilization metric supports Mean, Maximum, 95th Percentile, Minimum, Total,
 
 ##### **EC2 Considerations**
 
-EC2 elements without a CloudWatch Agent display only CPU Utilization %. If you have a mix of elements with and without a CloudWatch Agent, you will see gaps in the utilization figures where values are not available.
+EC2 elements without a CloudWatch Agent display only CPU Utilization %. If you have a mix of elements (some without a CloudWatch agent), you will see gaps in the utilization figures where values are not available.
 
 #### Show
 
