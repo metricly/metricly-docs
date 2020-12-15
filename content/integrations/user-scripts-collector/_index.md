@@ -62,7 +62,7 @@ echo possible_sudo_hacks.count.value $CHECKCOUNT
 | Option                 | Default               | Description                                                                               |
 |------------------------|-----------------------|-------------------------------------------------------------------------------------------|
 | enabled                | False                 | Enable collecting User Scripts metrics.                                                   |
-| scripts_path           | /opt/netuitive-agent/ | Path used to find scripts to run                                                          |
+| scripts_path           | /opt/netuitive-agent/user-scripts | Path used to find scripts to run                                                          |
 | byte_unit              |                       | Default numeric output(s).                                                                |
 | measure_collector_time |                       | Measure the collector’s run time in milliseconds.                                         |
 | metrics_blacklist      |                       | Regex list to match metrics to block. Mutually exclusive with metrics_whitelist option.   |
