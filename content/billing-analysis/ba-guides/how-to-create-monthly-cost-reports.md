@@ -8,6 +8,8 @@ author: Lawrence Lane
 weight: 1
 ---
 
+## AWS Bill Analysis Report
+
 To use the AWS Bill Analysis tool, login to CloudWisdom and navigate to **Cost Management** > **Bill Analysis**.
 
 
@@ -60,6 +62,8 @@ You can contextualize this data even further by using Period Comparisons. Using 
 ![monthly-cost-img-6](/images/how-to-create-monthly-cost-reports/monthly-cost-img-6.png)
 
 It’s helpful to save various reports that slice your billing data using different dimensions and levels of granularity so that you can discover cost trends, cost deltas, and highlight saving success over time. Go ahead and save this report too, as it’s a great base for exploring cost deltas.
+
+## Azure Bill Analysis Report
 
 To use the Azure Bill Analysis tool, login to CloudWisdom and navigate
 to **Cost Management** \> **Bill Analysis**. Select the **Azure Bill
