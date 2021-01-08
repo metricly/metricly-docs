@@ -57,15 +57,11 @@ Storage is one of the spending categories that you may wish to take a
 closer look at. Let's take what you learned from the above and create a
 report that breaks down that spend category in more detail.
 
-## Configuration Settings
-
--   **Quick Range**: `Latest 30 Days`
-
--   **Visualization**: `Stacked View`
-
--   **Filter**: `storage`
-
--   **Group By**: `Product`
+### Configuration Settings
+- **Quick Range**: `Latest 30 Days`
+- **Visualization**: `Stacked View`
+- **Filter**: `storage`
+- **Group By**: `Product`
 
 Your Configuration modal should look like this:
 
