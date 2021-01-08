@@ -11,7 +11,7 @@ To use the Azure Bill Analysis tool, login to CloudWisdom and navigate
 to **Cost Management** \> **Bill Analysis**. Select the **Azure Bill
 Analysis** tab at the top of the page.
 
-##Create and Save a Monthly Total Cost Report##
+## Create and Save a Monthly Total Cost Report
 
 Let's say you want to explore a breakdown of your bill across Resource
 Locations for the past month (30 days). How would you do that?
@@ -51,13 +51,13 @@ report.
 
 ![azurebillanalysis-saverpt](images/how-to-create-monthly-azure-cost-report/azurebillanalysis-saverpt2.png)
 
-##Practice##
+## Practice
 
 Storage is one of the spending categories that you may wish to take a
 closer look at. Let's take what you learned from the above and create a
 report that breaks down that spend category in more detail.
 
-##Configuration Settings##
+## Configuration Settings
 
 -   **Quick Range**: `Latest 30 Days`{.code}
 
