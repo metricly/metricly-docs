@@ -59,13 +59,13 @@ report that breaks down that spend category in more detail.
 
 ## Configuration Settings
 
--   **Quick Range**: `Latest 30 Days`{.code}
+-   **Quick Range**: `Latest 30 Days`
 
--   **Visualization**: `Stacked View`{.code}
+-   **Visualization**: `Stacked View`
 
--   **Filter**: `storage`{.code}
+-   **Filter**: `storage`
 
--   **Group By**: `Product`{.code}
+-   **Group By**: `Product`
 
 Your Configuration modal should look like this:
 
