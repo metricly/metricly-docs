@@ -44,7 +44,7 @@ Getting an accurate picture of your entire Azure bill requires looking at your c
 In this article, we're going to show you how to filter out Reservations from your Azure Services Costs analysis. We want to do this because Reserved Instances have a unique pricing model in comparison to On-Demand instances. With Reserved Instances, you pay for the entire term regardless of actual use.
 
 {{% notice tip %}}
-Read the guide on [creating budget alerts][/billing-analysis/ba-guides/how-to-create-monthly-cost-reports]
+Read the guide on [creating budget alerts](/billing-analysis/ba-guides/how-to-create-monthly-cost-reports)
 before using this guide. {{% /notice %}}
 
 ## Selecting Pricing Models
