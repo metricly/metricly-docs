@@ -3,7 +3,7 @@ title: "Create a Monthly Cost Report"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#tools", "#aws services", "#cost", "#getting started", "guides", "azure"]
+tags: ["#tools", "#aws services", "#cost", "#getting started", "#guides", "#azure"]
 author: Lawrence Lane  
 weight: 1
 ---
