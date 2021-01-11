@@ -3,7 +3,7 @@ title: "Explore Cost Deltas"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#tools", "#aws services", "#cost", "#getting started", "guides"]
+tags: ["#tools", "#aws services", "#cost", "#getting started", "#guides", "#azure"]
 author: Lawrence
 weight: 2
 ---
@@ -55,10 +55,10 @@ By doing this you can find more significant deltas across your _EC2 - Other Usag
 
 Cost deltas are noticeable rises in resource cost discovered when comparing two distinct time periods in your Azure billing history. Measuring your cost deltas against the average application workload cost is a great way to discover opportunities to save.
 
-{{% notice tip %}} Read the guide on [creating Azure budget alerts](/billing-analysis/ba-guides/create-a-monthly-azure-cost-report.html "Create a Monthly Azure Cost Report") before using this guide.
+{{% notice tip %}} Read the guide on [creating Azure budget alerts](billing-analysis/ba-guides/how-to-explore-cost-deltas/#azure-bill-analysis-report) before using this guide.
 {{% /notice %}}
 
-In the [previous guide](/billing-analysis/ba-guides/create-budget-alerts.html "Create Budget Alerts"), we created a Bill Analysis report that displays storage costs from the Latest 30 Days broken down by product. This kind of report is an excellent view for discovering cost deltas when changing the visualization from Stacked View to Period Comparison View.
+In the [previous guide](billing-analysis/ba-guides/how-to-create-budget-alerts/), we created a Bill Analysis report that displays storage costs from the Latest 30 Days broken down by product. This kind of report is an excellent view for discovering cost deltas when changing the visualization from Stacked View to Period Comparison View.
 
 Let's open that saved report you created.
 
