@@ -3,7 +3,7 @@ title: "Create Budget Alerts"
 #date: 2018-12-03
 draft: false
 categories:
-tags: ["#tools", "#aws services", "#cost", "#getting started", "guides", "#azure"]
+tags: ["#tools", "#aws services", "#cost", "#getting started", "#guides", "#azure"]
 author: Lawrence
 weight: 5
 ---
@@ -15,7 +15,7 @@ Budget Alerts can be set in the Bill Analysis tool using a combination of:
 - Matching Conditions
 
 {{% notice tip %}}
-Read the guide on [creating AWS budgetalerts](/billing-analysis/ba-guides/how-to-create-monthly-cost-reports) or [creating Azure budget alerts](/billing-analysis/ba-guides/how-to-create-monthly-cost-reports/#azure-bill-analysis-report)
+Read the guide on [creating AWS Bill Analysis reports](/billing-analysis/ba-guides/how-to-create-monthly-cost-reports) or [creating Azure Bill Analysis reports](/billing-analysis/ba-guides/how-to-create-monthly-cost-reports/#azure-bill-analysis-report)
 {{% /notice %}}
 
 
