@@ -432,52 +432,6 @@ The following Response Body lists all **policyIds** and a count of elements moni
 
 ---
 
-## GET from /policies/events
-
-{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getPolicyEventCountsUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to retrieve event counts for all policies within the time frame specified.
-{{% expand "View Method Details." %}}
-
-### Parameters
-
-{{% notice tip %}}
-
-The following parameters are all optional. Users can interact with the /policies/events endpoint without using these parameters to obtain events which have occurred within the past hour.
-
-{{% /notice %}}
-
-| Parameter | Parameter Type | Data Type | Description |
-|-------------|----------------|---------------|---------------------------------------------------------------|
-| duration | query | string | Follows ISO8601 duration format. Example options include: PT1h, PT1m, PT10s, P3D |
-| startTime | query | date-time | Start time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
-| endTime | query | date-time | End time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
-
-
-### Request URL
-
-`https://app.metricly.com/policies/events`
-
-### CURL
-
-In the following CURL example, the endpoint is queried for an element count between the **startTime** `2020-02-28T15:53:00Z` and **endTime** `2020-03-01T15:54:00Z`.
-
-```
-curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies/events?startTime=2020-02-28T15%3A53%3A00Z&endTime=2020-03-01T16%3A54%3A00Z'
-```
-
-### Response Body
-
-The following response returns only one policy, with 31 events occurring within the specified time frame.
-
-```
-{
-  "fe8bd66b-0000-1111-2222-d898aebda30f": 31
-}
-```
-
-{{% /expand %}}
-
----
-
 ## GET from /policies/mute
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getPolicyMutesUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to get a list of currently muted policies.
@@ -829,50 +783,6 @@ The following Response Body returns the updates reflected in the policy template
 
 ---
 
-## GET from /policies/{policyId}/events
-
-{{< button href="https://app.metricly.com/swagger-ui.html#!/policies/getNumberOfEventsByPolicyUsingGET" theme="info" >}} GET {{< /button >}} Use this endpoint to get a count of events by policy.
-{{% expand "View Method Details." %}}
-
-### Parameters
-
-{{% notice tip %}}
-
-The **duration**, **startTime**, and **endTime** parameters are optional. Users can interact with the /policies/{policyId}/events endpoint without using these parameters to obtain events which have occurred within the past hour.
-
-{{% /notice %}}
-
-| Parameter | Parameter Type | Data Type | Description |
-|-------------|----------------|---------------|---------------------------------------------------------------|
-| policyId | path  | string  | Unique ID for a policy.  |
-| duration | query | string | Follows ISO8601 duration format. Example options include: PT1h, PT1m, PT10s, P3D |
-| startTime | query | date-time | Start time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
-| endTime | query | date-time | End time for the query. YYYY-MM-DDT00:001Z format (must include time zone). |
-
-### Request URL
-
-`https://app.metricly.com/policies/{policyId}/events`
-
-### CURL
-
-In the following CURL example, a policy with the **policyId** `fe8bd66b-586f-401e-9982-d898aebda30f` is checked for events occurring between **startTime** `2020-02-28T15:53:00Z` and **endTime** `2020-03-02T15:53:00Z`.
-
-```
-curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/policies/fe8bd66b-586f-401e-9982-d898aebda30f/events?startTime=2020-02-28T15%3A53%3A00Z&endTime=2020-03-02T15%3A53%3A00Z'
-```
-
-### Response Body
-
-The following Response Body returns a count of 31 events.
-
-```
-31
-```
-
-{{% /expand %}}
-
----
-
 ## DELETE to /policies/{policyId}/mute
 
 {{< button href="https://app.metricly.com/swagger-ui.html#!/policies/clearMutePolicyUsingDELETE" theme="danger" >}} DELETE {{< /button >}} Use this endpoint to unmute a policy.
@@ -949,7 +859,7 @@ no content
 
 ## How to Mute a Policy Over a Weekend
 
-Receiving alerts during off-hours, such as over the weekend, may not be necessary for some policies. You can use the Policies API (**/policies/{policyId}/mute{muteMS}**) to mute specified policies until resuming regular hours of operation. This allows for you to still track events that occur while the policy is muted (versus being disabled). Read this walkthrough to learn how to mute a Policy over the weekend.
+Receiving alerts during off-hours, such as over the weekend, may not be necessary for some policies. You can use the Policies API (**/policies/{policyId}/mute{muteMS}**) to mute specified policies until resuming regular hours of operation. This allows for you to still track alerts that occur while the policy is muted (versus being disabled). Read this walkthrough to learn how to mute a Policy over the weekend.
 
 {{% expand "View Walkthrough." %}}
 

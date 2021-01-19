@@ -89,7 +89,7 @@ curl -X GET --header 'Accept: application/json' 'https://app.metricly.com/incide
 
 ## GET from /incidents/{incidentId}
 
-{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/alerts/getUsingGET" >}} GET {{< /button >}} Use this endpoint to get information about an alert, such as violating metrics, specific events, elements affected, and start/stop timestamps.
+{{< button theme="info" href="https://app.metricly.com/swagger-ui.html#!/alerts/getUsingGET" >}} GET {{< /button >}} Use this endpoint to get information about an alert, such as violating metrics, elements affected, and start/stop timestamps.
 
 {{% expand "View method details."%}}
 

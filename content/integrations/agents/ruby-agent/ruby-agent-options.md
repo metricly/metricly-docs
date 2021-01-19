@@ -40,11 +40,6 @@ The active support notifications are a pub-sub model that trigger active support
   - Sidekiq metrics include number of jobs per queue, number of jobs ran per queue, and number of jobs ran per job.
   - Errors will be sent to CloudWisdom as an external event. An errors metric will also be available on the Metrics page under the sidekiq branch for the element that tracks the number of exceptions seen.
 
-## Error Tracking Features
-
-**sendErrorEvents**: Set to `true` to send exceptions from `sidekiq` and `action_controller` as events to CloudWisdom.
-  - If this setting is set to `false`, but actionErrorsEnabled and sidekiqEnabled are set to `true`, errors will not be sent to CloudWisdom as events but all metrics will still be collected.
-
 ## Feature Configs
 - **queueTimeUnits**: The divisor required to convert the queue time metric into seconds (e.g., seconds = 1, milliseconds = 1000, microseconds = 1000000).
 - **ignoredErrors**: List of exceptions to ignore. List should be provided in one of the following formats:

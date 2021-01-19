@@ -46,7 +46,6 @@ The following response is a shortened list of notifications. Typical responses p
      "type": "pagerduty",
      "properties": {
        "payloadType": "default",
-       "postContentTemplate": "{\"description\":\"${eventCategory.name}: ${elementFqn} : ${policyName}\",\"client\":\"Netuitive Cloud Service\",\"details\":{\"elementFqn\":\"${elementFqn}\",\"category\":\"${eventCategory.name}\",\"elementType\":\"${elementType}\"},\"contexts\":[{\"type\":\"link\",\"href\":\"https://app.netuitive.com/#/element/${elementId}/events\"}],\"service_key\":\"12345678965433456789954/Z4TJFTYEq4nQ==\",\"incident_key\":\"${policyName}\",\"event_type\":\"trigger\",\"client_url\":\"https://app.netuitive.com\"}",
        "name": "Support PagerDuty",
        "serviceKey": "******",
        "url": "https://events.pagerduty.com/generic/2010-04-15/create_event.json",

@@ -18,7 +18,7 @@ Set up notifications by opening the desired policy in Policy Editor. To enable o
 1. In the Policy Editor, under Notifications, click **Add Notification**.
 2. Select the desired notification type.
 3. Once a type is selected, choose a notification you have set up for the selected type. You can also create a new notification directly from here.
-4. Select how often--between 5 minutes and 24 hours or never--the policy should re-notify you if a policy is creating events.
+4. Select how often--between 5 minutes and 24 hours or never--the policy should re-notify you if a policy is creating alerts.
 5. Enable **Notify on Clear** if you’d like to receive a notification when the policy stops triggering.
 6. **Save** the policy.
 

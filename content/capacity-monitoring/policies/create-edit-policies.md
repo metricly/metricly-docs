@@ -3,7 +3,7 @@ title: "Create or Edit a Policy"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#events", "#policies"]
+tags: ["#alerts", "#notifications",  "#policies"]
 author: Lawrence Lane
 weight: 1
 ---

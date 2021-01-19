@@ -121,35 +121,6 @@ Custom elements can have metrics, tags, attributes, and relationships.
 - **sum** (optional):  Sum of values of this metric sample.
 - **val** (optional): The value of the metric; should NOT be sent with other sample inputs.
 
-
-### Custom External Event Messages
-**POST request**: `https://api.us.cloudwisdom.virtana.com/ingest/events/{apiId}`
-
-```
-[
-  {
-    "data": {
-      "elementId": "element-fqn",
-      "message": "My message"
-      },
-    "source": "string",
-    "tags": [
-      {
-        "name": "string",
-        "value": "string"
-      }
-    ],
-    "timestamp": "2018-04-27T01:00:44.758Z",
-    "title": "string",
-    "type": "string"
-  }
-]
-```
-
-Please note that the `elementId` is a required attribute. Payloads without `elementId` will be silently discarded.
-
-We also support sending in custom checks to the API, but we have a separate dedicated page covering this topic.
-
 ## Request Header X-Netuitive-Api-Options
 Options are sent to the Ingest API via HTTP Request Headers. The name of the request header is X-Netuitive-Api-Options and it takes a comma separated list of options.
 

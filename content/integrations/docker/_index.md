@@ -19,7 +19,7 @@ The [Linux Agent][4] must be installed before proceeding. If you need to disable
 3. Optionally, add a metric blacklist or whitelist to reduce the number of metrics you receive. See our [Regex Guide][5] for examples.  
 4. **Save** the file, and **restart** the Linux agent.
 
-This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as CloudWisdom receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
+This integration’s package will be automatically enabled and provisioned to your account as soon as CloudWisdom receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
 
 ## Collector Options
 | Option                 | Default | Description                                                                                |

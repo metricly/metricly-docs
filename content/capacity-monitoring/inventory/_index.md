@@ -17,7 +17,7 @@ All elements share the following characteristics:
 
 - A unique name and identifier in CloudWisdom.
 - Descriptive attributes, or characteristics, assigned by an integration.
-- Events that are triggered when the conditions in policies are met.
+- Alerts that are triggered when the conditions in policies are met.
 - A tag or tags used to label and organize elements.
 - An element type, usually assigned by an integration.
 

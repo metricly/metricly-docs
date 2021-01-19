@@ -53,7 +53,7 @@ If you want to display a custom message for your Slack notification, you’ll ha
 ## Optional Configuration
 
 ### Icons & Emojis
-You can customize the icon from slack by returning to the custom Webhook integration you’ve created and editing it. To distinguish your CloudWisdom events in the chat, we recommend saving our logo to your computer and uploading it. You can also add an emoji or icon via CloudWisdom when editing your notification.
+You can customize the icon from slack by returning to the custom Webhook integration you’ve created and editing it. To distinguish your CloudWisdom alerts in the chat, we recommend saving our logo to your computer and uploading it. You can also add an emoji or icon via CloudWisdom when editing your notification.
 
 ### Channel Override
 Input a channel override. This can be a different channel (`#other-channel`), another user (`@otheruser`), or multiple users.

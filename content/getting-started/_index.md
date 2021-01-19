@@ -50,7 +50,7 @@ Check out our most popular agents! Select on the links to read their in-depth se
   Quickly deploy and collect metrics with a richer set of metadata, right out of the box. This agent also supports CloudWatch integration.
 
 - [Windows Agent][4]  
-  Monitor windows performance counters and attributes with the Windows Agent. Pre-configured to send the most important performance metrics, windows events, and system attributes, it’s powerful from the start. You can also customize it to send additional data as needed.
+  Monitor windows performance counters and attributes with the Windows Agent. Pre-configured to send the most important performance metrics, and system attributes, it’s powerful from the start. You can also customize it to send additional data as needed.
 
 [1]:https://www.metricly.com/demo/
 [2]:/integrations/aws-integration/aws-cloudformation-installation/

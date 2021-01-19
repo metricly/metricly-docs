@@ -18,7 +18,7 @@ This guide tackles outbound SNS setup, however you can also ingest inbound SNS n
 ### IAM Role Setup
 
 #### 1. Add SNS Permissions to your AWS IAM Role
-You must add SNS permissions to your AWS IAM Role in order to complete setup. Completing this section provides you with the required **IAM Role ARN** for section 4. Haven’t created an IAM Role? Complete our [AWS setup documentation][2].
+You must add SNS permissions to your AWS IAM Role in order to complete setup. Completing this section provides you with the required **IAM Role ARN** for section 4. Haven’t created an IAM Role? Complete our [AWS setup documentation][1].
 
 1. In a separate tab from CloudWisdom, log in to your AWS Identity & Access Management (IAM) Console.
 2. Once in the IAM dashboard, navigate to the **Roles** section.
@@ -167,5 +167,4 @@ Below is the default payload used in the SNS integration, but it’s a good star
 
 ![Test and Save](/images/notifications-aws-sns/test-and-save.png)
 
-[1]: /capacity-monitoring/events/cloudwatch-events
-[2]: /integrations/aws-integration/aws-iam-installation
+[1]: /integrations/aws-integration/aws-iam-installation
