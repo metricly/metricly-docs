@@ -34,7 +34,7 @@ server {
 ```
 8\. **Save** the Nginx configuration file, and **restart** the Linux Agent.
 
-This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as CloudWisdom receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
+This integration’s package will be automatically enabled and provisioned to your account as soon as CloudWisdom receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
 
 ## Collector Options
 

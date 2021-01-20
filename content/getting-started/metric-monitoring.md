@@ -31,7 +31,7 @@ Got everything set up? Great! Now's a great time to build the dashboard of your 
 
 ## 6. Explore the Docs
 
-Curious to know all you can about our Capacity Monitoring platform? the [Alerts & Notifications][6] section of this help site has a comprehensive breakdown of alerts, events, checks, and policies.
+Curious to know all you can about our Capacity Monitoring platform? the [Alerts & Notifications][6] section of this help site has a comprehensive breakdown of alerts, checks, and policies.
 
 [1]: /integrations/aws-integration/aws-cloudformation-installation/
 [2]: /integrations/agents/linux-agent/linux-standard-install/

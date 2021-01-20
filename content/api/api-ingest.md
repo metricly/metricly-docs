@@ -10,11 +10,6 @@ pre: ""
 
 The ingest API allows you to send raw data to CloudWisdom. At least one integration must be set up in your CloudWisdom account to use the ingest endpoint. We recommend using the unique API key (found on the API keys page under the Account Profile drop-down menu) for the Custom integration automatically created for your account as your go-to for anything related to using our API.
 
-This API is used to send CloudWisdom custom data. Two types of custom payloads can be created with this API:
-
-- Custom elements
-- Custom external event messages
-
 ## Prerequisites  
 
 To properly use the ingest endpoint, you should first understand the following concepts:
@@ -120,35 +115,6 @@ Custom elements can have metrics, tags, attributes, and relationships.
 - **min** (optional):  Minimum value of this metric sample.
 - **sum** (optional):  Sum of values of this metric sample.
 - **val** (optional): The value of the metric; should NOT be sent with other sample inputs.
-
-
-### Custom External Event Messages
-**POST request**: `https://api.us.cloudwisdom.virtana.com/ingest/events/{apiId}`
-
-```
-[
-  {
-    "data": {
-      "elementId": "element-fqn",
-      "message": "My message"
-      },
-    "source": "string",
-    "tags": [
-      {
-        "name": "string",
-        "value": "string"
-      }
-    ],
-    "timestamp": "2018-04-27T01:00:44.758Z",
-    "title": "string",
-    "type": "string"
-  }
-]
-```
-
-Please note that the `elementId` is a required attribute. Payloads without `elementId` will be silently discarded.
-
-We also support sending in custom checks to the API, but we have a separate dedicated page covering this topic.
 
 ## Request Header X-Netuitive-Api-Options
 Options are sent to the Ingest API via HTTP Request Headers. The name of the request header is X-Netuitive-Api-Options and it takes a comma separated list of options.

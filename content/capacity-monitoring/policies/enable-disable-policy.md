@@ -3,7 +3,7 @@ title: "Enable or Disable a Policy"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#events", "#policies", "#delete"]
+tags: ["#alerts", "#notifications",  "#policies", "#delete"]
 author: Lawrence Lane
 alwaysopen: false
 ---

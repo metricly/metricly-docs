@@ -33,7 +33,7 @@ If you’ve already installed the Incoming Webhooks app, you can skip to step 2.
 ![Manage Apps](/images/notifications-slack/manage-apps.png)
 4. Navigate to **Custom Integrations**.
 5. Click **Incoming WebHooks**.
-6. In the Customize Name section, type your desired name. We recommend naming it CloudWisdom Event.
+6. In the Customize Name section, type your desired name. We recommend naming it CloudWisdm Alert.
 7. Click **Copy URL** in the Webhook URL section.
 8. Click **Save Settings** at the bottom of the page.
 
@@ -53,7 +53,7 @@ If you want to display a custom message for your Slack notification, you’ll ha
 ## Optional Configuration
 
 ### Icons & Emojis
-You can customize the icon from slack by returning to the custom Webhook integration you’ve created and editing it. To distinguish your CloudWisdom events in the chat, we recommend saving our logo to your computer and uploading it. You can also add an emoji or icon via CloudWisdom when editing your notification.
+You can customize the icon from slack by returning to the custom Webhook integration you’ve created and editing it. To distinguish your CloudWisdom alerts in the chat, we recommend saving our logo to your computer and uploading it. You can also add an emoji or icon via CloudWisdom when editing your notification.
 
 ### Channel Override
 Input a channel override. This can be a different channel (`#other-channel`), another user (`@otheruser`), or multiple users.

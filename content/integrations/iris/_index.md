@@ -20,10 +20,7 @@ MetriclyElementClient elementClient = new MetriclyElementRestClient
 3\. You may now send requests to the Metricly REST API. To read more about our API, find links to explore our API, and test some requests, see the API help section. Links to each client.java file follow where you can find the types of requests you can make and what parameters you can pass in:
 
 - **Elements**:
-  - [Element client (request types)](https://github.com/netuitive/Iris/blob/master/src/main/java/com/netuitive/iris/client/element/NetuitiveElementClient.java) / [Element REST client (params)](https://github.com/netuitive/Iris/blob/master/src/main/java/com/netuitive/iris/client/element/NetuitiveElementRestClient.java)  
-- **Events**:
-  - [Event client](https://github.com/netuitive/Iris/blob/master/src/main/java/com/netuitive/iris/client/event/NetuitiveEventClient.java) / [Event REST client](https://github.com/netuitive/Iris/blob/master/src/main/java/com/netuitive/iris/client/event/NetuitiveEventRestClient.java)
-  - [Ingest Event client](https://github.com/netuitive/Iris/blob/master/src/main/java/com/netuitive/iris/client/event/NetuitiveIngestEventClient.java) / [Ingest Event REST client](https://github.com/netuitive/Iris/blob/master/src/main/java/com/netuitive/iris/client/event/NetuitiveIngestEventRestClient.java)  
+  - [Element client (request types)](https://github.com/netuitive/Iris/blob/master/src/main/java/com/netuitive/iris/client/element/NetuitiveElementClient.java) / [Element REST client (params)](https://github.com/netuitive/Iris/blob/master/src/main/java/com/netuitive/iris/client/element/NetuitiveElementRestClient.java)   
 - **Metrics**:
   - [Ingest Metric client](https://github.com/netuitive/Iris/blob/master/src/main/java/com/netuitive/iris/client/metric/NetuitiveIngestMetricClient.java) / [Ingest Metric REST client](https://github.com/netuitive/Iris/blob/master/src/main/java/com/netuitive/iris/client/metric/NetuitiveIngestMetricRestClient.java)
   - [Metric client](https://github.com/netuitive/Iris/blob/master/src/main/java/com/netuitive/iris/client/metric/NetuitiveMetricClient.java) / [Metric REST client](https://github.com/netuitive/Iris/blob/master/src/main/java/com/netuitive/iris/client/metric/NetuitiveMetricRestClient.java)
@@ -39,14 +36,6 @@ MetriclyElementClient elementClient = new MetriclyElementRestClient
 elementClient.listElements(new ListElementsRequest()
   .withStartDate([date])
   .withEndDate([date]));
-```
-
-#### Event
-
-```
-eventClient.getEvents(new GetEventsRequest()
-  .withIsExternal(true)
-  .withCategory("CRITICAL"));
 ```
 
 #### Metric

@@ -7,7 +7,7 @@ tags: ["#tools", "#email", "#getting started" ]
 author: Lawrence Lane
 ---
 
-As a CloudWisdom user, you can opt-in to receiving email reports through your account profile. Email Reports enable you to stay up-to-date on cost trends, high-event elements, and recommendations for your environments _without_ having to log in to CloudWisdom. Selecting any of the links within the email opens CloudWisdom to the appropriate section.
+As a CloudWisdom user, you can opt-in to receiving email reports through your account profile. Email Reports enable you to stay up-to-date on cost trends, high-alert elements, and recommendations for your environments _without_ having to log in to CloudWisdom. Selecting any of the links within the email opens CloudWisdom to the appropriate section.
 
 ## Available Reports
 There are five main email reports available for you to enable:

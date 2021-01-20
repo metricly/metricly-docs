@@ -9,7 +9,7 @@ author: Lawrence Lane
 The CloudWisdom Windows Agent is a Microsoft Windows service that collects, aggregates, and publishes windows performance counters and attributes. Microsoft SQL Server, IIS, and .NET metrics are native to our Windows Agent. Only one Windows integration in your account is necessary to receive all Windows-related metrics.
 
 ## Configure
-Installation is as easy as [executing an MSI installer](https://repos.app.netuitive.com/windows-agent/index.html) and configuring the service. The agent is pre-configured to send the most important performance metrics, windows events, and system attributes to CloudWisdom. It can also be configured to send additional or different data if required
+Installation is as easy as [executing an MSI installer](https://repos.app.netuitive.com/windows-agent/index.html) and configuring the service. The agent is pre-configured to send the most important performance metrics, and system attributes to CloudWisdom. It can also be configured to send additional or different data if required
 
 ### 1. Copy the API key
 1. In CloudWisdom, click **Integrations** on the left-nav bar.

@@ -10,7 +10,6 @@ Custom Metrics are enabled by Windows plugins. There are two types of Windows pl
 
 - ReadWindowsPerfCounters
 - ReadWindowsAttributes
-- ReadWindowsEvents
 - WriteNetuitive
 
 This configuration is recommended for monitoring a Windows server with CloudWisdom. Other Read/Write plugins are available as documented below (note that the Write Console plugin has no configuration settings).
@@ -83,37 +82,6 @@ Not all categories have instances available. In the above example, the instances
 - `_Total` for an aggregate of all instances.
 - `.*` to make a branch for each instance.
 - `{specific_instance_name}` for only a specific instance.
-
-
-
-
-## Read Windows Event plugin
-This plugin reads from the Windows event logs on the server the agent is installed. The WriteNetuitive plugin will process the values it collects, but no other write plugins are able to do so.
-
-1. Navigate to the **ReadWindowsEvents.config** file.
-2. Add as many entries as you desire using the table below:
-
-| Value      | Required/Optional | Description                                                                                                                                                 |
-|------------|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Title      | Required          | A descriptive title for the events captured by this configuration entry. This is shown as the event title in CloudWisdom.                                      |
-| Log        | Required          | The windows log (e.g., Application, System, Security).                                                                                                      |
-| Source     | Required          | The source of the event (this is the source field in the event viewer). This value can be left blank for any source.                                        |
-| MinLevel   | Optional          | The minimum log level to collect. Defaults to 1. Possible values (in order): 1 = critical, 2 = error, 3 = warning (warn), 4 = information, and 5 = verbose. |
-| MaxLevel   | Required          | The maximum log level to collect. Offers the same levels as the MinLevel setting. Set to the same value as MinLevel to restrict to just one level.          |
-| MinEventId | Optional          | The minimum event ID to collect between 0 and 65535. Defaults to 0.                                                                                         |
-| MaxEventId | Optional          | The maximum event ID to collect between 0 and 65535. Defaults to 65535. Set to the same as MinEventId to restrict collection to a single event.             |
-| FilterExp  | Optional          | A regular expression applied to the log message. Messages that do not match are disregarded.                                                                |
-
-- Here’s a default entry in the **ReadWindowsEvents.config** file:
-
-```
-<Event Title="Error 99 occurred in MyApp"
-Log="Application" Source="MyApp"
-MinLevel="2" MaxLevel="2" MinEventId="99"
-MaxEventId="99" />
-```
-
-3\. **Save** the file.
 
 ## Read Windows Attribute plugin
 This plugin reads non-numeric attributes of the server. The WriteNetuitive plugin will process the values it collects, but no other write plugins are able to do so. Three attributes are available by default:

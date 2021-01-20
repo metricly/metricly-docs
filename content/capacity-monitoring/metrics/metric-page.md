@@ -24,12 +24,6 @@ Once you have added all needed search criteria, click **Render Charts** to popul
 #### Quick Filters / Metric Charts
 Click a **Quick Filter** to render metric charts automatically for the selected filter. Metric charts are a visualization of a metric for an element. See [below][1] to learn more.
 
-### Events Graph
-The Events graph displays the events in your environment based on the Time Frame setting and other search filters. For more information, see Events graph. Click an event to have the option of viewing the violating metrics on the Metrics page or edit the policy the event is associated with.
-
-![Events Graph](/images/metric-page/events-graph.png)
-
-
 ### Metric Chart Size
 Select how wide or how tall you want your metric charts to be.
 ![Change Chart Size](/images/metric-page/change-chart-size.png)

@@ -9,7 +9,7 @@ alwaysopen: false
 pre:
 weight: 15
 ---
-CloudWisdom’s RESTful API allows you read and write data programmatically. This means that you can perform a wide variety of tasks, including adding a new integration, returning a filtered list of Events, removing elements from your account, and more.
+CloudWisdom’s RESTful API allows you read and write data programmatically. This means that you can perform a wide variety of tasks, including adding a new integration, viewing metric data, removing elements from your account, and more.
 
 To view and try out the available API endpoints, visit the [CloudWisdom Swagger UI](https://us.cloudwisdom.virtana.com/swagger-ui.html). This web based user interface allows users to view all the APIs, see additional documentation, and test the calls from your browser.
 
@@ -18,7 +18,7 @@ To view and try out the available API endpoints, visit the [CloudWisdom Swagger 
 Virtana strongly encourages you to use the Metricly CLI when interacting with our API. The CLI has built-in commands and help information, offering a guided experience when interacting with endpoints. You can create, delete, list, or get several of the features inside CloudWisdom through the CLI without having to worry about structuring the JSON payload exactly right. You can install the CLI from GitHub.
 
 ## Authentication
-CloudWisdom requires users to authenticate their requests with HTTP basic auth. Basic authentication uses a standard HTTP header that includes encoded versions of your username and password. Basic authentication is required for all endpoints except ingest and ingest events, which require API keys.
+CloudWisdom requires users to authenticate their requests with HTTP basic auth. Basic authentication uses a standard HTTP header that includes encoded versions of your username and password. Basic authentication is required for all endpoints except ingest, which require API keys.
 
 ## Data Formats
 Dates and Times – All request parameters associated with date and time (duration, startTime, endTime) must be written in ISO 8601 format, see examples below.

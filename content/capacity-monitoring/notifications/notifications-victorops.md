@@ -43,7 +43,7 @@ Add one or more headers (key-value pairs) to the webhook notification.
 Select **Custom** from the Payload drop-down menu. A text field will open after selecting Custom. You can use the following variables and/or VictorOps fields to make your notification more dynamic.
 
 **Example**
-The below example sends a notification that states the event’s category name, the name and ID of the element in violation, and the policy name of the violating element. Once the event has ended, it sends a RECOVERY notification stating the time that the event ended.
+The below example sends a notification that states the alert’s category name, the name and ID of the element in violation, and the policy name of the violating element. Once the alert has ended, it sends a RECOVERY notification stating the time that the alert ended.
 
 ```
 {
@@ -89,6 +89,6 @@ You can visit the [VictorOps knowledge base](http://victorops.force.com/knowledg
   "entity_is_host":"Yes",
   "entity_id":"${elementId}",
   "state_message":"${elementName} is up,
-but an event occurred at ${eventTimestamp}."
+but an alert occurred at ${eventTimestamp}."
 }
 ```

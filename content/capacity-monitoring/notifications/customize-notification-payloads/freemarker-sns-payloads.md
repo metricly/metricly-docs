@@ -10,7 +10,7 @@ weight:
 ---
 
 ## SNS Payloads
-You must have AWS SNS setup in your console to use this payload type. The below payload returns the event category when active; once the event has cleared it returns CLEAR.
+You must have AWS SNS setup in your console to use this payload type. The below payload returns the alert category when active; once the alert has cleared it returns CLEAR.
 ```
 {
   "timestamp": "${eventTimestamp}",

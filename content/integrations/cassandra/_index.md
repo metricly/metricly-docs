@@ -25,7 +25,7 @@ If you’re running Cassandra in a container, you’ll need to add ``–javaagen
 4. Open the `CassandraJolokiaCollector.conf` file.
 5. Change the **enabled** setting to `True`, **save** the file, and **restart** the Linux agent.
 
-This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as CloudWisdom receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
+This integration’s package will be automatically enabled and provisioned to your account as soon as CloudWisdom receives data from the integration. The PACKAGES button on the integration setup page will become active once data is received, so you’ll be able to disable and re-enable the package at will.
 
 ## Collector options
 

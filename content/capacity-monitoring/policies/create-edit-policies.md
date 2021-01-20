@@ -3,7 +3,7 @@ title: "Create or Edit a Policy"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#events", "#policies"]
+tags: ["#alerts", "#notifications",  "#policies"]
 author: Lawrence Lane
 weight: 1
 ---
@@ -26,5 +26,5 @@ The top of your policy has 3 important fields:
 | Category | Color  | Description                                                                                                                   |
 |----------|--------|-------------------------------------------------------------------------------------------------------------------------------|
 | Info     | Blue   | The Info category indicates that a policy has been violated, but the anomalous behavior is not critical.                      |
-| Warning  | Yellow | The Warning category indicates that a policy has been violated, and there will likely be a more critical event in the future. |
-| Critical | Red    | The Critical category indicates that a policy has been violated, and the cause of the event should be addressed quickly.      |
+| Warning  | Yellow | The Warning category indicates that a policy has been violated, and there will likely be a more critical alert in the future. |
+| Critical | Red    | The Critical category indicates that a policy has been violated, and the cause of the alert should be addressed quickly.      |

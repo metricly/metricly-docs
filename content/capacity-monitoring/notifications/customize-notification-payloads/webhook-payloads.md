@@ -20,28 +20,12 @@ To create a customized webhook payload:
 4. Input your custom JSON + Freemarker writeup.
 5. **Save**.
 
-**Example 1**
-
-```
-{
-   "message_type":"<#if payloadType == "event">${eventCategory.name}</#if><#if payloadType == "event_cleared">RECOVERY</#if>",
-   "entity_id":"${elementId}",
-   "entity_display_name":"${elementName}",
-   "state_message":"<#if payloadType == "event"> [${elementName}] [${policyName}] [${eventTimestamp}] : ${policyDescription}</#if><#if payloadType == "event_cleared">The policy ${policyName} has CLEARED for ${elementName} and is no longer generating events as of ${eventTimestamp}</#if>"
-}
-```
-**Example 2**
-
-```
-{"text": "${eventTimestamp}: The CPU on ${elementId} has exceeded 5% for at least 5 minutes. \n Event Category: ${eventCategory.name} \n Fqn: ${elementFqn} \n location: ${elementLocation}"}
-```
-
-**Example 3**
+**Example**
 
 ```
 [
     {
-        "source":"Scality Tenant Alert",
+        "source":"Sub Tenant Alert",
         "title": "${policyName}",
         "tags": [
             {

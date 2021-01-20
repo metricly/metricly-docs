@@ -111,4 +111,4 @@ Setting up an AWS integration is a two step process:
  - If you install our Linux agent or Windows agent on an EC2 server, the EC2’s power state (it will come in as the attribute hostRunning with a value of true or false) and tags are copied over to the corresponding Linux SERVER element / Windows WINSRV element. You can then use this information to create policies.  
 28. Click **Save**.  
 
- This integration’s package (computed metrics, dashboards, and policies that will give you important events and alerts) will be automatically enabled and provisioned to your account as soon as CloudWisdom receives data from the integration.  
+ This integration’s package will be automatically enabled and provisioned to your account as soon as CloudWisdom receives data from the integration.  

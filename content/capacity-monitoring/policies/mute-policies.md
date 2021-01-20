@@ -3,7 +3,7 @@ title: "Mute Policies"
 #date: 2018-04-12
 draft: false
 categories:
-tags: ["#alerts", "#notifications", "#events", "#policies", "#mute"]
+tags: ["#alerts", "#notifications",  "#policies", "#mute"]
 author: Lawrence Lane
 alwaysopen: false
 ---

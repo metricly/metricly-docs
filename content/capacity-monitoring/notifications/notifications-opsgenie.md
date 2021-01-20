@@ -29,7 +29,7 @@ This ensures that the Teams and Recipients you include in Part 2 are passed from
 6. For **Teams**, type a comma-separated list of any OpsGenie teams that should receive notifications.
 7. For **Recipients**, type a comma-separated list of any OpsGenie recipients that should receive notifications.
 {{% notice tip %}}
-If you include no teams or recipients, and when setting up a CloudWisdom Integration in OpsGenie, left the Teams and Recipients fields as {{teams}} and {{recipients}}, no parties will receive notifications for this policy. However, an alert will still appear in OpsGenie when an event for this policy is generated in CloudWisdom.
+If you include no teams or recipients, and when setting up a CloudWisdom Integration in OpsGenie, left the Teams and Recipients fields as {{teams}} and {{recipients}}, no parties will receive notifications for this policy. However, an alert will still appear in OpsGenie when an alert for this policy is generated in CloudWisdom.
 {{% /notice %}}
 8. For **Tags**, type a comma-separated list of any tags you want to apply to the OpsGenie alert (e.g. tag1, tag2, tag3).
 9. Click **Test and Save**.
