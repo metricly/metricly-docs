@@ -10,11 +10,6 @@ pre: ""
 
 The ingest API allows you to send raw data to CloudWisdom. At least one integration must be set up in your CloudWisdom account to use the ingest endpoint. We recommend using the unique API key (found on the API keys page under the Account Profile drop-down menu) for the Custom integration automatically created for your account as your go-to for anything related to using our API.
 
-This API is used to send CloudWisdom custom data. Two types of custom payloads can be created with this API:
-
-- Custom elements
-- Custom external event messages
-
 ## Prerequisites  
 
 To properly use the ingest endpoint, you should first understand the following concepts:

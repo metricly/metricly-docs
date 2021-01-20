@@ -24,4 +24,4 @@ The Relationships tab offers the same functionality as the Elements Relationship
 ![relationship-tab-2019](/images/inventory-element-detail/relationship-tab-2019.png)
 
 ## About Tags
-A tag is a key-value pair assigned to a single element. Tags can be used to group elements and as search filters in Inventory Explorer, Event Explorer, Report Explorer, and Policy Editor. You can tag elements via the Inventory Explorer.
+A tag is a key-value pair assigned to a single element. Tags can be used to group elements and as search filters in Inventory, Reports, and the Policy Editor. You can tag elements via the Inventory.

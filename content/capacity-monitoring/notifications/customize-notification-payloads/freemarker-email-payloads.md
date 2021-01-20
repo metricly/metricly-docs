@@ -8,7 +8,7 @@ author: Lawrence Lane
 alwaysopen: false
 weight:
 ---
-There are two event payload types that can be leveraged with email notification payloads: event and event_cleared. An event is generated when a policy is violating. An event_cleared is generated when a once-violating policy is no longer violating. Your custom event payloads can be setup to notify you on either type with unique messaging and details about the event.
+There are two alert payload types that can be leveraged with email notification payloads: event and event_cleared. An event is generated when a policy is violating. An event_cleared is generated when a once-violating policy is no longer violating. Your custom event payloads can be setup to notify you on either type with unique messaging and details about the alert.
 
 **To create a custom event payload:**
 
@@ -27,10 +27,10 @@ Alternatively, you can create your new custom email payload in the policy editor
 
 **Example 1**
 
-This example provides the policy name related to the event in the subject of the email and then provides the event category name of the event firing in the body. When the event clears, it sends another email with `CLEAR` as the body text.
+This example provides the policy name related to the alert in the subject of the email and then provides the alert category name of the alert firing in the body. When the alert clears, it sends another email with `CLEAR` as the body text.
 
 ```
-CloudWisdom Event [${policyName}]
+CloudWisdom Alert [${policyName}]
 ```
 
 ```
@@ -44,7 +44,7 @@ CloudWisdom Event [${policyName}]
 
 **Example 2**
 
-This example sends an email with `UP` or `DOWN` as the subject line, with all of the event details in the email body.
+This example sends an email with `UP` or `DOWN` as the subject line, with all of the alert details in the email body.
 
 ```
 <#if payloadType == "event">DOWN</#if><#if payloadType == "event_cleared">UP</#if>

@@ -26,7 +26,7 @@ All elements share the following characteristics:
 An attribute is a property or characteristic that describes an element. Having attributes gives you access to more statistical data that can be used to troubleshoot issues. Most elements receive attributes from their integration.
 
 {{% notice info %}}
-For example, with attribute information, you can see the number and type of CPU running on a server element, while also viewing an event that was generated based on that element’s CPU value.
+For example, with attribute information, you can see the number and type of CPU running on a server element, while also viewing an alert that was generated based on that element’s CPU value.
 {{% /notice %}}
 
 ### Element Types

@@ -30,7 +30,7 @@ Use the **Match Conditions** feature to toggle between enforcing all conditions 
 ## Metric Condition Deviation Types
 
 ### Baseline Deviation
-A [Baseline][1] Deviation test triggers an event and other optional notifications when the current value of a metric is above and/or below 4 standard deviations from its normal operating range. A Baseline Deviation test can also be used to trigger an event when the value of a metric is or is not deviating from its normal operating range. CloudWisdom determines the normal operating range of a metric based on the history of the actual values for that metric. The different Baseline Deviation tests are described below:
+A [Baseline][1] Deviation test triggers an alert and other optional notifications when the current value of a metric is above and/or below 4 standard deviations from its normal operating range. A Baseline Deviation test can also be used to trigger an alert when the value of a metric is or is not deviating from its normal operating range. CloudWisdom determines the normal operating range of a metric based on the history of the actual values for that metric. The different Baseline Deviation tests are described below:
 
 - **Upper (Baseline) Deviation**: The current value of a metric is greater than or equal to 4 standard deviations above its normal operating range.
 - **Lower (Baseline) Deviation**: The current value of a metric is greater than or equal to 4 standard deviations below its normal operating range.
@@ -46,9 +46,9 @@ A [Contextual][2] Deviation test can be used to indicate when the value of a met
 - **Is Not Deviating**: The current value of a metric is not deviating.
 
 ### Static Threshold
-A [Static Threshold][3] test is used to trigger an event and other optional actions when the value of a metric is more than, less than, equal to, or not equal to a specified level. The level for a Static Threshold test can be any real number; the unit of the level depends on the metric to which it is applied.
+A [Static Threshold][3] test is used to trigger an alert and other optional actions when the value of a metric is more than, less than, equal to, or not equal to a specified level. The level for a Static Threshold test can be any real number; the unit of the level depends on the metric to which it is applied.
 
-For example, you can use a Static Threshold test to execute an event when the current value for the metric “CPU Utilization” is greater than 95%.
+For example, you can use a Static Threshold test to execute an alert when the current value for the metric “CPU Utilization” is greater than 95%.
 
 ### Sudden Change Deviation
 A [Sudden Change][4] deviation test is used to indicate the difference between expected change and unexpected change on a certain metric. This is achieved by using historical data to predict future data intervals. The historical data used to determine the future interval is a sliding window of one hour that contextualizes future intervals.

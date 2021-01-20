@@ -33,7 +33,7 @@ If you’ve already installed the Incoming Webhooks app, you can skip to step 2.
 ![Manage Apps](/images/notifications-slack/manage-apps.png)
 4. Navigate to **Custom Integrations**.
 5. Click **Incoming WebHooks**.
-6. In the Customize Name section, type your desired name. We recommend naming it CloudWisdom Event.
+6. In the Customize Name section, type your desired name. We recommend naming it CloudWisdm Alert.
 7. Click **Copy URL** in the Webhook URL section.
 8. Click **Save Settings** at the bottom of the page.
 

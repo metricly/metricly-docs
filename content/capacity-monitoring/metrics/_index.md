@@ -16,7 +16,7 @@ A metric is a quantifiable measurement whose values are monitored by CloudWisdom
  - Response Time
 
 ## Collected Metrics
-CloudWisdom has collected metrics for every element in the application. [Policies][2] can be created using collected metrics to determine if data is missing through [alerts][3], and further configured to fire [notifications][4]. After 15 minutes of missing data, the element suspends and the alert stops. At this point, an external event is posted to the event timeline noting that CloudWisdom has not received data.
+CloudWisdom has collected metrics for every element in the application. [Policies][2] can be created using collected metrics to determine if data is missing through [alerts][3], and further configured to fire [notifications][4].
 
 **Example**
 

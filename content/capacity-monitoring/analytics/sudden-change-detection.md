@@ -10,7 +10,7 @@ Sudden Change is a time-series metric used to analyze trends of historical data 
 
  This process finds an expected average of activity by **generating data points every 5 minutes** in a sliding, one-hour window of time. It then uses this data to make predictions on the next interval.
 
-When the future point is actualized and falls _outside_ the expected prediction range, that interval is defined as a sudden change event. You can configure the scope of this metric’s prediction range by adjusting the acceptable percentage change of the future interval; doing so increases or decreases the sensitivity of your policy and affects the frequency of any associated alerts.
+When the future point is actualized and falls _outside_ the expected prediction range, that interval is defined as a sudden change alert. You can configure the scope of this metric’s prediction range by adjusting the acceptable percentage change of the future interval; doing so increases or decreases the sensitivity of your policy and affects the frequency of any associated alerts.
 
 ![Sudden Change Example](/images/sudden-change-detection/sudden-change-example.png)
 
@@ -18,7 +18,7 @@ Sudden Change is useful for trend analysis on hourly min/max rollup data, like d
 
 ## Sudden Change Example 1
 
-You are monitoring the response time for a transaction. The conditions for the policy are looking for increases in response time of more than 50%, with a duration of 2 hours. An event is generated after the response time has exceeded the average by 50% for that specified duration.
+You are monitoring the response time for a transaction. The conditions for the policy are looking for increases in response time of more than 50%, with a duration of 2 hours. An alert is generated after the response time has exceeded the average by 50% for that specified duration.
 
 ## Configuring The Sudden Change Condition
 Complete the following steps to configure a new policy using the Sudden Change condition:
@@ -33,7 +33,7 @@ Complete the following steps to configure a new policy using the Sudden Change c
 
 ## Sudden Change Example 2
 
-The following graph depicts a policy with a sudden change deviation condition on a certain metric. In this example, an alert triggers due to a sudden change event (in red) on the 25th data point.
+The following graph depicts a policy with a sudden change deviation condition on a certain metric. In this example, an alert triggers due to a sudden change alert (in red) on the 25th data point.
 
 ![Sudden Change Example 2](/images/sudden-change-detection/sudden-change-example-2.png)
 
@@ -45,7 +45,7 @@ The following graph depicts a policy with a sudden change deviation condition on
 - **Red Dot**: 25th data point’s actual observed value
 
 {{% notice note %}}
-This graph is for functionality demonstration and not found in the product. In CloudWisdom, a red dot appears on the Metric Explorer graph where the sudden change event occurred.
+This graph is for functionality demonstration and not found in the product. In CloudWisdom, a red dot appears on the Metric Explorer graph where the sudden change alert occurred.
 {{% /notice %}}
 
 ## How a Percent Drop is Measured
@@ -53,7 +53,7 @@ A percent drop, or step change, is computed as:
 
 ``| (projected value) - (observed value) | / | (projected value) |``
 
-The sudden change algorithm returns this value for use by a condition in a policy. If the value exceeds the threshold in the policy condition, then the condition is true. If all the other conditions in the policy (if any) are also true, then an event is emitted.
+The sudden change algorithm returns this value for use by a condition in a policy. If the value exceeds the threshold in the policy condition, then the condition is true. If all the other conditions in the policy (if any) are also true, then an alert is emitted.
 
 ## Confidence Validation
 
@@ -64,4 +64,4 @@ One of these checks is designed to determine if the regression model is a good e
 In the above example, it is possible that some of these checks may have failed. In that case, the algorithm reports back that there was no drop.
 
 ## Best Practices
-When configuring a condition for sudden change deviation, we recommend setting a **duration of no longer than 5 minutes**. This is due to the nature of the event you are trying to capture: a single, sudden change in activity. Expecting a secondary sudden change in a longer duration of time may cause your policy to never activate, meaning you could miss otherwise genuine alerts.
+When configuring a condition for sudden change deviation, we recommend setting a **duration of no longer than 5 minutes**. This is due to the nature of the alert you are trying to capture: a single, sudden change in activity. Expecting a secondary sudden change in a longer duration of time may cause your policy to never activate, meaning you could miss otherwise genuine alerts.

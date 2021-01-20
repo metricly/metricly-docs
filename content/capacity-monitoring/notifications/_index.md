@@ -8,7 +8,7 @@ author: Lawrence Lane
 alwaysopen: false
 weight: 
 ---
-Notifications are optional alerts sent to another source (e.g., email, PagerDuty, OpsGenie) when an event occurs. You will only receive notifications from policies that have a notification(s) configured. While notifications are enabled by default, they will be automatically disabled if they are used in a policy and fail for a period of time.
+Notifications are optional alerts sent to another source (e.g., email, PagerDuty, OpsGenie) when an alert occurs. You will only receive notifications from policies that have a notification(s) configured. While notifications are enabled by default, they will be automatically disabled if they are used in a policy and fail for a period of time.
 
 ## Using Notifications
 
