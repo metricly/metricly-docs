@@ -1,6 +1,6 @@
 # CloudWisdom Docs
 
-This is the repository for [CloudWisdom's](https://github.com/metricly)'s help documentation, powered by Hugo. Visit [docs.metricly.com](https://docs.metricly.com) to begin reading our docs.
+This is the repository for [CloudWisdom's](https://github.com/metricly)'s help documentation, powered by Hugo. Visit [docs.metricly.com](https://docs.virtana.com/) to begin reading our docs.
 
 ## Setup
 
