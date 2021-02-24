@@ -3,6 +3,6 @@
 /right-sizing/reports-ec2-reservations   /purchase-planning/reports-ec2-reservations/
 /right-sizing/resource-utilization   /right-sizing/reports-ec2-recommendations/
 /capacity-monitoring/metrics-page/   /capacity-monitoring/metrics/
-/integrations/linux-agent   /integrations/agents/linux-agent/
+/integrations/linux-agent   /integrations/agents/
 /data-visualizaiton/metrics   /capacity-monitoring/metrics/
 /alerts-notificaitons/policies   /capacity-monitoring/policies/
