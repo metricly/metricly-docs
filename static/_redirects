@@ -1,3 +1,5 @@
+https://docs.metricly.com/* https://docs.virtana.com/:splat 301!
+
 /right-sizing/ec2-recommendations   /right-sizing/reports-ec2-recommendations/
 /right-sizing/resource-utilization   /right-sizing/reports-resource-utilization/
 /right-sizing/reports-ec2-reservations   /purchase-planning/reports-ec2-reservations/
@@ -6,4 +8,4 @@
 /integrations/linux-agent   /integrations/agents/linux-agent/
 /data-visualizaiton/metrics   /capacity-monitoring/metrics/
 /alerts-notificaitons/policies   /capacity-monitoring/policies/
-https://docs.metricly.com/integrations/agents/linux-agent/* https://docs.virtana.com/en/cloudwatch-agent.html/:splat 301!
+https://docs.metricly.com/integrations/agents/linux-agent/ https://docs.virtana.com/en/cloudwatch-agent.html/:splat 301!
