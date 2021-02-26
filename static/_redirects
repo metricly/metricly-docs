@@ -265,6 +265,6 @@
 /right-sizing/resource-utilization https://docs.virtana.com/en/resource-utilization.html 301!
 /right-sizing/reports-ec2-reservations https://docs.virtana.com/en/ec2-reservation-recommendations.html 301!
 /right-sizing/resource-utilization   https://docs.virtana.com/en/ec2-recommendations.html 301!
-/capacity-monitoring/metrics-page/   /capacity-monitoring/metrics/
+/capacity-monitoring/metrics-page/ https://docs.virtana.com/en/metrics.html 301!
 /data-visualizaiton/metrics   /capacity-monitoring/metrics/
 /alerts-notificaitons/policies   /capacity-monitoring/policies/
