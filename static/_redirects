@@ -261,7 +261,7 @@
 /api/api-users/ https://docs.virtana.com/en/users-api.html 301!
 /api/api-widgets/ https://docs.virtana.com/en/widgets-api.html 301!
 /api/api-elements/ https://docs.virtana.com/en/elements-api.html 301!
-/right-sizing/ec2-recommendations   /right-sizing/reports-ec2-recommendations/
+/right-sizing/ec2-recommendations   https://docs.virtana.com/en/ec2-recommendations.html 301!
 /right-sizing/resource-utilization   /right-sizing/reports-resource-utilization/
 /right-sizing/reports-ec2-reservations   /purchase-planning/reports-ec2-reservations/
 /right-sizing/resource-utilization   https://docs.virtana.com/en/ec2-recommendations.html 301!
